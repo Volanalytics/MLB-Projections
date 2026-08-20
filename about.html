@@ -114,6 +114,34 @@ table.wingrid tr.shared td.v{color:var(--chalk)}
 .game.open .det2{display:block}
 .game .kick{cursor:pointer}
 @media(max-width:760px){.mx{grid-template-columns:1fr}}
+/* Wide tables scroll sideways instead of being clipped. The first column is
+   pinned so the team name stays visible while the numbers move under it -
+   without that, a horizontally scrolled row is unreadable. */
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;
+  scrollbar-width:thin;scrollbar-color:var(--line) transparent}
+.scroll > table{min-width:max-content}
+.scroll::-webkit-scrollbar{height:6px}
+.scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
+.pin th:first-child,.pin td:first-child{position:sticky;left:0;z-index:2;
+  background:var(--field)}
+.pin tbody tr:hover td:first-child{background:var(--panel)}
+tr.det .pin th:first-child,tr.det .pin td:first-child,
+.det2 .pin th:first-child,.det2 .pin td:first-child{background:var(--panel)}
+.det2 .pin th:first-child,.det2 .pin td:first-child{background:var(--panel-2)}
+.scroll{max-width:100%}
+.wingrid.pin td.k,.wingrid.pin th.k{position:sticky;left:0;z-index:2;
+  background:var(--panel);min-width:104px}
+.det2 .wingrid.pin td.k,.det2 .wingrid.pin th.k{background:var(--panel-2)}
+.wingrid th.v,.wingrid td.v{min-width:56px}
+@media(max-width:760px){
+  tr.det > td{padding:12px 10px}
+  .mx{gap:12px}
+  .wingrid{font-size:11px}
+  .wingrid th,.wingrid td{padding:4px 6px}
+}
+.swipe{display:none;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 4px}
+@media(max-width:760px){.swipe{display:block}}
 .sorter{display:none;margin:0 0 12px;gap:8px;align-items:center}
 .sorter label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;
   color:var(--muted)}
@@ -166,7 +194,7 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Aug 20, 2026 09:57</span></div>
+<span class="stamp">MLB &middot; built Aug 20, 2026 13:16</span></div>
 <nav><a href="index.html" class="">Games</a><a href="ev.html" class="">Market</a><a href="teams.html" class="">Teams</a><a href="tracking.html" class="">Tracking</a><a href="about.html" class="on">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
@@ -174,9 +202,7 @@ header .wrap{position:relative}
 <a href='#values'>Every value on this site</a>
 <a href='#data'>Where the data comes from</a>
 <a href='#reg'>Regression</a>
-<a href='#sim'>The simulator</a>
-<a href='#val'>What the backtest says</a>
-<a href='#limits'>Known limitations</a></div>
+<a href='#sim'>The simulator</a></div>
 <div class='prose'>
 <p>This site publishes output from an MLB model built from pitch-level
 Statcast data. Everything below describes how a number gets made, so you can
@@ -228,31 +254,6 @@ enumerated. Verified against the league's actual run total to the penny.</p>
 conditions shared across a whole game. Without it the simulated distribution is
 too narrow.</p>
 
-<h3 id='val'>What the backtest says</h3>
-<p>573 games, scored with rates built only from data before the cutoff and
-lineups recovered from what actually happened. Correlation between projected
-and actual totals is about 0.18 — real but weak. Mean absolute error is 3.70
-runs against 3.65 for always guessing the league average.</p>
-<p>In other words the raw model does not beat a constant. Correcting its bias
-and scale on held-out games gets it marginally ahead, by about 0.07 runs, which
-is roughly one standard error — encouraging, not established.</p>
-<p>Calibration of the over probability is off by 3 to 6 points at every line
-except 6.5. A bet at -110 needs a true 52.4% to break even, so an error that
-size is larger than the edge being sought.</p>
-
-<h3 id='limits'>Known limitations</h3>
-<ul>
-<li>Not scored against closing lines. The only benchmark so far is a
-league-average constant, which is far weaker than a market number.</li>
-<li>The bullpen is one blended arm per team, weighted by recent usage and
-filtered for availability, not individual relievers by leverage.</li>
-<li>Plate appearances run about 2% high, so counting props are inflated by
-roughly that much.</li>
-<li>Weather at first pitch is the actual reading, available only once a game
-starts; a forecast is not yet wired in, so wind is missing for unplayed games.</li>
-<li>Projections for a future date use bullpen availability as of today, so arms
-used tonight still look rested tomorrow.</li>
-</ul>
 </div></div></main>
 <script>
 (function(){
