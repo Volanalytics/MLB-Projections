@@ -101,6 +101,14 @@ tr.det > td{background:var(--panel);padding:14px 16px}
 .mx td{padding:3px 6px;border:0}
 .mx .k{color:var(--muted)}
 .mx .v{text-align:right;font-variant-numeric:tabular-nums}
+table.wingrid{font-size:12px;margin-top:4px}
+table.wingrid th{padding:4px 8px;background:transparent;border-bottom:1px solid var(--line)}
+table.wingrid th.v{text-align:right}
+table.wingrid td{padding:4px 8px;border-bottom:1px solid rgba(36,64,92,.35)}
+table.wingrid td.k{color:var(--muted);text-align:left;white-space:nowrap}
+table.wingrid td.v{text-align:right;font-variant-numeric:tabular-nums}
+table.wingrid tr.shared td{color:var(--muted)}
+table.wingrid tr.shared td.v{color:var(--chalk)}
 .game .det2{display:none;padding:12px;border-top:1px solid var(--line);
   background:var(--panel-2)}
 .game.open .det2{display:block}
@@ -158,11 +166,13 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Aug 19, 2026 17:16</span></div>
+<span class="stamp">MLB &middot; built Aug 20, 2026 08:25</span></div>
 <nav><a href="index.html" class="">Games</a><a href="ev.html" class="on">Market</a><a href="teams.html" class="">Teams</a><a href="tracking.html" class="">Tracking</a><a href="about.html" class="">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
-<main><div class="wrap"><p class='note'>No market lines logged yet.</p><div class='prose'><p>This page compares the model's number against the book's and shows the edge. It needs a <code>market_lines</code> table with one row per game: <code>game_pk</code>, <code>total</code>, <code>over_price</code>, <code>under_price</code>, <code>home_ml</code>, <code>away_ml</code>, <code>captured_at</code>.</p><p>Logging closing lines is the single highest-value thing left to do. The backtest can only measure this model against a league-average constant, which is a very weak benchmark — a market closing total is far sharper, and until the model is scored against one there is no way to know whether any edge exists.</p></div></div></main>
+<main><div class="wrap"><p class='note'>No priced bets yet.</p><div class='prose'><p>This page needs two things for the same game: a logged projection (written whenever a slate is built) and a market line. Pull lines with:</p><p><code>python odds.py fetch --key YOUR_KEY</code></p><p>Only BetOnline is used. Mixing books invites shopping the best number across several and calling the difference an edge, which mostly measures how stale one book is.</p><p>Logging these prices daily is the highest-value thing left to do. The backtest can only score this model against a league-average constant, which it barely beats. A market closing total is far sharper, and until the model is measured against one there is no way to know whether an edge exists.</p><p class='note'>Execution failed on sql '
+        SELECT p.*, m.total AS mkt_total, m.over_price, m.under_price,
+               m.away_m</p></div></div></main>
 <script>
 (function(){
   var val=function(el,t){
