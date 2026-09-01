@@ -195,48 +195,67 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Aug 31, 2026 10:51</span></div>
-<nav><a href="index.html" class="">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="">Form</a><a href="ev.html" class="">Market</a><a href="tracking.html" class="">Tracking</a><a href="teams.html" class="">Teams</a><a href="about.html" class="on">About</a></nav>
+<span class="stamp">MLB &middot; built Sep 01, 2026 08:01</span></div>
+<nav><a href="index.html" class="">Games</a><a href="ev.html" class="">Market</a><a href="teams.html" class="">Teams</a><a href="tracking.html" class="">Tracking</a><a href="about.html" class="on">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
-<main><div class="wrap">
-<h2>Two models, one site</h2>
-<p class="note">Both models share everything except which plate appearances
-build the rates: the same regression, log5, base-out simulator, park and
-umpire handling, advancement and bullpen construction. That is deliberate.
-Two models differing in four ways cannot tell you which difference moved the
-number.</p>
+<main><div class="wrap"><div class='toc'>
+<a href='#values'>Every value on this site</a>
+<a href='#data'>Where the data comes from</a>
+<a href='#reg'>Regression</a>
+<a href='#sim'>The simulator</a></div>
+<div class='prose'>
+<p>This site publishes output from an MLB model built from pitch-level
+Statcast data. Everything below describes how a number gets made, so you can
+judge how much weight it deserves.</p>
 
-<h2>The daily model</h2>
-<p class="note">Trailing calendar windows &mdash; last 30, 14 and 7 days,
-alongside the full season. This is the model the Market and Tracking pages
-score, and the only one whose calibration constants were fitted.</p>
+<h3 id='values'>Every value on this site</h3></div>
+<table><thead><tr><th>Term</th><th>What it means</th></tr></thead><tbody>
+<tr><td class='team'>Runs</td><td>Mean projected runs for that team across all simulations. The total and the moneyline carry the signal; the two team numbers just split it.</td></tr>
+<tr><td class='team'>Total</td><td>Projected combined runs.</td></tr>
+<tr><td class='team'>F5</td><td>Projected runs through five complete innings. Cleaner than the full game, because five innings are always played — no ninth-inning truncation — and it leans on the starters, where the data is strongest.</td></tr>
+<tr><td class='team'>Win / Fair</td><td>Share of simulations that team wins, and the no-vig American price implied by it. A book at -110 both ways implies 104.8%; the extra is its margin.</td></tr>
+<tr><td class='team'>xwOBA</td><td>Expected wOBA from contact quality — exit velocity and launch angle — rather than what actually fell in. Stabilises in roughly a third the sample of wOBA.</td></tr>
+<tr><td class='team'>Barrel%</td><td>Share of batted balls in the exit-velocity/launch-angle combination that produces the best outcomes.</td></tr>
+<tr><td class='team'>Park factor</td><td>Runs at that venue relative to neutral, from home/road splits regressed toward published multi-year figures.</td></tr>
+</tbody></table>
+<div class='prose'>
+<h3 id='data'>Where the data comes from</h3>
+<p>Every pitch of the season from Baseball Savant, stored raw. Game logs,
+plate appearances, times through the order and base-out transitions are all
+derived from that one table, so a definition change is a rebuild rather than a
+re-scrape.</p>
+<p>Lineups come from Baseball Monster and are keyed on MLBAM player ids, the
+same ids Statcast uses, so no name matching is involved. Schedule, weather and
+umpire assignments come from the MLB Stats API.</p>
 
-<h2>The form model</h2>
-<p class="note">Windows counted in games played rather than days &mdash; last
-15, 7 and 3 &mdash; and each player read only from the side of the venue he
-occupies today. A calendar window hands every player the same number of days
-and a wildly different number of plate appearances; a game-count window
-equalises the sample the regression actually cares about, and does not punish a
-player for an off-day or a rainout.</p>
-<p class="note">The venue split reaches back further than it sounds. Teams
-travel in series, so a hitter's last three road games are usually four to eight
-days back and his last fifteen are most of six weeks. For a starting pitcher,
-who works every fifth day and splits his turns, fifteen road starts is close to
-a full season.</p>
-<p class="note">Because a home split is built entirely from one park, the
-observed rates already carry it, and applying the park factor again would count
-it twice. Every form rate is divided by the plate-appearance-weighted park
-factor of the games behind it before the simulator applies today's park. The
-correction acts on the observed counts alone; the regression anchor is already
-park-neutral.</p>
+<h3 id='reg'>Regression</h3>
+<p>A rate observed over 40 plate appearances is mostly noise. Every input is
+shrunk toward a target by sample size, using the point at which that statistic
+carries about half its own weight: strikeout rate at 60 PA, walk rate at 120,
+home run rate at 170, doubles past 1600.</p>
+<p>The target is not league average. For home runs and hits it is the rate
+implied by that player's own barrel and hard-hit rates, which stabilise in
+roughly a third the sample. That change alone recovered about two and a half
+times more spread between pitchers than regressing to the league mean.</p>
+<p>Individual platoon splits get the same treatment and are heavily shrunk,
+because they need something like 1000 PA against one hand to mean much. A
+splits leaderboard showing a hitter at .420 against lefties over 60 PA is
+showing you noise.</p>
 
-<h2>What is not established</h2>
-<p class="note">The form windows have not been backtested. The calibration
-constants and the edge figures on Tracking were both measured on season rates
-and do not carry over. The Dashboard's scored record is the honest comparison,
-and it only accumulates forward from the first day both models were built.</p>
-</div></main>
+<h3 id='sim'>The simulator</h3>
+<p>Batter and pitcher rates are combined with the odds-ratio (log5) method
+against the league rate for that exact handedness pair, then the lineup is run
+through base-out states ten thousand or more times per game.</p>
+<p>Advancement is measured, not assumed: the distribution of what happens from
+each of the 24 base-out states comes straight from this season's pitch data, so
+wild pitches, steals, errors and situational contact are included without being
+enumerated. Verified against the league's actual run total to the penny.</p>
+<p>A single offensive multiplier is drawn per simulated game to represent
+conditions shared across a whole game. Without it the simulated distribution is
+too narrow.</p>
+
+</div></div></main>
 <script>
 (function(){
   var val=function(el,t){
