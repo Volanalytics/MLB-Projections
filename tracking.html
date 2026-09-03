@@ -79,6 +79,16 @@ th[data-t]::after{content:"";opacity:.35;margin-left:6px;font-size:10px}
 th[data-t][data-dir="asc"]::after{content:"\2191";opacity:1;color:var(--accent)}
 th[data-t][data-dir="desc"]::after{content:"\2193";opacity:1;color:var(--accent)}
 th[data-t]:not([data-dir])::after{content:"\2195"}
+/* Rank badge for a multi-key sort. Only drawn from the second key on: a
+   lone "1" on a single-column sort is noise, and that is the common case. */
+th[data-t][data-rank]::before{content:attr(data-rank);font-size:9px;
+  color:var(--accent);opacity:.85;margin-right:4px;vertical-align:super}
+.sortbar{color:var(--muted);font-size:12px;margin:0 0 8px;min-height:16px}
+.sortbar b{color:var(--accent);font-weight:500}
+.sortbar .clr{color:var(--muted);cursor:pointer;margin-left:10px;
+  border-bottom:1px dotted var(--line)}
+.sortbar .clr:hover{color:var(--chalk)}
+.sortbar .clr.on{color:var(--accent);border-bottom-style:solid}
 .tools{display:flex;gap:8px;align-items:center;margin:0 0 14px}
 .tools input{flex:1;background:var(--panel);color:var(--chalk);
   border:1px solid var(--line);border-radius:6px;padding:9px 11px;
@@ -195,7 +205,7 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Sep 02, 2026 16:21</span></div>
+<span class="stamp">MLB &middot; built Sep 02, 2026 21:38</span></div>
 <nav><a href="index.html" class="">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="">Form</a><a href="ev.html" class="">Market</a><a href="tracking.html" class="on">Tracking</a><a href="teams.html" class="">Teams</a><a href="about.html" class="">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
@@ -210,38 +220,106 @@ header .wrap{position:relative}
   };
   document.querySelectorAll('table').forEach(function(tb){
     var heads=tb.querySelectorAll('thead th');
+    // The sort stack: [{i, t, dir}], first entry is the primary key. A plain
+    // click replaces it; shift/ctrl/cmd-click appends, so "price desc, then
+    // L3g desc" is two clicks. Cycling a key that is already in the stack
+    // goes asc -> desc -> removed, which is how a key gets dropped without
+    // resetting the others.
+    var stack=[];
+    var bar=null;
+    var addMode=false;
+    var label=function(k){
+      var th=heads[k.i];
+      var txt=(th.textContent||'').trim()||'col '+(k.i+1);
+      return txt+' '+(k.dir==='asc'?'\u2191':'\u2193');
+    };
+    var paint=function(){
+      heads.forEach(function(h){
+        h.removeAttribute('data-dir');h.removeAttribute('data-rank');});
+      stack.forEach(function(k,n){
+        heads[k.i].setAttribute('data-dir',k.dir);
+        if(stack.length>1)heads[k.i].setAttribute('data-rank',n+1);
+      });
+      if(!bar)return;
+      // The +key chip is the touch equivalent of shift-click, since the
+      // dashboard table stays on screen at phone widths and there is no
+      // modifier available there.
+      var html='<span class="clr add'+(addMode?' on':'')+'">+key</span>';
+      if(stack.length){
+        html='sorted by '+stack.map(function(k){
+          return '<b>'+label(k)+'</b>';}).join(' &rsaquo; ')+
+          '<span class="clr wipe">clear</span>'+html;
+      }
+      bar.innerHTML=html;
+      var w=bar.querySelector('.wipe');
+      if(w)w.addEventListener('click',function(){stack=[];paint();});
+      var ad=bar.querySelector('.add');
+      if(ad)ad.addEventListener('click',function(){addMode=!addMode;paint();});
+    };
+    var apply=function(){
+      var body=tb.querySelector('tbody');
+      var all=Array.prototype.slice.call(body.querySelectorAll('tr'));
+      var rows=all.filter(function(r){return !r.classList.contains('det');});
+      var dets={};
+      all.forEach(function(r){
+        if(r.classList.contains('det'))dets[r.getAttribute('data-g')]=r;
+      });
+      // Remember the incoming order so the comparator can fall back to it.
+      // Array.prototype.sort is stable in every browser this targets, but
+      // being explicit keeps a full tie from depending on that.
+      rows.forEach(function(r,n){r._n=n;});
+      rows.sort(function(a,b){
+        for(var s=0;s<stack.length;s++){
+          var k=stack[s];
+          if(!a.cells[k.i]||!b.cells[k.i])continue;
+          var x=val(a.cells[k.i],k.t),y=val(b.cells[k.i],k.t);
+          if(x<y)return k.dir==='asc'?-1:1;
+          if(x>y)return k.dir==='asc'?1:-1;
+        }
+        return a._n-b._n;
+      });
+      rows.forEach(function(r){
+        body.appendChild(r);
+        var g=r.getAttribute('data-g');
+        if(g!==null&&dets[g])body.appendChild(dets[g]);
+      });
+    };
     heads.forEach(function(th,i){
       if(!th.hasAttribute('data-t'))return;
       th.setAttribute('tabindex','0');
-      var go=function(){
+      var go=function(add){
         var t=th.getAttribute('data-t');
-        var dir=th.getAttribute('data-dir')==='asc'?'desc':'asc';
-        heads.forEach(function(h){h.removeAttribute('data-dir');});
-        th.setAttribute('data-dir',dir);
-        var body=tb.querySelector('tbody');
-        var all=Array.prototype.slice.call(body.querySelectorAll('tr'));
-        var rows=all.filter(function(r){return !r.classList.contains('det');});
-        var dets={};
-        all.forEach(function(r){
-          if(r.classList.contains('det'))dets[r.getAttribute('data-g')]=r;
-        });
-        rows.sort(function(a,b){
-          var x=val(a.cells[i],t),y=val(b.cells[i],t);
-          if(x<y)return dir==='asc'?-1:1;
-          if(x>y)return dir==='asc'?1:-1;
-          return 0;
-        });
-        rows.forEach(function(r){
-          body.appendChild(r);
-          var g=r.getAttribute('data-g');
-          if(g!==null&&dets[g])body.appendChild(dets[g]);
-        });
+        var at=-1;
+        for(var s=0;s<stack.length;s++)if(stack[s].i===i){at=s;break;}
+        if(!add){
+          // Plain click on a key that is already primary just flips it;
+          // otherwise it becomes the only key.
+          var dir=(stack.length===1&&at===0&&stack[0].dir==='asc')?'desc':'asc';
+          stack=[{i:i,t:t,dir:dir}];
+        }else if(at<0){
+          stack.push({i:i,t:t,dir:'asc'});
+        }else if(stack[at].dir==='asc'){
+          stack[at].dir='desc';
+        }else{
+          stack.splice(at,1);
+        }
+        paint();apply();
       };
-      th.addEventListener('click',go);
+      th.addEventListener('click',function(ev){
+        go(ev.shiftKey||ev.ctrlKey||ev.metaKey||addMode);
+      });
       th.addEventListener('keydown',function(ev){
-        if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();go();}
+        if(ev.key==='Enter'||ev.key===' '){
+          ev.preventDefault();go(ev.shiftKey||addMode);}
       });
     });
+    // Readout sits directly above its own table, so a page with two tables
+    // gets two independent stacks and two independent bars.
+    var host=tb.parentNode;
+    bar=document.createElement('div');
+    bar.className='sortbar';
+    host.parentNode.insertBefore(bar,host);
+    paint();
   });
   var tbl=document.querySelector('table'),
       tb=tbl?tbl.querySelector('tbody'):null;
