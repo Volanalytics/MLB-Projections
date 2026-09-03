@@ -143,12 +143,30 @@ tr.det .pin th:first-child,tr.det .pin td:first-child,
   background:var(--panel);min-width:104px}
 .det2 .wingrid.pin td.k,.det2 .wingrid.pin th.k{background:var(--panel-2)}
 .wingrid th.v,.wingrid td.v{min-width:56px}
+/* The dashboard is a single slate, so every Date cell holds the same string.
+   Pinning it - which is what .pin does by default - locks the one column
+   that carries no per-row information and lets the matchup scroll away.
+   Release Date and pin Game in its place, at every width. Date still
+   scrolls, passing under the pinned cell, which is why Game needs its own
+   background and a z-index above it.
+
+   nth-child(2), not :first-child - the Date column stays in the DOM (the
+   sort handler indexes cells positionally via cells[k.i], so removing or
+   hiding it structurally would break sorting on everything to its right). */
+.dash th:first-child,.dash td:first-child{position:static}
+.dash th:nth-child(2),.dash td:nth-child(2){position:sticky;left:0;z-index:2;
+  background:var(--field);box-shadow:1px 0 0 var(--line)}
+.dash tbody tr:hover td:nth-child(2){background:var(--panel)}
+.det2 .dash th:nth-child(2),.det2 .dash td:nth-child(2){background:var(--panel-2)}
 @media(max-width:760px){
   th[data-t]{padding:11px 10px}   /* larger tap target for sorting */
   tr.det > td{padding:12px 10px}
   .mx{gap:12px}
   .wingrid{font-size:11px}
   .wingrid th,.wingrid td{padding:4px 6px}
+  /* On a phone the repeated date is not just redundant, it costs ~90px of a
+     ~380px viewport. Desktop has the room, so it keeps it. */
+  .dash th:first-child,.dash td:first-child{display:none}
 }
 .swipe{display:none;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--muted);margin:0 0 4px}
@@ -205,7 +223,7 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Sep 02, 2026 21:38</span></div>
+<span class="stamp">MLB &middot; built Sep 02, 2026 22:12</span></div>
 <nav><a href="index.html" class="">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="">Form</a><a href="ev.html" class="">Market</a><a href="tracking.html" class="">Tracking</a><a href="teams.html" class="on">Teams</a><a href="about.html" class="">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
