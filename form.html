@@ -73,8 +73,10 @@ tbody tr:hover{background:var(--panel)}
   .board{display:block}
   .wrap{padding:0 12px}
 }
-th[data-t]{cursor:pointer;user-select:none;position:relative}
+th[data-t]{cursor:pointer;user-select:none;position:relative;
+  touch-action:manipulation}
 th[data-t]:hover{color:var(--chalk)}
+th[data-t]:active{color:var(--accent)}
 th[data-t]::after{content:"";opacity:.35;margin-left:6px;font-size:10px}
 th[data-t][data-dir="asc"]::after{content:"\2191";opacity:1;color:var(--accent)}
 th[data-t][data-dir="desc"]::after{content:"\2193";opacity:1;color:var(--accent)}
@@ -83,10 +85,17 @@ th[data-t]:not([data-dir])::after{content:"\2195"}
    lone "1" on a single-column sort is noise, and that is the common case. */
 th[data-t][data-rank]::before{content:attr(data-rank);font-size:9px;
   color:var(--accent);opacity:.85;margin-right:4px;vertical-align:super}
-.sortbar{color:var(--muted);font-size:12px;margin:0 0 8px;min-height:16px}
-.sortbar b{color:var(--accent);font-weight:500}
-.sortbar .clr{color:var(--muted);cursor:pointer;margin-left:10px;
-  border-bottom:1px dotted var(--line)}
+.sortbar{color:var(--muted);font-size:12px;margin:0 0 8px;min-height:16px;
+  display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.sortbar .key{color:var(--accent);cursor:pointer;padding:3px 4px 3px 7px;
+  border:1px solid var(--line);border-radius:4px;white-space:nowrap;
+  touch-action:manipulation}
+.sortbar .key:hover{border-color:var(--accent)}
+.sortbar .key .x{display:inline-block;margin-left:5px;padding:0 4px;
+  color:var(--muted);font-size:13px;line-height:1}
+.sortbar .key .x:hover{color:var(--chalk)}
+.sortbar .clr{color:var(--muted);cursor:pointer;padding:3px 6px;
+  border-bottom:1px dotted var(--line);touch-action:manipulation}
 .sortbar .clr:hover{color:var(--chalk)}
 .sortbar .clr.on{color:var(--accent);border-bottom-style:solid}
 .tools{display:flex;gap:8px;align-items:center;margin:0 0 14px}
@@ -223,7 +232,7 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Sep 02, 2026 22:20</span></div>
+<span class="stamp">MLB &middot; built Sep 02, 2026 22:25</span></div>
 <nav><a href="index.html" class="">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="on">Form</a><a href="ev.html" class="">Market</a><a href="tracking.html" class="">Tracking</a><a href="teams.html" class="">Teams</a><a href="about.html" class="">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
@@ -240,12 +249,20 @@ header .wrap{position:relative}
     var heads=tb.querySelectorAll('thead th');
     // The sort stack: [{i, t, dir}], first entry is the primary key. A plain
     // click replaces it; shift/ctrl/cmd-click appends, so "price desc, then
-    // L3g desc" is two clicks. Cycling a key that is already in the stack
-    // goes asc -> desc -> removed, which is how a key gets dropped without
-    // resetting the others.
+    // L3g desc" is two clicks.
+    //
+    // Direction rules, all aimed at one click doing what was meant:
+    //   - a numeric column opens descending, a text column ascending. Nobody
+    //     opens an EV column wanting the worst number on top.
+    //   - clicking a key already in the stack flips it and nothing else, so
+    //     the primary stays flippable no matter how many keys are behind it.
+    //   - a key is never removed by clicking its header. Two states on a
+    //     narrow target, not three - overshooting used to delete the key
+    //     instead of flipping it back. Removal lives on the readout below.
     var stack=[];
     var bar=null;
     var addMode=false;
+    var open=function(t){return t==='num'?'desc':'asc';};
     var label=function(k){
       var th=heads[k.i];
       var txt=(th.textContent||'').trim()||'col '+(k.i+1);
@@ -259,16 +276,29 @@ header .wrap{position:relative}
         if(stack.length>1)heads[k.i].setAttribute('data-rank',n+1);
       });
       if(!bar)return;
-      // The +key chip is the touch equivalent of shift-click, since the
-      // dashboard table stays on screen at phone widths and there is no
-      // modifier available there.
-      var html='<span class="clr add'+(addMode?' on':'')+'">+key</span>';
+      // The readout is the roomy control. Header cells on this table are
+      // ~60px wide; these chips are not, so flipping and removing a key are
+      // easier here than up there. The +key chip is also the touch
+      // equivalent of shift-click, since the dashboard table stays on screen
+      // at phone widths and there is no modifier available.
+      var html='';
       if(stack.length){
-        html='sorted by '+stack.map(function(k){
-          return '<b>'+label(k)+'</b>';}).join(' &rsaquo; ')+
-          '<span class="clr wipe">clear</span>'+html;
+        html='sorted by '+stack.map(function(k,n){
+          return '<span class="key" data-k="'+n+'">'+label(k)+
+                 '<span class="x">\u00d7</span></span>';
+        }).join(' &rsaquo; ')+'<span class="clr wipe">clear</span>';
       }
+      html+='<span class="clr add'+(addMode?' on':'')+'">+key</span>';
       bar.innerHTML=html;
+      Array.prototype.forEach.call(bar.querySelectorAll('.key'),function(el){
+        el.addEventListener('click',function(ev){
+          var n=parseInt(el.getAttribute('data-k'),10);
+          if(isNaN(n)||!stack[n])return;
+          if(ev.target&&ev.target.className==='x')stack.splice(n,1);
+          else stack[n].dir=stack[n].dir==='asc'?'desc':'asc';
+          paint();apply();
+        });
+      });
       var w=bar.querySelector('.wipe');
       if(w)w.addEventListener('click',function(){stack=[];paint();});
       var ad=bar.querySelector('.add');
@@ -309,17 +339,13 @@ header .wrap{position:relative}
         var t=th.getAttribute('data-t');
         var at=-1;
         for(var s=0;s<stack.length;s++)if(stack[s].i===i){at=s;break;}
-        if(!add){
-          // Plain click on a key that is already primary just flips it;
-          // otherwise it becomes the only key.
-          var dir=(stack.length===1&&at===0&&stack[0].dir==='asc')?'desc':'asc';
-          stack=[{i:i,t:t,dir:dir}];
-        }else if(at<0){
-          stack.push({i:i,t:t,dir:'asc'});
-        }else if(stack[at].dir==='asc'){
-          stack[at].dir='desc';
+        if(at>=0){
+          // Already a key: flip it, leave its position and the rest alone.
+          stack[at].dir=stack[at].dir==='asc'?'desc':'asc';
+        }else if(add){
+          stack.push({i:i,t:t,dir:open(t)});
         }else{
-          stack.splice(at,1);
+          stack=[{i:i,t:t,dir:open(t)}];
         }
         paint();apply();
       };
