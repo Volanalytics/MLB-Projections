@@ -1,443 +1,534 @@
-<!doctype html>
-<html lang="en"><head><meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="color-scheme" content="dark">
-<title>MLB Projections &middot; Dashboard</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<!-- Without this, phones assume a ~980px layout and scale the whole page down. -->
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#08161B">
+<title>BetOnline MLB odds</title>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --field:#08161B; --panel:#102A31; --panel-2:#173A44;
-  --line:#1F5058;
-  --chalk:#EAF0F6; --muted:#8199B0; --accent:#3FD0C9;
-  --gain:#8CC63F; --loss:#E8615C;
+  --field:#08161B; --panel:#0D2028; --panel2:#112932; --line:#1D3A44;
+  --ink:#DCE6E4; --dim:#7B968F; --chalk:#F2F7F5;
+  --m2:#F07E7C; --m5:#EFC24B; --m10:#5DCAA5; --live:#5A1414;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--field);color:var(--chalk);
-  font-family:"Roboto Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
-  font-size:14px;line-height:1.55;-webkit-text-size-adjust:100%;
-  font-variant-numeric:tabular-nums}
-a{color:var(--accent);text-decoration:none}
-header{border-bottom:1px solid var(--line);background:var(--panel);
-  position:sticky;top:0;z-index:5}
-.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
-.brand{display:flex;align-items:baseline;gap:12px;padding:14px 0 0}
-.brand h1{font-weight:700;font-size:22px;letter-spacing:.14em;
-  text-transform:uppercase;margin:0}
-.brand .stamp{font-size:11px;color:var(--muted);letter-spacing:.08em}
-nav{display:flex;gap:4px;padding:10px 0 0}
-nav a{padding:8px 14px;border-radius:6px 6px 0 0;font-size:13px;
-  letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
-  font-weight:500}
-nav a.on{background:var(--field);color:var(--chalk);
-  box-shadow:inset 0 2px 0 var(--accent)}
-main{padding:22px 0 60px}
-.note{color:var(--muted);font-size:13px;margin:0 0 18px;max-width:70ch}
-h2{font-weight:700;font-size:16px;letter-spacing:.12em;
-  text-transform:uppercase;margin:26px 0 10px;color:var(--chalk)}
-h2:first-of-type{margin-top:0}
-table{width:100%;border-collapse:collapse;font-size:14px}
-th{font-weight:500;font-size:11px;
-  letter-spacing:.12em;text-transform:uppercase;color:var(--muted);
-  text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);
-  white-space:nowrap;background:var(--field)}
-td{padding:9px 10px;border-bottom:1px solid rgba(36,64,92,.5)}
-tbody tr:hover{background:var(--panel)}
-.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
-.team{font-weight:500}
-.fav{color:var(--accent)}
-.date{color:var(--muted);font-size:13px}
-.pos{color:var(--gain)} .neg{color:var(--loss)}
-.pill{display:inline-block;padding:1px 7px;border-radius:99px;font-size:10px;
-  letter-spacing:.08em;text-transform:uppercase;background:var(--panel-2);
-  color:var(--muted)}
-.board{display:none}
-.game{background:var(--panel);border:1px solid var(--line);border-radius:10px;
-  margin:0 0 10px;overflow:hidden}
-.game .kick{padding:7px 12px;background:var(--panel-2);font-size:11px;
-  letter-spacing:.08em;color:var(--muted);
-  display:flex;justify-content:space-between;align-items:center}
-.game .side{display:flex;justify-content:space-between;align-items:center;
-  padding:10px 12px}
-.game .side + .side{border-top:1px solid rgba(36,64,92,.6)}
-.game .side .nm{font-weight:500;font-size:14px}
-.game .side .sc{font-weight:700;font-size:26px;line-height:1;
-  font-variant-numeric:tabular-nums;letter-spacing:-.02em}
-.game .side.win .sc{color:var(--accent)}
-.game .foot{padding:7px 12px;border-top:1px solid rgba(36,64,92,.6);
-  font-size:11px;color:var(--muted);display:flex;gap:14px;
-  letter-spacing:.06em}
-@media(max-width:760px){
-  .tbl{display:none}
-  .board{display:block}
-  .wrap{padding:0 12px}
-}
-th[data-t]{cursor:pointer;user-select:none;position:relative;
-  touch-action:manipulation}
-th[data-t]:hover{color:var(--chalk)}
-th[data-t]:active{color:var(--accent)}
-th[data-t]::after{content:"";opacity:.35;margin-left:6px;font-size:10px}
-th[data-t][data-dir="asc"]::after{content:"\2191";opacity:1;color:var(--accent)}
-th[data-t][data-dir="desc"]::after{content:"\2193";opacity:1;color:var(--accent)}
-th[data-t]:not([data-dir])::after{content:"\2195"}
-/* Rank badge for a multi-key sort. Only drawn from the second key on: a
-   lone "1" on a single-column sort is noise, and that is the common case. */
-th[data-t][data-rank]::before{content:attr(data-rank);font-size:9px;
-  color:var(--accent);opacity:.85;margin-right:4px;vertical-align:super}
-.sortbar{color:var(--muted);font-size:12px;margin:0 0 8px;min-height:16px;
-  display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.sortbar .key{color:var(--accent);cursor:pointer;padding:3px 4px 3px 7px;
-  border:1px solid var(--line);border-radius:4px;white-space:nowrap;
-  touch-action:manipulation}
-.sortbar .key:hover{border-color:var(--accent)}
-.sortbar .key .x{display:inline-block;margin-left:5px;padding:0 4px;
-  color:var(--muted);font-size:13px;line-height:1}
-.sortbar .key .x:hover{color:var(--chalk)}
-.sortbar .clr{color:var(--muted);cursor:pointer;padding:3px 6px;
-  border-bottom:1px dotted var(--line);touch-action:manipulation}
-.sortbar .clr:hover{color:var(--chalk)}
-.sortbar .clr.on{color:var(--accent);border-bottom-style:solid}
-.tools{display:flex;gap:8px;align-items:center;margin:0 0 14px}
-.tools input{flex:1;background:var(--panel);color:var(--chalk);
-  border:1px solid var(--line);border-radius:6px;padding:9px 11px;
-  font-family:inherit;font-size:13px}
-.tools input::placeholder{color:var(--muted)}
-.tools .count{font-size:11px;color:var(--muted);letter-spacing:.08em;
-  white-space:nowrap}
-tr.row{cursor:pointer}
-tr.row td:first-child{position:relative;padding-left:22px}
-tr.row td:first-child::before{content:"\203A";position:absolute;left:8px;
-  color:var(--muted);transition:transform .12s;display:inline-block}
-tr.row.open td:first-child::before{transform:rotate(90deg);color:var(--accent)}
-tr.det{display:none}
-tr.det.show{display:table-row}
-tr.det > td{background:var(--panel);padding:14px 16px}
-.mx{display:grid;grid-template-columns:1fr 1fr;gap:18px}
-.mx h4{margin:0 0 8px;font-size:12px;letter-spacing:.12em;
-  text-transform:uppercase;color:var(--accent);font-weight:500}
-.mx table{font-size:12px}
-.mx td{padding:3px 6px;border:0}
-.mx .k{color:var(--muted)}
-.mx .v{text-align:right;font-variant-numeric:tabular-nums}
-table.wingrid{font-size:12px;margin-top:4px}
-table.wingrid th{padding:4px 8px;background:transparent;border-bottom:1px solid var(--line)}
-table.wingrid th.v{text-align:right}
-table.wingrid td{padding:4px 8px;border-bottom:1px solid rgba(36,64,92,.35)}
-table.wingrid td.k{color:var(--muted);text-align:left;white-space:nowrap}
-table.wingrid td.v{text-align:right;font-variant-numeric:tabular-nums}
-table.wingrid tr.shared td{color:var(--muted)}
-table.wingrid tr.shared td.v{color:var(--chalk)}
-.game .det2{display:none;padding:12px;border-top:1px solid var(--line);
-  background:var(--panel-2)}
-.game.open .det2{display:block}
-.game .kick{cursor:pointer}
-@media(max-width:760px){.mx{grid-template-columns:1fr}}
-/* Wide tables scroll sideways instead of being clipped. The first column is
-   pinned so the team name stays visible while the numbers move under it -
-   without that, a horizontally scrolled row is unreadable. */
-.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;
-  scrollbar-width:thin;scrollbar-color:var(--line) transparent}
-.scroll > table{min-width:max-content}
-.scroll::-webkit-scrollbar{height:6px}
-.scroll::-webkit-scrollbar-thumb{background:var(--line);border-radius:3px}
-.pin th:first-child,.pin td:first-child{position:sticky;left:0;z-index:2;
-  background:var(--field)}
-.pin tbody tr:hover td:first-child{background:var(--panel)}
-tr.det .pin th:first-child,tr.det .pin td:first-child,
-.det2 .pin th:first-child,.det2 .pin td:first-child{background:var(--panel)}
-.det2 .pin th:first-child,.det2 .pin td:first-child{background:var(--panel-2)}
-.scroll{max-width:100%}
-.wingrid.pin td.k,.wingrid.pin th.k{position:sticky;left:0;z-index:2;
-  background:var(--panel);min-width:104px}
-.det2 .wingrid.pin td.k,.det2 .wingrid.pin th.k{background:var(--panel-2)}
-.wingrid th.v,.wingrid td.v{min-width:56px}
-/* The dashboard is a single slate, so every Date cell holds the same string.
-   Pinning it - which is what .pin does by default - locks the one column
-   that carries no per-row information and lets the matchup scroll away.
-   Release Date and pin Game in its place, at every width. Date still
-   scrolls, passing under the pinned cell, which is why Game needs its own
-   background and a z-index above it.
+body{margin:0;background:var(--field);color:var(--ink);
+     font-family:"Roboto Mono",ui-monospace,monospace;font-size:13px;
+     -webkit-text-size-adjust:100%}
+header{position:sticky;top:0;z-index:20;background:var(--field);
+       border-bottom:1px solid var(--line)}
+.legend{display:flex;font-size:11px;font-weight:500}
+.legend div{flex:1;text-align:center;padding:4px 2px;color:#0A1518}
+.bar{display:flex;justify-content:space-between;align-items:baseline;
+     gap:10px;padding:8px 14px}
+.bar h1{margin:0;font-size:15px;font-weight:700;color:var(--chalk);letter-spacing:.5px}
+.bar .meta{font-size:11px;color:var(--dim);text-align:right}
 
-   nth-child(2), not :first-child - the Date column stays in the DOM (the
-   sort handler indexes cells positionally via cells[k.i], so removing or
-   hiding it structurally would break sorting on everything to its right). */
-.dash th:first-child,.dash td:first-child{position:static}
-.dash th:nth-child(2),.dash td:nth-child(2){position:sticky;left:0;z-index:2;
-  background:var(--field);box-shadow:1px 0 0 var(--line)}
-.dash tbody tr:hover td:nth-child(2){background:var(--panel)}
-.det2 .dash th:nth-child(2),.det2 .dash td:nth-child(2){background:var(--panel-2)}
-@media(max-width:760px){
-  th[data-t]{padding:11px 10px}   /* larger tap target for sorting */
-  tr.det > td{padding:12px 10px}
-  .mx{gap:12px}
-  .wingrid{font-size:11px}
-  .wingrid th,.wingrid td{padding:4px 6px}
-  /* On a phone the repeated date is not just redundant, it costs ~90px of a
-     ~380px viewport. Desktop has the room, so it keeps it. */
-  .dash th:first-child,.dash td:first-child{display:none}
+/* shared bits */
+.team{color:var(--chalk);font-weight:500}
+.pit{color:var(--dim);font-size:10px;line-height:1.35}
+.run{color:var(--m10);font-weight:700}
+.st{font-size:10px;color:var(--dim)}
+.st.live{color:var(--m5);font-weight:500}
+.st.warm{color:var(--m10)}
+.st.fin{color:var(--m10);font-weight:700}
+/* Possession dot, in the same amber as the live clock so the two read as one
+   piece of live state. */
+.ball{color:var(--m5);width:13px;height:8px;margin-right:5px;
+      vertical-align:baseline;flex:0 0 auto}
+/* Same colour as the game time above it -- the drive line is context, not an
+   alert, so the RZ badge carries the emphasis instead of the whole string. */
+.drv{font-size:10px;color:var(--m5);line-height:1.3;white-space:nowrap}
+/* Red fill with a yellow outline: a started game already has a dark red row
+   background, so red-on-red needs the border to separate it. The outline
+   clears 6:1 against both the red row and the normal panel. */
+.rzb{display:inline-block;background:#D93A38;color:#FFFFFF;
+     border:1px solid var(--m5);border-radius:3px;
+     padding:0 3px;margin-right:4px;font-size:9px;font-weight:700;
+     letter-spacing:.5px;vertical-align:1px}
+.rank{color:var(--m5);font-size:10px;font-weight:700;margin-right:3px;
+      vertical-align:top}
+.neu{display:inline-block;margin-top:3px;font-size:10px;font-weight:700;
+     letter-spacing:.5px;color:#04161A;background:var(--m10);
+     border-radius:3px;padding:1px 5px}
+.side{color:var(--dim);font-size:11px;display:inline-block;min-width:36px;
+      max-width:92px;text-align:left;overflow:hidden;text-overflow:ellipsis;
+      white-space:nowrap;vertical-align:bottom}
+/* Highlight chip. The colour is !important on purpose: .mv is a state class
+   that has to win over whatever text colour the surrounding cell sets, and
+   relying on declaration order broke once already (pale ink on yellow at
+   1.3:1). Near-black rather than pure black -- softer on an always-on
+   monitor, still 12:1+ against every band. */
+.mv{border-radius:3px;padding:1px 5px;font-weight:700;
+    color:#04161A !important;text-shadow:none}
+.mv2{background:var(--m2)!important}
+.mv5{background:var(--m5)!important}
+.mv10{background:var(--m10)!important}
+/* The trailing dot sits outside the chip, so it keeps card colour. */
+.mv+.dot{color:var(--m10)}
+.dot{color:var(--m10);font-size:10px;margin-left:3px}
+.tabs{display:flex;gap:0;border-bottom:1px solid var(--line);
+      overflow-x:auto;-webkit-overflow-scrolling:touch}
+.tabs button{flex:0 0 auto;background:none;border:0;border-bottom:2px solid transparent;
+  color:var(--dim);font-family:inherit;font-size:13px;font-weight:500;
+  letter-spacing:.5px;padding:9px 18px;cursor:pointer;white-space:nowrap}
+.tabs button:hover{color:var(--ink)}
+.tabs button.on{color:var(--chalk);border-bottom-color:var(--m10)}
+.tabs .n{color:var(--dim);font-weight:400;margin-left:6px;font-size:11px}
+.tabs button.on .n{color:var(--m10)}
+.boxable{cursor:pointer}
+.boxable:hover{outline:1px solid var(--m10);outline-offset:-1px}
+table.box{width:auto;border-collapse:collapse;font-size:11px;margin-bottom:6px}
+table.box th{position:static;background:none;border:0;padding:2px 7px;
+             color:var(--dim);font-weight:500;text-align:right;font-size:10px}
+table.box td{border:0;padding:2px 7px;text-align:right;background:none;
+             color:var(--ink)}
+table.box .bt{text-align:left;color:var(--chalk);font-weight:500;padding-right:14px}
+table.box .tot{color:var(--m10);font-weight:700}
+.leads{display:flex;flex-wrap:wrap;gap:4px 22px;margin-top:4px}
+.lead{font-size:10px;white-space:nowrap}
+.lcat{color:var(--dim);margin-right:6px}
+.lwho{color:var(--chalk);margin-right:6px}
+.lval{color:var(--ink)}
+.bmsg{color:var(--dim);font-size:11px}
+.empty{padding:40px;text-align:center;color:var(--dim)}
+
+/* ── desktop table ───────────────────────────────────────────── */
+table{width:100%;border-collapse:collapse}
+thead th{position:sticky;top:52px;background:var(--panel2);color:var(--dim);
+         font-size:11px;font-weight:500;text-align:center;padding:5px 6px;
+         border-bottom:1px solid var(--line);white-space:nowrap}
+thead th.l{text-align:left}
+td{padding:3px 6px;border-bottom:1px solid rgba(29,58,68,.5);
+   text-align:center;white-space:nowrap;vertical-align:top}
+td.l{text-align:left}
+/* One team per line. Previously both were inline-block, so with no pitcher
+   between them -- football has none -- they ran together on a single row. */
+td.l .trow{display:flex;justify-content:space-between;align-items:baseline;
+           gap:10px;white-space:normal;line-height:1.3;max-width:250px}
+td.l .tname{flex:1;min-width:0}
+td.l .run{flex:0 0 auto;text-align:right}
+td.l .team{white-space:normal}
+td.l .rank{vertical-align:baseline}
+tr.g0{background:var(--panel)} tr.g1{background:var(--panel2)}
+tr.started td{background:var(--live)}
+tr.slate td{background:var(--field);color:var(--chalk);font-weight:700;
+            font-size:12px;letter-spacing:1px;text-align:left;
+            padding:8px 14px 5px;border-bottom:1px solid var(--line)}
+td.hot{cursor:pointer}
+td.hot:hover{outline:1px solid var(--m10);outline-offset:-1px}
+td.sel{outline:1px solid var(--chalk);outline-offset:-1px}
+.time{color:var(--dim);font-size:11px}
+.open{color:var(--dim)}
+/* Opening price, shown under the current one on sides that moved. */
+.opn{color:var(--dim);font-size:10px;line-height:1.3;opacity:.75}
+.cur{color:var(--ink)}
+tr.det td{background:#061014;padding:0;text-align:left}
+.dwrap{padding:10px 16px}
+.dhead{color:var(--chalk);font-weight:500;margin-bottom:6px;font-size:12px}
+.dwrap table{width:auto;min-width:340px}
+.dwrap td{border:0;padding:2px 18px 2px 0;font-size:11px;background:none}
+.dts{color:var(--dim)}
+.dnow{color:var(--m10)}
+
+/* ── mobile cards ────────────────────────────────────────────── */
+#cards{display:none;padding:8px}
+.slab{color:var(--chalk);font-weight:700;font-size:12px;letter-spacing:1px;
+      padding:10px 4px 6px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:6px;
+      margin-bottom:8px;overflow:hidden}
+.card.started{background:var(--live)}
+.chead{display:flex;justify-content:space-between;align-items:flex-start;
+       gap:8px;padding:8px 10px;border-bottom:1px solid var(--line)}
+.chead > div:first-child{flex:1;min-width:0}
+.crow{display:flex;align-items:baseline;justify-content:space-between;
+      gap:10px;line-height:1.5}
+.crow .tname{flex:1;min-width:0}
+.crow .run{flex:0 0 auto}
+.cmeta{text-align:right;font-size:11px;color:var(--dim);white-space:nowrap}
+.mkts{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+      gap:1px;background:var(--line)}
+.mk{background:var(--panel2);padding:6px 8px;min-height:52px;
+    min-width:0;overflow:hidden}
+.card.started .mk{background:#4A1111}
+.mk.hot{cursor:pointer}
+.mk.sel{outline:1px solid var(--chalk);outline-offset:-1px}
+.mklbl{color:var(--dim);font-size:10px;letter-spacing:.5px;margin-bottom:2px}
+.mkln{font-size:12px;line-height:1.5;white-space:nowrap;
+      overflow:hidden;text-overflow:ellipsis}
+.chist{background:#061014;padding:8px 10px}
+.chist .dhead{font-size:11px}
+.chist .hrow{display:flex;justify-content:space-between;font-size:11px;
+             padding:1px 0}
+
+@media (max-width:900px){
+  table{display:none}
+  #cards{display:block}
+  .legend{font-size:10px}
+  .legend div{padding:4px 1px}
+  .bar h1{font-size:14px}
+  .bar .meta{font-size:11px}
+
+  /* Phone-only type scale. Desktop keeps the denser sizes above, since the
+     table has to fit eleven columns and this layout only has two. */
+  body{font-size:15px}
+  .card .team{font-size:17px}
+  .pit{font-size:12px}
+  .st{font-size:12px}
+  .drv{font-size:11px}
+  .rzb{font-size:10px}
+  .ball{width:15px;height:9px}
+  .cmeta{font-size:13px}
+  .slab{font-size:14px}
+  .mklbl{font-size:12px}
+  .mkln{font-size:14px}
+  .opn{font-size:11px}
+  .side{font-size:13px;min-width:44px}
+  @media (max-width:400px){
+    .mkln{font-size:13px}
+    .side{min-width:38px;max-width:74px;font-size:12px}
+  }
+  .chist .dhead{font-size:13px}
+  .chist .hrow{font-size:13px;padding:2px 0}
+  .mk{padding:8px 8px;min-height:64px}
 }
-.swipe{display:none;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--muted);margin:0 0 4px}
-@media(max-width:760px){.swipe{display:block}}
-.sorter{display:none;margin:0 0 12px;gap:8px;align-items:center}
-.sorter label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--muted)}
-.sorter select{background:var(--panel);color:var(--chalk);
-  border:1px solid var(--line);border-radius:6px;padding:7px 9px;
-  font-family:inherit;font-size:13px;flex:1}
-.sorter button{background:var(--panel);color:var(--chalk);
-  border:1px solid var(--line);border-radius:6px;padding:7px 11px;
-  font-family:inherit;font-size:13px;cursor:pointer}
-@media(max-width:760px){.sorter{display:flex}}
-.prose{max-width:78ch}
-.prose h3{font-size:14px;letter-spacing:.1em;text-transform:uppercase;
-  margin:28px 0 8px;color:var(--accent);font-weight:500}
-.prose p{margin:0 0 12px;color:#C4D2DF}
-.prose code{background:var(--panel);padding:1px 5px;border-radius:4px;
-  font-size:12px;color:var(--chalk)}
-.prose ul{margin:0 0 14px;padding-left:18px;color:#C4D2DF}
-.prose li{margin:0 0 6px}
-.toc{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 20px}
-.toc a{background:var(--panel);border:1px solid var(--line);border-radius:6px;
-  padding:5px 10px;font-size:12px;color:var(--chalk)}
-.toc a:hover{border-color:var(--accent)}
-.hit{color:var(--gain)} .miss{color:var(--loss)}
-.big{display:flex;gap:22px;flex-wrap:wrap;margin:0 0 20px}
-.big div{background:var(--panel);border:1px solid var(--line);
-  border-radius:8px;padding:12px 16px;min-width:120px}
-.big .n{font-size:24px;font-weight:700;font-variant-numeric:tabular-nums}
-.big .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;
-  color:var(--muted);margin-top:2px}
-footer{border-top:1px solid var(--line);color:var(--muted);font-size:12px;
-  padding:16px 0 40px}
-header .wrap{position:relative}
-.portal{position:absolute;right:16px;bottom:9px;
-  display:inline-flex;align-items:center;gap:7px;
-  background:#3FD0C9;color:#08161B;
-  font-family:inherit;font-size:12px;font-weight:700;
-  letter-spacing:.12em;text-transform:uppercase;
-  padding:8px 14px;border-radius:8px;white-space:nowrap;
-  box-shadow:0 3px 14px rgba(63,208,201,.30),0 1px 0 rgba(255,255,255,.10);
-  transition:transform .12s,box-shadow .12s,filter .12s}
-.portal:hover{color:#08161B;transform:translateY(-2px);filter:brightness(1.08);
-  box-shadow:0 6px 20px rgba(63,208,201,.42),0 1px 0 rgba(255,255,255,.14)}
-.portal:active{transform:translateY(0)}
-.portal:focus-visible{outline:2px solid var(--chalk);outline-offset:3px}
-.portal .ar{font-size:13px;line-height:1}
-@media(min-width:761px){.brand{padding-right:170px;flex-wrap:wrap}}
-@media(max-width:760px){
-  .portal{position:static;margin:10px 0 2px;font-size:11px;padding:7px 12px}
-}
-</style></head>
-<body><header><div class="wrap">
-<div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Sep 04, 2026 07:22</span></div>
-<nav><a href="index.html" class="on">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="">Form</a><a href="ev.html" class="">Market</a><a href="tracking.html" class="">Tracking</a><a href="teams.html" class="">Teams</a><a href="about.html" class="">About</a></nav>
-<a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
-</div></header>
-<main><div class="wrap"><h2>Scored record</h2><div class='scroll'><table class='pin'><thead><tr><th data-t='txt'>Model</th><th class='num' data-t='num'>Games</th><th class='num' data-t='num'>Bias</th><th class='num' data-t='num'>MAE</th><th class='num' data-t='num'>Called</th></tr></thead><tbody><tr><td class='team'>Season</td><td class='num'>212</td><td class='num'>-0.03</td><td class='num'>3.64</td><td class='num'>52%</td></tr><tr><td class='team'>L30d</td><td class='num'>65</td><td class='num'>-1.15</td><td class='num'>3.52</td><td class='num'>43%</td></tr><tr><td class='team'>L14d</td><td class='num'>65</td><td class='num'>-1.16</td><td class='num'>3.53</td><td class='num'>58%</td></tr><tr><td class='team'>L7d</td><td class='num'>65</td><td class='num'>-1.15</td><td class='num'>3.53</td><td class='num'>49%</td></tr><tr><td class='team'>L15g</td><td class='num'>81</td><td class='num'>-0.85</td><td class='num'>3.46</td><td class='num'>49%</td></tr><tr><td class='team'>L7g</td><td class='num'>81</td><td class='num'>-0.86</td><td class='num'>3.47</td><td class='num'>49%</td></tr><tr><td class='team'>L3g</td><td class='num'>81</td><td class='num'>-0.80</td><td class='num'>3.42</td><td class='num'>58%</td></tr></tbody></table></div><h2>Every priced bet</h2><div class='tools'><input id='q' type='search' placeholder='Filter by team, pick, or market…' autocomplete='off'><span class='count' id='qn'></span></div><div class='swipe'>swipe for more columns &rarr;</div><div class='scroll'><table class='pin dash'><thead><tr><th data-t='num'>Date</th><th data-t='txt'>Game</th><th data-t='txt'>Mkt</th><th data-t='txt'>Pick</th><th class='num' data-t='num'>Price</th><th class='num' data-t='num'>Season</th><th class='num' data-t='num'>L30d</th><th class='num' data-t='num'>L14d</th><th class='num' data-t='num'>L7d</th><th class='num' data-t='num'>L15g</th><th class='num' data-t='num'>L7g</th><th class='num' data-t='num'>L3g</th><th class='num' data-t='num'>Spread</th><th class='num' data-t='num'>Agree</th></tr></thead><tbody><tr><td class='date' data-v='20260904'>2026-09-04</td><td>LAA @ PIT</td><td><span class='pill'>moneyline</span></td><td class='team'>LAA</td><td class='num'>+171</td><td class='num' data-v='-6.1934'><span class='neg'>-6.2%</span><br><span style='color:var(--muted);font-size:11px'>34.6</span></td><td class='num' data-v='15.3376'><span class='pos'>+15.3%</span><br><span style='color:var(--muted);font-size:11px'>42.6</span></td><td class='num' data-v='23.3321'><span class='pos'>+23.3%</span><br><span style='color:var(--muted);font-size:11px'>45.5</span></td><td class='num' data-v='6.6927'><span class='pos'>+6.7%</span><br><span style='color:var(--muted);font-size:11px'>39.4</span></td><td class='num' data-v='-14.5808'><span class='neg'>-14.6%</span><br><span style='color:var(--muted);font-size:11px'>31.5</span></td><td class='num' data-v='-17.3992'><span class='neg'>-17.4%</span><br><span style='color:var(--muted);font-size:11px'>30.5</span></td><td class='num' data-v='-1.3018'><span class='neg'>-1.3%</span><br><span style='color:var(--muted);font-size:11px'>36.4</span></td><td class='num' data-v='40.73'>40.7</td><td class='num' data-v='3' style='white-space:nowrap'>3/7<br><span style='color:var(--muted);font-size:11px'>3/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>TOR @ KC</td><td><span class='pill'>moneyline</span></td><td class='team'>TOR</td><td class='num'>+103</td><td class='num' data-v='-24.3114'><span class='neg'>-24.3%</span><br><span style='color:var(--muted);font-size:11px'>37.3</span></td><td class='num' data-v='-17.6226'><span class='neg'>-17.6%</span><br><span style='color:var(--muted);font-size:11px'>40.6</span></td><td class='num' data-v='-16.3132'><span class='neg'>-16.3%</span><br><span style='color:var(--muted);font-size:11px'>41.2</span></td><td class='num' data-v='-0.1544'><span class='neg'>-0.2%</span><br><span style='color:var(--muted);font-size:11px'>49.2</span></td><td class='num' data-v='-35.7302'><span class='neg'>-35.7%</span><br><span style='color:var(--muted);font-size:11px'>31.7</span></td><td class='num' data-v='-34.7761'><span class='neg'>-34.8%</span><br><span style='color:var(--muted);font-size:11px'>32.1</span></td><td class='num' data-v='-31.5484'><span class='neg'>-31.5%</span><br><span style='color:var(--muted);font-size:11px'>33.7</span></td><td class='num' data-v='35.58'>35.6</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>WSH @ LAD</td><td><span class='pill'>moneyline</span></td><td class='team'>WSH</td><td class='num'>+273</td><td class='num' data-v='25.3280'><span class='pos'>+25.3%</span><br><span style='color:var(--muted);font-size:11px'>33.6</span></td><td class='num' data-v='21.2809'><span class='pos'>+21.3%</span><br><span style='color:var(--muted);font-size:11px'>32.5</span></td><td class='num' data-v='39.2969'><span class='pos'>+39.3%</span><br><span style='color:var(--muted);font-size:11px'>37.3</span></td><td class='num' data-v='41.4976'><span class='pos'>+41.5%</span><br><span style='color:var(--muted);font-size:11px'>37.9</span></td><td class='num' data-v='14.8467'><span class='pos'>+14.8%</span><br><span style='color:var(--muted);font-size:11px'>30.8</span></td><td class='num' data-v='8.7668'><span class='pos'>+8.8%</span><br><span style='color:var(--muted);font-size:11px'>29.2</span></td><td class='num' data-v='7.6851'><span class='pos'>+7.7%</span><br><span style='color:var(--muted);font-size:11px'>28.9</span></td><td class='num' data-v='33.81'>33.8</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>TOR @ KC</td><td><span class='pill'>moneyline</span></td><td class='team'>KC</td><td class='num'>-113</td><td class='num' data-v='18.2150'><span class='pos'>+18.2%</span><br><span style='color:var(--muted);font-size:11px'>62.7</span></td><td class='num' data-v='12.0041'><span class='pos'>+12.0%</span><br><span style='color:var(--muted);font-size:11px'>59.4</span></td><td class='num' data-v='10.7883'><span class='pos'>+10.8%</span><br><span style='color:var(--muted);font-size:11px'>58.8</span></td><td class='num' data-v='-4.2160'><span class='neg'>-4.2%</span><br><span style='color:var(--muted);font-size:11px'>50.8</span></td><td class='num' data-v='28.8179'><span class='pos'>+28.8%</span><br><span style='color:var(--muted);font-size:11px'>68.3</span></td><td class='num' data-v='27.9319'><span class='pos'>+27.9%</span><br><span style='color:var(--muted);font-size:11px'>67.9</span></td><td class='num' data-v='24.9349'><span class='pos'>+24.9%</span><br><span style='color:var(--muted);font-size:11px'>66.3</span></td><td class='num' data-v='33.03'>33.0</td><td class='num' data-v='6' style='white-space:nowrap'>6/7<br><span style='color:var(--muted);font-size:11px'>3/4c 3/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>CHC @ MIA</td><td><span class='pill'>moneyline</span></td><td class='team'>MIA</td><td class='num'>+121</td><td class='num' data-v='-10.2629'><span class='neg'>-10.3%</span><br><span style='color:var(--muted);font-size:11px'>40.6</span></td><td class='num' data-v='2.7650'><span class='pos'>+2.8%</span><br><span style='color:var(--muted);font-size:11px'>46.5</span></td><td class='num' data-v='7.7154'><span class='pos'>+7.7%</span><br><span style='color:var(--muted);font-size:11px'>48.7</span></td><td class='num' data-v='8.4558'><span class='pos'>+8.5%</span><br><span style='color:var(--muted);font-size:11px'>49.1</span></td><td class='num' data-v='-0.1301'><span class='neg'>-0.1%</span><br><span style='color:var(--muted);font-size:11px'>45.2</span></td><td class='num' data-v='11.5829'><span class='pos'>+11.6%</span><br><span style='color:var(--muted);font-size:11px'>50.5</span></td><td class='num' data-v='16.6880'><span class='pos'>+16.7%</span><br><span style='color:var(--muted);font-size:11px'>52.8</span></td><td class='num' data-v='26.95'>27.0</td><td class='num' data-v='5' style='white-space:nowrap'>5/7<br><span style='color:var(--muted);font-size:11px'>3/4c 2/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>ATL @ PHI</td><td><span class='pill'>total</span></td><td class='team'>over 7.0</td><td class='num'>+110</td><td class='num' data-v='13.6812'><span class='pos'>+13.7%</span><br><span style='color:var(--muted);font-size:11px'>8.01</span></td><td class='num' data-v='14.9454'><span class='pos'>+14.9%</span><br><span style='color:var(--muted);font-size:11px'>8.06</span></td><td class='num' data-v='12.7893'><span class='pos'>+12.8%</span><br><span style='color:var(--muted);font-size:11px'>7.97</span></td><td class='num' data-v='35.5965'><span class='pos'>+35.6%</span><br><span style='color:var(--muted);font-size:11px'>9.27</span></td><td class='num' data-v='8.7358'><span class='pos'>+8.7%</span><br><span style='color:var(--muted);font-size:11px'>7.83</span></td><td class='num' data-v='19.4195'><span class='pos'>+19.4%</span><br><span style='color:var(--muted);font-size:11px'>8.29</span></td><td class='num' data-v='19.4936'><span class='pos'>+19.5%</span><br><span style='color:var(--muted);font-size:11px'>8.28</span></td><td class='num' data-v='26.86'>26.9</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>AZ @ HOU</td><td><span class='pill'>total</span></td><td class='team'>over 9.0</td><td class='num'>+100</td><td class='num' data-v='3.1523'><span class='pos'>+3.2%</span><br><span style='color:var(--muted);font-size:11px'>9.77</span></td><td class='num' data-v='-17.3475'><span class='neg'>-17.3%</span><br><span style='color:var(--muted);font-size:11px'>8.67</span></td><td class='num' data-v='-15.3281'><span class='neg'>-15.3%</span><br><span style='color:var(--muted);font-size:11px'>8.74</span></td><td class='num' data-v='-22.1505'><span class='neg'>-22.2%</span><br><span style='color:var(--muted);font-size:11px'>8.41</span></td><td class='num' data-v='-7.1045'><span class='neg'>-7.1%</span><br><span style='color:var(--muted);font-size:11px'>9.17</span></td><td class='num' data-v='-2.3419'><span class='neg'>-2.3%</span><br><span style='color:var(--muted);font-size:11px'>9.5</span></td><td class='num' data-v='-0.7742'><span class='neg'>-0.8%</span><br><span style='color:var(--muted);font-size:11px'>9.57</span></td><td class='num' data-v='25.30'>25.3</td><td class='num' data-v='1' style='white-space:nowrap'>1/7<br><span style='color:var(--muted);font-size:11px'>1/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>MIN @ CWS</td><td><span class='pill'>moneyline</span></td><td class='team'>MIN</td><td class='num'>+105</td><td class='num' data-v='-0.8210'><span class='neg'>-0.8%</span><br><span style='color:var(--muted);font-size:11px'>48.4</span></td><td class='num' data-v='-5.1055'><span class='neg'>-5.1%</span><br><span style='color:var(--muted);font-size:11px'>46.3</span></td><td class='num' data-v='-4.6648'><span class='neg'>-4.7%</span><br><span style='color:var(--muted);font-size:11px'>46.5</span></td><td class='num' data-v='5.0010'><span class='pos'>+5.0%</span><br><span style='color:var(--muted);font-size:11px'>51.2</span></td><td class='num' data-v='-15.4170'><span class='neg'>-15.4%</span><br><span style='color:var(--muted);font-size:11px'>41.3</span></td><td class='num' data-v='-18.3280'><span class='neg'>-18.3%</span><br><span style='color:var(--muted);font-size:11px'>39.8</span></td><td class='num' data-v='-19.2300'><span class='neg'>-19.2%</span><br><span style='color:var(--muted);font-size:11px'>39.4</span></td><td class='num' data-v='24.23'>24.2</td><td class='num' data-v='1' style='white-space:nowrap'>1/7<br><span style='color:var(--muted);font-size:11px'>1/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>AZ @ HOU</td><td><span class='pill'>total</span></td><td class='team'>under 9.0</td><td class='num'>-120</td><td class='num' data-v='-11.2229'><span class='neg'>-11.2%</span><br><span style='color:var(--muted);font-size:11px'>9.77</span></td><td class='num' data-v='7.5685'><span class='pos'>+7.6%</span><br><span style='color:var(--muted);font-size:11px'>8.67</span></td><td class='num' data-v='5.7174'><span class='pos'>+5.7%</span><br><span style='color:var(--muted);font-size:11px'>8.74</span></td><td class='num' data-v='11.9713'><span class='pos'>+12.0%</span><br><span style='color:var(--muted);font-size:11px'>8.41</span></td><td class='num' data-v='-1.8208'><span class='neg'>-1.8%</span><br><span style='color:var(--muted);font-size:11px'>9.17</span></td><td class='num' data-v='-6.1865'><span class='neg'>-6.2%</span><br><span style='color:var(--muted);font-size:11px'>9.5</span></td><td class='num' data-v='-7.6237'><span class='neg'>-7.6%</span><br><span style='color:var(--muted);font-size:11px'>9.57</span></td><td class='num' data-v='23.19'>23.2</td><td class='num' data-v='3' style='white-space:nowrap'>3/7<br><span style='color:var(--muted);font-size:11px'>3/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>LAA @ PIT</td><td><span class='pill'>moneyline</span></td><td class='team'>PIT</td><td class='num'>-190</td><td class='num' data-v='-0.2018'><span class='neg'>-0.2%</span><br><span style='color:var(--muted);font-size:11px'>65.4</span></td><td class='num' data-v='-12.3284'><span class='neg'>-12.3%</span><br><span style='color:var(--muted);font-size:11px'>57.4</span></td><td class='num' data-v='-16.8311'><span class='neg'>-16.8%</span><br><span style='color:var(--muted);font-size:11px'>54.5</span></td><td class='num' data-v='-7.4595'><span class='neg'>-7.5%</span><br><span style='color:var(--muted);font-size:11px'>60.6</span></td><td class='num' data-v='4.5221'><span class='pos'>+4.5%</span><br><span style='color:var(--muted);font-size:11px'>68.5</span></td><td class='num' data-v='6.1095'><span class='pos'>+6.1%</span><br><span style='color:var(--muted);font-size:11px'>69.5</span></td><td class='num' data-v='-2.9568'><span class='neg'>-3.0%</span><br><span style='color:var(--muted);font-size:11px'>63.6</span></td><td class='num' data-v='22.94'>22.9</td><td class='num' data-v='2' style='white-space:nowrap'>2/7<br><span style='color:var(--muted);font-size:11px'>0/4c 2/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>MIL @ CIN</td><td><span class='pill'>moneyline</span></td><td class='team'>CIN</td><td class='num'>+141</td><td class='num' data-v='0.8706'><span class='pos'>+0.9%</span><br><span style='color:var(--muted);font-size:11px'>41.9</span></td><td class='num' data-v='14.0171'><span class='pos'>+14.0%</span><br><span style='color:var(--muted);font-size:11px'>47.3</span></td><td class='num' data-v='18.0900'><span class='pos'>+18.1%</span><br><span style='color:var(--muted);font-size:11px'>49.0</span></td><td class='num' data-v='23.5366'><span class='pos'>+23.5%</span><br><span style='color:var(--muted);font-size:11px'>51.3</span></td><td class='num' data-v='10.9564'><span class='pos'>+11.0%</span><br><span style='color:var(--muted);font-size:11px'>46.0</span></td><td class='num' data-v='2.1599'><span class='pos'>+2.2%</span><br><span style='color:var(--muted);font-size:11px'>42.4</span></td><td class='num' data-v='6.6666'><span class='pos'>+6.7%</span><br><span style='color:var(--muted);font-size:11px'>44.3</span></td><td class='num' data-v='22.67'>22.7</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>ATL @ PHI</td><td><span class='pill'>total</span></td><td class='team'>under 7.0</td><td class='num'>-130</td><td class='num' data-v='-18.8523'><span class='neg'>-18.9%</span><br><span style='color:var(--muted);font-size:11px'>8.01</span></td><td class='num' data-v='-19.9174'><span class='neg'>-19.9%</span><br><span style='color:var(--muted);font-size:11px'>8.06</span></td><td class='num' data-v='-18.1009'><span class='neg'>-18.1%</span><br><span style='color:var(--muted);font-size:11px'>7.97</span></td><td class='num' data-v='-37.3158'><span class='neg'>-37.3%</span><br><span style='color:var(--muted);font-size:11px'>9.27</span></td><td class='num' data-v='-14.6859'><span class='neg'>-14.7%</span><br><span style='color:var(--muted);font-size:11px'>7.83</span></td><td class='num' data-v='-23.6868'><span class='neg'>-23.7%</span><br><span style='color:var(--muted);font-size:11px'>8.29</span></td><td class='num' data-v='-23.7492'><span class='neg'>-23.7%</span><br><span style='color:var(--muted);font-size:11px'>8.28</span></td><td class='num' data-v='22.63'>22.6</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>ATL @ PHI</td><td><span class='pill'>moneyline</span></td><td class='team'>ATL</td><td class='num'>+103</td><td class='num' data-v='-6.2546'><span class='neg'>-6.3%</span><br><span style='color:var(--muted);font-size:11px'>46.2</span></td><td class='num' data-v='-13.9787'><span class='neg'>-14.0%</span><br><span style='color:var(--muted);font-size:11px'>42.4</span></td><td class='num' data-v='-9.2691'><span class='neg'>-9.3%</span><br><span style='color:var(--muted);font-size:11px'>44.7</span></td><td class='num' data-v='-20.3529'><span class='neg'>-20.4%</span><br><span style='color:var(--muted);font-size:11px'>39.2</span></td><td class='num' data-v='-28.8079'><span class='neg'>-28.8%</span><br><span style='color:var(--muted);font-size:11px'>35.1</span></td><td class='num' data-v='-22.3931'><span class='neg'>-22.4%</span><br><span style='color:var(--muted);font-size:11px'>38.2</span></td><td class='num' data-v='-13.0348'><span class='neg'>-13.0%</span><br><span style='color:var(--muted);font-size:11px'>42.8</span></td><td class='num' data-v='22.55'>22.6</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>NYY @ SD</td><td><span class='pill'>moneyline</span></td><td class='team'>SD</td><td class='num'>+113</td><td class='num' data-v='-10.5506'><span class='neg'>-10.6%</span><br><span style='color:var(--muted);font-size:11px'>42.0</span></td><td class='num' data-v='11.5587'><span class='pos'>+11.6%</span><br><span style='color:var(--muted);font-size:11px'>52.4</span></td><td class='num' data-v='4.1144'><span class='pos'>+4.1%</span><br><span style='color:var(--muted);font-size:11px'>48.9</span></td><td class='num' data-v='7.9377'><span class='pos'>+7.9%</span><br><span style='color:var(--muted);font-size:11px'>50.7</span></td><td class='num' data-v='9.0986'><span class='pos'>+9.1%</span><br><span style='color:var(--muted);font-size:11px'>51.2</span></td><td class='num' data-v='1.4519'><span class='pos'>+1.5%</span><br><span style='color:var(--muted);font-size:11px'>47.6</span></td><td class='num' data-v='10.1636'><span class='pos'>+10.2%</span><br><span style='color:var(--muted);font-size:11px'>51.7</span></td><td class='num' data-v='22.11'>22.1</td><td class='num' data-v='6' style='white-space:nowrap'>6/7<br><span style='color:var(--muted);font-size:11px'>3/4c 3/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>MIN @ CWS</td><td><span class='pill'>moneyline</span></td><td class='team'>CWS</td><td class='num'>-116</td><td class='num' data-v='-3.8800'><span class='neg'>-3.9%</span><br><span style='color:var(--muted);font-size:11px'>51.6</span></td><td class='num' data-v='0.0117'><span class='pos'>+0.0%</span><br><span style='color:var(--muted);font-size:11px'>53.7</span></td><td class='num' data-v='-0.3886'><span class='neg'>-0.4%</span><br><span style='color:var(--muted);font-size:11px'>53.5</span></td><td class='num' data-v='-9.1683'><span class='neg'>-9.2%</span><br><span style='color:var(--muted);font-size:11px'>48.8</span></td><td class='num' data-v='9.3779'><span class='pos'>+9.4%</span><br><span style='color:var(--muted);font-size:11px'>58.7</span></td><td class='num' data-v='12.0221'><span class='pos'>+12.0%</span><br><span style='color:var(--muted);font-size:11px'>60.2</span></td><td class='num' data-v='12.8414'><span class='pos'>+12.8%</span><br><span style='color:var(--muted);font-size:11px'>60.6</span></td><td class='num' data-v='22.01'>22.0</td><td class='num' data-v='4' style='white-space:nowrap'>4/7<br><span style='color:var(--muted);font-size:11px'>1/4c 3/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>CHC @ MIA</td><td><span class='pill'>moneyline</span></td><td class='team'>CHC</td><td class='num'>-133</td><td class='num' data-v='4.0529'><span class='pos'>+4.1%</span><br><span style='color:var(--muted);font-size:11px'>59.4</span></td><td class='num' data-v='-6.2744'><span class='neg'>-6.3%</span><br><span style='color:var(--muted);font-size:11px'>53.5</span></td><td class='num' data-v='-10.1986'><span class='neg'>-10.2%</span><br><span style='color:var(--muted);font-size:11px'>51.3</span></td><td class='num' data-v='-10.7855'><span class='neg'>-10.8%</span><br><span style='color:var(--muted);font-size:11px'>50.9</span></td><td class='num' data-v='-3.9795'><span class='neg'>-4.0%</span><br><span style='color:var(--muted);font-size:11px'>54.8</span></td><td class='num' data-v='-13.2644'><span class='neg'>-13.3%</span><br><span style='color:var(--muted);font-size:11px'>49.5</span></td><td class='num' data-v='-17.3113'><span class='neg'>-17.3%</span><br><span style='color:var(--muted);font-size:11px'>47.2</span></td><td class='num' data-v='21.36'>21.4</td><td class='num' data-v='1' style='white-space:nowrap'>1/7<br><span style='color:var(--muted);font-size:11px'>1/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>ATL @ PHI</td><td><span class='pill'>moneyline</span></td><td class='team'>PHI</td><td class='num'>-113</td><td class='num' data-v='1.4483'><span class='pos'>+1.4%</span><br><span style='color:var(--muted);font-size:11px'>53.8</span></td><td class='num' data-v='8.6206'><span class='pos'>+8.6%</span><br><span style='color:var(--muted);font-size:11px'>57.6</span></td><td class='num' data-v='4.2475'><span class='pos'>+4.2%</span><br><span style='color:var(--muted);font-size:11px'>55.3</span></td><td class='num' data-v='14.5393'><span class='pos'>+14.5%</span><br><span style='color:var(--muted);font-size:11px'>60.8</span></td><td class='num' data-v='22.3902'><span class='pos'>+22.4%</span><br><span style='color:var(--muted);font-size:11px'>64.9</span></td><td class='num' data-v='16.4337'><span class='pos'>+16.4%</span><br><span style='color:var(--muted);font-size:11px'>61.8</span></td><td class='num' data-v='7.7441'><span class='pos'>+7.7%</span><br><span style='color:var(--muted);font-size:11px'>57.2</span></td><td class='num' data-v='20.94'>20.9</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>CHC @ MIA</td><td><span class='pill'>total</span></td><td class='team'>over 8.0</td><td class='num'>-105</td><td class='num' data-v='-3.7973'><span class='neg'>-3.8%</span><br><span style='color:var(--muted);font-size:11px'>8.54</span></td><td class='num' data-v='1.1492'><span class='pos'>+1.1%</span><br><span style='color:var(--muted);font-size:11px'>8.83</span></td><td class='num' data-v='2.1817'><span class='pos'>+2.2%</span><br><span style='color:var(--muted);font-size:11px'>8.82</span></td><td class='num' data-v='2.7597'><span class='pos'>+2.8%</span><br><span style='color:var(--muted);font-size:11px'>8.86</span></td><td class='num' data-v='-5.3727'><span class='neg'>-5.4%</span><br><span style='color:var(--muted);font-size:11px'>8.42</span></td><td class='num' data-v='-8.8633'><span class='neg'>-8.9%</span><br><span style='color:var(--muted);font-size:11px'>8.22</span></td><td class='num' data-v='-17.1099'><span class='neg'>-17.1%</span><br><span style='color:var(--muted);font-size:11px'>7.8</span></td><td class='num' data-v='19.87'>19.9</td><td class='num' data-v='3' style='white-space:nowrap'>3/7<br><span style='color:var(--muted);font-size:11px'>3/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>CHC @ MIA</td><td><span class='pill'>total</span></td><td class='team'>under 8.0</td><td class='num'>-115</td><td class='num' data-v='-5.1655'><span class='neg'>-5.2%</span><br><span style='color:var(--muted);font-size:11px'>8.54</span></td><td class='num' data-v='-9.9022'><span class='neg'>-9.9%</span><br><span style='color:var(--muted);font-size:11px'>8.83</span></td><td class='num' data-v='-10.8908'><span class='neg'>-10.9%</span><br><span style='color:var(--muted);font-size:11px'>8.82</span></td><td class='num' data-v='-11.4443'><span class='neg'>-11.4%</span><br><span style='color:var(--muted);font-size:11px'>8.86</span></td><td class='num' data-v='-3.6569'><span class='neg'>-3.7%</span><br><span style='color:var(--muted);font-size:11px'>8.42</span></td><td class='num' data-v='-0.3143'><span class='neg'>-0.3%</span><br><span style='color:var(--muted);font-size:11px'>8.22</span></td><td class='num' data-v='7.5824'><span class='pos'>+7.6%</span><br><span style='color:var(--muted);font-size:11px'>7.8</span></td><td class='num' data-v='19.03'>19.0</td><td class='num' data-v='1' style='white-space:nowrap'>1/7<br><span style='color:var(--muted);font-size:11px'>0/4c 1/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>TB @ TEX</td><td><span class='pill'>moneyline</span></td><td class='team'>TEX</td><td class='num'>+101</td><td class='num' data-v='-20.2533'><span class='neg'>-20.3%</span><br><span style='color:var(--muted);font-size:11px'>39.7</span></td><td class='num' data-v='-17.1177'><span class='neg'>-17.1%</span><br><span style='color:var(--muted);font-size:11px'>41.2</span></td><td class='num' data-v='-11.2183'><span class='neg'>-11.2%</span><br><span style='color:var(--muted);font-size:11px'>44.2</span></td><td class='num' data-v='-12.4344'><span class='neg'>-12.4%</span><br><span style='color:var(--muted);font-size:11px'>43.6</span></td><td class='num' data-v='-11.0776'><span class='neg'>-11.1%</span><br><span style='color:var(--muted);font-size:11px'>44.2</span></td><td class='num' data-v='-1.5100'><span class='neg'>-1.5%</span><br><span style='color:var(--muted);font-size:11px'>49.0</span></td><td class='num' data-v='-1.4296'><span class='neg'>-1.4%</span><br><span style='color:var(--muted);font-size:11px'>49.0</span></td><td class='num' data-v='18.82'>18.8</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>NYY @ SD</td><td><span class='pill'>moneyline</span></td><td class='team'>NYY</td><td class='num'>-125</td><td class='num' data-v='4.4090'><span class='pos'>+4.4%</span><br><span style='color:var(--muted);font-size:11px'>58.0</span></td><td class='num' data-v='-14.2750'><span class='neg'>-14.3%</span><br><span style='color:var(--muted);font-size:11px'>47.6</span></td><td class='num' data-v='-7.9840'><span class='neg'>-8.0%</span><br><span style='color:var(--muted);font-size:11px'>51.1</span></td><td class='num' data-v='-11.2150'><span class='neg'>-11.2%</span><br><span style='color:var(--muted);font-size:11px'>49.3</span></td><td class='num' data-v='-12.1960'><span class='neg'>-12.2%</span><br><span style='color:var(--muted);font-size:11px'>48.8</span></td><td class='num' data-v='-5.7340'><span class='neg'>-5.7%</span><br><span style='color:var(--muted);font-size:11px'>52.4</span></td><td class='num' data-v='-13.0960'><span class='neg'>-13.1%</span><br><span style='color:var(--muted);font-size:11px'>48.3</span></td><td class='num' data-v='18.68'>18.7</td><td class='num' data-v='1' style='white-space:nowrap'>1/7<br><span style='color:var(--muted);font-size:11px'>1/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>TB @ TEX</td><td><span class='pill'>moneyline</span></td><td class='team'>TB</td><td class='num'>-111</td><td class='num' data-v='14.6718'><span class='pos'>+14.7%</span><br><span style='color:var(--muted);font-size:11px'>60.3</span></td><td class='num' data-v='11.7064'><span class='pos'>+11.7%</span><br><span style='color:var(--muted);font-size:11px'>58.8</span></td><td class='num' data-v='6.1273'><span class='pos'>+6.1%</span><br><span style='color:var(--muted);font-size:11px'>55.8</span></td><td class='num' data-v='7.2773'><span class='pos'>+7.3%</span><br><span style='color:var(--muted);font-size:11px'>56.4</span></td><td class='num' data-v='5.9942'><span class='pos'>+6.0%</span><br><span style='color:var(--muted);font-size:11px'>55.8</span></td><td class='num' data-v='-3.0541'><span class='neg'>-3.1%</span><br><span style='color:var(--muted);font-size:11px'>51.0</span></td><td class='num' data-v='-3.1301'><span class='neg'>-3.1%</span><br><span style='color:var(--muted);font-size:11px'>51.0</span></td><td class='num' data-v='17.80'>17.8</td><td class='num' data-v='5' style='white-space:nowrap'>5/7<br><span style='color:var(--muted);font-size:11px'>4/4c 1/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>BOS @ BAL</td><td><span class='pill'>moneyline</span></td><td class='team'>BAL</td><td class='num'>+106</td><td class='num' data-v='0.7340'><span class='pos'>+0.7%</span><br><span style='color:var(--muted);font-size:11px'>48.9</span></td><td class='num' data-v='11.0649'><span class='pos'>+11.1%</span><br><span style='color:var(--muted);font-size:11px'>53.9</span></td><td class='num' data-v='3.2678'><span class='pos'>+3.3%</span><br><span style='color:var(--muted);font-size:11px'>50.1</span></td><td class='num' data-v='14.1755'><span class='pos'>+14.2%</span><br><span style='color:var(--muted);font-size:11px'>55.4</span></td><td class='num' data-v='0.9606'><span class='pos'>+1.0%</span><br><span style='color:var(--muted);font-size:11px'>49.0</span></td><td class='num' data-v='10.3748'><span class='pos'>+10.4%</span><br><span style='color:var(--muted);font-size:11px'>53.6</span></td><td class='num' data-v='18.1822'><span class='pos'>+18.2%</span><br><span style='color:var(--muted);font-size:11px'>57.4</span></td><td class='num' data-v='17.45'>17.4</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>DET @ CLE</td><td><span class='pill'>moneyline</span></td><td class='team'>DET</td><td class='num'>+119</td><td class='num' data-v='7.8809'><span class='pos'>+7.9%</span><br><span style='color:var(--muted);font-size:11px'>48.6</span></td><td class='num' data-v='-0.6550'><span class='neg'>-0.7%</span><br><span style='color:var(--muted);font-size:11px'>44.8</span></td><td class='num' data-v='-3.1081'><span class='neg'>-3.1%</span><br><span style='color:var(--muted);font-size:11px'>43.6</span></td><td class='num' data-v='2.0201'><span class='pos'>+2.0%</span><br><span style='color:var(--muted);font-size:11px'>46.0</span></td><td class='num' data-v='-5.9164'><span class='neg'>-5.9%</span><br><span style='color:var(--muted);font-size:11px'>42.4</span></td><td class='num' data-v='-9.3796'><span class='neg'>-9.4%</span><br><span style='color:var(--muted);font-size:11px'>40.8</span></td><td class='num' data-v='-3.6964'><span class='neg'>-3.7%</span><br><span style='color:var(--muted);font-size:11px'>43.4</span></td><td class='num' data-v='17.26'>17.3</td><td class='num' data-v='2' style='white-space:nowrap'>2/7<br><span style='color:var(--muted);font-size:11px'>2/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>TB @ TEX</td><td><span class='pill'>total</span></td><td class='team'>under 8.0</td><td class='num'>-107</td><td class='num' data-v='-8.4670'><span class='neg'>-8.5%</span><br><span style='color:var(--muted);font-size:11px'>8.9</span></td><td class='num' data-v='-0.1763'><span class='neg'>-0.2%</span><br><span style='color:var(--muted);font-size:11px'>8.43</span></td><td class='num' data-v='-3.6080'><span class='neg'>-3.6%</span><br><span style='color:var(--muted);font-size:11px'>8.64</span></td><td class='num' data-v='-4.5620'><span class='neg'>-4.6%</span><br><span style='color:var(--muted);font-size:11px'>8.66</span></td><td class='num' data-v='3.1705'><span class='pos'>+3.2%</span><br><span style='color:var(--muted);font-size:11px'>8.25</span></td><td class='num' data-v='8.7924'><span class='pos'>+8.8%</span><br><span style='color:var(--muted);font-size:11px'>8.06</span></td><td class='num' data-v='4.2976'><span class='pos'>+4.3%</span><br><span style='color:var(--muted);font-size:11px'>8.21</span></td><td class='num' data-v='17.26'>17.3</td><td class='num' data-v='3' style='white-space:nowrap'>3/7<br><span style='color:var(--muted);font-size:11px'>0/4c 3/3g</span><span class='pill'>opposed</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>AZ @ HOU</td><td><span class='pill'>moneyline</span></td><td class='team'>AZ</td><td class='num'>+119</td><td class='num' data-v='-14.3710'><span class='neg'>-14.4%</span><br><span style='color:var(--muted);font-size:11px'>39.1</span></td><td class='num' data-v='-5.5234'><span class='neg'>-5.5%</span><br><span style='color:var(--muted);font-size:11px'>43.1</span></td><td class='num' data-v='-12.3234'><span class='neg'>-12.3%</span><br><span style='color:var(--muted);font-size:11px'>40.0</span></td><td class='num' data-v='-7.0345'><span class='neg'>-7.0%</span><br><span style='color:var(--muted);font-size:11px'>42.4</span></td><td class='num' data-v='-9.2902'><span class='neg'>-9.3%</span><br><span style='color:var(--muted);font-size:11px'>41.4</span></td><td class='num' data-v='-13.6045'><span class='neg'>-13.6%</span><br><span style='color:var(--muted);font-size:11px'>39.5</span></td><td class='num' data-v='-22.5397'><span class='neg'>-22.5%</span><br><span style='color:var(--muted);font-size:11px'>35.4</span></td><td class='num' data-v='17.02'>17.0</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>TB @ TEX</td><td><span class='pill'>total</span></td><td class='team'>over 8.0</td><td class='num'>-113</td><td class='num' data-v='-0.6895'><span class='neg'>-0.7%</span><br><span style='color:var(--muted);font-size:11px'>8.9</span></td><td class='num' data-v='-8.7675'><span class='neg'>-8.8%</span><br><span style='color:var(--muted);font-size:11px'>8.43</span></td><td class='num' data-v='-5.4239'><span class='neg'>-5.4%</span><br><span style='color:var(--muted);font-size:11px'>8.64</span></td><td class='num' data-v='-4.4943'><span class='neg'>-4.5%</span><br><span style='color:var(--muted);font-size:11px'>8.66</span></td><td class='num' data-v='-12.0285'><span class='neg'>-12.0%</span><br><span style='color:var(--muted);font-size:11px'>8.25</span></td><td class='num' data-v='-17.5062'><span class='neg'>-17.5%</span><br><span style='color:var(--muted);font-size:11px'>8.06</span></td><td class='num' data-v='-13.1267'><span class='neg'>-13.1%</span><br><span style='color:var(--muted);font-size:11px'>8.21</span></td><td class='num' data-v='16.82'>16.8</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>DET @ CLE</td><td><span class='pill'>total</span></td><td class='team'>under 8.0</td><td class='num'>+100</td><td class='num' data-v='8.5313'><span class='pos'>+8.5%</span><br><span style='color:var(--muted);font-size:11px'>8.2</span></td><td class='num' data-v='12.4109'><span class='pos'>+12.4%</span><br><span style='color:var(--muted);font-size:11px'>8.25</span></td><td class='num' data-v='5.9390'><span class='pos'>+5.9%</span><br><span style='color:var(--muted);font-size:11px'>8.24</span></td><td class='num' data-v='-2.4749'><span class='neg'>-2.5%</span><br><span style='color:var(--muted);font-size:11px'>8.79</span></td><td class='num' data-v='10.5911'><span class='pos'>+10.6%</span><br><span style='color:var(--muted);font-size:11px'>8.27</span></td><td class='num' data-v='13.9563'><span class='pos'>+14.0%</span><br><span style='color:var(--muted);font-size:11px'>8.1</span></td><td class='num' data-v='5.7099'><span class='pos'>+5.7%</span><br><span style='color:var(--muted);font-size:11px'>8.65</span></td><td class='num' data-v='16.43'>16.4</td><td class='num' data-v='6' style='white-space:nowrap'>6/7<br><span style='color:var(--muted);font-size:11px'>3/4c 3/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>BOS @ BAL</td><td><span class='pill'>moneyline</span></td><td class='team'>BOS</td><td class='num'>-117</td><td class='num' data-v='-5.2248'><span class='neg'>-5.2%</span><br><span style='color:var(--muted);font-size:11px'>51.1</span></td><td class='num' data-v='-14.5261'><span class='neg'>-14.5%</span><br><span style='color:var(--muted);font-size:11px'>46.1</span></td><td class='num' data-v='-7.5061'><span class='neg'>-7.5%</span><br><span style='color:var(--muted);font-size:11px'>49.9</span></td><td class='num' data-v='-17.3267'><span class='neg'>-17.3%</span><br><span style='color:var(--muted);font-size:11px'>44.6</span></td><td class='num' data-v='-5.4288'><span class='neg'>-5.4%</span><br><span style='color:var(--muted);font-size:11px'>51.0</span></td><td class='num' data-v='-13.9048'><span class='neg'>-13.9%</span><br><span style='color:var(--muted);font-size:11px'>46.4</span></td><td class='num' data-v='-20.9341'><span class='neg'>-20.9%</span><br><span style='color:var(--muted);font-size:11px'>42.6</span></td><td class='num' data-v='15.71'>15.7</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>MIL @ CIN</td><td><span class='pill'>total</span></td><td class='team'>under 9.5</td><td class='num'>-110</td><td class='num' data-v='12.7986'><span class='pos'>+12.8%</span><br><span style='color:var(--muted);font-size:11px'>9.05</span></td><td class='num' data-v='9.2955'><span class='pos'>+9.3%</span><br><span style='color:var(--muted);font-size:11px'>9.27</span></td><td class='num' data-v='11.0995'><span class='pos'>+11.1%</span><br><span style='color:var(--muted);font-size:11px'>9.2</span></td><td class='num' data-v='12.1400'><span class='pos'>+12.1%</span><br><span style='color:var(--muted);font-size:11px'>9.07</span></td><td class='num' data-v='22.2773'><span class='pos'>+22.3%</span><br><span style='color:var(--muted);font-size:11px'>8.43</span></td><td class='num' data-v='22.5445'><span class='pos'>+22.5%</span><br><span style='color:var(--muted);font-size:11px'>8.45</span></td><td class='num' data-v='24.8736'><span class='pos'>+24.9%</span><br><span style='color:var(--muted);font-size:11px'>8.29</span></td><td class='num' data-v='15.58'>15.6</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>MIL @ CIN</td><td><span class='pill'>total</span></td><td class='team'>over 9.5</td><td class='num'>-110</td><td class='num' data-v='-21.8895'><span class='neg'>-21.9%</span><br><span style='color:var(--muted);font-size:11px'>9.05</span></td><td class='num' data-v='-18.3864'><span class='neg'>-18.4%</span><br><span style='color:var(--muted);font-size:11px'>9.27</span></td><td class='num' data-v='-20.1905'><span class='neg'>-20.2%</span><br><span style='color:var(--muted);font-size:11px'>9.2</span></td><td class='num' data-v='-21.2309'><span class='neg'>-21.2%</span><br><span style='color:var(--muted);font-size:11px'>9.07</span></td><td class='num' data-v='-31.3682'><span class='neg'>-31.4%</span><br><span style='color:var(--muted);font-size:11px'>8.43</span></td><td class='num' data-v='-31.6355'><span class='neg'>-31.6%</span><br><span style='color:var(--muted);font-size:11px'>8.45</span></td><td class='num' data-v='-33.9645'><span class='neg'>-34.0%</span><br><span style='color:var(--muted);font-size:11px'>8.29</span></td><td class='num' data-v='15.58'>15.6</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>MIL @ CIN</td><td><span class='pill'>moneyline</span></td><td class='team'>MIL</td><td class='num'>-156</td><td class='num' data-v='-4.5826'><span class='neg'>-4.6%</span><br><span style='color:var(--muted);font-size:11px'>58.1</span></td><td class='num' data-v='-13.5344'><span class='neg'>-13.5%</span><br><span style='color:var(--muted);font-size:11px'>52.7</span></td><td class='num' data-v='-16.3077'><span class='neg'>-16.3%</span><br><span style='color:var(--muted);font-size:11px'>51.0</span></td><td class='num' data-v='-20.0164'><span class='neg'>-20.0%</span><br><span style='color:var(--muted);font-size:11px'>48.7</span></td><td class='num' data-v='-11.4503'><span class='neg'>-11.5%</span><br><span style='color:var(--muted);font-size:11px'>54.0</span></td><td class='num' data-v='-5.4605'><span class='neg'>-5.5%</span><br><span style='color:var(--muted);font-size:11px'>57.6</span></td><td class='num' data-v='-8.5292'><span class='neg'>-8.5%</span><br><span style='color:var(--muted);font-size:11px'>55.7</span></td><td class='num' data-v='15.43'>15.4</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>BOS @ BAL</td><td><span class='pill'>total</span></td><td class='team'>over 8.5</td><td class='num'>-105</td><td class='num' data-v='-18.5760'><span class='neg'>-18.6%</span><br><span style='color:var(--muted);font-size:11px'>8.12</span></td><td class='num' data-v='-6.7640'><span class='neg'>-6.8%</span><br><span style='color:var(--muted);font-size:11px'>8.85</span></td><td class='num' data-v='-7.6426'><span class='neg'>-7.6%</span><br><span style='color:var(--muted);font-size:11px'>8.77</span></td><td class='num' data-v='-6.8421'><span class='neg'>-6.8%</span><br><span style='color:var(--muted);font-size:11px'>8.85</span></td><td class='num' data-v='-18.5662'><span class='neg'>-18.6%</span><br><span style='color:var(--muted);font-size:11px'>8.17</span></td><td class='num' data-v='-22.0219'><span class='neg'>-22.0%</span><br><span style='color:var(--muted);font-size:11px'>8.03</span></td><td class='num' data-v='-17.9610'><span class='neg'>-18.0%</span><br><span style='color:var(--muted);font-size:11px'>8.2</span></td><td class='num' data-v='15.26'>15.3</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>DET @ CLE</td><td><span class='pill'>total</span></td><td class='team'>over 8.0</td><td class='num'>-120</td><td class='num' data-v='-16.1537'><span class='neg'>-16.2%</span><br><span style='color:var(--muted);font-size:11px'>8.2</span></td><td class='num' data-v='-19.7100'><span class='neg'>-19.7%</span><br><span style='color:var(--muted);font-size:11px'>8.25</span></td><td class='num' data-v='-13.7774'><span class='neg'>-13.8%</span><br><span style='color:var(--muted);font-size:11px'>8.24</span></td><td class='num' data-v='-6.0647'><span class='neg'>-6.1%</span><br><span style='color:var(--muted);font-size:11px'>8.79</span></td><td class='num' data-v='-18.0418'><span class='neg'>-18.0%</span><br><span style='color:var(--muted);font-size:11px'>8.27</span></td><td class='num' data-v='-21.1266'><span class='neg'>-21.1%</span><br><span style='color:var(--muted);font-size:11px'>8.1</span></td><td class='num' data-v='-13.5674'><span class='neg'>-13.6%</span><br><span style='color:var(--muted);font-size:11px'>8.65</span></td><td class='num' data-v='15.06'>15.1</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>SF @ NYM</td><td><span class='pill'>moneyline</span></td><td class='team'>SF</td><td class='num'>+162</td><td class='num' data-v='8.8348'><span class='pos'>+8.8%</span><br><span style='color:var(--muted);font-size:11px'>41.5</span></td><td class='num' data-v='9.4636'><span class='pos'>+9.5%</span><br><span style='color:var(--muted);font-size:11px'>41.8</span></td><td class='num' data-v='16.7603'><span class='pos'>+16.8%</span><br><span style='color:var(--muted);font-size:11px'>44.6</span></td><td class='num' data-v='1.8263'><span class='pos'>+1.8%</span><br><span style='color:var(--muted);font-size:11px'>38.9</span></td><td class='num' data-v='7.7082'><span class='pos'>+7.7%</span><br><span style='color:var(--muted);font-size:11px'>41.1</span></td><td class='num' data-v='10.5378'><span class='pos'>+10.5%</span><br><span style='color:var(--muted);font-size:11px'>42.2</span></td><td class='num' data-v='9.5422'><span class='pos'>+9.5%</span><br><span style='color:var(--muted);font-size:11px'>41.8</span></td><td class='num' data-v='14.93'>14.9</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>WSH @ LAD</td><td><span class='pill'>total</span></td><td class='team'>under 8.0</td><td class='num'>-105</td><td class='num' data-v='-5.2921'><span class='neg'>-5.3%</span><br><span style='color:var(--muted);font-size:11px'>8.77</span></td><td class='num' data-v='1.2593'><span class='pos'>+1.3%</span><br><span style='color:var(--muted);font-size:11px'>8.44</span></td><td class='num' data-v='0.3893'><span class='pos'>+0.4%</span><br><span style='color:var(--muted);font-size:11px'>8.54</span></td><td class='num' data-v='-13.4728'><span class='neg'>-13.5%</span><br><span style='color:var(--muted);font-size:11px'>9.3</span></td><td class='num' data-v='0.5637'><span class='pos'>+0.6%</span><br><span style='color:var(--muted);font-size:11px'>8.49</span></td><td class='num' data-v='-0.6134'><span class='neg'>-0.6%</span><br><span style='color:var(--muted);font-size:11px'>8.55</span></td><td class='num' data-v='-3.8618'><span class='neg'>-3.9%</span><br><span style='color:var(--muted);font-size:11px'>8.75</span></td><td class='num' data-v='14.73'>14.7</td><td class='num' data-v='3' style='white-space:nowrap'>3/7<br><span style='color:var(--muted);font-size:11px'>2/4c 1/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>BOS @ BAL</td><td><span class='pill'>total</span></td><td class='team'>under 8.5</td><td class='num'>-115</td><td class='num' data-v='8.9863'><span class='pos'>+9.0%</span><br><span style='color:var(--muted);font-size:11px'>8.12</span></td><td class='num' data-v='-2.3246'><span class='neg'>-2.3%</span><br><span style='color:var(--muted);font-size:11px'>8.85</span></td><td class='num' data-v='-1.4833'><span class='neg'>-1.5%</span><br><span style='color:var(--muted);font-size:11px'>8.77</span></td><td class='num' data-v='-2.2498'><span class='neg'>-2.2%</span><br><span style='color:var(--muted);font-size:11px'>8.85</span></td><td class='num' data-v='8.9770'><span class='pos'>+9.0%</span><br><span style='color:var(--muted);font-size:11px'>8.17</span></td><td class='num' data-v='12.2861'><span class='pos'>+12.3%</span><br><span style='color:var(--muted);font-size:11px'>8.03</span></td><td class='num' data-v='8.3974'><span class='pos'>+8.4%</span><br><span style='color:var(--muted);font-size:11px'>8.2</span></td><td class='num' data-v='14.61'>14.6</td><td class='num' data-v='4' style='white-space:nowrap'>4/7<br><span style='color:var(--muted);font-size:11px'>1/4c 3/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>WSH @ LAD</td><td><span class='pill'>total</span></td><td class='team'>over 8.0</td><td class='num'>-115</td><td class='num' data-v='-3.7341'><span class='neg'>-3.7%</span><br><span style='color:var(--muted);font-size:11px'>8.77</span></td><td class='num' data-v='-10.0076'><span class='neg'>-10.0%</span><br><span style='color:var(--muted);font-size:11px'>8.44</span></td><td class='num' data-v='-9.1745'><span class='neg'>-9.2%</span><br><span style='color:var(--muted);font-size:11px'>8.54</span></td><td class='num' data-v='4.0996'><span class='pos'>+4.1%</span><br><span style='color:var(--muted);font-size:11px'>9.3</span></td><td class='num' data-v='-9.3415'><span class='neg'>-9.3%</span><br><span style='color:var(--muted);font-size:11px'>8.49</span></td><td class='num' data-v='-8.2143'><span class='neg'>-8.2%</span><br><span style='color:var(--muted);font-size:11px'>8.55</span></td><td class='num' data-v='-5.1037'><span class='neg'>-5.1%</span><br><span style='color:var(--muted);font-size:11px'>8.75</span></td><td class='num' data-v='14.11'>14.1</td><td class='num' data-v='1' style='white-space:nowrap'>1/7<br><span style='color:var(--muted);font-size:11px'>1/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>AZ @ HOU</td><td><span class='pill'>moneyline</span></td><td class='team'>HOU</td><td class='num'>-131</td><td class='num' data-v='7.3885'><span class='pos'>+7.4%</span><br><span style='color:var(--muted);font-size:11px'>60.9</span></td><td class='num' data-v='0.2646'><span class='pos'>+0.3%</span><br><span style='color:var(--muted);font-size:11px'>56.9</span></td><td class='num' data-v='5.7398'><span class='pos'>+5.7%</span><br><span style='color:var(--muted);font-size:11px'>60.0</span></td><td class='num' data-v='1.4813'><span class='pos'>+1.5%</span><br><span style='color:var(--muted);font-size:11px'>57.6</span></td><td class='num' data-v='3.2976'><span class='pos'>+3.3%</span><br><span style='color:var(--muted);font-size:11px'>58.6</span></td><td class='num' data-v='6.7714'><span class='pos'>+6.8%</span><br><span style='color:var(--muted);font-size:11px'>60.5</span></td><td class='num' data-v='13.9659'><span class='pos'>+14.0%</span><br><span style='color:var(--muted);font-size:11px'>64.6</span></td><td class='num' data-v='13.70'>13.7</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>DET @ CLE</td><td><span class='pill'>moneyline</span></td><td class='team'>CLE</td><td class='num'>-135</td><td class='num' data-v='-18.2066'><span class='neg'>-18.2%</span><br><span style='color:var(--muted);font-size:11px'>46.4</span></td><td class='num' data-v='-9.7513'><span class='neg'>-9.8%</span><br><span style='color:var(--muted);font-size:11px'>51.2</span></td><td class='num' data-v='-4.6816'><span class='neg'>-4.7%</span><br><span style='color:var(--muted);font-size:11px'>54.1</span></td><td class='num' data-v='-17.6952'><span class='neg'>-17.7%</span><br><span style='color:var(--muted);font-size:11px'>46.7</span></td><td class='num' data-v='-8.3759'><span class='neg'>-8.4%</span><br><span style='color:var(--muted);font-size:11px'>52.0</span></td><td class='num' data-v='-7.7763'><span class='neg'>-7.8%</span><br><span style='color:var(--muted);font-size:11px'>52.3</span></td><td class='num' data-v='-6.0482'><span class='neg'>-6.0%</span><br><span style='color:var(--muted);font-size:11px'>53.3</span></td><td class='num' data-v='13.52'>13.5</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>DET @ CLE</td><td><span class='pill'>total</span></td><td class='team'>over 8.5</td><td class='num'>-108</td><td class='num' data-v='-20.4881'><span class='neg'>-20.5%</span><br><span style='color:var(--muted);font-size:11px'>8.2</span></td><td class='num' data-v='-18.0904'><span class='neg'>-18.1%</span><br><span style='color:var(--muted);font-size:11px'>8.25</span></td><td class='num' data-v='-18.7741'><span class='neg'>-18.8%</span><br><span style='color:var(--muted);font-size:11px'>8.24</span></td><td class='num' data-v='-9.1541'><span class='neg'>-9.2%</span><br><span style='color:var(--muted);font-size:11px'>8.79</span></td><td class='num' data-v='-18.5141'><span class='neg'>-18.5%</span><br><span style='color:var(--muted);font-size:11px'>8.27</span></td><td class='num' data-v='-21.3259'><span class='neg'>-21.3%</span><br><span style='color:var(--muted);font-size:11px'>8.1</span></td><td class='num' data-v='-11.4844'><span class='neg'>-11.5%</span><br><span style='color:var(--muted);font-size:11px'>8.65</span></td><td class='num' data-v='12.17'>12.2</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>TOR @ KC</td><td><span class='pill'>total</span></td><td class='team'>over 10.0</td><td class='num'>-105</td><td class='num' data-v='-35.0640'><span class='neg'>-35.1%</span><br><span style='color:var(--muted);font-size:11px'>8.71</span></td><td class='num' data-v='-22.9891'><span class='neg'>-23.0%</span><br><span style='color:var(--muted);font-size:11px'>9.41</span></td><td class='num' data-v='-26.8433'><span class='neg'>-26.8%</span><br><span style='color:var(--muted);font-size:11px'>9.16</span></td><td class='num' data-v='-24.1593'><span class='neg'>-24.2%</span><br><span style='color:var(--muted);font-size:11px'>9.31</span></td><td class='num' data-v='-34.0383'><span class='neg'>-34.0%</span><br><span style='color:var(--muted);font-size:11px'>8.73</span></td><td class='num' data-v='-29.6640'><span class='neg'>-29.7%</span><br><span style='color:var(--muted);font-size:11px'>9.06</span></td><td class='num' data-v='-25.2741'><span class='neg'>-25.3%</span><br><span style='color:var(--muted);font-size:11px'>9.23</span></td><td class='num' data-v='12.07'>12.1</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>MIN @ CWS</td><td><span class='pill'>total</span></td><td class='team'>under 9.0</td><td class='num'>+105</td><td class='num' data-v='10.8886'><span class='pos'>+10.9%</span><br><span style='color:var(--muted);font-size:11px'>9.2</span></td><td class='num' data-v='17.5978'><span class='pos'>+17.6%</span><br><span style='color:var(--muted);font-size:11px'>8.86</span></td><td class='num' data-v='21.1872'><span class='pos'>+21.2%</span><br><span style='color:var(--muted);font-size:11px'>8.64</span></td><td class='num' data-v='22.9463'><span class='pos'>+22.9%</span><br><span style='color:var(--muted);font-size:11px'>8.53</span></td><td class='num' data-v='10.9930'><span class='pos'>+11.0%</span><br><span style='color:var(--muted);font-size:11px'>9.18</span></td><td class='num' data-v='12.7074'><span class='pos'>+12.7%</span><br><span style='color:var(--muted);font-size:11px'>9.11</span></td><td class='num' data-v='12.9056'><span class='pos'>+12.9%</span><br><span style='color:var(--muted);font-size:11px'>9.05</span></td><td class='num' data-v='12.06'>12.1</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>WSH @ LAD</td><td><span class='pill'>moneyline</span></td><td class='team'>LAD</td><td class='num'>-310</td><td class='num' data-v='-12.1806'><span class='neg'>-12.2%</span><br><span style='color:var(--muted);font-size:11px'>66.4</span></td><td class='num' data-v='-10.7456'><span class='neg'>-10.7%</span><br><span style='color:var(--muted);font-size:11px'>67.5</span></td><td class='num' data-v='-17.1337'><span class='neg'>-17.1%</span><br><span style='color:var(--muted);font-size:11px'>62.7</span></td><td class='num' data-v='-17.9140'><span class='neg'>-17.9%</span><br><span style='color:var(--muted);font-size:11px'>62.1</span></td><td class='num' data-v='-8.4642'><span class='neg'>-8.5%</span><br><span style='color:var(--muted);font-size:11px'>69.2</span></td><td class='num' data-v='-6.3084'><span class='neg'>-6.3%</span><br><span style='color:var(--muted);font-size:11px'>70.8</span></td><td class='num' data-v='-5.9248'><span class='neg'>-5.9%</span><br><span style='color:var(--muted);font-size:11px'>71.1</span></td><td class='num' data-v='11.99'>12.0</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>DET @ CLE</td><td><span class='pill'>total</span></td><td class='team'>under 8.5</td><td class='num'>-112</td><td class='num' data-v='11.1391'><span class='pos'>+11.1%</span><br><span style='color:var(--muted);font-size:11px'>8.2</span></td><td class='num' data-v='8.7825'><span class='pos'>+8.8%</span><br><span style='color:var(--muted);font-size:11px'>8.25</span></td><td class='num' data-v='9.4545'><span class='pos'>+9.5%</span><br><span style='color:var(--muted);font-size:11px'>8.24</span></td><td class='num' data-v='-0.0004'><span class='neg'>-0.0%</span><br><span style='color:var(--muted);font-size:11px'>8.79</span></td><td class='num' data-v='9.1989'><span class='pos'>+9.2%</span><br><span style='color:var(--muted);font-size:11px'>8.27</span></td><td class='num' data-v='11.9625'><span class='pos'>+12.0%</span><br><span style='color:var(--muted);font-size:11px'>8.1</span></td><td class='num' data-v='2.2900'><span class='pos'>+2.3%</span><br><span style='color:var(--muted);font-size:11px'>8.65</span></td><td class='num' data-v='11.96'>12.0</td><td class='num' data-v='6' style='white-space:nowrap'>6/7<br><span style='color:var(--muted);font-size:11px'>3/4c 3/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>STL @ COL</td><td><span class='pill'>total</span></td><td class='team'>over 11.5</td><td class='num'>+101</td><td class='num' data-v='-25.4994'><span class='neg'>-25.5%</span><br><span style='color:var(--muted);font-size:11px'>10.37</span></td><td class='num' data-v='-25.1577'><span class='neg'>-25.2%</span><br><span style='color:var(--muted);font-size:11px'>10.4</span></td><td class='num' data-v='-31.0068'><span class='neg'>-31.0%</span><br><span style='color:var(--muted);font-size:11px'>10.04</span></td><td class='num' data-v='-36.8358'><span class='neg'>-36.8%</span><br><span style='color:var(--muted);font-size:11px'>9.59</span></td><td class='num' data-v='-34.7554'><span class='neg'>-34.8%</span><br><span style='color:var(--muted);font-size:11px'>9.75</span></td><td class='num' data-v='-32.7454'><span class='neg'>-32.7%</span><br><span style='color:var(--muted);font-size:11px'>9.88</span></td><td class='num' data-v='-25.9918'><span class='neg'>-26.0%</span><br><span style='color:var(--muted);font-size:11px'>10.43</span></td><td class='num' data-v='11.68'>11.7</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>TOR @ KC</td><td><span class='pill'>total</span></td><td class='team'>under 10.0</td><td class='num'>-115</td><td class='num' data-v='24.7750'><span class='pos'>+24.8%</span><br><span style='color:var(--muted);font-size:11px'>8.71</span></td><td class='num' data-v='13.2122'><span class='pos'>+13.2%</span><br><span style='color:var(--muted);font-size:11px'>9.41</span></td><td class='num' data-v='16.9030'><span class='pos'>+16.9%</span><br><span style='color:var(--muted);font-size:11px'>9.16</span></td><td class='num' data-v='14.3328'><span class='pos'>+14.3%</span><br><span style='color:var(--muted);font-size:11px'>9.31</span></td><td class='num' data-v='23.7928'><span class='pos'>+23.8%</span><br><span style='color:var(--muted);font-size:11px'>8.73</span></td><td class='num' data-v='19.6040'><span class='pos'>+19.6%</span><br><span style='color:var(--muted);font-size:11px'>9.06</span></td><td class='num' data-v='15.4003'><span class='pos'>+15.4%</span><br><span style='color:var(--muted);font-size:11px'>9.23</span></td><td class='num' data-v='11.56'>11.6</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>STL @ COL</td><td><span class='pill'>total</span></td><td class='team'>under 11.5</td><td class='num'>-121</td><td class='num' data-v='14.9474'><span class='pos'>+14.9%</span><br><span style='color:var(--muted);font-size:11px'>10.37</span></td><td class='num' data-v='14.6369'><span class='pos'>+14.6%</span><br><span style='color:var(--muted);font-size:11px'>10.4</span></td><td class='num' data-v='19.9519'><span class='pos'>+20.0%</span><br><span style='color:var(--muted);font-size:11px'>10.04</span></td><td class='num' data-v='25.2486'><span class='pos'>+25.2%</span><br><span style='color:var(--muted);font-size:11px'>9.59</span></td><td class='num' data-v='23.3582'><span class='pos'>+23.4%</span><br><span style='color:var(--muted);font-size:11px'>9.75</span></td><td class='num' data-v='21.5317'><span class='pos'>+21.5%</span><br><span style='color:var(--muted);font-size:11px'>9.88</span></td><td class='num' data-v='15.3949'><span class='pos'>+15.4%</span><br><span style='color:var(--muted);font-size:11px'>10.43</span></td><td class='num' data-v='10.61'>10.6</td><td class='num' data-v='7' style='white-space:nowrap'>7/7<br><span style='color:var(--muted);font-size:11px'>4/4c 3/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>MIN @ CWS</td><td><span class='pill'>total</span></td><td class='team'>over 9.0</td><td class='num'>-125</td><td class='num' data-v='-17.3656'><span class='neg'>-17.4%</span><br><span style='color:var(--muted);font-size:11px'>9.2</span></td><td class='num' data-v='-23.2566'><span class='neg'>-23.3%</span><br><span style='color:var(--muted);font-size:11px'>8.86</span></td><td class='num' data-v='-26.4083'><span class='neg'>-26.4%</span><br><span style='color:var(--muted);font-size:11px'>8.64</span></td><td class='num' data-v='-27.9528'><span class='neg'>-28.0%</span><br><span style='color:var(--muted);font-size:11px'>8.53</span></td><td class='num' data-v='-17.4573'><span class='neg'>-17.5%</span><br><span style='color:var(--muted);font-size:11px'>9.18</span></td><td class='num' data-v='-18.9626'><span class='neg'>-19.0%</span><br><span style='color:var(--muted);font-size:11px'>9.11</span></td><td class='num' data-v='-19.1367'><span class='neg'>-19.1%</span><br><span style='color:var(--muted);font-size:11px'>9.05</span></td><td class='num' data-v='10.59'>10.6</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>SF @ NYM</td><td><span class='pill'>total</span></td><td class='team'>under 8.0</td><td class='num'>-105</td><td class='num' data-v='5.3715'><span class='pos'>+5.4%</span><br><span style='color:var(--muted);font-size:11px'>8.24</span></td><td class='num' data-v='3.1393'><span class='pos'>+3.1%</span><br><span style='color:var(--muted);font-size:11px'>8.36</span></td><td class='num' data-v='5.9682'><span class='pos'>+6.0%</span><br><span style='color:var(--muted);font-size:11px'>8.17</span></td><td class='num' data-v='-1.3651'><span class='neg'>-1.4%</span><br><span style='color:var(--muted);font-size:11px'>8.57</span></td><td class='num' data-v='-1.5069'><span class='neg'>-1.5%</span><br><span style='color:var(--muted);font-size:11px'>8.55</span></td><td class='num' data-v='-0.2618'><span class='neg'>-0.3%</span><br><span style='color:var(--muted);font-size:11px'>8.55</span></td><td class='num' data-v='-3.5470'><span class='neg'>-3.5%</span><br><span style='color:var(--muted);font-size:11px'>8.67</span></td><td class='num' data-v='9.52'>9.5</td><td class='num' data-v='3' style='white-space:nowrap'>3/7<br><span style='color:var(--muted);font-size:11px'>3/4c 0/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>SF @ NYM</td><td><span class='pill'>total</span></td><td class='team'>over 8.0</td><td class='num'>-115</td><td class='num' data-v='-13.9453'><span class='neg'>-13.9%</span><br><span style='color:var(--muted);font-size:11px'>8.24</span></td><td class='num' data-v='-11.8078'><span class='neg'>-11.8%</span><br><span style='color:var(--muted);font-size:11px'>8.36</span></td><td class='num' data-v='-14.5168'><span class='neg'>-14.5%</span><br><span style='color:var(--muted);font-size:11px'>8.17</span></td><td class='num' data-v='-7.4945'><span class='neg'>-7.5%</span><br><span style='color:var(--muted);font-size:11px'>8.57</span></td><td class='num' data-v='-7.3587'><span class='neg'>-7.4%</span><br><span style='color:var(--muted);font-size:11px'>8.55</span></td><td class='num' data-v='-8.5510'><span class='neg'>-8.6%</span><br><span style='color:var(--muted);font-size:11px'>8.55</span></td><td class='num' data-v='-5.4051'><span class='neg'>-5.4%</span><br><span style='color:var(--muted);font-size:11px'>8.67</span></td><td class='num' data-v='9.11'>9.1</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>SF @ NYM</td><td><span class='pill'>moneyline</span></td><td class='team'>NYM</td><td class='num'>-180</td><td class='num' data-v='-9.0622'><span class='neg'>-9.1%</span><br><span style='color:var(--muted);font-size:11px'>58.5</span></td><td class='num' data-v='-9.4356'><span class='neg'>-9.4%</span><br><span style='color:var(--muted);font-size:11px'>58.2</span></td><td class='num' data-v='-13.7678'><span class='neg'>-13.8%</span><br><span style='color:var(--muted);font-size:11px'>55.4</span></td><td class='num' data-v='-4.9011'><span class='neg'>-4.9%</span><br><span style='color:var(--muted);font-size:11px'>61.1</span></td><td class='num' data-v='-8.3933'><span class='neg'>-8.4%</span><br><span style='color:var(--muted);font-size:11px'>58.9</span></td><td class='num' data-v='-10.0733'><span class='neg'>-10.1%</span><br><span style='color:var(--muted);font-size:11px'>57.8</span></td><td class='num' data-v='-9.4822'><span class='neg'>-9.5%</span><br><span style='color:var(--muted);font-size:11px'>58.2</span></td><td class='num' data-v='8.87'>8.9</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>NYY @ SD</td><td><span class='pill'>total</span></td><td class='team'>over 7.5</td><td class='num'>-105</td><td class='num' data-v='-9.7024'><span class='neg'>-9.7%</span><br><span style='color:var(--muted);font-size:11px'>7.73</span></td><td class='num' data-v='-12.2502'><span class='neg'>-12.3%</span><br><span style='color:var(--muted);font-size:11px'>7.59</span></td><td class='num' data-v='-10.6590'><span class='neg'>-10.7%</span><br><span style='color:var(--muted);font-size:11px'>7.66</span></td><td class='num' data-v='-8.4724'><span class='neg'>-8.5%</span><br><span style='color:var(--muted);font-size:11px'>7.81</span></td><td class='num' data-v='-10.4833'><span class='neg'>-10.5%</span><br><span style='color:var(--muted);font-size:11px'>7.71</span></td><td class='num' data-v='-3.7867'><span class='neg'>-3.8%</span><br><span style='color:var(--muted);font-size:11px'>8.01</span></td><td class='num' data-v='-11.4205'><span class='neg'>-11.4%</span><br><span style='color:var(--muted);font-size:11px'>7.67</span></td><td class='num' data-v='8.46'>8.5</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>LAA @ PIT</td><td><span class='pill'>total</span></td><td class='team'>over 8.5</td><td class='num'>+100</td><td class='num' data-v='5.4700'><span class='pos'>+5.5%</span><br><span style='color:var(--muted);font-size:11px'>9.51</span></td><td class='num' data-v='-2.6800'><span class='neg'>-2.7%</span><br><span style='color:var(--muted);font-size:11px'>8.91</span></td><td class='num' data-v='-2.5500'><span class='neg'>-2.6%</span><br><span style='color:var(--muted);font-size:11px'>8.95</span></td><td class='num' data-v='-0.5400'><span class='neg'>-0.5%</span><br><span style='color:var(--muted);font-size:11px'>9.13</span></td><td class='num' data-v='0.9600'><span class='pos'>+1.0%</span><br><span style='color:var(--muted);font-size:11px'>9.14</span></td><td class='num' data-v='-0.4200'><span class='neg'>-0.4%</span><br><span style='color:var(--muted);font-size:11px'>9.07</span></td><td class='num' data-v='5.2800'><span class='pos'>+5.3%</span><br><span style='color:var(--muted);font-size:11px'>9.44</span></td><td class='num' data-v='8.15'>8.2</td><td class='num' data-v='3' style='white-space:nowrap'>3/7<br><span style='color:var(--muted);font-size:11px'>1/4c 2/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>NYY @ SD</td><td><span class='pill'>total</span></td><td class='team'>under 7.5</td><td class='num'>-115</td><td class='num' data-v='0.4891'><span class='pos'>+0.5%</span><br><span style='color:var(--muted);font-size:11px'>7.73</span></td><td class='num' data-v='2.9289'><span class='pos'>+2.9%</span><br><span style='color:var(--muted);font-size:11px'>7.59</span></td><td class='num' data-v='1.4052'><span class='pos'>+1.4%</span><br><span style='color:var(--muted);font-size:11px'>7.66</span></td><td class='num' data-v='-0.6887'><span class='neg'>-0.7%</span><br><span style='color:var(--muted);font-size:11px'>7.81</span></td><td class='num' data-v='1.2370'><span class='pos'>+1.2%</span><br><span style='color:var(--muted);font-size:11px'>7.71</span></td><td class='num' data-v='-5.1757'><span class='neg'>-5.2%</span><br><span style='color:var(--muted);font-size:11px'>8.01</span></td><td class='num' data-v='2.1343'><span class='pos'>+2.1%</span><br><span style='color:var(--muted);font-size:11px'>7.67</span></td><td class='num' data-v='8.10'>8.1</td><td class='num' data-v='5' style='white-space:nowrap'>5/7<br><span style='color:var(--muted);font-size:11px'>3/4c 2/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>LAA @ PIT</td><td><span class='pill'>total</span></td><td class='team'>under 8.5</td><td class='num'>-120</td><td class='num' data-v='-13.3475'><span class='neg'>-13.3%</span><br><span style='color:var(--muted);font-size:11px'>9.51</span></td><td class='num' data-v='-5.8767'><span class='neg'>-5.9%</span><br><span style='color:var(--muted);font-size:11px'>8.91</span></td><td class='num' data-v='-5.9958'><span class='neg'>-6.0%</span><br><span style='color:var(--muted);font-size:11px'>8.95</span></td><td class='num' data-v='-7.8383'><span class='neg'>-7.8%</span><br><span style='color:var(--muted);font-size:11px'>9.13</span></td><td class='num' data-v='-9.2133'><span class='neg'>-9.2%</span><br><span style='color:var(--muted);font-size:11px'>9.14</span></td><td class='num' data-v='-7.9483'><span class='neg'>-7.9%</span><br><span style='color:var(--muted);font-size:11px'>9.07</span></td><td class='num' data-v='-13.1733'><span class='neg'>-13.2%</span><br><span style='color:var(--muted);font-size:11px'>9.44</span></td><td class='num' data-v='7.47'>7.5</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>STL @ COL</td><td><span class='pill'>moneyline</span></td><td class='team'>COL</td><td class='num'>+115</td><td class='num' data-v='3.8557'><span class='pos'>+3.9%</span><br><span style='color:var(--muted);font-size:11px'>48.3</span></td><td class='num' data-v='-1.1108'><span class='neg'>-1.1%</span><br><span style='color:var(--muted);font-size:11px'>46.0</span></td><td class='num' data-v='3.5763'><span class='pos'>+3.6%</span><br><span style='color:var(--muted);font-size:11px'>48.2</span></td><td class='num' data-v='3.4257'><span class='pos'>+3.4%</span><br><span style='color:var(--muted);font-size:11px'>48.1</span></td><td class='num' data-v='4.2965'><span class='pos'>+4.3%</span><br><span style='color:var(--muted);font-size:11px'>48.5</span></td><td class='num' data-v='5.5435'><span class='pos'>+5.5%</span><br><span style='color:var(--muted);font-size:11px'>49.1</span></td><td class='num' data-v='0.6845'><span class='pos'>+0.7%</span><br><span style='color:var(--muted);font-size:11px'>46.8</span></td><td class='num' data-v='6.65'>6.7</td><td class='num' data-v='6' style='white-space:nowrap'>6/7<br><span style='color:var(--muted);font-size:11px'>3/4c 3/3g</span><span class='pill'>split</span></td></tr><tr><td class='date' data-v='20260904'>2026-09-04</td><td>STL @ COL</td><td><span class='pill'>moneyline</span></td><td class='team'>STL</td><td class='num'>-127</td><td class='num' data-v='-7.6003'><span class='neg'>-7.6%</span><br><span style='color:var(--muted);font-size:11px'>51.7</span></td><td class='num' data-v='-3.4714'><span class='neg'>-3.5%</span><br><span style='color:var(--muted);font-size:11px'>54.0</span></td><td class='num' data-v='-7.3679'><span class='neg'>-7.4%</span><br><span style='color:var(--muted);font-size:11px'>51.8</span></td><td class='num' data-v='-7.2428'><span class='neg'>-7.2%</span><br><span style='color:var(--muted);font-size:11px'>51.9</span></td><td class='num' data-v='-7.9667'><span class='neg'>-8.0%</span><br><span style='color:var(--muted);font-size:11px'>51.5</span></td><td class='num' data-v='-9.0034'><span class='neg'>-9.0%</span><br><span style='color:var(--muted);font-size:11px'>50.9</span></td><td class='num' data-v='-4.9639'><span class='neg'>-5.0%</span><br><span style='color:var(--muted);font-size:11px'>53.2</span></td><td class='num' data-v='5.53'>5.5</td><td class='num' data-v='0' style='white-space:nowrap'>0/7<br><span style='color:var(--muted);font-size:11px'>0/4c 0/3g</span></td></tr></tbody></table></div><p class='note'>EV% for the same bet under every window. <b>Season</b> is the full-season rates. <b>L30d, L14d, L7d</b> are calendar windows &mdash; trailing days. <b>L15g, L7g, L3g</b> are game-count windows &mdash; each player's last N games played, read only from today's side of the venue. The <code>d</code> and <code>g</code> suffixes matter: L7d is seven days, L7g is seven games. The small grey number is that window's projection &mdash; the projected total on a total, the model's win probability on a moneyline &mdash; and it matches the Games and Form pages. Sorted by <b>spread</b>, widest disagreement first.</p><p class='note'><b>Count agreement by family, not by column.</b> Every window shares the same lineups, park factor, bullpen, umpire and simulator, and windows within one model share their rate construction too &mdash; four calendar windows agreeing is close to one opinion stated four times, not four confirmations. The short windows are also regressed hard toward a season anchor, so they agree with the season column by construction. The sub-counts (<code>c</code> for calendar, <code>g</code> for games) are the useful read: a row where one family is unanimous one way and the other unanimous the opposite is marked <span class='pill'>opposed</span>, and that is the only disagreement here backed by two genuinely different readings of form.</p><p class='note'>The game-count windows are <b>not backtested</b>. The calibration constants and the edge figures on Tracking were both measured on season rates and do not carry over.</p><p class='note'>Each model against completed games it projected beforehand. MAE is here because it is conventional, but it is a poor way to separate these &mdash; almost all of it is irreducible game noise, and a model that improved meaningfully would barely move it. Bias and the over/under call rate are more sensitive; closing-line value is better still.</p></div></main>
+</style>
+</head>
+<body>
+
+<header>
+  <div class="legend">
+    <div style="background:#F07E7C">&lt;2 min</div>
+    <div style="background:#EFC24B">2-5 min</div>
+    <div style="background:#5DCAA5">5-10 min</div>
+    <div style="background:#B9C6C2">no move</div>
+    <div style="background:#5A1414;color:#F2F7F5">started</div>
+  </div>
+  <nav class="tabs" id="tabs"></nav>
+  <div class="bar">
+    <h1>BETONLINE.AG</h1>
+    <div class="meta" id="meta">loading&hellip;</div>
+  </div>
+</header>
+
+<table>
+  <thead><tr id="head"></tr></thead>
+  <tbody id="body"></tbody>
+</table>
+<div id="cards"></div>
+
 <script>
-(function(){
-  var val=function(el,t){
-    var s=(el.getAttribute('data-v')!==null)?el.getAttribute('data-v'):el.textContent;
-    s=s.trim();
-    if(t==='num'){var n=parseFloat(s.replace(/[^0-9.+-]/g,''));return isNaN(n)?-Infinity:n;}
-    return s.toLowerCase();
-  };
-  document.querySelectorAll('table').forEach(function(tb){
-    var heads=tb.querySelectorAll('thead th');
-    // The sort stack: [{i, t, dir}], first entry is the primary key. A plain
-    // click replaces it; shift/ctrl/cmd-click appends, so "price desc, then
-    // L3g desc" is two clicks.
-    //
-    // Direction rules, all aimed at one click doing what was meant:
-    //   - a numeric column opens descending, a text column ascending. Nobody
-    //     opens an EV column wanting the worst number on top.
-    //   - clicking a key already in the stack flips it and nothing else, so
-    //     the primary stays flippable no matter how many keys are behind it.
-    //   - a key is never removed by clicking its header. Two states on a
-    //     narrow target, not three - overshooting used to delete the key
-    //     instead of flipping it back. Removal lives on the readout below.
-    var stack=[];
-    var bar=null;
-    var addMode=false;
-    var open=function(t){return t==='num'?'desc':'asc';};
-    var label=function(k){
-      var th=heads[k.i];
-      var txt=(th.textContent||'').trim()||'col '+(k.i+1);
-      return txt+' '+(k.dir==='asc'?'\u2191':'\u2193');
-    };
-    var paint=function(){
-      heads.forEach(function(h){
-        h.removeAttribute('data-dir');h.removeAttribute('data-rank');});
-      stack.forEach(function(k,n){
-        heads[k.i].setAttribute('data-dir',k.dir);
-        if(stack.length>1)heads[k.i].setAttribute('data-rank',n+1);
-      });
-      if(!bar)return;
-      // The readout is the roomy control. Header cells on this table are
-      // ~60px wide; these chips are not, so flipping and removing a key are
-      // easier here than up there. The +key chip is also the touch
-      // equivalent of shift-click, since the dashboard table stays on screen
-      // at phone widths and there is no modifier available.
-      var html='';
-      if(stack.length){
-        html='sorted by '+stack.map(function(k,n){
-          return '<span class="key" data-k="'+n+'">'+label(k)+
-                 '<span class="x">\u00d7</span></span>';
-        }).join(' &rsaquo; ')+'<span class="clr wipe">clear</span>';
-      }
-      html+='<span class="clr add'+(addMode?' on':'')+'">+key</span>';
-      bar.innerHTML=html;
-      Array.prototype.forEach.call(bar.querySelectorAll('.key'),function(el){
-        el.addEventListener('click',function(ev){
-          var n=parseInt(el.getAttribute('data-k'),10);
-          if(isNaN(n)||!stack[n])return;
-          if(ev.target&&ev.target.className==='x')stack.splice(n,1);
-          else stack[n].dir=stack[n].dir==='asc'?'desc':'asc';
-          paint();apply();
-        });
-      });
-      var w=bar.querySelector('.wipe');
-      if(w)w.addEventListener('click',function(){stack=[];paint();});
-      var ad=bar.querySelector('.add');
-      if(ad)ad.addEventListener('click',function(){addMode=!addMode;paint();});
-    };
-    var apply=function(){
-      var body=tb.querySelector('tbody');
-      var all=Array.prototype.slice.call(body.querySelectorAll('tr'));
-      var rows=all.filter(function(r){return !r.classList.contains('det');});
-      var dets={};
-      all.forEach(function(r){
-        if(r.classList.contains('det'))dets[r.getAttribute('data-g')]=r;
-      });
-      // Remember the incoming order so the comparator can fall back to it.
-      // Array.prototype.sort is stable in every browser this targets, but
-      // being explicit keeps a full tie from depending on that.
-      rows.forEach(function(r,n){r._n=n;});
-      rows.sort(function(a,b){
-        for(var s=0;s<stack.length;s++){
-          var k=stack[s];
-          if(!a.cells[k.i]||!b.cells[k.i])continue;
-          var x=val(a.cells[k.i],k.t),y=val(b.cells[k.i],k.t);
-          if(x<y)return k.dir==='asc'?-1:1;
-          if(x>y)return k.dir==='asc'?1:-1;
-        }
-        return a._n-b._n;
-      });
-      rows.forEach(function(r){
-        body.appendChild(r);
-        var g=r.getAttribute('data-g');
-        if(g!==null&&dets[g])body.appendChild(dets[g]);
-      });
-    };
-    heads.forEach(function(th,i){
-      if(!th.hasAttribute('data-t'))return;
-      th.setAttribute('tabindex','0');
-      var go=function(add){
-        var t=th.getAttribute('data-t');
-        var at=-1;
-        for(var s=0;s<stack.length;s++)if(stack[s].i===i){at=s;break;}
-        if(at>=0){
-          // Already a key: flip it, leave its position and the rest alone.
-          stack[at].dir=stack[at].dir==='asc'?'desc':'asc';
-        }else if(add){
-          stack.push({i:i,t:t,dir:open(t)});
-        }else{
-          stack=[{i:i,t:t,dir:open(t)}];
-        }
-        paint();apply();
-      };
-      th.addEventListener('click',function(ev){
-        go(ev.shiftKey||ev.ctrlKey||ev.metaKey||addMode);
-      });
-      th.addEventListener('keydown',function(ev){
-        if(ev.key==='Enter'||ev.key===' '){
-          ev.preventDefault();go(ev.shiftKey||addMode);}
-      });
-    });
-    // Readout sits directly above its own table, so a page with two tables
-    // gets two independent stacks and two independent bars.
-    var host=tb.parentNode;
-    bar=document.createElement('div');
-    bar.className='sortbar';
-    host.parentNode.insertBefore(bar,host);
-    paint();
+const REFRESH_MS = 30000;
+let DATA = null, OPEN = null, SPORTS = [], SPORT = null;
+const CACHE = {};
+
+/* Remembering the tab in the URL means a phone bookmark or a refresh lands
+   where you left off, and the wall monitor can be pinned to one sport. */
+function initialSport(){
+  const q = new URLSearchParams(location.search).get("s");
+  return q || null;
+}
+
+function mvClass(min, changed){
+  if(!changed) return "";
+  if(min < 2)  return "mv mv2";
+  if(min < 5)  return "mv mv5";
+  if(min < 10) return "mv mv10";
+  return "";
+}
+
+const pit = (n, h) => `<div class="pit">${n ? n + (h ? "-" + h : "") : "&mdash;"}</div>`;
+
+/* Possession marker. Only meaningful while a game is live, so it is gated on
+   that rather than on the field being present -- ESPN leaves stale situation
+   data on a game that has just ended. */
+const BALL = '<svg class="ball" viewBox="0 0 22 13" aria-hidden="true">'
+  + '<ellipse cx="11" cy="6.5" rx="10" ry="5.7" fill="currentColor"/>'
+  + '<path d="M6.5 6.5h9M9 4.4v4.2M11 4.4v4.2M13 4.4v4.2" '
+  + 'stroke="#08161B" stroke-width="1.1" stroke-linecap="round"/></svg>';
+
+const poss = (g, side) => (g.live && g.poss === side) ? BALL : "";
+
+/* Box score panel. Reuses the OPEN mechanism the odds history uses, with a
+   reserved key, so opening a box closes any open history and vice versa --
+   two panels under one game would push the row apart. */
+const BOX = "__box";
+
+function boxTable(g){
+  const b = g.box;
+  if(!b) return '<div class="bmsg">No box score yet.</div>';
+  const A = g.away_short || g.away, H = g.home_short || g.home;
+
+  if(b.kind === "innings"){
+    const inn = b.innings || [];
+    if(!inn.length) return '<div class="bmsg">Game has not started.</div>';
+    const head = inn.map(i => `<th>${i.n}</th>`).join("")
+               + '<th class="tot">R</th><th class="tot">H</th><th class="tot">E</th>';
+    const row = (name, key, rhe) =>
+      `<tr><td class="bt">${name}</td>`
+      + inn.map(i => `<td>${i[key] ?? "-"}</td>`).join("")
+      + (rhe || []).map(v => `<td class="tot">${v ?? "-"}</td>`).join("") + "</tr>";
+    return `<table class="box"><thead><tr><th></th>${head}</tr></thead><tbody>`
+         + row(A, "a", b.rhe[0]) + row(H, "h", b.rhe[1]) + "</tbody></table>";
+  }
+
+  // periods
+  const n = Math.max(b.away.length, b.home.length);
+  if(!n) return '<div class="bmsg">Game has not started.</div>';
+  const lbl = i => i < 4 ? "Q" + (i + 1) : (n === 5 ? "OT" : "OT" + (i - 3));
+  const sum = a => a.reduce((x, y) => x + (Number(y) || 0), 0);
+  const head = Array.from({length: n}, (_, i) => `<th>${lbl(i)}</th>`).join("")
+             + '<th class="tot">T</th>';
+  const row = (name, arr) =>
+    `<tr><td class="bt">${name}</td>`
+    + Array.from({length: n}, (_, i) => `<td>${arr[i] ?? "-"}</td>`).join("")
+    + `<td class="tot">${sum(arr)}</td></tr>`;
+  const lead = (b.leaders || []).map(l =>
+    `<div class="lead"><span class="lcat">${l.cat}</span>`
+    + `<span class="lwho">${l.who}${l.team ? " (" + (l.team === "away" ? A : H) + ")" : ""}</span>`
+    + `<span class="lval">${l.val}</span></div>`).join("");
+  return `<table class="box"><thead><tr><th></th>${head}</tr></thead><tbody>`
+       + row(A, b.away) + row(H, b.home) + "</tbody></table>"
+       + (lead ? `<div class="leads">${lead}</div>` : "");
+}
+
+/* Down, distance and field position. One short line, shown under the clock. */
+function drive(g){
+  if(!g.live) return "";
+  const bits = [];
+  if(g.down) bits.push(g.down);
+  if(g.spot && !(g.down || "").includes(g.spot)) bits.push(g.spot);
+  if(!bits.length) return "";
+  const rz = g.redzone ? '<span class="rzb">RZ</span>' : "";
+  return `<div class="drv">${rz}${bits.join(" \u00b7 ")}</div>`;
+}
+
+/* AP rank prefix, e.g. "1 ALA". Absent for MLB and unranked teams. */
+const rk = n => (n && n > 0 && n <= 25) ? `<span class="rank">${n}</span>` : "";
+
+/* Neutral site is the thing you can't infer from the odds feed: home/away is
+   arbitrary for those games. Venue only shown when it's neutral -- otherwise
+   it's just the home team's stadium and adds noise. */
+function venueLine(g){
+  if(!g.neutral) return "";
+  const where = [g.city, g.state].filter(Boolean).join(", ");
+  return `<div class="neu">NEUTRAL${where ? " \u00b7 " + where : ""}</div>`;
+}
+
+/* The builder decides the wording per sport (build_site.status_text); the page
+   only picks a colour. The old version had a baseball branch first, so a live
+   football game took it and rendered an empty inning plus "0 out". */
+function statusLine(g){
+  if(!g.status_text) return "";
+  const cls = g.live   ? "st live"
+            : g.warmup ? "st warm"
+            : g.final  ? "st fin"
+            : "st";
+  return `<div class="${cls}">${g.status_text}</div>`;
+}
+
+function sideHTML(s, which){
+  const v = s[which] || "&mdash;";
+  const k = which === "cur" ? mvClass(s.moved_min, s.changed) : "";
+  const d = which === "cur" && s.changed ? '<span class="dot">&#9679;</span>' : "";
+  let out = `<span class="side">${s.label}</span>`
+          + `<span class="${which === "cur" ? "cur " + k : "open"}">${v}</span>${d}`;
+  if(which === "cur" && s.changed && s.open && s.open !== s.cur){
+    out += `<div class="opn"><span class="side"></span>${s.open}</div>`;
+  }
+  return out;
+}
+
+/* ── desktop ─────────────────────────────────────────────────── */
+function cell(sides, which, gi, key){
+  if(!sides || !sides.length) return "<td>&mdash;</td>";
+  const any = sides.some(s => s.changed);
+  const cls = (which === "cur" && any ? "hot" : "")
+            + (OPEN && OPEN[0] === gi && OPEN[1] === key ? " sel" : "");
+  const click = which === "cur" && any ? ` onclick="det(${gi},'${key}')"` : "";
+  return `<td class="${cls}"${click}>`
+       + sides.map(s => `<div>${sideHTML(s, which)}</div>`).join("") + "</td>";
+}
+
+function histRows(s){
+  return (s.hist || [{ts: s.opened_at, line: s.cur}]).map((h, i) =>
+    `<tr><td class="dts">${h.ts}</td><td class="${i ? "" : "dnow"}">${h.line}</td></tr>`
+  ).join("");
+}
+
+function detailRow(gi, key){
+  const g = DATA.games[gi];
+  if(key === BOX){
+    return `<tr class="det"><td colspan="${DATA.columns.length + 2}">
+              <div class="dwrap">${boxTable(g)}</div></td></tr>`;
+  }
+  const label = DATA.columns.find(c => c.key === key).label;
+  const blocks = (g.markets[key] || []).map(s =>
+    `<div style="display:inline-block;vertical-align:top;margin-right:36px">
+       <div class="dhead">${g.away} @ ${g.home} &mdash; ${label} &mdash; ${s.label}</div>
+       <table>${histRows(s)}</table></div>`).join("");
+  return `<tr class="det"><td colspan="${DATA.columns.length + 2}">
+            <div class="dwrap">${blocks}</div></td></tr>`;
+}
+
+/* ── mobile ──────────────────────────────────────────────────── */
+function mkBlock(g, gi, col){
+  const sides = g.markets[col.key];
+  if(!sides || !sides.length)
+    return `<div class="mk"><div class="mklbl">${col.label}</div>
+            <div class="mkln">&mdash;</div></div>`;
+  const any = sides.some(s => s.changed);
+  const cls = (any ? " hot" : "")
+            + (OPEN && OPEN[0] === gi && OPEN[1] === col.key ? " sel" : "");
+  const click = any ? ` onclick="det(${gi},'${col.key}')"` : "";
+  return `<div class="mk${cls}"${click}><div class="mklbl">${col.label}</div>`
+       + sides.map(s => `<div class="mkln">${sideHTML(s, "cur")}</div>`).join("")
+       + "</div>";
+}
+
+function cardHist(gi, key){
+  const g = DATA.games[gi];
+  if(key === BOX) return `<div class="chist">${boxTable(g)}</div>`;
+  const label = DATA.columns.find(c => c.key === key).label;
+  return '<div class="chist">' + (g.markets[key] || []).map(s =>
+    `<div class="dhead">${label} &mdash; ${s.label}</div>`
+    + (s.hist || [{ts: s.opened_at, line: s.cur}]).map((h, i) =>
+        `<div class="hrow"><span class="dts">${h.ts}</span>
+         <span class="${i ? "" : "dnow"}">${h.line}</span></div>`).join("")
+  ).join("") + "</div>";
+}
+
+function card(g, gi){
+  const ar = (g.away_r ?? null) !== null ? ` <span class="run">${g.away_r}</span>` : "";
+  const hr = (g.home_r ?? null) !== null ? ` <span class="run">${g.home_r}</span>` : "";
+  return `<div class="card${g.started ? " started" : ""}">
+    <div class="chead${g.box ? " boxable" : ""}"${g.box ? ` onclick="det(${gi},'${BOX}')"` : ""}>
+      <div>
+        <div class="crow"><span class="tname">${poss(g, "away")}${rk(g.away_rank)}<span class="team">${g.away_short || g.away}</span>${g.away_p ? pit(g.away_p, g.away_ph) : ""}</span>${ar}</div>
+        <div class="crow"><span class="tname">${poss(g, "home")}${rk(g.home_rank)}<span class="team">${g.home_short || g.home}</span>${g.home_p ? pit(g.home_p, g.home_ph) : ""}</span>${hr}</div>
+        ${venueLine(g)}
+      </div>
+      <div class="cmeta">${g.time}${g.away_rot ? `<br>${g.away_rot}/${g.home_rot}` : ""}
+        ${statusLine(g)}${drive(g)}</div>
+    </div>
+    <div class="mkts">${DATA.columns.map(c => mkBlock(g, gi, c)).join("")}</div>
+    ${OPEN && OPEN[0] === gi ? cardHist(gi, OPEN[1]) : ""}
+  </div>`;
+}
+
+/* ── render ──────────────────────────────────────────────────── */
+function renderTabs(){
+  document.getElementById("tabs").innerHTML = SPORTS.map(s =>
+    `<button class="${s.sport === SPORT ? "on" : ""}" onclick="pick('${s.sport}')">`
+    + `${s.label}<span class="n">${s.games}</span></button>`).join("");
+}
+
+async function pick(sport){
+  if(sport === SPORT) return;
+  SPORT = sport;
+  OPEN = null;                      // an open history panel belongs to the old sport
+  history.replaceState(null, "", "?s=" + sport);
+  renderTabs();
+  await loadSport();
+}
+
+function render(){
+  const d = DATA;
+  const moved = d.games.reduce((a, g) => a + g.moves, 0);
+  document.getElementById("meta").textContent =
+    `${d.games.length} games \u00b7 ${moved} moved \u00b7 ${d.generated}`;
+  document.title = `${d.label || "MLB"} odds \u2014 BetOnline`;
+
+  document.getElementById("head").innerHTML =
+      '<th class="l">Time</th><th class="l">Teams</th>'
+    + d.columns.map(c => `<th>${c.label}</th>`).join("");
+
+  const rows = [], cards = [];
+  d.games.forEach((g, i) => {
+    const prev = i ? d.games[i - 1] : null;
+    const newSlate = (!prev || g.slate !== prev.slate) && g.slate_lbl;
+    if(newSlate){
+      rows.push(`<tr class="slate"><td colspan="${d.columns.length + 2}">${g.slate_lbl}</td></tr>`);
+      cards.push(`<div class="slab">${g.slate_lbl}</div>`);
+    }
+    const rot = g.away_rot ? `<div class="time">${g.away_rot}<br>${g.home_rot}</div>` : "";
+    rows.push(`<tr class="${i % 2 ? "g1" : "g0"}${g.started ? " started" : ""}">
+        <td class="l time">${g.date}<br>${g.time}${rot}${statusLine(g)}${drive(g)}</td>
+        <td class="l${g.box ? " boxable" : ""}"${g.box ? ` onclick="det(${i},'${BOX}')"` : ""}>
+          <div class="trow"><span class="tname">${poss(g, "away")}${rk(g.away_rank)}<span class="team">${g.away_full || g.away}</span></span>${(g.away_r ?? null) !== null ? `<span class="run">${g.away_r}</span>` : ""}</div>
+          ${g.away_p ? pit(g.away_p, g.away_ph) : ""}
+          <div class="trow"><span class="tname">${poss(g, "home")}${rk(g.home_rank)}<span class="team">${g.home_full || g.home}</span></span>${(g.home_r ?? null) !== null ? `<span class="run">${g.home_r}</span>` : ""}</div>
+          ${g.home_p ? pit(g.home_p, g.home_ph) : ""}
+          ${venueLine(g)}
+        </td>
+        ${d.columns.map(c => cell(g.markets[c.key], "cur", i, c.key)).join("")}
+      </tr>`);
+    if(OPEN && OPEN[0] === i) rows.push(detailRow(i, OPEN[1]));
+    cards.push(card(g, i));
   });
-  var tbl=document.querySelector('table'),
-      tb=tbl?tbl.querySelector('tbody'):null;
-  if(tb){
-    tb.addEventListener('click',function(ev){
-      var tr=ev.target.closest('tr.row');
-      if(!tr)return;
-      var g=tr.getAttribute('data-g');
-      var d=tb.querySelector("tr.det[data-g='"+g+"']");
-      if(!d)return;
-      var open=d.classList.toggle('show');
-      tr.classList.toggle('open',open);
-    });
+
+  document.getElementById("body").innerHTML =
+    rows.join("") || '<tr><td class="empty" colspan="12">No games. Run the poller.</td></tr>';
+  document.getElementById("cards").innerHTML =
+    cards.join("") || '<div class="empty">No games. Run the poller.</div>';
+}
+
+function det(gi, key){
+  OPEN = (OPEN && OPEN[0] === gi && OPEN[1] === key) ? null : [gi, key];
+  render();
+}
+
+async function loadSport(){
+  const entry = SPORTS.find(s => s.sport === SPORT);
+  if(!entry){
+    document.getElementById("meta").textContent = "unknown sport " + SPORT;
+    return;
   }
-  var bd=document.querySelector('.board');
-  if(bd){
-    bd.addEventListener('click',function(ev){
-      var c=ev.target.closest('.game');
-      if(c&&c.querySelector('.det2'))c.classList.toggle('open');
-    });
+  let d;
+  try{
+    const r = await fetch(entry.file + "?t=" + Date.now());
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    d = await r.json();
+  }catch(e){
+    document.getElementById("meta").textContent = entry.file + " not loaded \u2014 " + e.message;
+    return;
   }
-  var q=document.getElementById('q'),qn=document.getElementById('qn');
-  if(q){
-    var filter=function(){
-      var v=q.value.trim().toLowerCase(),shown=0,total=0;
-      if(tb){
-        tb.querySelectorAll('tr.row, tr:not(.det):not(.row)').forEach(function(tr){
-          total++;
-          var hit=!v||tr.textContent.toLowerCase().indexOf(v)>-1;
-          tr.style.display=hit?'':'none';
-          if(hit)shown++;
-          var g=tr.getAttribute('data-g');
-          if(g!==null){
-            var d=tb.querySelector("tr.det[data-g='"+g+"']");
-            if(d&&!hit){d.classList.remove('show');tr.classList.remove('open');}
-          }
-        });
-      }
-      if(bd){
-        bd.querySelectorAll('.game').forEach(function(c){
-          var hit=!v||c.textContent.toLowerCase().indexOf(v)>-1;
-          c.style.display=hit?'':'none';
-          if(!hit)c.classList.remove('open');
-        });
-      }
-      if(qn)qn.textContent=v?shown+' / '+total:'';
-    };
-    q.addEventListener('input',filter);
-    q.addEventListener('keydown',function(ev){
-      if(ev.key==='Escape'){q.value='';filter();}
-    });
+  /* Render failures are a separate problem from fetch failures; reporting them
+     as "not loaded" sends you hunting for a file that arrived fine. */
+  try{
+    CACHE[SPORT] = d;
+    DATA = d;
+    render();
+  }catch(e){
+    document.getElementById("meta").textContent = "render error \u2014 " + e.message;
+    console.error("render failed:", e);
+    console.log("first game:", d.games && d.games[0]);
   }
-  var board=document.querySelector('.board'),sel=document.getElementById('bsort'),
-      btn=document.getElementById('bdir');
-  if(board&&sel){
-    var asc=true;
-    var apply=function(){
-      var k=sel.value,t=sel.options[sel.selectedIndex].getAttribute('data-t');
-      var cards=Array.prototype.slice.call(board.querySelectorAll('.game'));
-      cards.sort(function(a,b){
-        var x=a.getAttribute('data-'+k),y=b.getAttribute('data-'+k);
-        if(t==='num'){x=parseFloat(x);y=parseFloat(y);}
-        else{x=(x||'').toLowerCase();y=(y||'').toLowerCase();}
-        if(x<y)return asc?-1:1;
-        if(x>y)return asc?1:-1;
-        return 0;
-      });
-      cards.forEach(function(c){board.appendChild(c);});
-      btn.textContent=asc?'\u2191':'\u2193';
-    };
-    sel.addEventListener('change',apply);
-    btn.addEventListener('click',function(){asc=!asc;apply();});
+}
+
+async function load(){
+  try{
+    const r = await fetch("sports.json?t=" + Date.now());
+    if(!r.ok) throw new Error("HTTP " + r.status);
+    SPORTS = (await r.json()).sports || [];
+  }catch(e){
+    document.getElementById("meta").textContent = "sports.json not loaded \u2014 " + e.message;
+    return;
   }
-})();
+  if(!SPORTS.length) return;
+  if(!SPORT || !SPORTS.some(s => s.sport === SPORT)){
+    /* Prefer the URL, then the first sport that actually has games -- landing
+       on an empty NCAAF board in June looks broken. */
+    SPORT = initialSport()
+         || (SPORTS.find(s => s.games > 0) || SPORTS[0]).sport;
+  }
+  renderTabs();
+  await loadSport();
+}
+load();
+setInterval(load, REFRESH_MS);
 </script>
-<footer><div class="wrap">Model output, not advice. Held-out error is about 3.7 runs a game and the model does not yet beat a league-average constant — treat every number as a wide estimate.</div></footer>
-</body></html>
+</body>
+</html>
