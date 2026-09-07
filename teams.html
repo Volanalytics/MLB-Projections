@@ -73,31 +73,12 @@ tbody tr:hover{background:var(--panel)}
   .board{display:block}
   .wrap{padding:0 12px}
 }
-th[data-t]{cursor:pointer;user-select:none;position:relative;
-  touch-action:manipulation}
+th[data-t]{cursor:pointer;user-select:none;position:relative}
 th[data-t]:hover{color:var(--chalk)}
-th[data-t]:active{color:var(--accent)}
 th[data-t]::after{content:"";opacity:.35;margin-left:6px;font-size:10px}
 th[data-t][data-dir="asc"]::after{content:"\2191";opacity:1;color:var(--accent)}
 th[data-t][data-dir="desc"]::after{content:"\2193";opacity:1;color:var(--accent)}
 th[data-t]:not([data-dir])::after{content:"\2195"}
-/* Rank badge for a multi-key sort. Only drawn from the second key on: a
-   lone "1" on a single-column sort is noise, and that is the common case. */
-th[data-t][data-rank]::before{content:attr(data-rank);font-size:9px;
-  color:var(--accent);opacity:.85;margin-right:4px;vertical-align:super}
-.sortbar{color:var(--muted);font-size:12px;margin:0 0 8px;min-height:16px;
-  display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.sortbar .key{color:var(--accent);cursor:pointer;padding:3px 4px 3px 7px;
-  border:1px solid var(--line);border-radius:4px;white-space:nowrap;
-  touch-action:manipulation}
-.sortbar .key:hover{border-color:var(--accent)}
-.sortbar .key .x{display:inline-block;margin-left:5px;padding:0 4px;
-  color:var(--muted);font-size:13px;line-height:1}
-.sortbar .key .x:hover{color:var(--chalk)}
-.sortbar .clr{color:var(--muted);cursor:pointer;padding:3px 6px;
-  border-bottom:1px dotted var(--line);touch-action:manipulation}
-.sortbar .clr:hover{color:var(--chalk)}
-.sortbar .clr.on{color:var(--accent);border-bottom-style:solid}
 .tools{display:flex;gap:8px;align-items:center;margin:0 0 14px}
 .tools input{flex:1;background:var(--panel);color:var(--chalk);
   border:1px solid var(--line);border-radius:6px;padding:9px 11px;
@@ -152,30 +133,12 @@ tr.det .pin th:first-child,tr.det .pin td:first-child,
   background:var(--panel);min-width:104px}
 .det2 .wingrid.pin td.k,.det2 .wingrid.pin th.k{background:var(--panel-2)}
 .wingrid th.v,.wingrid td.v{min-width:56px}
-/* The dashboard is a single slate, so every Date cell holds the same string.
-   Pinning it - which is what .pin does by default - locks the one column
-   that carries no per-row information and lets the matchup scroll away.
-   Release Date and pin Game in its place, at every width. Date still
-   scrolls, passing under the pinned cell, which is why Game needs its own
-   background and a z-index above it.
-
-   nth-child(2), not :first-child - the Date column stays in the DOM (the
-   sort handler indexes cells positionally via cells[k.i], so removing or
-   hiding it structurally would break sorting on everything to its right). */
-.dash th:first-child,.dash td:first-child{position:static}
-.dash th:nth-child(2),.dash td:nth-child(2){position:sticky;left:0;z-index:2;
-  background:var(--field);box-shadow:1px 0 0 var(--line)}
-.dash tbody tr:hover td:nth-child(2){background:var(--panel)}
-.det2 .dash th:nth-child(2),.det2 .dash td:nth-child(2){background:var(--panel-2)}
 @media(max-width:760px){
   th[data-t]{padding:11px 10px}   /* larger tap target for sorting */
   tr.det > td{padding:12px 10px}
   .mx{gap:12px}
   .wingrid{font-size:11px}
   .wingrid th,.wingrid td{padding:4px 6px}
-  /* On a phone the repeated date is not just redundant, it costs ~90px of a
-     ~380px viewport. Desktop has the room, so it keeps it. */
-  .dash th:first-child,.dash td:first-child{display:none}
 }
 .swipe{display:none;font-size:10px;letter-spacing:.1em;text-transform:uppercase;
   color:var(--muted);margin:0 0 4px}
@@ -232,7 +195,7 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Sep 06, 2026 08:10</span></div>
+<span class="stamp">MLB &middot; built Sep 06, 2026 23:25</span></div>
 <nav><a href="index.html" class="">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="">Form</a><a href="ev.html" class="">Market</a><a href="tracking.html" class="">Tracking</a><a href="teams.html" class="on">Teams</a><a href="about.html" class="">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
@@ -247,123 +210,38 @@ header .wrap{position:relative}
   };
   document.querySelectorAll('table').forEach(function(tb){
     var heads=tb.querySelectorAll('thead th');
-    // The sort stack: [{i, t, dir}], first entry is the primary key. A plain
-    // click replaces it; shift/ctrl/cmd-click appends, so "price desc, then
-    // L3g desc" is two clicks.
-    //
-    // Direction rules, all aimed at one click doing what was meant:
-    //   - a numeric column opens descending, a text column ascending. Nobody
-    //     opens an EV column wanting the worst number on top.
-    //   - clicking a key already in the stack flips it and nothing else, so
-    //     the primary stays flippable no matter how many keys are behind it.
-    //   - a key is never removed by clicking its header. Two states on a
-    //     narrow target, not three - overshooting used to delete the key
-    //     instead of flipping it back. Removal lives on the readout below.
-    var stack=[];
-    var bar=null;
-    var addMode=false;
-    var open=function(t){return t==='num'?'desc':'asc';};
-    var label=function(k){
-      var th=heads[k.i];
-      var txt=(th.textContent||'').trim()||'col '+(k.i+1);
-      return txt+' '+(k.dir==='asc'?'\u2191':'\u2193');
-    };
-    var paint=function(){
-      heads.forEach(function(h){
-        h.removeAttribute('data-dir');h.removeAttribute('data-rank');});
-      stack.forEach(function(k,n){
-        heads[k.i].setAttribute('data-dir',k.dir);
-        if(stack.length>1)heads[k.i].setAttribute('data-rank',n+1);
-      });
-      if(!bar)return;
-      // The readout is the roomy control. Header cells on this table are
-      // ~60px wide; these chips are not, so flipping and removing a key are
-      // easier here than up there. The +key chip is also the touch
-      // equivalent of shift-click, since the dashboard table stays on screen
-      // at phone widths and there is no modifier available.
-      var html='';
-      if(stack.length){
-        html='sorted by '+stack.map(function(k,n){
-          return '<span class="key" data-k="'+n+'">'+label(k)+
-                 '<span class="x">\u00d7</span></span>';
-        }).join(' &rsaquo; ')+'<span class="clr wipe">clear</span>';
-      }
-      html+='<span class="clr add'+(addMode?' on':'')+'">+key</span>';
-      bar.innerHTML=html;
-      Array.prototype.forEach.call(bar.querySelectorAll('.key'),function(el){
-        el.addEventListener('click',function(ev){
-          var n=parseInt(el.getAttribute('data-k'),10);
-          if(isNaN(n)||!stack[n])return;
-          if(ev.target&&ev.target.className==='x')stack.splice(n,1);
-          else stack[n].dir=stack[n].dir==='asc'?'desc':'asc';
-          paint();apply();
-        });
-      });
-      var w=bar.querySelector('.wipe');
-      if(w)w.addEventListener('click',function(){stack=[];paint();});
-      var ad=bar.querySelector('.add');
-      if(ad)ad.addEventListener('click',function(){addMode=!addMode;paint();});
-    };
-    var apply=function(){
-      var body=tb.querySelector('tbody');
-      var all=Array.prototype.slice.call(body.querySelectorAll('tr'));
-      var rows=all.filter(function(r){return !r.classList.contains('det');});
-      var dets={};
-      all.forEach(function(r){
-        if(r.classList.contains('det'))dets[r.getAttribute('data-g')]=r;
-      });
-      // Remember the incoming order so the comparator can fall back to it.
-      // Array.prototype.sort is stable in every browser this targets, but
-      // being explicit keeps a full tie from depending on that.
-      rows.forEach(function(r,n){r._n=n;});
-      rows.sort(function(a,b){
-        for(var s=0;s<stack.length;s++){
-          var k=stack[s];
-          if(!a.cells[k.i]||!b.cells[k.i])continue;
-          var x=val(a.cells[k.i],k.t),y=val(b.cells[k.i],k.t);
-          if(x<y)return k.dir==='asc'?-1:1;
-          if(x>y)return k.dir==='asc'?1:-1;
-        }
-        return a._n-b._n;
-      });
-      rows.forEach(function(r){
-        body.appendChild(r);
-        var g=r.getAttribute('data-g');
-        if(g!==null&&dets[g])body.appendChild(dets[g]);
-      });
-    };
     heads.forEach(function(th,i){
       if(!th.hasAttribute('data-t'))return;
       th.setAttribute('tabindex','0');
-      var go=function(add){
+      var go=function(){
         var t=th.getAttribute('data-t');
-        var at=-1;
-        for(var s=0;s<stack.length;s++)if(stack[s].i===i){at=s;break;}
-        if(at>=0){
-          // Already a key: flip it, leave its position and the rest alone.
-          stack[at].dir=stack[at].dir==='asc'?'desc':'asc';
-        }else if(add){
-          stack.push({i:i,t:t,dir:open(t)});
-        }else{
-          stack=[{i:i,t:t,dir:open(t)}];
-        }
-        paint();apply();
+        var dir=th.getAttribute('data-dir')==='asc'?'desc':'asc';
+        heads.forEach(function(h){h.removeAttribute('data-dir');});
+        th.setAttribute('data-dir',dir);
+        var body=tb.querySelector('tbody');
+        var all=Array.prototype.slice.call(body.querySelectorAll('tr'));
+        var rows=all.filter(function(r){return !r.classList.contains('det');});
+        var dets={};
+        all.forEach(function(r){
+          if(r.classList.contains('det'))dets[r.getAttribute('data-g')]=r;
+        });
+        rows.sort(function(a,b){
+          var x=val(a.cells[i],t),y=val(b.cells[i],t);
+          if(x<y)return dir==='asc'?-1:1;
+          if(x>y)return dir==='asc'?1:-1;
+          return 0;
+        });
+        rows.forEach(function(r){
+          body.appendChild(r);
+          var g=r.getAttribute('data-g');
+          if(g!==null&&dets[g])body.appendChild(dets[g]);
+        });
       };
-      th.addEventListener('click',function(ev){
-        go(ev.shiftKey||ev.ctrlKey||ev.metaKey||addMode);
-      });
+      th.addEventListener('click',go);
       th.addEventListener('keydown',function(ev){
-        if(ev.key==='Enter'||ev.key===' '){
-          ev.preventDefault();go(ev.shiftKey||addMode);}
+        if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();go();}
       });
     });
-    // Readout sits directly above its own table, so a page with two tables
-    // gets two independent stacks and two independent bars.
-    var host=tb.parentNode;
-    bar=document.createElement('div');
-    bar.className='sortbar';
-    host.parentNode.insertBefore(bar,host);
-    paint();
   });
   var tbl=document.querySelector('table'),
       tb=tbl?tbl.querySelector('tbody'):null;
