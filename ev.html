@@ -282,7 +282,7 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Sep 07, 2026 22:10</span></div>
+<span class="stamp">MLB &middot; built Sep 07, 2026 22:37</span></div>
 <nav><a href="index.html" class="">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="">Form</a><a href="ev.html" class="on">Market</a><a href="tracking.html" class="">Tracking</a><a href="teams.html" class="">Teams</a><a href="about.html" class="">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
@@ -290,11 +290,26 @@ header .wrap{position:relative}
 <script>
 (function(){
   var val=function(el,t){
-    var s=(el.getAttribute('data-v')!==null)?el.getAttribute('data-v'):el.textContent;
+    var s=el.getAttribute('data-v');
+    if(s===null){
+      // A per-window cell holds every window's value as a [data-w] span and
+      // shows one. textContent would concatenate all seven and parseFloat
+      // would stop at the first, so the column would always sort on the
+      // first window regardless of which is selected. Read the one the
+      // container is currently showing instead.
+      var host=el.closest?el.closest('[data-win]'):null;
+      var w=host&&host.getAttribute('data-win');
+      var pick=w&&el.querySelector?el.querySelector("[data-w='"+w+"']"):null;
+      s=pick?pick.textContent:el.textContent;
+    }
     s=s.trim();
     if(t==='num'){var n=parseFloat(s.replace(/[^0-9.+-]/g,''));return isNaN(n)?-Infinity:n;}
     return s.toLowerCase();
   };
+  // Tables register their re-sort here so the window selector can replay the
+  // current sort after switching. Without it the rows keep the old order
+  // while showing new numbers, which reads exactly like a broken sort.
+  var RESORT=[];
   document.querySelectorAll('table').forEach(function(tb){
     var heads=tb.querySelectorAll('thead th');
     // The sort stack: [{i, t, dir}], first entry is the primary key. A plain
@@ -413,6 +428,7 @@ header .wrap{position:relative}
     bar=document.createElement('div');
     bar.className='sortbar';
     host.parentNode.insertBefore(bar,host);
+    RESORT.push(function(){if(stack.length)apply();});
     paint();
   });
   var tbl=document.querySelector('table'),
@@ -514,6 +530,9 @@ header .wrap{position:relative}
         btns.forEach(function(o){o.classList.remove('on');});
         b.classList.add('on');
         host.setAttribute('data-win',b.getAttribute('data-w'));
+        // The per-window columns now hold different numbers, so any active
+        // sort has to run again against them.
+        RESORT.forEach(function(f){f();});
       });
     });
   });
