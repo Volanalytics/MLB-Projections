@@ -89,6 +89,13 @@ tbody tr:hover{background:var(--panel)}
 .bet .wins{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;
   background:rgba(36,64,92,.6)}
 .bet .wins div{background:var(--panel);padding:6px 4px;text-align:center}
+/* Each cell is also this card's window selector, so it needs to look
+   pressable and show which one is active. */
+.bet .wins .wc{cursor:pointer;touch-action:manipulation;
+  box-shadow:inset 0 0 0 0 var(--accent);transition:box-shadow .12s}
+.bet .wins .wc.on{background:var(--panel-2);
+  box-shadow:inset 0 0 0 1px var(--accent)}
+.bet .wins .wc.on .w{color:var(--accent)}
 .bet .wins .w{font-size:9px;letter-spacing:.08em;text-transform:uppercase;
   color:var(--muted);display:block}
 .bet .wins .e{font-size:12px;font-weight:700;font-variant-numeric:tabular-nums;
@@ -282,7 +289,7 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Sep 07, 2026 22:37</span></div>
+<span class="stamp">MLB &middot; built Sep 07, 2026 22:48</span></div>
 <nav><a href="index.html" class="">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="">Form</a><a href="ev.html" class="">Market</a><a href="tracking.html" class="">Tracking</a><a href="teams.html" class="">Teams</a><a href="about.html" class="on">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
@@ -558,19 +565,44 @@ and it only accumulates forward from the first day both models were built.</p>
   // [data-w] span; switching windows is just setting data-win on the
   // container and letting CSS decide what shows. No re-render, no lookup
   // table, and the table keeps whatever sort is already applied.
+  // Point a card (or the page container) at a window: set the attribute the
+  // generated CSS keys off, and move the highlight to the matching cell.
+  var setwin=function(el,w){
+    el.setAttribute('data-win',w);
+    el.querySelectorAll('.wc').forEach(function(c){
+      c.classList.toggle('on',c.getAttribute('data-cell')===w);
+    });
+  };
   document.querySelectorAll('.wsel').forEach(function(ws){
     var host=document.getElementById(ws.getAttribute('data-for'));
     if(!host)return;
     var btns=ws.querySelectorAll('button');
     btns.forEach(function(b){
       b.addEventListener('click',function(){
+        var w=b.getAttribute('data-w');
         btns.forEach(function(o){o.classList.remove('on');});
         b.classList.add('on');
-        host.setAttribute('data-win',b.getAttribute('data-w'));
+        host.setAttribute('data-win',w);
+        // Cards carry their own data-win, which outranks the page's. Move
+        // them together or the chip row would appear to do nothing on a
+        // phone, where the cards are all that is visible.
+        host.querySelectorAll('.bet').forEach(function(c){setwin(c,w);});
         // The per-window columns now hold different numbers, so any active
         // sort has to run again against them.
         RESORT.forEach(function(f){f();});
       });
+    });
+  });
+  // A card's window grid doubles as its own selector: tap a window to read
+  // that window's fair price and edge in the foot, without scrolling back to
+  // the chip row. Scoped to the one card, so two bets can be inspected under
+  // different windows side by side.
+  document.querySelectorAll('.betboard').forEach(function(bb){
+    bb.addEventListener('click',function(ev){
+      var cell=ev.target.closest&&ev.target.closest('.wc');
+      if(!cell)return;
+      var card=cell.closest('.bet');
+      if(card)setwin(card,cell.getAttribute('data-cell'));
     });
   });
 })();
