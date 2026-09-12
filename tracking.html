@@ -20,7 +20,7 @@ main{padding:12px 14px 40px}
 h2{font-size:13px;color:var(--chalk);margin:22px 0 8px;font-weight:700;
    letter-spacing:.5px}
 .scroll{overflow-x:auto;-webkit-overflow-scrolling:touch}
-table{border-collapse:collapse;width:100%;min-width:640px}
+table{border-collapse:collapse;width:100%;min-width:860px}
 th{background:var(--panel2);color:var(--dim);font-size:11px;font-weight:500;
    text-align:right;padding:6px 8px;border-bottom:1px solid var(--line);
    white-space:nowrap;position:sticky;top:0}
@@ -38,14 +38,14 @@ dl{margin:0;display:grid;grid-template-columns:max-content 1fr;
 dt{color:var(--amber);font-weight:700;font-size:11px;white-space:nowrap}
 dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 @media (max-width:700px){
-  table{min-width:560px}
+  table{min-width:760px}
   dl{grid-template-columns:1fr;gap:2px 0}
   dd{margin:0 0 8px;color:var(--dim)}
 }
 </style></head><body>
 <header>
   <h1>PROJECTION TRACKING</h1>
-  <div class="meta">14 graded &middot; 11 pending &middot; 2026-09-11 to 2026-09-12<br>2026-09-12 13:17 UTC</div>
+  <div class="meta">14 graded &middot; 11 pending &middot; 2026-09-11 to 2026-09-12<br>2026-09-12 13:22 UTC</div>
 </header>
 <main>
 
@@ -53,8 +53,9 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <div class="scroll"><table>
 <thead><tr>
 <th class="l">model</th><th class="l">window</th><th class="l">book</th>
-<th>n</th><th>MAE</th><th>bias</th><th>totals W-L-P</th><th>totals ROI</th>
-<th>ML bets</th><th>ML ROI</th>
+<th>n</th><th>MAE</th><th>bias</th><th>totals W-L-P</th><th>O-U picks</th>
+<th>avg proj</th><th>avg line</th><th>avg edge</th><th>totals ROI</th>
+<th>ML bets</th><th>avg edge</th><th>ML ROI</th>
 </tr></thead><tbody><tr>
 <td class="l k">form</td><td class="l">Full Season</td>
 <td class="l">BetOnline</td>
@@ -62,8 +63,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.46</td>
 <td class="neg">-0.28</td>
 <td>9-4-1</td>
+<td>14-0</td>
+<td>9.29</td>
+<td>7.93</td>
+<td>1.37</td>
 <td class="pos">+30.6%</td>
 <td>9</td>
+<td>6.8</td>
 <td class="neg">-22.0%</td></tr><tr>
 <td class="l k">form</td><td class="l">Full Season</td>
 <td class="l">Kalshi</td>
@@ -71,8 +77,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.46</td>
 <td class="neg">-0.28</td>
 <td>0-0-0</td>
+<td>0-0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 <td class="">-</td>
 <td>9</td>
+<td>6.5</td>
 <td class="neg">-21.1%</td></tr><tr>
 <td class="l k">form</td><td class="l">Last 15 G</td>
 <td class="l">BetOnline</td>
@@ -80,8 +91,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.44</td>
 <td class="neg">-0.21</td>
 <td>9-4-1</td>
+<td>14-0</td>
+<td>9.36</td>
+<td>7.93</td>
+<td>1.43</td>
 <td class="pos">+30.6%</td>
 <td>9</td>
+<td>9.8</td>
 <td class="neg">-54.5%</td></tr><tr>
 <td class="l k">form</td><td class="l">Last 15 G</td>
 <td class="l">Kalshi</td>
@@ -89,8 +105,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.44</td>
 <td class="neg">-0.21</td>
 <td>0-0-0</td>
+<td>0-0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 <td class="">-</td>
 <td>9</td>
+<td>9.6</td>
 <td class="neg">-54.4%</td></tr><tr>
 <td class="l k">form</td><td class="l">Last 3 G</td>
 <td class="l">BetOnline</td>
@@ -98,8 +119,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.62</td>
 <td class="neg">-0.19</td>
 <td>9-4-1</td>
+<td>14-0</td>
+<td>9.38</td>
+<td>7.93</td>
+<td>1.45</td>
 <td class="pos">+30.6%</td>
 <td>10</td>
+<td>6.5</td>
 <td class="neg">-12.7%</td></tr><tr>
 <td class="l k">form</td><td class="l">Last 3 G</td>
 <td class="l">Kalshi</td>
@@ -107,8 +133,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.62</td>
 <td class="neg">-0.19</td>
 <td>0-0-0</td>
+<td>0-0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 <td class="">-</td>
 <td>10</td>
+<td>6.2</td>
 <td class="neg">-11.9%</td></tr><tr>
 <td class="l k">form</td><td class="l">Last 7 G</td>
 <td class="l">BetOnline</td>
@@ -116,8 +147,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.56</td>
 <td class="neg">-0.24</td>
 <td>9-4-1</td>
+<td>14-0</td>
+<td>9.33</td>
+<td>7.93</td>
+<td>1.40</td>
 <td class="pos">+30.6%</td>
 <td>9</td>
+<td>8.4</td>
 <td class="neg">-54.5%</td></tr><tr>
 <td class="l k">form</td><td class="l">Last 7 G</td>
 <td class="l">Kalshi</td>
@@ -125,8 +161,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.56</td>
 <td class="neg">-0.24</td>
 <td>0-0-0</td>
+<td>0-0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 <td class="">-</td>
 <td>9</td>
+<td>8.1</td>
 <td class="neg">-54.4%</td></tr><tr>
 <td class="l k">games</td><td class="l">Full Season</td>
 <td class="l">BetOnline</td>
@@ -134,8 +175,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.45</td>
 <td class="neg">-0.27</td>
 <td>9-4-1</td>
+<td>14-0</td>
+<td>9.30</td>
+<td>7.93</td>
+<td>1.37</td>
 <td class="pos">+30.6%</td>
 <td>9</td>
+<td>6.5</td>
 <td class="neg">-22.0%</td></tr><tr>
 <td class="l k">games</td><td class="l">Full Season</td>
 <td class="l">Kalshi</td>
@@ -143,8 +189,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.45</td>
 <td class="neg">-0.27</td>
 <td>0-0-0</td>
+<td>0-0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 <td class="">-</td>
 <td>9</td>
+<td>6.3</td>
 <td class="neg">-21.1%</td></tr><tr>
 <td class="l k">games</td><td class="l">Last 14</td>
 <td class="l">BetOnline</td>
@@ -152,8 +203,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.47</td>
 <td class="neg">-0.41</td>
 <td>9-4-1</td>
+<td>14-0</td>
+<td>9.16</td>
+<td>7.93</td>
+<td>1.24</td>
 <td class="pos">+30.6%</td>
 <td>10</td>
+<td>8.5</td>
 <td class="neg">-56.8%</td></tr><tr>
 <td class="l k">games</td><td class="l">Last 14</td>
 <td class="l">Kalshi</td>
@@ -161,8 +217,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.47</td>
 <td class="neg">-0.41</td>
 <td>0-0-0</td>
+<td>0-0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 <td class="">-</td>
 <td>10</td>
+<td>8.3</td>
 <td class="neg">-56.3%</td></tr><tr>
 <td class="l k">games</td><td class="l">Last 30</td>
 <td class="l">BetOnline</td>
@@ -170,8 +231,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.49</td>
 <td class="neg">-0.40</td>
 <td>9-4-1</td>
+<td>14-0</td>
+<td>9.17</td>
+<td>7.93</td>
+<td>1.24</td>
 <td class="pos">+30.6%</td>
 <td>9</td>
+<td>9.0</td>
 <td class="neg">-42.7%</td></tr><tr>
 <td class="l k">games</td><td class="l">Last 30</td>
 <td class="l">Kalshi</td>
@@ -179,8 +245,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.49</td>
 <td class="neg">-0.40</td>
 <td>0-0-0</td>
+<td>0-0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 <td class="">-</td>
 <td>9</td>
+<td>8.8</td>
 <td class="neg">-42.0%</td></tr><tr>
 <td class="l k">games</td><td class="l">Last 7</td>
 <td class="l">BetOnline</td>
@@ -188,8 +259,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.56</td>
 <td class="neg">-0.66</td>
 <td>8-5-1</td>
+<td>13-1</td>
+<td>8.91</td>
+<td>7.93</td>
+<td>1.03</td>
 <td class="pos">+15.5%</td>
 <td>9</td>
+<td>8.6</td>
 <td class="neg">-17.9%</td></tr><tr>
 <td class="l k">games</td><td class="l">Last 7</td>
 <td class="l">Kalshi</td>
@@ -197,8 +273,13 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td>2.56</td>
 <td class="neg">-0.66</td>
 <td>0-0-0</td>
+<td>0-0</td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
 <td class="">-</td>
 <td>8</td>
+<td>9.1</td>
 <td class="neg">-34.8%</td></tr></tbody></table></div>
 
 <h2>TOTALS ROI BY EDGE SIZE</h2>
@@ -353,7 +434,7 @@ dd{margin:0;color:var(--ink);font-size:12px;line-height:1.5}
 <td class="neg">-100.0%</td></tr></tbody></table></div>
 
 <h2>DEFINITIONS</h2>
-<dl><dt>n</dt><dd>Graded games for that model and window.</dd><dt>MAE</dt><dd>Mean absolute error between the projected total and the actual runs scored. Lower is a tighter point estimate.</dd><dt>bias</dt><dd>Mean signed error, projection minus actual. Positive means the variant projects high, negative means it projects low.</dd><dt>Totals W-L-P</dt><dd>Wins, losses and pushes from backing whichever side the projection implies against the posted total.</dd><dt>Totals ROI</dt><dd>Profit divided by the number of settled bets, at the price actually offered. Pushes are excluded from the divisor.</dd><dt>ML bets</dt><dd>Moneyline bets recorded, meaning games where the model's win probability exceeded the book's no-vig probability by at least the edge threshold.</dd><dt>ML ROI</dt><dd>Profit per moneyline bet placed, at the offered price.</dd><dt>no-vig</dt><dd>The book's two prices converted to probabilities and rescaled to sum to 1, removing the margin built into the quote.</dd><dt>edge bucket</dt><dd>How far the projected total sat from the posted line, in runs, at the time of the bet.</dd></dl>
+<dl><dt>n</dt><dd>Graded games for that model and window.</dd><dt>MAE</dt><dd>Mean absolute error between the projected total and the actual runs scored. Lower is a tighter point estimate.</dd><dt>bias</dt><dd>Mean signed error, projection minus actual. Positive means the variant projects high, negative means it projects low.</dd><dt>Totals W-L-P</dt><dd>Wins, losses and pushes from backing whichever side the projection implies against the posted total.</dd><dt>Totals ROI</dt><dd>Profit divided by the number of settled bets, at the price actually offered. Pushes are excluded from the divisor.</dd><dt>ML bets</dt><dd>Moneyline bets recorded, meaning games where the model's win probability exceeded the book's no-vig probability by at least the edge threshold.</dd><dt>ML ROI</dt><dd>Profit per moneyline bet placed, at the offered price.</dd><dt>no-vig</dt><dd>The book's two prices converted to probabilities and rescaled to sum to 1, removing the margin built into the quote.</dd><dt>O-U picks</dt><dd>How many of the graded games the variant bet over versus under. A split near all-over or all-under means the projection sits on one side of the market rather than discriminating between games.</dd><dt>avg proj</dt><dd>Mean projected total across the graded games.</dd><dt>avg line</dt><dd>Mean posted total across the same games.</dd><dt>avg edge</dt><dd>Mean absolute distance between the projection and the line, in runs for totals and percentage points for moneylines.</dd><dt>edge bucket</dt><dd>How far the projected total sat from the posted line, in runs, at the time of the bet.</dd></dl>
 <p class="sub">Moneyline edge threshold: 3 percentage points.
 Totals are graded against BetOnline only; Kalshi lists totals as per-threshold
 contracts whose strike often differs from the posted line.</p>
