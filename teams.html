@@ -195,7 +195,7 @@ header .wrap{position:relative}
 </style></head>
 <body><header><div class="wrap">
 <div class="brand"><h1>MLB Projections</h1>
-<span class="stamp">MLB &middot; built Sep 15, 2026 09:33</span></div>
+<span class="stamp">MLB &middot; built Sep 15, 2026 12:21</span></div>
 <nav><a href="index.html" class="">Dashboard</a><a href="games.html" class="">Games</a><a href="form.html" class="">Form</a><a href="ev.html" class="">Market</a><a href="tracking.html" class="">Tracking</a><a href="teams.html" class="on">Teams</a><a href="about.html" class="">About</a></nav>
 <a class="portal" href="https://volanalytics.github.io/Portal/"><span class="ar">&#8592;</span> All Models</a>
 </div></header>
@@ -243,8 +243,18 @@ header .wrap{position:relative}
       });
     });
   });
-  var tbl=document.querySelector('table'),
-      tb=tbl?tbl.querySelector('tbody'):null;
+  /* Not always the first table on the page: the dashboard puts the
+     scored-record table above the search box, so querySelector('table')
+     filtered the wrong one. Take the first table that follows the box,
+     falling back to the first table on pages that have no box. */
+  var tools=document.querySelector('.tools'),tbl=null;
+  if(tools){
+    [].forEach.call(document.querySelectorAll('table'),function(t){
+      if(!tbl&&(tools.compareDocumentPosition(t)&4))tbl=t;
+    });
+  }
+  if(!tbl)tbl=document.querySelector('table');
+  var tb=tbl?tbl.querySelector('tbody'):null;
   if(tb){
     tb.addEventListener('click',function(ev){
       var tr=ev.target.closest('tr.row');
@@ -263,12 +273,21 @@ header .wrap{position:relative}
       if(c&&c.querySelector('.det2'))c.classList.toggle('open');
     });
   }
+  /* Cards the filter hides. .board is this file's; other builders mark
+     their container with data-cards and their cards with data-card, so
+     the shell needs no knowledge of what those cards are. The expander
+     above stays .board-only - cards from elsewhere handle their own taps. */
+  var fc=document.querySelector('.board,[data-cards]');
   var q=document.getElementById('q'),qn=document.getElementById('qn');
   if(q){
     var filter=function(){
       var v=q.value.trim().toLowerCase(),shown=0,total=0;
       if(tb){
-        tb.querySelectorAll('tr.row, tr:not(.det):not(.row)').forEach(function(tr){
+        /* Own rows only. querySelectorAll reaches into the lineup and
+           window tables nested inside each detail row, which inflated the
+           count and left display:none on rows the reader never filtered. */
+        [].forEach.call(tb.children,function(tr){
+          if(tr.tagName!=='TR'||tr.classList.contains('det'))return;
           total++;
           var hit=!v||tr.textContent.toLowerCase().indexOf(v)>-1;
           tr.style.display=hit?'':'none';
@@ -280,8 +299,8 @@ header .wrap{position:relative}
           }
         });
       }
-      if(bd){
-        bd.querySelectorAll('.game').forEach(function(c){
+      if(fc){
+        fc.querySelectorAll('.game,[data-card]').forEach(function(c){
           var hit=!v||c.textContent.toLowerCase().indexOf(v)>-1;
           c.style.display=hit?'':'none';
           if(!hit)c.classList.remove('open');
