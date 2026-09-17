@@ -1,0 +1,92 @@
+{
+  "manifest_version": "1.0",
+  "model": "MLB_V2",
+  "canonical_template": {
+    "name": "CANONICAL_TEMPLATE_V1",
+    "basis": "MLB_V2_Daily_Intelligence_2026-09-17_TEMPLATE_V1_R4_MOBILE.html",
+    "structure_locked": true,
+    "rule": "Daily analysis updates values, not structure.",
+    "responsive_mobile_required": true,
+    "sections_required": [
+      "01",
+      "02",
+      "03",
+      "04",
+      "05",
+      "06",
+      "07",
+      "08",
+      "09",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "section_05_columns": [
+      "Game/start",
+      "Phase",
+      "Readiness",
+      "Projected score",
+      "Model total",
+      "Model win % / fair ML",
+      "Market ML",
+      "ML break-even / delta",
+      "Market total",
+      "Total delta",
+      "Away TT",
+      "Home TT",
+      "Classification",
+      "Best expression",
+      "Data conf.",
+      "Context conf.",
+      "Action conf."
+    ],
+    "section_06_required_fields": [
+      "Identity / readiness",
+      "Projection",
+      "Moneyline",
+      "Full-game total",
+      "Away team total",
+      "Home team total",
+      "Starting pitching",
+      "Lineups / defense",
+      "Bullpen \u2014 computed",
+      "Reliever DB / workload",
+      "Weather / park / roof",
+      "Umpire",
+      "Media intelligence",
+      "Model vs intelligence",
+      "Best wager expression",
+      "Live trigger / unresolved"
+    ],
+    "non_deletion_rules": [
+      "No required section may be removed, renamed, consolidated, or reordered without explicit user approval.",
+      "No Section 06 field may be removed when data is unavailable; render the source status instead.",
+      "Bullpen \u2014 computed and Reliever DB / workload are separate mandatory fields and must never be conflated.",
+      "Projected score must label both teams.",
+      "Model win % / fair ML must identify the corresponding team.",
+      "Preserved pregame states must not be overwritten by live/final retrievals.",
+      "Source terminology such as NOT_YET_AVAILABLE, UNRESOLVED, INTELLIGENCE_RESEARCH_REQUIRED, MISSED_PREGAME_CAPTURE and FROZEN_PREGAME must be preserved."
+    ]
+  },
+  "publication_contract": {
+    "on_every_daily_analysis_request": [
+      "load canonical template",
+      "load current daily manifest and intelligence package",
+      "populate values only",
+      "run conformance validation",
+      "generate HTML",
+      "generate DOCX from same populated report model",
+      "validate DOCX content and render",
+      "publish HTML to analysis/current/index.html",
+      "publish canonical analysis manifest to analysis/current/manifest.json",
+      "fetch published files back and verify"
+    ],
+    "fail_closed": true,
+    "failure_rule": "If conformance validation fails, do not publish a reduced report."
+  }
+}
