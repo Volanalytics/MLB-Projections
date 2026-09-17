@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "generated_at": "2026-09-17T20:38:01+00:00",
+  "generated_at": "2026-09-17T23:33:15+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823334": {
@@ -924,7 +924,7 @@
         "source": "manager_media_research.py external research results"
       },
       "previous_game_postgame": {
-        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "status": "CONFIRMED",
         "teams": {
           "NYM": {
             "research_status": "COMPLETED",
@@ -959,6 +959,51 @@
                 ],
                 "result": "INCONCLUSIVE",
                 "note": "The official postgame manager availability and a credentialed local report were found, but no material declaration plausibly affecting the September 17 game was available in the sourced material. The prior game's score or bullpen usage was not treated as hindsight evidence of September 17 availability."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "PHI": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-17T23:30:38Z",
+            "previous_game_pk": 822680,
+            "previous_game_date": "2026-09-16",
+            "passes": [
+              {
+                "checked_at": "2026-09-17T23:30:38Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com / Philadelphia Phillies",
+                    "url": "https://www.mlb.com/phillies/video/don-mattingly-on-zack-wheeler-s-scoreless-start",
+                    "published_at": "2026-09-16",
+                    "accessed_at": "2026-09-17T23:30:38Z",
+                    "finding": "Official postgame manager video identifies Don Mattingly discussing Zack Wheeler's seven scoreless innings after Philadelphia's 3-0 win. Search-visible material did not provide a transcribed declaration concerning player availability, injury status, roster moves, or a next-game usage plan."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com / Philadelphia Phillies",
+                    "url": "https://www.mlb.com/phillies/news",
+                    "published_at": "2026-09-16",
+                    "accessed_at": "2026-09-17T23:30:38Z",
+                    "finding": "Official Phillies news index listed Bobby Blanco's postgame report, 'Wheeler carves up Nats as Phillies get needed rotation boost.' Available indexed text described the outing but did not expose a directly attributable forward-looking club declaration."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Philadelphia Baseball Review",
+                    "url": "https://www.philadelphiabaseballreview.com/2026/09/zack-wheeler-phillies-nationals-21-outs-bullpen.html",
+                    "published_at": "2026-09-16",
+                    "accessed_at": "2026-09-17T23:30:38Z",
+                    "finding": "Local postgame report covered Wheeler's seven scoreless innings and referenced Jesús Luzardo having been placed on the injured list the previous day, but the available text did not supply a direct postgame manager/club declaration that could be carried forward to the September 17 game."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "A final score and postgame coverage were verified for game 822680, but the available official manager material was not transcribed and no directly attributable Phillies postgame declaration with plausible September 17 relevance was recoverable. Therefore the negative evidence contract cannot be completed without overstating the available local/beat reporting."
               }
             ],
             "comments": [],
@@ -1196,6 +1241,48 @@
             ],
             "result": "INCONCLUSIVE",
             "note": "Meaningful official-team, manager-media, and credentialed-local-source checks did not produce an accessible pregame manager declaration. No numeric or qualitative Valdez workload restriction, reliever unavailability, role change, injury/rest decision, or tactical adjustment is supported by the reviewed evidence."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "822845": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-17T23:32:14Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-17T23:32:14Z",
+            "team": "BOS",
+            "teams": [
+              "BOS"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/redsox/roster/starting-lineups",
+                "published_at": "2026-09-17"
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/stories/game-preview/822845",
+                "published_at": "2026-09-17"
+              },
+              {
+                "source_type": "MANAGER_OR_COACH_MEDIA",
+                "url": "https://www.mlb.com/redsox/video/topic/red-sox-manager-postgame",
+                "published_at": "2026-09-17"
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.bostonglobe.com/2026/09/17/sports/red-sox-rangers-lineups-preview-september-17/",
+                "published_at": "2026-09-17"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL_DELTA review found Sonny Gray confirmed as Boston's scheduled starter, but no new or superseding pregame manager/coach declaration establishing a workload, pitch, innings, batters-faced, availability, or restriction condition for Gray. Dedicated Red Sox manager media located was postgame rather than pregame; pregame manager/coach media was unavailable in the reviewed official coverage."
           }
         ],
         "declarations": [],

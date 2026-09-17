@@ -5,43 +5,30 @@
     {
       "item_id": "postgame:824464:LAD:824467",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T20:31:03+00:00",
+      "checked_at": "2026-09-17T19:33:35Z",
       "sources_checked": [
         {
           "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Dodgers manager postgame video",
-          "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason",
-          "published_at": "2026-09-16",
-          "result": "Dave Roberts postgame availability specifically addressed Blake Snell's early injury exit and postseason pitching plans."
+          "source_name": "MLB.com / Los Angeles Dodgers",
+          "url": "https://www.mlb.com/news/blake-snell-exits-start-against-reds-after-one-inning"
         },
         {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Game Story: Dodgers at Reds",
-          "url": "https://www.mlb.com/stories/game/824467/",
-          "published_at": "2026-09-16",
-          "result": "Official game story recorded Snell's postgame comment after his injury-related one-inning exit."
+          "source_type": "MANAGER_POSTGAME_MEDIA",
+          "source_name": "MLB.com / Los Angeles Dodgers",
+          "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason"
         },
         {
           "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Los Angeles Times / Maddie Lee, syndicated by Yahoo Sports",
-          "url": "https://ca.sports.yahoo.com/news/blake-snell-exits-dodgers-game-233214785.html",
-          "published_at": "2026-09-16T23:32:00Z",
-          "result": "Credentialed Dodgers beat report attributed Snell's groin-tightness explanation and updated his possible subsequent-start outlook."
-        },
-        {
-          "source_type": "WIRE_SERVICE",
-          "source_name": "Associated Press, via Sportsnet",
-          "url": "https://www.sportsnet.ca/mlb/article/dodgers-blake-snell-exits-after-one-inning-due-to-groin-tightness/",
-          "published_at": "2026-09-16T22:53:00Z",
-          "result": "Reported that Snell exited after one inning because of left-groin tightness and included his explanation that the issue began during his pregame bullpen."
+          "source_name": "Los Angeles Times",
+          "url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds"
         }
       ],
       "research_status": "FAILED",
-      "notes": "Material carry-forward information was confined to Blake Snell's left-groin tightness and the club's conditional, unresolved outlook for a later regular-season start. No direct next-game bullpen-availability declaration, closer/setup-role change, planned position-player rest, or travel-related restriction was found in the reviewed material. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
+      "notes": "Material carry-forward health/availability information found. No confirmed availability, return-to-game, or next-start declaration for the September 17 game was identified in the checked postgame evidence. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
       "game_pk": 824467,
       "today_game_pk": 824464,
       "team": "LAD",
-      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "pass_type": null,
       "previous_game_pk": 824467,
       "previous_game_date": "2026-09-16",
       "result": "INCONCLUSIVE",
@@ -49,39 +36,543 @@
         {
           "subject": "Blake Snell",
           "declaration_type": "INJURY_STATUS",
-          "speaker": "Los Angeles Dodgers / Dave Roberts",
-          "statement": "Snell exited after one inning with left-groin tightness. Roberts' postgame discussion addressed the injury and postseason pitching plans; subsequent reporting described any additional regular-season start as conditional on the club being confident there would be no setback.",
+          "statement": "Snell exited after one inning against Cincinnati because of left groin tightness.",
+          "speaker": "Los Angeles Dodgers",
+          "speaker_role": "Club",
+          "timing": "POSTGAME",
           "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason"
+          "restriction": {
+            "type": "AVAILABILITY",
+            "value": "UNRESOLVED"
+          },
+          "source_url": "https://www.mlb.com/news/blake-snell-exits-start-against-reds-after-one-inning"
         },
         {
           "subject": "Blake Snell",
-          "declaration_type": "STARTER_EXIT_REASON",
-          "speaker": "Blake Snell",
-          "statement": "Snell said he felt his groin grab on the second-to-last pitch of his pregame bullpen session, then concluded he did not have a realistic chance to pitch through five innings.",
+          "declaration_type": "AVAILABILITY_OUTLOOK",
+          "statement": "Roberts did not confirm Snell's next availability and said, \"I like where his head is at, but he just can't afford any more setbacks.\"",
+          "speaker": "Dave Roberts",
+          "speaker_role": "Manager",
+          "timing": "POSTGAME",
           "evidence_label": "CONFIRMED",
-          "source_url": "https://www.sportsnet.ca/mlb/article/dodgers-blake-snell-exits-after-one-inning-due-to-groin-tightness/"
+          "restriction": {
+            "type": "AVAILABILITY",
+            "value": "UNRESOLVED"
+          },
+          "source_url": "https://www.mlb.com/news/blake-snell-exits-start-against-reds-after-one-inning"
         }
       ],
       "comments": [
         {
           "subject": "Blake Snell",
-          "comment_type": "CARRY_FORWARD_AVAILABILITY",
-          "speaker": "Dave Roberts",
-          "comment": "A later regular-season start remained possible, but only if the Dodgers were confident Snell would not sustain a setback; this did not constitute an explicit declaration that Snell would be available for the September 17 game.",
+          "comment_type": "PLAYER_POSTGAME_HEALTH_COMMENT",
+          "statement": "Snell said he felt his groin \"grab\" during his pregame bullpen session and did not push it after the first inning.",
+          "speaker": "Blake Snell",
+          "speaker_role": "Player",
+          "timing": "POSTGAME",
           "evidence_label": "CONFIRMED",
-          "source_url": "https://sports.yahoo.com/mlb/breaking-news/article/dodgers-pull-p-blake-snell-due-to-left-groin-tightness-after-1-inning-19-pitches-231620548.html"
-        },
-        {
-          "subject": "Dodgers bullpen",
-          "comment_type": "WORKLOAD_CONTEXT",
-          "speaker": "Researcher",
-          "comment": "Snell's one-inning exit forced a bullpen game, but no reviewed qualifying source contained an explicit Dodgers manager/coach declaration identifying any reliever as unavailable for the next game.",
-          "evidence_label": "UNRESOLVED",
-          "source_url": "https://www.mlb.com/stories/game/824467/"
+          "source_url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds"
         }
       ],
-      "queue_fingerprint": "8845e24bc21e867f243ccdb0de76309383b79eb6bd1e0adae36e6222a230b224"
+      "queue_fingerprint": "27d536b6a0d5dde3f60ba74cb74fbfb4f62017007b7e67ac7b016f98abd8a6d3"
+    },
+    {
+      "item_id": "postgame:823573:PHI:822680",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T23:30:38Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com / Philadelphia Phillies",
+          "url": "https://www.mlb.com/phillies/video/don-mattingly-on-zack-wheeler-s-scoreless-start",
+          "published_at": "2026-09-16",
+          "accessed_at": "2026-09-17T23:30:38Z",
+          "finding": "Official postgame manager video identifies Don Mattingly discussing Zack Wheeler's seven scoreless innings after Philadelphia's 3-0 win. Search-visible material did not provide a transcribed declaration concerning player availability, injury status, roster moves, or a next-game usage plan."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com / Philadelphia Phillies",
+          "url": "https://www.mlb.com/phillies/news",
+          "published_at": "2026-09-16",
+          "accessed_at": "2026-09-17T23:30:38Z",
+          "finding": "Official Phillies news index listed Bobby Blanco's postgame report, 'Wheeler carves up Nats as Phillies get needed rotation boost.' Available indexed text described the outing but did not expose a directly attributable forward-looking club declaration."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Philadelphia Baseball Review",
+          "url": "https://www.philadelphiabaseballreview.com/2026/09/zack-wheeler-phillies-nationals-21-outs-bullpen.html",
+          "published_at": "2026-09-16",
+          "accessed_at": "2026-09-17T23:30:38Z",
+          "finding": "Local postgame report covered Wheeler's seven scoreless innings and referenced Jesús Luzardo having been placed on the injured list the previous day, but the available text did not supply a direct postgame manager/club declaration that could be carried forward to the September 17 game."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "A final score and postgame coverage were verified for game 822680, but the available official manager material was not transcribed and no directly attributable Phillies postgame declaration with plausible September 17 relevance was recoverable. Therefore the negative evidence contract cannot be completed without overstating the available local/beat reporting.",
+      "game_pk": 822680,
+      "today_game_pk": 823573,
+      "team": "PHI",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 822680,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "242064161ea43b6a1b2bd769a006005ea712f3f7defd7f9eae5e502ec9313d85"
+    },
+    {
+      "item_id": "pregame:824548:DET:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T23:31:31+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Detroit Tigers Game Notes",
+          "url": "https://www.mlb.com/tigers/news/game-notes",
+          "published_at": "2026-09-17"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Detroit Tigers Starting Lineups",
+          "url": "https://www.mlb.com/tigers/roster/starting-lineups?msockid=352472bfeac4656839ee643debce6417",
+          "published_at": "2026-09-17"
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "source_name": "Detroit Tigers manager-video index",
+          "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Detroit Free Press Tigers coverage",
+          "url": "https://www.freep.com/sports/tigers/",
+          "published_at": null
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "FINAL DELTA review after the prior 2026-09-17T20:38:01Z check found no new or superseding Tigers manager/coach declaration establishing a Framber Valdez workload restriction or changing availability for Beau Brieske or Tyler Kinley. Detroit Free Press access was unavailable to the search tool because of robots restrictions; no credentialed local report carrying such a declaration was returned in targeted searches. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
+      "game_pk": 824548,
+      "team": "DET",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "label": "UNRESOLVED",
+          "text": "No direct pregame manager/coach media carrying a material workload or bullpen-availability declaration was located in the final-delta window. Do not infer a restriction or unavailability from recent usage alone."
+        }
+      ],
+      "queue_fingerprint": "b3ddcaccb427a98f6a51405a51bedb5e0495b2b6d489d884fb8c4d085e6ba9af"
+    },
+    {
+      "item_id": "postgame:824548:DET:822763",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T23:31:31+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Detroit Tigers Game Notes",
+          "url": "https://www.mlb.com/tigers/news/game-notes",
+          "published_at": "2026-09-17"
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "source_name": "MLB.com — A.J. Hinch talks Tigers' 5-1 loss",
+          "url": "https://www.mlb.com/video/a-j-hinch-talks-tigers-5-1-loss",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Detroit Free Press Tigers coverage",
+          "url": "https://www.freep.com/sports/tigers/",
+          "published_at": null
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "The official postgame manager item identifies Hinch's subjects as Keider Montero's outing, the quality of Detroit's at-bats, and other general postgame matters. No direct manager/club declaration from the reviewed material established a next-game restriction, a bullpen role/availability change, or a starter workload plan plausibly actionable for September 17. Detroit Free Press access was unavailable to the search tool because of robots restrictions. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 822763,
+      "today_game_pk": 824548,
+      "team": "DET",
+      "pass_type": null,
+      "previous_game_pk": 822763,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "label": "UNRESOLVED",
+          "text": "The September 16 postgame manager availability did not yield a carry-forward declaration relevant to Detroit's September 17 game. Prior-game result and ordinary game usage were not treated as hindsight evidence of September 17 availability."
+        }
+      ],
+      "queue_fingerprint": "4e4726ac09da784bde6515ad97d77f25d389b23404fdc4565ec1b42030ebc7ef"
+    },
+    {
+      "item_id": "pregame:824548:CWS:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T23:32:06+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/whitesox/video/erick-fedde-against-the-tigers-x3705",
+          "published_at": "2026-09-17"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://chicago.suntimes.com/white-sox/2026/09/16/sputtering-white-sox-fall-out-of-al-central-lead-for-the-first-time-since-july-4-will-venable-tommy-pham-colson-montgomery-munetaka-murakami-sean-newcomb-anthony-kay-hagen-smith",
+          "published_at": "2026-09-16"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Final-delta search located the official confirmation that Erick Fedde was the White Sox starter, but no new or superseding pregame manager/coach declaration imposing a Fedde workload restriction or changing availability for the listed target arms. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
+      "game_pk": 824548,
+      "today_game_pk": 824548,
+      "team": "CWS",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "3d7047665c69cac3c31d7be7d95ed8204073973841f22df8a5a33e55b03b79bf"
+    },
+    {
+      "item_id": "postgame:824548:CWS:824382",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T23:32:06+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/video/game/824382",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "url": "https://www.mlb.com/video/will-venable-we-re-playing-good-baseball",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://chicago.suntimes.com/white-sox/2026/09/16/tommy-pham-activated-munetaka-murakami-benched-for-all-important-series-finale-in-cleveland-will-venable-chris-getz-drew-thorpe-edgar-quero",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://chicago.suntimes.com/white-sox/2026/09/16/sputtering-white-sox-fall-out-of-al-central-lead-for-the-first-time-since-july-4-will-venable-tommy-pham-colson-montgomery-munetaka-murakami-sean-newcomb-anthony-kay-hagen-smith",
+          "published_at": "2026-09-16"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Only the postgame injury/availability update for Colson Montgomery was carried forward. No manager declaration established a numeric restriction or explicit next-game unavailability for Erick Fedde, Grant Taylor, Sean Burke, Hagen Smith, Davis Martin, or Luis Castillo. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824382,
+      "today_game_pk": 824548,
+      "team": "CWS",
+      "pass_type": null,
+      "previous_game_pk": 824382,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "label": "CONFIRMED",
+          "speaker": "Will Venable",
+          "subject": "Colson Montgomery",
+          "declaration_type": "AVAILABILITY",
+          "normalized_declaration": "Montgomery was termed day-to-day after leaving the September 16 game with a left-wrist contusion; x-rays were negative.",
+          "quote": "He wasn't able to swing the bat.",
+          "source_url": "https://chicago.suntimes.com/white-sox/2026/09/16/tommy-pham-activated-munetaka-murakami-benched-for-all-important-series-finale-in-cleveland-will-venable-chris-getz-drew-thorpe-edgar-quero",
+          "published_at": "2026-09-16"
+        }
+      ],
+      "comments": [
+        {
+          "label": "CONFIRMED",
+          "speaker": "Will Venable",
+          "subject": "Colson Montgomery",
+          "comment": "Venable said Montgomery could not swing the bat after being struck on the left wrist; the club classified him as day-to-day following negative x-rays.",
+          "source_url": "https://chicago.suntimes.com/white-sox/2026/09/16/tommy-pham-activated-munetaka-murakami-benched-for-all-important-series-finale-in-cleveland-will-venable-chris-getz-drew-thorpe-edgar-quero",
+          "published_at": "2026-09-16"
+        }
+      ],
+      "queue_fingerprint": "99c51f91c318b309f807b54c6c908fbe52101073159cf3dffca46a12d2f26e3e"
+    },
+    {
+      "item_id": "pregame:822845:BOS:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T23:32:14Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/redsox/roster/starting-lineups",
+          "published_at": "2026-09-17"
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/stories/game-preview/822845",
+          "published_at": "2026-09-17"
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "url": "https://www.mlb.com/redsox/video/topic/red-sox-manager-postgame",
+          "published_at": "2026-09-17"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.bostonglobe.com/2026/09/17/sports/red-sox-rangers-lineups-preview-september-17/",
+          "published_at": "2026-09-17"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "FINAL_DELTA review found Sonny Gray confirmed as Boston's scheduled starter, but no new or superseding pregame manager/coach declaration establishing a workload, pitch, innings, batters-faced, availability, or restriction condition for Gray. Dedicated Red Sox manager media located was postgame rather than pregame; pregame manager/coach media was unavailable in the reviewed official coverage.",
+      "game_pk": 822845,
+      "today_game_pk": 822845,
+      "team": "BOS",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "903b6c977909cb340710ba9acc95058756147e0c9e462cb92f74eee8c783bfae"
+    },
+    {
+      "item_id": "postgame:822845:BOS:822846",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T23:32:14Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/stories/game/822846",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "url": "https://www.mlb.com/video/chad-tracy-discusses-red-sox-7-3-loss",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/redsox/news",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.bostonglobe.com/2026/09/17/sports/red-sox-rangers-lineups-preview-september-17/",
+          "published_at": "2026-09-17"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Reviewed Boston's September 16 postgame coverage for information plausibly carrying into the September 17 game. The available official manager postgame item addressed the loss, Rangers hitting, and Jake Bennett's start; no direct manager/coach declaration identified a September 17 restriction, altered role, or availability limitation relevant to Sonny Gray or Boston's projected pregame workload. | VALIDATION: invalid result 'COMPLETED'",
+      "game_pk": null,
+      "today_game_pk": 822845,
+      "team": "BOS",
+      "pass_type": null,
+      "previous_game_pk": 822846,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "91655bdaa6457beaa76c605dc6695c15c4a5dda8aea6f9fbe63400a1f978a219"
+    },
+    {
+      "item_id": "pregame:822845:TEX:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T23:33:15+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
+          "published_at": "2026-09-17T00:13:00-04:00"
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "url": "https://www.mlb.com/video/skip-schumaker-talks-rangers-hitting-in-7-3-win",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "NATIONAL_REPORTER",
+          "url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
+          "published_at": "2026-09-17"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Final-delta research found a superseding club pitching-plan announcement: Tyler Alexander will open and Cody Bradford is expected to handle the bulk innings. No direct pregame manager declaration located assigning a numeric workload ceiling to Alexander or specifying September 17 availability for Latz, Eovaldi, or Garcia. The September 16 postgame record materially affects bullpen context: Eovaldi threw four scoreless relief innings; Schumaker said Latz and Garcia were unavailable in that game. Those September 16 availability statements are not treated as declarations of September 17 unavailability. | VALIDATION: invalid result 'COMPLETED'",
+      "game_pk": 822845,
+      "today_game_pk": 822845,
+      "team": "TEX",
+      "pass_type": "FINAL",
+      "previous_game_pk": 822846,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": {
+            "name": "Tyler Alexander",
+            "mlbam_id": 641302
+          },
+          "speaker": "Texas Rangers",
+          "speaker_role": "club",
+          "statement": "Tyler Alexander will open against Boston, with Cody Bradford expected to follow for the bulk of the innings.",
+          "normalized": {
+            "starter_role": "OPENER",
+            "bulk_follower": "Cody Bradford"
+          },
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/stories/game-preview/822845",
+          "source_published_at": "2026-09-17"
+        },
+        {
+          "subject": {
+            "name": "Nathan Eovaldi",
+            "mlbam_id": 543135
+          },
+          "speaker": "Skip Schumaker",
+          "speaker_role": "manager",
+          "statement": "Schumaker said the Rangers were 'all hands on deck' in the final 12-game stretch; Eovaldi was used for four innings in relief on September 16.",
+          "normalized": {
+            "usage": "FOUR_RELIEF_INNINGS_ON_2026-09-16"
+          },
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
+          "source_published_at": "2026-09-17T00:13:00-04:00"
+        }
+      ],
+      "comments": [
+        {
+          "subject": {
+            "name": "Jacob Latz",
+            "mlbam_id": 656641
+          },
+          "speaker": "Skip Schumaker",
+          "speaker_role": "manager",
+          "comment": "Schumaker said Latz was unavailable during the September 16 game.",
+          "relevance": "This applies directly to September 16 only; no September 17 availability declaration was located.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
+          "source_published_at": "2026-09-17"
+        },
+        {
+          "subject": {
+            "name": "Robert Garcia",
+            "mlbam_id": 676395
+          },
+          "speaker": "Skip Schumaker",
+          "speaker_role": "manager",
+          "comment": "Schumaker said Garcia was unavailable during the September 16 game.",
+          "relevance": "This applies directly to September 16 only; no September 17 availability declaration was located.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
+          "source_published_at": "2026-09-17"
+        },
+        {
+          "subject": {
+            "name": "Nathan Eovaldi",
+            "mlbam_id": 543135
+          },
+          "speaker": "Skip Schumaker",
+          "speaker_role": "manager",
+          "comment": "Eovaldi's September 16 relief outing was described by Schumaker as enormous; the official club report states Eovaldi is working back from an elbow injury and had made two relief appearances since activation on September 12.",
+          "relevance": "Relevant recent usage and recovery context, but not an explicit September 17 restriction.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
+          "source_published_at": "2026-09-17T00:13:00-04:00"
+        }
+      ],
+      "queue_fingerprint": "ed185be0d4d17a950274527bb7ac3817028e4c4ea2b30fc1b3ee54b805529732"
+    },
+    {
+      "item_id": "postgame:822845:TEX:822846",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T23:33:15+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
+          "published_at": "2026-09-17T00:13:00-04:00"
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "url": "https://www.mlb.com/video/skip-schumaker-talks-rangers-hitting-in-7-3-win",
+          "published_at": "2026-09-16"
+        },
+        {
+          "source_type": "NATIONAL_REPORTER",
+          "url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
+          "published_at": "2026-09-17"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "September 16 postgame research found directly attributed manager availability information relevant to the next game. Eovaldi's four-inning relief outing and ongoing return from an elbow injury are carried forward as context only; no source declared him unavailable for September 17. Latz's and Garcia's stated unavailability applied to the September 16 game, not automatically to September 17. | VALIDATION: invalid result 'COMPLETED'",
+      "game_pk": 822846,
+      "today_game_pk": 822845,
+      "team": "TEX",
+      "pass_type": "POSTGAME_TO_NEXT_GAME",
+      "previous_game_pk": 822846,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": {
+            "name": "Jacob Latz",
+            "mlbam_id": 656641
+          },
+          "speaker": "Skip Schumaker",
+          "speaker_role": "manager",
+          "statement": "Schumaker said, 'We didn't have [Jacob] Latz available' during the September 16 game.",
+          "normalized": {
+            "availability_date": "2026-09-16",
+            "availability": "UNAVAILABLE"
+          },
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
+          "source_published_at": "2026-09-17"
+        },
+        {
+          "subject": {
+            "name": "Robert Garcia",
+            "mlbam_id": 676395
+          },
+          "speaker": "Skip Schumaker",
+          "speaker_role": "manager",
+          "statement": "Schumaker said, 'We didn't have [Robert] Garcia available' during the September 16 game.",
+          "normalized": {
+            "availability_date": "2026-09-16",
+            "availability": "UNAVAILABLE"
+          },
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
+          "source_published_at": "2026-09-17"
+        }
+      ],
+      "comments": [
+        {
+          "subject": {
+            "name": "Nathan Eovaldi",
+            "mlbam_id": 543135
+          },
+          "speaker": "Skip Schumaker",
+          "speaker_role": "manager",
+          "comment": "Eovaldi covered four scoreless relief innings to finish the September 16 game. Schumaker described what Eovaldi provided as enormous.",
+          "relevance": "Material prior-game workload; no numerical September 17 limit or unavailability declaration was reported.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
+          "source_published_at": "2026-09-17T00:13:00-04:00"
+        },
+        {
+          "subject": {
+            "name": "Nathan Eovaldi",
+            "mlbam_id": 543135
+          },
+          "speaker": "Texas Rangers/MLB.com club report",
+          "speaker_role": "club report",
+          "comment": "The report states that Eovaldi is working back from an elbow injury that sidelined him for five weeks and had made two relief appearances since activation on September 12.",
+          "relevance": "Recovery context that may inform next-game usage, without constituting a manager-imposed restriction.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
+          "source_published_at": "2026-09-17T00:13:00-04:00"
+        }
+      ],
+      "queue_fingerprint": "b3fa80204df3c5509126efb5fd74eed5091dbf6a8c479a09494f0af538367a87"
     },
     {
       "item_id": "pregame:823573:PHI:EARLY",
@@ -129,53 +620,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "2c078b3371bd004967fb47b93c2652e79a0fdf46f9425648c4dea05cc9078fe8"
-    },
-    {
-      "item_id": "postgame:823573:PHI:822680",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T20:31:11Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Philadelphia Phillies / MLB.com manager postgame video — Don Mattingly",
-          "url": "https://www.mlb.com/phillies/video/don-mattingly-on-zack-wheeler-s-scoreless-start",
-          "published_at": "2026-09-16",
-          "result": "Official postgame manager availability checked. Retrieved description identifies discussion of Zack Wheeler's seven scoreless innings and more, but did not surface an explicit next-game bullpen availability, injury, or role declaration."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com — Bobby Blanco",
-          "url": "https://www.mlb.com/amp/news/zack-wheeler-throws-7-scoreless-innings-in-phillies-shutout-of-nationals.html",
-          "published_at": "2026-09-16",
-          "result": "Reported Wheeler pitched seven scoreless innings in Philadelphia's 3-0 win. The retrieved manager/player comments concerned Wheeler's outing, with no explicit carry-forward availability or restriction declaration for September 17."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Philadelphia Baseball Review — Patrick Gordon",
-          "url": "https://www.philadelphiabaseballreview.com/2026/09/zack-wheeler-phillies-nationals-21-outs-bullpen.html",
-          "published_at": "2026-09-16",
-          "result": "Local postgame report described Wheeler providing seven innings and reducing bullpen demand; no direct manager-attributed next-game availability restriction or personnel change was reported."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Phillies Nation — Ty Daubert",
-          "url": "https://philliesnation.com/2026/09/why-phillies-are-still-figuring-out-starting-rotation-for-upcoming-mets-series-as-another-bullpen-game-looms-andrew-painter-don-mattingly/",
-          "published_at": "2026-09-16",
-          "result": "Reported Mattingly's pregame comments that the club expected to use a bullpen game at some point during the Mets series, with timing still being decided. This was not a postgame declaration and did not establish a September 17 restriction or change to Nola's start."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The September 16 postgame evidence confirmed Wheeler's seven-inning start, a usage fact that plausibly reduced immediate bullpen burden, but no direct club/manager statement established a specific September 17 reliever availability status, injury limitation, role change, or Nola workload restriction. The prior-day report of an eventual Mets-series bullpen game was not treated as a September 17 declaration. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": null,
-      "today_game_pk": 823573,
-      "team": "PHI",
-      "pass_type": null,
-      "previous_game_pk": 822680,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "559bfdf41cef2e98264af916942cbb8404a624fd712f938509f7770f063a3188"
     },
     {
       "item_id": "pregame:823573:NYM:EARLY",
@@ -476,46 +920,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "aebe3b4c5cc292ac906550354ac368243bee2cb6f7985fdbe657dad454333f6a"
-    },
-    {
-      "item_id": "postgame:824548:DET:822763",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T20:38:01+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com — A.J. Hinch talks Tigers' 5-1 loss",
-          "url": "https://www.mlb.com/video/a-j-hinch-talks-tigers-5-1-loss",
-          "published_at": "2026-09-16",
-          "result": "Official postgame item states that Hinch discussed Keider Montero's outing, the club's at-bats, and more after the 5-1 loss. The accessible item description did not report an injury, fatigue issue, reliever availability statement, role change, or next-game restriction."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Detroit Tigers manager-postgame video index",
-          "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
-          "published_at": null,
-          "result": "Verified the September 16 Hinch postgame video was the official available manager-media item for the prior game."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Detroit Free Press Tigers coverage search",
-          "url": "https://www.freep.com/sports/tigers/",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: searched for September 16 Detroit-at-Toronto postgame clubhouse/bullpen/injury reporting; no accessible credentialed report with a carry-forward declaration was located."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The available official postgame description supports only that Hinch addressed Montero's outing and offensive performance. It does not support a carry-forward bullpen, workload, injury, rest, or role conclusion for September 17. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": null,
-      "today_game_pk": 824548,
-      "team": "DET",
-      "pass_type": null,
-      "previous_game_pk": 822763,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "6ceb18b449a588eaf9b136abf0e27a6ee88aa7372c08f98c88cc5181e2428ea1"
     },
     {
       "item_id": "pregame:824305:SD:FINAL",
@@ -1628,22 +2032,25 @@
       "queue_fingerprint": "572a655e0e740c58c044e24dbf2841c1437aadb481c52740f738f85bf4991922"
     }
   ],
-  "researched_at": "2026-09-17T20:38:01+00:00",
+  "researched_at": "2026-09-17T23:33:15+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
     "max_groups": 6,
     "max_tool_calls_per_group": 4,
     "early_max_tool_calls": 2,
-    "final_max_tool_calls": 4,
-    "last_run_at": "2026-09-17T20:38:01+00:00",
+    "final_max_tool_calls": 3,
+    "postgame_max_tool_calls": 2,
+    "max_prompt_chars": 18000,
+    "prompt_cache_key": "mlb-v2-research-v3",
+    "last_run_at": "2026-09-17T23:33:15+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 146197,
+      "input_tokens": 177884,
       "cached_input_tokens": 24805,
-      "output_tokens": 10744,
-      "reasoning_tokens": 4959,
-      "total_tokens": 156941,
+      "output_tokens": 12061,
+      "reasoning_tokens": 7314,
+      "total_tokens": 189945,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -1653,15 +2060,15 @@
         "items": [
           "postgame:824464:LAD:824467"
         ],
-        "response_id": "resp_0837b96d28ee5fd4016aac4dd1adc487d2958586f7c1f01e48",
+        "response_id": "resp_02d0e072b006d7ea016aac7800d05887d28d393ddccaf933cb",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 65,
+        "web_sources_seen": 71,
         "usage": {
-          "input_tokens": 31276,
+          "input_tokens": 21590,
           "cached_input_tokens": 0,
-          "output_tokens": 1925,
-          "reasoning_tokens": 1130,
-          "total_tokens": 33201,
+          "output_tokens": 1412,
+          "reasoning_tokens": 799,
+          "total_tokens": 23002,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
@@ -1669,123 +2076,154 @@
             "invalid result 'MATERIAL_DECLARATION_FOUND'"
           ]
         },
-        "tool_budget": 3
+        "tool_budget": 2,
+        "prompt_chars": 667,
+        "estimated_prompt_tokens": 167,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "PHI",
         "game_pk": 823573,
         "items": [
-          "pregame:823573:PHI:EARLY",
           "postgame:823573:PHI:822680"
         ],
-        "response_id": "resp_062b750328048877016aac4e080da887d2ac5591009c6af22f",
+        "response_id": "resp_0bacee8a7f44a309016aac781a10c487d2a0901753d39ab748",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 44,
+        "web_sources_seen": 55,
         "usage": {
           "input_tokens": 22007,
           "cached_input_tokens": 4961,
-          "output_tokens": 2003,
-          "reasoning_tokens": 801,
-          "total_tokens": 24010,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:823573:PHI:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
-          "postgame:823573:PHI:822680": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
-          ]
-        },
-        "tool_budget": 2
-      },
-      {
-        "team": "NYM",
-        "game_pk": 823573,
-        "items": [
-          "pregame:823573:NYM:EARLY",
-          "postgame:823573:NYM:823576"
-        ],
-        "response_id": "resp_019eafa0f7384f24016aac4e7bcf8487d2b7ec807cdd127f78",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 45,
-        "usage": {
-          "input_tokens": 22364,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1755,
-          "reasoning_tokens": 830,
-          "total_tokens": 24119,
+          "output_tokens": 1338,
+          "reasoning_tokens": 832,
+          "total_tokens": 23345,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
-        "tool_budget": 2
-      },
-      {
-        "team": "KC",
-        "game_pk": 824141,
-        "items": [
-          "pregame:824141:KC:EARLY",
-          "postgame:824141:KC:824140"
-        ],
-        "response_id": "resp_016772d5f5a755b9016aac4ea91c7487d2beda9e839e395b79",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 44,
-        "usage": {
-          "input_tokens": 21743,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1848,
-          "reasoning_tokens": 771,
-          "total_tokens": 23591,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2
-      },
-      {
-        "team": "HOU",
-        "game_pk": 824141,
-        "items": [
-          "pregame:824141:HOU:EARLY",
-          "postgame:824141:HOU:824140"
-        ],
-        "response_id": "resp_01001aa74e282067016aac4ed8a88087d286b30a3ac608c81a",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 30,
-        "usage": {
-          "input_tokens": 25512,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1629,
-          "reasoning_tokens": 767,
-          "total_tokens": 27141,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2
+        "tool_budget": 2,
+        "prompt_chars": 657,
+        "estimated_prompt_tokens": 165,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "DET",
         "game_pk": 824548,
         "items": [
-          "pregame:824548:DET:EARLY",
+          "pregame:824548:DET:FINAL",
           "postgame:824548:DET:822763"
         ],
-        "response_id": "resp_0194544094a5a3d2016aac4f4cbf5887d2b7819195a0527171",
+        "response_id": "resp_0ccbee7d05ae2303016aac78323f0087d298f267f2832c5009",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 43,
+        "web_sources_seen": 52,
         "usage": {
-          "input_tokens": 23295,
+          "input_tokens": 34566,
           "cached_input_tokens": 4961,
-          "output_tokens": 1584,
-          "reasoning_tokens": 660,
-          "total_tokens": 24879,
+          "output_tokens": 2112,
+          "reasoning_tokens": 1417,
+          "total_tokens": 36678,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
+          "pregame:824548:DET:FINAL": [
+            "manager/coach pregame media was neither checked nor explicitly unavailable"
+          ],
           "postgame:824548:DET:822763": [
             "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
-        "tool_budget": 2
+        "tool_budget": 3,
+        "prompt_chars": 8013,
+        "estimated_prompt_tokens": 2004,
+        "research_mode": "FINAL_DELTA"
+      },
+      {
+        "team": "CWS",
+        "game_pk": 824548,
+        "items": [
+          "pregame:824548:CWS:FINAL",
+          "postgame:824548:CWS:824382"
+        ],
+        "response_id": "resp_0f5d956dfbcfa5fe016aac7854e30887d2b2f58aacdbe550e5",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 40,
+        "usage": {
+          "input_tokens": 34023,
+          "cached_input_tokens": 4961,
+          "output_tokens": 2083,
+          "reasoning_tokens": 1498,
+          "total_tokens": 36106,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "pregame:824548:CWS:FINAL": [
+            "manager/coach pregame media was neither checked nor explicitly unavailable"
+          ],
+          "postgame:824548:CWS:824382": [
+            "invalid result 'MATERIAL_DECLARATION_FOUND'"
+          ]
+        },
+        "tool_budget": 3,
+        "prompt_chars": 8585,
+        "estimated_prompt_tokens": 2147,
+        "research_mode": "FINAL_DELTA"
+      },
+      {
+        "team": "BOS",
+        "game_pk": 822845,
+        "items": [
+          "pregame:822845:BOS:FINAL",
+          "postgame:822845:BOS:822846"
+        ],
+        "response_id": "resp_03d4f65d994db4c1016aac7877188487d2b4a15211d48678ef",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 56,
+        "usage": {
+          "input_tokens": 32488,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1733,
+          "reasoning_tokens": 1257,
+          "total_tokens": 34221,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:822845:BOS:822846": [
+            "invalid result 'COMPLETED'"
+          ]
+        },
+        "tool_budget": 3,
+        "prompt_chars": 7630,
+        "estimated_prompt_tokens": 1908,
+        "research_mode": "FINAL_DELTA"
+      },
+      {
+        "team": "TEX",
+        "game_pk": 822845,
+        "items": [
+          "pregame:822845:TEX:FINAL",
+          "postgame:822845:TEX:822846"
+        ],
+        "response_id": "resp_07cc786d5f6436f1016aac7894961487d2a056d673c08e1d5c",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 40,
+        "usage": {
+          "input_tokens": 33210,
+          "cached_input_tokens": 4961,
+          "output_tokens": 3383,
+          "reasoning_tokens": 1511,
+          "total_tokens": 36593,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "pregame:822845:TEX:FINAL": [
+            "invalid result 'COMPLETED'"
+          ],
+          "postgame:822845:TEX:822846": [
+            "invalid result 'COMPLETED'"
+          ]
+        },
+        "tool_budget": 3,
+        "prompt_chars": 8230,
+        "estimated_prompt_tokens": 2058,
+        "research_mode": "FINAL_DELTA"
       }
     ]
   }
