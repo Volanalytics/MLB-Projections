@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "generated_at": "2026-09-17T17:06:09+00:00",
+  "generated_at": "2026-09-17T17:48:24+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823334": {
@@ -664,7 +664,7 @@
     "824305": {
       "manager_media": {
         "research_status": "COMPLETED",
-        "last_checked_at": "2026-09-17T17:04:50+00:00",
+        "last_checked_at": "2026-09-17T17:44:24Z",
         "passes": [
           {
             "checked_at": "2026-09-17T00:00:00Z",
@@ -738,6 +738,46 @@
             ],
             "result": "INCONCLUSIVE",
             "note": "No material pregame declaration was verified. The required negative-result coverage standard was not fully satisfied because no accessible credentialed beat/local pregame report was located before the target-game cutoff; therefore this is not coded NO_MATERIAL_DECLARATION_FOUND."
+          },
+          {
+            "checked_at": "2026-09-17T17:44:24Z",
+            "team": "COL",
+            "teams": [
+              "COL"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Colorado Rockies / MLB Probable Pitchers",
+                "url": "https://www.mlb.com/rockies/roster/probable-pitchers?msockid=39e0a948ef596c2f028dbf21eee56dfd",
+                "published_at": null,
+                "result": "CONFIRMED Tanner Gordon was listed as Colorado's scheduled starter for Padres at Rockies on September 17, 2026. The page contained no manager declaration of a workload restriction, opener/bulk plan, bullpen restriction, or tactical change."
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Colorado Rockies / MLB video",
+                "url": "https://www.mlb.com/rockies/video/tanner-gordon-against-the-padres-x6552",
+                "published_at": "2026-09-17",
+                "result": "Official same-day starter video located; no accompanying pregame manager/coach comment or workload/usage restriction was available in the indexed item."
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "source_name": "MLB.com Rockies video index",
+                "url": "https://www.mlb.com/video/topic/t115-default-vtp",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE: no September 17, 2026 pregame Warren Schaeffer or Rockies coach media availability was retrievable before the 19:10:00Z first pitch."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "Colorado Springs Gazette",
+                "url": "https://gazette.com/2026/03/16/who-completes-pitching-rotation-as-rockies-enter-final-week-of-spring-training-kevins-take/",
+                "published_at": "2026-03-16",
+                "result": "SOURCE_UNAVAILABLE: targeted searches did not retrieve a credentialed beat/local September 17, 2026 pregame report containing a Rockies manager-attributed availability, restriction, or tactical declaration. This older retrieved article was not used as evidence for the target game."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No material same-day manager/coach declaration was located before first pitch. Because an accessible credentialed beat/local pregame report was not available to complete the negative-evidence source contract, this item is INCONCLUSIVE rather than NO_MATERIAL_DECLARATION_FOUND."
           }
         ],
         "declarations": [],
