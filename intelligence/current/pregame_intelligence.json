@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "generated_at": "2026-09-17T16:31:32+00:00",
+  "generated_at": "2026-09-17T17:06:09+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823334": {
@@ -411,7 +411,7 @@
     "822924": {
       "manager_media": {
         "research_status": "COMPLETED",
-        "last_checked_at": "2026-09-17T14:49:55Z",
+        "last_checked_at": "2026-09-17T17:10:00Z",
         "passes": [
           {
             "checked_at": "2026-09-17T00:00:00Z",
@@ -478,6 +478,93 @@
             ],
             "result": "INCONCLUSIVE",
             "note": "No qualifying credentialed beat/local report or direct September 17 pregame manager/coach availability was located before the 2026-09-17T17:10:00Z first pitch. The required negative-pregame source coverage was therefore incomplete; no restriction or no-restriction conclusion is supported."
+          },
+          {
+            "checked_at": "2026-09-17T17:00:13+00:00",
+            "team": "ATH",
+            "teams": [
+              "ATH"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com",
+                "url": "https://www.mlb.com/video/bullpen-availability-for-athletics-september-17-vs-rays",
+                "published_at": "2026-09-17",
+                "result": "Official pregame bullpen-availability artifact was located, but the accessible page transcript did not expose pitcher-specific availability or restriction details."
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com",
+                "url": "https://www.mlb.com/video/starting-lineups-for-athletics-at-rays-september-17-2026",
+                "published_at": "2026-09-17",
+                "result": "Official pregame starting-lineup artifact was located; accessible page transcript did not expose the lineup card details."
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "source_name": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/athletics",
+                "published_at": null,
+                "result": "No accessible Athletics manager or coach pregame media containing a game-specific workload, bullpen-availability, injury, or tactical declaration was located within the research window."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "Athletics Nation / Yahoo Sports (including a directly attributed Martín Gallegos lineup post)",
+                "url": "https://sports.yahoo.com/articles/game-153-rays-game-thread-160213942.html",
+                "published_at": "2026-09-17T16:02:00Z",
+                "result": "Pregame lineup coverage identified Jonah Heim as the starting catcher after a day off on September 16, with Denzel Clarke starting in center field and Henry Bolte moving to left field. No manager-attributed bullpen restriction, Jeffrey Springs workload limit, opener/bulk plan, or role-change declaration was reported."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "A confirmed announced lineup change affecting catcher/defensive alignment was identified. However, accessible official and media sources did not yield a direct Athletics manager/coach pregame declaration on Jeffrey Springs' workload or specific bullpen availability; therefore the full manager-media research item cannot be marked COMPLETED."
+          },
+          {
+            "checked_at": "2026-09-17T17:10:00Z",
+            "team": "TB",
+            "teams": [
+              "TB"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Tampa Bay Rays Game Notes",
+                "url": "https://img.mlbstatic.com/mlb-images/image/upload/mlb/vykek65n28gfxcbpc7vg.pdf",
+                "published_at": "2026-09-17",
+                "result": "CONFIRMED: official pregame notes list Drew Rasmussen as the starter and report no explicit pitch-count, innings, batters-faced, opener, bulk-pitcher, or bullpen-availability restriction. Notes state Rasmussen threw 6.0 innings in his September 12 start."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com Rays Game Notes index",
+                "url": "https://www.mlb.com/rays/news/game-notes",
+                "published_at": "2026-09-17",
+                "result": "CONFIRMED: links the Rays' September 17, 2026 game notes for Athletics at Rays."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com Athletics at Rays game preview",
+                "url": "https://www.mlb.com/stories/game-preview/822924",
+                "published_at": "2026-09-17",
+                "result": "CONFIRMED: identifies Rasmussen as Tampa Bay's starter; no tactical workload or bullpen restriction reported."
+              },
+              {
+                "source_type": "MANAGER_COACH_PREGAME_MEDIA",
+                "source_name": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/rays",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE: no accessible September 17 pregame Kevin Cash or Rays coach media transcript/video containing attributable tactical availability, workload, or role declarations was located within the research budget."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/rays/news/game-notes",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE: no accessible credentialed Rays beat/local pregame report with attributable September 17 manager or club tactical declarations was located within the research budget."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official pregame materials confirm Rasmussen as the scheduled starter and Taylor Walls' reinstatement from the 10-day IL, but do not state a Rasmussen workload restriction or an explicit reliever/closer availability restriction. Required manager/coach pregame-media and credentialed beat/local coverage could not be substantively accessed within the research budget; therefore a negative material-declaration finding cannot be finalized."
           }
         ],
         "declarations": [],
@@ -561,6 +648,186 @@
                 ],
                 "result": "INCONCLUSIVE",
                 "note": "A direct Cash postgame item was located, but the accessible official metadata was insufficient to preserve a specific material statement, and no qualifying credentialed beat/local postgame report with an attributable next-game availability, injury, fatigue, or role declaration was located. No carry-forward declaration is recorded."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824305": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-17T17:04:50+00:00",
+        "passes": [
+          {
+            "checked_at": "2026-09-17T00:00:00Z",
+            "team": "SD",
+            "teams": [
+              "SD"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com Padres Game Preview",
+                "url": "https://www.mlb.com/stories/game-preview/824305",
+                "published_at": null,
+                "result": "Confirmed Padres-Rockies game 824305 and Mike King as the Padres starter; no manager/coach declaration concerning a King workload restriction, bullpen availability, injury, lineup/rest decision, or tactical limitation was located in the indexed preview."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com Probable Pitchers",
+                "url": "https://www.mlb.com/probable-pitchers/2026-09-17",
+                "published_at": null,
+                "result": "Listed Padres at Rockies for September 17, 2026; no availability or workload declaration located."
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "source_name": "Padres manager/coach pregame media search",
+                "url": "https://www.mlb.com/padres/video/michael-king-against-the-rockies-x7001",
+                "published_at": "2026-09-17",
+                "result": "SOURCE_UNAVAILABLE: indexed official video result was a Michael King game clip, not a manager or coach pregame availability/workload interview."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "The Sporting Tribune",
+                "url": "https://www.thesportingtribune.com/2026/09/15/padres-win-streak-snapped-as-carrigg-and-rox-even-series",
+                "published_at": "2026-09-15",
+                "result": "Credentialed local-game coverage located, but it covered the September 15 game and did not provide a September 17 pregame declaration relevant to King's workload or current bullpen availability."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No material pregame declaration was verified before the target game's first pitch. The available search results did not establish sufficiently complete same-day manager/coach media coverage to support a negative completed finding."
+          },
+          {
+            "checked_at": "2026-09-17T17:04:50+00:00",
+            "team": "COL",
+            "teams": [
+              "COL"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Colorado Rockies / MLB.com — Tanner Gordon against the Padres",
+                "url": "https://www.mlb.com/rockies/video/tanner-gordon-against-the-padres-x6552",
+                "published_at": "2026-09-17",
+                "result": "CONFIRMED_STARTER_ONLY: Official Rockies page identifies Tanner Gordon in connection with Padres at Rockies on September 17, 2026; it contains no manager/coach declaration about workload, opener/bulk plans, bullpen availability, injury, rest, or tactical restrictions."
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Colorado Rockies / MLB.com — Rockies Manager Postgame video index",
+                "url": "https://www.mlb.com/rockies/video/topic/rockies-manager-postgame",
+                "published_at": null,
+                "result": "NO_RELEVANT_PREGAME_MANAGER_MEDIA: Accessible official manager-video index did not provide September 17 pregame media or a relevant declaration for this game."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/rockies/video/topic/rockies-manager-postgame",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE: Search did not surface an accessible credentialed Rockies beat/local report, published before the listed first pitch, containing a manager-attributed restriction, availability, injury, rest, or tactical comment."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No material pregame declaration was verified. The required negative-result coverage standard was not fully satisfied because no accessible credentialed beat/local pregame report was located before the target-game cutoff; therefore this is not coded NO_MATERIAL_DECLARATION_FOUND."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "CONFIRMED",
+        "teams": {
+          "SD": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-17T00:00:00Z",
+            "previous_game_pk": 824306,
+            "previous_game_date": "2026-09-16",
+            "passes": [
+              {
+                "checked_at": "2026-09-17T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "MLB.com Japanese Highlights: Padres-Rockies",
+                    "url": "https://www.mlb.com/video/japanese-highlights-padres-rockies-x0218",
+                    "published_at": "2026-09-17",
+                    "result": "Official MLB postgame highlight indexed for the Padres-Rockies game played September 16, 2026; no manager explanation, next-game availability statement, injury update, or carry-forward workload declaration was available in the indexed result."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com Padres News",
+                    "url": "https://www.mlb.com/padres/news",
+                    "published_at": null,
+                    "result": "Official Padres news index was checked; the accessible indexed material did not provide a September 16 postgame manager declaration about bullpen availability, injuries, starter exit, or next-game personnel plans."
+                  },
+                  {
+                    "source_type": "MANAGER_COACH_MEDIA",
+                    "source_name": "Padres manager postgame media search",
+                    "url": "https://www.mlb.com/padres/video/michael-king-against-the-rockies-x7001",
+                    "published_at": "2026-09-17",
+                    "result": "SOURCE_UNAVAILABLE: no indexed Padres manager postgame interview for the September 16 game was located in the available search results."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "The Sporting Tribune",
+                    "url": "https://www.thesportingtribune.com/2026/09/15/padres-win-streak-snapped-as-carrigg-and-rox-even-series",
+                    "published_at": "2026-09-15",
+                    "result": "Local credentialed coverage located for the prior series game, but not a September 16 postgame report containing carry-forward availability, injury, or workload information."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The queue metadata labeled game 824306 pre-game, while official MLB indexing showed a September 16 Padres-Rockies postgame highlight. No qualifying September 16 Padres manager/coach postgame declaration with plausible September 17 relevance was verified."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "COL": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-17T17:04:50+00:00",
+            "previous_game_pk": 824306,
+            "previous_game_date": "2026-09-16",
+            "passes": [
+              {
+                "checked_at": "2026-09-17T17:04:50+00:00",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Colorado Rockies / MLB.com — Rockies Manager Postgame video index",
+                    "url": "https://www.mlb.com/rockies/video/topic/rockies-manager-postgame",
+                    "published_at": null,
+                    "result": "NO_ACCESSIBLE_2026-09-16_POSTGAME_ITEM: The accessible official index did not provide an identifiable September 16 Rockies-vs.-Padres manager postgame item from which next-game bullpen, injury, fatigue, or role information could be verified."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Colorado Rockies / MLB.com — Tanner Gordon against the Padres",
+                    "url": "https://www.mlb.com/rockies/video/tanner-gordon-against-the-padres-x6552",
+                    "published_at": "2026-09-17",
+                    "result": "CONFIRMED_STARTER_ONLY: Official Rockies page identifies Tanner Gordon for the September 17 Padres-Rockies game but contains no prior-game carry-forward availability, injury, workload, or tactical declaration."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "SOURCE_UNAVAILABLE",
+                    "url": "https://www.mlb.com/rockies/video/topic/rockies-manager-postgame",
+                    "published_at": null,
+                    "result": "SOURCE_UNAVAILABLE: Search did not surface an accessible credentialed Rockies beat/local September 16 postgame report with a manager-attributed carry-forward comment before the September 17 target-game first pitch."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "No material previous-game postgame declaration was verified. The required negative-result coverage standard was not fully satisfied because an accessible credentialed beat/local postgame source could not be located; therefore this is not coded NO_MATERIAL_DECLARATION_FOUND."
               }
             ],
             "comments": [],
