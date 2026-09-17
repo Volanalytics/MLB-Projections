@@ -3,6 +3,406 @@
   "generated_from_queue_at": "2026-09-17T14:40:03+00:00",
   "items": [
     {
+      "item_id": "pregame:823334:MIL:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T16:24:30Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Milwaukee Brewers Game Notes",
+          "url": "https://www.mlb.com/brewers/news/game-notes",
+          "published_at": null,
+          "result": "Reviewed official Brewers game-notes index. The latest listed notes were for September 16 at Pittsburgh; no September 17 notes were available on the index at retrieval."
+        },
+        {
+          "source_type": "OFFICIAL_MLB_BEAT",
+          "source_name": "MLB.com / Adam McCalvy",
+          "url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win",
+          "published_at": "2026-09-17",
+          "result": "Reported direct Pat Murphy comments after Milwaukee moved Kyle Harrison into the September 17 start: Murphy said the club had sufficient pitching behind Harrison to protect him if he started slowly. The report also attributed to Murphy an intent to give DL Hall more high-leverage work and to use JoJo Romero and Antonio Senzatela in close-and-late situations."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALED",
+          "source_name": "MLB.com / Adam McCalvy",
+          "url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win",
+          "published_at": "2026-09-17",
+          "result": "Credentialed Brewers beat reporting with direct manager attribution; no numeric pitch, innings, batters-faced, or times-through-order limit was reported for Harrison."
+        },
+        {
+          "source_type": "DIRECT_MANAGER_OR_COACH_MEDIA",
+          "source_name": "Pat Murphy direct remarks as reported by MLB.com",
+          "url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win",
+          "published_at": "2026-09-17",
+          "result": "Direct Murphy remarks were available through the attributed MLB.com report. A standalone September 17 pregame availability transcript/video was not located within the research budget."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Confirmed conditional bullpen-protection plan for Kyle Harrison, but no numeric workload restriction was stated. No explicit individual reliever unavailability, emergency-only designation, closer restriction, injury scratch, or catcher/defensive restriction was located in the reviewed material. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823334,
+      "today_game_pk": 823334,
+      "team": "MIL",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "evidence_label": "CONFIRMED",
+          "speaker": "Pat Murphy",
+          "speaker_role": "Brewers manager",
+          "subject": "Kyle Harrison",
+          "declaration_type": "STARTER_WORKLOAD_PLAN",
+          "statement": "“I think it lined up best for us to do it this way. We’ve got enough pitching behind him to protect him if he gets off to a slow start.”",
+          "normalized_effect": "Conditional short leash/bullpen protection if Harrison starts slowly; no numerical pitch, innings, BF, or TTO limit stated.",
+          "restriction_flag": true,
+          "numeric_limit": null,
+          "source_url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
+        },
+        {
+          "evidence_label": "CONFIRMED",
+          "speaker": "Pat Murphy",
+          "speaker_role": "Brewers manager",
+          "subject": "DL Hall",
+          "declaration_type": "BULLPEN_ROLE",
+          "statement": "Murphy said the Brewers will prioritize getting Hall more high-leverage work.",
+          "normalized_effect": "Hall designated for increased high-leverage usage.",
+          "restriction_flag": false,
+          "numeric_limit": null,
+          "source_url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
+        },
+        {
+          "evidence_label": "CONFIRMED",
+          "speaker": "Pat Murphy",
+          "speaker_role": "Brewers manager",
+          "subject": "JoJo Romero; Antonio Senzatela",
+          "declaration_type": "BULLPEN_ROLE",
+          "statement": "Murphy said Romero and Senzatela also need close-and-late situations.",
+          "normalized_effect": "Romero and Senzatela identified for close-and-late leverage usage.",
+          "restriction_flag": false,
+          "numeric_limit": null,
+          "source_url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
+        }
+      ],
+      "comments": [
+        {
+          "evidence_label": "CONFIRMED",
+          "subject": "Brewers rotation",
+          "comment": "Milwaukee moved Harrison into the September 17 start against Pittsburgh and bumped Dustin May to September 18 at Baltimore.",
+          "source_url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
+        }
+      ],
+      "queue_fingerprint": "cd3cf62b062b4685cd3acddc95ffa66ff7eb04715db499bf736fe7fb1e693cd9"
+    },
+    {
+      "item_id": "pregame:823334:PIT:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T16:25:05Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Pittsburgh Pirates Game Notes",
+          "url": "https://www.mlb.com/pirates/news/game-notes",
+          "published_at": null,
+          "result": "No September 17 game-notes document was available before the scheduled first pitch; the most recent listed notes were for September 16."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "MLB.com Pirates Manager Postgame Videos",
+          "url": "https://www.mlb.com/video/topic/pirates-manager-postgame",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE: no September 17 pregame Don Kelly manager/coach media was available in the official Pirates/MLB video index before first pitch."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Pittsburgh Baseball Now / Danny Demilio, syndicated by Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/3-homers-not-enough-pirates-014950064.html",
+          "published_at": "2026-09-17",
+          "result": "The September 16 postgame report, published before the September 17 first pitch, stated that Pittsburgh would use another bullpen game in the series finale."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "No explicit pitcher availability/unavailability, role restriction, numeric workload cap, injury/soreness update, lineup scratch, or catcher/defensive tactical change was located in the pregame evidence window. The bullpen-game plan is carried forward from the prior game's postgame report because it explicitly concerned the next game. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823334,
+      "today_game_pk": 823334,
+      "team": "PIT",
+      "pass_type": "FINAL",
+      "previous_game_pk": 823332,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "topic": "opener_bulk_pitcher_plan",
+          "subject": "Pittsburgh pitching staff",
+          "statement": "The Pirates will use another bullpen game in the September 17 series finale against Milwaukee.",
+          "speaker": "Danny Demilio",
+          "speaker_role": "Pittsburgh Baseball Now reporter",
+          "evidence_label": "CONFIRMED",
+          "restriction": {
+            "type": "BULLPEN_GAME",
+            "numeric_limit": null
+          },
+          "source_url": "https://sports.yahoo.com/articles/3-homers-not-enough-pirates-014950064.html",
+          "source_published_at": "2026-09-17"
+        }
+      ],
+      "comments": [],
+      "queue_fingerprint": "ffdd2e2d3beed1f66ce823541cd8afbf3306a738def26d2260de6992c249619c"
+    },
+    {
+      "item_id": "pregame:824464:LAD:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T16:26:20Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB Starting Lineups",
+          "url": "https://www.mlb.com/starting-lineups",
+          "published_at": "2026-09-17",
+          "result": "Confirmed Justin Wrobleski as the Dodgers' listed starter against Cincinnati."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Dodgers video — Bullpen availability for Los Angeles, September 17 vs. Reds",
+          "url": "https://www.mlb.com/video/bullpen-availability-for-los-angeles-september-17-vs-reds",
+          "published_at": "2026-09-17",
+          "result": "Official availability visualization was located, but its searchable page text did not identify individual reliever restrictions or availability designations."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Dodgers video — Dave Roberts on Snell's injury, plans for postseason",
+          "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason",
+          "published_at": "2026-09-16",
+          "result": "Located prior-game manager postgame media; no September 17 pregame manager-media item was located before the 16:40:00Z first pitch."
+        },
+        {
+          "source_type": "CREDENTIALED_BEAT_OR_LOCAL",
+          "source_name": "Los Angeles Times — Maddie Lee",
+          "url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds",
+          "published_at": "2026-09-16T20:48:00-07:00",
+          "result": "Located credentialed Dodgers beat postgame coverage, including next-day starter and roster-plan reporting; no separate September 17 pregame manager availability/restriction report was located before first pitch."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Wrobleski was officially listed as the starter, but no sourced September 17 pregame manager declaration was located regarding his workload, an opener/bulk plan, individual reliever availability, role restrictions, lineup/defensive changes, or other game-specific tactical restrictions. Manager pregame media was SOURCE_UNAVAILABLE in the searched official/credentialed coverage before first pitch; the available beat coverage was postgame from September 16 rather than September 17 pregame.",
+      "game_pk": 824464,
+      "today_game_pk": null,
+      "team": "LAD",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "a1784b79eed6c02f61b060842badacbf24847020dcd73b99177de27c8d3fda10"
+    },
+    {
+      "item_id": "postgame:824464:LAD:824467",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T16:26:20Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Dodgers video — Dave Roberts on Snell's injury, plans for postseason",
+          "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason",
+          "published_at": "2026-09-16",
+          "result": "Official Dodgers manager postgame press-conference video covering Blake Snell's early injury exit and postseason pitching plans."
+        },
+        {
+          "source_type": "CREDENTIALED_BEAT_OR_LOCAL",
+          "source_name": "Los Angeles Times — Maddie Lee",
+          "url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds",
+          "published_at": "2026-09-16T20:48:00-07:00",
+          "result": "Reported that Snell exited with left-groin tightness; reported Roberts said Bobby Miller would be optioned after 2 1/3 innings and the club planned to recall Landon Knack; reported Roberts' plan that Roki Sasaki's next outing would be a start."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB Starting Lineups",
+          "url": "https://www.mlb.com/starting-lineups",
+          "published_at": "2026-09-17",
+          "result": "Confirmed Justin Wrobleski was listed to start the September 17 Dodgers-Reds game."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Carry-forward findings are limited to the September 16 Snell injury/rotation-status information and Roberts' stated roster plan. No explicit September 17 availability designation for a specific Dodgers reliever, closer, or setup pitcher was located in the reviewed evidence. | VALIDATION: invalid result 'COMPLETED'",
+      "game_pk": null,
+      "today_game_pk": 824464,
+      "team": "LAD",
+      "pass_type": null,
+      "previous_game_pk": 824467,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "label": "CONFIRMED",
+          "speaker": "Dave Roberts",
+          "subject": "Bobby Miller / Landon Knack",
+          "declaration": "Roberts said the Dodgers optioned Bobby Miller after his 2 1/3 innings on September 16 and planned to recall right-hander Landon Knack.",
+          "impact": "Material next-game roster/bullpen-depth change; described as a planned recall, not a confirmed completed transaction in the cited postgame report.",
+          "source_url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds"
+        },
+        {
+          "label": "CONFIRMED",
+          "speaker": "Los Angeles Dodgers / Dave Roberts postgame availability",
+          "subject": "Blake Snell",
+          "declaration": "Snell exited after one inning with left-groin tightness. The official MLB item documents Roberts' postgame media availability on the injury; credentialed beat reporting stated that the next several days would determine when Snell could pitch again.",
+          "impact": "Carry-forward rotation/injury uncertainty. This did not establish a restriction for September 17 starter Justin Wrobleski or an individual reliever.",
+          "source_url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason"
+        },
+        {
+          "label": "CONFIRMED",
+          "speaker": "Dave Roberts",
+          "subject": "Roki Sasaki",
+          "declaration": "Roberts said Sasaki's next outing would be a start so that pitchers would have ample rest.",
+          "impact": "Forward-looking pitching-plan comment, but not a September 17 Wrobleski workload limit or bullpen-availability declaration.",
+          "source_url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds"
+        }
+      ],
+      "comments": [
+        {
+          "label": "CONFIRMED",
+          "speaker": "Blake Snell",
+          "subject": "Left groin tightness",
+          "comment": "Snell said he felt his groin grab during his pregame bullpen, chose not to push through it, and said the next couple of days would determine where he was at.",
+          "impact": "Supports the carry-forward injury uncertainty; it does not provide a September 17 availability declaration."
+        }
+      ],
+      "queue_fingerprint": "8845e24bc21e867f243ccdb0de76309383b79eb6bd1e0adae36e6222a230b224"
+    },
+    {
+      "item_id": "pregame:824464:CIN:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T16:28:41Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com / Cincinnati Reds — Bench availability for Cincinnati, September 17 vs Dodgers",
+          "url": "https://www.mlb.com/video/bench-availability-for-cincinnati-september-17-vs-dodgers",
+          "published_at": "2026-09-17",
+          "result": "Checked official pregame availability content; no accessible text identified a Reds reliever restriction, bullpen-role change, starter workload limit, injury/scratch, or tactical limitation."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com — Los Angeles Dodgers at Cincinnati Reds Preview, game_pk 824464",
+          "url": "https://www.mlb.com/stories/game-preview/824464",
+          "published_at": "2026-09-17",
+          "result": "Confirmed Brady Singer as Cincinnati's listed starter. Preview noted recent results but contained no club/manager declaration imposing a pitch-count, innings, BF, times-through-order, opener, or bulk-pitcher restriction."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "MLB.com / Cincinnati Reds — Reds Manager Postgame video index",
+          "url": "https://www.mlb.com/video/topic/reds-manager-postgame",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE for September 17 pregame manager/coach media before the 16:40Z first pitch. The accessible official index surfaced prior postgame videos, not a September 17 pregame availability session."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Web search of Cincinnati Reds beat/local coverage for September 17, 2026",
+          "url": "https://www.google.com/search?q=Reds+beat+writer+Brady+Singer+Dodgers+September+17+2026",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE. No credentialed Reds beat/local pregame report located before first pitch that directly attributed a material bullpen availability, Singer workload, injury/rest, lineup-defense, or tactical declaration to the club or Terry Francona."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Official pregame sources confirmed Singer's start but did not provide a material restriction or tactical declaration. The required credentialed beat/local pregame coverage was not located, so a negative finding cannot be upgraded to NO_MATERIAL_DECLARATION_FOUND.",
+      "game_pk": 824464,
+      "today_game_pk": 824464,
+      "team": "CIN",
+      "pass_type": "FINAL",
+      "previous_game_pk": 824467,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "405aaeb987a880bf7bdb1d177a40d0e39205c6b825d2bfc6bc42745b68c8bb87"
+    },
+    {
+      "item_id": "pregame:822924:ATH:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T16:29:23Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com / Athletics pregame availability video",
+          "url": "https://www.mlb.com/video/bench-availability-for-athletics-september-17-vs-rays",
+          "published_at": "2026-09-17",
+          "result": "Official game-specific pregame availability item located. The accessible page supplied only the title and metadata; no player-specific bullpen availability, restriction, or tactical details were available in its searchable text."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "SOURCE_UNAVAILABLE",
+          "url": "https://www.mlb.com/athletics",
+          "published_at": null,
+          "result": "No accessible Athletics manager/coach pregame media for the September 17 game at Tampa Bay was located before the 17:10 UTC first pitch."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Sacramento Bee",
+          "url": "https://www.sacbee.com/sports/article316334896.html",
+          "published_at": "2026-06-30",
+          "result": "Credentialed local Athletics coverage source checked; no September 17, 2026 pregame report or club-attributed manager declaration regarding Springs, bullpen availability, lineup rest, or tactical restrictions was located."
+        },
+        {
+          "source_type": "NATIONAL_WIRE",
+          "source_name": "Associated Press via San Francisco Chronicle",
+          "url": "https://www.sfchronicle.com/sports/article/nick-martinez-gets-15th-win-as-rays-beat-22435763.php",
+          "published_at": "2026-09-16",
+          "result": "Previous-game report confirmed Jeffrey Springs was the announced Athletics starter for September 17; it contained no manager declaration or restriction for his planned workload or the Athletics bullpen."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Meaningful official-team, manager-media availability, and credentialed local-source coverage completed before first pitch. No material pregame manager/club declaration was found. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
+      "game_pk": 822924,
+      "today_game_pk": 822924,
+      "team": "ATH",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "a2faeea914a8c65f9966439a314f59e4cbc954074034576c684c0254670e835f"
+    },
+    {
+      "item_id": "pregame:822924:TB:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T17:05:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Tampa Bay Rays Game Notes",
+          "url": "https://img.mlbstatic.com/mlb-images/image/upload/mlb/vykek65n28gfxcbpc7vg.pdf",
+          "published_at": "2026-09-17",
+          "result": "Confirmed Drew Rasmussen as the scheduled starter and recorded Taylor Walls' reinstatement from the 10-day IL. No starter workload restriction, opener/bulk plan, reliever availability restriction, bullpen-role change, or game-specific tactical limitation was stated."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "MLB.com Rays postgame coverage",
+          "url": "https://www.mlb.com/news/jonny-deluca-hugs-kevin-cash-in-rays-postgame-win-celebration",
+          "published_at": "2026-09-17T03:35:00Z",
+          "result": "Kevin Cash postgame comments located, but they did not declare any forward-looking availability restriction, role change, or Rasmussen workload plan for the September 17 game. Separate Rays pregame manager media containing a material declaration was unavailable in the research window."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Tampa Bay Times — Marc Topkin",
+          "url": "https://www.tampabay.com/sports/rays/2026/09/16/drew-rasmussen-jeffrey-springs-athletics-taylor-walls-tommy-white-calvary-christian/",
+          "published_at": "2026-09-16",
+          "result": "Advance coverage of Rasmussen versus former teammate Jeffrey Springs was located; no reported club-attributed workload restriction, opener plan, bullpen availability restriction, or material game-day tactical change was identified."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "NO_MATERIAL_DECLARATION_FOUND. Official team notes, available manager comments, and credentialed local beat coverage were checked before the 2026-09-17 17:10:00Z first pitch. Rasmussen was listed as the starter; no supported limit or altered usage plan was found. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
+      "game_pk": 822924,
+      "today_game_pk": 822924,
+      "team": "TB",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "547b186c81152a261a75e0275d7b343359cfe7ab363770a173da13b61ec9c96b"
+    },
+    {
       "item_id": "pregame:823334:MIL:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-17T14:40:30Z",
@@ -229,64 +629,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "e042a7f5c2116ae7ef2aa68bc3c72c39c33a3d57ee41f2dd3586c91ca1048175"
-    },
-    {
-      "item_id": "postgame:824464:LAD:824467",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Los Angeles Dodgers",
-          "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason",
-          "published_at": "2026-09-16",
-          "result": "Official postgame manager-media item confirmed that Dave Roberts addressed Blake Snell's early-inning injury and postseason pitching plans after the Dodgers' 6-2 loss."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Game Story",
-          "url": "https://www.mlb.com/stories/game/824467/",
-          "published_at": "2026-09-16",
-          "result": "Game story showed Snell was followed by Blake Treinen and identified subsequent Dodgers pitching appearances; it contained no explicit next-game bullpen-availability declaration."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Los Angeles Times",
-          "url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds",
-          "published_at": "2026-09-16",
-          "result": "Credentialed postgame report directly attributed Snell's early exit to groin tightness that began during his pregame bullpen work."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Carry-forward finding is limited to Blake Snell's injury status. No sourced manager declaration established a specific September 17 reliever restriction, role change, or emergency-only designation. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": null,
-      "today_game_pk": 824464,
-      "team": "LAD",
-      "pass_type": null,
-      "previous_game_pk": 824467,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Blake Snell",
-          "category": "INJURY_STATUS",
-          "statement": "Snell said groin tightness began when he felt it grab while throwing a slider in his pregame bullpen; the issue ended his start after one inning.",
-          "speaker": "Blake Snell",
-          "source_name": "Los Angeles Times",
-          "source_url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds",
-          "evidence_label": "CONFIRMED"
-        }
-      ],
-      "comments": [
-        {
-          "subject": "Blake Snell",
-          "comment_type": "CARRY_FORWARD_WORKLOAD_CONTEXT",
-          "comment": "The prior game's early exit was injury-related rather than a routine planned workload endpoint. This is relevant to subsequent rotation planning, but it does not create a declared restriction for Justin Wrobleski or a named September 17 reliever.",
-          "evidence_label": "INFERENCE",
-          "source_url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason"
-        }
-      ],
-      "queue_fingerprint": "8845e24bc21e867f243ccdb0de76309383b79eb6bd1e0adae36e6222a230b224"
     },
     {
       "item_id": "pregame:824464:CIN:EARLY",
@@ -535,7 +877,7 @@
       "queue_fingerprint": "572a655e0e740c58c044e24dbf2841c1437aadb481c52740f738f85bf4991922"
     }
   ],
-  "researched_at": "2026-09-17T14:52:25+00:00",
+  "researched_at": "2026-09-17T16:31:32+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -543,14 +885,14 @@
     "max_tool_calls_per_group": 4,
     "early_max_tool_calls": 2,
     "final_max_tool_calls": 4,
-    "last_run_at": "2026-09-17T14:52:25+00:00",
+    "last_run_at": "2026-09-17T16:31:32+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 133097,
+      "input_tokens": 196877,
       "cached_input_tokens": 24805,
-      "output_tokens": 11955,
-      "reasoning_tokens": 6433,
-      "total_tokens": 145052,
+      "output_tokens": 11353,
+      "reasoning_tokens": 6794,
+      "total_tokens": 208230,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -558,60 +900,66 @@
         "team": "MIL",
         "game_pk": 823334,
         "items": [
-          "pregame:823334:MIL:EARLY",
-          "postgame:823334:MIL:823332"
+          "pregame:823334:MIL:FINAL"
         ],
-        "response_id": "resp_0ec90bed8ffd3fec016aabfbcfd37c87d2b0daf12d9936bcbe",
+        "response_id": "resp_00f16cedcd962685016aac13f8422887d286f106da6ca8cf1d",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 49,
+        "web_sources_seen": 46,
         "usage": {
-          "input_tokens": 21684,
+          "input_tokens": 33384,
           "cached_input_tokens": 0,
-          "output_tokens": 1828,
-          "reasoning_tokens": 683,
-          "total_tokens": 23512,
+          "output_tokens": 2492,
+          "reasoning_tokens": 1551,
+          "total_tokens": 35876,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {},
-        "tool_budget": 2
+        "validation_errors": {
+          "pregame:823334:MIL:FINAL": [
+            "invalid result 'MATERIAL_DECLARATION_FOUND'"
+          ]
+        },
+        "tool_budget": 4
       },
       {
         "team": "PIT",
         "game_pk": 823334,
         "items": [
-          "pregame:823334:PIT:EARLY",
-          "postgame:823334:PIT:823332"
+          "pregame:823334:PIT:FINAL"
         ],
-        "response_id": "resp_0441b253027972ab016aabfc47b7ec87d2bfdd950e1b8f8514",
+        "response_id": "resp_0df6ffa1309c48db016aac145e184087d2b8afae7f2706055f",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 29,
+        "web_sources_seen": 67,
         "usage": {
-          "input_tokens": 21260,
+          "input_tokens": 30827,
           "cached_input_tokens": 4961,
-          "output_tokens": 1484,
-          "reasoning_tokens": 678,
-          "total_tokens": 22744,
+          "output_tokens": 1584,
+          "reasoning_tokens": 1041,
+          "total_tokens": 32411,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {},
-        "tool_budget": 2
+        "validation_errors": {
+          "pregame:823334:PIT:FINAL": [
+            "invalid result 'MATERIAL_DECLARATION_FOUND'"
+          ]
+        },
+        "tool_budget": 4
       },
       {
         "team": "LAD",
         "game_pk": 824464,
         "items": [
-          "pregame:824464:LAD:EARLY",
+          "pregame:824464:LAD:FINAL",
           "postgame:824464:LAD:824467"
         ],
-        "response_id": "resp_04a4bd0d8238ed94016aabfca6533c87d2bb51aaeb93c8f811",
+        "response_id": "resp_0454970dde02d400016aac1487802087d2bc119ef966274051",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 49,
+        "web_sources_seen": 64,
         "usage": {
-          "input_tokens": 22041,
+          "input_tokens": 32657,
           "cached_input_tokens": 4961,
-          "output_tokens": 2378,
-          "reasoning_tokens": 1243,
-          "total_tokens": 24419,
+          "output_tokens": 2435,
+          "reasoning_tokens": 977,
+          "total_tokens": 35092,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
@@ -619,70 +967,75 @@
             "invalid result 'COMPLETED'"
           ]
         },
-        "tool_budget": 2
+        "tool_budget": 4
       },
       {
         "team": "CIN",
         "game_pk": 824464,
         "items": [
-          "pregame:824464:CIN:EARLY",
-          "postgame:824464:CIN:824467"
+          "pregame:824464:CIN:FINAL"
         ],
-        "response_id": "resp_078860c5d308c45e016aabfd3b73b487d2bd37d2a35aa12042",
+        "response_id": "resp_0540b26ca736b2e7016aac151c387487d2ab442e05593a8725",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 43,
+        "web_sources_seen": 59,
         "usage": {
-          "input_tokens": 22991,
+          "input_tokens": 30320,
           "cached_input_tokens": 4961,
-          "output_tokens": 1751,
-          "reasoning_tokens": 1094,
-          "total_tokens": 24742,
+          "output_tokens": 1407,
+          "reasoning_tokens": 826,
+          "total_tokens": 31727,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
-        "tool_budget": 2
+        "tool_budget": 4
       },
       {
         "team": "ATH",
         "game_pk": 822924,
         "items": [
-          "pregame:822924:ATH:EARLY",
-          "postgame:822924:ATH:822926"
+          "pregame:822924:ATH:FINAL"
         ],
-        "response_id": "resp_00a29d35e4c0920c016aabfdaa274c87d2af30b14919a316aa",
+        "response_id": "resp_00bee7f0a6083a68016aac1547b4d887d2b79c44f79b963359",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 45,
+        "web_sources_seen": 41,
         "usage": {
-          "input_tokens": 22188,
+          "input_tokens": 28846,
           "cached_input_tokens": 4961,
-          "output_tokens": 2149,
-          "reasoning_tokens": 1239,
-          "total_tokens": 24337,
+          "output_tokens": 1438,
+          "reasoning_tokens": 936,
+          "total_tokens": 30284,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {},
-        "tool_budget": 2
+        "validation_errors": {
+          "pregame:822924:ATH:FINAL": [
+            "manager/coach pregame media was neither checked nor explicitly unavailable"
+          ]
+        },
+        "tool_budget": 4
       },
       {
         "team": "TB",
         "game_pk": 822924,
         "items": [
-          "pregame:822924:TB:EARLY",
-          "postgame:822924:TB:822926"
+          "pregame:822924:TB:FINAL"
         ],
-        "response_id": "resp_00a52818699f084b016aabfdff075087d288b6ec515589b3d5",
+        "response_id": "resp_0a45dc983d9e9461016aac15abf89487d293275d550b473c32",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 42,
+        "web_sources_seen": 48,
         "usage": {
-          "input_tokens": 22933,
+          "input_tokens": 40843,
           "cached_input_tokens": 4961,
-          "output_tokens": 2365,
-          "reasoning_tokens": 1496,
-          "total_tokens": 25298,
+          "output_tokens": 1997,
+          "reasoning_tokens": 1463,
+          "total_tokens": 42840,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {},
-        "tool_budget": 2
+        "validation_errors": {
+          "pregame:822924:TB:FINAL": [
+            "manager/coach pregame media was neither checked nor explicitly unavailable"
+          ]
+        },
+        "tool_budget": 4
       }
     ]
   }

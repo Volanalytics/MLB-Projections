@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "generated_at": "2026-09-17T14:52:25+00:00",
+  "generated_at": "2026-09-17T16:31:32+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823334": {
@@ -193,7 +193,7 @@
     "824464": {
       "manager_media": {
         "research_status": "COMPLETED",
-        "last_checked_at": "2026-09-17T14:48:09+00:00",
+        "last_checked_at": "2026-09-17T16:28:41Z",
         "passes": [
           {
             "checked_at": "2026-09-17T00:00:00Z",
@@ -267,6 +267,86 @@
             ],
             "result": "INCONCLUSIVE",
             "note": "No material pregame declaration was located, but the required corroborating accessible credentialed beat/local pregame report was unavailable. No numeric or qualitative Brady Singer restriction is supported by the checked evidence."
+          },
+          {
+            "checked_at": "2026-09-17T16:26:20Z",
+            "team": "LAD",
+            "teams": [
+              "LAD"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB Starting Lineups",
+                "url": "https://www.mlb.com/starting-lineups",
+                "published_at": "2026-09-17",
+                "result": "Confirmed Justin Wrobleski as the Dodgers' listed starter against Cincinnati."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com Dodgers video — Bullpen availability for Los Angeles, September 17 vs. Reds",
+                "url": "https://www.mlb.com/video/bullpen-availability-for-los-angeles-september-17-vs-reds",
+                "published_at": "2026-09-17",
+                "result": "Official availability visualization was located, but its searchable page text did not identify individual reliever restrictions or availability designations."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com Dodgers video — Dave Roberts on Snell's injury, plans for postseason",
+                "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason",
+                "published_at": "2026-09-16",
+                "result": "Located prior-game manager postgame media; no September 17 pregame manager-media item was located before the 16:40:00Z first pitch."
+              },
+              {
+                "source_type": "CREDENTIALED_BEAT_OR_LOCAL",
+                "source_name": "Los Angeles Times — Maddie Lee",
+                "url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds",
+                "published_at": "2026-09-16T20:48:00-07:00",
+                "result": "Located credentialed Dodgers beat postgame coverage, including next-day starter and roster-plan reporting; no separate September 17 pregame manager availability/restriction report was located before first pitch."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Wrobleski was officially listed as the starter, but no sourced September 17 pregame manager declaration was located regarding his workload, an opener/bulk plan, individual reliever availability, role restrictions, lineup/defensive changes, or other game-specific tactical restrictions. Manager pregame media was SOURCE_UNAVAILABLE in the searched official/credentialed coverage before first pitch; the available beat coverage was postgame from September 16 rather than September 17 pregame."
+          },
+          {
+            "checked_at": "2026-09-17T16:28:41Z",
+            "team": "CIN",
+            "teams": [
+              "CIN"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com / Cincinnati Reds — Bench availability for Cincinnati, September 17 vs Dodgers",
+                "url": "https://www.mlb.com/video/bench-availability-for-cincinnati-september-17-vs-dodgers",
+                "published_at": "2026-09-17",
+                "result": "Checked official pregame availability content; no accessible text identified a Reds reliever restriction, bullpen-role change, starter workload limit, injury/scratch, or tactical limitation."
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com — Los Angeles Dodgers at Cincinnati Reds Preview, game_pk 824464",
+                "url": "https://www.mlb.com/stories/game-preview/824464",
+                "published_at": "2026-09-17",
+                "result": "Confirmed Brady Singer as Cincinnati's listed starter. Preview noted recent results but contained no club/manager declaration imposing a pitch-count, innings, BF, times-through-order, opener, or bulk-pitcher restriction."
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "source_name": "MLB.com / Cincinnati Reds — Reds Manager Postgame video index",
+                "url": "https://www.mlb.com/video/topic/reds-manager-postgame",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE for September 17 pregame manager/coach media before the 16:40Z first pitch. The accessible official index surfaced prior postgame videos, not a September 17 pregame availability session."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "Web search of Cincinnati Reds beat/local coverage for September 17, 2026",
+                "url": "https://www.google.com/search?q=Reds+beat+writer+Brady+Singer+Dodgers+September+17+2026",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE. No credentialed Reds beat/local pregame report located before first pitch that directly attributed a material bullpen availability, Singer workload, injury/rest, lineup-defense, or tactical declaration to the club or Terry Francona."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official pregame sources confirmed Singer's start but did not provide a material restriction or tactical declaration. The required credentialed beat/local pregame coverage was not located, so a negative finding cannot be upgraded to NO_MATERIAL_DECLARATION_FOUND."
           }
         ],
         "declarations": [],
