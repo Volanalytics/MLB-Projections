@@ -5,92 +5,517 @@
     {
       "item_id": "postgame:824464:LAD:824467",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T00:00:00Z",
+      "checked_at": "2026-09-17T20:31:03+00:00",
       "sources_checked": [
         {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com / Los Angeles Dodgers — Sonja Chen, “'Glad it's not worse': Snell's early exit complicates Dodgers' plans”",
-          "url": "https://www.mlb.com/dodgers/news/blake-snell-exits-start-against-reds-after-one-inning",
-          "published_at": "2026-09-17T04:50:00Z",
-          "result": "Material postgame injury and next-day pitching-plan reporting: Blake Snell exited with left groin tightness; Dave Roberts said the club must avoid another setback and may push Snell's next start; MLB.com reported Justin Wrobleski would start the September 17 bullpen game, Landon Knack would be recalled for bulk relief, and Bobby Miller would be optioned."
-        },
-        {
-          "source_type": "MANAGER_POSTGAME_MEDIA",
-          "source_name": "MLB.com — Dave Roberts postgame press conference",
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Dodgers manager postgame video",
           "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason",
-          "published_at": "2026-09-16T00:00:00Z",
-          "result": "Official postgame manager-media availability covering Snell's early-inning injury and postseason pitching plans after the Dodgers' 6-2 loss."
+          "published_at": "2026-09-16",
+          "result": "Dave Roberts postgame availability specifically addressed Blake Snell's early injury exit and postseason pitching plans."
         },
         {
-          "source_type": "OFFICIAL_MLB_GAME",
-          "source_name": "MLB.com Game Story — Dodgers at Reds, game 824467",
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Game Story: Dodgers at Reds",
           "url": "https://www.mlb.com/stories/game/824467/",
-          "published_at": "2026-09-16T00:00:00Z",
-          "result": "Official game context confirmed Snell's early exit and the Dodgers' 6-2 loss. The game story included Snell's postgame injury comment."
+          "published_at": "2026-09-16",
+          "result": "Official game story recorded Snell's postgame comment after his injury-related one-inning exit."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Los Angeles Times / Maddie Lee, syndicated by Yahoo Sports",
+          "url": "https://ca.sports.yahoo.com/news/blake-snell-exits-dodgers-game-233214785.html",
+          "published_at": "2026-09-16T23:32:00Z",
+          "result": "Credentialed Dodgers beat report attributed Snell's groin-tightness explanation and updated his possible subsequent-start outlook."
+        },
+        {
+          "source_type": "WIRE_SERVICE",
+          "source_name": "Associated Press, via Sportsnet",
+          "url": "https://www.sportsnet.ca/mlb/article/dodgers-blake-snell-exits-after-one-inning-due-to-groin-tightness/",
+          "published_at": "2026-09-16T22:53:00Z",
+          "result": "Reported that Snell exited after one inning because of left-groin tightness and included his explanation that the issue began during his pregame bullpen."
         }
       ],
       "research_status": "FAILED",
-      "notes": "Material carry-forward findings were limited to Snell's left-groin status and the explicitly reported September 17 pitching/bullpen plan. No numeric pitch, inning, or batters-faced restriction was declared for Snell. | VALIDATION: invalid result 'Dodgers lost 6-2 at Cincinnati.'",
+      "notes": "Material carry-forward information was confined to Blake Snell's left-groin tightness and the club's conditional, unresolved outlook for a later regular-season start. No direct next-game bullpen-availability declaration, closer/setup-role change, planned position-player rest, or travel-related restriction was found in the reviewed material. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
       "game_pk": 824467,
       "today_game_pk": 824464,
       "team": "LAD",
-      "pass_type": "POSTGAME_TO_NEXT_GAME",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
       "previous_game_pk": 824467,
       "previous_game_date": "2026-09-16",
       "result": "INCONCLUSIVE",
       "declarations": [
         {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Dave Roberts",
-          "speaker_role": "Dodgers manager",
-          "subject": "Blake Snell",
-          "declaration_type": "INJURY_STATUS_AND_WORKLOAD_IMPLICATION",
-          "statement": "Roberts said Snell cannot afford another setback; whether Snell makes his next scheduled start or is pushed back, the club needs to ensure he is ready for the postseason.",
-          "carry_forward_relevance": "Snell's next-start timing was unresolved after the September 16 left-groin-tightness exit; the club's stated priority was avoiding a setback rather than committing to his next turn.",
-          "source_url": "https://www.mlb.com/dodgers/news/blake-snell-exits-start-against-reds-after-one-inning"
-        },
-        {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Blake Snell",
-          "speaker_role": "Dodgers pitcher",
           "subject": "Blake Snell",
           "declaration_type": "INJURY_STATUS",
-          "statement": "Snell said he felt a grab in his left groin on a bullpen pitch before the game, did not feel good during his warmup and first inning, and said the next couple of days would determine where he stood.",
-          "carry_forward_relevance": "The injury was active enough to cause an early exit, but Snell expressed only conditional optimism pending how he felt over the following days.",
-          "source_url": "https://www.mlb.com/dodgers/news/blake-snell-exits-start-against-reds-after-one-inning"
+          "speaker": "Los Angeles Dodgers / Dave Roberts",
+          "statement": "Snell exited after one inning with left-groin tightness. Roberts' postgame discussion addressed the injury and postseason pitching plans; subsequent reporting described any additional regular-season start as conditional on the club being confident there would be no setback.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason"
         },
         {
+          "subject": "Blake Snell",
+          "declaration_type": "STARTER_EXIT_REASON",
+          "speaker": "Blake Snell",
+          "statement": "Snell said he felt his groin grab on the second-to-last pitch of his pregame bullpen session, then concluded he did not have a realistic chance to pitch through five innings.",
           "evidence_label": "CONFIRMED",
-          "speaker": "Los Angeles Dodgers / MLB.com reported team plan",
-          "speaker_role": "Club pitching plan",
-          "subject": "September 17 Dodgers pitching staff",
-          "declaration_type": "NEXT_GAME_BULLPEN_PLAN",
-          "statement": "Justin Wrobleski was scheduled to start the September 17 bullpen game; Landon Knack was to be recalled from Triple-A Oklahoma City for bulk relief; Bobby Miller was to be optioned.",
-          "carry_forward_relevance": "The prior game's early Snell exit required six relievers, but the club nevertheless publicly set Wrobleski and Knack as the next game's opening and bulk-pitching plan.",
-          "source_url": "https://www.mlb.com/dodgers/news/blake-snell-exits-start-against-reds-after-one-inning"
+          "source_url": "https://www.sportsnet.ca/mlb/article/dodgers-blake-snell-exits-after-one-inning-due-to-groin-tightness/"
         }
       ],
       "comments": [
         {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Dave Roberts",
-          "speaker_role": "Dodgers manager",
           "subject": "Blake Snell",
-          "comment_type": "POSTGAME_INJURY_ASSESSMENT",
-          "statement": "Roberts characterized the situation as being under the category of being glad it was not worse and said the club caught it early.",
-          "source_url": "https://www.mlb.com/dodgers/news/blake-snell-exits-start-against-reds-after-one-inning"
+          "comment_type": "CARRY_FORWARD_AVAILABILITY",
+          "speaker": "Dave Roberts",
+          "comment": "A later regular-season start remained possible, but only if the Dodgers were confident Snell would not sustain a setback; this did not constitute an explicit declaration that Snell would be available for the September 17 game.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://sports.yahoo.com/mlb/breaking-news/article/dodgers-pull-p-blake-snell-due-to-left-groin-tightness-after-1-inning-19-pitches-231620548.html"
         },
         {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Blake Snell",
-          "speaker_role": "Dodgers pitcher",
-          "subject": "Blake Snell",
-          "comment_type": "STARTER_EXIT_REASON",
-          "statement": "Snell said he has strained the area before and believed continuing to pitch would have resulted in a strain; he said stopping was the right move.",
-          "source_url": "https://www.mlb.com/dodgers/news/blake-snell-exits-start-against-reds-after-one-inning"
+          "subject": "Dodgers bullpen",
+          "comment_type": "WORKLOAD_CONTEXT",
+          "speaker": "Researcher",
+          "comment": "Snell's one-inning exit forced a bullpen game, but no reviewed qualifying source contained an explicit Dodgers manager/coach declaration identifying any reliever as unavailable for the next game.",
+          "evidence_label": "UNRESOLVED",
+          "source_url": "https://www.mlb.com/stories/game/824467/"
         }
       ],
       "queue_fingerprint": "8845e24bc21e867f243ccdb0de76309383b79eb6bd1e0adae36e6222a230b224"
+    },
+    {
+      "item_id": "pregame:823573:PHI:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T20:31:11Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Philadelphia Phillies / MLB.com probable pitchers",
+          "url": "https://www.mlb.com/phillies/roster/probable-pitchers?msockid=071515293917668b167803153893677a",
+          "published_at": null,
+          "result": "Confirmed Aaron Nola as Philadelphia's scheduled starter for the September 17 game at the Mets; no workload restriction or opener/bulk plan was reported in the retrieved material."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Phillies-Mets game preview",
+          "url": "https://www.mlb.com/stories/game-preview/823573/",
+          "published_at": "2026-09-17",
+          "result": "Official game-preview material checked; no Phillies bullpen restriction, lineup/rest change, or tactical declaration was surfaced."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "Philadelphia Phillies / MLB.com manager-video index",
+          "url": "https://www.mlb.com/phillies/video/topic/phillies-manager-postgame",
+          "published_at": "2026-09-17",
+          "result": "SOURCE_UNAVAILABLE for a retrieved September 17 Phillies pregame manager/coach availability session; the available index surfaced September 16 postgame media rather than a September 17 pregame session."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "The Philadelphia Inquirer — Rob Tornoe",
+          "url": "https://www.inquirer.com/phillies/phillies-mets-tv-schedule-nbc-sports-philadelphia-fox-apple-tv-20260917.html",
+          "published_at": "2026-09-17T08:51:00-04:00",
+          "result": "Reported Nola was scheduled to start; no manager-attributed restriction, bullpen availability limitation, injury/rest decision, or tactical change material to this game was reported."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "No material Phillies pregame manager/club declaration was located before the 7:15 p.m. ET first pitch. Aaron Nola's scheduled start was confirmed, but no explicit pitch, innings, batters-faced, or times-through-order limitation was supported. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
+      "game_pk": 823573,
+      "today_game_pk": null,
+      "team": "PHI",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "2c078b3371bd004967fb47b93c2652e79a0fdf46f9425648c4dea05cc9078fe8"
+    },
+    {
+      "item_id": "postgame:823573:PHI:822680",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T20:31:11Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Philadelphia Phillies / MLB.com manager postgame video — Don Mattingly",
+          "url": "https://www.mlb.com/phillies/video/don-mattingly-on-zack-wheeler-s-scoreless-start",
+          "published_at": "2026-09-16",
+          "result": "Official postgame manager availability checked. Retrieved description identifies discussion of Zack Wheeler's seven scoreless innings and more, but did not surface an explicit next-game bullpen availability, injury, or role declaration."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com — Bobby Blanco",
+          "url": "https://www.mlb.com/amp/news/zack-wheeler-throws-7-scoreless-innings-in-phillies-shutout-of-nationals.html",
+          "published_at": "2026-09-16",
+          "result": "Reported Wheeler pitched seven scoreless innings in Philadelphia's 3-0 win. The retrieved manager/player comments concerned Wheeler's outing, with no explicit carry-forward availability or restriction declaration for September 17."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Philadelphia Baseball Review — Patrick Gordon",
+          "url": "https://www.philadelphiabaseballreview.com/2026/09/zack-wheeler-phillies-nationals-21-outs-bullpen.html",
+          "published_at": "2026-09-16",
+          "result": "Local postgame report described Wheeler providing seven innings and reducing bullpen demand; no direct manager-attributed next-game availability restriction or personnel change was reported."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Phillies Nation — Ty Daubert",
+          "url": "https://philliesnation.com/2026/09/why-phillies-are-still-figuring-out-starting-rotation-for-upcoming-mets-series-as-another-bullpen-game-looms-andrew-painter-don-mattingly/",
+          "published_at": "2026-09-16",
+          "result": "Reported Mattingly's pregame comments that the club expected to use a bullpen game at some point during the Mets series, with timing still being decided. This was not a postgame declaration and did not establish a September 17 restriction or change to Nola's start."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "The September 16 postgame evidence confirmed Wheeler's seven-inning start, a usage fact that plausibly reduced immediate bullpen burden, but no direct club/manager statement established a specific September 17 reliever availability status, injury limitation, role change, or Nola workload restriction. The prior-day report of an eventual Mets-series bullpen game was not treated as a September 17 declaration. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": null,
+      "today_game_pk": 823573,
+      "team": "PHI",
+      "pass_type": null,
+      "previous_game_pk": 822680,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "559bfdf41cef2e98264af916942cbb8404a624fd712f938509f7770f063a3188"
+    },
+    {
+      "item_id": "pregame:823573:NYM:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "New York Mets / MLB.com",
+          "url": "https://www.mlb.com/phillies/video/aaron-nola-against-the-mets-x1589",
+          "published_at": "2026-09-17",
+          "result": "Confirmed the scheduled Phillies-at-Mets matchup and Nolan McLean as Mets starter; no manager declaration about McLean workload, bullpen availability, injuries, or tactical restrictions was available in the indexed item."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Phillies Wire",
+          "url": "https://phillieswire.com/",
+          "published_at": "2026-09-17T13:08:00-04:00",
+          "result": "Pregame listing confirmed Aaron Nola versus Nolan McLean; no attributable Mets manager/club declaration on restrictions, reliever availability, injuries, or personnel plans was available in the indexed pregame edition."
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "source_name": "New York Mets / MLB.com",
+          "url": "https://www.mlb.com/mets/video/andy-green-talks-mets-7-1-loss",
+          "published_at": "2026-09-16",
+          "result": "Located the prior-night manager postgame availability, but not a September 17 pregame manager media availability before the target first pitch; indexed description concerns defensive miscues and opponent swings rather than next-game pitcher or bullpen restrictions."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "No pre-first-pitch, attributable Mets manager/coach declaration was located establishing a Nolan McLean workload limit, opener/bulk plan, bullpen unavailability or emergency-only status, injury-related scratch/rest decision, role change, or material defensive/catching adjustment. Manager pregame media for September 17 was unavailable in the sources searched.",
+      "game_pk": 823573,
+      "today_game_pk": null,
+      "team": "NYM",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "591dc24134b0f93a7328a5d26ee70704805b48aeec6b72af18909500f76c1803"
+    },
+    {
+      "item_id": "postgame:823573:NYM:823576",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Game Video",
+          "url": "https://www.mlb.com/video/game/823576",
+          "published_at": "2026-09-16",
+          "result": "Confirmed Orioles 7, Mets 1 in game 823576; indexed game-video result contained no carry-forward declaration regarding Mets bullpen availability, injuries, or a next-game pitching plan."
+        },
+        {
+          "source_type": "MANAGER_OR_COACH_MEDIA",
+          "source_name": "New York Mets / MLB.com",
+          "url": "https://www.mlb.com/mets/video/andy-green-talks-mets-7-1-loss",
+          "published_at": "2026-09-16",
+          "result": "Postgame manager availability located. Its indexed description identifies discussion of defensive miscues and opponent swings, with no stated next-game bullpen availability, pitcher restriction, injury, rest plan, or role change."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "NorthJersey.com / Andrew Tredinnick",
+          "url": "https://www.aol.com/articles/ny-mets-vs-orioles-live-221704000.html",
+          "published_at": "2026-09-16T22:17:00Z",
+          "result": "Credentialed local report located, but available indexed material concerned fan reaction and manager comments about fan engagement; it did not provide an attributable carry-forward availability, injury, workload, or tactical declaration for September 17."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The official postgame manager availability and a credentialed local report were found, but no material declaration plausibly affecting the September 17 game was available in the sourced material. The prior game's score or bullpen usage was not treated as hindsight evidence of September 17 availability.",
+      "game_pk": null,
+      "today_game_pk": 823573,
+      "team": "NYM",
+      "pass_type": null,
+      "previous_game_pk": 823576,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "691072f0a6f2112be389a75b07d209b5c8c1fd9340fcbdc6152d8ff05c1ce0c5"
+    },
+    {
+      "item_id": "pregame:824141:KC:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Royals game preview",
+          "url": "https://www.mlb.com/stories/game-preview/824141",
+          "published_at": "2026-09-17",
+          "result": "Confirmed Seth Lugo as Kansas City's scheduled starter; preview did not contain a manager declaration of a pitch, innings, batters-faced, opener, or bulk-pitcher restriction."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Royals video",
+          "url": "https://www.mlb.com/video/seth-lugo-against-the-astros-x5918",
+          "published_at": "2026-09-17",
+          "result": "Official Lugo game-day video located; no pregame manager/coach availability or workload declaration was available in the indexed material."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "Kansas City Royals manager-media search",
+          "url": "https://www.mlb.com/royals/video/topic/royals-manager-postgame",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE: no September 17 pregame Matt Quatraro or Royals coach media availability containing relevant declarations was located before this early-pass check."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Kansas City Royals beat/local reporter search",
+          "url": "https://www.kansascity.com/sports/mlb/kansas-city-royals/",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE: no credentialed beat/local report located in this check supplied an attributable September 17 restriction, injury, rest, bullpen-role, or tactical declaration."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Official sources verified Lugo as the scheduled starter, but no qualifying manager/coach pregame availability was located and no credentialed beat/local report with a material declaration was located during the early-pass research window. No workload restriction can be assigned.",
+      "game_pk": 824141,
+      "today_game_pk": 824141,
+      "team": "KC",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "a6e5e3612a76679819413c673b18921713acc8437c6eee146561c1b7905b3212"
+    },
+    {
+      "item_id": "postgame:824141:KC:824140",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Royals/Astros Game Story",
+          "url": "https://www.mlb.com/stories/game/824140?ap=1&canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%3Fs%3Dhttps%253A%252F%252Fwww.mlb.com%252Fstories%252Fgame%252F824140%253Fap%253D1%2526storylocal%253Darticle-embed&storylocal=article-embed",
+          "published_at": "2026-09-16",
+          "result": "Located a Matt Quatraro postgame comment praising Daniel Lynch IV's outing. The indexed comment did not explain Lynch's exit, address reliever availability for September 17, or announce an injury, rest, or role change."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Royals manager postgame video",
+          "url": "https://www.mlb.com/royals/video/topic/royals-manager-postgame",
+          "published_at": "2026-09-16",
+          "result": "Located the September 16 Matt Quatraro postgame availability. Indexed material identified the topic as Daniel Lynch IV and the win; it did not provide a carry-forward availability declaration."
+        },
+        {
+          "source_type": "OFFICIAL_LEAGUE",
+          "source_name": "MLB.com Royals-Astros game page",
+          "url": "https://www.mlb.com/video/game/824140",
+          "published_at": "2026-09-16",
+          "result": "Official game page confirmed the completed September 16 game and pitching usage, but it did not itself provide manager explanation or next-game availability declarations."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Kansas City Royals beat/local reporter search",
+          "url": "https://www.kansascity.com/sports/mlb/kansas-city-royals/",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE: no credentialed beat/local postgame report located in this check contained an attributable carry-forward bullpen, injury, fatigue, starter-exit, role, or rest declaration."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "A direct Quatraro postgame comment was located, but it concerned Lynch's performance and supplied no next-game-relevant restriction or availability information. With no qualifying credentialed beat/local postgame report located, a negative material-declaration finding is not sufficiently complete.",
+      "game_pk": 824140,
+      "today_game_pk": 824141,
+      "team": "KC",
+      "pass_type": null,
+      "previous_game_pk": 824140,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "ae13acf1f4b8be9276fed214b883ca1d7ca4e387193fd6d9d1d576dc5d70da16"
+    },
+    {
+      "item_id": "pregame:824141:HOU:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T20:36:27+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Houston Astros Game Notes",
+          "url": "https://www.mlb.com/astros/news/game-notes",
+          "published_at": "2026-09-17",
+          "result": "Official Sept. 17 vs. KC game notes were located, but their PDF content could not be retrieved within the two-call research budget."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "Houston Astros official club page",
+          "url": "https://www.mlb.com/astros",
+          "published_at": "2026-09-17",
+          "result": "Confirmed the Sept. 17 home game against Kansas City and identified the official Astros news/video hub; no accessible pregame manager availability or workload declaration was returned."
+        },
+        {
+          "source_type": "MANAGER_MEDIA",
+          "source_name": "Joe Espada official postgame video listing",
+          "url": "https://www.mlb.com/astros",
+          "published_at": "2026-09-17",
+          "result": "The official Astros page listed a Sept. 16 Joe Espada postgame video, but no Sept. 17 pregame-manager media transcript or accessible video detail was available in the retrieved material."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "No supported pregame declaration was retrieved regarding Miguel Ullola's workload, an opener/bulk plan, reliever availability, injury/rest restrictions, or a tactical personnel change. No numeric workload limit is inferred.",
+      "game_pk": 824141,
+      "team": "HOU",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "9fb8b4d041cc92d4cc223b10be53913ac9c06e6a667dc0a0adfe4e45ba253187"
+    },
+    {
+      "item_id": "postgame:824141:HOU:824140",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T20:36:27+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB Film Room: Royals at Astros, Sept. 16, 2026",
+          "url": "https://www.mlb.com/video/game/824140",
+          "published_at": "2026-09-16",
+          "result": "Official game page confirmed Kansas City won 5-2 and listed Cristian Javier at 5.1 innings and two earned runs; it did not provide a manager explanation of bullpen usage, next-game availability, injury status, or a carry-forward workload restriction."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Houston Astros official club page",
+          "url": "https://www.mlb.com/astros",
+          "published_at": "2026-09-17",
+          "result": "Official page listed a Joe Espada Sept. 16 postgame video ('on loss, Jeremy Peña, more'), but retrieved page content did not include the video remarks or an attributable declaration relevant to Sept. 17 availability."
+        },
+        {
+          "source_type": "MANAGER_MEDIA",
+          "source_name": "Joe Espada official postgame media listing",
+          "url": "https://www.mlb.com/astros",
+          "published_at": "2026-09-17",
+          "result": "SOURCE_UNAVAILABLE: a manager postgame video was identified, but its substantive remarks could not be accessed within the research budget."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The prior-game outcome and pitching line are not treated as hindsight evidence about Sept. 17. No attributable manager/player declaration established a reliever restriction, injury, rest plan, role change, or other carry-forward tactical implication.",
+      "game_pk": null,
+      "team": "HOU",
+      "pass_type": null,
+      "previous_game_pk": 824140,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "today_game_pk": 824141,
+      "queue_fingerprint": "5894348314af2a78bae4f454029738588e22c59b77ed7a339feb09b3a7f334cf"
+    },
+    {
+      "item_id": "pregame:824548:DET:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-17T20:38:01+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Detroit Tigers game preview",
+          "url": "https://www.mlb.com/stories/game-preview/824548",
+          "published_at": "2026-09-17",
+          "result": "Confirmed the September 17 Tigers-at-White Sox game and Framber Valdez as Detroit's scheduled starter; no material club-issued availability, restriction, tactical, or injury declaration was located in the indexed preview."
+        },
+        {
+          "source_type": "OFFICIAL_MLB_GAMEDAY",
+          "source_name": "MiLB/MLB Gameday",
+          "url": "https://www.milb.com/gameday/tigers-vs-white-sox/2026/09/17/824548",
+          "published_at": "2026-09-17",
+          "result": "Confirmed game_pk 824548 and Valdez as the Tigers starter; no indexed bullpen-availability, workload-limit, or lineup/rest declaration."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "Detroit Tigers / MLB.com manager-video index",
+          "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE: the indexed official manager-media page showed a September 16 postgame item but no accessible September 17 pregame manager availability or workload briefing before the target game's first pitch."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Detroit Free Press Tigers coverage search",
+          "url": "https://www.freep.com/sports/tigers/",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE: searched for September 17 Tigers/White Sox pregame reporting and manager comments; no accessible, dated credentialed beat report containing a material declaration was located."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Meaningful official-team, manager-media, and credentialed-local-source checks did not produce an accessible pregame manager declaration. No numeric or qualitative Valdez workload restriction, reliever unavailability, role change, injury/rest decision, or tactical adjustment is supported by the reviewed evidence.",
+      "game_pk": 824548,
+      "today_game_pk": null,
+      "team": "DET",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "aebe3b4c5cc292ac906550354ac368243bee2cb6f7985fdbe657dad454333f6a"
+    },
+    {
+      "item_id": "postgame:824548:DET:822763",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-17T20:38:01+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com — A.J. Hinch talks Tigers' 5-1 loss",
+          "url": "https://www.mlb.com/video/a-j-hinch-talks-tigers-5-1-loss",
+          "published_at": "2026-09-16",
+          "result": "Official postgame item states that Hinch discussed Keider Montero's outing, the club's at-bats, and more after the 5-1 loss. The accessible item description did not report an injury, fatigue issue, reliever availability statement, role change, or next-game restriction."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Detroit Tigers manager-postgame video index",
+          "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
+          "published_at": null,
+          "result": "Verified the September 16 Hinch postgame video was the official available manager-media item for the prior game."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Detroit Free Press Tigers coverage search",
+          "url": "https://www.freep.com/sports/tigers/",
+          "published_at": null,
+          "result": "SOURCE_UNAVAILABLE: searched for September 16 Detroit-at-Toronto postgame clubhouse/bullpen/injury reporting; no accessible credentialed report with a carry-forward declaration was located."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "The available official postgame description supports only that Hinch addressed Montero's outing and offensive performance. It does not support a carry-forward bullpen, workload, injury, rest, or role conclusion for September 17. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": null,
+      "today_game_pk": 824548,
+      "team": "DET",
+      "pass_type": null,
+      "previous_game_pk": 822763,
+      "previous_game_date": "2026-09-16",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "6ceb18b449a588eaf9b136abf0e27a6ee88aa7372c08f98c88cc5181e2428ea1"
     },
     {
       "item_id": "pregame:824305:SD:FINAL",
@@ -204,144 +629,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "4c55beee83304ab386ba2eec1351c8c67492c16251b4af0fc203466232617614"
-    },
-    {
-      "item_id": "postgame:823573:PHI:822680",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Philadelphia Phillies Game Story",
-          "url": "https://www.mlb.com/stories/game/822680/",
-          "published_at": "2026-09-16",
-          "result": "Confirmed PHI won 3-0; Zack Wheeler pitched seven scoreless innings and Jhoan Duran closed the ninth."
-        },
-        {
-          "source_type": "MANAGER_POSTGAME_MEDIA",
-          "source_name": "MLB.com / Philadelphia Phillies — Don Mattingly on Zack Wheeler's scoreless start",
-          "url": "https://www.mlb.com/phillies/video/don-mattingly-on-zack-wheeler-s-scoreless-start",
-          "published_at": "2026-09-16",
-          "result": "Official postgame manager availability located. Available page metadata identifies the subject as Wheeler's seven scoreless innings and the 3-0 win, but did not provide a verifiable declaration concerning next-game bullpen availability, injury, rest, role changes, or workload restrictions."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "NBC10 Philadelphia — Jim Salisbury",
-          "url": "https://www.nbcphiladelphia.com/mlb/philadelphia-phillies/zack-wheeler-seven-shutout-innings-playoff-picture/4464637/",
-          "published_at": "2026-09-16T23:59:00-04:00",
-          "result": "Credentialed local postgame report checked. Search-available material confirmed Wheeler's seven scoreless innings in the 3-0 win; no verifiable carry-forward declaration on next-game availability, injury, planned rest, or bullpen-role change was located."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "NO_MATERIAL_DECLARATION_FOUND. The postgame evidence established that Wheeler covered seven innings and José Alvarado and Jhoan Duran each worked one inning, but no sourced manager/club declaration made those facts an explicit next-game availability restriction or assurance. No carry-forward injury, soreness, fatigue, planned-rest, tactical, travel, or closer/setup-role comment meeting the evidence standard was found. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 822680,
-      "today_game_pk": 823573,
-      "team": "PHI",
-      "pass_type": "POSTGAME",
-      "previous_game_pk": 822680,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "559bfdf41cef2e98264af916942cbb8404a624fd712f938509f7770f063a3188"
-    },
-    {
-      "item_id": "postgame:823573:NYM:823576",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T17:46:22Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "New York Mets / MLB.com",
-          "url": "https://www.mlb.com/mets/video/andy-green-talks-mets-7-1-loss",
-          "published_at": "2026-09-16",
-          "result": "Postgame manager video identified. The available official description says Andy Green addressed defensive miscues and Baltimore's big swings after the 7-1 loss; it did not identify a next-game availability restriction, injury/illness issue, planned rest, role change, or starter workload plan."
-        },
-        {
-          "source_type": "MANAGER_POSTGAME_MEDIA",
-          "source_name": "New York Mets / MLB.com",
-          "url": "https://www.mlb.com/mets/video/andy-green-talks-mets-7-1-loss",
-          "published_at": "2026-09-16",
-          "result": "Andy Green postgame media was available and reviewed through the official club/MLB posting. No explicit declaration of bullpen unavailability, rest, injury, treatment, or carry-forward tactical change was located in the available source information."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "SNY",
-          "url": "https://sny.tv/articles/mets-orioles-takeaways-9-16-2026",
-          "published_at": "2026-09-17",
-          "result": "Credentialed local postgame recap located and checked for Mets postgame availability, injury, bullpen, and workload comments. No material carry-forward declaration was identified in the available indexed reporting."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The prior game ended September 16, 2026. The official postgame manager coverage characterized the loss through defensive miscues and opponent big swings, but no directly sourced information established a September 17 availability restriction or other actionable carry-forward condition. Game-result facts were not treated as projection evidence. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 823576,
-      "today_game_pk": 823573,
-      "team": "NYM",
-      "pass_type": "POSTGAME_TO_NEXT_GAME",
-      "previous_game_pk": 823576,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "691072f0a6f2112be389a75b07d209b5c8c1fd9340fcbdc6152d8ff05c1ce0c5"
-    },
-    {
-      "item_id": "postgame:824141:KC:824140",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T05:10:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Kansas City Royals",
-          "url": "https://www.mlb.com/royals/news/daniel-lynch-iv-pitches-five-scoreless-innings-against-astros",
-          "published_at": "2026-09-17T05:10:00Z",
-          "result": "CONFIRMED: Royals manager Matt Quatraro said Daniel Lynch IV was 'a little under the weather' after five innings and that he chose a fresh bullpen rather than extend Lynch into a sixth inning."
-        },
-        {
-          "source_type": "OFFICIAL_MLB_GAME",
-          "source_name": "MLB.com Film Room",
-          "url": "https://www.mlb.com/video/game/824140",
-          "published_at": "2026-09-16T00:00:00Z",
-          "result": "CONFIRMED: Official game page records Kansas City's 5-2 win at Houston; Lynch pitched 5.0 scoreless innings and five Royals relievers covered the final four innings."
-        },
-        {
-          "source_type": "MANAGER_POSTGAME_MEDIA",
-          "source_name": "MLB.com / Kansas City Royals postgame coverage",
-          "url": "https://www.mlb.com/royals/news/daniel-lynch-iv-pitches-five-scoreless-innings-against-astros",
-          "published_at": "2026-09-17T05:10:00Z",
-          "result": "CONFIRMED: Directly attributes the starter-exit explanation to manager Matt Quatraro."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Material carry-forward item: Quatraro's postgame explanation identifies Lynch as under the weather and explains the choice to use a fresh bullpen. No explicit September 17 availability restriction, numeric workload limit, bullpen unavailability, role change, planned rest day, injury-treatment plan, or travel-related personnel change was reported in the checked sources. | VALIDATION: invalid result 'CONFIRMED'",
-      "game_pk": 824140,
-      "today_game_pk": 824141,
-      "team": "KC",
-      "pass_type": "POSTGAME_CARRY_FORWARD",
-      "previous_game_pk": 824140,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Daniel Lynch IV",
-          "speaker": "Matt Quatraro",
-          "speaker_role": "Royals manager",
-          "statement": "Quatraro said he was slightly tempted to give Lynch a sixth inning, but Lynch was a little under the weather, so he decided a fresh bullpen was the best course of action.",
-          "evidence_label": "CONFIRMED",
-          "carry_forward_relevance": "The statement supplies a health-related reason for ending Lynch's start after five innings. It does not state that Lynch would be unavailable or restricted for the September 17 game."
-        }
-      ],
-      "comments": [
-        {
-          "subject": "Royals bullpen usage",
-          "speaker": "Matt Quatraro",
-          "speaker_role": "Royals manager",
-          "statement": "Quatraro chose a fresh bullpen after Lynch's five-inning outing; five relievers covered the final four innings.",
-          "evidence_label": "CONFIRMED",
-          "carry_forward_relevance": "Usage is factual context only; the manager did not identify any reliever as unavailable for the next game."
-        }
-      ],
-      "queue_fingerprint": "ae13acf1f4b8be9276fed214b883ca1d7ca4e387193fd6d9d1d576dc5d70da16"
     },
     {
       "item_id": "pregame:822924:ATH:FINAL",
@@ -1341,7 +1628,7 @@
       "queue_fingerprint": "572a655e0e740c58c044e24dbf2841c1437aadb481c52740f738f85bf4991922"
     }
   ],
-  "researched_at": "2026-09-17T17:48:24+00:00",
+  "researched_at": "2026-09-17T20:38:01+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -1349,14 +1636,14 @@
     "max_tool_calls_per_group": 4,
     "early_max_tool_calls": 2,
     "final_max_tool_calls": 4,
-    "last_run_at": "2026-09-17T17:48:24+00:00",
+    "last_run_at": "2026-09-17T20:38:01+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 177916,
+      "input_tokens": 146197,
       "cached_input_tokens": 24805,
-      "output_tokens": 9793,
-      "reasoning_tokens": 6015,
-      "total_tokens": 187709,
+      "output_tokens": 10744,
+      "reasoning_tokens": 4959,
+      "total_tokens": 156941,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -1366,139 +1653,139 @@
         "items": [
           "postgame:824464:LAD:824467"
         ],
-        "response_id": "resp_0fc5ed899100c398016aac2602640087d2b54666efd3b83713",
+        "response_id": "resp_0837b96d28ee5fd4016aac4dd1adc487d2958586f7c1f01e48",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 45,
+        "web_sources_seen": 65,
         "usage": {
-          "input_tokens": 31762,
+          "input_tokens": 31276,
           "cached_input_tokens": 0,
-          "output_tokens": 1973,
-          "reasoning_tokens": 849,
-          "total_tokens": 33735,
+          "output_tokens": 1925,
+          "reasoning_tokens": 1130,
+          "total_tokens": 33201,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
           "postgame:824464:LAD:824467": [
-            "invalid result 'Dodgers lost 6-2 at Cincinnati.'"
-          ]
-        },
-        "tool_budget": 3
-      },
-      {
-        "team": "SD",
-        "game_pk": 824305,
-        "items": [
-          "pregame:824305:SD:FINAL"
-        ],
-        "response_id": "resp_03f5a612891b2aa4016aac269aa37487d2b10397801b2213bc",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 56,
-        "usage": {
-          "input_tokens": 28134,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1983,
-          "reasoning_tokens": 1469,
-          "total_tokens": 30117,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:824305:SD:FINAL": [
             "invalid result 'MATERIAL_DECLARATION_FOUND'"
           ]
         },
-        "tool_budget": 4
-      },
-      {
-        "team": "COL",
-        "game_pk": 824305,
-        "items": [
-          "pregame:824305:COL:FINAL"
-        ],
-        "response_id": "resp_048fc8820f2854b4016aac26d5538087d28cd4de48351a6a36",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 72,
-        "usage": {
-          "input_tokens": 27960,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1517,
-          "reasoning_tokens": 941,
-          "total_tokens": 29477,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 4
+        "tool_budget": 3
       },
       {
         "team": "PHI",
         "game_pk": 823573,
         "items": [
+          "pregame:823573:PHI:EARLY",
           "postgame:823573:PHI:822680"
         ],
-        "response_id": "resp_075fa4ed06c3184e016aac2741c27487d2b47c9188193aaf30",
+        "response_id": "resp_062b750328048877016aac4e080da887d2ac5591009c6af22f",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 60,
+        "web_sources_seen": 44,
         "usage": {
-          "input_tokens": 30538,
+          "input_tokens": 22007,
           "cached_input_tokens": 4961,
-          "output_tokens": 1523,
-          "reasoning_tokens": 1029,
-          "total_tokens": 32061,
+          "output_tokens": 2003,
+          "reasoning_tokens": 801,
+          "total_tokens": 24010,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
+          "pregame:823573:PHI:EARLY": [
+            "manager/coach pregame media was neither checked nor explicitly unavailable"
+          ],
           "postgame:823573:PHI:822680": [
             "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
-        "tool_budget": 3
+        "tool_budget": 2
       },
       {
         "team": "NYM",
         "game_pk": 823573,
         "items": [
+          "pregame:823573:NYM:EARLY",
           "postgame:823573:NYM:823576"
         ],
-        "response_id": "resp_018d67b5e476fa37016aac276baecc87d280587b8a5837e3cd",
+        "response_id": "resp_019eafa0f7384f24016aac4e7bcf8487d2b7ec807cdd127f78",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 59,
+        "web_sources_seen": 45,
         "usage": {
-          "input_tokens": 30564,
+          "input_tokens": 22364,
           "cached_input_tokens": 4961,
-          "output_tokens": 1308,
-          "reasoning_tokens": 850,
-          "total_tokens": 31872,
+          "output_tokens": 1755,
+          "reasoning_tokens": 830,
+          "total_tokens": 24119,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {
-          "postgame:823573:NYM:823576": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
-          ]
-        },
-        "tool_budget": 3
+        "validation_errors": {},
+        "tool_budget": 2
       },
       {
         "team": "KC",
         "game_pk": 824141,
         "items": [
+          "pregame:824141:KC:EARLY",
           "postgame:824141:KC:824140"
         ],
-        "response_id": "resp_03d42f45c4372728016aac27c9228487d28fdb7ec1d54b6cc4",
+        "response_id": "resp_016772d5f5a755b9016aac4ea91c7487d2beda9e839e395b79",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 33,
+        "web_sources_seen": 44,
         "usage": {
-          "input_tokens": 28958,
+          "input_tokens": 21743,
           "cached_input_tokens": 4961,
-          "output_tokens": 1489,
-          "reasoning_tokens": 877,
-          "total_tokens": 30447,
+          "output_tokens": 1848,
+          "reasoning_tokens": 771,
+          "total_tokens": 23591,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2
+      },
+      {
+        "team": "HOU",
+        "game_pk": 824141,
+        "items": [
+          "pregame:824141:HOU:EARLY",
+          "postgame:824141:HOU:824140"
+        ],
+        "response_id": "resp_01001aa74e282067016aac4ed8a88087d286b30a3ac608c81a",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 30,
+        "usage": {
+          "input_tokens": 25512,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1629,
+          "reasoning_tokens": 767,
+          "total_tokens": 27141,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2
+      },
+      {
+        "team": "DET",
+        "game_pk": 824548,
+        "items": [
+          "pregame:824548:DET:EARLY",
+          "postgame:824548:DET:822763"
+        ],
+        "response_id": "resp_0194544094a5a3d2016aac4f4cbf5887d2b7819195a0527171",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 43,
+        "usage": {
+          "input_tokens": 23295,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1584,
+          "reasoning_tokens": 660,
+          "total_tokens": 24879,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "postgame:824141:KC:824140": [
-            "invalid result 'CONFIRMED'"
+          "postgame:824548:DET:822763": [
+            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
-        "tool_budget": 3
+        "tool_budget": 2
       }
     ]
   }

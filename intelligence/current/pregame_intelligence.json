@@ -1,6 +1,6 @@
 {
   "date": "2026-09-17",
-  "generated_at": "2026-09-17T17:48:24+00:00",
+  "generated_at": "2026-09-17T20:38:01+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823334": {
@@ -878,6 +878,327 @@
             }
           }
         },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "823573": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-17T00:00:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-17T00:00:00Z",
+            "team": "NYM",
+            "teams": [
+              "NYM"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "New York Mets / MLB.com",
+                "url": "https://www.mlb.com/phillies/video/aaron-nola-against-the-mets-x1589",
+                "published_at": "2026-09-17",
+                "result": "Confirmed the scheduled Phillies-at-Mets matchup and Nolan McLean as Mets starter; no manager declaration about McLean workload, bullpen availability, injuries, or tactical restrictions was available in the indexed item."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "Phillies Wire",
+                "url": "https://phillieswire.com/",
+                "published_at": "2026-09-17T13:08:00-04:00",
+                "result": "Pregame listing confirmed Aaron Nola versus Nolan McLean; no attributable Mets manager/club declaration on restrictions, reliever availability, injuries, or personnel plans was available in the indexed pregame edition."
+              },
+              {
+                "source_type": "MANAGER_OR_COACH_MEDIA",
+                "source_name": "New York Mets / MLB.com",
+                "url": "https://www.mlb.com/mets/video/andy-green-talks-mets-7-1-loss",
+                "published_at": "2026-09-16",
+                "result": "Located the prior-night manager postgame availability, but not a September 17 pregame manager media availability before the target first pitch; indexed description concerns defensive miscues and opponent swings rather than next-game pitcher or bullpen restrictions."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No pre-first-pitch, attributable Mets manager/coach declaration was located establishing a Nolan McLean workload limit, opener/bulk plan, bullpen unavailability or emergency-only status, injury-related scratch/rest decision, role change, or material defensive/catching adjustment. Manager pregame media for September 17 was unavailable in the sources searched."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "NYM": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-17T00:00:00Z",
+            "previous_game_pk": 823576,
+            "previous_game_date": "2026-09-16",
+            "passes": [
+              {
+                "checked_at": "2026-09-17T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com Game Video",
+                    "url": "https://www.mlb.com/video/game/823576",
+                    "published_at": "2026-09-16",
+                    "result": "Confirmed Orioles 7, Mets 1 in game 823576; indexed game-video result contained no carry-forward declaration regarding Mets bullpen availability, injuries, or a next-game pitching plan."
+                  },
+                  {
+                    "source_type": "MANAGER_OR_COACH_MEDIA",
+                    "source_name": "New York Mets / MLB.com",
+                    "url": "https://www.mlb.com/mets/video/andy-green-talks-mets-7-1-loss",
+                    "published_at": "2026-09-16",
+                    "result": "Postgame manager availability located. Its indexed description identifies discussion of defensive miscues and opponent swings, with no stated next-game bullpen availability, pitcher restriction, injury, rest plan, or role change."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "NorthJersey.com / Andrew Tredinnick",
+                    "url": "https://www.aol.com/articles/ny-mets-vs-orioles-live-221704000.html",
+                    "published_at": "2026-09-16T22:17:00Z",
+                    "result": "Credentialed local report located, but available indexed material concerned fan reaction and manager comments about fan engagement; it did not provide an attributable carry-forward availability, injury, workload, or tactical declaration for September 17."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The official postgame manager availability and a credentialed local report were found, but no material declaration plausibly affecting the September 17 game was available in the sourced material. The prior game's score or bullpen usage was not treated as hindsight evidence of September 17 availability."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824141": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-17T20:36:27+00:00",
+        "passes": [
+          {
+            "checked_at": "2026-09-17T00:00:00Z",
+            "team": "KC",
+            "teams": [
+              "KC"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com Royals game preview",
+                "url": "https://www.mlb.com/stories/game-preview/824141",
+                "published_at": "2026-09-17",
+                "result": "Confirmed Seth Lugo as Kansas City's scheduled starter; preview did not contain a manager declaration of a pitch, innings, batters-faced, opener, or bulk-pitcher restriction."
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com Royals video",
+                "url": "https://www.mlb.com/video/seth-lugo-against-the-astros-x5918",
+                "published_at": "2026-09-17",
+                "result": "Official Lugo game-day video located; no pregame manager/coach availability or workload declaration was available in the indexed material."
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "source_name": "Kansas City Royals manager-media search",
+                "url": "https://www.mlb.com/royals/video/topic/royals-manager-postgame",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE: no September 17 pregame Matt Quatraro or Royals coach media availability containing relevant declarations was located before this early-pass check."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "Kansas City Royals beat/local reporter search",
+                "url": "https://www.kansascity.com/sports/mlb/kansas-city-royals/",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE: no credentialed beat/local report located in this check supplied an attributable September 17 restriction, injury, rest, bullpen-role, or tactical declaration."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official sources verified Lugo as the scheduled starter, but no qualifying manager/coach pregame availability was located and no credentialed beat/local report with a material declaration was located during the early-pass research window. No workload restriction can be assigned."
+          },
+          {
+            "checked_at": "2026-09-17T20:36:27+00:00",
+            "team": "HOU",
+            "teams": [
+              "HOU"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Houston Astros Game Notes",
+                "url": "https://www.mlb.com/astros/news/game-notes",
+                "published_at": "2026-09-17",
+                "result": "Official Sept. 17 vs. KC game notes were located, but their PDF content could not be retrieved within the two-call research budget."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "Houston Astros official club page",
+                "url": "https://www.mlb.com/astros",
+                "published_at": "2026-09-17",
+                "result": "Confirmed the Sept. 17 home game against Kansas City and identified the official Astros news/video hub; no accessible pregame manager availability or workload declaration was returned."
+              },
+              {
+                "source_type": "MANAGER_MEDIA",
+                "source_name": "Joe Espada official postgame video listing",
+                "url": "https://www.mlb.com/astros",
+                "published_at": "2026-09-17",
+                "result": "The official Astros page listed a Sept. 16 Joe Espada postgame video, but no Sept. 17 pregame-manager media transcript or accessible video detail was available in the retrieved material."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No supported pregame declaration was retrieved regarding Miguel Ullola's workload, an opener/bulk plan, reliever availability, injury/rest restrictions, or a tactical personnel change. No numeric workload limit is inferred."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "CONFIRMED",
+        "teams": {
+          "KC": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-17T00:00:00Z",
+            "previous_game_pk": 824140,
+            "previous_game_date": "2026-09-16",
+            "passes": [
+              {
+                "checked_at": "2026-09-17T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com Royals/Astros Game Story",
+                    "url": "https://www.mlb.com/stories/game/824140?ap=1&canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%3Fs%3Dhttps%253A%252F%252Fwww.mlb.com%252Fstories%252Fgame%252F824140%253Fap%253D1%2526storylocal%253Darticle-embed&storylocal=article-embed",
+                    "published_at": "2026-09-16",
+                    "result": "Located a Matt Quatraro postgame comment praising Daniel Lynch IV's outing. The indexed comment did not explain Lynch's exit, address reliever availability for September 17, or announce an injury, rest, or role change."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com Royals manager postgame video",
+                    "url": "https://www.mlb.com/royals/video/topic/royals-manager-postgame",
+                    "published_at": "2026-09-16",
+                    "result": "Located the September 16 Matt Quatraro postgame availability. Indexed material identified the topic as Daniel Lynch IV and the win; it did not provide a carry-forward availability declaration."
+                  },
+                  {
+                    "source_type": "OFFICIAL_LEAGUE",
+                    "source_name": "MLB.com Royals-Astros game page",
+                    "url": "https://www.mlb.com/video/game/824140",
+                    "published_at": "2026-09-16",
+                    "result": "Official game page confirmed the completed September 16 game and pitching usage, but it did not itself provide manager explanation or next-game availability declarations."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Kansas City Royals beat/local reporter search",
+                    "url": "https://www.kansascity.com/sports/mlb/kansas-city-royals/",
+                    "published_at": null,
+                    "result": "SOURCE_UNAVAILABLE: no credentialed beat/local postgame report located in this check contained an attributable carry-forward bullpen, injury, fatigue, starter-exit, role, or rest declaration."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "A direct Quatraro postgame comment was located, but it concerned Lynch's performance and supplied no next-game-relevant restriction or availability information. With no qualifying credentialed beat/local postgame report located, a negative material-declaration finding is not sufficiently complete."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "HOU": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-17T20:36:27+00:00",
+            "previous_game_pk": 824140,
+            "previous_game_date": "2026-09-16",
+            "passes": [
+              {
+                "checked_at": "2026-09-17T20:36:27+00:00",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "MLB Film Room: Royals at Astros, Sept. 16, 2026",
+                    "url": "https://www.mlb.com/video/game/824140",
+                    "published_at": "2026-09-16",
+                    "result": "Official game page confirmed Kansas City won 5-2 and listed Cristian Javier at 5.1 innings and two earned runs; it did not provide a manager explanation of bullpen usage, next-game availability, injury status, or a carry-forward workload restriction."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Houston Astros official club page",
+                    "url": "https://www.mlb.com/astros",
+                    "published_at": "2026-09-17",
+                    "result": "Official page listed a Joe Espada Sept. 16 postgame video ('on loss, Jeremy Peña, more'), but retrieved page content did not include the video remarks or an attributable declaration relevant to Sept. 17 availability."
+                  },
+                  {
+                    "source_type": "MANAGER_MEDIA",
+                    "source_name": "Joe Espada official postgame media listing",
+                    "url": "https://www.mlb.com/astros",
+                    "published_at": "2026-09-17",
+                    "result": "SOURCE_UNAVAILABLE: a manager postgame video was identified, but its substantive remarks could not be accessed within the research budget."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The prior-game outcome and pitching line are not treated as hindsight evidence about Sept. 17. No attributable manager/player declaration established a reliever restriction, injury, rest plan, role change, or other carry-forward tactical implication."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824548": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-17T20:38:01+00:00",
+        "passes": [
+          {
+            "checked_at": "2026-09-17T20:38:01+00:00",
+            "team": "DET",
+            "teams": [
+              "DET"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com Detroit Tigers game preview",
+                "url": "https://www.mlb.com/stories/game-preview/824548",
+                "published_at": "2026-09-17",
+                "result": "Confirmed the September 17 Tigers-at-White Sox game and Framber Valdez as Detroit's scheduled starter; no material club-issued availability, restriction, tactical, or injury declaration was located in the indexed preview."
+              },
+              {
+                "source_type": "OFFICIAL_MLB_GAMEDAY",
+                "source_name": "MiLB/MLB Gameday",
+                "url": "https://www.milb.com/gameday/tigers-vs-white-sox/2026/09/17/824548",
+                "published_at": "2026-09-17",
+                "result": "Confirmed game_pk 824548 and Valdez as the Tigers starter; no indexed bullpen-availability, workload-limit, or lineup/rest declaration."
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "source_name": "Detroit Tigers / MLB.com manager-video index",
+                "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE: the indexed official manager-media page showed a September 16 postgame item but no accessible September 17 pregame manager availability or workload briefing before the target game's first pitch."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "Detroit Free Press Tigers coverage search",
+                "url": "https://www.freep.com/sports/tigers/",
+                "published_at": null,
+                "result": "SOURCE_UNAVAILABLE: searched for September 17 Tigers/White Sox pregame reporting and manager comments; no accessible, dated credentialed beat report containing a material declaration was located."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Meaningful official-team, manager-media, and credentialed-local-source checks did not produce an accessible pregame manager declaration. No numeric or qualitative Valdez workload restriction, reliever unavailability, role change, injury/rest decision, or tactical adjustment is supported by the reviewed evidence."
+          }
+        ],
+        "declarations": [],
         "source": "manager_media_research.py external research results"
       }
     }
