@@ -1,11 +1,11 @@
 {
   "date": "2026-09-18",
-  "generated_at": "2026-09-18T20:35:22+00:00",
+  "generated_at": "2026-09-18T23:38:15+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823331": {
       "previous_game_postgame": {
-        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "status": "CONFIRMED",
         "teams": {
           "KC": {
             "research_status": "COMPLETED",
@@ -50,6 +50,70 @@
               }
             ],
             "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "PIT": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-18T00:00:00Z",
+            "previous_game_pk": 823334,
+            "previous_game_date": "2026-09-17",
+            "passes": [
+              {
+                "checked_at": "2026-09-18T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_name": "MLB.com Pirates game recap",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/news/pirates-win-season-series-brewers-first-time-since-2018",
+                    "publication_date": "2026-09-17"
+                  },
+                  {
+                    "source_name": "MLB.com Pirates manager postgame video",
+                    "source_type": "MANAGER_POSTGAME_MEDIA",
+                    "url": "https://www.mlb.com/pirates/video/don-kelly-discusses-henry-davis-and-the-win",
+                    "publication_date": "2026-09-17"
+                  },
+                  {
+                    "source_name": "MLB.com Pirates game notes index",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/pirates/news/game-notes",
+                    "publication_date": "2026-09-18"
+                  },
+                  {
+                    "source_name": "MLB.com game page / highlights",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/video/game/823334",
+                    "publication_date": "2026-09-17"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Official MLB sources confirm Pittsburgh defeated Milwaukee 7-4 on September 17, 2026. The available official recap and Don Kelly postgame-video metadata concern the win and Henry Davis' impact, but do not establish a specific forward-looking availability, workload, injury, or usage declaration for the September 18 game. A qualifying credentialed Pittsburgh beat/local postgame source was unavailable within the research results."
+              }
+            ],
+            "comments": [
+              {
+                "evidence_label": "CONFIRMED",
+                "source_name": "MLB.com game page / highlights",
+                "url": "https://www.mlb.com/video/game/823334",
+                "comment": "Pittsburgh won the previous game, 7-4, over Milwaukee. This result alone is not treated as hindsight evidence for the next-game projection."
+              },
+              {
+                "evidence_label": "UNRESOLVED",
+                "source_name": "MLB.com Pirates manager postgame video",
+                "url": "https://www.mlb.com/pirates/video/don-kelly-discusses-henry-davis-and-the-win",
+                "comment": "The available official metadata identifies Don Kelly discussing Henry Davis, the win, and facing Milwaukee pitching; it does not provide a verifiable material declaration to carry forward."
+              },
+              {
+                "evidence_label": "UNRESOLVED",
+                "source_name": "Credentialed Pittsburgh beat/local postgame coverage",
+                "url": null,
+                "comment": "SOURCE_UNAVAILABLE in the research results; therefore the negative finding does not meet the completed evidence contract."
+              }
+            ],
             "current_assessment": {
               "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
               "count": 0,
@@ -442,7 +506,7 @@
     },
     "824383": {
       "previous_game_postgame": {
-        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "status": "CONFIRMED",
         "teams": {
           "ATH": {
             "research_status": "COMPLETED",
@@ -484,6 +548,59 @@
                 "comment": "No qualifying Athletics manager or coach postgame statement from the September 17 game was located in the reviewed evidence. SOURCE_UNAVAILABLE for this research pass."
               }
             ],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "CLE": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-18T00:00:00Z",
+            "previous_game_pk": 824382,
+            "previous_game_date": "2026-09-16",
+            "passes": [
+              {
+                "checked_at": "2026-09-18T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_name": "MLB.com / Cleveland Guardians",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/news/petey-halpin-homers-guardians-take-al-central-lead-from-white-sox",
+                    "publication_date": "2026-09-16",
+                    "access_status": "AVAILABLE",
+                    "notes": "Official MLB game recap for Cleveland's 6-3 September 16 win over Chicago; located manager/player reaction but no carry-forward restriction, availability change, or planned usage declaration relevant to the September 18 game."
+                  },
+                  {
+                    "source_name": "MLB.com / Cleveland Guardians",
+                    "source_type": "MANAGER_POSTGAME_MEDIA",
+                    "url": "https://www.mlb.com/video/stephen-vogt-recaps-6-3-win-over-white-sox",
+                    "publication_date": "2026-09-16",
+                    "access_status": "AVAILABLE",
+                    "notes": "Official postgame Stephen Vogt media video was located. Search-result metadata confirms the postgame availability, but accessible indexed material did not establish a material next-game declaration."
+                  },
+                  {
+                    "source_name": "Axios Cleveland",
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.axios.com/local/cleveland/2026/09/14/cleveland-guardians-chicago-white-sox-series",
+                    "publication_date": "2026-09-14",
+                    "access_status": "AVAILABLE",
+                    "notes": "Local Cleveland outlet coverage located for the series, but it preceded the September 16 game and therefore cannot substantiate a previous-game postgame declaration."
+                  },
+                  {
+                    "source_name": "cleveland.com",
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.cleveland.com/",
+                    "publication_date": null,
+                    "access_status": "SOURCE_UNAVAILABLE",
+                    "notes": "Postgame-focused search was attempted, but article access was blocked by robots restrictions; no usable credentialed local postgame report could be verified."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The official club/MLB recap and official Vogt postgame availability were located, but no material declaration plausibly affecting Cleveland's September 18 game was established. A qualifying accessible credentialed local/beat postgame report could not be verified, so the evidence contract for a negative COMPLETED finding is not met."
+              }
+            ],
+            "comments": [],
             "current_assessment": {
               "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
               "count": 0,
