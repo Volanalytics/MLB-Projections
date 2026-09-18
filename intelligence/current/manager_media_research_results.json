@@ -1,2038 +1,301 @@
 {
-  "date": "2026-09-17",
-  "generated_from_queue_at": "2026-09-17T14:40:03+00:00",
+  "date": "2026-09-18",
+  "generated_from_queue_at": "2026-09-18T14:30:04+00:00",
   "items": [
     {
-      "item_id": "postgame:824464:LAD:824467",
+      "item_id": "postgame:823331:KC:824141",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T19:33:35Z",
+      "checked_at": "2026-09-18T14:31:02+00:00",
       "sources_checked": [
         {
           "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Los Angeles Dodgers",
-          "url": "https://www.mlb.com/news/blake-snell-exits-start-against-reds-after-one-inning"
-        },
-        {
-          "source_type": "MANAGER_POSTGAME_MEDIA",
-          "source_name": "MLB.com / Los Angeles Dodgers",
-          "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Los Angeles Times",
-          "url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Material carry-forward health/availability information found. No confirmed availability, return-to-game, or next-start declaration for the September 17 game was identified in the checked postgame evidence. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824467,
-      "today_game_pk": 824464,
-      "team": "LAD",
-      "pass_type": null,
-      "previous_game_pk": 824467,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Blake Snell",
-          "declaration_type": "INJURY_STATUS",
-          "statement": "Snell exited after one inning against Cincinnati because of left groin tightness.",
-          "speaker": "Los Angeles Dodgers",
-          "speaker_role": "Club",
-          "timing": "POSTGAME",
-          "evidence_label": "CONFIRMED",
-          "restriction": {
-            "type": "AVAILABILITY",
-            "value": "UNRESOLVED"
-          },
-          "source_url": "https://www.mlb.com/news/blake-snell-exits-start-against-reds-after-one-inning"
-        },
-        {
-          "subject": "Blake Snell",
-          "declaration_type": "AVAILABILITY_OUTLOOK",
-          "statement": "Roberts did not confirm Snell's next availability and said, \"I like where his head is at, but he just can't afford any more setbacks.\"",
-          "speaker": "Dave Roberts",
-          "speaker_role": "Manager",
-          "timing": "POSTGAME",
-          "evidence_label": "CONFIRMED",
-          "restriction": {
-            "type": "AVAILABILITY",
-            "value": "UNRESOLVED"
-          },
-          "source_url": "https://www.mlb.com/news/blake-snell-exits-start-against-reds-after-one-inning"
-        }
-      ],
-      "comments": [
-        {
-          "subject": "Blake Snell",
-          "comment_type": "PLAYER_POSTGAME_HEALTH_COMMENT",
-          "statement": "Snell said he felt his groin \"grab\" during his pregame bullpen session and did not push it after the first inning.",
-          "speaker": "Blake Snell",
-          "speaker_role": "Player",
-          "timing": "POSTGAME",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds"
-        }
-      ],
-      "queue_fingerprint": "27d536b6a0d5dde3f60ba74cb74fbfb4f62017007b7e67ac7b016f98abd8a6d3"
-    },
-    {
-      "item_id": "postgame:823573:PHI:822680",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T23:30:38Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Philadelphia Phillies",
-          "url": "https://www.mlb.com/phillies/video/don-mattingly-on-zack-wheeler-s-scoreless-start",
-          "published_at": "2026-09-16",
-          "accessed_at": "2026-09-17T23:30:38Z",
-          "finding": "Official postgame manager video identifies Don Mattingly discussing Zack Wheeler's seven scoreless innings after Philadelphia's 3-0 win. Search-visible material did not provide a transcribed declaration concerning player availability, injury status, roster moves, or a next-game usage plan."
+          "source_name": "MLB.com Kansas City Royals Game Story",
+          "url": "https://www.mlb.com/stories/game/824141",
+          "publication_date": "2026-09-17",
+          "finding": "Official game coverage confirmed the September 17 Royals-Astros game reached a final score of Astros 6, Royals 2, but contained no Royals postgame declaration relevant to the following game."
         },
         {
           "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Philadelphia Phillies",
-          "url": "https://www.mlb.com/phillies/news",
-          "published_at": "2026-09-16",
-          "accessed_at": "2026-09-17T23:30:38Z",
-          "finding": "Official Phillies news index listed Bobby Blanco's postgame report, 'Wheeler carves up Nats as Phillies get needed rotation boost.' Available indexed text described the outing but did not expose a directly attributable forward-looking club declaration."
+          "source_name": "Kansas City Royals / MLB.com news index",
+          "url": "https://www.mlb.com/royals/news",
+          "publication_date": "2026-09-18",
+          "finding": "Reviewed official Royals news coverage; no September 17 Royals postgame item carrying a forward-looking availability, usage, injury, rotation, lineup, or bullpen declaration was located."
+        },
+        {
+          "source_type": "MANAGER_MEDIA",
+          "source_name": "Kansas City Royals manager postgame video index",
+          "url": "https://www.mlb.com/royals/video/topic/royals-manager-postgame",
+          "publication_date": "2026-09-18",
+          "finding": "SOURCE_UNAVAILABLE: the official manager-postgame index surfaced September 16 material but no identifiable Matt Quatraro postgame media item for the September 17 game during this check."
         },
         {
           "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Philadelphia Baseball Review",
-          "url": "https://www.philadelphiabaseballreview.com/2026/09/zack-wheeler-phillies-nationals-21-outs-bullpen.html",
-          "published_at": "2026-09-16",
-          "accessed_at": "2026-09-17T23:30:38Z",
-          "finding": "Local postgame report covered Wheeler's seven scoreless innings and referenced Jesús Luzardo having been placed on the injured list the previous day, but the available text did not supply a direct postgame manager/club declaration that could be carried forward to the September 17 game."
+          "source_name": "Kansas City Star coverage distributed via Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/daniel-lynch-iv-turned-complete-031659420.html",
+          "publication_date": "2026-09-17",
+          "finding": "Reviewed available credentialed local coverage found in search. The located report covered the prior September 16 game, not the September 17 postgame, and supplied no carry-forward declaration for the next game."
         }
       ],
       "research_status": "COMPLETED",
-      "notes": "A final score and postgame coverage were verified for game 822680, but the available official manager material was not transcribed and no directly attributable Phillies postgame declaration with plausible September 17 relevance was recoverable. Therefore the negative evidence contract cannot be completed without overstating the available local/beat reporting.",
-      "game_pk": 822680,
-      "today_game_pk": 823573,
-      "team": "PHI",
+      "notes": "The queue's previous-game status was listed as Warmup, but official MLB game coverage shows game_pk 824141 concluded on September 17, 2026. No material KC postgame declaration plausibly relevant to the next game was located. A complete negative result cannot be issued because an on-point credentialed beat/local September 17 postgame report and official manager postgame availability were not located.",
+      "game_pk": 824141,
+      "today_game_pk": 823331,
+      "team": "KC",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 824141,
+      "previous_game_date": "2026-09-17",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "4dcc54b5f94592bf4057c46fde904cc0b27fbed4ca76b52e22e7e2762b7c9762"
+    },
+    {
+      "item_id": "postgame:823331:PIT:823334",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-18T14:31:56+00:00",
+      "sources_checked": [
+        {
+          "source_name": "Pittsburgh Pirates Game Notes",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/pirates/news/game-notes",
+          "date": "2026-09-17"
+        },
+        {
+          "source_name": "Don Kelly discusses Henry Davis and the win",
+          "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
+          "url": "https://www.mlb.com/pirates/video/don-kelly-discusses-henry-davis-and-the-win",
+          "date": "2026-09-17"
+        },
+        {
+          "source_name": "WTAE Pittsburgh game recap",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.wtae.com/article/pirates-brewers-griffin-davis-cruz/73780492",
+          "date": "2026-09-17"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Reviewed official Pirates materials, including Don Kelly's postgame availability, plus local credentialed coverage of the September 17 game. No material club/manager declaration from the previous-game postgame was found that plausibly changes Pittsburgh's projection or availability for the next game. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823334,
+      "today_game_pk": 823331,
+      "team": "PIT",
       "pass_type": "PREVIOUS_GAME_POSTGAME",
-      "previous_game_pk": 822680,
-      "previous_game_date": "2026-09-16",
+      "previous_game_pk": 823334,
+      "previous_game_date": "2026-09-17",
       "result": "INCONCLUSIVE",
       "declarations": [],
       "comments": [],
-      "queue_fingerprint": "242064161ea43b6a1b2bd769a006005ea712f3f7defd7f9eae5e502ec9313d85"
+      "queue_fingerprint": "c15decd2ba849eb4a7d4840766e142cd507c66d0fcc7a706117746c221c42583"
     },
     {
-      "item_id": "pregame:824548:DET:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T23:31:31+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Detroit Tigers Game Notes",
-          "url": "https://www.mlb.com/tigers/news/game-notes",
-          "published_at": "2026-09-17"
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Detroit Tigers Starting Lineups",
-          "url": "https://www.mlb.com/tigers/roster/starting-lineups?msockid=352472bfeac4656839ee643debce6417",
-          "published_at": "2026-09-17"
-        },
-        {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "source_name": "Detroit Tigers manager-video index",
-          "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
-          "published_at": null
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Detroit Free Press Tigers coverage",
-          "url": "https://www.freep.com/sports/tigers/",
-          "published_at": null
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "FINAL DELTA review after the prior 2026-09-17T20:38:01Z check found no new or superseding Tigers manager/coach declaration establishing a Framber Valdez workload restriction or changing availability for Beau Brieske or Tyler Kinley. Detroit Free Press access was unavailable to the search tool because of robots restrictions; no credentialed local report carrying such a declaration was returned in targeted searches. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
-      "game_pk": 824548,
-      "team": "DET",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "label": "UNRESOLVED",
-          "text": "No direct pregame manager/coach media carrying a material workload or bullpen-availability declaration was located in the final-delta window. Do not infer a restriction or unavailability from recent usage alone."
-        }
-      ],
-      "queue_fingerprint": "b3ddcaccb427a98f6a51405a51bedb5e0495b2b6d489d884fb8c4d085e6ba9af"
-    },
-    {
-      "item_id": "postgame:824548:DET:822763",
+      "item_id": "postgame:824463:CHC:824626",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T23:31:31+00:00",
+      "checked_at": "2026-09-18T00:00:00Z",
       "sources_checked": [
         {
+          "source_name": "MLB.com Chicago Cubs",
           "source_type": "OFFICIAL_TEAM",
-          "source_name": "Detroit Tigers Game Notes",
-          "url": "https://www.mlb.com/tigers/news/game-notes",
-          "published_at": "2026-09-17"
+          "url": "https://www.mlb.com/cubs/video/pete-crow-armstrong-on-his-two-homer-game-8-4-win",
+          "publication_date": "2026-09-16",
+          "finding": "Official Cubs postgame video confirms Chicago's 8-4 win over Atlanta and includes Pete Crow-Armstrong's player comments."
         },
         {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "source_name": "MLB.com — A.J. Hinch talks Tigers' 5-1 loss",
-          "url": "https://www.mlb.com/video/a-j-hinch-talks-tigers-5-1-loss",
-          "published_at": "2026-09-16"
+          "source_name": "MLB.com Cubs Manager Postgame Videos",
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "url": "https://www.mlb.com/video/topic/cubs-manager-postgame",
+          "publication_date": "2026-09-16",
+          "finding": "Official Cubs manager-postgame index lists a September 16, 2026 Craig Counsell postgame availability following the Cubs' 8-4 win."
         },
         {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Detroit Free Press Tigers coverage",
-          "url": "https://www.freep.com/sports/tigers/",
-          "published_at": null
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The official postgame manager item identifies Hinch's subjects as Keider Montero's outing, the quality of Detroit's at-bats, and other general postgame matters. No direct manager/club declaration from the reviewed material established a next-game restriction, a bullpen role/availability change, or a starter workload plan plausibly actionable for September 17. Detroit Free Press access was unavailable to the search tool because of robots restrictions. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 822763,
-      "today_game_pk": 824548,
-      "team": "DET",
-      "pass_type": null,
-      "previous_game_pk": 822763,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "label": "UNRESOLVED",
-          "text": "The September 16 postgame manager availability did not yield a carry-forward declaration relevant to Detroit's September 17 game. Prior-game result and ordinary game usage were not treated as hindsight evidence of September 17 availability."
-        }
-      ],
-      "queue_fingerprint": "4e4726ac09da784bde6515ad97d77f25d389b23404fdc4565ec1b42030ebc7ef"
-    },
-    {
-      "item_id": "pregame:824548:CWS:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T23:32:06+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/whitesox/video/erick-fedde-against-the-tigers-x3705",
-          "published_at": "2026-09-17"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://chicago.suntimes.com/white-sox/2026/09/16/sputtering-white-sox-fall-out-of-al-central-lead-for-the-first-time-since-july-4-will-venable-tommy-pham-colson-montgomery-munetaka-murakami-sean-newcomb-anthony-kay-hagen-smith",
-          "published_at": "2026-09-16"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Final-delta search located the official confirmation that Erick Fedde was the White Sox starter, but no new or superseding pregame manager/coach declaration imposing a Fedde workload restriction or changing availability for the listed target arms. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
-      "game_pk": 824548,
-      "today_game_pk": 824548,
-      "team": "CWS",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "3d7047665c69cac3c31d7be7d95ed8204073973841f22df8a5a33e55b03b79bf"
-    },
-    {
-      "item_id": "postgame:824548:CWS:824382",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T23:32:06+00:00",
-      "sources_checked": [
-        {
+          "source_name": "MLB.com Game Story",
           "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/video/game/824382",
-          "published_at": "2026-09-16"
+          "url": "https://www.mlb.com/stories/game/824626",
+          "publication_date": "2026-09-16",
+          "finding": "Official MLB game-story page for game_pk 824626."
         },
         {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "url": "https://www.mlb.com/video/will-venable-we-re-playing-good-baseball",
-          "published_at": "2026-09-16"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://chicago.suntimes.com/white-sox/2026/09/16/tommy-pham-activated-munetaka-murakami-benched-for-all-important-series-finale-in-cleveland-will-venable-chris-getz-drew-thorpe-edgar-quero",
-          "published_at": "2026-09-16"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://chicago.suntimes.com/white-sox/2026/09/16/sputtering-white-sox-fall-out-of-al-central-lead-for-the-first-time-since-july-4-will-venable-tommy-pham-colson-montgomery-munetaka-murakami-sean-newcomb-anthony-kay-hagen-smith",
-          "published_at": "2026-09-16"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Only the postgame injury/availability update for Colson Montgomery was carried forward. No manager declaration established a numeric restriction or explicit next-game unavailability for Erick Fedde, Grant Taylor, Sean Burke, Hagen Smith, Davis Martin, or Luis Castillo. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824382,
-      "today_game_pk": 824548,
-      "team": "CWS",
-      "pass_type": null,
-      "previous_game_pk": 824382,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "label": "CONFIRMED",
-          "speaker": "Will Venable",
-          "subject": "Colson Montgomery",
-          "declaration_type": "AVAILABILITY",
-          "normalized_declaration": "Montgomery was termed day-to-day after leaving the September 16 game with a left-wrist contusion; x-rays were negative.",
-          "quote": "He wasn't able to swing the bat.",
-          "source_url": "https://chicago.suntimes.com/white-sox/2026/09/16/tommy-pham-activated-munetaka-murakami-benched-for-all-important-series-finale-in-cleveland-will-venable-chris-getz-drew-thorpe-edgar-quero",
-          "published_at": "2026-09-16"
-        }
-      ],
-      "comments": [
-        {
-          "label": "CONFIRMED",
-          "speaker": "Will Venable",
-          "subject": "Colson Montgomery",
-          "comment": "Venable said Montgomery could not swing the bat after being struck on the left wrist; the club classified him as day-to-day following negative x-rays.",
-          "source_url": "https://chicago.suntimes.com/white-sox/2026/09/16/tommy-pham-activated-munetaka-murakami-benched-for-all-important-series-finale-in-cleveland-will-venable-chris-getz-drew-thorpe-edgar-quero",
-          "published_at": "2026-09-16"
-        }
-      ],
-      "queue_fingerprint": "99c51f91c318b309f807b54c6c908fbe52101073159cf3dffca46a12d2f26e3e"
-    },
-    {
-      "item_id": "pregame:822845:BOS:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T23:32:14Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/redsox/roster/starting-lineups",
-          "published_at": "2026-09-17"
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/stories/game-preview/822845",
-          "published_at": "2026-09-17"
-        },
-        {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "url": "https://www.mlb.com/redsox/video/topic/red-sox-manager-postgame",
-          "published_at": "2026-09-17"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.bostonglobe.com/2026/09/17/sports/red-sox-rangers-lineups-preview-september-17/",
-          "published_at": "2026-09-17"
+          "source_name": "Bleacher Nation",
+          "source_type": "LOCAL_COVERAGE",
+          "url": "https://www.bleachernation.com/cubs/2026/09/16/cubs-lineup-91626/",
+          "publication_date": "2026-09-16",
+          "finding": "Pregame Cubs coverage for the September 16 Braves game; no usable postgame manager declaration was established from the retrieved result."
         }
       ],
       "research_status": "COMPLETED",
-      "notes": "FINAL_DELTA review found Sonny Gray confirmed as Boston's scheduled starter, but no new or superseding pregame manager/coach declaration establishing a workload, pitch, innings, batters-faced, availability, or restriction condition for Gray. Dedicated Red Sox manager media located was postgame rather than pregame; pregame manager/coach media was unavailable in the reviewed official coverage.",
-      "game_pk": 822845,
-      "today_game_pk": 822845,
-      "team": "BOS",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": null,
+      "notes": "The supplied previous-game status ('Pre-Game') conflicts with official MLB material showing game_pk 824626 was completed on September 16, 2026, with the Cubs winning 8-4. Official postgame sources were located, including a Craig Counsell availability, but the retrieved material did not establish a specific postgame declaration plausibly relevant to the September 18 game. A credentialed beat/local postgame source with a material attributed declaration was not successfully established; therefore the evidence contract for COMPLETED or NO_MATERIAL_DECLARATION_FOUND is not met.",
+      "game_pk": 824626,
+      "today_game_pk": 824463,
+      "team": "CHC",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 824626,
+      "previous_game_date": "2026-09-16",
       "result": "INCONCLUSIVE",
       "declarations": [],
       "comments": [],
-      "queue_fingerprint": "903b6c977909cb340710ba9acc95058756147e0c9e462cb92f74eee8c783bfae"
+      "queue_fingerprint": "98899a6277ffb7503e2d6d91ee897010397d07b7efb82f636f0c3c96f188678f"
     },
     {
-      "item_id": "postgame:822845:BOS:822846",
+      "item_id": "postgame:824463:CIN:824464",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T23:32:14Z",
+      "checked_at": "2026-09-18T00:00:00Z",
       "sources_checked": [
         {
+          "source_name": "Cincinnati Reds / MLB.com",
           "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/stories/game/822846",
-          "published_at": "2026-09-16"
+          "url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start",
+          "published_at": "2026-09-17",
+          "notes": "Official postgame video identifies Terry Francona discussing Tyler Stephenson leaving because of cramping."
         },
         {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "url": "https://www.mlb.com/video/chad-tracy-discusses-red-sox-7-3-loss",
-          "published_at": "2026-09-16"
-        },
-        {
+          "source_name": "Cincinnati Reds / MLB.com",
           "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/redsox/news",
-          "published_at": "2026-09-16"
+          "url": "https://www.mlb.com/reds/video/tyler-stephenson-leaves-game-in-the-7th-inning",
+          "published_at": "2026-09-17",
+          "notes": "Official game video documents Stephenson leaving in the seventh inning."
         },
         {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.bostonglobe.com/2026/09/17/sports/red-sox-rangers-lineups-preview-september-17/",
-          "published_at": "2026-09-17"
+          "source_name": "Associated Press",
+          "source_type": "NATIONAL_WIRE",
+          "url": "https://apnews.com/article/3c906e40854ceb68cb9ec1670ad56153",
+          "published_at": "2026-09-17",
+          "notes": "Postgame game report confirming the Dodgers defeated Cincinnati 8-2."
         }
       ],
       "research_status": "FAILED",
-      "notes": "Reviewed Boston's September 16 postgame coverage for information plausibly carrying into the September 17 game. The available official manager postgame item addressed the loss, Rangers hitting, and Jake Bennett's start; no direct manager/coach declaration identified a September 17 restriction, altered role, or availability limitation relevant to Sonny Gray or Boston's projected pregame workload. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": null,
-      "today_game_pk": 822845,
-      "team": "BOS",
-      "pass_type": null,
-      "previous_game_pk": 822846,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "91655bdaa6457beaa76c605dc6695c15c4a5dda8aea6f9fbe63400a1f978a219"
-    },
-    {
-      "item_id": "pregame:822845:TEX:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T23:33:15+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
-          "published_at": "2026-09-17T00:13:00-04:00"
-        },
-        {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "url": "https://www.mlb.com/video/skip-schumaker-talks-rangers-hitting-in-7-3-win",
-          "published_at": "2026-09-16"
-        },
-        {
-          "source_type": "NATIONAL_REPORTER",
-          "url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
-          "published_at": "2026-09-17"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Final-delta research found a superseding club pitching-plan announcement: Tyler Alexander will open and Cody Bradford is expected to handle the bulk innings. No direct pregame manager declaration located assigning a numeric workload ceiling to Alexander or specifying September 17 availability for Latz, Eovaldi, or Garcia. The September 16 postgame record materially affects bullpen context: Eovaldi threw four scoreless relief innings; Schumaker said Latz and Garcia were unavailable in that game. Those September 16 availability statements are not treated as declarations of September 17 unavailability. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": 822845,
-      "today_game_pk": 822845,
-      "team": "TEX",
-      "pass_type": "FINAL",
-      "previous_game_pk": 822846,
-      "previous_game_date": "2026-09-16",
+      "notes": "Carry-forward item: Tyler Stephenson exited the September 17 game. The club's postgame manager availability attributed the exit to cramping; no numeric restriction, availability timetable, or roster action was declared in the reviewed evidence. | VALIDATION: invalid result 'CIN lost to LAD, 8-2.'",
+      "game_pk": 824464,
+      "today_game_pk": 824463,
+      "team": "CIN",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 824464,
+      "previous_game_date": "2026-09-17",
       "result": "INCONCLUSIVE",
       "declarations": [
         {
-          "subject": {
-            "name": "Tyler Alexander",
-            "mlbam_id": 641302
-          },
-          "speaker": "Texas Rangers",
-          "speaker_role": "club",
-          "statement": "Tyler Alexander will open against Boston, with Cody Bradford expected to follow for the bulk of the innings.",
-          "normalized": {
-            "starter_role": "OPENER",
-            "bulk_follower": "Cody Bradford"
-          },
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/stories/game-preview/822845",
-          "source_published_at": "2026-09-17"
-        },
-        {
-          "subject": {
-            "name": "Nathan Eovaldi",
-            "mlbam_id": 543135
-          },
-          "speaker": "Skip Schumaker",
-          "speaker_role": "manager",
-          "statement": "Schumaker said the Rangers were 'all hands on deck' in the final 12-game stretch; Eovaldi was used for four innings in relief on September 16.",
-          "normalized": {
-            "usage": "FOUR_RELIEF_INNINGS_ON_2026-09-16"
-          },
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
-          "source_published_at": "2026-09-17T00:13:00-04:00"
+          "subject": "Tyler Stephenson",
+          "speaker": "Terry Francona",
+          "speaker_role": "Reds manager",
+          "declaration_type": "INJURY_STATUS",
+          "status": "CONFIRMED",
+          "details": "Francona said Stephenson left the game because of cramping.",
+          "restriction": null,
+          "numeric_limit": null,
+          "source_url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start",
+          "source_name": "Cincinnati Reds / MLB.com",
+          "source_date": "2026-09-17"
         }
       ],
       "comments": [
         {
-          "subject": {
-            "name": "Jacob Latz",
-            "mlbam_id": 656641
-          },
-          "speaker": "Skip Schumaker",
-          "speaker_role": "manager",
-          "comment": "Schumaker said Latz was unavailable during the September 16 game.",
-          "relevance": "This applies directly to September 16 only; no September 17 availability declaration was located.",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
-          "source_published_at": "2026-09-17"
-        },
-        {
-          "subject": {
-            "name": "Robert Garcia",
-            "mlbam_id": 676395
-          },
-          "speaker": "Skip Schumaker",
-          "speaker_role": "manager",
-          "comment": "Schumaker said Garcia was unavailable during the September 16 game.",
-          "relevance": "This applies directly to September 16 only; no September 17 availability declaration was located.",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
-          "source_published_at": "2026-09-17"
-        },
-        {
-          "subject": {
-            "name": "Nathan Eovaldi",
-            "mlbam_id": 543135
-          },
-          "speaker": "Skip Schumaker",
-          "speaker_role": "manager",
-          "comment": "Eovaldi's September 16 relief outing was described by Schumaker as enormous; the official club report states Eovaldi is working back from an elbow injury and had made two relief appearances since activation on September 12.",
-          "relevance": "Relevant recent usage and recovery context, but not an explicit September 17 restriction.",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
-          "source_published_at": "2026-09-17T00:13:00-04:00"
+          "subject": "Tyler Stephenson",
+          "comment_type": "CARRY_FORWARD_RELEVANCE",
+          "status": "CONFIRMED",
+          "details": "Stephenson's in-game exit is relevant to the following game's catcher/designated-hitter availability, but the reviewed postgame evidence did not provide a timetable or explicit next-game availability declaration.",
+          "source_url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start"
         }
       ],
-      "queue_fingerprint": "ed185be0d4d17a950274527bb7ac3817028e4c4ea2b30fc1b3ee54b805529732"
+      "queue_fingerprint": "8c3f8b916b6b87a902fa28ae03c06ea5bf4ac541f801c688e9bdc4cd13c4029f"
     },
     {
-      "item_id": "postgame:822845:TEX:822846",
+      "item_id": "postgame:824790:MIL:823334",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T23:33:15+00:00",
+      "checked_at": "2026-09-18T00:00:00Z",
       "sources_checked": [
         {
+          "source_name": "MLB.com / Milwaukee Brewers",
           "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
-          "published_at": "2026-09-17T00:13:00-04:00"
+          "url": "https://www.mlb.com/news/kyle-harrison-struggles-brewers-postseason-role",
+          "published_at": "2026-09-17",
+          "relevance": "Postgame report directly attributes Kyle Harrison's forthcoming regular-season usage to Brewers manager Pat Murphy."
         },
         {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "url": "https://www.mlb.com/video/skip-schumaker-talks-rangers-hitting-in-7-3-win",
-          "published_at": "2026-09-16"
+          "source_name": "MLB.com Game Story",
+          "source_type": "OFFICIAL_LEAGUE",
+          "url": "https://www.mlb.com/stories/game/823334/",
+          "published_at": "2026-09-17",
+          "relevance": "Official game recap and postgame player comment context."
         },
         {
-          "source_type": "NATIONAL_REPORTER",
-          "url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
-          "published_at": "2026-09-17"
+          "source_name": "Pittsburgh Post-Gazette / Colin Beazley via ArcaMax",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.arcamax.com/sports/baseball/s-4300521",
+          "published_at": "2026-09-17",
+          "relevance": "Credentialed local postgame coverage of Milwaukee's loss and Harrison's early exit."
         }
       ],
       "research_status": "FAILED",
-      "notes": "September 16 postgame research found directly attributed manager availability information relevant to the next game. Eovaldi's four-inning relief outing and ongoing return from an elbow injury are carried forward as context only; no source declared him unavailable for September 17. Latz's and Garcia's stated unavailability applied to the September 16 game, not automatically to September 17. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": 822846,
-      "today_game_pk": 822845,
-      "team": "TEX",
+      "notes": "Material carry-forward finding concerns Kyle Harrison's remaining regular-season role and possible postseason usage; it does not establish availability or a role for the September 18 game. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823334,
+      "today_game_pk": 824790,
+      "team": "MIL",
       "pass_type": "POSTGAME_TO_NEXT_GAME",
-      "previous_game_pk": 822846,
-      "previous_game_date": "2026-09-16",
+      "previous_game_pk": 823334,
+      "previous_game_date": "2026-09-17",
       "result": "INCONCLUSIVE",
       "declarations": [
         {
-          "subject": {
-            "name": "Jacob Latz",
-            "mlbam_id": 656641
-          },
-          "speaker": "Skip Schumaker",
-          "speaker_role": "manager",
-          "statement": "Schumaker said, 'We didn't have [Jacob] Latz available' during the September 16 game.",
-          "normalized": {
-            "availability_date": "2026-09-16",
-            "availability": "UNAVAILABLE"
+          "subject": "Kyle Harrison",
+          "speaker": "Pat Murphy",
+          "speaker_role": "Brewers manager",
+          "statement": "Harrison will pitch again during Milwaukee's remaining nine regular-season games, but his role remains to be determined.",
+          "restriction": {
+            "type": "ROLE_UNDETERMINED",
+            "details": "No specific next appearance, starter/reliever designation, pitch limit, inning limit, or availability date was declared."
           },
           "evidence_label": "CONFIRMED",
-          "source_url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
-          "source_published_at": "2026-09-17"
-        },
-        {
-          "subject": {
-            "name": "Robert Garcia",
-            "mlbam_id": 676395
-          },
-          "speaker": "Skip Schumaker",
-          "speaker_role": "manager",
-          "statement": "Schumaker said, 'We didn't have [Robert] Garcia available' during the September 16 game.",
-          "normalized": {
-            "availability_date": "2026-09-16",
-            "availability": "UNAVAILABLE"
-          },
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.cbssports.com/mlb/gametracker/preview/MLB_20260917_BOS@TEX/",
-          "source_published_at": "2026-09-17"
+          "source_url": "https://www.mlb.com/news/kyle-harrison-struggles-brewers-postseason-role",
+          "source_date": "2026-09-17",
+          "temporal_context": "Postgame, September 17, 2026"
         }
       ],
       "comments": [
         {
-          "subject": {
-            "name": "Nathan Eovaldi",
-            "mlbam_id": 543135
-          },
-          "speaker": "Skip Schumaker",
-          "speaker_role": "manager",
-          "comment": "Eovaldi covered four scoreless relief innings to finish the September 16 game. Schumaker described what Eovaldi provided as enormous.",
-          "relevance": "Material prior-game workload; no numerical September 17 limit or unavailability declaration was reported.",
+          "subject": "Kyle Harrison",
+          "speaker": "Kyle Harrison",
+          "statement": "He said he would keep working and fighting through his recent struggles.",
+          "relevance": "Relevant only as a player-status mindset comment; it does not alter a projected role or establish September 18 availability.",
           "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
-          "source_published_at": "2026-09-17T00:13:00-04:00"
-        },
-        {
-          "subject": {
-            "name": "Nathan Eovaldi",
-            "mlbam_id": 543135
-          },
-          "speaker": "Texas Rangers/MLB.com club report",
-          "speaker_role": "club report",
-          "comment": "The report states that Eovaldi is working back from an elbow injury that sidelined him for five weeks and had made two relief appearances since activation on September 12.",
-          "relevance": "Recovery context that may inform next-game usage, without constituting a manager-imposed restriction.",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/rangers/news/nathan-eovaldi-pitches-four-relief-innings-in-rangers-win",
-          "source_published_at": "2026-09-17T00:13:00-04:00"
+          "source_url": "https://www.mlb.com/stories/game/823334/",
+          "source_date": "2026-09-17"
         }
       ],
-      "queue_fingerprint": "b3fa80204df3c5509126efb5fd74eed5091dbf6a8c479a09494f0af538367a87"
+      "queue_fingerprint": "188b81d8c95b21063429d036aa5361040dc3d5e4201772f30b4c44d338d38d32"
     },
     {
-      "item_id": "pregame:823573:PHI:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T20:31:11Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Philadelphia Phillies / MLB.com probable pitchers",
-          "url": "https://www.mlb.com/phillies/roster/probable-pitchers?msockid=071515293917668b167803153893677a",
-          "published_at": null,
-          "result": "Confirmed Aaron Nola as Philadelphia's scheduled starter for the September 17 game at the Mets; no workload restriction or opener/bulk plan was reported in the retrieved material."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Phillies-Mets game preview",
-          "url": "https://www.mlb.com/stories/game-preview/823573/",
-          "published_at": "2026-09-17",
-          "result": "Official game-preview material checked; no Phillies bullpen restriction, lineup/rest change, or tactical declaration was surfaced."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "Philadelphia Phillies / MLB.com manager-video index",
-          "url": "https://www.mlb.com/phillies/video/topic/phillies-manager-postgame",
-          "published_at": "2026-09-17",
-          "result": "SOURCE_UNAVAILABLE for a retrieved September 17 Phillies pregame manager/coach availability session; the available index surfaced September 16 postgame media rather than a September 17 pregame session."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "The Philadelphia Inquirer — Rob Tornoe",
-          "url": "https://www.inquirer.com/phillies/phillies-mets-tv-schedule-nbc-sports-philadelphia-fox-apple-tv-20260917.html",
-          "published_at": "2026-09-17T08:51:00-04:00",
-          "result": "Reported Nola was scheduled to start; no manager-attributed restriction, bullpen availability limitation, injury/rest decision, or tactical change material to this game was reported."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "No material Phillies pregame manager/club declaration was located before the 7:15 p.m. ET first pitch. Aaron Nola's scheduled start was confirmed, but no explicit pitch, innings, batters-faced, or times-through-order limitation was supported. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
-      "game_pk": 823573,
-      "today_game_pk": null,
-      "team": "PHI",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "2c078b3371bd004967fb47b93c2652e79a0fdf46f9425648c4dea05cc9078fe8"
-    },
-    {
-      "item_id": "pregame:823573:NYM:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "New York Mets / MLB.com",
-          "url": "https://www.mlb.com/phillies/video/aaron-nola-against-the-mets-x1589",
-          "published_at": "2026-09-17",
-          "result": "Confirmed the scheduled Phillies-at-Mets matchup and Nolan McLean as Mets starter; no manager declaration about McLean workload, bullpen availability, injuries, or tactical restrictions was available in the indexed item."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Phillies Wire",
-          "url": "https://phillieswire.com/",
-          "published_at": "2026-09-17T13:08:00-04:00",
-          "result": "Pregame listing confirmed Aaron Nola versus Nolan McLean; no attributable Mets manager/club declaration on restrictions, reliever availability, injuries, or personnel plans was available in the indexed pregame edition."
-        },
-        {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "source_name": "New York Mets / MLB.com",
-          "url": "https://www.mlb.com/mets/video/andy-green-talks-mets-7-1-loss",
-          "published_at": "2026-09-16",
-          "result": "Located the prior-night manager postgame availability, but not a September 17 pregame manager media availability before the target first pitch; indexed description concerns defensive miscues and opponent swings rather than next-game pitcher or bullpen restrictions."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No pre-first-pitch, attributable Mets manager/coach declaration was located establishing a Nolan McLean workload limit, opener/bulk plan, bullpen unavailability or emergency-only status, injury-related scratch/rest decision, role change, or material defensive/catching adjustment. Manager pregame media for September 17 was unavailable in the sources searched.",
-      "game_pk": 823573,
-      "today_game_pk": null,
-      "team": "NYM",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "591dc24134b0f93a7328a5d26ee70704805b48aeec6b72af18909500f76c1803"
-    },
-    {
-      "item_id": "postgame:823573:NYM:823576",
+      "item_id": "postgame:824790:BAL:823576",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T00:00:00Z",
+      "checked_at": "2026-09-18T00:00:00Z",
       "sources_checked": [
         {
           "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Game Video",
-          "url": "https://www.mlb.com/video/game/823576",
-          "published_at": "2026-09-16",
-          "result": "Confirmed Orioles 7, Mets 1 in game 823576; indexed game-video result contained no carry-forward declaration regarding Mets bullpen availability, injuries, or a next-game pitching plan."
+          "source_name": "Baltimore Orioles Game Notes",
+          "url": "https://www.mlb.com/orioles/news/game-notes"
         },
         {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "source_name": "New York Mets / MLB.com",
-          "url": "https://www.mlb.com/mets/video/andy-green-talks-mets-7-1-loss",
-          "published_at": "2026-09-16",
-          "result": "Postgame manager availability located. Its indexed description identifies discussion of defensive miscues and opponent swings, with no stated next-game bullpen availability, pitcher restriction, injury, rest plan, or role change."
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB Gameday: Orioles at Mets, September 16, 2026",
+          "url": "https://www.mlb.com/gameday/orioles-vs-mets/2026/09/16/823576/"
         },
         {
           "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "NorthJersey.com / Andrew Tredinnick",
-          "url": "https://www.aol.com/articles/ny-mets-vs-orioles-live-221704000.html",
-          "published_at": "2026-09-16T22:17:00Z",
-          "result": "Credentialed local report located, but available indexed material concerned fan reaction and manager comments about fan engagement; it did not provide an attributable carry-forward availability, injury, workload, or tactical declaration for September 17."
+          "source_name": "MASN / Roch Kubatko",
+          "url": "https://www.masnsports.com/blog/entry/this-that-and-the-other-162/"
         }
       ],
       "research_status": "COMPLETED",
-      "notes": "The official postgame manager availability and a credentialed local report were found, but no material declaration plausibly affecting the September 17 game was available in the sourced material. The prior game's score or bullpen usage was not treated as hindsight evidence of September 17 availability.",
-      "game_pk": null,
-      "today_game_pk": 823573,
-      "team": "NYM",
-      "pass_type": null,
+      "notes": "Official club/MLB game materials and a credentialed Orioles beat report were reviewed. The available MASN report contained manager comments from before the September 16 game, including status updates on Shane Baz, Luis Robert Jr., and Blaze Alexander, but no accessible postgame manager/coach media or team statement from the September 16 game was located to establish a carry-forward declaration for Baltimore's next game. Manager/coach postgame source unavailable.",
+      "game_pk": 823576,
+      "today_game_pk": 824790,
+      "team": "BAL",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
       "previous_game_pk": 823576,
       "previous_game_date": "2026-09-16",
       "result": "INCONCLUSIVE",
       "declarations": [],
       "comments": [],
-      "queue_fingerprint": "691072f0a6f2112be389a75b07d209b5c8c1fd9340fcbdc6152d8ff05c1ce0c5"
-    },
-    {
-      "item_id": "pregame:824141:KC:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Royals game preview",
-          "url": "https://www.mlb.com/stories/game-preview/824141",
-          "published_at": "2026-09-17",
-          "result": "Confirmed Seth Lugo as Kansas City's scheduled starter; preview did not contain a manager declaration of a pitch, innings, batters-faced, opener, or bulk-pitcher restriction."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Royals video",
-          "url": "https://www.mlb.com/video/seth-lugo-against-the-astros-x5918",
-          "published_at": "2026-09-17",
-          "result": "Official Lugo game-day video located; no pregame manager/coach availability or workload declaration was available in the indexed material."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "Kansas City Royals manager-media search",
-          "url": "https://www.mlb.com/royals/video/topic/royals-manager-postgame",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no September 17 pregame Matt Quatraro or Royals coach media availability containing relevant declarations was located before this early-pass check."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Kansas City Royals beat/local reporter search",
-          "url": "https://www.kansascity.com/sports/mlb/kansas-city-royals/",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no credentialed beat/local report located in this check supplied an attributable September 17 restriction, injury, rest, bullpen-role, or tactical declaration."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Official sources verified Lugo as the scheduled starter, but no qualifying manager/coach pregame availability was located and no credentialed beat/local report with a material declaration was located during the early-pass research window. No workload restriction can be assigned.",
-      "game_pk": 824141,
-      "today_game_pk": 824141,
-      "team": "KC",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "a6e5e3612a76679819413c673b18921713acc8437c6eee146561c1b7905b3212"
-    },
-    {
-      "item_id": "postgame:824141:KC:824140",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Royals/Astros Game Story",
-          "url": "https://www.mlb.com/stories/game/824140?ap=1&canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%3Fs%3Dhttps%253A%252F%252Fwww.mlb.com%252Fstories%252Fgame%252F824140%253Fap%253D1%2526storylocal%253Darticle-embed&storylocal=article-embed",
-          "published_at": "2026-09-16",
-          "result": "Located a Matt Quatraro postgame comment praising Daniel Lynch IV's outing. The indexed comment did not explain Lynch's exit, address reliever availability for September 17, or announce an injury, rest, or role change."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Royals manager postgame video",
-          "url": "https://www.mlb.com/royals/video/topic/royals-manager-postgame",
-          "published_at": "2026-09-16",
-          "result": "Located the September 16 Matt Quatraro postgame availability. Indexed material identified the topic as Daniel Lynch IV and the win; it did not provide a carry-forward availability declaration."
-        },
-        {
-          "source_type": "OFFICIAL_LEAGUE",
-          "source_name": "MLB.com Royals-Astros game page",
-          "url": "https://www.mlb.com/video/game/824140",
-          "published_at": "2026-09-16",
-          "result": "Official game page confirmed the completed September 16 game and pitching usage, but it did not itself provide manager explanation or next-game availability declarations."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Kansas City Royals beat/local reporter search",
-          "url": "https://www.kansascity.com/sports/mlb/kansas-city-royals/",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no credentialed beat/local postgame report located in this check contained an attributable carry-forward bullpen, injury, fatigue, starter-exit, role, or rest declaration."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "A direct Quatraro postgame comment was located, but it concerned Lynch's performance and supplied no next-game-relevant restriction or availability information. With no qualifying credentialed beat/local postgame report located, a negative material-declaration finding is not sufficiently complete.",
-      "game_pk": 824140,
-      "today_game_pk": 824141,
-      "team": "KC",
-      "pass_type": null,
-      "previous_game_pk": 824140,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "ae13acf1f4b8be9276fed214b883ca1d7ca4e387193fd6d9d1d576dc5d70da16"
-    },
-    {
-      "item_id": "pregame:824141:HOU:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T20:36:27+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Houston Astros Game Notes",
-          "url": "https://www.mlb.com/astros/news/game-notes",
-          "published_at": "2026-09-17",
-          "result": "Official Sept. 17 vs. KC game notes were located, but their PDF content could not be retrieved within the two-call research budget."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Houston Astros official club page",
-          "url": "https://www.mlb.com/astros",
-          "published_at": "2026-09-17",
-          "result": "Confirmed the Sept. 17 home game against Kansas City and identified the official Astros news/video hub; no accessible pregame manager availability or workload declaration was returned."
-        },
-        {
-          "source_type": "MANAGER_MEDIA",
-          "source_name": "Joe Espada official postgame video listing",
-          "url": "https://www.mlb.com/astros",
-          "published_at": "2026-09-17",
-          "result": "The official Astros page listed a Sept. 16 Joe Espada postgame video, but no Sept. 17 pregame-manager media transcript or accessible video detail was available in the retrieved material."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No supported pregame declaration was retrieved regarding Miguel Ullola's workload, an opener/bulk plan, reliever availability, injury/rest restrictions, or a tactical personnel change. No numeric workload limit is inferred.",
-      "game_pk": 824141,
-      "team": "HOU",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "9fb8b4d041cc92d4cc223b10be53913ac9c06e6a667dc0a0adfe4e45ba253187"
-    },
-    {
-      "item_id": "postgame:824141:HOU:824140",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T20:36:27+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Film Room: Royals at Astros, Sept. 16, 2026",
-          "url": "https://www.mlb.com/video/game/824140",
-          "published_at": "2026-09-16",
-          "result": "Official game page confirmed Kansas City won 5-2 and listed Cristian Javier at 5.1 innings and two earned runs; it did not provide a manager explanation of bullpen usage, next-game availability, injury status, or a carry-forward workload restriction."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Houston Astros official club page",
-          "url": "https://www.mlb.com/astros",
-          "published_at": "2026-09-17",
-          "result": "Official page listed a Joe Espada Sept. 16 postgame video ('on loss, Jeremy Peña, more'), but retrieved page content did not include the video remarks or an attributable declaration relevant to Sept. 17 availability."
-        },
-        {
-          "source_type": "MANAGER_MEDIA",
-          "source_name": "Joe Espada official postgame media listing",
-          "url": "https://www.mlb.com/astros",
-          "published_at": "2026-09-17",
-          "result": "SOURCE_UNAVAILABLE: a manager postgame video was identified, but its substantive remarks could not be accessed within the research budget."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "The prior-game outcome and pitching line are not treated as hindsight evidence about Sept. 17. No attributable manager/player declaration established a reliever restriction, injury, rest plan, role change, or other carry-forward tactical implication.",
-      "game_pk": null,
-      "team": "HOU",
-      "pass_type": null,
-      "previous_game_pk": 824140,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "today_game_pk": 824141,
-      "queue_fingerprint": "5894348314af2a78bae4f454029738588e22c59b77ed7a339feb09b3a7f334cf"
-    },
-    {
-      "item_id": "pregame:824548:DET:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T20:38:01+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Detroit Tigers game preview",
-          "url": "https://www.mlb.com/stories/game-preview/824548",
-          "published_at": "2026-09-17",
-          "result": "Confirmed the September 17 Tigers-at-White Sox game and Framber Valdez as Detroit's scheduled starter; no material club-issued availability, restriction, tactical, or injury declaration was located in the indexed preview."
-        },
-        {
-          "source_type": "OFFICIAL_MLB_GAMEDAY",
-          "source_name": "MiLB/MLB Gameday",
-          "url": "https://www.milb.com/gameday/tigers-vs-white-sox/2026/09/17/824548",
-          "published_at": "2026-09-17",
-          "result": "Confirmed game_pk 824548 and Valdez as the Tigers starter; no indexed bullpen-availability, workload-limit, or lineup/rest declaration."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "Detroit Tigers / MLB.com manager-video index",
-          "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: the indexed official manager-media page showed a September 16 postgame item but no accessible September 17 pregame manager availability or workload briefing before the target game's first pitch."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Detroit Free Press Tigers coverage search",
-          "url": "https://www.freep.com/sports/tigers/",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: searched for September 17 Tigers/White Sox pregame reporting and manager comments; no accessible, dated credentialed beat report containing a material declaration was located."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Meaningful official-team, manager-media, and credentialed-local-source checks did not produce an accessible pregame manager declaration. No numeric or qualitative Valdez workload restriction, reliever unavailability, role change, injury/rest decision, or tactical adjustment is supported by the reviewed evidence.",
-      "game_pk": 824548,
-      "today_game_pk": null,
-      "team": "DET",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "aebe3b4c5cc292ac906550354ac368243bee2cb6f7985fdbe657dad454333f6a"
-    },
-    {
-      "item_id": "pregame:824305:SD:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T17:43:12Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com San Diego Padres",
-          "url": "https://www.mlb.com/padres/news/jason-adam-begins-rehab-assignment-in-triple-a",
-          "published_at": "2026-09-13",
-          "result": "CONFIRMED: Padres manager Craig Stammen said Jason Adam would likely need another rehab appearance before the club considered activating him."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com San Diego Padres injuries and roster moves",
-          "url": "https://www.mlb.com/news/padres-injuries-and-roster-moves",
-          "published_at": "2026-09-11",
-          "result": "CONFIRMED: Adam remained on the 60-day injured list in the latest club injury update and his next step was described as a Triple-A rehab stint."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "AJ Cassavell, MLB.com Padres Beat",
-          "url": "https://www.mlb.com/padres/news/jason-adam-begins-rehab-assignment-in-triple-a",
-          "published_at": "2026-09-13",
-          "result": "CONFIRMED: Reported Adam began a Triple-A rehab assignment and directly attributed the activation-condition comment to Stammen."
-        },
-        {
-          "source_type": "MANAGER_OR_COACH_PREGAME_MEDIA",
-          "source_name": "MLB.com Padres manager-video archive",
-          "url": "https://www.mlb.com/padres/video/topic/padres-manager-postgame",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: No September 17 pregame manager-media item was located in the available official archive before the target game's 19:10:00Z first pitch."
-        },
-        {
-          "source_type": "OFFICIAL_GAME_SOURCE",
-          "source_name": "MiLB/MLB Gameday",
-          "url": "https://www.milb.com/gameday/padres-vs-rockies/2026/09/17/824305",
-          "published_at": "2026-09-17",
-          "result": "CONFIRMED: Official game page listed Michael King as the Padres' scheduled starter for game 824305."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "No current-game numerical workload limit, opener/bulk-pitcher plan, closer/setup emergency-only restriction, lineup scratch/rest decision, or bullpen role change was located before first pitch. Adam's September 13 activation condition is carried forward as a confirmed prior manager statement, not as an assertion that his September 17 availability was definitively resolved. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824305,
-      "today_game_pk": 824305,
-      "team": "SD",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Craig Stammen",
-          "speaker_role": "Padres manager",
-          "subject": "Jason Adam",
-          "declaration_type": "RELIEVER_RETURN_STATUS",
-          "restriction": "Adam would likely need another rehab appearance before the club considered activating him.",
-          "numeric_limit": null,
-          "source_url": "https://www.mlb.com/padres/news/jason-adam-begins-rehab-assignment-in-triple-a",
-          "published_at": "2026-09-13"
-        }
-      ],
-      "comments": [],
-      "queue_fingerprint": "3612135afd114f45e555a497328ed53e4b4b308c8024a18329382135cd11e778"
-    },
-    {
-      "item_id": "pregame:824305:COL:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T17:44:24Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Colorado Rockies / MLB Probable Pitchers",
-          "url": "https://www.mlb.com/rockies/roster/probable-pitchers?msockid=39e0a948ef596c2f028dbf21eee56dfd",
-          "published_at": null,
-          "result": "CONFIRMED Tanner Gordon was listed as Colorado's scheduled starter for Padres at Rockies on September 17, 2026. The page contained no manager declaration of a workload restriction, opener/bulk plan, bullpen restriction, or tactical change."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Colorado Rockies / MLB video",
-          "url": "https://www.mlb.com/rockies/video/tanner-gordon-against-the-padres-x6552",
-          "published_at": "2026-09-17",
-          "result": "Official same-day starter video located; no accompanying pregame manager/coach comment or workload/usage restriction was available in the indexed item."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "MLB.com Rockies video index",
-          "url": "https://www.mlb.com/video/topic/t115-default-vtp",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no September 17, 2026 pregame Warren Schaeffer or Rockies coach media availability was retrievable before the 19:10:00Z first pitch."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Colorado Springs Gazette",
-          "url": "https://gazette.com/2026/03/16/who-completes-pitching-rotation-as-rockies-enter-final-week-of-spring-training-kevins-take/",
-          "published_at": "2026-03-16",
-          "result": "SOURCE_UNAVAILABLE: targeted searches did not retrieve a credentialed beat/local September 17, 2026 pregame report containing a Rockies manager-attributed availability, restriction, or tactical declaration. This older retrieved article was not used as evidence for the target game."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No material same-day manager/coach declaration was located before first pitch. Because an accessible credentialed beat/local pregame report was not available to complete the negative-evidence source contract, this item is INCONCLUSIVE rather than NO_MATERIAL_DECLARATION_FOUND.",
-      "game_pk": 824305,
-      "today_game_pk": 824305,
-      "team": "COL",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "4c55beee83304ab386ba2eec1351c8c67492c16251b4af0fc203466232617614"
-    },
-    {
-      "item_id": "pregame:822924:ATH:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T17:00:13+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com",
-          "url": "https://www.mlb.com/video/bullpen-availability-for-athletics-september-17-vs-rays",
-          "published_at": "2026-09-17",
-          "result": "Official pregame bullpen-availability artifact was located, but the accessible page transcript did not expose pitcher-specific availability or restriction details."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com",
-          "url": "https://www.mlb.com/video/starting-lineups-for-athletics-at-rays-september-17-2026",
-          "published_at": "2026-09-17",
-          "result": "Official pregame starting-lineup artifact was located; accessible page transcript did not expose the lineup card details."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "SOURCE_UNAVAILABLE",
-          "url": "https://www.mlb.com/athletics",
-          "published_at": null,
-          "result": "No accessible Athletics manager or coach pregame media containing a game-specific workload, bullpen-availability, injury, or tactical declaration was located within the research window."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Athletics Nation / Yahoo Sports (including a directly attributed Martín Gallegos lineup post)",
-          "url": "https://sports.yahoo.com/articles/game-153-rays-game-thread-160213942.html",
-          "published_at": "2026-09-17T16:02:00Z",
-          "result": "Pregame lineup coverage identified Jonah Heim as the starting catcher after a day off on September 16, with Denzel Clarke starting in center field and Henry Bolte moving to left field. No manager-attributed bullpen restriction, Jeffrey Springs workload limit, opener/bulk plan, or role-change declaration was reported."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "A confirmed announced lineup change affecting catcher/defensive alignment was identified. However, accessible official and media sources did not yield a direct Athletics manager/coach pregame declaration on Jeffrey Springs' workload or specific bullpen availability; therefore the full manager-media research item cannot be marked COMPLETED.",
-      "game_pk": 822924,
-      "today_game_pk": 822924,
-      "team": "ATH",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "category": "LINEUP_DEFENSIVE_ALIGNMENT",
-          "subject": "Jonah Heim / Denzel Clarke / Henry Bolte",
-          "statement": "Athletics pregame lineup coverage listed Jonah Heim as the starting catcher after he had the prior game off; Denzel Clarke started in center field and Henry Bolte shifted to left field.",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://sports.yahoo.com/articles/game-153-rays-game-thread-160213942.html"
-        }
-      ],
-      "queue_fingerprint": "a2faeea914a8c65f9966439a314f59e4cbc954074034576c684c0254670e835f"
-    },
-    {
-      "item_id": "pregame:822924:TB:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T17:10:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Tampa Bay Rays Game Notes",
-          "url": "https://img.mlbstatic.com/mlb-images/image/upload/mlb/vykek65n28gfxcbpc7vg.pdf",
-          "published_at": "2026-09-17",
-          "result": "CONFIRMED: official pregame notes list Drew Rasmussen as the starter and report no explicit pitch-count, innings, batters-faced, opener, bulk-pitcher, or bullpen-availability restriction. Notes state Rasmussen threw 6.0 innings in his September 12 start."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Rays Game Notes index",
-          "url": "https://www.mlb.com/rays/news/game-notes",
-          "published_at": "2026-09-17",
-          "result": "CONFIRMED: links the Rays' September 17, 2026 game notes for Athletics at Rays."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Athletics at Rays game preview",
-          "url": "https://www.mlb.com/stories/game-preview/822924",
-          "published_at": "2026-09-17",
-          "result": "CONFIRMED: identifies Rasmussen as Tampa Bay's starter; no tactical workload or bullpen restriction reported."
-        },
-        {
-          "source_type": "MANAGER_COACH_PREGAME_MEDIA",
-          "source_name": "SOURCE_UNAVAILABLE",
-          "url": "https://www.mlb.com/rays",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no accessible September 17 pregame Kevin Cash or Rays coach media transcript/video containing attributable tactical availability, workload, or role declarations was located within the research budget."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "SOURCE_UNAVAILABLE",
-          "url": "https://www.mlb.com/rays/news/game-notes",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no accessible credentialed Rays beat/local pregame report with attributable September 17 manager or club tactical declarations was located within the research budget."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Official pregame materials confirm Rasmussen as the scheduled starter and Taylor Walls' reinstatement from the 10-day IL, but do not state a Rasmussen workload restriction or an explicit reliever/closer availability restriction. Required manager/coach pregame-media and credentialed beat/local coverage could not be substantively accessed within the research budget; therefore a negative material-declaration finding cannot be finalized.",
-      "game_pk": 822924,
-      "today_game_pk": 822924,
-      "team": "TB",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "547b186c81152a261a75e0275d7b343359cfe7ab363770a173da13b61ec9c96b"
-    },
-    {
-      "item_id": "pregame:824305:SD:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Padres Game Preview",
-          "url": "https://www.mlb.com/stories/game-preview/824305",
-          "published_at": null,
-          "result": "Confirmed Padres-Rockies game 824305 and Mike King as the Padres starter; no manager/coach declaration concerning a King workload restriction, bullpen availability, injury, lineup/rest decision, or tactical limitation was located in the indexed preview."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Probable Pitchers",
-          "url": "https://www.mlb.com/probable-pitchers/2026-09-17",
-          "published_at": null,
-          "result": "Listed Padres at Rockies for September 17, 2026; no availability or workload declaration located."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "Padres manager/coach pregame media search",
-          "url": "https://www.mlb.com/padres/video/michael-king-against-the-rockies-x7001",
-          "published_at": "2026-09-17",
-          "result": "SOURCE_UNAVAILABLE: indexed official video result was a Michael King game clip, not a manager or coach pregame availability/workload interview."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "The Sporting Tribune",
-          "url": "https://www.thesportingtribune.com/2026/09/15/padres-win-streak-snapped-as-carrigg-and-rox-even-series",
-          "published_at": "2026-09-15",
-          "result": "Credentialed local-game coverage located, but it covered the September 15 game and did not provide a September 17 pregame declaration relevant to King's workload or current bullpen availability."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No material pregame declaration was verified before the target game's first pitch. The available search results did not establish sufficiently complete same-day manager/coach media coverage to support a negative completed finding.",
-      "game_pk": 824305,
-      "today_game_pk": null,
-      "team": "SD",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "603f5c66a6672852ae5fbf01cef46d00a449f2542bbcd59dc368e35051a6e0da"
-    },
-    {
-      "item_id": "postgame:824305:SD:824306",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Japanese Highlights: Padres-Rockies",
-          "url": "https://www.mlb.com/video/japanese-highlights-padres-rockies-x0218",
-          "published_at": "2026-09-17",
-          "result": "Official MLB postgame highlight indexed for the Padres-Rockies game played September 16, 2026; no manager explanation, next-game availability statement, injury update, or carry-forward workload declaration was available in the indexed result."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Padres News",
-          "url": "https://www.mlb.com/padres/news",
-          "published_at": null,
-          "result": "Official Padres news index was checked; the accessible indexed material did not provide a September 16 postgame manager declaration about bullpen availability, injuries, starter exit, or next-game personnel plans."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "Padres manager postgame media search",
-          "url": "https://www.mlb.com/padres/video/michael-king-against-the-rockies-x7001",
-          "published_at": "2026-09-17",
-          "result": "SOURCE_UNAVAILABLE: no indexed Padres manager postgame interview for the September 16 game was located in the available search results."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "The Sporting Tribune",
-          "url": "https://www.thesportingtribune.com/2026/09/15/padres-win-streak-snapped-as-carrigg-and-rox-even-series",
-          "published_at": "2026-09-15",
-          "result": "Local credentialed coverage located for the prior series game, but not a September 16 postgame report containing carry-forward availability, injury, or workload information."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "The queue metadata labeled game 824306 pre-game, while official MLB indexing showed a September 16 Padres-Rockies postgame highlight. No qualifying September 16 Padres manager/coach postgame declaration with plausible September 17 relevance was verified.",
-      "game_pk": null,
-      "today_game_pk": 824305,
-      "team": "SD",
-      "pass_type": null,
-      "previous_game_pk": 824306,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "da853b498d2877794b12d3559ca4d3566106be40efd2941a49d88e011eb4d394"
-    },
-    {
-      "item_id": "pregame:824305:COL:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T17:04:50+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Colorado Rockies / MLB.com — Tanner Gordon against the Padres",
-          "url": "https://www.mlb.com/rockies/video/tanner-gordon-against-the-padres-x6552",
-          "published_at": "2026-09-17",
-          "result": "CONFIRMED_STARTER_ONLY: Official Rockies page identifies Tanner Gordon in connection with Padres at Rockies on September 17, 2026; it contains no manager/coach declaration about workload, opener/bulk plans, bullpen availability, injury, rest, or tactical restrictions."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Colorado Rockies / MLB.com — Rockies Manager Postgame video index",
-          "url": "https://www.mlb.com/rockies/video/topic/rockies-manager-postgame",
-          "published_at": null,
-          "result": "NO_RELEVANT_PREGAME_MANAGER_MEDIA: Accessible official manager-video index did not provide September 17 pregame media or a relevant declaration for this game."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "SOURCE_UNAVAILABLE",
-          "url": "https://www.mlb.com/rockies/video/topic/rockies-manager-postgame",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: Search did not surface an accessible credentialed Rockies beat/local report, published before the listed first pitch, containing a manager-attributed restriction, availability, injury, rest, or tactical comment."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No material pregame declaration was verified. The required negative-result coverage standard was not fully satisfied because no accessible credentialed beat/local pregame report was located before the target-game cutoff; therefore this is not coded NO_MATERIAL_DECLARATION_FOUND.",
-      "game_pk": 824305,
-      "today_game_pk": 824305,
-      "team": "COL",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "b2be243f4c96019148d530bef73e19167e1e405b5cc0670983a7a2895a47479d"
-    },
-    {
-      "item_id": "postgame:824305:COL:824306",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T17:04:50+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Colorado Rockies / MLB.com — Rockies Manager Postgame video index",
-          "url": "https://www.mlb.com/rockies/video/topic/rockies-manager-postgame",
-          "published_at": null,
-          "result": "NO_ACCESSIBLE_2026-09-16_POSTGAME_ITEM: The accessible official index did not provide an identifiable September 16 Rockies-vs.-Padres manager postgame item from which next-game bullpen, injury, fatigue, or role information could be verified."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Colorado Rockies / MLB.com — Tanner Gordon against the Padres",
-          "url": "https://www.mlb.com/rockies/video/tanner-gordon-against-the-padres-x6552",
-          "published_at": "2026-09-17",
-          "result": "CONFIRMED_STARTER_ONLY: Official Rockies page identifies Tanner Gordon for the September 17 Padres-Rockies game but contains no prior-game carry-forward availability, injury, workload, or tactical declaration."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "SOURCE_UNAVAILABLE",
-          "url": "https://www.mlb.com/rockies/video/topic/rockies-manager-postgame",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: Search did not surface an accessible credentialed Rockies beat/local September 16 postgame report with a manager-attributed carry-forward comment before the September 17 target-game first pitch."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No material previous-game postgame declaration was verified. The required negative-result coverage standard was not fully satisfied because an accessible credentialed beat/local postgame source could not be located; therefore this is not coded NO_MATERIAL_DECLARATION_FOUND.",
-      "game_pk": 824306,
-      "today_game_pk": 824305,
-      "team": "COL",
-      "pass_type": null,
-      "previous_game_pk": 824306,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "e94e0aa60d3e1580a404557711b9adb8bc4c647cbd8287a2b46dc88c3e8aa410"
-    },
-    {
-      "item_id": "pregame:823334:MIL:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T16:24:30Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Milwaukee Brewers Game Notes",
-          "url": "https://www.mlb.com/brewers/news/game-notes",
-          "published_at": null,
-          "result": "Reviewed official Brewers game-notes index. The latest listed notes were for September 16 at Pittsburgh; no September 17 notes were available on the index at retrieval."
-        },
-        {
-          "source_type": "OFFICIAL_MLB_BEAT",
-          "source_name": "MLB.com / Adam McCalvy",
-          "url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win",
-          "published_at": "2026-09-17",
-          "result": "Reported direct Pat Murphy comments after Milwaukee moved Kyle Harrison into the September 17 start: Murphy said the club had sufficient pitching behind Harrison to protect him if he started slowly. The report also attributed to Murphy an intent to give DL Hall more high-leverage work and to use JoJo Romero and Antonio Senzatela in close-and-late situations."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALED",
-          "source_name": "MLB.com / Adam McCalvy",
-          "url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win",
-          "published_at": "2026-09-17",
-          "result": "Credentialed Brewers beat reporting with direct manager attribution; no numeric pitch, innings, batters-faced, or times-through-order limit was reported for Harrison."
-        },
-        {
-          "source_type": "DIRECT_MANAGER_OR_COACH_MEDIA",
-          "source_name": "Pat Murphy direct remarks as reported by MLB.com",
-          "url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win",
-          "published_at": "2026-09-17",
-          "result": "Direct Murphy remarks were available through the attributed MLB.com report. A standalone September 17 pregame availability transcript/video was not located within the research budget."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Confirmed conditional bullpen-protection plan for Kyle Harrison, but no numeric workload restriction was stated. No explicit individual reliever unavailability, emergency-only designation, closer restriction, injury scratch, or catcher/defensive restriction was located in the reviewed material. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 823334,
-      "today_game_pk": 823334,
-      "team": "MIL",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Pat Murphy",
-          "speaker_role": "Brewers manager",
-          "subject": "Kyle Harrison",
-          "declaration_type": "STARTER_WORKLOAD_PLAN",
-          "statement": "“I think it lined up best for us to do it this way. We’ve got enough pitching behind him to protect him if he gets off to a slow start.”",
-          "normalized_effect": "Conditional short leash/bullpen protection if Harrison starts slowly; no numerical pitch, innings, BF, or TTO limit stated.",
-          "restriction_flag": true,
-          "numeric_limit": null,
-          "source_url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
-        },
-        {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Pat Murphy",
-          "speaker_role": "Brewers manager",
-          "subject": "DL Hall",
-          "declaration_type": "BULLPEN_ROLE",
-          "statement": "Murphy said the Brewers will prioritize getting Hall more high-leverage work.",
-          "normalized_effect": "Hall designated for increased high-leverage usage.",
-          "restriction_flag": false,
-          "numeric_limit": null,
-          "source_url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
-        },
-        {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Pat Murphy",
-          "speaker_role": "Brewers manager",
-          "subject": "JoJo Romero; Antonio Senzatela",
-          "declaration_type": "BULLPEN_ROLE",
-          "statement": "Murphy said Romero and Senzatela also need close-and-late situations.",
-          "normalized_effect": "Romero and Senzatela identified for close-and-late leverage usage.",
-          "restriction_flag": false,
-          "numeric_limit": null,
-          "source_url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
-        }
-      ],
-      "comments": [
-        {
-          "evidence_label": "CONFIRMED",
-          "subject": "Brewers rotation",
-          "comment": "Milwaukee moved Harrison into the September 17 start against Pittsburgh and bumped Dustin May to September 18 at Baltimore.",
-          "source_url": "https://www.mlb.com/news/christian-yelich-brewers-beat-pirates-for-95th-win"
-        }
-      ],
-      "queue_fingerprint": "cd3cf62b062b4685cd3acddc95ffa66ff7eb04715db499bf736fe7fb1e693cd9"
-    },
-    {
-      "item_id": "pregame:823334:PIT:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T16:25:05Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Pittsburgh Pirates Game Notes",
-          "url": "https://www.mlb.com/pirates/news/game-notes",
-          "published_at": null,
-          "result": "No September 17 game-notes document was available before the scheduled first pitch; the most recent listed notes were for September 16."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "MLB.com Pirates Manager Postgame Videos",
-          "url": "https://www.mlb.com/video/topic/pirates-manager-postgame",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no September 17 pregame Don Kelly manager/coach media was available in the official Pirates/MLB video index before first pitch."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Pittsburgh Baseball Now / Danny Demilio, syndicated by Yahoo Sports",
-          "url": "https://sports.yahoo.com/articles/3-homers-not-enough-pirates-014950064.html",
-          "published_at": "2026-09-17",
-          "result": "The September 16 postgame report, published before the September 17 first pitch, stated that Pittsburgh would use another bullpen game in the series finale."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "No explicit pitcher availability/unavailability, role restriction, numeric workload cap, injury/soreness update, lineup scratch, or catcher/defensive tactical change was located in the pregame evidence window. The bullpen-game plan is carried forward from the prior game's postgame report because it explicitly concerned the next game. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 823334,
-      "today_game_pk": 823334,
-      "team": "PIT",
-      "pass_type": "FINAL",
-      "previous_game_pk": 823332,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "topic": "opener_bulk_pitcher_plan",
-          "subject": "Pittsburgh pitching staff",
-          "statement": "The Pirates will use another bullpen game in the September 17 series finale against Milwaukee.",
-          "speaker": "Danny Demilio",
-          "speaker_role": "Pittsburgh Baseball Now reporter",
-          "evidence_label": "CONFIRMED",
-          "restriction": {
-            "type": "BULLPEN_GAME",
-            "numeric_limit": null
-          },
-          "source_url": "https://sports.yahoo.com/articles/3-homers-not-enough-pirates-014950064.html",
-          "source_published_at": "2026-09-17"
-        }
-      ],
-      "comments": [],
-      "queue_fingerprint": "ffdd2e2d3beed1f66ce823541cd8afbf3306a738def26d2260de6992c249619c"
-    },
-    {
-      "item_id": "pregame:824464:LAD:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T16:26:20Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Starting Lineups",
-          "url": "https://www.mlb.com/starting-lineups",
-          "published_at": "2026-09-17",
-          "result": "Confirmed Justin Wrobleski as the Dodgers' listed starter against Cincinnati."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Dodgers video — Bullpen availability for Los Angeles, September 17 vs. Reds",
-          "url": "https://www.mlb.com/video/bullpen-availability-for-los-angeles-september-17-vs-reds",
-          "published_at": "2026-09-17",
-          "result": "Official availability visualization was located, but its searchable page text did not identify individual reliever restrictions or availability designations."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Dodgers video — Dave Roberts on Snell's injury, plans for postseason",
-          "url": "https://www.mlb.com/video/dave-roberts-on-snell-s-injury-plans-for-postseason",
-          "published_at": "2026-09-16",
-          "result": "Located prior-game manager postgame media; no September 17 pregame manager-media item was located before the 16:40:00Z first pitch."
-        },
-        {
-          "source_type": "CREDENTIALED_BEAT_OR_LOCAL",
-          "source_name": "Los Angeles Times — Maddie Lee",
-          "url": "https://www.latimes.com/sports/dodgers/story/2026-09-16/blake-snell-dodgers-reds",
-          "published_at": "2026-09-16T20:48:00-07:00",
-          "result": "Located credentialed Dodgers beat postgame coverage, including next-day starter and roster-plan reporting; no separate September 17 pregame manager availability/restriction report was located before first pitch."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Wrobleski was officially listed as the starter, but no sourced September 17 pregame manager declaration was located regarding his workload, an opener/bulk plan, individual reliever availability, role restrictions, lineup/defensive changes, or other game-specific tactical restrictions. Manager pregame media was SOURCE_UNAVAILABLE in the searched official/credentialed coverage before first pitch; the available beat coverage was postgame from September 16 rather than September 17 pregame.",
-      "game_pk": 824464,
-      "today_game_pk": null,
-      "team": "LAD",
-      "pass_type": "FINAL",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "a1784b79eed6c02f61b060842badacbf24847020dcd73b99177de27c8d3fda10"
-    },
-    {
-      "item_id": "pregame:824464:CIN:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T16:28:41Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Cincinnati Reds — Bench availability for Cincinnati, September 17 vs Dodgers",
-          "url": "https://www.mlb.com/video/bench-availability-for-cincinnati-september-17-vs-dodgers",
-          "published_at": "2026-09-17",
-          "result": "Checked official pregame availability content; no accessible text identified a Reds reliever restriction, bullpen-role change, starter workload limit, injury/scratch, or tactical limitation."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com — Los Angeles Dodgers at Cincinnati Reds Preview, game_pk 824464",
-          "url": "https://www.mlb.com/stories/game-preview/824464",
-          "published_at": "2026-09-17",
-          "result": "Confirmed Brady Singer as Cincinnati's listed starter. Preview noted recent results but contained no club/manager declaration imposing a pitch-count, innings, BF, times-through-order, opener, or bulk-pitcher restriction."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "MLB.com / Cincinnati Reds — Reds Manager Postgame video index",
-          "url": "https://www.mlb.com/video/topic/reds-manager-postgame",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE for September 17 pregame manager/coach media before the 16:40Z first pitch. The accessible official index surfaced prior postgame videos, not a September 17 pregame availability session."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Web search of Cincinnati Reds beat/local coverage for September 17, 2026",
-          "url": "https://www.google.com/search?q=Reds+beat+writer+Brady+Singer+Dodgers+September+17+2026",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE. No credentialed Reds beat/local pregame report located before first pitch that directly attributed a material bullpen availability, Singer workload, injury/rest, lineup-defense, or tactical declaration to the club or Terry Francona."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Official pregame sources confirmed Singer's start but did not provide a material restriction or tactical declaration. The required credentialed beat/local pregame coverage was not located, so a negative finding cannot be upgraded to NO_MATERIAL_DECLARATION_FOUND.",
-      "game_pk": 824464,
-      "today_game_pk": 824464,
-      "team": "CIN",
-      "pass_type": "FINAL",
-      "previous_game_pk": 824467,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "405aaeb987a880bf7bdb1d177a40d0e39205c6b825d2bfc6bc42745b68c8bb87"
-    },
-    {
-      "item_id": "pregame:823334:MIL:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T14:40:30Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Milwaukee Brewers Starting Lineups",
-          "url": "https://www.mlb.com/brewers/roster/starting-lineups",
-          "published_at": null,
-          "result": "Official club page listed Kyle Harrison as Milwaukee's scheduled starter for the September 17 game at Pittsburgh; lineups were still TBD. No bullpen-availability, workload-limit, injury, or tactical declaration was present in the surfaced page content."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Game Preview, Brewers at Pirates",
-          "url": "https://www.mlb.com/stories/game-preview/823334",
-          "published_at": null,
-          "result": "Official MLB preview confirmed the Harrison-Pirates matchup but did not surface a manager/coach declaration about a pitch, innings, BF, opener, or bullpen restriction."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Kyle Harrison player page",
-          "url": "https://www.mlb.com/player/kyle-harrison-690986",
-          "published_at": null,
-          "result": "Harrison was listed Active with the September 17 game as his next Milwaukee game. The page did not provide a current-game workload restriction or manager explanation."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "Milwaukee Brewers manager postgame video index",
-          "url": "https://www.mlb.com/video/topic/brewers-manager-postgame",
-          "published_at": null,
-          "result": "No September 16 or September 17 pregame manager/coach availability item was surfaced in the official video index search results; SOURCE_UNAVAILABLE for a relevant pregame manager-media declaration within the research window."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Adam McCalvy / MLB Brewers Beat newsletter index",
-          "url": "https://www.mlb.com/brewers/news",
-          "published_at": "2026-09-16",
-          "result": "The official club news index surfaced the September 16 Brewers Beat newsletter, but the accessible result did not contain a September 17 pregame bullpen, workload, injury, or tactical declaration."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Meaningful official-source review confirmed Harrison as the scheduled active starter, but no relevant September 17 manager/coach pregame availability was surfaced and no credentialed beat/local pregame declaration was accessible. Therefore a negative material-declaration conclusion cannot be made under the required source-coverage standard.",
-      "game_pk": 823334,
-      "today_game_pk": 823334,
-      "team": "MIL",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "c41dab75c46ce5b5ff5f7c2fc0b753297cd2415b0ea0e5a3fd3215ee7e584373"
-    },
-    {
-      "item_id": "postgame:823334:MIL:823332",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T14:40:30Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Brewers-Pirates game page / MLB Film Room",
-          "url": "https://www.mlb.com/video/game/823332",
-          "published_at": "2026-09-16",
-          "result": "Official MLB game page identified Milwaukee's 5-4 win over Pittsburgh on September 16. Surfaced content did not include bullpen-next-game availability, injury, starter-exit, or role-change declarations."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "Pat Murphy on winning 95th game after clinching division",
-          "url": "https://www.mlb.com/brewers/video/murphy-on-winning-95th-game-after-clinching-division",
-          "published_at": "2026-09-16",
-          "result": "Official postgame manager-media item concerned the 95th win, division clinch, and Cooper Pratt's at-bats. The accessible item description did not surface an explicit next-game reliever availability, injury, fatigue, starter-exit, or role-change declaration."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Crew follows up clinch with MLB-best 95th win ... but there's 'work to do'",
-          "url": "https://www.mlb.com/brewers/news",
-          "published_at": "2026-09-16",
-          "result": "Official club-news index surfaced the September 16 game story, described as an excerpt from the Brewers Beat newsletter. Accessible result content focused on the post-clinch setting and did not surface a carry-forward availability or health declaration."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Adam McCalvy / MLB Brewers Beat newsletter index",
-          "url": "https://www.mlb.com/brewers/news",
-          "published_at": "2026-09-16",
-          "result": "Credentialed Brewers beat coverage was represented by the official MLB Brewers Beat newsletter index, but the accessible result did not provide a directly attributable material declaration relevant to September 17."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Official game coverage and a Pat Murphy postgame-media item were located, but their accessible content did not establish whether a material next-game availability, health, workload, or role declaration was made. No material carry-forward declaration is recorded without direct support.",
-      "game_pk": 823332,
-      "today_game_pk": 823334,
-      "team": "MIL",
-      "pass_type": null,
-      "previous_game_pk": 823332,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "264560138d66da272fa178999c712481c67caac5d07ab91d1726601a1967a4ee"
-    },
-    {
-      "item_id": "pregame:823334:PIT:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Pittsburgh Pirates Game Notes",
-          "url": "https://www.mlb.com/pirates/news/game-notes",
-          "published_at": null,
-          "result": "The official Pirates game-notes index available at the check did not yet list a September 17, 2026 game-notes document; no game-specific restriction, availability, or tactical declaration was located."
-        },
-        {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "source_name": "Pirates pregame manager/coach media",
-          "url": "https://www.mlb.com/pirates",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no accessible September 17 pregame manager or coach media containing an attributable declaration was located in the research window."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Credentialed Pirates beat/local coverage search",
-          "url": "https://www.mlb.com/pirates/news/game-notes",
-          "published_at": null,
-          "result": "No credentialed beat/local report located in the research window provided an attributable September 17 pregame declaration concerning Wilber Dotel's workload, bullpen availability, injuries, rest, or tactical plans."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No material, attributable pregame declaration was located before the scheduled first pitch. In particular, no source established a Wilber Dotel pitch, inning, batters-faced, or times-through-order restriction; no such limit is inferred.",
-      "game_pk": 823334,
-      "today_game_pk": null,
-      "team": "PIT",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "2b1896e5293bf08b2642e8669e84bfde5b288d6966657cd3c9f406a61eaa8ecb"
-    },
-    {
-      "item_id": "postgame:823334:PIT:823332",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Film Room / Gameday, Brewers at Pirates, September 16, 2026",
-          "url": "https://www.mlb.com/video/game/823332",
-          "published_at": "2026-09-16",
-          "result": "Official game record showed Pittsburgh lost 5-4 and Carmen Mlodzinski pitched 2.0 innings, allowing 2 earned runs. The game record contained no manager explanation, explicit next-game availability statement, injury update, or role declaration."
-        },
-        {
-          "source_type": "MANAGER_OR_COACH_MEDIA",
-          "source_name": "Pirates postgame manager/coach media",
-          "url": "https://www.mlb.com/pirates",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no accessible September 16 postgame manager or coach media containing an attributable carry-forward statement was located in the research window."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Credentialed Pirates beat/local postgame coverage search",
-          "url": "https://www.mlb.com/pirates/news/game-notes",
-          "published_at": null,
-          "result": "No credentialed beat/local postgame report located in the research window supplied an attributable statement about next-game bullpen availability, injury/soreness, rest, starter-exit rationale, or role changes."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "The prior-game pitching usage alone is not treated as a manager declaration or as hindsight evidence about September 17 availability. No carry-forward material declaration was located.",
-      "game_pk": 823332,
-      "today_game_pk": 823334,
-      "team": "PIT",
-      "pass_type": null,
-      "previous_game_pk": 823332,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "57da941c704bd4e21b8ad02eb442cbe3ffd9eb1f0f1cf3850dbd3efb962d5a29"
-    },
-    {
-      "item_id": "pregame:824464:LAD:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Los Angeles Dodgers",
-          "url": "https://www.mlb.com/dodgers/video/justin-wrobleski-against-the-reds",
-          "published_at": "2026-09-17",
-          "result": "Confirmed Justin Wrobleski as the Dodgers' listed pitcher for the September 17 game at Cincinnati; no workload, opener/bulk-pitcher, bullpen-availability, lineup, or tactical restriction declaration was published in the accessible item."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com / Los Angeles Dodgers",
-          "url": "https://www.mlb.com/dodgers/news",
-          "published_at": "2026-09-16",
-          "result": "Official Dodgers news/index material was checked for current injury and roster context; accessible result surfaced Blake Snell and Shohei Ohtani updates but no September 17 manager declaration establishing a Wrobleski limit or specific reliever restriction."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "Dave Roberts pregame media",
-          "url": "https://www.mlb.com/dodgers/video/justin-wrobleski-against-the-reds",
-          "published_at": "2026-09-17",
-          "result": "SOURCE_UNAVAILABLE: accessible official pregame pitcher item contained no manager/coach media or transcript."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Los Angeles Times",
-          "url": "https://www.latimes.com/sports/newsletter/2026-09-17/blake-snell-dodgers",
-          "published_at": "2026-09-17",
-          "result": "Checked accessible Dodgers beat/local reporting. The result addressed Snell's prior-game groin issue, not a September 17 Wrobleski workload plan, bullpen restriction, or tactical declaration."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Meaningful official-team and credentialed-local checks did not produce an accessible September 17 pregame manager/coach availability briefing. No numeric or qualitative restriction is assigned to Wrobleski, and no reliever is designated unavailable or emergency-only.",
-      "game_pk": 824464,
-      "today_game_pk": null,
-      "team": "LAD",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "e042a7f5c2116ae7ef2aa68bc3c72c39c33a3d57ee41f2dd3586c91ca1048175"
-    },
-    {
-      "item_id": "pregame:824464:CIN:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T14:48:09+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Cincinnati Reds / MLB.com Reds News",
-          "url": "https://www.mlb.com/reds/news?msockid=2b939bb9704e6bbf3fa28d5b71c56a7b",
-          "published_at": "2026-09-16",
-          "result": "Checked the official Reds news index available before the September 17 game. No September 17 pregame club item or material declaration concerning Singer workload, bullpen restrictions, injuries, rest, or tactical availability was returned."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Starting Lineups",
-          "url": "https://www.mlb.com/dodgers/roster/starting-lineups?msockid=3563d68c45af62082b5bc0bb449d6327",
-          "published_at": null,
-          "result": "Official lineup page was checked. It confirmed the September 17 Dodgers-Reds game listing but did not provide a Reds manager availability declaration or a Brady Singer workload restriction."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "SOURCE_UNAVAILABLE",
-          "url": "https://www.espn1530.com/",
-          "published_at": null,
-          "result": "Searches for contemporaneous credentialed Cincinnati beat/local pregame reporting did not return an accessible report with a manager-attributed declaration on bullpen availability, injuries, rest, or Singer usage before first pitch."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No material pregame declaration was located, but the required corroborating accessible credentialed beat/local pregame report was unavailable. No numeric or qualitative Brady Singer restriction is supported by the checked evidence.",
-      "game_pk": 824464,
-      "today_game_pk": null,
-      "team": "CIN",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "ad65e6bddcdb48547bd2af7963da9a703a8244ac388d8c44c1c934324c5402dd"
-    },
-    {
-      "item_id": "postgame:824464:CIN:824467",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T14:48:09+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MANAGER_MEDIA",
-          "source_name": "MLB.com — Terry Francona on Brito's improvement, 6-2 win",
-          "url": "https://www.mlb.com/video/terry-francona-on-brito-s-improvement-6-2-win",
-          "published_at": "2026-09-16",
-          "result": "Official manager-postgame media was checked. The available description identifies Francona discussing Juan Brito's improvement and the offensive performance; it did not supply an actionable declaration on next-game bullpen availability, injury/treatment, rest, role changes, or carry-forward starter restrictions."
-        },
-        {
-          "source_type": "OFFICIAL_MLB_GAME_STORY",
-          "source_name": "MLB Stories — Dodgers at Reds, September 16, 2026",
-          "url": "https://www.mlb.com/stories/game/824467/",
-          "published_at": "2026-09-16",
-          "result": "Official game story was checked for prior-game context. It documents the completed 6-2 Reds win and innings involving Julian Garcia, Tejay Antone, and Emilio Pagán, but contains no manager/club declaration establishing any of their availability or restriction for September 17."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Cincinnati Reds / MLB.com — Elly De La Cruz crushes a homer to power Reds' win",
-          "url": "https://www.mlb.com/reds/video/elly-de-la-cruz-crushes-a-homer-to-power-reds-win",
-          "published_at": "2026-09-16",
-          "result": "Official Reds recap was checked. It recaps the 6-2 result and does not provide a carry-forward availability, injury, workload, or role declaration."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "SOURCE_UNAVAILABLE",
-          "url": "https://www.espn1530.com/",
-          "published_at": null,
-          "result": "Searches for accessible credentialed Cincinnati beat/local postgame reporting from September 16 did not return a report containing a manager-attributed next-game availability, injury, fatigue, or workload declaration."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "Prior-game pitching usage alone is not treated as a next-game restriction or declaration. No material carry-forward postgame statement was located, and accessible credentialed beat/local corroboration was unavailable.",
-      "game_pk": 824467,
-      "today_game_pk": 824464,
-      "team": "CIN",
-      "pass_type": null,
-      "previous_game_pk": 824467,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "4b09545fbc23f8b9442dd1d5078d054164e3956b536cc0506aef2da477e730d7"
-    },
-    {
-      "item_id": "pregame:822924:ATH:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "NATIONAL_WIRE",
-          "source_name": "The Canadian Press via Yahoo Sports",
-          "url": "https://ca.sports.yahoo.com/news/rays-host-athletics-aim-continue-080310456.html",
-          "published_at": "2026-09-17T08:03:00Z",
-          "result": "Confirmed Jeffrey Springs as the Athletics' probable starter for the September 17 game, but contained no club-attributed workload restriction, bullpen-availability, injury, role, or tactical declaration."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Athletics at Rays game page",
-          "url": "https://www.mlb.com/stories/game/822924/",
-          "published_at": null,
-          "result": "SOURCE_UNAVAILABLE: no pre-first-pitch Athletics game notes, club media availability, or manager declaration was located through the official MLB/club search coverage."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "NBC Sports Bay Area",
-          "url": "https://sports.yahoo.com/videos/mark-kotsay-content-jack-perkins-081938443.html",
-          "published_at": "2026-09-16T08:19:00Z",
-          "result": "Located credentialed local coverage of Kotsay's September 15 postgame availability, but no September 17 pregame Athletics manager report containing a material restriction or tactical declaration."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No material pregame declaration could be established before the scheduled 2026-09-17T17:10:00Z first pitch. Required official-team and same-day credentialed beat/local pregame coverage with a material Athletics declaration was not located; no numerical or qualitative Springs workload restriction is supported.",
-      "game_pk": 822924,
-      "team": "ATH",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "ab5dbee94d0d84160627cf38364754c6917ddfae5f25515be446d418b4f4c6fc"
-    },
-    {
-      "item_id": "postgame:822924:ATH:822926",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Athletics at Rays Game Story",
-          "url": "https://www.mlb.com/stories/game/822926/",
-          "published_at": "2026-09-16T00:00:00Z",
-          "result": "Confirmed the September 16 game was completed as a 4-3 Rays win. The official game story identified Athletics pitchers Brady Basso and Seth Johnson but did not provide an Athletics manager explanation of usage, next-game availability, injury, or role change."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com Athletics at Rays game video index",
-          "url": "https://www.mlb.com/video/game/822926",
-          "published_at": "2026-09-16T00:00:00Z",
-          "result": "SOURCE_UNAVAILABLE: no Athletics manager postgame availability or directly attributable postgame declaration relevant to September 17 was located in the official game-video coverage."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "NBC Sports Bay Area",
-          "url": "https://sports.yahoo.com/videos/mark-kotsay-content-jack-perkins-081938443.html",
-          "published_at": "2026-09-16T08:19:00Z",
-          "result": "This local report covered Kotsay's postgame remarks after the September 15 game, not the requested September 16 postgame. No September 16 Athletics clubhouse report with a carry-forward availability, injury, workload, or role declaration was located."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "The prior game's outcome and pitching usage alone are not treated as hindsight evidence of September 17 availability. No qualifying September 16 Athletics manager/coach or credentialed clubhouse declaration established a carry-forward bullpen, injury, starter-workload, rest, or role implication.",
-      "game_pk": 822926,
-      "today_game_pk": 822924,
-      "team": "ATH",
-      "pass_type": null,
-      "previous_game_pk": 822926,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "58a928969839ccf965dddccbed622020f2ca0eb1d5185cc16fd1937f3aad0b16"
-    },
-    {
-      "item_id": "pregame:822924:TB:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-17T14:49:55Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Tampa Bay Rays Game Notes",
-          "url": "https://www.mlb.com/rays/news/game-notes",
-          "published_at": null,
-          "result": "The official game-notes index listed September 16 vs. Athletics as its newest Athletics entry; no September 17 game-notes document was available from the indexed page during this pass."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Probable Pitchers",
-          "url": "https://www.mlb.com/probable-pitchers/2026-09-17",
-          "published_at": null,
-          "result": "Confirmed Athletics at Rays was listed for September 17, but the search result did not provide a manager declaration, bullpen restriction, or Rasmussen workload restriction."
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "source_name": "MLB.com Rays manager video search",
-          "url": "https://www.mlb.com/rays/video",
-          "published_at": null,
-          "result": "No September 17 pregame Kevin Cash or Rays coach media availability concerning Drew Rasmussen, bullpen availability, injuries, or tactical restrictions was located. The relevant returned Cash item was a September 16 postgame interview."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "No qualifying credentialed beat/local report or direct September 17 pregame manager/coach availability was located before the 2026-09-17T17:10:00Z first pitch. The required negative-pregame source coverage was therefore incomplete; no restriction or no-restriction conclusion is supported.",
-      "game_pk": 822924,
-      "today_game_pk": null,
-      "team": "TB",
-      "pass_type": "EARLY",
-      "previous_game_pk": null,
-      "previous_game_date": null,
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "2e37e014e8231a3f7b88bbba9e218e78a3f27da6e85f9d6ebf8c6aa620fcea4c"
-    },
-    {
-      "item_id": "postgame:822924:TB:822926",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-17T14:49:55Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Kevin Cash postgame interview",
-          "url": "https://www.mlb.com/video/kevin-cash-we-had-a-bunch-of-good-at-bats-early-on",
-          "published_at": "2026-09-16",
-          "result": "Official postgame video metadata states that Cash discussed Chandler Simpson, the bullpen's performance, and more after Tampa Bay's 4-3 win. The available indexed material did not identify an explicit next-game reliever availability statement, injury/fatigue update, role change, or starter-workload declaration."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Film Room — Athletics at Rays, game 822926",
-          "url": "https://www.mlb.com/video/game/822926",
-          "published_at": "2026-09-16",
-          "result": "Official game page confirmed the September 16 Athletics-Rays game was completed as a 4-3 Rays win, but supplied no attributable carry-forward manager declaration concerning September 17 availability or restrictions."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Tampa Bay Rays Game Notes",
-          "url": "https://www.mlb.com/rays/news/game-notes",
-          "published_at": null,
-          "result": "The official notes index provided a September 16 vs. Athletics game-notes entry but no postgame carry-forward declaration regarding the following day's pitcher or bullpen availability was identified in the accessible index."
-        }
-      ],
-      "research_status": "COMPLETED",
-      "notes": "A direct Cash postgame item was located, but the accessible official metadata was insufficient to preserve a specific material statement, and no qualifying credentialed beat/local postgame report with an attributable next-game availability, injury, fatigue, or role declaration was located. No carry-forward declaration is recorded.",
-      "game_pk": null,
-      "today_game_pk": 822924,
-      "team": "TB",
-      "pass_type": null,
-      "previous_game_pk": 822926,
-      "previous_game_date": "2026-09-16",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "572a655e0e740c58c044e24dbf2841c1437aadb481c52740f738f85bf4991922"
+      "queue_fingerprint": "933f0eb31a799184d34987cd4cb3b2827dc9633ab3af6479f953f605753907d4"
     }
   ],
-  "researched_at": "2026-09-17T23:33:15+00:00",
+  "researched_at": "2026-09-18T14:36:51+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -2043,187 +306,166 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-17T23:33:15+00:00",
+    "last_run_at": "2026-09-18T14:36:51+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 177884,
+      "input_tokens": 132202,
       "cached_input_tokens": 24805,
-      "output_tokens": 12061,
-      "reasoning_tokens": 7314,
-      "total_tokens": 189945,
+      "output_tokens": 6502,
+      "reasoning_tokens": 3960,
+      "total_tokens": 138704,
       "estimated_cost_usd": 0.0
     },
     "audit": [
       {
-        "team": "LAD",
-        "game_pk": 824464,
+        "team": "KC",
+        "game_pk": 823331,
         "items": [
-          "postgame:824464:LAD:824467"
+          "postgame:823331:KC:824141"
         ],
-        "response_id": "resp_02d0e072b006d7ea016aac7800d05887d28d393ddccaf933cb",
+        "response_id": "resp_05da73c70561b755016aad4af82a6887d28a6b17be619b3fa0",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 71,
+        "web_sources_seen": 56,
         "usage": {
-          "input_tokens": 21590,
+          "input_tokens": 22316,
           "cached_input_tokens": 0,
-          "output_tokens": 1412,
-          "reasoning_tokens": 799,
-          "total_tokens": 23002,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "postgame:824464:LAD:824467": [
-            "invalid result 'MATERIAL_DECLARATION_FOUND'"
-          ]
-        },
-        "tool_budget": 2,
-        "prompt_chars": 667,
-        "estimated_prompt_tokens": 167,
-        "research_mode": "POSTGAME"
-      },
-      {
-        "team": "PHI",
-        "game_pk": 823573,
-        "items": [
-          "postgame:823573:PHI:822680"
-        ],
-        "response_id": "resp_0bacee8a7f44a309016aac781a10c487d2a0901753d39ab748",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 55,
-        "usage": {
-          "input_tokens": 22007,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1338,
-          "reasoning_tokens": 832,
-          "total_tokens": 23345,
+          "output_tokens": 1325,
+          "reasoning_tokens": 791,
+          "total_tokens": 23641,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 657,
-        "estimated_prompt_tokens": 165,
+        "prompt_chars": 645,
+        "estimated_prompt_tokens": 162,
         "research_mode": "POSTGAME"
       },
       {
-        "team": "DET",
-        "game_pk": 824548,
+        "team": "PIT",
+        "game_pk": 823331,
         "items": [
-          "pregame:824548:DET:FINAL",
-          "postgame:824548:DET:822763"
+          "postgame:823331:PIT:823334"
         ],
-        "response_id": "resp_0ccbee7d05ae2303016aac78323f0087d298f267f2832c5009",
+        "response_id": "resp_0c91806c11a63dc7016aad4b273af887d2be3d0e857c2525b9",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 52,
+        "web_sources_seen": 58,
         "usage": {
-          "input_tokens": 34566,
+          "input_tokens": 21986,
           "cached_input_tokens": 4961,
-          "output_tokens": 2112,
-          "reasoning_tokens": 1417,
-          "total_tokens": 36678,
+          "output_tokens": 802,
+          "reasoning_tokens": 678,
+          "total_tokens": 22788,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:824548:DET:FINAL": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
-          "postgame:824548:DET:822763": [
+          "postgame:823331:PIT:823334": [
             "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
-        "tool_budget": 3,
-        "prompt_chars": 8013,
-        "estimated_prompt_tokens": 2004,
-        "research_mode": "FINAL_DELTA"
+        "tool_budget": 2,
+        "prompt_chars": 645,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
       },
       {
-        "team": "CWS",
-        "game_pk": 824548,
+        "team": "CHC",
+        "game_pk": 824463,
         "items": [
-          "pregame:824548:CWS:FINAL",
-          "postgame:824548:CWS:824382"
+          "postgame:824463:CHC:824626"
         ],
-        "response_id": "resp_0f5d956dfbcfa5fe016aac7854e30887d2b2f58aacdbe550e5",
+        "response_id": "resp_0e433f01b9d8ec55016aad4b5d0fd087d28d05e7820a83019b",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 40,
+        "web_sources_seen": 55,
         "usage": {
-          "input_tokens": 34023,
+          "input_tokens": 21777,
           "cached_input_tokens": 4961,
-          "output_tokens": 2083,
-          "reasoning_tokens": 1498,
-          "total_tokens": 36106,
+          "output_tokens": 1183,
+          "reasoning_tokens": 667,
+          "total_tokens": 22960,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 653,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "CIN",
+        "game_pk": 824463,
+        "items": [
+          "postgame:824463:CIN:824464"
+        ],
+        "response_id": "resp_0c37d52deb90634c016aad4b833e1c87d29ceab7698b7d1134",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 58,
+        "usage": {
+          "input_tokens": 21982,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1178,
+          "reasoning_tokens": 663,
+          "total_tokens": 23160,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:824548:CWS:FINAL": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
-          "postgame:824548:CWS:824382": [
+          "postgame:824463:CIN:824464": [
+            "invalid result 'CIN lost to LAD, 8-2.'"
+          ]
+        },
+        "tool_budget": 2,
+        "prompt_chars": 661,
+        "estimated_prompt_tokens": 166,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "MIL",
+        "game_pk": 824790,
+        "items": [
+          "postgame:824790:MIL:823334"
+        ],
+        "response_id": "resp_0cfe89b70aac4319016aad4be781ac87d2a2d83d196dbded7f",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 66,
+        "usage": {
+          "input_tokens": 21762,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1067,
+          "reasoning_tokens": 532,
+          "total_tokens": 22829,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:824790:MIL:823334": [
             "invalid result 'MATERIAL_DECLARATION_FOUND'"
           ]
         },
-        "tool_budget": 3,
-        "prompt_chars": 8585,
-        "estimated_prompt_tokens": 2147,
-        "research_mode": "FINAL_DELTA"
+        "tool_budget": 2,
+        "prompt_chars": 645,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
       },
       {
-        "team": "BOS",
-        "game_pk": 822845,
+        "team": "BAL",
+        "game_pk": 824790,
         "items": [
-          "pregame:822845:BOS:FINAL",
-          "postgame:822845:BOS:822846"
+          "postgame:824790:BAL:823576"
         ],
-        "response_id": "resp_03d4f65d994db4c1016aac7877188487d2b4a15211d48678ef",
+        "response_id": "resp_0c4ae87eb4c5eede016aad4c3a2aa487d28ac3e0bfd4c3b6c2",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 56,
+        "web_sources_seen": 39,
         "usage": {
-          "input_tokens": 32488,
+          "input_tokens": 22379,
           "cached_input_tokens": 4961,
-          "output_tokens": 1733,
-          "reasoning_tokens": 1257,
-          "total_tokens": 34221,
+          "output_tokens": 947,
+          "reasoning_tokens": 629,
+          "total_tokens": 23326,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {
-          "postgame:822845:BOS:822846": [
-            "invalid result 'COMPLETED'"
-          ]
-        },
-        "tool_budget": 3,
-        "prompt_chars": 7630,
-        "estimated_prompt_tokens": 1908,
-        "research_mode": "FINAL_DELTA"
-      },
-      {
-        "team": "TEX",
-        "game_pk": 822845,
-        "items": [
-          "pregame:822845:TEX:FINAL",
-          "postgame:822845:TEX:822846"
-        ],
-        "response_id": "resp_07cc786d5f6436f1016aac7894961487d2a056d673c08e1d5c",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 40,
-        "usage": {
-          "input_tokens": 33210,
-          "cached_input_tokens": 4961,
-          "output_tokens": 3383,
-          "reasoning_tokens": 1511,
-          "total_tokens": 36593,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:822845:TEX:FINAL": [
-            "invalid result 'COMPLETED'"
-          ],
-          "postgame:822845:TEX:822846": [
-            "invalid result 'COMPLETED'"
-          ]
-        },
-        "tool_budget": 3,
-        "prompt_chars": 8230,
-        "estimated_prompt_tokens": 2058,
-        "research_mode": "FINAL_DELTA"
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 648,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
       }
     ]
   }
