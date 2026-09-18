@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "generated_at": "2026-09-18T17:36:09+00:00",
+  "generated_at": "2026-09-18T20:35:22+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823331": {
@@ -58,6 +58,50 @@
           }
         },
         "source": "manager_media_research.py external research results"
+      },
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-18T00:00:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-18T00:00:00Z",
+            "team": "PIT",
+            "teams": [
+              "PIT"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Pittsburgh Pirates Game Notes",
+                "url": "https://www.mlb.com/pirates/news/game-notes",
+                "checked_for": "September 18 pregame notes, roster/workload information, and manager-related material."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "Pittsburgh Pirates Probable Pitchers",
+                "url": "https://www.mlb.com/pirates/roster/probable-pitchers",
+                "checked_for": "Confirmation of Paul Skenes as the listed probable starter."
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "source_name": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/pirates/video/topic/pirates-manager-postgame",
+                "checked_for": "No September 18 pregame manager/coach availability or transcript was located in the lightweight search window."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/pirates/news",
+                "checked_for": "No credentialed local/beat report containing a pregame Don Kelly declaration on Skenes, Carmen Mlodzinski, or Khristian Curtis was located in the lightweight search window."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Paul Skenes was listed as Pittsburgh's probable starter, but no qualifying September 18 pregame manager/coach declaration was located regarding his workload, a restriction, or a planned leash. No qualifying declaration was located regarding availability or restriction for Carmen Mlodzinski or Khristian Curtis. Because credentialed beat/local pregame coverage was not located, the negative-result evidence contract for NO_MATERIAL_DECLARATION_FOUND was not satisfied."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
       }
     },
     "824463": {
@@ -114,6 +158,54 @@
             }
           }
         },
+        "source": "manager_media_research.py external research results"
+      },
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-18T00:00:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-18T00:00:00Z",
+            "team": "CHC",
+            "teams": [
+              "CHC"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "Chicago Cubs / MLB.com Starting Lineups",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/cubs/roster/starting-lineups?msockid=02aa3ef582c56d3e20c4289383436c5b",
+                "publication_date": "2026-09-18",
+                "relevance": "Confirmed Clay Holmes as the Cubs' listed starter at Cincinnati; no manager workload or bullpen-availability declaration was surfaced."
+              },
+              {
+                "source_name": "Chicago Cubs / MLB.com Video",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/cubs/video/clay-holmes-against-the-reds",
+                "publication_date": "2026-09-18",
+                "relevance": "Official game-related Clay Holmes item; no manager or coach declaration regarding an outing restriction, pitch limit, innings limit, or Aaron Civale availability was surfaced."
+              },
+              {
+                "source_name": "Manager/coach pregame media",
+                "source_type": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/cubs",
+                "publication_date": "2026-09-18",
+                "relevance": "No contemporaneous, accessible Cubs manager or coach pregame availability media was located within the lightweight research budget."
+              },
+              {
+                "source_name": "Credentialed beat/local reporting",
+                "source_type": "SOURCE_UNAVAILABLE",
+                "url": "https://www.marqueesportsnetwork.com/schedule/september-18-2026/",
+                "publication_date": "2026-09-18",
+                "relevance": "Searches for contemporaneous credentialed Cubs beat/local reporting did not surface a pregame manager-attributed declaration about Holmes or Civale."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official sources confirmed the scheduled matchup and Holmes as starter, but the required manager/coach pregame-media and credentialed beat/local evidence could not be meaningfully obtained within the two-call lightweight budget. No workload restriction or bullpen-availability conclusion is supported."
+          }
+        ],
+        "declarations": [],
         "source": "manager_media_research.py external research results"
       }
     },
@@ -207,6 +299,97 @@
             }
           }
         },
+        "source": "manager_media_research.py external research results"
+      },
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-18T20:34:20Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-18T20:33:53Z",
+            "team": "MIL",
+            "teams": [
+              "MIL"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "Milwaukee Brewers Probable Pitchers",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/brewers/roster/probable-pitchers?msockid=2efb5e7c7bfa6e07058b48f47a1e6f0b",
+                "checked_for": "Confirmation of starter and any published workload restriction or manager declaration."
+              },
+              {
+                "source_name": "MLB Stories: Milwaukee Brewers at Baltimore Orioles Preview",
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/stories/game-preview/824790",
+                "checked_for": "Pregame club/MLB reporting and pitcher-use information."
+              },
+              {
+                "source_name": "MLB.com Brewers: Dustin May against the Orioles",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/brewers/video/dustin-may-against-the-orioles",
+                "checked_for": "Official pregame video/media item."
+              },
+              {
+                "source_name": "MLB.com: Top tidbits from Brewers manager Pat Murphy's Monday media meeting",
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.mlb.com/brewers/news/brewers-manager-pat-murphy-s-monday-media-meeting",
+                "checked_for": "Availability and format of Murphy media access; not game-date-specific."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official Brewers/MLB sources confirmed Dustin May as Milwaukee's scheduled starter for the September 18, 2026 game at Baltimore, but no game-date-specific Pat Murphy/coach pregame media or credentialed beat reporting located in the lightweight search window established a Dustin May workload restriction, shortened leash, pitch limit, innings limit, or planned bullpen-use restriction for JoJo Romero. Manager/coach pregame media: SOURCE_UNAVAILABLE in searched results. A completed negative declaration is not supported because a contemporaneous credentialed beat/local report was not located."
+          },
+          {
+            "checked_at": "2026-09-18T20:34:20Z",
+            "team": "BAL",
+            "teams": [
+              "BAL"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Baltimore Orioles Transactions",
+                "url": "https://www.mlb.com/orioles/roster/transactions/2026/09",
+                "checked_for": "September 18 roster move and any club-provided workload/usage context for Cade Povich",
+                "finding": "Povich was recalled from Norfolk on September 18; no manager declaration or workload restriction was published on this page."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com Orioles player page",
+                "url": "https://www.mlb.com/player/cade-povich-700249",
+                "checked_for": "Current-season status, transactions, and same-day notes concerning Povich",
+                "finding": "No September 18 pregame manager/coach workload declaration was available."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com Game Preview, Brewers at Orioles, game 824790",
+                "url": "https://www.mlb.com/stories/game-preview/824790",
+                "checked_for": "Pregame starter/use-plan reporting",
+                "finding": "No manager/coach declaration addressing Povich's expected workload or restriction was available in the indexed preview."
+              },
+              {
+                "source_type": "MANAGER_COACH_PREGAME_MEDIA",
+                "source_name": "Targeted web search of Orioles pregame manager/coach media",
+                "url": "https://www.mlb.com/orioles",
+                "checked_for": "September 18 pregame comments from manager Craig Albernaz or Orioles coaches regarding Povich",
+                "finding": "SOURCE_UNAVAILABLE: no accessible, attributable same-day pregame manager/coach media statement was located before the research cutoff."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "Targeted web search of Orioles local/beat coverage",
+                "url": "https://www.masnsports.com/",
+                "checked_for": "September 18 credentialed local/beat reporting attributing a Povich workload plan to the Orioles",
+                "finding": "SOURCE_UNAVAILABLE: no accessible same-day credentialed beat/local report containing an attributable Povich workload declaration was located before the research cutoff."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official sources confirm Povich's September 18 recall, but the required pregame manager/coach and credentialed beat/local evidence did not produce an attributable statement on his workload, pitch count, innings, batters faced, or leash. No restriction is inferred from the recall alone."
+          }
+        ],
+        "declarations": [],
         "source": "manager_media_research.py external research results"
       }
     },
