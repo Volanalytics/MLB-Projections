@@ -1,6 +1,6 @@
 {
   "date": "2026-09-18",
-  "generated_at": "2026-09-18T14:36:52+00:00",
+  "generated_at": "2026-09-18T17:36:09+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823331": {
@@ -119,7 +119,7 @@
     },
     "824790": {
       "previous_game_postgame": {
-        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "status": "CONFIRMED",
         "teams": {
           "BAL": {
             "research_status": "COMPLETED",
@@ -151,6 +151,156 @@
               }
             ],
             "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "MIL": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-18T00:00:00Z",
+            "previous_game_pk": 823334,
+            "previous_game_date": "2026-09-17",
+            "passes": [
+              {
+                "checked_at": "2026-09-18T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB_GAME_PAGE",
+                    "source_name": "MLB.com Game Story",
+                    "url": "https://www.mlb.com/stories/game/823334",
+                    "publication_date": "2026-09-17",
+                    "finding": "Confirmed the September 17 game and its play-by-play context; no Brewers postgame manager/coach declaration was available in the page material returned."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB_VIDEO",
+                    "source_name": "MLB.com Brewers-Pirates game video highlights",
+                    "url": "https://www.mlb.com/video/game/823334",
+                    "publication_date": "2026-09-17",
+                    "finding": "Confirmed final score of Pirates 7, Brewers 4; no forward-looking Brewers postgame declaration was available in the returned material."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM_NEWS",
+                    "source_name": "Milwaukee Brewers news",
+                    "url": "https://www.mlb.com/brewers/news",
+                    "publication_date": "2026-09-18",
+                    "finding": "Official-team news search was reviewed; the returned September 17 article concerned Milwaukee's prior win and did not provide a relevant postgame declaration following game 823334."
+                  },
+                  {
+                    "source_type": "WIRE_RECAP",
+                    "source_name": "Associated Press recap via CBS Sports",
+                    "url": "https://www.games.cbssports.com/mlb/gametracker/live/MLB_20260917_MIL%40PIT/",
+                    "publication_date": "2026-09-17",
+                    "finding": "Confirmed the 7-4 final and basic game recap; no relevant Milwaukee manager/coach postgame declaration was present in the returned material."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Milwaukee lost 7-4 at Pittsburgh on September 17, 2026. Official MLB and wire-recap coverage were checked, but accessible results did not yield a material Brewers postgame manager/coach declaration plausibly relevant to the September 18 game. A credentialed Brewers beat/local postgame source and direct manager/coach postgame media were not available in the search results reviewed; therefore the negative evidence contract for COMPLETED is not satisfied."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "822923": {
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "TB": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-18T17:35:41+00:00",
+            "previous_game_pk": 822924,
+            "previous_game_date": "2026-09-17",
+            "passes": [
+              {
+                "checked_at": "2026-09-18T17:35:41+00:00",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Tampa Bay Rays Game Notes",
+                    "url": "https://www.mlb.com/rays/news/game-notes",
+                    "checked_for": "Official club materials for September 17, 2026."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB_MANAGER_MEDIA",
+                    "source_name": "MLB.com — Kevin Cash on taking Drew Rasmussen out after the 5th",
+                    "url": "https://www.mlb.com/video/kevin-cash-on-taking-drew-rasmussen-out-after-the-5th",
+                    "checked_for": "Direct postgame manager media and any carry-forward pitching/usage declaration."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB_GAME_PAGE",
+                    "source_name": "MLB.com Film Room — Athletics at Rays, September 17, 2026",
+                    "url": "https://www.mlb.com/video/game/822924",
+                    "checked_for": "Game context and postgame-linked coverage."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Official MLB materials confirm Tampa Bay won 10-1 and Drew Rasmussen completed five scoreless innings. A Kevin Cash postgame video was available, but the accessible official text did not preserve a usable explanation or a forward-looking restriction for Rasmussen or another Rays player. No credentialed beat/local postgame source with a material, carry-forward club declaration was located in the available search results."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824383": {
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "ATH": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-18T00:00:00Z",
+            "previous_game_pk": 822924,
+            "previous_game_date": "2026-09-17",
+            "passes": [
+              {
+                "checked_at": "2026-09-18T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_name": "MLB.com Athletics at Tampa Bay Rays Game Story",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/stories/game/822924",
+                    "publication_date": "2026-09-17"
+                  },
+                  {
+                    "source_name": "NBC Sports Bay Area via Yahoo Sports — Mark Kotsay postgame media availability",
+                    "source_type": "MANAGER_COACH_MEDIA",
+                    "url": "https://sports.yahoo.com/videos/mark-kotsay-proud-athletics-bullpen-084554433.html",
+                    "publication_date": "2026-09-17",
+                    "note": "The indexed transcript concerns the September 16 game, not the September 17 previous game."
+                  },
+                  {
+                    "source_name": "San Francisco Chronicle / Associated Press game report",
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.sfchronicle.com/sports/article/rays-open-5-game-al-east-lead-beat-athletics-22437179.php",
+                    "publication_date": "2026-09-17"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Official game coverage and a credentialed local/wire report were reviewed, but neither supplied an Athletics manager/coach postgame declaration from the September 17 game that plausibly changes the September 18 projection. Available manager-media search coverage was for the prior day's game rather than this target previous game; therefore the manager/coach postgame source requirement could not be satisfied."
+              }
+            ],
+            "comments": [
+              {
+                "label": "UNRESOLVED",
+                "topic": "Manager/coach postgame availability",
+                "comment": "No qualifying Athletics manager or coach postgame statement from the September 17 game was located in the reviewed evidence. SOURCE_UNAVAILABLE for this research pass."
+              }
+            ],
             "current_assessment": {
               "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
               "count": 0,

@@ -3,6 +3,319 @@
   "generated_from_queue_at": "2026-09-18T14:30:04+00:00",
   "items": [
     {
+      "item_id": "postgame:823331:PIT:823334",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-18T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Pittsburgh Pirates / MLB.com Game Notes",
+          "url": "https://www.mlb.com/pirates/news/game-notes",
+          "source_date": "2026-09-17"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
+          "source_name": "Pittsburgh Pirates / MLB.com",
+          "url": "https://www.mlb.com/pirates/video/don-kelly-discusses-henry-davis-and-the-win",
+          "source_date": "2026-09-17"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Pittsburgh Baseball Now",
+          "url": "https://pittsburghbaseballnow.com/pittsburgh-pirates-milwaukee-brewers-henry-davis-home-run-kyle-harrison/",
+          "source_date": "2026-09-17"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Reviewed official club materials, Don Kelly's official postgame availability, and local coverage of the September 17 game. No material Pirates postgame declaration or comment was identified that plausibly changes the projection for the September 18 game. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823334,
+      "today_game_pk": 823331,
+      "team": "PIT",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 823334,
+      "previous_game_date": "2026-09-17",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "c15decd2ba849eb4a7d4840766e142cd507c66d0fcc7a706117746c221c42583"
+    },
+    {
+      "item_id": "postgame:824463:CIN:824464",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-18T17:32:00+00:00",
+      "sources_checked": [
+        {
+          "source_name": "Cincinnati Reds / MLB.com",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/reds/video/tyler-stephenson-leaves-game-in-the-7th-inning",
+          "published_at": "2026-09-17",
+          "access_status": "AVAILABLE"
+        },
+        {
+          "source_name": "MLB.com",
+          "source_type": "OFFICIAL_MANAGER_POSTGAME_MEDIA",
+          "url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start",
+          "published_at": "2026-09-17",
+          "access_status": "AVAILABLE"
+        },
+        {
+          "source_name": "AOL Sports",
+          "source_type": "LOCAL_REPORTING_LEAD",
+          "url": "https://www.aol.com/articles/reds-roster-move-coming-tyler-202644000.html",
+          "published_at": "2026-09-17",
+          "access_status": "AVAILABLE"
+        },
+        {
+          "source_name": "Cincinnati Enquirer",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.enquirer.com/",
+          "access_status": "SOURCE_UNAVAILABLE"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Carry-forward item: Tyler Stephenson exited the September 17 game. Reds manager Terry Francona identified the issue postgame as cramping. No numeric restriction or next-game availability determination was located in the reviewed material. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824464,
+      "today_game_pk": 824463,
+      "team": "CIN",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 824464,
+      "previous_game_date": "2026-09-17",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "topic": "PLAYER_HEALTH_AVAILABILITY",
+          "player": "Tyler Stephenson",
+          "speaker": "Terry Francona",
+          "speaker_role": "Reds manager",
+          "statement": "Stephenson left the game due to cramping.",
+          "normalization": {
+            "injury_or_condition": "cramping",
+            "body_area": "upper left leg",
+            "next_game_status": "UNRESOLVED",
+            "numeric_limit": null
+          },
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start",
+          "source_type": "OFFICIAL_MANAGER_POSTGAME_MEDIA",
+          "game_context": "Postgame, Dodgers at Reds, September 17, 2026"
+        }
+      ],
+      "comments": [
+        {
+          "topic": "CARRY_FORWARD_RELEVANCE",
+          "comment": "Stephenson's in-game exit is relevant to Cincinnati's catcher availability for the next game, but the reviewed postgame material did not establish a confirmed September 18 playing status.",
+          "evidence_label": "UNRESOLVED",
+          "source_url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start"
+        }
+      ],
+      "queue_fingerprint": "8c3f8b916b6b87a902fa28ae03c06ea5bf4ac541f801c688e9bdc4cd13c4029f"
+    },
+    {
+      "item_id": "postgame:824790:MIL:823334",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-18T00:00:00Z",
+      "game_pk": 823334,
+      "today_game_pk": 824790,
+      "team": "MIL",
+      "pass_type": "POSTGAME",
+      "previous_game_pk": 823334,
+      "previous_game_date": "2026-09-17",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_GAME_PAGE",
+          "source_name": "MLB.com Game Story",
+          "url": "https://www.mlb.com/stories/game/823334",
+          "publication_date": "2026-09-17",
+          "finding": "Confirmed the September 17 game and its play-by-play context; no Brewers postgame manager/coach declaration was available in the page material returned."
+        },
+        {
+          "source_type": "OFFICIAL_MLB_VIDEO",
+          "source_name": "MLB.com Brewers-Pirates game video highlights",
+          "url": "https://www.mlb.com/video/game/823334",
+          "publication_date": "2026-09-17",
+          "finding": "Confirmed final score of Pirates 7, Brewers 4; no forward-looking Brewers postgame declaration was available in the returned material."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_NEWS",
+          "source_name": "Milwaukee Brewers news",
+          "url": "https://www.mlb.com/brewers/news",
+          "publication_date": "2026-09-18",
+          "finding": "Official-team news search was reviewed; the returned September 17 article concerned Milwaukee's prior win and did not provide a relevant postgame declaration following game 823334."
+        },
+        {
+          "source_type": "WIRE_RECAP",
+          "source_name": "Associated Press recap via CBS Sports",
+          "url": "https://www.games.cbssports.com/mlb/gametracker/live/MLB_20260917_MIL%40PIT/",
+          "publication_date": "2026-09-17",
+          "finding": "Confirmed the 7-4 final and basic game recap; no relevant Milwaukee manager/coach postgame declaration was present in the returned material."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Milwaukee lost 7-4 at Pittsburgh on September 17, 2026. Official MLB and wire-recap coverage were checked, but accessible results did not yield a material Brewers postgame manager/coach declaration plausibly relevant to the September 18 game. A credentialed Brewers beat/local postgame source and direct manager/coach postgame media were not available in the search results reviewed; therefore the negative evidence contract for COMPLETED is not satisfied.",
+      "queue_fingerprint": "188b81d8c95b21063429d036aa5361040dc3d5e4201772f30b4c44d338d38d32"
+    },
+    {
+      "item_id": "postgame:822923:BOS:822845",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-18T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Boston Red Sox / MLB.com",
+          "url": "https://www.mlb.com/redsox",
+          "published_at": "2026-09-18T01:17:00-04:00",
+          "accessed_for": "Official club postgame coverage and carry-forward injury-status reporting from the September 17 game."
+        },
+        {
+          "source_type": "OFFICIAL_MLB_GAME",
+          "source_name": "MLB.com Game Story",
+          "url": "https://www.mlb.com/stories/game/822845/",
+          "published_at": "2026-09-17",
+          "accessed_for": "Verified that Boston defeated Texas, 4-3, in game_pk 822845."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "source_name": "Boston Red Sox / MLB.com",
+          "url": "https://www.mlb.com/redsox/video/topic/red-sox-manager-postgame",
+          "published_at": "2026-09-18T00:25:00-04:00",
+          "accessed_for": "Confirmed availability of interim manager Chad Tracy's postgame media following Boston's 4-3 win."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Ian Browne, MLB.com Red Sox Beat",
+          "url": "https://www.mlb.com/redsox/news/willson-contreras-leaves-game-after-hit-by-pitch-against-rangers",
+          "published_at": "2026-09-18",
+          "accessed_for": "Postgame reporting on Willson Contreras leaving after a hit-by-pitch and the related status update."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Only carry-forward material identified from the September 17 postgame concerned player availability. The prior game's 4-3 result was not used as projection evidence for the next game. | VALIDATION: invalid result 'BOS won 4-3 at TEX.'",
+      "game_pk": 822845,
+      "today_game_pk": 822923,
+      "team": "BOS",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 822845,
+      "previous_game_date": "2026-09-17",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": "Willson Contreras",
+          "topic": "injury_status",
+          "statement": "Contreras was reported day to day after hand X-rays were negative following a hit-by-pitch in the eighth inning.",
+          "speaker": "Boston Red Sox / club-reported status",
+          "evidence_label": "CONFIRMED",
+          "restriction_normalized": "day_to_day",
+          "numeric_limit": null,
+          "relevance_to_next_game": "Material availability item for Boston's next game."
+        },
+        {
+          "subject": "Aroldis Chapman",
+          "topic": "injury_status",
+          "statement": "Chapman was reported day to day while the Red Sox monitor lat tightness.",
+          "speaker": "Boston Red Sox / club-reported status",
+          "evidence_label": "CONFIRMED",
+          "restriction_normalized": "day_to_day",
+          "numeric_limit": null,
+          "relevance_to_next_game": "Material bullpen-availability item for Boston's next game."
+        }
+      ],
+      "comments": [
+        {
+          "subject": "Chad Tracy",
+          "topic": "postgame_media",
+          "comment": "Official Red Sox postgame media was available following the 4-3 win; no additional forward-looking usage restriction was established from the accessible manager-media index.",
+          "speaker": "Chad Tracy",
+          "evidence_label": "UNRESOLVED",
+          "relevance_to_next_game": "No additional actionable restriction normalized."
+        }
+      ],
+      "queue_fingerprint": "1db9e7645ef97311e2a79a8c3bef88568ed1cc63d52ec62d956d37ed5e0472fe"
+    },
+    {
+      "item_id": "postgame:822923:TB:822924",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-18T17:35:41+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Tampa Bay Rays Game Notes",
+          "url": "https://www.mlb.com/rays/news/game-notes",
+          "checked_for": "Official club materials for September 17, 2026."
+        },
+        {
+          "source_type": "OFFICIAL_MLB_MANAGER_MEDIA",
+          "source_name": "MLB.com — Kevin Cash on taking Drew Rasmussen out after the 5th",
+          "url": "https://www.mlb.com/video/kevin-cash-on-taking-drew-rasmussen-out-after-the-5th",
+          "checked_for": "Direct postgame manager media and any carry-forward pitching/usage declaration."
+        },
+        {
+          "source_type": "OFFICIAL_MLB_GAME_PAGE",
+          "source_name": "MLB.com Film Room — Athletics at Rays, September 17, 2026",
+          "url": "https://www.mlb.com/video/game/822924",
+          "checked_for": "Game context and postgame-linked coverage."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Official MLB materials confirm Tampa Bay won 10-1 and Drew Rasmussen completed five scoreless innings. A Kevin Cash postgame video was available, but the accessible official text did not preserve a usable explanation or a forward-looking restriction for Rasmussen or another Rays player. No credentialed beat/local postgame source with a material, carry-forward club declaration was located in the available search results.",
+      "game_pk": 822924,
+      "today_game_pk": 822923,
+      "team": "TB",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 822924,
+      "previous_game_date": "2026-09-17",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "9e36ba17d9382dc63ffac06b0220ea4f571369d93c9bd28901fda48099b8732f"
+    },
+    {
+      "item_id": "postgame:824383:ATH:822924",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-18T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_name": "MLB.com Athletics at Tampa Bay Rays Game Story",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/stories/game/822924",
+          "publication_date": "2026-09-17"
+        },
+        {
+          "source_name": "NBC Sports Bay Area via Yahoo Sports — Mark Kotsay postgame media availability",
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://sports.yahoo.com/videos/mark-kotsay-proud-athletics-bullpen-084554433.html",
+          "publication_date": "2026-09-17",
+          "note": "The indexed transcript concerns the September 16 game, not the September 17 previous game."
+        },
+        {
+          "source_name": "San Francisco Chronicle / Associated Press game report",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.sfchronicle.com/sports/article/rays-open-5-game-al-east-lead-beat-athletics-22437179.php",
+          "publication_date": "2026-09-17"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Official game coverage and a credentialed local/wire report were reviewed, but neither supplied an Athletics manager/coach postgame declaration from the September 17 game that plausibly changes the September 18 projection. Available manager-media search coverage was for the prior day's game rather than this target previous game; therefore the manager/coach postgame source requirement could not be satisfied.",
+      "game_pk": 822924,
+      "today_game_pk": 824383,
+      "team": "ATH",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 822924,
+      "previous_game_date": "2026-09-17",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "label": "UNRESOLVED",
+          "topic": "Manager/coach postgame availability",
+          "comment": "No qualifying Athletics manager or coach postgame statement from the September 17 game was located in the reviewed evidence. SOURCE_UNAVAILABLE for this research pass."
+        }
+      ],
+      "queue_fingerprint": "e887d474027fd48ba20e116dd88036523e97a8fdab7196ca646345b5b505c53c"
+    },
+    {
       "item_id": "postgame:823331:KC:824141",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": "2026-09-18T14:31:02+00:00",
@@ -48,43 +361,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "4dcc54b5f94592bf4057c46fde904cc0b27fbed4ca76b52e22e7e2762b7c9762"
-    },
-    {
-      "item_id": "postgame:823331:PIT:823334",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-18T14:31:56+00:00",
-      "sources_checked": [
-        {
-          "source_name": "Pittsburgh Pirates Game Notes",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/pirates/news/game-notes",
-          "date": "2026-09-17"
-        },
-        {
-          "source_name": "Don Kelly discusses Henry Davis and the win",
-          "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
-          "url": "https://www.mlb.com/pirates/video/don-kelly-discusses-henry-davis-and-the-win",
-          "date": "2026-09-17"
-        },
-        {
-          "source_name": "WTAE Pittsburgh game recap",
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.wtae.com/article/pirates-brewers-griffin-davis-cruz/73780492",
-          "date": "2026-09-17"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Reviewed official Pirates materials, including Don Kelly's postgame availability, plus local credentialed coverage of the September 17 game. No material club/manager declaration from the previous-game postgame was found that plausibly changes Pittsburgh's projection or availability for the next game. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 823334,
-      "today_game_pk": 823331,
-      "team": "PIT",
-      "pass_type": "PREVIOUS_GAME_POSTGAME",
-      "previous_game_pk": 823334,
-      "previous_game_date": "2026-09-17",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "c15decd2ba849eb4a7d4840766e142cd507c66d0fcc7a706117746c221c42583"
     },
     {
       "item_id": "postgame:824463:CHC:824626",
@@ -134,133 +410,6 @@
       "queue_fingerprint": "98899a6277ffb7503e2d6d91ee897010397d07b7efb82f636f0c3c96f188678f"
     },
     {
-      "item_id": "postgame:824463:CIN:824464",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-18T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_name": "Cincinnati Reds / MLB.com",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start",
-          "published_at": "2026-09-17",
-          "notes": "Official postgame video identifies Terry Francona discussing Tyler Stephenson leaving because of cramping."
-        },
-        {
-          "source_name": "Cincinnati Reds / MLB.com",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/reds/video/tyler-stephenson-leaves-game-in-the-7th-inning",
-          "published_at": "2026-09-17",
-          "notes": "Official game video documents Stephenson leaving in the seventh inning."
-        },
-        {
-          "source_name": "Associated Press",
-          "source_type": "NATIONAL_WIRE",
-          "url": "https://apnews.com/article/3c906e40854ceb68cb9ec1670ad56153",
-          "published_at": "2026-09-17",
-          "notes": "Postgame game report confirming the Dodgers defeated Cincinnati 8-2."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Carry-forward item: Tyler Stephenson exited the September 17 game. The club's postgame manager availability attributed the exit to cramping; no numeric restriction, availability timetable, or roster action was declared in the reviewed evidence. | VALIDATION: invalid result 'CIN lost to LAD, 8-2.'",
-      "game_pk": 824464,
-      "today_game_pk": 824463,
-      "team": "CIN",
-      "pass_type": "POSTGAME_CARRY_FORWARD",
-      "previous_game_pk": 824464,
-      "previous_game_date": "2026-09-17",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Tyler Stephenson",
-          "speaker": "Terry Francona",
-          "speaker_role": "Reds manager",
-          "declaration_type": "INJURY_STATUS",
-          "status": "CONFIRMED",
-          "details": "Francona said Stephenson left the game because of cramping.",
-          "restriction": null,
-          "numeric_limit": null,
-          "source_url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start",
-          "source_name": "Cincinnati Reds / MLB.com",
-          "source_date": "2026-09-17"
-        }
-      ],
-      "comments": [
-        {
-          "subject": "Tyler Stephenson",
-          "comment_type": "CARRY_FORWARD_RELEVANCE",
-          "status": "CONFIRMED",
-          "details": "Stephenson's in-game exit is relevant to the following game's catcher/designated-hitter availability, but the reviewed postgame evidence did not provide a timetable or explicit next-game availability declaration.",
-          "source_url": "https://www.mlb.com/video/francona-on-stephenson-s-injury-and-singer-s-start"
-        }
-      ],
-      "queue_fingerprint": "8c3f8b916b6b87a902fa28ae03c06ea5bf4ac541f801c688e9bdc4cd13c4029f"
-    },
-    {
-      "item_id": "postgame:824790:MIL:823334",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-18T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_name": "MLB.com / Milwaukee Brewers",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/news/kyle-harrison-struggles-brewers-postseason-role",
-          "published_at": "2026-09-17",
-          "relevance": "Postgame report directly attributes Kyle Harrison's forthcoming regular-season usage to Brewers manager Pat Murphy."
-        },
-        {
-          "source_name": "MLB.com Game Story",
-          "source_type": "OFFICIAL_LEAGUE",
-          "url": "https://www.mlb.com/stories/game/823334/",
-          "published_at": "2026-09-17",
-          "relevance": "Official game recap and postgame player comment context."
-        },
-        {
-          "source_name": "Pittsburgh Post-Gazette / Colin Beazley via ArcaMax",
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.arcamax.com/sports/baseball/s-4300521",
-          "published_at": "2026-09-17",
-          "relevance": "Credentialed local postgame coverage of Milwaukee's loss and Harrison's early exit."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Material carry-forward finding concerns Kyle Harrison's remaining regular-season role and possible postseason usage; it does not establish availability or a role for the September 18 game. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 823334,
-      "today_game_pk": 824790,
-      "team": "MIL",
-      "pass_type": "POSTGAME_TO_NEXT_GAME",
-      "previous_game_pk": 823334,
-      "previous_game_date": "2026-09-17",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Kyle Harrison",
-          "speaker": "Pat Murphy",
-          "speaker_role": "Brewers manager",
-          "statement": "Harrison will pitch again during Milwaukee's remaining nine regular-season games, but his role remains to be determined.",
-          "restriction": {
-            "type": "ROLE_UNDETERMINED",
-            "details": "No specific next appearance, starter/reliever designation, pitch limit, inning limit, or availability date was declared."
-          },
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/news/kyle-harrison-struggles-brewers-postseason-role",
-          "source_date": "2026-09-17",
-          "temporal_context": "Postgame, September 17, 2026"
-        }
-      ],
-      "comments": [
-        {
-          "subject": "Kyle Harrison",
-          "speaker": "Kyle Harrison",
-          "statement": "He said he would keep working and fighting through his recent struggles.",
-          "relevance": "Relevant only as a player-status mindset comment; it does not alter a projected role or establish September 18 availability.",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/stories/game/823334/",
-          "source_date": "2026-09-17"
-        }
-      ],
-      "queue_fingerprint": "188b81d8c95b21063429d036aa5361040dc3d5e4201772f30b4c44d338d38d32"
-    },
-    {
       "item_id": "postgame:824790:BAL:823576",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": "2026-09-18T00:00:00Z",
@@ -295,7 +444,7 @@
       "queue_fingerprint": "933f0eb31a799184d34987cd4cb3b2827dc9633ab3af6479f953f605753907d4"
     }
   ],
-  "researched_at": "2026-09-18T14:36:51+00:00",
+  "researched_at": "2026-09-18T17:36:09+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -306,55 +455,32 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-18T14:36:51+00:00",
+    "last_run_at": "2026-09-18T17:36:09+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 132202,
+      "input_tokens": 134566,
       "cached_input_tokens": 24805,
-      "output_tokens": 6502,
-      "reasoning_tokens": 3960,
-      "total_tokens": 138704,
+      "output_tokens": 7241,
+      "reasoning_tokens": 4549,
+      "total_tokens": 141807,
       "estimated_cost_usd": 0.0
     },
     "audit": [
-      {
-        "team": "KC",
-        "game_pk": 823331,
-        "items": [
-          "postgame:823331:KC:824141"
-        ],
-        "response_id": "resp_05da73c70561b755016aad4af82a6887d28a6b17be619b3fa0",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 56,
-        "usage": {
-          "input_tokens": 22316,
-          "cached_input_tokens": 0,
-          "output_tokens": 1325,
-          "reasoning_tokens": 791,
-          "total_tokens": 23641,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 645,
-        "estimated_prompt_tokens": 162,
-        "research_mode": "POSTGAME"
-      },
       {
         "team": "PIT",
         "game_pk": 823331,
         "items": [
           "postgame:823331:PIT:823334"
         ],
-        "response_id": "resp_0c91806c11a63dc7016aad4b273af887d2be3d0e857c2525b9",
+        "response_id": "resp_0c38e08958f09a17016aad752820e087d2be5d7aafcf8d0efd",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 58,
+        "web_sources_seen": 64,
         "usage": {
-          "input_tokens": 21986,
-          "cached_input_tokens": 4961,
-          "output_tokens": 802,
-          "reasoning_tokens": 678,
-          "total_tokens": 22788,
+          "input_tokens": 22896,
+          "cached_input_tokens": 0,
+          "output_tokens": 1147,
+          "reasoning_tokens": 836,
+          "total_tokens": 24043,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
@@ -368,48 +494,25 @@
         "research_mode": "POSTGAME"
       },
       {
-        "team": "CHC",
-        "game_pk": 824463,
-        "items": [
-          "postgame:824463:CHC:824626"
-        ],
-        "response_id": "resp_0e433f01b9d8ec55016aad4b5d0fd087d28d05e7820a83019b",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 55,
-        "usage": {
-          "input_tokens": 21777,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1183,
-          "reasoning_tokens": 667,
-          "total_tokens": 22960,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 653,
-        "estimated_prompt_tokens": 164,
-        "research_mode": "POSTGAME"
-      },
-      {
         "team": "CIN",
         "game_pk": 824463,
         "items": [
           "postgame:824463:CIN:824464"
         ],
-        "response_id": "resp_0c37d52deb90634c016aad4b833e1c87d29ceab7698b7d1134",
+        "response_id": "resp_0bb76f6e66ec0ab4016aad756bdb1c87d291f35d9da9cc1223",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 58,
+        "web_sources_seen": 50,
         "usage": {
-          "input_tokens": 21982,
+          "input_tokens": 21933,
           "cached_input_tokens": 4961,
-          "output_tokens": 1178,
-          "reasoning_tokens": 663,
-          "total_tokens": 23160,
+          "output_tokens": 1418,
+          "reasoning_tokens": 868,
+          "total_tokens": 23351,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
           "postgame:824463:CIN:824464": [
-            "invalid result 'CIN lost to LAD, 8-2.'"
+            "invalid result 'MATERIAL_DECLARATION_FOUND'"
           ]
         },
         "tool_budget": 2,
@@ -423,48 +526,94 @@
         "items": [
           "postgame:824790:MIL:823334"
         ],
-        "response_id": "resp_0cfe89b70aac4319016aad4be781ac87d2a2d83d196dbded7f",
+        "response_id": "resp_0912536b77fdda24016aad7591620887d28ae9f65166cdf6ba",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 66,
+        "web_sources_seen": 60,
         "usage": {
-          "input_tokens": 21762,
+          "input_tokens": 22230,
           "cached_input_tokens": 4961,
-          "output_tokens": 1067,
-          "reasoning_tokens": 532,
-          "total_tokens": 22829,
+          "output_tokens": 1365,
+          "reasoning_tokens": 892,
+          "total_tokens": 23595,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {
-          "postgame:824790:MIL:823334": [
-            "invalid result 'MATERIAL_DECLARATION_FOUND'"
-          ]
-        },
+        "validation_errors": {},
         "tool_budget": 2,
         "prompt_chars": 645,
         "estimated_prompt_tokens": 162,
         "research_mode": "POSTGAME"
       },
       {
-        "team": "BAL",
-        "game_pk": 824790,
+        "team": "BOS",
+        "game_pk": 822923,
         "items": [
-          "postgame:824790:BAL:823576"
+          "postgame:822923:BOS:822845"
         ],
-        "response_id": "resp_0c4ae87eb4c5eede016aad4c3a2aa487d28ac3e0bfd4c3b6c2",
+        "response_id": "resp_04d75965f17e9f88016aad75c738c487d298210fffd316df5d",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 39,
+        "web_sources_seen": 52,
         "usage": {
-          "input_tokens": 22379,
+          "input_tokens": 22621,
           "cached_input_tokens": 4961,
-          "output_tokens": 947,
-          "reasoning_tokens": 629,
-          "total_tokens": 23326,
+          "output_tokens": 1390,
+          "reasoning_tokens": 694,
+          "total_tokens": 24011,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:822923:BOS:822845": [
+            "invalid result 'BOS won 4-3 at TEX.'"
+          ]
+        },
+        "tool_budget": 2,
+        "prompt_chars": 656,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "TB",
+        "game_pk": 822923,
+        "items": [
+          "postgame:822923:TB:822924"
+        ],
+        "response_id": "resp_0d07b2ba6d5c5e2d016aad762a96d087d2a865fdb5151c896e",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 52,
+        "usage": {
+          "input_tokens": 22455,
+          "cached_input_tokens": 4961,
+          "output_tokens": 976,
+          "reasoning_tokens": 615,
+          "total_tokens": 23431,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
         "prompt_chars": 648,
         "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "ATH",
+        "game_pk": 824383,
+        "items": [
+          "postgame:824383:ATH:822924"
+        ],
+        "response_id": "resp_0ee807f8ed42931f016aad766e724887d2828aa446f62f41ee",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 62,
+        "usage": {
+          "input_tokens": 22431,
+          "cached_input_tokens": 4961,
+          "output_tokens": 945,
+          "reasoning_tokens": 644,
+          "total_tokens": 23376,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 650,
+        "estimated_prompt_tokens": 163,
         "research_mode": "POSTGAME"
       }
     ]
