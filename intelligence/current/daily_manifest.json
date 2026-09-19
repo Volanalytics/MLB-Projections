@@ -1,8 +1,8 @@
 {
   "schema_version": 2,
   "model": "MLB_V2",
-  "slate_date": "2026-09-18",
-  "published_at": "2026-09-18T18:38:19-05:00",
+  "slate_date": "2026-09-19",
+  "published_at": "2026-09-19T09:38:18-05:00",
   "publication_status": "COMPLETE",
   "chatgpt_package_status": "READY",
   "decision_readiness_source": "intelligence/current/pregame_intelligence.json",
@@ -11,92 +11,92 @@
     "about": {
       "path": "about.html",
       "bytes": 23426,
-      "sha256": "35b4676df2a613842749bc09cfb5c5f90fd72d68961b193273bebb2d6d076364"
+      "sha256": "8d9336122492920406d624570a4716f8daf686c03705e949df78a326822a3351"
     },
     "ev": {
       "path": "ev.html",
-      "bytes": 209502,
-      "sha256": "59bd6b8819a5aad897ffe6adf72a1af12668a29b2eb6b06751681721ec72f5a5"
+      "bytes": 239931,
+      "sha256": "b1a046c455e897a4df5b1989a7f48deab2251c9027fab4085815b0d844d10c00"
     },
     "form": {
       "path": "form.html",
-      "bytes": 158890,
-      "sha256": "e8771a08f5a8d9478dc5b7b1c7a60290129f1f0fb3f1015daaf008ee82f60c6d"
+      "bytes": 159273,
+      "sha256": "2d5d9f9f4708206d2a9309ffbf04bb720f4274db38437321f98fbcc45448b8bb"
     },
     "games": {
       "path": "games.html",
-      "bytes": 158221,
-      "sha256": "ece3a3bbf0965c54592ab7ab986f9d53640588a1bd49b93e2b27499a52fa5eff"
+      "bytes": 158606,
+      "sha256": "b919e46f99a9112cad05c78311b32926f899301b2c28541e817fa935133c04f2"
     },
     "index": {
       "path": "index.html",
-      "bytes": 165387,
-      "sha256": "a8870cea138fd59a24daf6479c2396d3e671d8be6a9045aaca3b89d0104a18b1"
+      "bytes": 188350,
+      "sha256": "2560da4f4d7c8d15a7f5e1834a9b52e8469b20846b88eb5a3cfd6200d5a6b8e6"
     },
     "ladder": {
       "path": "ladder.html",
-      "bytes": 108867,
-      "sha256": "cb89c88ccded90f6fd190f86dfc6139f8bc006044471f3b0f8bdb5fdc47b73b2"
+      "bytes": 107053,
+      "sha256": "7680e0667e58735753693ac26fd0c7b5bc8780f7f6e0d72961b1e0cf8fd62e08"
     },
     "teams": {
       "path": "teams.html",
       "bytes": 29375,
-      "sha256": "66f299a2203f9845e50655bacc3997239d315c6a64c7a43b5c87eb02de48e619"
+      "sha256": "d2c297108f7dce31b54b3c0ab556f7e0356d97f73ebc0027c5ac7004af408620"
     },
     "tracking": {
       "path": "tracking.html",
-      "bytes": 125181,
-      "sha256": "61d7b91c6d89919de5f188f8ae0206137d2de9e5a070aade1d520ff8977fff2c"
+      "bytes": 126120,
+      "sha256": "6f3af525e54596ac312b50012dc5e5091b136d0f5b24505b04c81945f67306d7"
     }
   },
   "intelligence": {
     "pregame_context_json": {
       "path": "intelligence/current/pregame_context.json",
-      "source_filename": "pregame_context_2026-09-18.json",
-      "bytes": 582170,
-      "sha256": "fbee2466104c844f52b12296fa586b58ce5311ba3937e1caccbe32c1b932c1df"
+      "source_filename": "pregame_context_2026-09-19.json",
+      "bytes": 568157,
+      "sha256": "4d2ecf6cabd28aa9d4c40d5ff8a14b71624a6f775051b55fb224276da28c0908"
     },
     "pregame_context_text": {
       "path": "intelligence/current/pregame_context.txt",
-      "source_filename": "pregame_context_2026-09-18.txt",
-      "bytes": 37996,
-      "sha256": "239f2c64d2e9854fc956830f6a085c693268f71aabc4eb1b022ba4fe4dbd40d6"
+      "source_filename": "pregame_context_2026-09-19.txt",
+      "bytes": 42131,
+      "sha256": "07a82d2316c7ff67a0ed28def0eb4b01a7cd3ec02bba8c3454e5255417d16fa9"
     },
     "pregame_state": {
       "path": "intelligence/current/pregame_state.json",
-      "source_filename": "pregame_state_2026-09-18.json",
-      "bytes": 581124,
-      "sha256": "123797aca5a0ccaf029e21a2cd0bdce9e51d92a61cc4eff20dab996a3c118b7d"
+      "source_filename": "pregame_state_2026-09-19.json",
+      "bytes": 555487,
+      "sha256": "0e905d81069f0666107dba7d235c44dc4343ab562fea62f4a473b8a51b778126"
     },
     "pregame_intelligence": {
       "path": "intelligence/current/pregame_intelligence.json",
-      "source_filename": "pregame_intelligence_2026-09-18.json",
-      "bytes": 36046,
-      "sha256": "d159bf028f0bb88949a8238766bb935c34643f965aa61ac7ffb3ee830d68224a"
+      "source_filename": "pregame_intelligence_2026-09-19.json",
+      "bytes": 10198,
+      "sha256": "03a1587d4af12bf5901cb2fb0641091fc4c93266361ba4643349601049f75c68"
     },
     "manager_media_research_queue": {
       "path": "intelligence/current/manager_media_research_queue.json",
-      "source_filename": "manager_media_research_queue_2026-09-18.json",
-      "bytes": 96091,
-      "sha256": "736a847af6ae97e2ebd9a1d1d07e1c123d0bdd017318a0ed98cb7581f5959b50"
+      "source_filename": "manager_media_research_queue_2026-09-19.json",
+      "bytes": 52275,
+      "sha256": "a3533161cf257552a088e9d6e53be7c500943c882de7be24537ac8e809d56e7d"
     },
     "manager_media_research_results": {
       "path": "intelligence/current/manager_media_research_results.json",
-      "source_filename": "manager_media_research_results_2026-09-18.json",
-      "bytes": 56202,
-      "sha256": "4ac12be1bb3f2c0277cd69d879e5556b468e056d9533dc09007dd4f872adca0c"
+      "source_filename": "manager_media_research_results_2026-09-19.json",
+      "bytes": 29759,
+      "sha256": "9d2d39fe0fc118c45f95d41a76a7a098f937292954ce6b8c50b4539a1e70091d"
     },
     "manager_media_research_results_template": {
       "path": "intelligence/current/manager_media_research_results.template.json",
-      "source_filename": "manager_media_research_results_2026-09-18.template.json",
-      "bytes": 16618,
-      "sha256": "3ed31138d267f12bc4d4c0170bd184befa8cd77bd351e5fd18f6af7091830654"
+      "source_filename": "manager_media_research_results_2026-09-19.template.json",
+      "bytes": 13028,
+      "sha256": "3b6da4f9e7134c65c7d9ff8253d50d11ab77af881131b9ac7804abfaf3de7ee5"
     },
     "manager_media_source_ledger": {
       "path": "intelligence/current/manager_media_source_ledger.json",
-      "source_filename": "manager_media_source_ledger_2026-09-18.json",
-      "bytes": 28005,
-      "sha256": "63ee06fc6ba7475590d12acde68eb8d30d9c9b7236c6939384c74f163f272035"
+      "source_filename": "manager_media_source_ledger_2026-09-19.json",
+      "bytes": 10440,
+      "sha256": "2adc3f4e1c0c524fe125da0bd9f574b9eb12531a8015c88e5f84189f9ab092be"
     }
   }
 }
