@@ -1,12 +1,12 @@
 {
   "date": "2026-09-19",
-  "generated_at": "2026-09-19T14:38:15+00:00",
+  "generated_at": "2026-09-19T17:37:24+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "824545": {
       "manager_media": {
         "research_status": "COMPLETED",
-        "last_checked_at": "2026-09-19T14:35:24Z",
+        "last_checked_at": "2026-09-19T17:35:28Z",
         "passes": [
           {
             "checked_at": "2026-09-19T14:35:24Z",
@@ -43,6 +43,80 @@
             ],
             "result": "INCONCLUSIVE",
             "note": "No accessible September 19 pregame manager/coach media or qualifying credentialed beat/local report supplied a direct Detroit declaration of a Jackson Jobe innings, pitches, batters-faced, or workload restriction before the scheduled 18:10:00Z first pitch. No direct club declaration was located changing Beau Brieske's or Tyler Kinley's availability. The official Tigers lineup/video surfaces confirmed the matchup and Jobe as the scheduled starter but did not provide a material manager declaration. SOURCE_UNAVAILABLE for qualifying pregame manager/coach media and accessible credentialed beat/local reporting within this lightweight pass."
+          },
+          {
+            "checked_at": "2026-09-19T17:35:28Z",
+            "team": "DET",
+            "teams": [
+              "DET"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/tigers/roster/starting-lineups/1000",
+                "published_at": "2026-09-19"
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/tigers/news",
+                "published_at": "2026-09-19"
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
+                "published_at": "2026-09-19"
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.freep.com/tigers/",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.detroitnews.com/sports/tigers/",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.mlive.com/tigers/",
+                "published_at": null
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL DELTA search, limited to material/superseding information since the prior check at 2026-09-19T14:35:24Z. Official Tigers lineup coverage confirms Jackson Jobe as the listed starter, but no accessible official club or manager/coach pregame media produced a new workload, pitch-count, innings, or availability declaration. Credentialed local beat outlets were specifically checked but their relevant current coverage was unavailable to the research tool; no attributable declaration was recovered. Accordingly, the evidence contract for a negative completed pregame finding is not met."
+          },
+          {
+            "checked_at": "2026-09-19T17:00:00Z",
+            "team": "CWS",
+            "teams": [
+              "CWS"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/tigers/roster/starting-lineups/1000",
+                "published_at": null
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/stories/game-preview/824545",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.dailyherald.com/20260918/chicago-white-sox/column-as-bullpen-usage-nears-record-rate-chicago-white-sox-manager-will-venable-vows-to-stay-the/",
+                "published_at": "2026-09-18T20:56:00-05:00"
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://sports.yahoo.com/articles/column-bullpen-usage-nears-record-002700166.html",
+                "published_at": "2026-09-19T00:27:00Z"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL DELTA search found the confirmed Sept. 19 lineup and Sean Burke as the scheduled White Sox starter, but no new or superseding pregame manager/coach declaration assigning Burke a workload restriction or modifying availability for Taylor, Smith, Martin, Hicks, or Hudson. Manager/coach pregame media specifically addressing those arms was unavailable in the searched official and credentialed-local coverage before first pitch."
           }
         ],
         "declarations": [],
@@ -102,7 +176,7 @@
     },
     "822921": {
       "previous_game_postgame": {
-        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "status": "CONFIRMED",
         "teams": {
           "BOS": {
             "research_status": "COMPLETED",
@@ -151,6 +225,180 @@
                 ],
                 "result": "INCONCLUSIVE",
                 "note": "The September 18, 2026 game was completed, but the reviewed official and accessible local-source material did not establish any attributable Boston postgame declaration plausibly relevant to the September 19 game. The required evidence contract for a completed carry-forward finding was not met."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "TB": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-19T00:00:00Z",
+            "previous_game_pk": 822923,
+            "previous_game_date": "2026-09-18",
+            "passes": [
+              {
+                "checked_at": "2026-09-19T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_name": "MLB.com / Rays game recap",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/rays/news/rays-lose-to-red-sox-ending-six-game-winning-streak",
+                    "checked_for": "September 18 postgame coverage, including direct Kevin Cash comments and game events potentially affecting the following game."
+                  },
+                  {
+                    "source_name": "MLB.com / September 18 game story",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/stories/game/822923/",
+                    "checked_for": "Official game identifier and prior-game coverage."
+                  },
+                  {
+                    "source_name": "Credentialed local/beat reporting",
+                    "source_type": "SOURCE_UNAVAILABLE",
+                    "url": "https://www.mlb.com/rays/news/rays-lose-to-red-sox-ending-six-game-winning-streak",
+                    "checked_for": "No accessible credentialed local/beat postgame report was located with a club-attributed next-game availability, injury, bullpen-rest, or planned-usage declaration relevant to September 19."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "MLB.com reported Tampa Bay's 4-2 loss on September 18 and quoted Kevin Cash on the club's missed scoring opportunities. That comment does not establish a forward-looking availability, workload, injury, or usage constraint relevant to the September 19 game. No carry-forward declaration meeting the evidence contract was located."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      },
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-19T00:00:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-19T00:00:00Z",
+            "team": "TB",
+            "teams": [
+              "TB"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "MLB.com / Tampa Bay Rays",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/rays/video/freddy-peralta-against-the-red-sox-x8896",
+                "checked_for": "Confirmation of Freddy Peralta as Tampa Bay's scheduled starter; no manager or coach workload declaration was published in the available page content."
+              },
+              {
+                "source_name": "MLB.com / Rays game recap",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/rays/news/rays-lose-to-red-sox-ending-six-game-winning-streak",
+                "checked_for": "Prior-night club coverage and Kevin Cash comments; no forward-looking Peralta workload or usage restriction declaration."
+              },
+              {
+                "source_name": "Manager/coach pregame media",
+                "source_type": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/rays/video/freddy-peralta-against-the-red-sox-x8896",
+                "checked_for": "No accessible Kevin Cash or Rays coach pregame media availability containing a Peralta workload, pitch-count, innings, or short-leash declaration was located."
+              },
+              {
+                "source_name": "Credentialed local/beat reporting",
+                "source_type": "SOURCE_UNAVAILABLE",
+                "url": "https://www.mlb.com/rays/news/rays-lose-to-red-sox-ending-six-game-winning-streak",
+                "checked_for": "No accessible credentialed local/beat report before the scheduled first pitch containing a Peralta workload or availability declaration was located."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Freddy Peralta was listed as Tampa Bay's starter, but the required source coverage did not produce a direct manager/coach or credentialed club-attributed declaration addressing workload, restrictions, pitch count, innings, or a short leash. No workload restriction is inferred from his recent usage."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824788": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-19T00:00:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-19T00:00:00Z",
+            "team": "BAL",
+            "teams": [
+              "BAL"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "MLB.com Orioles/Brewers Game Preview",
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/stories/game-preview/824788",
+                "checked_for": "Confirmed Trevor Rogers as Baltimore's scheduled starter; no manager/coach workload or bullpen-availability declaration was present in the accessible preview."
+              },
+              {
+                "source_name": "MLB.com Orioles Hispanic Heritage Night coverage",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/news/orioles-host-hispanic-heritage-night-at-camden-yards",
+                "checked_for": "Same-day Orioles club coverage; no manager/coach declaration regarding Rogers or the listed relievers was present."
+              },
+              {
+                "source_name": "MASN Sports",
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.masnsports.com/blog/entry/orioles-and-brewers-lineups-for-first-game-of-series-at-camden-yards/",
+                "checked_for": "Local credentialed coverage of the series; it identified Rogers as the upcoming starter but did not provide a September 19 manager/coach workload or reliever-availability declaration."
+              },
+              {
+                "source_name": "MLB.com Brewers at Orioles, September 18 game page",
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/video/game/824790",
+                "checked_for": "Prior-game usage context and official game record; no carry-forward Baltimore manager/coach availability declaration located."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No accessible September 19 Baltimore manager/coach pregame media was located within the research window. Official-team and credentialed local coverage were checked, but neither supplied a material declaration on Trevor Rogers' workload or the availability/restriction of Rico Garcia, Yennier Cano, Josh Walker, Grant Wolfram, or Anthony Nunez. SOURCE_UNAVAILABLE for manager/coach pregame media."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "BAL": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-19T00:00:00Z",
+            "previous_game_pk": 824790,
+            "previous_game_date": "2026-09-18",
+            "passes": [
+              {
+                "checked_at": "2026-09-19T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_name": "MLB.com Brewers at Orioles, September 18 game page",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/video/game/824790",
+                    "checked_for": "Official prior-game record and bullpen-use context. Baltimore lost 6-5 in 10 innings; no Orioles manager/coach postgame declaration carrying forward to September 19 was located."
+                  },
+                  {
+                    "source_name": "MLB.com Brewers at Orioles Game Story",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/stories/game/824790/",
+                    "checked_for": "Official game-story coverage; no accessible Baltimore manager/coach postgame comment establishing a next-game starter restriction or reliever unavailability was located."
+                  },
+                  {
+                    "source_name": "The Washington Post/AP game report",
+                    "source_type": "NATIONAL_WIRE",
+                    "url": "https://www.washingtonpost.com/sports/mlb/2026/09/18/brewers-orioles-score/15b62096-b3d6-11f1-92c2-5c918f4a6127_story.html",
+                    "checked_for": "Postgame report; accessible material described the game result but did not provide a Baltimore club declaration relevant to September 19 usage."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The prior-game record establishes use context only and is not treated as hindsight evidence about September 19 availability. No sourced Baltimore manager/coach postgame declaration was located that imposed or removed a workload restriction for Trevor Rogers or a listed reliever."
               }
             ],
             "comments": [],
