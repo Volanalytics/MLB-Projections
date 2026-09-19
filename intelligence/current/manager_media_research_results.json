@@ -3,6 +3,316 @@
   "generated_from_queue_at": "2026-09-19T14:35:04+00:00",
   "items": [
     {
+      "item_id": "postgame:824788:MIL:824790",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_name": "Milwaukee Brewers / MLB.com",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/brewers/news/brewers-beat-orioles-in-10-innings-extend-national-league-lead",
+          "checked_for": "September 18 postgame report and manager-attributed comments relevant to September 19."
+        },
+        {
+          "source_name": "Milwaukee Brewers / MLB.com",
+          "source_type": "MANAGER_POSTGAME_MEDIA",
+          "url": "https://www.mlb.com/brewers/video/pat-murphy-on-orioles-brewers-win-in-extras",
+          "checked_for": "Pat Murphy's September 18 postgame availability."
+        },
+        {
+          "source_name": "Milwaukee Brewers / MLB.com",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/brewers/news/game-notes",
+          "checked_for": "September 19 game notes and carry-forward roster/context."
+        },
+        {
+          "source_name": "Todd Rosiak / Milwaukee Journal Sentinel",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://muckrack.com/todd-rosiak/articles",
+          "checked_for": "September 18-19 Brewers coverage; no separately verifiable material postgame declaration was surfaced in accessible results."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "The prior game was Milwaukee's 6-5, 10-inning win at Baltimore on September 18. The only material, forward-relevant manager declaration located concerned DL Hall's late-season role; no manager-announced injury, rest restriction, or numeric bullpen-use limit was identified. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824790,
+      "today_game_pk": 824788,
+      "team": "MIL",
+      "pass_type": "POSTGAME_TO_NEXT_GAME",
+      "previous_game_pk": 824790,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": "DL Hall",
+          "declaration_type": "BULLPEN_ROLE",
+          "status": "CONFIRMED",
+          "speaker": "Pat Murphy",
+          "speaker_role": "Brewers manager",
+          "statement": "Hall can help us in big situations, just like he did today.",
+          "restriction": "None stated.",
+          "numeric_limit": null,
+          "relevance_to_today_game": "Murphy's statement supports Hall as a trusted option for high-leverage situations entering the next game; it does not establish availability or a usage limit.",
+          "source_url": "https://www.mlb.com/brewers/news/brewers-beat-orioles-in-10-innings-extend-national-league-lead"
+        }
+      ],
+      "comments": [
+        {
+          "subject": "DL Hall",
+          "status": "CONFIRMED",
+          "comment": "The official postgame report said Hall provided two scoreless innings against Baltimore and quoted Murphy describing him as able to help in big situations. This is a role/trust comment, not an availability declaration for September 19.",
+          "source_url": "https://www.mlb.com/brewers/news/brewers-beat-orioles-in-10-innings-extend-national-league-lead"
+        },
+        {
+          "subject": "Pat Murphy postgame media",
+          "status": "CONFIRMED",
+          "comment": "A Brewers-hosted September 18 Murphy postgame video was available and checked. No additional clearly verifiable forward-looking restriction, injury update, or numeric pitching limit was established from the accessible listing/result.",
+          "source_url": "https://www.mlb.com/brewers/video/pat-murphy-on-orioles-brewers-win-in-extras"
+        }
+      ],
+      "queue_fingerprint": "8980d38d2377acff561af0759f48c365a18555f57faaf784a7532e939c585423"
+    },
+    {
+      "item_id": "postgame:824380:ATH:824383",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T23:36:00+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_GAME_PAGE",
+          "source_name": "MLB.com Film Room",
+          "url": "https://www.mlb.com/video/game/824383",
+          "published_at": "2026-09-18",
+          "relevance": "Official game page confirmed the Athletics' September 18 game at Cleveland was completed, 5-3 Guardians."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_SOURCE",
+          "source_name": "Athletics on MLB.com",
+          "url": "https://www.mlb.com/athletics/video/joey-cantillo-ball-to-lawrence-butler-capture-review",
+          "published_at": "2026-09-18",
+          "relevance": "Official Athletics-hosted game video was reviewed; it did not provide a postgame manager/coach declaration or a forward-looking availability restriction."
+        },
+        {
+          "source_type": "OFFICIAL_CLUB_NEWS",
+          "source_name": "Cleveland Guardians on MLB.com",
+          "url": "https://www.mlb.com/guardians/news",
+          "published_at": "2026-09-18",
+          "relevance": "Official opponent-club news index was reviewed for game-related reporting and did not yield an Athletics manager/coach postgame declaration relevant to the next game."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "The official-game and club-source review confirmed completion of the September 18 game, but did not establish a material Athletics postgame declaration plausibly carrying forward to the September 19 game. Manager/coach postgame media was not available in the searched official results, and no credentialed Athletics beat/local postgame report containing an attributable relevant declaration was located; therefore the negative-evidence contract for NO_MATERIAL_DECLARATION_FOUND is not met. | VALIDATION: invalid result None",
+      "game_pk": 824383,
+      "today_game_pk": 824380,
+      "team": "ATH",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 824383,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "5e68def8cb385fcc706bc6e907283c8fbf4626cd6995980316c45a389dd2518a"
+    },
+    {
+      "item_id": "postgame:823330:KC:823331",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T23:36:03Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Royals/Pirates game video and recap hub",
+          "url": "https://www.mlb.com/video/game/823331",
+          "checked_for": "Official confirmation of the September 18 game outcome and Royals postgame material."
+        },
+        {
+          "source_type": "MANAGER_POSTGAME_MEDIA",
+          "source_name": "Kansas City Star postgame report, syndicated by Yahoo Sports",
+          "url": "https://sports.yahoo.com/articles/royals-squandered-4-run-lead-014849604.html",
+          "checked_for": "Directly attributed Matt Quatraro postgame comments following Royals-Pirates on September 18."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Kansas City Star Royals coverage",
+          "url": "https://www.kansascity.com/sports/mlb/kansas-city-royals/",
+          "checked_for": "Credentialed local postgame coverage of the September 18 Royals-Pirates game."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "The September 18 game was final before this review (Pirates 8, Royals 5). The available directly attributed Matt Quatraro postgame remarks addressed missed opportunities in the seventh inning and credited Pittsburgh hitter Spencer Horwitz; they did not announce a next-game lineup, injury, pitching-usage, bullpen-availability, or role restriction relevant to the September 19 game. No carry-forward material declaration was identified. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823331,
+      "today_game_pk": 823330,
+      "team": "KC",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 823331,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "47dbc046f9db217bdfd4f9ce54c8289110abc52bebcf528b67bd5b821ceb5a9e"
+    },
+    {
+      "item_id": "postgame:823330:PIT:823331",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19",
+      "sources_checked": [
+        {
+          "source_name": "Pittsburgh Pirates Game Notes",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/pirates/news/game-notes",
+          "published_or_accessed_date": "2026-09-19"
+        },
+        {
+          "source_name": "MLB Film Room: Royals at Pirates, Game 823331",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/video/game/823331",
+          "published_or_accessed_date": "2026-09-19"
+        },
+        {
+          "source_name": "Pittsburgh Pirates: Konnor Griffin on four hits in Pirates' comeback win",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/pirates/video/konnor-griffin-on-four-hits-in-pirates-comeback-win",
+          "published_or_accessed_date": "2026-09-19"
+        },
+        {
+          "source_name": "Pittsburgh Post-Gazette report, syndicated by ArcaMax",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://ezreply.arcamax.com/sports/baseball/s-4301383",
+          "published_or_accessed_date": "2026-09-18"
+        },
+        {
+          "source_name": "Associated Press game recap, published by The Washington Post",
+          "source_type": "WIRE_SERVICE",
+          "url": "https://www.washingtonpost.com/sports/mlb/2026/09/18/royals-pirates-score/e61ebe12-b3c9-11f1-92c2-5c918f4a6127_story.html",
+          "published_or_accessed_date": "2026-09-18"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Reviewed official club/MLB postgame material and credentialed local/wire coverage available after the September 18 game and before the September 19 game. No forward-looking Pirates availability, injury, starter-usage, bullpen-availability, lineup, or role declaration attributable to manager Don Kelly, a coach, or the club was located. Manager/coach postgame media with a material next-game declaration was SOURCE_UNAVAILABLE in the sources reviewed. | VALIDATION: invalid result 'PIT won 8-5 vs. KC'",
+      "game_pk": 823331,
+      "today_game_pk": 823330,
+      "team": "PIT",
+      "pass_type": "NO_MATERIAL_DECLARATION_FOUND",
+      "previous_game_pk": 823331,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "f37b216e03b7a259241550b6b60149d768b349c01a04f7aa8960616cbcdde626"
+    },
+    {
+      "item_id": "postgame:824461:CHC:824463",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T23:37:05+00:00",
+      "sources_checked": [
+        {
+          "source_name": "Chicago Cubs / MLB.com",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/cubs/video/craig-counsell-on-holmes-start-missed-opportunities",
+          "published_at": "2026-09-18",
+          "accessed_at": "2026-09-19",
+          "finding": "Official postgame manager-media item confirms Craig Counsell addressed Clay Holmes' start and the Cubs' missed offensive opportunities after the 6-4 loss. The accessible indexed material did not provide a verbatim or sufficiently specific forward-looking declaration to carry into the September 19 game."
+        },
+        {
+          "source_name": "MLB.com",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/gameday/cubs-vs-reds/2026/09/18/824463/final/box",
+          "published_at": "2026-09-18",
+          "accessed_at": "2026-09-19",
+          "finding": "Official final game record for Cubs at Reds, game 824463."
+        },
+        {
+          "source_name": "Chicago Cubs / MLB.com",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/cubs/roster/starting-lineups",
+          "published_at": "2026-09-19",
+          "accessed_at": "2026-09-19",
+          "finding": "Official September 19 lineup page shows the Cubs' announced lineup for the next game, but does not establish a postgame declaration explaining any prior-game carry-forward restriction or availability decision."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Official club/MLB material and official postgame manager-media coverage were located, but the accessible evidence did not contain a specific, material manager/club declaration plausibly affecting Chicago's September 19 deployment. The required credentialed beat/local postgame coverage could not be independently retrieved.",
+      "game_pk": 824461,
+      "today_game_pk": 824461,
+      "team": "CHC",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 824463,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "speaker": "Craig Counsell",
+          "speaker_role": "Cubs manager",
+          "evidence_label": "CONFIRMED",
+          "topic": "Postgame availability of manager comments",
+          "comment": "The official Cubs postgame item identifies Counsell as discussing Clay Holmes' start and missed offensive opportunities after the September 18 loss, but its accessible description does not provide a specific carry-forward roster, health, pitching-usage, or workload declaration.",
+          "source_url": "https://www.mlb.com/cubs/video/craig-counsell-on-holmes-start-missed-opportunities"
+        }
+      ],
+      "queue_fingerprint": "aa21490d4c5e96bbc14fc468f47e6d46373d61ec42fb64e3f43885d8d48d949f"
+    },
+    {
+      "item_id": "postgame:824461:CIN:824463",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_GAME_PAGE",
+          "source_name": "MLB Film Room",
+          "url": "https://www.mlb.com/video/game/824463",
+          "checked_for": "Final score, pitching usage, and linked postgame coverage."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Cincinnati Reds / MLB.com",
+          "url": "https://www.mlb.com/reds",
+          "checked_for": "Club-posted postgame video and manager availability."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_GAME_NOTES",
+          "source_name": "Cincinnati Reds Game Notes",
+          "url": "https://www.mlb.com/reds/news/game-notes",
+          "checked_for": "Official club game-notes availability."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Web search of Cincinnati postgame coverage",
+          "url": "https://www.google.com/search?q=Cincinnati+Reds+September+18+2026+Cubs+postgame+manager+quotes",
+          "checked_for": "Credentialed local/beat postgame reporting; no qualifying source was located in the available results."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "MLB's official game-video page identified postgame coverage headlined \"Burns learning to live with truncated starts, innings limit.\" The available official page did not expose a numeric threshold or a direct attributable manager/coach quote; no numeric workload limit is asserted. Burns threw 3.0 innings in the September 18 game, so the restriction is plausibly relevant to future usage but does not itself establish a September 19 availability declaration. | VALIDATION: invalid result 'CIN 6, CHC 4'",
+      "game_pk": 824463,
+      "today_game_pk": 824461,
+      "team": "CIN",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 824463,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": "Chase Burns",
+          "declaration": "Burns was characterized in official MLB postgame coverage as operating with an innings limit and truncated starts.",
+          "normalized_restriction": "innings_limit_or_truncated_start",
+          "numeric_limit": null,
+          "speaker": null,
+          "evidence_label": "PROVISIONAL",
+          "source_name": "MLB Film Room",
+          "source_url": "https://www.mlb.com/video/game/824463",
+          "source_date": "2026-09-18"
+        }
+      ],
+      "comments": [
+        {
+          "subject": "Chase Burns",
+          "comment": "Burns' 3.0-inning outing in the September 18 game is consistent with the official MLB postgame coverage describing an innings-limit/truncated-start context. This is carried forward only as a workload-management consideration, not as a declaration of his availability or role for September 19.",
+          "evidence_label": "INFERENCE",
+          "source_name": "MLB Film Room",
+          "source_url": "https://www.mlb.com/video/game/824463"
+        }
+      ],
+      "queue_fingerprint": "fd54885eecb164603faccc640f512961bc70d8d31db914e5a24abca7d28b83b3"
+    },
+    {
       "item_id": "postgame:824545:CWS:824547",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": "2026-09-19T20:35:18Z",
@@ -38,46 +348,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "9b6adc536fdab4e54015e3ed266086c8e20a36be083b39c2220e0e0c015394d3"
-    },
-    {
-      "item_id": "postgame:824788:MIL:824790",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-19T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB_GAME_STORY",
-          "source_name": "MLB.com",
-          "url": "https://www.mlb.com/stories/game/824790/",
-          "published_at": "2026-09-18",
-          "summary": "Official game story confirmed Milwaukee's 6-5, 10-inning win and the late-game pitching usage, including Trevor Megill in the ninth and Chad Patrick in the 10th."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
-          "source_name": "Milwaukee Brewers / MLB.com",
-          "url": "https://www.mlb.com/brewers/video/pat-murphy-on-orioles-brewers-win-in-extras",
-          "published_at": "2026-09-18",
-          "summary": "Postgame manager media was reviewed; the available description identifies Murphy discussing the Orioles, their fans, and the extra-inning win."
-        },
-        {
-          "source_type": "NATIONAL_WIRE_RECAP",
-          "source_name": "Associated Press via CBS Sports",
-          "url": "https://hubapi.cbssports.com/mlb/gametracker/recap/MLB_20260918_MIL%40BAL/",
-          "published_at": "2026-09-18",
-          "summary": "Recap confirmed Patrick recorded the final three outs for his sixth save."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "No material Milwaukee manager/coach postgame declaration was found that plausibly changes the September 19 game projection. The official postgame manager item available described general reaction to the Orioles and the extra-inning win, not an injury, lineup, starter, workload restriction, or availability declaration. A credentialed Milwaukee beat/local search was attempted; no accessible, attributable postgame report containing a relevant club declaration was located. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824790,
-      "today_game_pk": 824788,
-      "team": "MIL",
-      "pass_type": "PREVIOUS_GAME_POSTGAME",
-      "previous_game_pk": 824790,
-      "previous_game_date": "2026-09-18",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "8980d38d2377acff561af0759f48c365a18555f57faaf784a7532e939c585423"
     },
     {
       "item_id": "postgame:823571:PHI:823572",
@@ -211,68 +481,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "9fb83b028e67ecfd1fdcab22e59058954b156f836b77c0582a243417497ea3ed"
-    },
-    {
-      "item_id": "postgame:824380:ATH:824383",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-19T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com condensed game",
-          "url": "https://www.mlb.com/guardians/video/condensed-game-ath-cle-9-18-26",
-          "published_at": "2026-09-18",
-          "finding": "Official game coverage for Athletics at Guardians on September 18."
-        },
-        {
-          "source_type": "MANAGER_POSTGAME_MEDIA",
-          "source_name": "NBC Sports Bay Area via Yahoo Sports",
-          "url": "https://sports.yahoo.com/videos/mark-kotsay-mason-barnett-recap-095124896.html",
-          "published_at": "2026-09-19T09:51:00Z",
-          "finding": "Mark Kotsay spoke after the Athletics' September 18 loss at Cleveland and said the offense did not add on after Zack Gelof's early three-run hit."
-        },
-        {
-          "source_type": "NATIONAL_WIRE",
-          "source_name": "CBS Sports / Field Level Media",
-          "url": "https://www.cbssports.com/mlb/gametracker/live/MLB_20260919_ATH%40CLE/?league=mlb",
-          "published_at": "2026-09-19",
-          "finding": "Reported and attributed Kotsay's postgame assessment: the Athletics did not add on after Zack Gelof's big hit."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Carried forward only the manager's general offensive assessment. No prior-game evidence established a Jacob Lopez workload restriction or other starter-use limitation for September 19. | VALIDATION: invalid result 'Athletics lost 5-3 to Cleveland; result is recorded for context only and was not used as projection evidence for the September 19 game.'",
-      "game_pk": null,
-      "today_game_pk": 824380,
-      "team": "ATH",
-      "pass_type": null,
-      "previous_game_pk": 824383,
-      "previous_game_date": "2026-09-18",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "speaker": "Mark Kotsay",
-          "role": "Athletics manager",
-          "timing": "postgame, September 18, 2026",
-          "topic": "team offense",
-          "statement": "Unfortunately, our offense couldn't add on after a big hit by Zack.",
-          "evidence_label": "CONFIRMED",
-          "restriction": {
-            "restriction_flag": false
-          }
-        }
-      ],
-      "comments": [
-        {
-          "speaker": "Mark Kotsay",
-          "role": "Athletics manager",
-          "timing": "postgame, September 18, 2026",
-          "comment_type": "OFFENSIVE_ASSESSMENT",
-          "text": "Unfortunately, our offense couldn't add on after a big hit by Zack.",
-          "evidence_label": "CONFIRMED",
-          "projection_relevance": "General team-offense assessment only; no pitcher workload or lineup-availability restriction was declared."
-        }
-      ],
-      "queue_fingerprint": "5e68def8cb385fcc706bc6e907283c8fbf4626cd6995980316c45a389dd2518a"
     },
     {
       "item_id": "pregame:824380:CLE:EARLY",
@@ -955,7 +1163,7 @@
       "queue_fingerprint": "2b30065eaf5b9cff16ec6be7150439ad9e0fc5193b4a2c9343a1ca39d45fbe0d"
     }
   ],
-  "researched_at": "2026-09-19T20:37:24+00:00",
+  "researched_at": "2026-09-19T23:37:38+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -966,60 +1174,37 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-19T20:37:24+00:00",
+    "last_run_at": "2026-09-19T23:37:38+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 132144,
+      "input_tokens": 137899,
       "cached_input_tokens": 24805,
-      "output_tokens": 7884,
-      "reasoning_tokens": 4051,
-      "total_tokens": 140028,
+      "output_tokens": 7601,
+      "reasoning_tokens": 4555,
+      "total_tokens": 145500,
       "estimated_cost_usd": 0.0
     },
     "audit": [
-      {
-        "team": "CWS",
-        "game_pk": 824545,
-        "items": [
-          "postgame:824545:CWS:824547"
-        ],
-        "response_id": "resp_064c8e4c5839b686016aaef20392f087d2be04e48b57400344",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 63,
-        "usage": {
-          "input_tokens": 21911,
-          "cached_input_tokens": 0,
-          "output_tokens": 838,
-          "reasoning_tokens": 493,
-          "total_tokens": 22749,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 650,
-        "estimated_prompt_tokens": 163,
-        "research_mode": "POSTGAME"
-      },
       {
         "team": "MIL",
         "game_pk": 824788,
         "items": [
           "postgame:824788:MIL:824790"
         ],
-        "response_id": "resp_0838c76232ca3160016aaef216898887d29e6db7a0739c767b",
+        "response_id": "resp_0646bd0e0a675c03016aaf1c33f3b087d29b97727f5992dd3e",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 65,
+        "web_sources_seen": 59,
         "usage": {
-          "input_tokens": 21934,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1249,
-          "reasoning_tokens": 809,
-          "total_tokens": 23183,
+          "input_tokens": 22629,
+          "cached_input_tokens": 0,
+          "output_tokens": 1460,
+          "reasoning_tokens": 876,
+          "total_tokens": 24089,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
           "postgame:824788:MIL:824790": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
+            "invalid result 'MATERIAL_DECLARATION_FOUND'"
           ]
         },
         "tool_budget": 2,
@@ -1028,105 +1213,135 @@
         "research_mode": "POSTGAME"
       },
       {
-        "team": "PHI",
-        "game_pk": 823571,
-        "items": [
-          "postgame:823571:PHI:823572"
-        ],
-        "response_id": "resp_090c5b31c4511ac5016aaef23112b087d2b8db6c04f7183b99",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 40,
-        "usage": {
-          "input_tokens": 23382,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1272,
-          "reasoning_tokens": 751,
-          "total_tokens": 24654,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 648,
-        "estimated_prompt_tokens": 162,
-        "research_mode": "POSTGAME"
-      },
-      {
-        "team": "NYM",
-        "game_pk": 823571,
-        "items": [
-          "postgame:823571:NYM:823572"
-        ],
-        "response_id": "resp_0301ff54e96e4789016aaef24586d487d2bc7eea5eb865d78d",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 50,
-        "usage": {
-          "input_tokens": 20872,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1254,
-          "reasoning_tokens": 708,
-          "total_tokens": 22126,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 648,
-        "estimated_prompt_tokens": 162,
-        "research_mode": "POSTGAME"
-      },
-      {
         "team": "ATH",
         "game_pk": 824380,
         "items": [
-          "pregame:824380:ATH:EARLY",
           "postgame:824380:ATH:824383"
         ],
-        "response_id": "resp_0bc9ced70377deb3016aaef25c70d087d299bb197f51b1d730",
+        "response_id": "resp_08cac46b62f9cb4e016aaf1c4e436c87d280ecd368aa5606a7",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 42,
+        "web_sources_seen": 46,
         "usage": {
-          "input_tokens": 21864,
+          "input_tokens": 21698,
           "cached_input_tokens": 4961,
-          "output_tokens": 1840,
-          "reasoning_tokens": 841,
-          "total_tokens": 23704,
+          "output_tokens": 1113,
+          "reasoning_tokens": 796,
+          "total_tokens": 22811,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:824380:ATH:EARLY": [
-            "invalid result None"
-          ],
           "postgame:824380:ATH:824383": [
-            "invalid result 'Athletics lost 5-3 to Cleveland; result is recorded for context only and was not used as projection evidence for the September 19 game.'"
+            "invalid result None"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1085,
-        "estimated_prompt_tokens": 272,
-        "research_mode": "EARLY"
+        "prompt_chars": 655,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
       },
       {
-        "team": "CLE",
-        "game_pk": 824380,
+        "team": "KC",
+        "game_pk": 823330,
         "items": [
-          "pregame:824380:CLE:EARLY",
-          "postgame:824380:CLE:824383"
+          "postgame:823330:KC:823331"
         ],
-        "response_id": "resp_0dded9f626cb8b80016aaef272384887d29e4f9a783dcac667",
+        "response_id": "resp_05b623fead350c66016aaf1c61a25887d288111f8d762342cb",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 42,
+        "web_sources_seen": 44,
         "usage": {
-          "input_tokens": 22181,
+          "input_tokens": 21442,
           "cached_input_tokens": 4961,
-          "output_tokens": 1431,
-          "reasoning_tokens": 449,
-          "total_tokens": 23612,
+          "output_tokens": 1174,
+          "reasoning_tokens": 764,
+          "total_tokens": 22616,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:823330:KC:823331": [
+            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
+          ]
+        },
+        "tool_budget": 2,
+        "prompt_chars": 647,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "PIT",
+        "game_pk": 823330,
+        "items": [
+          "postgame:823330:PIT:823331"
+        ],
+        "response_id": "resp_0f93551f2004fa2d016aaf1c71dbd087d2a2ad98235af69f7e",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 75,
+        "usage": {
+          "input_tokens": 22372,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1272,
+          "reasoning_tokens": 760,
+          "total_tokens": 23644,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:823330:PIT:823331": [
+            "invalid result 'PIT won 8-5 vs. KC'"
+          ]
+        },
+        "tool_budget": 2,
+        "prompt_chars": 649,
+        "estimated_prompt_tokens": 163,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "CHC",
+        "game_pk": 824461,
+        "items": [
+          "postgame:824461:CHC:824463"
+        ],
+        "response_id": "resp_05a248d5af1d22e9016aaf1c8be9b087d2919fada4ccaeb459",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 32,
+        "usage": {
+          "input_tokens": 24270,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1238,
+          "reasoning_tokens": 629,
+          "total_tokens": 25508,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 1656,
-        "estimated_prompt_tokens": 414,
-        "research_mode": "EARLY"
+        "prompt_chars": 667,
+        "estimated_prompt_tokens": 167,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "CIN",
+        "game_pk": 824461,
+        "items": [
+          "postgame:824461:CIN:824463"
+        ],
+        "response_id": "resp_0869461ff6f2861c016aaf1ca307f087d28d2a98fe5dfad9eb",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 34,
+        "usage": {
+          "input_tokens": 25488,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1344,
+          "reasoning_tokens": 730,
+          "total_tokens": 26832,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:824461:CIN:824463": [
+            "invalid result 'CIN 6, CHC 4'"
+          ]
+        },
+        "tool_budget": 2,
+        "prompt_chars": 667,
+        "estimated_prompt_tokens": 167,
+        "research_mode": "POSTGAME"
       }
     ]
   }
