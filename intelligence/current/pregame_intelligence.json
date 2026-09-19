@@ -1,6 +1,6 @@
 {
   "date": "2026-09-19",
-  "generated_at": "2026-09-19T17:37:24+00:00",
+  "generated_at": "2026-09-19T20:37:25+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "824545": {
@@ -123,7 +123,7 @@
         "source": "manager_media_research.py external research results"
       },
       "previous_game_postgame": {
-        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "status": "CONFIRMED",
         "teams": {
           "DET": {
             "research_status": "COMPLETED",
@@ -161,6 +161,45 @@
                 ],
                 "result": "INCONCLUSIVE",
                 "note": "Official MLB material confirms Detroit's September 18 game against Chicago was completed and that Beau Brieske appeared in it. The official Tigers postgame index lists an A.J. Hinch postgame video, but the accessible index/search material did not expose a usable statement establishing a September 19 restriction, unavailability, injury, or planned usage for Brieske, Kinley, or another Detroit arm. No qualifying credentialed beat/local postgame report carrying a relevant direct attribution was accessible in this pass. The prior-game result itself is not treated as predictive evidence for September 19."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "CWS": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-19T20:35:18Z",
+            "previous_game_pk": 824547,
+            "previous_game_date": "2026-09-18",
+            "passes": [
+              {
+                "checked_at": "2026-09-19T20:35:18Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "MLB.com Game Story — Detroit Tigers at Chicago White Sox, September 18, 2026",
+                    "url": "https://www.mlb.com/stories/game/824547/",
+                    "availability": "AVAILABLE"
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+                    "source_name": "Chicago White Sox manager postgame media search",
+                    "url": "https://www.mlb.com/whitesox",
+                    "availability": "SOURCE_UNAVAILABLE"
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Chicago Sun-Times — \"Losing ugly? Sox blow big early lead and fall to Tigers\"",
+                    "url": "https://chicago.suntimes.com/white-sox/2026/09/18/losing-ugly-sox-blow-big-early-lead-and-lose-to-tigers",
+                    "availability": "AVAILABLE"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The official MLB game story confirms the September 18 game was completed, but the available official-team material did not provide accessible White Sox manager/coach postgame comments. The credentialed local report was checked, but no carry-forward manager declaration or team-confirmed availability/usage restriction for the September 19 game could be verified from the accessible evidence. No projection-relevant declaration is returned."
               }
             ],
             "comments": [],
@@ -410,6 +449,196 @@
           }
         },
         "source": "manager_media_research.py external research results"
+      }
+    },
+    "823571": {
+      "previous_game_postgame": {
+        "status": "CONFIRMED",
+        "teams": {
+          "PHI": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-19T00:00:00Z",
+            "previous_game_pk": 823572,
+            "previous_game_date": "2026-09-18",
+            "passes": [
+              {
+                "checked_at": "2026-09-19T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB_GAME_STORY",
+                    "source_name": "MLB.com Game Story — Phillies at Mets, September 18, 2026",
+                    "url": "https://www.mlb.com/stories/game/823572/",
+                    "availability": "AVAILABLE",
+                    "notes": "Verified the September 18 game events and final score; no carry-forward manager/coach declaration was present in the retrieved game-story content."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB_FILM_ROOM",
+                    "source_name": "MLB.com Film Room — Phillies, Mets, September 18, 2026",
+                    "url": "https://www.mlb.com/video/game/823572",
+                    "availability": "AVAILABLE",
+                    "notes": "Official postgame hub identified a Phillies bullpen-focused recap headline, but the retrieved content did not supply attributable manager/coach remarks or a verified restriction/availability declaration."
+                  },
+                  {
+                    "source_type": "MANAGER_COACH_POSTGAME_MEDIA",
+                    "source_name": "Phillies postgame manager/coach media availability",
+                    "url": "https://www.mlb.com/phillies",
+                    "availability": "SOURCE_UNAVAILABLE",
+                    "notes": "No accessible, attributable Phillies manager/coach postgame transcript or video statement was verified in the available search results."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Philadelphia-area Phillies beat/local postgame coverage",
+                    "url": "https://www.mlb.com/phillies",
+                    "availability": "SOURCE_UNAVAILABLE",
+                    "notes": "No qualifying credentialed local/beat postgame report with a directly attributable carry-forward declaration was verified in the available search results."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The official MLB sources confirm that Philadelphia lost 6-3 at New York on September 18, 2026. However, no verified Phillies manager/coach postgame declaration or credentialed beat/local report established a player-availability, pitching-usage, lineup, injury, or other material carry-forward item for the September 19 game. Because the required manager/coach and credentialed local-source coverage could not be completed, this item does not meet the negative-result evidence contract."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "NYM": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-19T20:36:23Z",
+            "previous_game_pk": 823572,
+            "previous_game_date": "2026-09-18",
+            "passes": [
+              {
+                "checked_at": "2026-09-19T20:36:23Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "New York Mets / MLB.com",
+                    "url": "https://www.mlb.com/mets",
+                    "checked_at": "2026-09-19T20:36:23Z",
+                    "notes": "Official club page recorded the September 18 game as a 6-3 Mets final."
+                  },
+                  {
+                    "source_type": "MANAGER_POSTGAME_MEDIA",
+                    "source_name": "New York Mets / MLB.com",
+                    "url": "https://www.mlb.com/mets/video/andy-green-on-thorton-s-outing-young-and-more",
+                    "checked_at": "2026-09-19T20:36:23Z",
+                    "notes": "Official postgame manager video exists and is described as Andy Green discussing Zac Thornton's outing and Jared Young's update; searchable material did not provide a reliable verbatim statement or sufficient detail to normalize a carry-forward declaration."
+                  },
+                  {
+                    "source_type": "NATIONAL_WIRE",
+                    "source_name": "Associated Press via FOX Sports",
+                    "url": "https://www.foxsports.com/articles/mlb/juan-sotos-homer-leads-mets-to-63-win-that-keeps-phillies-from-taking-over-top-nl-wildcard-spot",
+                    "checked_at": "2026-09-19T20:36:23Z",
+                    "notes": "Game recap confirmed the 6-3 final and reported Thornton's six-inning outing, but did not supply an attributable Mets postgame declaration materially affecting the September 19 game."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "SOURCE_UNAVAILABLE",
+                    "url": "https://www.mlb.com/mets/video/andy-green-on-thorton-s-outing-young-and-more",
+                    "checked_at": "2026-09-19T20:36:23Z",
+                    "notes": "Targeted searches for September 18 Mets-Phillies postgame beat reporting did not return an accessible credentialed local/beat report with an attributable carry-forward Mets declaration before the September 19 first pitch."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The prior game was completed (Mets 6, Phillies 3), but the available official postgame manager-media search result did not expose a sufficiently specific attributable statement to preserve exactly. No accessible credentialed beat/local corroboration was located. No numeric usage or availability restriction is inferred from Zac Thornton's six-inning start."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824380": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-19T20:37:13Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-19T20:37:13Z",
+            "team": "CLE",
+            "teams": [
+              "CLE"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "Cleveland Guardians official site",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/guardians",
+                "checked_at": "2026-09-19T20:37:13Z",
+                "notes": "Official club page confirmed the September 19, 2026 Cleveland-Athletics game and Tanner Bibee as the scheduled starter via same-day game content; no accessible pregame manager/coach media declaration concerning Bibee's workload or availability of Cade Smith, Joey Cantillo, or Hunter Gaddis was located."
+              },
+              {
+                "source_name": "MLB.com Tanner Bibee game video",
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/guardians/video/tanner-bibee-against-the-athletics-x8527",
+                "checked_at": "2026-09-19T20:37:13Z",
+                "notes": "Official same-day game video page identified Bibee against the Athletics but contained no manager or coach workload declaration."
+              },
+              {
+                "source_name": "Cleveland.com Guardians search",
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.cleveland.com/guardians/",
+                "checked_at": "2026-09-19T20:37:13Z",
+                "notes": "SOURCE_UNAVAILABLE: search access was blocked by robots.txt; no report could be reviewed."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No qualifying pregame manager/coach media or accessible credentialed local-beat report was found to establish or rule out a Tanner Bibee workload restriction or specific bullpen availability. The required negative-result evidence coverage was not met because manager/coach pregame media was unavailable and an accessible credentialed local report could not be reviewed."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "CLE": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-19T20:37:13Z",
+            "previous_game_pk": 824383,
+            "previous_game_date": "2026-09-18",
+            "passes": [
+              {
+                "checked_at": "2026-09-19T20:37:13Z",
+                "sources_checked": [
+                  {
+                    "source_name": "MLB.com Athletics at Guardians game page",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/video/game/824383",
+                    "checked_at": "2026-09-19T20:37:13Z",
+                    "notes": "Official game page documented Cleveland's September 18, 2026 win and listed Joey Cantillo as the winning pitcher and Cade Smith as the saving pitcher; it did not provide a postgame declaration about next-game availability."
+                  },
+                  {
+                    "source_name": "Cleveland Guardians official site",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/guardians",
+                    "checked_at": "2026-09-19T20:37:13Z",
+                    "notes": "Official club page carried September 18 game content, including a Stephen Vogt postgame video listing, but no accessible text or attributable declaration was located regarding carry-forward availability for September 19."
+                  },
+                  {
+                    "source_name": "Cleveland.com Guardians search",
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.cleveland.com/guardians/",
+                    "checked_at": "2026-09-19T20:37:13Z",
+                    "notes": "SOURCE_UNAVAILABLE: search access was blocked by robots.txt; no postgame beat report could be reviewed."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Official game materials confirm prior-game usage but did not yield a qualifying postgame manager/coach declaration about September 19 availability. Required coverage for a negative postgame result was incomplete because accessible credentialed local-beat reporting could not be reviewed."
+              }
+            ]
+          }
+        }
       }
     }
   }

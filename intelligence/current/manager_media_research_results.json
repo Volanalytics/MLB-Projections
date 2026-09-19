@@ -3,6 +3,370 @@
   "generated_from_queue_at": "2026-09-19T14:35:04+00:00",
   "items": [
     {
+      "item_id": "postgame:824545:CWS:824547",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T20:35:18Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Game Story — Detroit Tigers at Chicago White Sox, September 18, 2026",
+          "url": "https://www.mlb.com/stories/game/824547/",
+          "availability": "AVAILABLE"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "source_name": "Chicago White Sox manager postgame media search",
+          "url": "https://www.mlb.com/whitesox",
+          "availability": "SOURCE_UNAVAILABLE"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Chicago Sun-Times — \"Losing ugly? Sox blow big early lead and fall to Tigers\"",
+          "url": "https://chicago.suntimes.com/white-sox/2026/09/18/losing-ugly-sox-blow-big-early-lead-and-lose-to-tigers",
+          "availability": "AVAILABLE"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The official MLB game story confirms the September 18 game was completed, but the available official-team material did not provide accessible White Sox manager/coach postgame comments. The credentialed local report was checked, but no carry-forward manager declaration or team-confirmed availability/usage restriction for the September 19 game could be verified from the accessible evidence. No projection-relevant declaration is returned.",
+      "game_pk": 824547,
+      "today_game_pk": 824545,
+      "team": "CWS",
+      "pass_type": "POSTGAME_TO_NEXT_GAME",
+      "previous_game_pk": 824547,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "9b6adc536fdab4e54015e3ed266086c8e20a36be083b39c2220e0e0c015394d3"
+    },
+    {
+      "item_id": "postgame:824788:MIL:824790",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_GAME_STORY",
+          "source_name": "MLB.com",
+          "url": "https://www.mlb.com/stories/game/824790/",
+          "published_at": "2026-09-18",
+          "summary": "Official game story confirmed Milwaukee's 6-5, 10-inning win and the late-game pitching usage, including Trevor Megill in the ninth and Chad Patrick in the 10th."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "source_name": "Milwaukee Brewers / MLB.com",
+          "url": "https://www.mlb.com/brewers/video/pat-murphy-on-orioles-brewers-win-in-extras",
+          "published_at": "2026-09-18",
+          "summary": "Postgame manager media was reviewed; the available description identifies Murphy discussing the Orioles, their fans, and the extra-inning win."
+        },
+        {
+          "source_type": "NATIONAL_WIRE_RECAP",
+          "source_name": "Associated Press via CBS Sports",
+          "url": "https://hubapi.cbssports.com/mlb/gametracker/recap/MLB_20260918_MIL%40BAL/",
+          "published_at": "2026-09-18",
+          "summary": "Recap confirmed Patrick recorded the final three outs for his sixth save."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "No material Milwaukee manager/coach postgame declaration was found that plausibly changes the September 19 game projection. The official postgame manager item available described general reaction to the Orioles and the extra-inning win, not an injury, lineup, starter, workload restriction, or availability declaration. A credentialed Milwaukee beat/local search was attempted; no accessible, attributable postgame report containing a relevant club declaration was located. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824790,
+      "today_game_pk": 824788,
+      "team": "MIL",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 824790,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "8980d38d2377acff561af0759f48c365a18555f57faaf784a7532e939c585423"
+    },
+    {
+      "item_id": "postgame:823571:PHI:823572",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_GAME_STORY",
+          "source_name": "MLB.com Game Story — Phillies at Mets, September 18, 2026",
+          "url": "https://www.mlb.com/stories/game/823572/",
+          "availability": "AVAILABLE",
+          "notes": "Verified the September 18 game events and final score; no carry-forward manager/coach declaration was present in the retrieved game-story content."
+        },
+        {
+          "source_type": "OFFICIAL_MLB_FILM_ROOM",
+          "source_name": "MLB.com Film Room — Phillies, Mets, September 18, 2026",
+          "url": "https://www.mlb.com/video/game/823572",
+          "availability": "AVAILABLE",
+          "notes": "Official postgame hub identified a Phillies bullpen-focused recap headline, but the retrieved content did not supply attributable manager/coach remarks or a verified restriction/availability declaration."
+        },
+        {
+          "source_type": "MANAGER_COACH_POSTGAME_MEDIA",
+          "source_name": "Phillies postgame manager/coach media availability",
+          "url": "https://www.mlb.com/phillies",
+          "availability": "SOURCE_UNAVAILABLE",
+          "notes": "No accessible, attributable Phillies manager/coach postgame transcript or video statement was verified in the available search results."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Philadelphia-area Phillies beat/local postgame coverage",
+          "url": "https://www.mlb.com/phillies",
+          "availability": "SOURCE_UNAVAILABLE",
+          "notes": "No qualifying credentialed local/beat postgame report with a directly attributable carry-forward declaration was verified in the available search results."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The official MLB sources confirm that Philadelphia lost 6-3 at New York on September 18, 2026. However, no verified Phillies manager/coach postgame declaration or credentialed beat/local report established a player-availability, pitching-usage, lineup, injury, or other material carry-forward item for the September 19 game. Because the required manager/coach and credentialed local-source coverage could not be completed, this item does not meet the negative-result evidence contract.",
+      "game_pk": 823572,
+      "today_game_pk": 823571,
+      "team": "PHI",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 823572,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "ff0c4439df1cf1eb0e1a0109980aed67c8072c402f8dbbc5ee811aeab389e9de"
+    },
+    {
+      "item_id": "postgame:823571:NYM:823572",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T20:36:23Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "New York Mets / MLB.com",
+          "url": "https://www.mlb.com/mets",
+          "checked_at": "2026-09-19T20:36:23Z",
+          "notes": "Official club page recorded the September 18 game as a 6-3 Mets final."
+        },
+        {
+          "source_type": "MANAGER_POSTGAME_MEDIA",
+          "source_name": "New York Mets / MLB.com",
+          "url": "https://www.mlb.com/mets/video/andy-green-on-thorton-s-outing-young-and-more",
+          "checked_at": "2026-09-19T20:36:23Z",
+          "notes": "Official postgame manager video exists and is described as Andy Green discussing Zac Thornton's outing and Jared Young's update; searchable material did not provide a reliable verbatim statement or sufficient detail to normalize a carry-forward declaration."
+        },
+        {
+          "source_type": "NATIONAL_WIRE",
+          "source_name": "Associated Press via FOX Sports",
+          "url": "https://www.foxsports.com/articles/mlb/juan-sotos-homer-leads-mets-to-63-win-that-keeps-phillies-from-taking-over-top-nl-wildcard-spot",
+          "checked_at": "2026-09-19T20:36:23Z",
+          "notes": "Game recap confirmed the 6-3 final and reported Thornton's six-inning outing, but did not supply an attributable Mets postgame declaration materially affecting the September 19 game."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "SOURCE_UNAVAILABLE",
+          "url": "https://www.mlb.com/mets/video/andy-green-on-thorton-s-outing-young-and-more",
+          "checked_at": "2026-09-19T20:36:23Z",
+          "notes": "Targeted searches for September 18 Mets-Phillies postgame beat reporting did not return an accessible credentialed local/beat report with an attributable carry-forward Mets declaration before the September 19 first pitch."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The prior game was completed (Mets 6, Phillies 3), but the available official postgame manager-media search result did not expose a sufficiently specific attributable statement to preserve exactly. No accessible credentialed beat/local corroboration was located. No numeric usage or availability restriction is inferred from Zac Thornton's six-inning start.",
+      "game_pk": 823572,
+      "today_game_pk": 823571,
+      "team": "NYM",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 823572,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "67f368ba5e415c7fb3cd8caaf3a4591ce077b52e515f276b3f08c465c2741706"
+    },
+    {
+      "item_id": "pregame:824380:ATH:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-19T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com game preview",
+          "url": "https://www.mlb.com/stories/game-preview/824380",
+          "published_at": null,
+          "finding": "Confirmed Jacob Lopez as Athletics' probable starter for the September 19 game at Cleveland; no manager workload declaration was available in the preview."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "SOURCE_UNAVAILABLE",
+          "url": "https://sports.yahoo.com/videos/mark-kotsay-details-athletics-pitching-094353152.html",
+          "published_at": "2026-09-19T09:43:00Z",
+          "finding": "Available Mark Kotsay media was postgame from September 18, not pregame media for Jacob Lopez's September 19 start."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Search coverage review",
+          "url": "https://sports.yahoo.com/articles/guardians-look-keep-home-win-075506991.html",
+          "published_at": "2026-09-19T07:55:00Z",
+          "finding": "Credentialed/local-search review located probable-pitcher coverage but no attributable Athletics manager or coach pregame declaration concerning Lopez's workload, restriction, pitch count, innings, or leash."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "No pregame manager/coach statement establishing a Jacob Lopez workload plan, restriction, pitch count, innings target, batters-faced target, or shortened leash was located before the scheduled 22:10 UTC first pitch. The negative-result evidence contract is not satisfied because no Athletics-specific credentialed beat/local pregame manager-media report was located. | VALIDATION: invalid result None",
+      "game_pk": 824380,
+      "team": "ATH",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "9fb83b028e67ecfd1fdcab22e59058954b156f836b77c0582a243417497ea3ed"
+    },
+    {
+      "item_id": "postgame:824380:ATH:824383",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com condensed game",
+          "url": "https://www.mlb.com/guardians/video/condensed-game-ath-cle-9-18-26",
+          "published_at": "2026-09-18",
+          "finding": "Official game coverage for Athletics at Guardians on September 18."
+        },
+        {
+          "source_type": "MANAGER_POSTGAME_MEDIA",
+          "source_name": "NBC Sports Bay Area via Yahoo Sports",
+          "url": "https://sports.yahoo.com/videos/mark-kotsay-mason-barnett-recap-095124896.html",
+          "published_at": "2026-09-19T09:51:00Z",
+          "finding": "Mark Kotsay spoke after the Athletics' September 18 loss at Cleveland and said the offense did not add on after Zack Gelof's early three-run hit."
+        },
+        {
+          "source_type": "NATIONAL_WIRE",
+          "source_name": "CBS Sports / Field Level Media",
+          "url": "https://www.cbssports.com/mlb/gametracker/live/MLB_20260919_ATH%40CLE/?league=mlb",
+          "published_at": "2026-09-19",
+          "finding": "Reported and attributed Kotsay's postgame assessment: the Athletics did not add on after Zack Gelof's big hit."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Carried forward only the manager's general offensive assessment. No prior-game evidence established a Jacob Lopez workload restriction or other starter-use limitation for September 19. | VALIDATION: invalid result 'Athletics lost 5-3 to Cleveland; result is recorded for context only and was not used as projection evidence for the September 19 game.'",
+      "game_pk": null,
+      "today_game_pk": 824380,
+      "team": "ATH",
+      "pass_type": null,
+      "previous_game_pk": 824383,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "speaker": "Mark Kotsay",
+          "role": "Athletics manager",
+          "timing": "postgame, September 18, 2026",
+          "topic": "team offense",
+          "statement": "Unfortunately, our offense couldn't add on after a big hit by Zack.",
+          "evidence_label": "CONFIRMED",
+          "restriction": {
+            "restriction_flag": false
+          }
+        }
+      ],
+      "comments": [
+        {
+          "speaker": "Mark Kotsay",
+          "role": "Athletics manager",
+          "timing": "postgame, September 18, 2026",
+          "comment_type": "OFFENSIVE_ASSESSMENT",
+          "text": "Unfortunately, our offense couldn't add on after a big hit by Zack.",
+          "evidence_label": "CONFIRMED",
+          "projection_relevance": "General team-offense assessment only; no pitcher workload or lineup-availability restriction was declared."
+        }
+      ],
+      "queue_fingerprint": "5e68def8cb385fcc706bc6e907283c8fbf4626cd6995980316c45a389dd2518a"
+    },
+    {
+      "item_id": "pregame:824380:CLE:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-19T20:37:13Z",
+      "sources_checked": [
+        {
+          "source_name": "Cleveland Guardians official site",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/guardians",
+          "checked_at": "2026-09-19T20:37:13Z",
+          "notes": "Official club page confirmed the September 19, 2026 Cleveland-Athletics game and Tanner Bibee as the scheduled starter via same-day game content; no accessible pregame manager/coach media declaration concerning Bibee's workload or availability of Cade Smith, Joey Cantillo, or Hunter Gaddis was located."
+        },
+        {
+          "source_name": "MLB.com Tanner Bibee game video",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/guardians/video/tanner-bibee-against-the-athletics-x8527",
+          "checked_at": "2026-09-19T20:37:13Z",
+          "notes": "Official same-day game video page identified Bibee against the Athletics but contained no manager or coach workload declaration."
+        },
+        {
+          "source_name": "Cleveland.com Guardians search",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.cleveland.com/guardians/",
+          "checked_at": "2026-09-19T20:37:13Z",
+          "notes": "SOURCE_UNAVAILABLE: search access was blocked by robots.txt; no report could be reviewed."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "No qualifying pregame manager/coach media or accessible credentialed local-beat report was found to establish or rule out a Tanner Bibee workload restriction or specific bullpen availability. The required negative-result evidence coverage was not met because manager/coach pregame media was unavailable and an accessible credentialed local report could not be reviewed.",
+      "game_pk": 824380,
+      "today_game_pk": 824380,
+      "team": "CLE",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "evidence_label": "UNRESOLVED",
+          "subject": "Tanner Bibee; Cade Smith; Joey Cantillo; Hunter Gaddis",
+          "comment": "No material pregame availability or workload declaration was established from qualifying sources before the scheduled first pitch."
+        }
+      ],
+      "queue_fingerprint": "8b365c5d7174dffbcdccbf5db2be61e02f1e9c6871f17621d0e7c9fee89cc481"
+    },
+    {
+      "item_id": "postgame:824380:CLE:824383",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-19T20:37:13Z",
+      "sources_checked": [
+        {
+          "source_name": "MLB.com Athletics at Guardians game page",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/video/game/824383",
+          "checked_at": "2026-09-19T20:37:13Z",
+          "notes": "Official game page documented Cleveland's September 18, 2026 win and listed Joey Cantillo as the winning pitcher and Cade Smith as the saving pitcher; it did not provide a postgame declaration about next-game availability."
+        },
+        {
+          "source_name": "Cleveland Guardians official site",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/guardians",
+          "checked_at": "2026-09-19T20:37:13Z",
+          "notes": "Official club page carried September 18 game content, including a Stephen Vogt postgame video listing, but no accessible text or attributable declaration was located regarding carry-forward availability for September 19."
+        },
+        {
+          "source_name": "Cleveland.com Guardians search",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.cleveland.com/guardians/",
+          "checked_at": "2026-09-19T20:37:13Z",
+          "notes": "SOURCE_UNAVAILABLE: search access was blocked by robots.txt; no postgame beat report could be reviewed."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Official game materials confirm prior-game usage but did not yield a qualifying postgame manager/coach declaration about September 19 availability. Required coverage for a negative postgame result was incomplete because accessible credentialed local-beat reporting could not be reviewed.",
+      "game_pk": 824383,
+      "today_game_pk": 824380,
+      "team": "CLE",
+      "pass_type": null,
+      "previous_game_pk": 824383,
+      "previous_game_date": "2026-09-18",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "evidence_label": "UNRESOLVED",
+          "subject": "Cade Smith; Joey Cantillo; Hunter Gaddis",
+          "comment": "No qualifying postgame declaration was established that materially changes projected availability for the September 19 game. Prior-game result and usage were not treated as hindsight evidence for the next-game projection."
+        }
+      ],
+      "queue_fingerprint": "a888fc1a2bf89ac2263b881857bf3c3911690f7b4334448f554881fbcb71b1fd"
+    },
+    {
       "item_id": "pregame:824545:DET:FINAL",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-19T17:35:28Z",
@@ -107,66 +471,6 @@
       "queue_fingerprint": "73a5313770ca4108415372f806e3f0ba47cf9667edfc576cfe3f63eaa9798685"
     },
     {
-      "item_id": "postgame:824545:CWS:824547",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-19T17:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/stories/game/824547",
-          "published_at": "2026-09-18T23:40:00Z"
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/tigers/roster/starting-lineups/1000",
-          "published_at": null
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.dailyherald.com/20260918/chicago-white-sox/column-as-bullpen-usage-nears-record-rate-chicago-white-sox-manager-will-venable-vows-to-stay-the/",
-          "published_at": "2026-09-18T20:56:00-05:00"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://bancodeprofissionais.com/2026/09/18/chicago-white-sox-will-venable-bullpen/",
-          "published_at": "2026-09-18T19:27:00-05:00"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Carried forward only the postgame injury status plausibly relevant to the Sept. 19 game. The official Sept. 19 lineup does not list Tristan Peters. No direct manager/coach declaration found imposing a next-game workload restriction on the listed White Sox pitchers. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": 824547,
-      "today_game_pk": 824545,
-      "team": "CWS",
-      "pass_type": null,
-      "previous_game_pk": 824547,
-      "previous_game_date": "2026-09-18",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Tristan Peters",
-          "declaration_type": "INJURY_STATUS",
-          "status": "DAY_TO_DAY",
-          "restriction_flag": true,
-          "restriction": "Bruised shoulder/rib after colliding with the outfield wall during the Sept. 18 game.",
-          "evidence_label": "CONFIRMED",
-          "speaker": "Will Venable",
-          "source_url": "https://bancodeprofissionais.com/2026/09/18/chicago-white-sox-will-venable-bullpen/",
-          "published_at": "2026-09-18T19:27:00-05:00"
-        }
-      ],
-      "comments": [
-        {
-          "subject": "Will Venable",
-          "comment": "\"It’s tough, no other way about it.\"",
-          "context": "Postgame reaction to the Sept. 18 loss; not used as workload or availability evidence for Sept. 19.",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://bancodeprofissionais.com/2026/09/18/chicago-white-sox-will-venable-bullpen/",
-          "published_at": "2026-09-18T19:27:00-05:00"
-        }
-      ],
-      "queue_fingerprint": "9b6adc536fdab4e54015e3ed266086c8e20a36be083b39c2220e0e0c015394d3"
-    },
-    {
       "item_id": "pregame:824788:MIL:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-19T00:00:00Z",
@@ -227,62 +531,6 @@
         }
       ],
       "queue_fingerprint": "1d318898d3615c2de724778d6bbfb3d191b42cfce0024e3f8b78a482639ea36d"
-    },
-    {
-      "item_id": "postgame:824788:MIL:824790",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-19T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_name": "MLB.com Game Video Highlights / box-score summary",
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/video/game/824790",
-          "checked_for": "September 18 Brewers-Orioles pitcher usage and game result"
-        },
-        {
-          "source_name": "Milwaukee Brewers / Pat Murphy postgame video",
-          "source_type": "MANAGER_MEDIA",
-          "url": "https://www.mlb.com/brewers/video/pat-murphy-on-orioles-brewers-win-in-extras",
-          "checked_for": "Manager postgame remarks with forward relevance to September 19"
-        },
-        {
-          "source_name": "MLB.com / Adam McCalvy",
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.mlb.com/news/brewers-beat-orioles-in-10-innings-extend-national-league-lead",
-          "checked_for": "Credentialed postgame reporting and attributed club comments"
-        },
-        {
-          "source_name": "MLB.com Game Story",
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/stories/game/824790/",
-          "checked_for": "September 18 late-inning sequence and reliever usage"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The September 18 game ended Milwaukee 6, Baltimore 5 in 10 innings. Trevor Megill was credited with the win after pitching one inning and allowing two earned runs. No qualifying manager/coach statement found that imposed or announced a September 19 availability restriction for Megill or another Milwaukee reliever. The prior-game result itself is not used as projection evidence. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824790,
-      "today_game_pk": 824788,
-      "team": "MIL",
-      "pass_type": null,
-      "previous_game_pk": 824790,
-      "previous_game_date": "2026-09-18",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "subject": "Trevor Megill",
-          "evidence_label": "CONFIRMED",
-          "comment": "Official game materials record Megill pitching one inning in the September 18 game. This confirms prior usage only; it is not a declaration of September 19 availability or restriction.",
-          "source_url": "https://www.mlb.com/video/game/824790"
-        },
-        {
-          "subject": "Pat Murphy postgame media",
-          "evidence_label": "UNRESOLVED",
-          "comment": "The available September 18 Murphy postgame item was checked, but no qualifying forward-looking availability restriction for September 19 was located.",
-          "source_url": "https://www.mlb.com/brewers/video/pat-murphy-on-orioles-brewers-win-in-extras"
-        }
-      ],
-      "queue_fingerprint": "8980d38d2377acff561af0759f48c365a18555f57faaf784a7532e939c585423"
     },
     {
       "item_id": "pregame:824788:BAL:EARLY",
@@ -707,7 +955,7 @@
       "queue_fingerprint": "2b30065eaf5b9cff16ec6be7150439ad9e0fc5193b4a2c9343a1ca39d45fbe0d"
     }
   ],
-  "researched_at": "2026-09-19T17:37:24+00:00",
+  "researched_at": "2026-09-19T20:37:24+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -718,172 +966,166 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-19T17:37:24+00:00",
+    "last_run_at": "2026-09-19T20:37:24+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 141650,
+      "input_tokens": 132144,
       "cached_input_tokens": 24805,
-      "output_tokens": 9500,
-      "reasoning_tokens": 4493,
-      "total_tokens": 151150,
+      "output_tokens": 7884,
+      "reasoning_tokens": 4051,
+      "total_tokens": 140028,
       "estimated_cost_usd": 0.0
     },
     "audit": [
       {
-        "team": "DET",
-        "game_pk": 824545,
-        "items": [
-          "pregame:824545:DET:FINAL"
-        ],
-        "response_id": "resp_0d7a22c904e1fc97016aaec7d766d887d2965ce2336d81703b",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 38,
-        "usage": {
-          "input_tokens": 22155,
-          "cached_input_tokens": 0,
-          "output_tokens": 1111,
-          "reasoning_tokens": 547,
-          "total_tokens": 23266,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 3,
-        "prompt_chars": 1893,
-        "estimated_prompt_tokens": 474,
-        "research_mode": "FINAL_DELTA"
-      },
-      {
         "team": "CWS",
         "game_pk": 824545,
         "items": [
-          "pregame:824545:CWS:FINAL",
           "postgame:824545:CWS:824547"
         ],
-        "response_id": "resp_0a188f6d6cc4ce0e016aaec7e5f60887d2aaeb3074bfafd2c5",
+        "response_id": "resp_064c8e4c5839b686016aaef20392f087d2be04e48b57400344",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 50,
+        "web_sources_seen": 63,
         "usage": {
-          "input_tokens": 32281,
-          "cached_input_tokens": 4961,
-          "output_tokens": 2024,
-          "reasoning_tokens": 1085,
-          "total_tokens": 34305,
+          "input_tokens": 21911,
+          "cached_input_tokens": 0,
+          "output_tokens": 838,
+          "reasoning_tokens": 493,
+          "total_tokens": 22749,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {
-          "postgame:824545:CWS:824547": [
-            "invalid result 'COMPLETED'"
-          ]
-        },
-        "tool_budget": 3,
-        "prompt_chars": 3025,
-        "estimated_prompt_tokens": 757,
-        "research_mode": "FINAL_DELTA"
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 650,
+        "estimated_prompt_tokens": 163,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "MIL",
         "game_pk": 824788,
         "items": [
-          "pregame:824788:MIL:EARLY",
           "postgame:824788:MIL:824790"
         ],
-        "response_id": "resp_095a4388f80425d4016aaec8020b8487d2bd778a561eef8794",
+        "response_id": "resp_0838c76232ca3160016aaef216898887d29e6db7a0739c767b",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 48,
+        "web_sources_seen": 65,
         "usage": {
-          "input_tokens": 22184,
+          "input_tokens": 21934,
           "cached_input_tokens": 4961,
-          "output_tokens": 2069,
-          "reasoning_tokens": 871,
-          "total_tokens": 24253,
+          "output_tokens": 1249,
+          "reasoning_tokens": 809,
+          "total_tokens": 23183,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:824788:MIL:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
           "postgame:824788:MIL:824790": [
             "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1299,
-        "estimated_prompt_tokens": 325,
-        "research_mode": "EARLY"
+        "prompt_chars": 665,
+        "estimated_prompt_tokens": 167,
+        "research_mode": "POSTGAME"
       },
       {
-        "team": "BAL",
-        "game_pk": 824788,
+        "team": "PHI",
+        "game_pk": 823571,
         "items": [
-          "pregame:824788:BAL:EARLY",
-          "postgame:824788:BAL:824790"
+          "postgame:823571:PHI:823572"
         ],
-        "response_id": "resp_030db2849b8ea5b1016aaec81a709487d2af45c02afed14e1d",
+        "response_id": "resp_090c5b31c4511ac5016aaef23112b087d2b8db6c04f7183b99",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 54,
+        "web_sources_seen": 40,
         "usage": {
-          "input_tokens": 21499,
+          "input_tokens": 23382,
           "cached_input_tokens": 4961,
-          "output_tokens": 1564,
-          "reasoning_tokens": 671,
-          "total_tokens": 23063,
+          "output_tokens": 1272,
+          "reasoning_tokens": 751,
+          "total_tokens": 24654,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 2066,
-        "estimated_prompt_tokens": 517,
-        "research_mode": "EARLY"
+        "prompt_chars": 648,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
       },
       {
-        "team": "BOS",
-        "game_pk": 822921,
+        "team": "NYM",
+        "game_pk": 823571,
         "items": [
-          "pregame:822921:BOS:EARLY"
+          "postgame:823571:NYM:823572"
         ],
-        "response_id": "resp_0e77622302b83656016aaec830b7b487d28acd54f68263963a",
+        "response_id": "resp_0301ff54e96e4789016aaef24586d487d2bc7eea5eb865d78d",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 52,
+        "web_sources_seen": 50,
         "usage": {
-          "input_tokens": 21438,
+          "input_tokens": 20872,
           "cached_input_tokens": 4961,
-          "output_tokens": 1155,
-          "reasoning_tokens": 581,
-          "total_tokens": 22593,
+          "output_tokens": 1254,
+          "reasoning_tokens": 708,
+          "total_tokens": 22126,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 648,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "ATH",
+        "game_pk": 824380,
+        "items": [
+          "pregame:824380:ATH:EARLY",
+          "postgame:824380:ATH:824383"
+        ],
+        "response_id": "resp_0bc9ced70377deb3016aaef25c70d087d299bb197f51b1d730",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 42,
+        "usage": {
+          "input_tokens": 21864,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1840,
+          "reasoning_tokens": 841,
+          "total_tokens": 23704,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:822921:BOS:EARLY": [
-            "invalid result 'UNRESOLVED'"
+          "pregame:824380:ATH:EARLY": [
+            "invalid result None"
+          ],
+          "postgame:824380:ATH:824383": [
+            "invalid result 'Athletics lost 5-3 to Cleveland; result is recorded for context only and was not used as projection evidence for the September 19 game.'"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 905,
-        "estimated_prompt_tokens": 227,
+        "prompt_chars": 1085,
+        "estimated_prompt_tokens": 272,
         "research_mode": "EARLY"
       },
       {
-        "team": "TB",
-        "game_pk": 822921,
+        "team": "CLE",
+        "game_pk": 824380,
         "items": [
-          "pregame:822921:TB:EARLY",
-          "postgame:822921:TB:822923"
+          "pregame:824380:CLE:EARLY",
+          "postgame:824380:CLE:824383"
         ],
-        "response_id": "resp_0bf7e10d24fc37ec016aaec841cc8c87d2b278c3b7a2327367",
+        "response_id": "resp_0dded9f626cb8b80016aaef272384887d29e4f9a783dcac667",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 46,
+        "web_sources_seen": 42,
         "usage": {
-          "input_tokens": 22093,
+          "input_tokens": 22181,
           "cached_input_tokens": 4961,
-          "output_tokens": 1577,
-          "reasoning_tokens": 738,
-          "total_tokens": 23670,
+          "output_tokens": 1431,
+          "reasoning_tokens": 449,
+          "total_tokens": 23612,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 1080,
-        "estimated_prompt_tokens": 270,
+        "prompt_chars": 1656,
+        "estimated_prompt_tokens": 414,
         "research_mode": "EARLY"
       }
     ]
