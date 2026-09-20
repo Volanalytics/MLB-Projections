@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "generated_at": "2026-09-20T20:36:02+00:00",
+  "generated_at": "2026-09-20T23:36:07+00:00",
   "db": "mlb_statcast.db",
   "state_file": "docs\\context\\pregame_state_2026-09-20.json",
   "architecture": {
@@ -25,7 +25,7 @@
     "games": 15,
     "pipeline_complete_games": 9,
     "pipeline_blockers": 32,
-    "intelligence_tasks": 83,
+    "intelligence_tasks": 82,
     "intelligence_readiness": {
       "EARLY": 0,
       "PARTIAL": 6,
@@ -33,11 +33,11 @@
       "FINAL": 9
     },
     "phases": {
-      "PRE_GAME": 2,
-      "LIVE": 12,
-      "FINAL": 1
+      "PRE_GAME": 0,
+      "LIVE": 2,
+      "FINAL": 13
     },
-    "persistent_state_runs": 6
+    "persistent_state_runs": 8
   },
   "pipeline_blockers": [
     {
@@ -188,12 +188,12 @@
     {
       "game_pk": 824789,
       "field": "home_plate_umpire",
-      "status": "NOT_YET_AVAILABLE"
+      "status": "MISSED_PREGAME_CAPTURE"
     },
     {
       "game_pk": 824789,
       "field": "weather",
-      "status": "NOT_YET_AVAILABLE"
+      "status": "MISSED_PREGAME_CAPTURE"
     },
     {
       "game_pk": 824789,
@@ -207,15 +207,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T17:10:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Citi Field",
       "away_team": "PHI",
       "home_team": "NYM",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 2,
         "last_pregame_run_at": "2026-09-20T14:37:43+00:00",
         "frozen": true,
@@ -289,8 +289,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -361,8 +361,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -379,8 +379,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -397,25 +397,25 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "reason": "No eligible pregame umpire was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame umpire was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "weather": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "reason": "No eligible pregame weather was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame weather was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
@@ -431,8 +431,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -564,8 +564,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -687,8 +687,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -853,8 +853,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -1014,8 +1014,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -1038,8 +1038,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -1054,8 +1054,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -1080,8 +1080,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -1106,8 +1106,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -1172,8 +1172,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -1228,15 +1228,15 @@
         "freshness": {
           "status": "FROZEN_PREGAME",
           "last_checked_at": "2026-09-20T14:36:00+00:00",
-          "age_minutes": 360.0,
+          "age_minutes": 540.1,
           "minutes_to_first_pitch": null
         },
         "reconciliation": [],
         "preservation_status": "PRESERVED_PREGAME",
         "_current_retrieval": {
           "status": "COMPLETED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market": {
@@ -1280,8 +1280,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -1414,15 +1414,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T17:35:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "PNC Park",
       "away_team": "KC",
       "home_team": "PIT",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 2,
         "last_pregame_run_at": "2026-09-20T14:37:43+00:00",
         "frozen": true,
@@ -1496,8 +1496,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -1568,8 +1568,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -1586,8 +1586,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -1604,25 +1604,25 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "reason": "No eligible pregame umpire was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame umpire was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "weather": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "reason": "No eligible pregame weather was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame weather was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
@@ -1638,8 +1638,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -1761,8 +1761,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -1894,8 +1894,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -2042,8 +2042,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -2318,8 +2318,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -2342,8 +2342,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -2358,8 +2358,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -2384,8 +2384,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -2410,8 +2410,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -2492,8 +2492,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -2552,15 +2552,15 @@
         "freshness": {
           "status": "FROZEN_PREGAME",
           "last_checked_at": "2026-09-20T14:36:33Z",
-          "age_minutes": 359.5,
+          "age_minutes": 539.6,
           "minutes_to_first_pitch": null
         },
         "reconciliation": [],
         "preservation_status": "PRESERVED_PREGAME",
         "_current_retrieval": {
           "status": "COMPLETED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market": {
@@ -2604,8 +2604,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -2744,9 +2744,9 @@
       "home_team": "TB",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
+        "last_run_at": "2026-09-20T23:36:07+00:00",
         "current_phase": "FINAL",
-        "run_count": 6,
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -2820,7 +2820,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -2892,7 +2892,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -2910,7 +2910,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -2928,7 +2928,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -2947,7 +2947,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -2970,7 +2970,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -2986,7 +2986,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3099,7 +3099,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3222,7 +3222,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3375,7 +3375,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3558,7 +3558,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3582,7 +3582,7 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3598,7 +3598,7 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3624,7 +3624,7 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3650,7 +3650,7 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3718,7 +3718,7 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3836,14 +3836,14 @@
         "freshness": {
           "status": "FROZEN_PREGAME",
           "last_checked_at": "2026-09-20T17:36:36Z",
-          "age_minutes": 179.4,
+          "age_minutes": 359.5,
           "minutes_to_first_pitch": null
         },
         "reconciliation": [],
         "preservation_status": "PRESERVED_PREGAME",
         "_current_retrieval": {
           "status": "COMPLETED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         }
       },
@@ -3888,7 +3888,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
+          "observed_at": "2026-09-20T23:36:07+00:00",
           "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
@@ -4008,15 +4008,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T17:40:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Progressive Field",
       "away_team": "ATH",
       "home_team": "CLE",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -4090,8 +4090,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -4162,8 +4162,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -4180,8 +4180,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -4198,8 +4198,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -4217,8 +4217,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -4240,8 +4240,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -4256,8 +4256,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -4399,8 +4399,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -4532,8 +4532,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -4711,8 +4711,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -4914,8 +4914,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -4938,8 +4938,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -4954,8 +4954,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -4980,8 +4980,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -5006,8 +5006,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -5069,8 +5069,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -5148,15 +5148,15 @@
         "freshness": {
           "status": "FROZEN_PREGAME",
           "last_checked_at": "2026-09-20T17:37:25Z",
-          "age_minutes": 178.6,
+          "age_minutes": 358.7,
           "minutes_to_first_pitch": null
         },
         "reconciliation": [],
         "preservation_status": "PRESERVED_PREGAME",
         "_current_retrieval": {
           "status": "COMPLETED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market": {
@@ -5200,8 +5200,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -5320,15 +5320,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T17:40:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Great American Ball Park",
       "away_team": "CHC",
       "home_team": "CIN",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -5402,8 +5402,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -5474,8 +5474,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -5492,8 +5492,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -5510,8 +5510,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -5529,8 +5529,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -5552,8 +5552,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -5568,8 +5568,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -5681,8 +5681,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -5824,8 +5824,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -5946,8 +5946,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -6171,8 +6171,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -6195,8 +6195,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -6211,8 +6211,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -6237,8 +6237,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -6263,8 +6263,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -6300,8 +6300,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -6366,8 +6366,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -6506,15 +6506,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T18:10:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Daikin Park",
       "away_team": "ATL",
       "home_team": "HOU",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -6588,8 +6588,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -6660,8 +6660,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -6678,8 +6678,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -6696,8 +6696,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -6715,8 +6715,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -6738,8 +6738,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -6754,8 +6754,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -6877,8 +6877,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -7000,8 +7000,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -7188,8 +7188,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -7421,8 +7421,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -7445,8 +7445,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -7461,8 +7461,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -7487,8 +7487,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -7513,8 +7513,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -7550,8 +7550,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -7616,8 +7616,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -7756,18 +7756,19 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T18:10:00Z",
-      "status": "Delayed Start",
+      "status": "In Progress",
       "venue": "Rate Field",
       "away_team": "DET",
       "home_team": "CWS",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "PRE_GAME",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "LIVE",
+        "run_count": 8,
         "pregame_run_count": 6,
         "last_pregame_run_at": "2026-09-20T20:36:02+00:00",
-        "frozen": false
+        "frozen": true,
+        "frozen_at": "2026-09-20T23:35:03+00:00"
       },
       "away_lineup": {
         "status": "CONFIRMED",
@@ -7833,7 +7834,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_lineup": {
@@ -7900,7 +7906,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter": {
@@ -7913,7 +7924,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter": {
@@ -7926,7 +7942,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "umpire": {
@@ -7940,7 +7961,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "weather": {
@@ -7958,7 +7984,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "roof": {
@@ -7969,7 +8000,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "NOT_APPLICABLE",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_bullpen": {
@@ -8087,7 +8123,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_bullpen": {
@@ -8205,7 +8246,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_reliever_db": {
@@ -8368,7 +8414,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_reliever_db": {
@@ -8599,7 +8650,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "model_projection": {
@@ -8618,7 +8674,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "market_consensus": {
@@ -8629,7 +8690,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter_workload": {
@@ -8650,7 +8716,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter_workload": {
@@ -8671,7 +8742,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "previous_game_postgame": {
@@ -8703,14 +8779,20 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "manager_media": {
-        "research_status": "NOT_STARTED",
+        "research_status": "MISSED_PREGAME_CAPTURE",
         "last_checked_at": null,
         "passes": [],
         "declarations": [],
+        "preservation_status": "MISSED_PREGAME_CAPTURE",
         "current_assessment": {
           "status": "NOT_RESEARCHED",
           "latest_material_at": null,
@@ -8719,11 +8801,10 @@
         },
         "source": "external intelligence file",
         "freshness": {
-          "status": "NOT_CHECKED",
+          "status": "FROZEN_PREGAME",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": -146.0,
-          "reason": "no completed research pass"
+          "minutes_to_first_pitch": null
         },
         "reconciliation": []
       },
@@ -8743,7 +8824,7 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
         },
         "history_count": 3,
         "first_pregame_quote": {
@@ -8765,7 +8846,13 @@
           "home_ml": -113,
           "captured_at": "2026-09-20T20:26:18+00:00",
           "observed_by_pregame_context_at": "2026-09-20T20:35:03+00:00"
-        }
+        },
+        "_current_retrieval": {
+          "status": "NOT_YET_AVAILABLE",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
+        },
+        "preservation_status": "PRESERVED_PREGAME"
       },
       "market_history": [
         {
@@ -8912,15 +8999,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T18:15:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Busch Stadium",
       "away_team": "WSH",
       "home_team": "STL",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -8994,8 +9081,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -9066,8 +9153,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -9084,8 +9171,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -9102,8 +9189,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -9121,8 +9208,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -9144,8 +9231,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -9160,8 +9247,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -9283,8 +9370,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -9396,8 +9483,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -9596,8 +9683,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -9812,8 +9899,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -9836,8 +9923,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -9852,8 +9939,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -9878,8 +9965,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -9904,8 +9991,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -9941,8 +10028,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -10007,8 +10094,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -10147,15 +10234,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T18:35:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Globe Life Field",
       "away_team": "TOR",
       "home_team": "TEX",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -10229,8 +10316,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -10301,8 +10388,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -10319,8 +10406,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -10337,8 +10424,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -10356,8 +10443,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -10379,8 +10466,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -10395,8 +10482,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -10548,8 +10635,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -10671,8 +10758,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -10876,8 +10963,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -11139,8 +11226,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -11163,8 +11250,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -11179,8 +11266,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -11205,8 +11292,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -11231,8 +11318,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -11268,8 +11355,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -11334,8 +11421,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -11474,15 +11561,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T19:10:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Coors Field",
       "away_team": "SEA",
       "home_team": "COL",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -11556,8 +11643,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -11628,8 +11715,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -11646,8 +11733,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -11664,8 +11751,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -11683,8 +11770,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -11706,8 +11793,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -11722,8 +11809,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -11835,8 +11922,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -11958,8 +12045,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -12119,8 +12206,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -12318,8 +12405,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -12342,8 +12429,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -12358,8 +12445,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -12384,8 +12471,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -12410,8 +12497,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -12447,8 +12534,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -12513,8 +12600,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -12653,15 +12740,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T20:07:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Angel Stadium",
       "away_team": "MIN",
       "home_team": "LAA",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -12735,8 +12822,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -12807,8 +12894,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -12825,8 +12912,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -12843,25 +12930,25 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "reason": "No eligible pregame umpire was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame umpire was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "weather": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "reason": "No eligible pregame weather was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame weather was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
@@ -12877,8 +12964,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -12980,8 +13067,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -13103,8 +13190,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -13405,8 +13492,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -13604,8 +13691,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -13628,8 +13715,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -13644,8 +13731,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -13670,8 +13757,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -13696,8 +13783,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -13733,8 +13820,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -13799,8 +13886,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -13963,15 +14050,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T20:10:00Z",
-      "status": "Warmup",
+      "status": "Final",
       "venue": "Petco Park",
       "away_team": "MIA",
       "home_team": "SD",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -14045,8 +14132,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -14117,8 +14204,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -14135,8 +14222,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -14153,8 +14240,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -14172,8 +14259,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -14195,8 +14282,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -14211,8 +14298,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -14334,8 +14421,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -14447,8 +14534,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -14646,8 +14733,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -14867,8 +14954,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -14891,8 +14978,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -14907,8 +14994,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -14933,8 +15020,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -14959,8 +15046,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -14996,8 +15083,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -15062,8 +15149,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -15211,15 +15298,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T20:10:00Z",
-      "status": "Warmup",
+      "status": "Final",
       "venue": "UNIQLO Field at Dodger Stadium",
       "away_team": "SF",
       "home_team": "LAD",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -15293,8 +15380,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -15365,8 +15452,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -15383,8 +15470,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -15401,8 +15488,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -15420,8 +15507,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -15443,8 +15530,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -15459,8 +15546,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_APPLICABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -15582,8 +15669,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -15735,8 +15822,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -15888,8 +15975,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -16097,8 +16184,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -16121,8 +16208,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -16137,8 +16224,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -16163,8 +16250,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -16189,8 +16276,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -16226,8 +16313,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -16292,8 +16379,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -16432,15 +16519,15 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T20:10:00Z",
-      "status": "Warmup",
+      "status": "Final",
       "venue": "Chase Field",
       "away_team": "NYY",
       "home_team": "AZ",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "LIVE",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 8,
         "pregame_run_count": 4,
         "last_pregame_run_at": "2026-09-20T17:37:38+00:00",
         "frozen": true,
@@ -16514,8 +16601,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_lineup": {
@@ -16586,8 +16673,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter": {
@@ -16604,8 +16691,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter": {
@@ -16622,8 +16709,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "umpire": {
@@ -16641,8 +16728,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "weather": {
@@ -16664,8 +16751,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "roof": {
@@ -16680,8 +16767,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_bullpen": {
@@ -16803,8 +16890,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_bullpen": {
@@ -16926,8 +17013,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_reliever_db": {
@@ -17061,8 +17148,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_reliever_db": {
@@ -17243,8 +17330,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "model_projection": {
@@ -17267,8 +17354,8 @@
         },
         "_current_retrieval": {
           "status": "CONFIRMED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "market_consensus": {
@@ -17283,8 +17370,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "away_starter_workload": {
@@ -17309,8 +17396,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "home_starter_workload": {
@@ -17335,8 +17422,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "previous_game_postgame": {
@@ -17372,8 +17459,8 @@
         },
         "_current_retrieval": {
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         }
       },
       "manager_media": {
@@ -17438,8 +17525,8 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "LIVE"
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "FINAL"
         },
         "preservation_status": "PRESERVED_PREGAME"
       },
@@ -17587,18 +17674,19 @@
       "date": "2026-09-20",
       "game_number": 1,
       "game_datetime": "2026-09-20T23:20:00Z",
-      "status": "Scheduled",
+      "status": "Warmup",
       "venue": "Oriole Park at Camden Yards",
       "away_team": "MIL",
       "home_team": "BAL",
       "state_meta": {
         "first_seen_at": "2026-09-20T14:35:02+00:00",
-        "last_run_at": "2026-09-20T20:36:02+00:00",
-        "current_phase": "PRE_GAME",
-        "run_count": 6,
+        "last_run_at": "2026-09-20T23:36:07+00:00",
+        "current_phase": "LIVE",
+        "run_count": 8,
         "pregame_run_count": 6,
         "last_pregame_run_at": "2026-09-20T20:36:02+00:00",
-        "frozen": false
+        "frozen": true,
+        "frozen_at": "2026-09-20T23:35:03+00:00"
       },
       "away_lineup": {
         "status": "PROVISIONAL",
@@ -17664,7 +17752,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_lineup": {
@@ -17731,7 +17824,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter": {
@@ -17744,7 +17842,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter": {
@@ -17757,49 +17860,30 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "umpire": {
-        "status": "NOT_YET_AVAILABLE",
-        "id": null,
-        "name": null,
+        "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "crew": [],
-        "crew_status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "reason": "No eligible pregame umpire was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "first_captured_at": "2026-09-20T14:35:02+00:00",
-          "last_captured_at": "2026-09-20T14:35:02+00:00",
-          "capture_phase": "PRE_GAME",
+          "capture_phase": "LIVE",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "weather": {
-        "status": "NOT_YET_AVAILABLE",
+        "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "condition": null,
-        "temp_f": null,
-        "wind_raw": null,
-        "wind_mph": null,
-        "wind_relative": null,
-        "wind_status": "NOT_YET_AVAILABLE",
-        "is_forecast": true,
-        "fetched_at": "2026-09-20T09:09:31",
+        "reason": "No eligible pregame weather was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "first_captured_at": "2026-09-20T14:35:02+00:00",
-          "last_captured_at": "2026-09-20T14:35:02+00:00",
-          "capture_phase": "PRE_GAME",
+          "capture_phase": "LIVE",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-20T20:36:02+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "roof": {
@@ -17810,7 +17894,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "NOT_APPLICABLE",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_bullpen": {
@@ -17928,7 +18017,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_bullpen": {
@@ -18046,7 +18140,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_reliever_db": {
@@ -18274,7 +18373,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_reliever_db": {
@@ -18455,7 +18559,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "model_projection": {
@@ -18474,7 +18583,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "market_consensus": {
@@ -18485,7 +18599,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter_workload": {
@@ -18506,7 +18625,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter_workload": {
@@ -18527,7 +18651,12 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "previous_game_postgame": {
@@ -18559,14 +18688,20 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "manager_media": {
-        "research_status": "NOT_STARTED",
+        "research_status": "MISSED_PREGAME_CAPTURE",
         "last_checked_at": null,
         "passes": [],
         "declarations": [],
+        "preservation_status": "MISSED_PREGAME_CAPTURE",
         "current_assessment": {
           "status": "NOT_RESEARCHED",
           "latest_material_at": null,
@@ -18575,11 +18710,10 @@
         },
         "source": "external intelligence file",
         "freshness": {
-          "status": "NOT_CHECKED",
+          "status": "FROZEN_PREGAME",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 164.0,
-          "reason": "no completed research pass"
+          "minutes_to_first_pitch": null
         },
         "reconciliation": []
       },
@@ -18599,7 +18733,7 @@
           "first_captured_at": "2026-09-20T20:36:02+00:00",
           "last_captured_at": "2026-09-20T20:36:02+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
         },
         "history_count": 3,
         "first_pregame_quote": {
@@ -18621,7 +18755,13 @@
           "home_ml": 180,
           "captured_at": "2026-09-20T20:26:18+00:00",
           "observed_by_pregame_context_at": "2026-09-20T20:35:03+00:00"
-        }
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-20T23:36:07+00:00",
+          "ignored_because": "LIVE"
+        },
+        "preservation_status": "PRESERVED_PREGAME"
       },
       "market_history": [
         {
@@ -18676,11 +18816,11 @@
           },
           {
             "field": "home_plate_umpire",
-            "status": "NOT_YET_AVAILABLE"
+            "status": "MISSED_PREGAME_CAPTURE"
           },
           {
             "field": "weather",
-            "status": "NOT_YET_AVAILABLE"
+            "status": "MISSED_PREGAME_CAPTURE"
           },
           {
             "field": "stadium_relative_wind",
@@ -18777,11 +18917,6 @@
             "return-from-injury workload",
             "times-through-order restriction"
           ]
-        },
-        {
-          "priority": "MANDATORY",
-          "topic": "full_umpire_crew",
-          "status": "INTELLIGENCE_RESEARCH_REQUIRED"
         },
         {
           "priority": "MANDATORY",

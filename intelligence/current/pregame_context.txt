@@ -1,10 +1,10 @@
 MLB V2 PREGAME CONTEXT - 2026-09-20
-generated 2026-09-20T20:36:02+00:00
+generated 2026-09-20T23:36:07+00:00
 ================================================================================================
 Pipeline complete: 9/15 games
 Intelligence readiness: EARLY=0, PARTIAL=6, DECISION_READY=0, FINAL=9
 Pipeline blockers: 32
-Mandatory Intelligence research tasks: 83
+Mandatory Intelligence research tasks: 82
 
 PHI @ NYM  gamePk 823570  Citi Field
 ------------------------------------------------------------------------------------------------
@@ -19,7 +19,7 @@ HP UMPIRE: MISSED_PREGAME_CAPTURE - TBD
 FULL CREW: None
 WEATHER: MISSED_PREGAME_CAPTURE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=2
+STATE PHASE: FINAL | frozen=True | pregame runs=2
 MODEL TOTAL: 8.07
 PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=PRESERVED_PREGAME | quotes=1
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -60,7 +60,7 @@ HP UMPIRE: MISSED_PREGAME_CAPTURE - TBD
 FULL CREW: None
 WEATHER: MISSED_PREGAME_CAPTURE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=2
+STATE PHASE: FINAL | frozen=True | pregame runs=2
 MODEL TOTAL: 8.45
 PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=PRESERVED_PREGAME | quotes=1
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -137,7 +137,7 @@ HP UMPIRE: CONFIRMED - Stu Scheurwater
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 68F, 12 mph, In From CF, relative=in
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 8.58
 PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -172,7 +172,7 @@ HP UMPIRE: CONFIRMED - D.J. Reyburn
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 87F, 6 mph, R To L, relative=cross
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 9.95
 PIPELINE MARKET: CONFIRMED - betonlineag total 9.5 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -208,7 +208,7 @@ HP UMPIRE: CONFIRMED - Edwin Moscoso
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 72F, 0 mph, None, relative=calm
 ROOF: CONFIRMED - closed
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 8.32
 PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -244,13 +244,13 @@ HP UMPIRE: CONFIRMED - Nate Tomlinson
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 67F, 15 mph, L To R, relative=cross
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=6
+STATE PHASE: LIVE | frozen=True | pregame runs=6
 MODEL TOTAL: 8.31
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=3
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=PRESERVED_PREGAME | quotes=3
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.31 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
   ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
   HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
@@ -280,7 +280,7 @@ HP UMPIRE: CONFIRMED - Mark Ripperger
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 89F, 7 mph, Out To RF, relative=out
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 9.07
 PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -316,7 +316,7 @@ HP UMPIRE: CONFIRMED - James Jean
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 72F, 0 mph, None, relative=calm
 ROOF: CONFIRMED - closed
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 7.69
 PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -352,7 +352,7 @@ HP UMPIRE: CONFIRMED - Edwin Jimenez
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 70F, 9 mph, In From RF, relative=in
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 10.02
 PIPELINE MARKET: CONFIRMED - betonlineag total 11.0 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -388,7 +388,7 @@ HP UMPIRE: MISSED_PREGAME_CAPTURE - TBD
 FULL CREW: None
 WEATHER: MISSED_PREGAME_CAPTURE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 7.96
 PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -430,7 +430,7 @@ HP UMPIRE: CONFIRMED - Nick Mahrley
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 74F, 9 mph, L To R, relative=cross
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 7.95
 PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -468,7 +468,7 @@ HP UMPIRE: CONFIRMED - Brennan Miller
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 77F, 8 mph, Out To CF, relative=out
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 7.87
 PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -504,7 +504,7 @@ HP UMPIRE: CONFIRMED - Cory Blaser
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 72F, 0 mph, None, relative=calm
 ROOF: CONFIRMED - closed
-STATE PHASE: LIVE | frozen=True | pregame runs=4
+STATE PHASE: FINAL | frozen=True | pregame runs=4
 MODEL TOTAL: 8.53
 PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=PRESERVED_PREGAME | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -538,17 +538,17 @@ HOME SP: PROVISIONAL - Brandon Young
   WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
 AWAY LINEUP: PROVISIONAL: 1.Brice Turang, 2.Jackson Chourio, 3.Jake Bauers, 4.William Contreras, 5.Garrett Mitchell, 6.Christian Yelich, 7.Luis Lara, 8.Joey Ortiz, 9.David Hamilton
 HOME LINEUP: PROVISIONAL: 1.Dylan Beavers, 2.Peter Alonso, 3.Gunnar Henderson, 4.Coby Mayo, 5.Christian Encarnacion-Strand, 6.Samuel Basallo, 7.Jeremiah Jackson, 8.Rece Hinds, 9.Colton Cowser
-HP UMPIRE: NOT_YET_AVAILABLE - TBD
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+HP UMPIRE: MISSED_PREGAME_CAPTURE - TBD
+FULL CREW: None
+WEATHER: MISSED_PREGAME_CAPTURE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=6
+STATE PHASE: LIVE | frozen=True | pregame runs=6
 MODEL TOTAL: 7.72
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=current | quotes=3
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=PRESERVED_PREGAME | quotes=3
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.22 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
   ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
   HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
@@ -561,13 +561,12 @@ PIPELINE BLOCKERS:
   - home_lineup: PROVISIONAL
   - away_starter: PROVISIONAL
   - home_starter: PROVISIONAL
-  - home_plate_umpire: NOT_YET_AVAILABLE
-  - weather: NOT_YET_AVAILABLE
+  - home_plate_umpire: MISSED_PREGAME_CAPTURE
+  - weather: MISSED_PREGAME_CAPTURE
   - stadium_relative_wind: NOT_YET_AVAILABLE
 INTELLIGENCE RESEARCH:
   - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
   - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
   - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
   - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
   - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
