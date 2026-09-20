@@ -5,129 +5,86 @@
     {
       "item_id": "postgame:823570:PHI:823571",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-20T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_name": "Philadelphia Phillies / MLB",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/phillies/video/topic/phillies-manager-postgame",
-          "checked_for": "Official Phillies postgame manager media; the page listed Don Mattingly's September 19 postgame video, “Don Mattingly on pitching struggles in loss to Mets.”"
-        },
-        {
-          "source_name": "MLB Game Story",
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/stories/game/823571",
-          "checked_for": "Official game result and game context; Mets defeated Phillies 10-3 on September 19, 2026."
-        },
-        {
-          "source_name": "The Philadelphia Inquirer",
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html",
-          "checked_for": "Credentialed Phillies beat postgame reporting with direct Don Mattingly quotations regarding Orion Kerkering, Brooks Raley, and bullpen usage."
-        }
-      ],
+      "checked_at": "2026-09-20T20:35:24+00:00",
+      "sources_checked": [],
       "research_status": "FAILED",
-      "notes": "Philadelphia lost 10-3 to the Mets on September 19. Postgame manager comments identified material bullpen-performance concern, but no direct declaration that any Phillies pitcher would be unavailable, optioned, placed on the injured list, or subject to a specific usage limit for the September 20 game. | VALIDATION: invalid result 'Mets 10, Phillies 3'",
-      "game_pk": 823571,
-      "today_game_pk": 823570,
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
       "team": "PHI",
-      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "result": "INCONCLUSIVE",
+      "today_game_pk": 823570,
       "previous_game_pk": 823571,
       "previous_game_date": "2026-09-19",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Orion Kerkering",
-          "speaker": "Don Mattingly",
-          "speaker_role": "Phillies interim manager",
-          "statement": "“I’d say a pretty high degree of worry about him.”",
-          "context": "Postgame assessment after Kerkering allowed four runs in the eighth inning against the Mets.",
-          "evidence_label": "CONFIRMED",
-          "restriction_type": "performance/role concern",
-          "numeric_limit": null,
-          "carry_forward_relevance": "Material concern about Kerkering's current form and near-term bullpen reliability; this is not a declaration of unavailability or a defined September 20 usage restriction.",
-          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html"
-        },
-        {
-          "subject": "Orion Kerkering",
-          "speaker": "Don Mattingly",
-          "speaker_role": "Phillies interim manager",
-          "statement": "“You have to be able to use him there, in a game like that.”",
-          "context": "Explaining the decision to use Kerkering with the Phillies trailing by three runs and the lower part of the Mets order due up.",
-          "evidence_label": "CONFIRMED",
-          "restriction_type": "bullpen usage rationale",
-          "numeric_limit": null,
-          "carry_forward_relevance": "The manager described Kerkering as a pitcher he needs to be able to use in that game state; it does not establish a specific plan or availability for September 20.",
-          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html"
-        },
-        {
-          "subject": "Brooks Raley",
-          "speaker": "Don Mattingly",
-          "speaker_role": "Phillies interim manager",
-          "statement": "“He just doesn’t seem to be able to get the lefties on the sweeper, the one that kind of ends up off the plate. If you don’t swing at that, then you got to get the one that stays on the plate. You’re seeing better swings off that. ... Just haven’t been able to get those guys out.”",
-          "context": "Postgame evaluation of Raley's recent struggles after his appearance against the Mets.",
-          "evidence_label": "CONFIRMED",
-          "restriction_type": "performance concern",
-          "numeric_limit": null,
-          "carry_forward_relevance": "Material assessment of Raley's effectiveness, but no manager-announced availability restriction or role change for September 20.",
-          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html"
-        }
-      ],
-      "comments": [
-        {
-          "subject": "Phillies bullpen",
-          "speaker": "Don Mattingly",
-          "speaker_role": "Phillies interim manager",
-          "statement": "“We haven’t been able to to keep the game in check. Obviously, we’re disappointed to give up runs. We’re disappointed. But I think that’s been a little bit of a trouble spot, is basically just keeping the game in check.”",
-          "evidence_label": "CONFIRMED",
-          "relevance": "General postgame assessment of a bullpen trouble spot; no actionable September 20 restriction was announced.",
-          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html"
-        }
-      ],
-      "queue_fingerprint": "0b132ad6068546a9d551637f64b85a0d7d5251ee81baa435c980d1beacf3a2ab"
+      "comments": []
     },
     {
       "item_id": "postgame:823329:KC:823330",
       "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-20T17:35:42Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Kansas City Royals / MLB.com",
-          "url": "https://www.mlb.com/royals",
-          "finding": "Official club page confirmed September 19 Royals-at-Pirates game coverage was available."
-        },
-        {
-          "source_type": "OFFICIAL_MANAGER_POSTGAME_MEDIA",
-          "source_name": "MLB.com",
-          "url": "https://www.mlb.com/video/matt-quatraro-discusses-6-5-loss-against-the-pirates",
-          "finding": "Official postgame manager-media video was located, but the available indexed material did not provide a player-availability, injury, workload, or next-game usage declaration that could be reliably carried forward."
-        },
-        {
-          "source_type": "OFFICIAL_GAME_MEDIA",
-          "source_name": "MLB.com Film Room",
-          "url": "https://www.mlb.com/video/game/823330",
-          "finding": "Official game media identified the final score as Pirates 6, Royals 5."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "SOURCE_UNAVAILABLE",
-          "url": "https://www.royalsreview.com/kansas-city-royals-game-information/105793/royals-at-pirates-september-19-live-game-discussion",
-          "finding": "Searches for credentialed Kansas City postgame clubhouse reporting did not return an accessible credentialed beat/local postgame report with a directly attributed Royals declaration. This available local game-discussion result was not treated as credentialed declaration evidence."
-        }
-      ],
+      "checked_at": "2026-09-20T20:35:32+00:00",
+      "sources_checked": [],
       "research_status": "FAILED",
-      "notes": "Meaningful official-team and official manager-postgame checks were completed, but no reliably extractable postgame declaration relevant to Kansas City's September 20 game was found, and an accessible credentialed beat/local postgame source with direct club attribution was unavailable. The prior game result was not used as projection evidence. | VALIDATION: invalid result 'Pirates 6, Royals 5'",
-      "game_pk": 823330,
-      "today_game_pk": 823329,
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
       "team": "KC",
-      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "result": "INCONCLUSIVE",
+      "today_game_pk": 823329,
       "previous_game_pk": 823330,
       "previous_game_date": "2026-09-19",
+      "comments": []
+    },
+    {
+      "item_id": "postgame:822922:BOS:822921",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T20:35:40+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "BOS",
       "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "694efd606eca43274393327b125661435661b2fc2edd881c7fe44735304763e3"
+      "today_game_pk": 822922,
+      "previous_game_pk": 822921,
+      "previous_game_date": "2026-09-19",
+      "comments": []
+    },
+    {
+      "item_id": "postgame:824381:ATH:824380",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T20:35:47+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "ATH",
+      "result": "INCONCLUSIVE",
+      "today_game_pk": 824381,
+      "previous_game_pk": 824380,
+      "previous_game_date": "2026-09-19",
+      "comments": []
+    },
+    {
+      "item_id": "postgame:824462:CHC:824461",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T20:35:55+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "CHC",
+      "result": "INCONCLUSIVE",
+      "today_game_pk": 824462,
+      "previous_game_pk": 824461,
+      "previous_game_date": "2026-09-19",
+      "comments": []
+    },
+    {
+      "item_id": "postgame:824462:CIN:824461",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T20:36:01+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "CIN",
+      "result": "INCONCLUSIVE",
+      "today_game_pk": 824462,
+      "previous_game_pk": 824461,
+      "previous_game_date": "2026-09-19",
+      "comments": []
     },
     {
       "item_id": "pregame:822922:BOS:FINAL",
@@ -170,80 +127,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "c62e1fa51ac95ec7ce9576ec284747139ee5df9a4d2c827b2c20fd96f87c4d3b"
-    },
-    {
-      "item_id": "postgame:822922:BOS:822921",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-20T17:36:09Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com",
-          "url": "https://www.mlb.com/news/brayan-bello-strikes-out-11-red-sox-fall-rays-walk-off",
-          "published_at": "2026-09-20T01:04:00Z"
-        },
-        {
-          "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
-          "source_name": "MLB.com",
-          "url": "https://www.mlb.com/video/chad-tracy-on-the-red-sox-loss-brayan-bello-s-outing",
-          "published_at": "2026-09-19T00:00:00Z"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "The Boston Globe",
-          "url": "https://www.bostonglobe.com/2026/09/19/sports/red-sox-rays-brayan-bello/",
-          "published_at": "2026-09-19T00:00:00Z"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Carried forward only postgame information plausibly relevant to the September 20 game. The local credentialed report stated that Aroldis Chapman remained out with shoulder soreness when Garrett Whitlock worked the ninth inning; the report did not explicitly attribute that availability status to a manager or club official, so it is provisional rather than confirmed. No numeric availability or workload restriction was declared for Whitlock or Wyatt Olds. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": 822921,
-      "team": "BOS",
-      "pass_type": null,
-      "previous_game_pk": 822921,
-      "previous_game_date": "2026-09-19",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": {
-            "name": "Aroldis Chapman",
-            "mlbam_id": 547973
-          },
-          "category": "RELIEVER_AVAILABILITY",
-          "normalized_status": "OUT_WITH_SHOULDER_SORENESS",
-          "restriction_flag": true,
-          "evidence_label": "PROVISIONAL",
-          "source_url": "https://www.bostonglobe.com/2026/09/19/sports/red-sox-rays-brayan-bello/",
-          "source_speaker": null,
-          "source_attribution": "Credentialed local report: Chapman was still out with a sore shoulder during the ninth inning.",
-          "numeric_limit": null
-        }
-      ],
-      "comments": [
-        {
-          "subject": {
-            "name": "Garrett Whitlock",
-            "mlbam_id": 676477
-          },
-          "category": "PREVIOUS_GAME_USAGE",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/news/brayan-bello-strikes-out-11-red-sox-fall-rays-walk-off",
-          "comment": "Whitlock allowed the walk-off single in the bottom of the ninth; this is prior-game usage information only, not a declared restriction for September 20."
-        },
-        {
-          "subject": {
-            "name": "Brayan Bello",
-            "mlbam_id": 678394
-          },
-          "category": "MANAGER_POSTGAME_COMMENT",
-          "evidence_label": "CONFIRMED",
-          "source_url": "https://www.mlb.com/news/brayan-bello-strikes-out-11-red-sox-fall-rays-walk-off",
-          "source_speaker": "Chad Tracy",
-          "comment": "Tracy called Bello's outing his best of the year. This is evaluative postgame commentary and does not establish a September 20 availability restriction."
-        }
-      ],
-      "today_game_pk": 822922,
-      "queue_fingerprint": "9c721461461b3ccd78983b127a4a32f3275229cf4e0f0ddfc2808da3a2d5d31d"
     },
     {
       "item_id": "pregame:822922:TB:FINAL",
@@ -356,40 +239,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "6fbaa66844d53c3c85c838828662da10083f2b44dc747bb0e7a73ba14cadc952"
-    },
-    {
-      "item_id": "postgame:824381:ATH:824380",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-20T17:36:54+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/video/game/824380",
-          "published_at": "2026-09-19T00:00:00+00:00"
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/athletics/video/topic/athletics-manager-postgame",
-          "published_at": null
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://sports.yahoo.com/videos/mark-kotsay-details-athletics-pitching-094353152.html",
-          "published_at": "2026-09-19T09:43:00+00:00"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The official final shows Athletics lost 12-6 on September 19. Postgame manager coverage located addressed Mason Barnett's outing and team pitching, but did not contain a material forward-looking declaration about Jack Perkins' September 20 workload, Drew Rom's availability, or another bullpen restriction plausibly relevant to the next game. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824380,
-      "today_game_pk": 824381,
-      "team": "ATH",
-      "pass_type": null,
-      "previous_game_pk": 824380,
-      "previous_game_date": "2026-09-19",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "8bbe258040fc2082d8bf26e93e7e1d380bb04b06833e48d587d8ea97d2662734"
     },
     {
       "item_id": "pregame:824381:CLE:FINAL",
@@ -833,7 +682,7 @@
       "queue_fingerprint": "0c756e404830cc600b7dbfd0317bdd199c6c0a47b6a9f16ef35d84b64ced685c"
     }
   ],
-  "researched_at": "2026-09-20T17:37:37+00:00",
+  "researched_at": "2026-09-20T20:36:01+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -844,14 +693,14 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-20T17:37:37+00:00",
+    "last_run_at": "2026-09-20T20:36:01+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 162631,
-      "cached_input_tokens": 24805,
-      "output_tokens": 10348,
-      "reasoning_tokens": 5863,
-      "total_tokens": 172979,
+      "input_tokens": 0,
+      "cached_input_tokens": 0,
+      "output_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_tokens": 0,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -861,26 +710,8 @@
         "items": [
           "postgame:823570:PHI:823571"
         ],
-        "response_id": "resp_097be2ff2385b058016ab0194f8d0087d2a1ccfa3664af3606",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 63,
-        "usage": {
-          "input_tokens": 22278,
-          "cached_input_tokens": 0,
-          "output_tokens": 1905,
-          "reasoning_tokens": 948,
-          "total_tokens": 24183,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "postgame:823570:PHI:823571": [
-            "invalid result 'Mets 10, Phillies 3'"
-          ]
-        },
-        "tool_budget": 2,
-        "prompt_chars": 653,
-        "estimated_prompt_tokens": 164,
-        "research_mode": "POSTGAME"
+        "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+        "validation_errors": {}
       },
       {
         "team": "KC",
@@ -888,130 +719,44 @@
         "items": [
           "postgame:823329:KC:823330"
         ],
-        "response_id": "resp_0495b2f873b1626c016ab0196b824487d2a2380bed7234a847",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 42,
-        "usage": {
-          "input_tokens": 22147,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1097,
-          "reasoning_tokens": 721,
-          "total_tokens": 23244,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "postgame:823329:KC:823330": [
-            "invalid result 'Pirates 6, Royals 5'"
-          ]
-        },
-        "tool_budget": 2,
-        "prompt_chars": 647,
-        "estimated_prompt_tokens": 162,
-        "research_mode": "POSTGAME"
+        "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+        "validation_errors": {}
       },
       {
         "team": "BOS",
         "game_pk": 822922,
         "items": [
-          "pregame:822922:BOS:FINAL",
           "postgame:822922:BOS:822921"
         ],
-        "response_id": "resp_03ebe3a5c55f1b14016ab0197f600487d297f16e1db2d860dd",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 44,
-        "usage": {
-          "input_tokens": 28631,
-          "cached_input_tokens": 4961,
-          "output_tokens": 2269,
-          "reasoning_tokens": 1134,
-          "total_tokens": 30900,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "postgame:822922:BOS:822921": [
-            "invalid result 'COMPLETED'"
-          ]
-        },
-        "tool_budget": 3,
-        "prompt_chars": 3443,
-        "estimated_prompt_tokens": 861,
-        "research_mode": "FINAL_DELTA"
-      },
-      {
-        "team": "TB",
-        "game_pk": 822922,
-        "items": [
-          "pregame:822922:TB:FINAL",
-          "postgame:822922:TB:822921"
-        ],
-        "response_id": "resp_0d673a34a4267779016ab0199b234087d29ae75ad359778942",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 30,
-        "usage": {
-          "input_tokens": 31938,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1732,
-          "reasoning_tokens": 956,
-          "total_tokens": 33670,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 3,
-        "prompt_chars": 3620,
-        "estimated_prompt_tokens": 905,
-        "research_mode": "FINAL_DELTA"
+        "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+        "validation_errors": {}
       },
       {
         "team": "ATH",
         "game_pk": 824381,
         "items": [
-          "pregame:824381:ATH:FINAL",
           "postgame:824381:ATH:824380"
         ],
-        "response_id": "resp_0d75d7436bb91bcf016ab019b3955887d28b35ec1dcdb7c555",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 38,
-        "usage": {
-          "input_tokens": 34211,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1603,
-          "reasoning_tokens": 981,
-          "total_tokens": 35814,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "postgame:824381:ATH:824380": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
-          ]
-        },
-        "tool_budget": 3,
-        "prompt_chars": 3448,
-        "estimated_prompt_tokens": 862,
-        "research_mode": "FINAL_DELTA"
+        "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+        "validation_errors": {}
       },
       {
-        "team": "CLE",
-        "game_pk": 824381,
+        "team": "CHC",
+        "game_pk": 824462,
         "items": [
-          "pregame:824381:CLE:FINAL",
-          "postgame:824381:CLE:824380"
+          "postgame:824462:CHC:824461"
         ],
-        "response_id": "resp_02cb60e4b895c156016ab019c8d04487d2accce04163d24b81",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 49,
-        "usage": {
-          "input_tokens": 23426,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1742,
-          "reasoning_tokens": 1123,
-          "total_tokens": 25168,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 3,
-        "prompt_chars": 3822,
-        "estimated_prompt_tokens": 956,
-        "research_mode": "FINAL_DELTA"
+        "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+        "validation_errors": {}
+      },
+      {
+        "team": "CIN",
+        "game_pk": 824462,
+        "items": [
+          "postgame:824462:CIN:824461"
+        ],
+        "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+        "validation_errors": {}
       }
     ]
   }
