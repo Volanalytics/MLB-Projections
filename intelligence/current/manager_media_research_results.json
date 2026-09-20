@@ -3,6 +3,468 @@
   "generated_from_queue_at": "2026-09-20T14:35:04+00:00",
   "items": [
     {
+      "item_id": "postgame:823570:PHI:823571",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_name": "Philadelphia Phillies / MLB",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/phillies/video/topic/phillies-manager-postgame",
+          "checked_for": "Official Phillies postgame manager media; the page listed Don Mattingly's September 19 postgame video, “Don Mattingly on pitching struggles in loss to Mets.”"
+        },
+        {
+          "source_name": "MLB Game Story",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/stories/game/823571",
+          "checked_for": "Official game result and game context; Mets defeated Phillies 10-3 on September 19, 2026."
+        },
+        {
+          "source_name": "The Philadelphia Inquirer",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html",
+          "checked_for": "Credentialed Phillies beat postgame reporting with direct Don Mattingly quotations regarding Orion Kerkering, Brooks Raley, and bullpen usage."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Philadelphia lost 10-3 to the Mets on September 19. Postgame manager comments identified material bullpen-performance concern, but no direct declaration that any Phillies pitcher would be unavailable, optioned, placed on the injured list, or subject to a specific usage limit for the September 20 game. | VALIDATION: invalid result 'Mets 10, Phillies 3'",
+      "game_pk": 823571,
+      "today_game_pk": 823570,
+      "team": "PHI",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 823571,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": "Orion Kerkering",
+          "speaker": "Don Mattingly",
+          "speaker_role": "Phillies interim manager",
+          "statement": "“I’d say a pretty high degree of worry about him.”",
+          "context": "Postgame assessment after Kerkering allowed four runs in the eighth inning against the Mets.",
+          "evidence_label": "CONFIRMED",
+          "restriction_type": "performance/role concern",
+          "numeric_limit": null,
+          "carry_forward_relevance": "Material concern about Kerkering's current form and near-term bullpen reliability; this is not a declaration of unavailability or a defined September 20 usage restriction.",
+          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html"
+        },
+        {
+          "subject": "Orion Kerkering",
+          "speaker": "Don Mattingly",
+          "speaker_role": "Phillies interim manager",
+          "statement": "“You have to be able to use him there, in a game like that.”",
+          "context": "Explaining the decision to use Kerkering with the Phillies trailing by three runs and the lower part of the Mets order due up.",
+          "evidence_label": "CONFIRMED",
+          "restriction_type": "bullpen usage rationale",
+          "numeric_limit": null,
+          "carry_forward_relevance": "The manager described Kerkering as a pitcher he needs to be able to use in that game state; it does not establish a specific plan or availability for September 20.",
+          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html"
+        },
+        {
+          "subject": "Brooks Raley",
+          "speaker": "Don Mattingly",
+          "speaker_role": "Phillies interim manager",
+          "statement": "“He just doesn’t seem to be able to get the lefties on the sweeper, the one that kind of ends up off the plate. If you don’t swing at that, then you got to get the one that stays on the plate. You’re seeing better swings off that. ... Just haven’t been able to get those guys out.”",
+          "context": "Postgame evaluation of Raley's recent struggles after his appearance against the Mets.",
+          "evidence_label": "CONFIRMED",
+          "restriction_type": "performance concern",
+          "numeric_limit": null,
+          "carry_forward_relevance": "Material assessment of Raley's effectiveness, but no manager-announced availability restriction or role change for September 20.",
+          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html"
+        }
+      ],
+      "comments": [
+        {
+          "subject": "Phillies bullpen",
+          "speaker": "Don Mattingly",
+          "speaker_role": "Phillies interim manager",
+          "statement": "“We haven’t been able to to keep the game in check. Obviously, we’re disappointed to give up runs. We’re disappointed. But I think that’s been a little bit of a trouble spot, is basically just keeping the game in check.”",
+          "evidence_label": "CONFIRMED",
+          "relevance": "General postgame assessment of a bullpen trouble spot; no actionable September 20 restriction was announced.",
+          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html"
+        }
+      ],
+      "queue_fingerprint": "0b132ad6068546a9d551637f64b85a0d7d5251ee81baa435c980d1beacf3a2ab"
+    },
+    {
+      "item_id": "postgame:823329:KC:823330",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T17:35:42Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Kansas City Royals / MLB.com",
+          "url": "https://www.mlb.com/royals",
+          "finding": "Official club page confirmed September 19 Royals-at-Pirates game coverage was available."
+        },
+        {
+          "source_type": "OFFICIAL_MANAGER_POSTGAME_MEDIA",
+          "source_name": "MLB.com",
+          "url": "https://www.mlb.com/video/matt-quatraro-discusses-6-5-loss-against-the-pirates",
+          "finding": "Official postgame manager-media video was located, but the available indexed material did not provide a player-availability, injury, workload, or next-game usage declaration that could be reliably carried forward."
+        },
+        {
+          "source_type": "OFFICIAL_GAME_MEDIA",
+          "source_name": "MLB.com Film Room",
+          "url": "https://www.mlb.com/video/game/823330",
+          "finding": "Official game media identified the final score as Pirates 6, Royals 5."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "SOURCE_UNAVAILABLE",
+          "url": "https://www.royalsreview.com/kansas-city-royals-game-information/105793/royals-at-pirates-september-19-live-game-discussion",
+          "finding": "Searches for credentialed Kansas City postgame clubhouse reporting did not return an accessible credentialed beat/local postgame report with a directly attributed Royals declaration. This available local game-discussion result was not treated as credentialed declaration evidence."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Meaningful official-team and official manager-postgame checks were completed, but no reliably extractable postgame declaration relevant to Kansas City's September 20 game was found, and an accessible credentialed beat/local postgame source with direct club attribution was unavailable. The prior game result was not used as projection evidence. | VALIDATION: invalid result 'Pirates 6, Royals 5'",
+      "game_pk": 823330,
+      "today_game_pk": 823329,
+      "team": "KC",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 823330,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "694efd606eca43274393327b125661435661b2fc2edd881c7fe44735304763e3"
+    },
+    {
+      "item_id": "pregame:822922:BOS:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-20T17:36:09Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com",
+          "url": "https://www.mlb.com/news/brayan-bello-strikes-out-11-red-sox-fall-rays-walk-off",
+          "published_at": "2026-09-20T01:04:00Z"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
+          "source_name": "MLB.com",
+          "url": "https://www.mlb.com/video/chad-tracy-on-the-red-sox-loss-brayan-bello-s-outing",
+          "published_at": "2026-09-19T00:00:00Z"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "The Boston Globe",
+          "url": "https://www.bostonglobe.com/2026/09/19/sports/red-sox-rays-brayan-bello/",
+          "published_at": "2026-09-19T00:00:00Z"
+        },
+        {
+          "source_type": "SOURCE_UNAVAILABLE",
+          "source_name": "Manager pregame media",
+          "url": "https://www.mlb.com/redsox/video",
+          "published_at": null
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "FINAL_DELTA search after the prior 2026-09-20T00:00:00Z state found no new or superseding pregame manager/club declaration before the 2026-09-20T17:40:00Z first pitch regarding Patrick Sandoval's workload, Wyatt Olds' availability, or another Boston relief restriction. Official and credentialed-local coverage confirmed Sandoval as the scheduled starter but did not report a manager-imposed usage limit. No accessible pregame manager-media item was available in the reviewed official club/MLB video coverage.",
+      "game_pk": 822922,
+      "team": "BOS",
+      "pass_type": "FINAL",
+      "previous_game_pk": 822921,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "c62e1fa51ac95ec7ce9576ec284747139ee5df9a4d2c827b2c20fd96f87c4d3b"
+    },
+    {
+      "item_id": "postgame:822922:BOS:822921",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T17:36:09Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com",
+          "url": "https://www.mlb.com/news/brayan-bello-strikes-out-11-red-sox-fall-rays-walk-off",
+          "published_at": "2026-09-20T01:04:00Z"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
+          "source_name": "MLB.com",
+          "url": "https://www.mlb.com/video/chad-tracy-on-the-red-sox-loss-brayan-bello-s-outing",
+          "published_at": "2026-09-19T00:00:00Z"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "The Boston Globe",
+          "url": "https://www.bostonglobe.com/2026/09/19/sports/red-sox-rays-brayan-bello/",
+          "published_at": "2026-09-19T00:00:00Z"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Carried forward only postgame information plausibly relevant to the September 20 game. The local credentialed report stated that Aroldis Chapman remained out with shoulder soreness when Garrett Whitlock worked the ninth inning; the report did not explicitly attribute that availability status to a manager or club official, so it is provisional rather than confirmed. No numeric availability or workload restriction was declared for Whitlock or Wyatt Olds. | VALIDATION: invalid result 'COMPLETED'",
+      "game_pk": 822921,
+      "team": "BOS",
+      "pass_type": null,
+      "previous_game_pk": 822921,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": {
+            "name": "Aroldis Chapman",
+            "mlbam_id": 547973
+          },
+          "category": "RELIEVER_AVAILABILITY",
+          "normalized_status": "OUT_WITH_SHOULDER_SORENESS",
+          "restriction_flag": true,
+          "evidence_label": "PROVISIONAL",
+          "source_url": "https://www.bostonglobe.com/2026/09/19/sports/red-sox-rays-brayan-bello/",
+          "source_speaker": null,
+          "source_attribution": "Credentialed local report: Chapman was still out with a sore shoulder during the ninth inning.",
+          "numeric_limit": null
+        }
+      ],
+      "comments": [
+        {
+          "subject": {
+            "name": "Garrett Whitlock",
+            "mlbam_id": 676477
+          },
+          "category": "PREVIOUS_GAME_USAGE",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/news/brayan-bello-strikes-out-11-red-sox-fall-rays-walk-off",
+          "comment": "Whitlock allowed the walk-off single in the bottom of the ninth; this is prior-game usage information only, not a declared restriction for September 20."
+        },
+        {
+          "subject": {
+            "name": "Brayan Bello",
+            "mlbam_id": 678394
+          },
+          "category": "MANAGER_POSTGAME_COMMENT",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/news/brayan-bello-strikes-out-11-red-sox-fall-rays-walk-off",
+          "source_speaker": "Chad Tracy",
+          "comment": "Tracy called Bello's outing his best of the year. This is evaluative postgame commentary and does not establish a September 20 availability restriction."
+        }
+      ],
+      "today_game_pk": 822922,
+      "queue_fingerprint": "9c721461461b3ccd78983b127a4a32f3275229cf4e0f0ddfc2808da3a2d5d31d"
+    },
+    {
+      "item_id": "pregame:822922:TB:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-20T17:36:36Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/rays/news/game-notes",
+          "published_at": "2026-09-20"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://img.mlbstatic.com/mlb-images/image/upload/mlb/rieb2ias2i1amyqaqkyr.pdf",
+          "published_at": "2026-09-20"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "url": "https://www.mlb.com/video/topic/rays-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.tampabay.com/sports/rays/2026/07/17/rays-have-rough-return-break-routed-by-red-sox-dh-opener/",
+          "published_at": "2026-07-17"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "FINAL_DELTA search found the official September 20 game notes confirming Griffin Jax as the Rays starter and the same-day transaction activating INF Ben Williamson and designating OF Jake Fraley for assignment. No new or superseding pregame manager/coach declaration establishing a Jax workload restriction or availability restriction for Kevin Kelly or Cam Booser was located before the 1:40 p.m. ET first pitch. The official manager-video index did not provide a current September 19/20 manager availability item; no timely credentialed local report containing such a declaration was located.",
+      "game_pk": 822922,
+      "today_game_pk": 822922,
+      "team": "TB",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "3a00a9696eda3908439ffe6e774f7a68871ff7e4e533bba95420456da37c24ba"
+    },
+    {
+      "item_id": "postgame:822922:TB:822921",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T17:36:36Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://img.mlbstatic.com/mlb-images/image/upload/mlb/rieb2ias2i1amyqaqkyr.pdf",
+          "published_at": "2026-09-20"
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/news/rays-lose-to-red-sox-ending-six-game-winning-streak",
+          "published_at": "2026-09-19"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "url": "https://www.mlb.com/video/topic/rays-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.tampabay.com/sports/rays/2026/07/17/rays-have-rough-return-break-routed-by-red-sox-dh-opener/",
+          "published_at": "2026-07-17"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The September 20 official Rays game notes identify September 19 as a Rays walk-off win and list no carry-forward injury, workload, or availability declaration relevant to the September 20 game. No accessible September 19 Rays manager postgame media item or timely credentialed local postgame report supplied a direct, forward-looking declaration about Jax, Kelly, Booser, or another material availability restriction. Prior-game result details were not used as projection evidence.",
+      "game_pk": 822921,
+      "today_game_pk": 822922,
+      "team": "TB",
+      "pass_type": null,
+      "previous_game_pk": 822921,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "94d1f39f4d13be67e25b3fc7aa32618ead1b6c68ba97f1593adbcd15ea34a0bd"
+    },
+    {
+      "item_id": "pregame:824381:ATH:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-20T17:36:54+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/starting-lineups/2026-09-20",
+          "published_at": null
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/athletics/video/topic/athletics-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://sports.yahoo.com/videos/mark-kotsay-details-athletics-pitching-094353152.html",
+          "published_at": "2026-09-19T09:43:00+00:00"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Final-delta search found the official lineup confirming Jack Perkins as the listed starter, but no new or superseding Athletics manager/coach pregame declaration on Perkins' workload or Drew Rom's availability before the scheduled first pitch. The official lineup page listed the game as delayed at the time checked; manager pregame media was unavailable.",
+      "game_pk": 824381,
+      "today_game_pk": 824381,
+      "team": "ATH",
+      "pass_type": "FINAL",
+      "previous_game_pk": 824380,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "6fbaa66844d53c3c85c838828662da10083f2b44dc747bb0e7a73ba14cadc952"
+    },
+    {
+      "item_id": "postgame:824381:ATH:824380",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T17:36:54+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/video/game/824380",
+          "published_at": "2026-09-19T00:00:00+00:00"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/athletics/video/topic/athletics-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://sports.yahoo.com/videos/mark-kotsay-details-athletics-pitching-094353152.html",
+          "published_at": "2026-09-19T09:43:00+00:00"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "The official final shows Athletics lost 12-6 on September 19. Postgame manager coverage located addressed Mason Barnett's outing and team pitching, but did not contain a material forward-looking declaration about Jack Perkins' September 20 workload, Drew Rom's availability, or another bullpen restriction plausibly relevant to the next game. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824380,
+      "today_game_pk": 824381,
+      "team": "ATH",
+      "pass_type": null,
+      "previous_game_pk": 824380,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "8bbe258040fc2082d8bf26e93e7e1d380bb04b06833e48d587d8ea97d2662734"
+    },
+    {
+      "item_id": "pregame:824381:CLE:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-20T17:37:25Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/stories/game-preview/824381",
+          "published_at": "2026-09-20"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/guardians/video/gavin-williams-against-the-athletics",
+          "published_at": "2026-09-20"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_PREGAME",
+          "url": "https://www.mlb.com/guardians/video/topic/guardians-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.cleveland.com/guardians/",
+          "published_at": null
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "FINAL DELTA search, limited to information available before the 17:40 UTC first pitch, found no new or superseding attributable Cleveland manager/coach declaration on Gavin Williams' workload or the availability/use restriction of Cade Smith, Joey Cantillo, or Hunter Gaddis. Official manager-media coverage for this game was unavailable in the material reviewed; no qualifying beat/local report with a material declaration was located.",
+      "game_pk": 824381,
+      "today_game_pk": 824381,
+      "team": "CLE",
+      "pass_type": "FINAL",
+      "previous_game_pk": 824380,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "aa9b7ab39e91750d631cc9744533d8f7d65d02fb98740e9661b00f021192a40b"
+    },
+    {
+      "item_id": "postgame:824381:CLE:824380",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-20T17:37:25Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/video/game/824380",
+          "published_at": "2026-09-20"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
+          "url": "https://www.mlb.com/guardians/video/topic/guardians-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.cleveland.com/guardians/",
+          "published_at": null
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The prior game was final, not in progress: Cleveland won 12-6 on September 19. Review found no attributable postgame manager/coach declaration that plausibly carries forward as a specific availability, workload, health, or role restriction for the September 20 game. Official manager postgame coverage and a qualifying beat/local declaration were unavailable in the reviewed material.",
+      "game_pk": 824380,
+      "today_game_pk": 824381,
+      "team": "CLE",
+      "pass_type": null,
+      "previous_game_pk": 824380,
+      "previous_game_date": "2026-09-19",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "51eae646248f334c1d7bad7e6d61661509ff545f806b7cb764757e7ab800154b"
+    },
+    {
       "item_id": "pregame:823570:PHI:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-20T14:35:41+00:00",
@@ -38,61 +500,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "e1dd66ec602f6f667a2874d32b8b42e239f73c0020257ec1ce33ddff730d5718"
-    },
-    {
-      "item_id": "postgame:823570:PHI:823571",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-20T14:35:41+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Philadelphia Phillies Manager Postgame Videos",
-          "url": "https://www.mlb.com/phillies/video/topic/phillies-manager-postgame",
-          "checked_for": "Official Phillies manager-postgame index identified Don Mattingly's September 19 postgame item concerning pitching struggles against the Mets."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "The Philadelphia Inquirer — Lochlahn March",
-          "url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html",
-          "checked_for": "Directly attributed Don Mattingly postgame comments on Orion Kerkering and the bullpen following the September 19 Phillies-Mets game."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Film Room — Phillies at Mets, September 19, 2026",
-          "url": "https://www.mlb.com/video/game/823571",
-          "checked_for": "Final-game context for game 823571."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Carry-forward material is limited to Mattingly's directly attributed concern regarding Orion Kerkering and his uncertain role after the September 19 outing. No declaration concerning José Urquidy was located in the reviewed postgame sources. | VALIDATION: invalid result \"CONFIRMED: Mattingly expressed a high degree of concern about Orion Kerkering and said it was difficult to find places to use him after the reliever's September 19 struggles.\"",
-      "game_pk": 823571,
-      "today_game_pk": 823570,
-      "team": "PHI",
-      "pass_type": null,
-      "previous_game_pk": 823571,
-      "previous_game_date": "2026-09-19",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Orion Kerkering",
-          "speaker": "Don Mattingly",
-          "speaker_role": "Phillies interim manager",
-          "evidence_label": "CONFIRMED",
-          "declaration_type": "BULLPEN_ROLE_CONCERN",
-          "statement": "Mattingly said, \"I’d say a pretty high degree of worry about him,\" and added, \"You have to be able to use him there, in a game like that. I’m not going to try to chase a three-run deficit in that inning. It’s hard to find places to use him.\"",
-          "source_url": "https://www.inquirer.com/phillies/phillies-mets-new-york-national-league-mlb-20260919.html",
-          "source_date": "2026-09-19",
-          "relevance_to_today": "Potentially relevant to September 20 bullpen-role expectations; this is not a numeric workload restriction and does not establish game-day availability."
-        }
-      ],
-      "comments": [
-        {
-          "subject": "José Urquidy",
-          "evidence_label": "UNRESOLVED",
-          "comment": "No direct postgame manager/club declaration about Urquidy's September 20 availability or usage plan was located in the reviewed sources."
-        }
-      ],
-      "queue_fingerprint": "0b132ad6068546a9d551637f64b85a0d7d5251ee81baa435c980d1beacf3a2ab"
     },
     {
       "item_id": "pregame:823570:NYM:EARLY",
@@ -213,55 +620,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "d9038ec2378fdaea03c1a532bedd70131cc25ef3d3f3213ac0bf83de1e2b4f78"
-    },
-    {
-      "item_id": "postgame:823329:KC:823330",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-20T14:36:06Z",
-      "sources_checked": [
-        {
-          "source_name": "MLB.com Royals video",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/video/matt-quatraro-discusses-6-5-loss-against-the-pirates",
-          "checked_at": "2026-09-20T14:36:06Z",
-          "finding": "Official Royals/MLB postgame video identified manager Matt Quatraro's postgame availability following the September 19 loss."
-        },
-        {
-          "source_name": "Kansas City Star via Yahoo Sports",
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://sports.yahoo.com/articles/key-bullpen-mistake-cost-royals-015104442.html",
-          "checked_at": "2026-09-20T14:36:06Z",
-          "finding": "Jaylon Thompson reported Quatraro said the club had substantial confidence in Steven Cruz and that Cruz had been throwing well; no forward-looking September 20 availability or usage plan was attributed to Quatraro."
-        },
-        {
-          "source_name": "Kansas City Royals official site",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/royals",
-          "checked_at": "2026-09-20T14:36:06Z",
-          "finding": "Official club results page recorded the September 19 game as a 6-5 final loss at Pittsburgh."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The only potentially forward-relevant postgame manager comment located concerned confidence in Steven Cruz, not an availability restriction or planned role for the September 20 game. No material carry-forward declaration affecting Michael Wacha's workload or a specific September 20 bullpen plan was found. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": null,
-      "today_game_pk": 823329,
-      "team": "KC",
-      "pass_type": null,
-      "previous_game_pk": 823330,
-      "previous_game_date": "2026-09-19",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "label": "CONFIRMED",
-          "speaker": "Matt Quatraro",
-          "subject": "Steven Cruz",
-          "comment": "Quatraro said the club had substantial confidence in Cruz and that Cruz had been throwing well.",
-          "source_url": "https://sports.yahoo.com/articles/key-bullpen-mistake-cost-royals-015104442.html",
-          "relevance": "Postgame assessment only; it did not establish September 20 availability, a role change, or a usage plan."
-        }
-      ],
-      "queue_fingerprint": "694efd606eca43274393327b125661435661b2fc2edd881c7fe44735304763e3"
     },
     {
       "item_id": "pregame:823329:PIT:EARLY",
@@ -428,59 +786,6 @@
       "queue_fingerprint": "ad25b02446895f194547ce9cbed953d5e789f8946d922f5221cb1deef36381d6"
     },
     {
-      "item_id": "postgame:822922:BOS:822921",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-20T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB.com",
-          "url": "https://www.mlb.com/stories/game/822921",
-          "checked_for": "Official game record and prior-game context."
-        },
-        {
-          "source_type": "OFFICIAL_MLB_MANAGER_MEDIA",
-          "source_name": "MLB.com",
-          "url": "https://www.mlb.com/video/chad-tracy-on-the-red-sox-loss-brayan-bello-s-outing",
-          "checked_for": "Direct Red Sox interim manager postgame media."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "The Boston Globe",
-          "url": "https://bostonglobe-prod.cdn.arcpublishing.com/2026/09/19/sports/red-sox-rays-brayan-bello/",
-          "checked_for": "Credentialed local postgame reporting and next-game context."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Boston Sports Journal",
-          "url": "https://www.bostonsportsjournal.com/2026/09/20/red-sox-denied-playoff-clincher-as-rays-walk-off-garrett-whitlock-2-1",
-          "checked_for": "Postgame manager attribution and potentially forward-relevant club comments."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The reviewed official manager postgame media and credentialed local reporting contained praise for Brayan Bello's September 19 start and discussion of the 2-1 loss, but no direct club declaration established a carry-forward restriction, rest requirement, availability change, opener/bulk plan, or role change for September 20. The prior game's outcome has not been used as projection evidence for the September 20 game. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 822921,
-      "today_game_pk": 822922,
-      "team": "BOS",
-      "pass_type": null,
-      "previous_game_pk": 822921,
-      "previous_game_date": "2026-09-19",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Chad Tracy",
-          "speaker_role": "Red Sox interim manager",
-          "subject": "Brayan Bello",
-          "summary": "Tracy characterized Bello's outing as exceptional and his best of the season.",
-          "forward_relevance": "No actionable September 20 availability, workload, or role implication was declared.",
-          "source_url": "https://www.mlb.com/video/chad-tracy-on-the-red-sox-loss-brayan-bello-s-outing"
-        }
-      ],
-      "queue_fingerprint": "9c721461461b3ccd78983b127a4a32f3275229cf4e0f0ddfc2808da3a2d5d31d"
-    },
-    {
       "item_id": "pregame:822922:TB:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-20T14:37:23Z",
@@ -526,56 +831,9 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "0c756e404830cc600b7dbfd0317bdd199c6c0a47b6a9f16ef35d84b64ced685c"
-    },
-    {
-      "item_id": "postgame:822922:TB:822921",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-20T14:37:23Z",
-      "sources_checked": [
-        {
-          "source_name": "Boston Red Sox at Tampa Bay Rays Game Story",
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/stories/game/822921/",
-          "checked_at": "2026-09-20T14:37:23Z",
-          "finding": "Official game story confirmed the September 19 game record but did not provide a postgame manager/coach declaration relevant to September 20 bullpen availability or workload."
-        },
-        {
-          "source_name": "Rays Manager Postgame Videos",
-          "source_type": "MANAGER_COACH_MEDIA",
-          "url": "https://www.mlb.com/video/topic/rays-manager-postgame",
-          "checked_at": "2026-09-20T14:37:23Z",
-          "finding": "SOURCE_UNAVAILABLE for a September 19, 2026 Kevin Cash postgame item relevant to carry-forward pitching availability; the available page did not expose a September 19 postgame video or transcript."
-        },
-        {
-          "source_name": "Tampa Bay Rays Game Notes",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/rays/news/game-notes",
-          "checked_at": "2026-09-20T14:37:23Z",
-          "finding": "Official game-notes index listed the September 19 vs. Boston packet but supplied no postgame club declaration on next-game availability for the target relievers."
-        },
-        {
-          "source_name": "MLB.com Rays news search coverage",
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.mlb.com/rays/news",
-          "checked_at": "2026-09-20T14:37:23Z",
-          "finding": "No qualifying credentialed beat/local postgame report was located in the lightweight search results that directly attributed a carry-forward availability comment to the Rays."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "No sourced postgame declaration was located that plausibly carries forward to September 20 availability for Kevin Kelly or Cam Booser. No inference from the prior-game outcome or supplied appearance counts was converted into a declaration. | VALIDATION: invalid result None",
-      "game_pk": 822921,
-      "today_game_pk": 822922,
-      "team": "TB",
-      "pass_type": null,
-      "previous_game_pk": 822921,
-      "previous_game_date": "2026-09-19",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "94d1f39f4d13be67e25b3fc7aa32618ead1b6c68ba97f1593adbcd15ea34a0bd"
     }
   ],
-  "researched_at": "2026-09-20T14:37:42+00:00",
+  "researched_at": "2026-09-20T17:37:37+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -586,14 +844,14 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-20T14:37:42+00:00",
+    "last_run_at": "2026-09-20T17:37:37+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 135621,
+      "input_tokens": 162631,
       "cached_input_tokens": 24805,
-      "output_tokens": 10566,
-      "reasoning_tokens": 4293,
-      "total_tokens": 146187,
+      "output_tokens": 10348,
+      "reasoning_tokens": 5863,
+      "total_tokens": 172979,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -601,170 +859,159 @@
         "team": "PHI",
         "game_pk": 823570,
         "items": [
-          "pregame:823570:PHI:EARLY",
           "postgame:823570:PHI:823571"
         ],
-        "response_id": "resp_05f4f96524c774b5016aafef2423b487d291bcbbfb8d12c7a2",
+        "response_id": "resp_097be2ff2385b058016ab0194f8d0087d2a1ccfa3664af3606",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 39,
+        "web_sources_seen": 63,
         "usage": {
-          "input_tokens": 23533,
+          "input_tokens": 22278,
           "cached_input_tokens": 0,
-          "output_tokens": 1824,
-          "reasoning_tokens": 795,
-          "total_tokens": 25357,
+          "output_tokens": 1905,
+          "reasoning_tokens": 948,
+          "total_tokens": 24183,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:823570:PHI:EARLY": [
-            "invalid result 'No confirmed pregame workload or availability declaration found for Cristopher Sánchez or José Urquidy.'"
-          ],
           "postgame:823570:PHI:823571": [
-            "invalid result \"CONFIRMED: Mattingly expressed a high degree of concern about Orion Kerkering and said it was difficult to find places to use him after the reliever's September 19 struggles.\""
+            "invalid result 'Mets 10, Phillies 3'"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1289,
-        "estimated_prompt_tokens": 323,
-        "research_mode": "EARLY"
-      },
-      {
-        "team": "NYM",
-        "game_pk": 823570,
-        "items": [
-          "pregame:823570:NYM:EARLY",
-          "postgame:823570:NYM:823571"
-        ],
-        "response_id": "resp_0ac8839fe160da0d016aafef3e364887d2a94d76d4bdf34dd6",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 55,
-        "usage": {
-          "input_tokens": 22148,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1385,
-          "reasoning_tokens": 555,
-          "total_tokens": 23533,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 1082,
-        "estimated_prompt_tokens": 271,
-        "research_mode": "EARLY"
+        "prompt_chars": 653,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "KC",
         "game_pk": 823329,
         "items": [
-          "pregame:823329:KC:EARLY",
           "postgame:823329:KC:823330"
         ],
-        "response_id": "resp_04d8e34a128c8d47016aafef513a6487d29cf7d49e74a5d704",
+        "response_id": "resp_0495b2f873b1626c016ab0196b824487d2a2380bed7234a847",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 32,
+        "web_sources_seen": 42,
         "usage": {
-          "input_tokens": 21041,
+          "input_tokens": 22147,
           "cached_input_tokens": 4961,
-          "output_tokens": 1810,
-          "reasoning_tokens": 773,
-          "total_tokens": 22851,
+          "output_tokens": 1097,
+          "reasoning_tokens": 721,
+          "total_tokens": 23244,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:823329:KC:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
           "postgame:823329:KC:823330": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
+            "invalid result 'Pirates 6, Royals 5'"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1077,
-        "estimated_prompt_tokens": 270,
-        "research_mode": "EARLY"
-      },
-      {
-        "team": "PIT",
-        "game_pk": 823329,
-        "items": [
-          "pregame:823329:PIT:EARLY",
-          "postgame:823329:PIT:823330"
-        ],
-        "response_id": "resp_01aaca2186d412c2016aafef6997d887d2826e7c0ee58e7b14",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 47,
-        "usage": {
-          "input_tokens": 22346,
-          "cached_input_tokens": 4961,
-          "output_tokens": 2278,
-          "reasoning_tokens": 896,
-          "total_tokens": 24624,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 2026,
-        "estimated_prompt_tokens": 507,
-        "research_mode": "EARLY"
+        "prompt_chars": 647,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "BOS",
         "game_pk": 822922,
         "items": [
-          "pregame:822922:BOS:EARLY",
+          "pregame:822922:BOS:FINAL",
           "postgame:822922:BOS:822921"
         ],
-        "response_id": "resp_0723fc306664f462016aafef87efa887d2bcc877d9ad7f017b",
+        "response_id": "resp_03ebe3a5c55f1b14016ab0197f600487d297f16e1db2d860dd",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 63,
+        "web_sources_seen": 44,
         "usage": {
-          "input_tokens": 21489,
+          "input_tokens": 28631,
           "cached_input_tokens": 4961,
-          "output_tokens": 1612,
-          "reasoning_tokens": 655,
-          "total_tokens": 23101,
+          "output_tokens": 2269,
+          "reasoning_tokens": 1134,
+          "total_tokens": 30900,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
           "postgame:822922:BOS:822921": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
+            "invalid result 'COMPLETED'"
           ]
         },
-        "tool_budget": 2,
-        "prompt_chars": 1284,
-        "estimated_prompt_tokens": 321,
-        "research_mode": "EARLY"
+        "tool_budget": 3,
+        "prompt_chars": 3443,
+        "estimated_prompt_tokens": 861,
+        "research_mode": "FINAL_DELTA"
       },
       {
         "team": "TB",
         "game_pk": 822922,
         "items": [
-          "pregame:822922:TB:EARLY",
+          "pregame:822922:TB:FINAL",
           "postgame:822922:TB:822921"
         ],
-        "response_id": "resp_0fbf81b9d311eada016aafef9e9d1087d284644eca17546c7a",
+        "response_id": "resp_0d673a34a4267779016ab0199b234087d29ae75ad359778942",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 33,
+        "web_sources_seen": 30,
         "usage": {
-          "input_tokens": 25064,
+          "input_tokens": 31938,
           "cached_input_tokens": 4961,
-          "output_tokens": 1657,
-          "reasoning_tokens": 619,
-          "total_tokens": 26721,
+          "output_tokens": 1732,
+          "reasoning_tokens": 956,
+          "total_tokens": 33670,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 3,
+        "prompt_chars": 3620,
+        "estimated_prompt_tokens": 905,
+        "research_mode": "FINAL_DELTA"
+      },
+      {
+        "team": "ATH",
+        "game_pk": 824381,
+        "items": [
+          "pregame:824381:ATH:FINAL",
+          "postgame:824381:ATH:824380"
+        ],
+        "response_id": "resp_0d75d7436bb91bcf016ab019b3955887d28b35ec1dcdb7c555",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 38,
+        "usage": {
+          "input_tokens": 34211,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1603,
+          "reasoning_tokens": 981,
+          "total_tokens": 35814,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:822922:TB:EARLY": [
-            "invalid result None"
-          ],
-          "postgame:822922:TB:822921": [
-            "invalid result None"
+          "postgame:824381:ATH:824380": [
+            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
-        "tool_budget": 2,
-        "prompt_chars": 1461,
-        "estimated_prompt_tokens": 366,
-        "research_mode": "EARLY"
+        "tool_budget": 3,
+        "prompt_chars": 3448,
+        "estimated_prompt_tokens": 862,
+        "research_mode": "FINAL_DELTA"
+      },
+      {
+        "team": "CLE",
+        "game_pk": 824381,
+        "items": [
+          "pregame:824381:CLE:FINAL",
+          "postgame:824381:CLE:824380"
+        ],
+        "response_id": "resp_02cb60e4b895c156016ab019c8d04487d2accce04163d24b81",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 49,
+        "usage": {
+          "input_tokens": 23426,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1742,
+          "reasoning_tokens": 1123,
+          "total_tokens": 25168,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 3,
+        "prompt_chars": 3822,
+        "estimated_prompt_tokens": 956,
+        "research_mode": "FINAL_DELTA"
       }
     ]
   }

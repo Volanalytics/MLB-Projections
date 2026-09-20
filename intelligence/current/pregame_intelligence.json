@@ -1,6 +1,6 @@
 {
   "date": "2026-09-20",
-  "generated_at": "2026-09-20T14:37:42+00:00",
+  "generated_at": "2026-09-20T17:37:37+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823570": {
@@ -206,7 +206,7 @@
     "822922": {
       "manager_media": {
         "research_status": "COMPLETED",
-        "last_checked_at": "2026-09-20T00:00:00Z",
+        "last_checked_at": "2026-09-20T17:36:36Z",
         "passes": [
           {
             "checked_at": "2026-09-20T00:00:00Z",
@@ -237,9 +237,235 @@
             ],
             "result": "INCONCLUSIVE",
             "note": "Patrick Sandoval was identified as Boston's scheduled September 20 starter, but no September 20 pregame manager/coach availability or credentialed report containing a workload, pitch-count, innings, batters-faced, short-leash, bullpen-role, or availability declaration was located in the early pass. Manager/coach pregame media: SOURCE_UNAVAILABLE at time checked. No workload restriction is supported for Sandoval, and no manager declaration concerning Wyatt Olds' availability or role was located."
+          },
+          {
+            "checked_at": "2026-09-20T17:36:09Z",
+            "team": "BOS",
+            "teams": [
+              "BOS"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com",
+                "url": "https://www.mlb.com/news/brayan-bello-strikes-out-11-red-sox-fall-rays-walk-off",
+                "published_at": "2026-09-20T01:04:00Z"
+              },
+              {
+                "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
+                "source_name": "MLB.com",
+                "url": "https://www.mlb.com/video/chad-tracy-on-the-red-sox-loss-brayan-bello-s-outing",
+                "published_at": "2026-09-19T00:00:00Z"
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "The Boston Globe",
+                "url": "https://www.bostonglobe.com/2026/09/19/sports/red-sox-rays-brayan-bello/",
+                "published_at": "2026-09-19T00:00:00Z"
+              },
+              {
+                "source_type": "SOURCE_UNAVAILABLE",
+                "source_name": "Manager pregame media",
+                "url": "https://www.mlb.com/redsox/video",
+                "published_at": null
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL_DELTA search after the prior 2026-09-20T00:00:00Z state found no new or superseding pregame manager/club declaration before the 2026-09-20T17:40:00Z first pitch regarding Patrick Sandoval's workload, Wyatt Olds' availability, or another Boston relief restriction. Official and credentialed-local coverage confirmed Sandoval as the scheduled starter but did not report a manager-imposed usage limit. No accessible pregame manager-media item was available in the reviewed official club/MLB video coverage."
+          },
+          {
+            "checked_at": "2026-09-20T17:36:36Z",
+            "team": "TB",
+            "teams": [
+              "TB"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/rays/news/game-notes",
+                "published_at": "2026-09-20"
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://img.mlbstatic.com/mlb-images/image/upload/mlb/rieb2ias2i1amyqaqkyr.pdf",
+                "published_at": "2026-09-20"
+              },
+              {
+                "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+                "url": "https://www.mlb.com/video/topic/rays-manager-postgame",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.tampabay.com/sports/rays/2026/07/17/rays-have-rough-return-break-routed-by-red-sox-dh-opener/",
+                "published_at": "2026-07-17"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL_DELTA search found the official September 20 game notes confirming Griffin Jax as the Rays starter and the same-day transaction activating INF Ben Williamson and designating OF Jake Fraley for assignment. No new or superseding pregame manager/coach declaration establishing a Jax workload restriction or availability restriction for Kevin Kelly or Cam Booser was located before the 1:40 p.m. ET first pitch. The official manager-video index did not provide a current September 19/20 manager availability item; no timely credentialed local report containing such a declaration was located."
           }
         ],
         "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "TB": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-20T17:36:36Z",
+            "previous_game_pk": 822921,
+            "previous_game_date": "2026-09-19",
+            "passes": [
+              {
+                "checked_at": "2026-09-20T17:36:36Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://img.mlbstatic.com/mlb-images/image/upload/mlb/rieb2ias2i1amyqaqkyr.pdf",
+                    "published_at": "2026-09-20"
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/news/rays-lose-to-red-sox-ending-six-game-winning-streak",
+                    "published_at": "2026-09-19"
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+                    "url": "https://www.mlb.com/video/topic/rays-manager-postgame",
+                    "published_at": null
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.tampabay.com/sports/rays/2026/07/17/rays-have-rough-return-break-routed-by-red-sox-dh-opener/",
+                    "published_at": "2026-07-17"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The September 20 official Rays game notes identify September 19 as a Rays walk-off win and list no carry-forward injury, workload, or availability declaration relevant to the September 20 game. No accessible September 19 Rays manager postgame media item or timely credentialed local postgame report supplied a direct, forward-looking declaration about Jax, Kelly, Booser, or another material availability restriction. Prior-game result details were not used as projection evidence."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824381": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-20T17:37:25Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-20T17:36:54+00:00",
+            "team": "ATH",
+            "teams": [
+              "ATH"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/starting-lineups/2026-09-20",
+                "published_at": null
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/athletics/video/topic/athletics-manager-postgame",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://sports.yahoo.com/videos/mark-kotsay-details-athletics-pitching-094353152.html",
+                "published_at": "2026-09-19T09:43:00+00:00"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Final-delta search found the official lineup confirming Jack Perkins as the listed starter, but no new or superseding Athletics manager/coach pregame declaration on Perkins' workload or Drew Rom's availability before the scheduled first pitch. The official lineup page listed the game as delayed at the time checked; manager pregame media was unavailable."
+          },
+          {
+            "checked_at": "2026-09-20T17:37:25Z",
+            "team": "CLE",
+            "teams": [
+              "CLE"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/stories/game-preview/824381",
+                "published_at": "2026-09-20"
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/guardians/video/gavin-williams-against-the-athletics",
+                "published_at": "2026-09-20"
+              },
+              {
+                "source_type": "OFFICIAL_TEAM_MANAGER_PREGAME",
+                "url": "https://www.mlb.com/guardians/video/topic/guardians-manager-postgame",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.cleveland.com/guardians/",
+                "published_at": null
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL DELTA search, limited to information available before the 17:40 UTC first pitch, found no new or superseding attributable Cleveland manager/coach declaration on Gavin Williams' workload or the availability/use restriction of Cade Smith, Joey Cantillo, or Hunter Gaddis. Official manager-media coverage for this game was unavailable in the material reviewed; no qualifying beat/local report with a material declaration was located."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "CLE": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-20T17:37:25Z",
+            "previous_game_pk": 824380,
+            "previous_game_date": "2026-09-19",
+            "passes": [
+              {
+                "checked_at": "2026-09-20T17:37:25Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/video/game/824380",
+                    "published_at": "2026-09-20"
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
+                    "url": "https://www.mlb.com/guardians/video/topic/guardians-manager-postgame",
+                    "published_at": null
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.cleveland.com/guardians/",
+                    "published_at": null
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The prior game was final, not in progress: Cleveland won 12-6 on September 19. Review found no attributable postgame manager/coach declaration that plausibly carries forward as a specific availability, workload, health, or role restriction for the September 20 game. Official manager postgame coverage and a qualifying beat/local declaration were unavailable in the reviewed material."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
         "source": "manager_media_research.py external research results"
       }
     }
