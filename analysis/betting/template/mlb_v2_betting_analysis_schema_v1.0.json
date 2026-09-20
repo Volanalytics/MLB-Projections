@@ -1,0 +1,31 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"mlb_v2_betting_analysis_schema_v1.0",
+  "title":"MLB V2 Betting Analysis Canonical Schema v1.0",
+  "type":"object",
+  "required":["template_version","slate","executive_summary","supported_board","conditional_audit_board","full_slate_board","games","extreme_discrepancy_audit","starter_workload_validation","lineup_validation","bullpen_validation","environment_validation","market_price_history","checkpoint_delta","frozen_decisions","remaining_research","methodology","post_slate_grading"],
+  "properties":{
+    "template_version":{"const":"1.0"},
+    "slate":{"type":"object","required":["slate_date","checkpoint","source_timestamp","report_revision"]},
+    "executive_summary":{"type":"object"},
+    "supported_board":{"type":"array"},
+    "conditional_audit_board":{"type":"array"},
+    "full_slate_board":{"type":"array","items":{"$ref":"#/$defs/gameSummary"}},
+    "games":{"type":"array","items":{"$ref":"#/$defs/game"}},
+    "extreme_discrepancy_audit":{"type":"array"},
+    "starter_workload_validation":{"type":"array"},
+    "lineup_validation":{"type":"array"},
+    "bullpen_validation":{"type":"array"},
+    "environment_validation":{"type":"array"},
+    "market_price_history":{"type":"array"},
+    "checkpoint_delta":{"type":"array"},
+    "frozen_decisions":{"type":"array"},
+    "remaining_research":{"type":"array"},
+    "methodology":{"type":"object"},
+    "post_slate_grading":{"type":["object","null"]}
+  },
+  "$defs":{
+    "gameSummary":{"type":"object","required":["game_id","matchup","phase","model_score","model_win_probability","fair_moneyline","discovery_moneyline","current_moneyline","moneyline_ev","model_total","discovery_total","current_total","total_gap","intelligence_state","lifecycle_state","existing_position_assessment","new_entry_assessment","primary_risk","confidence"]},
+    "game":{"type":"object","required":["game_id","matchup","scheduled_start","phase","projection","market","price_history","intelligence","lifecycle_state","classification","existing_position_assessment","new_entry_assessment","audit_flags","confidence"]}
+  }
+}
