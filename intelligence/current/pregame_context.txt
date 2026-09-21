@@ -1,9 +1,9 @@
 MLB V2 PREGAME CONTEXT - 2026-09-21
-generated 2026-09-21T20:36:06+00:00
+generated 2026-09-21T23:37:50+00:00
 ================================================================================================
 Pipeline complete: 2/3 games
 Intelligence readiness: EARLY=0, PARTIAL=1, DECISION_READY=0, FINAL=2
-Pipeline blockers: 7
+Pipeline blockers: 2
 Mandatory Intelligence research tasks: 18
 
 TOR @ BAL  gamePk 824787  Oriole Park at Camden Yards
@@ -19,13 +19,13 @@ HP UMPIRE: CONFIRMED - Carlos Torres
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 69F, 9 mph, In From CF, relative=in
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=6
+STATE PHASE: LIVE | frozen=True | pregame runs=6
 MODEL TOTAL: 8.47
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=current | quotes=3
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=PRESERVED_PREGAME | quotes=3
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.97 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
   ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
   HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
@@ -55,13 +55,13 @@ HP UMPIRE: CONFIRMED - Emil Jimenez
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: CONFIRMED - 61F, 12 mph, L To R, relative=cross
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=6
+STATE PHASE: LIVE | frozen=True | pregame runs=6
 MODEL TOTAL: 9.61
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=current | quotes=3
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=PRESERVED_PREGAME | quotes=3
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.61 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
   ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
   HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
@@ -81,38 +81,33 @@ INTELLIGENCE RESEARCH:
 MIN @ SF  gamePk 823169  Oracle Park
 ------------------------------------------------------------------------------------------------
 INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
-AWAY SP: PROVISIONAL - Zebby Matthews
+AWAY SP: CONFIRMED - Zebby Matthews
   WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
 HOME SP: PROVISIONAL - Blade Tidwell
   WORKLOAD: model ~22 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: PROVISIONAL: 1.Luke Keaschall, 2.Brooks Lee, 3.Kody Clemens, 4.Ryan Jeffers, 5.Josh Bell, 6.Emmanuel Rodriguez, 7.Victor Caratini, 8.Ryan Kreidler, 9.Walker Jenkins
+AWAY LINEUP: CONFIRMED: 1.Walker Jenkins, 2.Luke Keaschall, 3.Brooks Lee, 4.Kody Clemens, 5.Ryan Jeffers, 6.Alan Roden, 7.Aaron Sabato, 8.Emmanuel Rodriguez, 9.Ryan Kreidler
 HOME LINEUP: PROVISIONAL: 1.Drew Gilbert, 2.Jung Hoo Lee, 3.Bryce Eldridge, 4.Jonah Cox, 5.Scott Bandura, 6.Shay Whitcomb, 7.Andrew Knizner, 8.Brett Harris, 9.Christian Koss
-HP UMPIRE: NOT_YET_AVAILABLE - TBD
+HP UMPIRE: CONFIRMED - Andy Fletcher
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+WEATHER: CONFIRMED - 60F, 15 mph, Out To CF, relative=out
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=6
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=8
 MODEL TOTAL: 8.57
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=current | quotes=3
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=4
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.57 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: COMPLETED | freshness=STALE | last checked=2026-09-21T00:00:00Z
+  ASSESSMENT: INCONCLUSIVE - Manager/coach media research completed, but source coverage was insufficient for a reliable negative finding.
+  HISTORY: 1 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
 BULLPEN COMPUTED: MIN CONFIRMED (0 compromised); SF CONFIRMED (0 compromised)
 RELIEVER DB: MIN CONFIRMED (4 taxed / 4 leverage-relevant); SF CONFIRMED (2 taxed / 0 leverage-relevant)
   MIN: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
   SF: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
 PIPELINE BLOCKERS:
-  - away_lineup: PROVISIONAL
   - home_lineup: PROVISIONAL
-  - away_starter: PROVISIONAL
   - home_starter: PROVISIONAL
-  - home_plate_umpire: NOT_YET_AVAILABLE
-  - weather: NOT_YET_AVAILABLE
-  - stadium_relative_wind: NOT_YET_AVAILABLE
 INTELLIGENCE RESEARCH:
   - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
   - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED

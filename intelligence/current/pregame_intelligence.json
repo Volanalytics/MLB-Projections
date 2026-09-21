@@ -1,6 +1,123 @@
 {
   "date": "2026-09-21",
-  "generated_at": "2026-09-21T20:36:05+00:00",
+  "generated_at": "2026-09-21T23:37:49+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
-  "games": {}
+  "games": {
+    "824221": {
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "DET": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-21T23:36:27Z",
+            "previous_game_pk": 824546,
+            "previous_game_date": "2026-09-20",
+            "passes": [
+              {
+                "checked_at": "2026-09-21T23:36:27Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com / Detroit Tigers",
+                    "url": "https://www.mlb.com/news/tigers-eliminated-from-postseason-contention-with-loss-to-white-sox",
+                    "publication_date": "2026-09-20",
+                    "notes": "Official postgame report for Tigers at White Sox, game 824546."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "MLB Film Room",
+                    "url": "https://www.mlb.com/video/game/824546",
+                    "publication_date": "2026-09-20",
+                    "notes": "Official game page and final-game record."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com / Detroit Tigers",
+                    "url": "https://www.mlb.com/tigers/news/river-ryan-set-to-make-tigers-debut-on-monday",
+                    "publication_date": "2026-09-20",
+                    "notes": "Official club report concerning Detroit's next-game starter."
+                  },
+                  {
+                    "source_type": "MANAGER_OR_COACH_POSTGAME_MEDIA",
+                    "source_name": "Source unavailable",
+                    "url": "https://www.mlb.com/news/tigers-eliminated-from-postseason-contention-with-loss-to-white-sox",
+                    "publication_date": "2026-09-20",
+                    "notes": "No directly accessible A.J. Hinch or Tigers-coach postgame media transcript/video yielding a carry-forward declaration was located in the available search results."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Search coverage review",
+                    "url": "https://www.mlb.com/tigers/news",
+                    "publication_date": "2026-09-21",
+                    "notes": "Available returned coverage did not provide an independently accessible credentialed local/beat postgame report with a materially relevant club declaration."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Official reporting confirms Detroit's September 20 loss at Chicago and that River Ryan was scheduled to debut September 21. However, the accessible evidence did not establish a postgame manager/coach or credentialed beat declaration from game 824546 that was materially relevant to Detroit's September 21 game. The required negative-result source coverage could not be completed with an accessible credentialed beat/local postgame source."
+              }
+            ],
+            "comments": [
+              {
+                "evidence_label": "UNRESOLVED",
+                "comment_type": "POSTGAME_CARRY_FORWARD",
+                "text": "No material, source-supported postgame Detroit declaration from game 824546 was verified for carry-forward use before the September 21 game."
+              }
+            ],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "823169": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-21T00:00:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-21T00:00:00Z",
+            "team": "MIN",
+            "teams": [
+              "MIN"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "MLB.com Starting Lineups",
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/starting-lineups?msockid=24667b27920a6aa534246d6593376b65",
+                "published_at": "2026-09-21"
+              },
+              {
+                "source_name": "Minnesota Twins official site",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/twins?c_id=min",
+                "published_at": "2026-09-21"
+              },
+              {
+                "source_name": "MLB.com Twins news",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/twins/news?msockid=06d69d76b66f67ea37658bdcb7e76679",
+                "published_at": "2026-09-21"
+              },
+              {
+                "source_name": "CBS Sports/AP game preview",
+                "source_type": "NATIONAL_REPORTER",
+                "url": "https://apnews.news.racing.cbssports.com/mlb/gametracker/preview/MLB_20260921_MIN%40SF/",
+                "published_at": "2026-09-21"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official pregame sources confirmed Zebby Matthews as Minnesota's listed starter for the September 21 game at San Francisco, but no pregame manager/coach availability declaration was found concerning a Matthews workload restriction or the availability/usage restriction of Yoendrys Gómez, Jeff Hoffman, A.J. Minter, or Kody Funderburk. No credentialed Twins beat/local pregame report satisfying the evidence contract was located in the lightweight search window."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      }
+    }
+  }
 }
