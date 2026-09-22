@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "generated_at": "2026-09-22T17:38:30+00:00",
+  "generated_at": "2026-09-22T20:38:09+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823543": {
@@ -46,6 +46,97 @@
           }
         ],
         "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "CONFIRMED",
+        "teams": {
+          "TB": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-22T00:00:00Z",
+            "previous_game_pk": 822922,
+            "previous_game_date": "2026-09-20",
+            "passes": [
+              {
+                "checked_at": "2026-09-22T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com Rays game recap",
+                    "url": "https://www.mlb.com/news/richie-palacios-hits-walk-off-single-rays-beat-red-sox"
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "MLB.com Rays manager postgame video index",
+                    "url": "https://www.mlb.com/video/topic/rays-manager-postgame"
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "MLB.com Red Sox at Rays postgame slate, game 822922",
+                    "url": "https://www.mlb.com/video/data-viz-game-recap-822922"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Official MLB/Rays sources located the September 20 postgame coverage and a Kevin Cash postgame video entry, but the available indexed material did not provide a directly attributable, forward-relevant declaration with sufficient detail to normalize. Searches for credentialed Rays beat/local postgame reporting did not return an accessible qualifying source. Accordingly, the negative-evidence coverage contract is not satisfied."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "NYY": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-22 UTC",
+            "previous_game_pk": 825028,
+            "previous_game_date": "2026-09-20",
+            "passes": [
+              {
+                "checked_at": "2026-09-22 UTC",
+                "sources_checked": [
+                  {
+                    "source_name": "MLB.com / New York Yankees",
+                    "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME",
+                    "url": "https://www.mlb.com/yankees/video/aaron-boone-on-lombard-jones-8-4-loss",
+                    "published_at": "2026-09-20",
+                    "access_result": "Manager Aaron Boone postgame interview located; available search metadata identifies the interview but did not provide sufficient transcript detail to preserve any potentially material forward-looking statement exactly."
+                  },
+                  {
+                    "source_name": "MLB.com / New York Yankees",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/yankees/news/game-notes",
+                    "published_at": "2026-09-20",
+                    "access_result": "Official September 20 Yankees game-notes entry located; it is pregame material and did not establish a postgame carry-forward declaration."
+                  },
+                  {
+                    "source_name": "Yahoo Sports / SNY Yankees syndicated report",
+                    "source_type": "LOCAL_CREDENTIALLED_LEAD",
+                    "url": "https://sports.yahoo.com/articles/nightmare-fifth-inning-warren-brent-225225390.html",
+                    "published_at": "2026-09-20",
+                    "access_result": "Located report on the September 20 game; available metadata did not provide a directly attributable, material next-game declaration."
+                  },
+                  {
+                    "source_name": "Yahoo Sports",
+                    "source_type": "SECONDARY_REPORT",
+                    "url": "https://sports.yahoo.com/articles/yankees-aaron-boone-drops-honest-133034490.html",
+                    "published_at": "2026-09-21",
+                    "access_result": "Metadata reports Boone gave a Clarke Schmidt update, but the available material did not provide the wording or details necessary to normalize and carry it forward reliably."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "An official Yankees manager postgame interview and official club material were located, but no material declaration plausibly relevant to the September 22 game could be verified with sufficiently exact wording. A potentially relevant Clarke Schmidt update was referenced by secondary-report metadata only; it is not treated as a declaration without the underlying attributable details. Credentialed beat/local postgame confirmation was not available in the retrieved material."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
         "source": "manager_media_research.py external research results"
       }
     },
@@ -155,6 +246,118 @@
             }
           }
         },
+        "source": "manager_media_research.py external research results"
+      },
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-22T20:36:47+00:00",
+        "passes": [
+          {
+            "checked_at": "2026-09-22T20:36:47+00:00",
+            "team": "STL",
+            "teams": [
+              "STL"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "St. Louis Cardinals Game Notes",
+                "url": "https://www.mlb.com/cardinals/news/game-notes",
+                "status": "CHECKED"
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB.com Cardinals video: Andre Pallante against the Pirates",
+                "url": "https://www.mlb.com/cardinals/video/andre-pallante-against-the-pirates-x3747",
+                "status": "CHECKED"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Andre Pallante was listed as the Cardinals' probable starter, but the available official-team and MLB materials did not provide a pregame manager/coach declaration concerning his workload, pitch count, innings expectation, or an early hook. No accessible credentialed beat/local pregame report containing such a declaration was located before first pitch."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "823412": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-22T20:37:36+00:00",
+        "passes": [
+          {
+            "checked_at": "2026-09-22T20:37:36+00:00",
+            "team": "MIL",
+            "teams": [
+              "MIL"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "MLB.com Probable Pitchers",
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://www.mlb.com/probable-pitchers/2026-09-22",
+                "finding": "Listed Dustin May as Milwaukee's probable starter at Philadelphia on September 22, 2026."
+              },
+              {
+                "source_name": "Milwaukee Brewers News",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/brewers/news",
+                "finding": "Official Brewers news index was checked; no September 22 pregame manager declaration establishing a Dustin May workload restriction or Chad Patrick availability declaration was located in the available results."
+              },
+              {
+                "source_name": "Milwaukee Journal Sentinel search",
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.jsonline.com/",
+                "finding": "SOURCE_UNAVAILABLE: search access was blocked by robots.txt; no credentialed local pregame report could be reviewed."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Dustin May's scheduled start was confirmed, but no accessible direct manager/coach pregame media or credentialed beat reporting established a workload limit, short leash, pitch count, innings target, or other restriction. No usable manager declaration on Chad Patrick's availability was found. Because the required manager/coach and credentialed-local coverage could not be meaningfully completed within the lightweight search budget, this is not a completed negative finding."
+          },
+          {
+            "checked_at": "2026-09-22T00:00:00Z",
+            "team": "PHI",
+            "teams": [
+              "PHI"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "MLB.com Phillies / game preview",
+                "url": "https://www.mlb.com/stories/game-preview/823412",
+                "published_at": "2026-09-22",
+                "notes": "Official game preview identifies Zack Wheeler as Philadelphia's scheduled starter and provides recent-performance context; it contains no manager/coach workload declaration."
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Phillies Wire",
+                "url": "https://phillieswire.com/",
+                "published_at": "2026-09-22T02:50:00-04:00",
+                "notes": "Club-affiliated pregame page lists Wheeler versus Dustin May; no manager/coach declaration regarding Wheeler's workload or José Urquidy's availability was located."
+              },
+              {
+                "source_type": "MANAGER_COACH_PREGAME_MEDIA",
+                "source_name": "Source unavailable in searched official pregame results",
+                "url": "https://www.mlb.com/phillies",
+                "published_at": null,
+                "notes": "No accessible Phillies manager/coach pregame media item for September 22 containing a Wheeler workload plan or Urquidy availability declaration was located in the allotted search."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "Search coverage review",
+                "url": "https://www.nbcsportsphiladelphia.com/mlb/philadelphia-phillies/2026-broadcast-schedule-where-to-watch-stream/721441/",
+                "published_at": "2026-03-17",
+                "notes": "No credentialed local/beat report located in the allotted search contained a direct, attributable September 22 club declaration about Wheeler or Urquidy."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No material, attributable pregame manager/coach declaration was located before the scheduled September 22, 2026 first pitch. The available official sources confirm Wheeler as the scheduled starter but do not establish a restriction, altered workload plan, or José Urquidy availability decision."
+          }
+        ],
+        "declarations": [],
         "source": "manager_media_research.py external research results"
       }
     }
