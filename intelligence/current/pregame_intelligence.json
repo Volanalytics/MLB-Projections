@@ -1,6 +1,6 @@
 {
   "date": "2026-09-22",
-  "generated_at": "2026-09-22T20:38:09+00:00",
+  "generated_at": "2026-09-22T23:38:05+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823543": {
@@ -358,6 +358,166 @@
           }
         ],
         "declarations": [],
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824222": {
+      "previous_game_postgame": {
+        "status": "CONFIRMED",
+        "teams": {
+          "WSH": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-22T23:36:38Z",
+            "previous_game_pk": 824221,
+            "previous_game_date": "2026-09-21",
+            "passes": [
+              {
+                "checked_at": "2026-09-22T23:36:38Z",
+                "sources_checked": [
+                  {
+                    "source_name": "Washington Nationals / MLB.com",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/nationals/video/blake-butera-on-the-nationals-9-2-loss-to-the-tigers",
+                    "published_at": "2026-09-21",
+                    "summary": "Official postgame manager video. Blake Butera discussed DJ Herz's return to the mound, how Herz can use the experience as he continues pitching in the league, and the club's ability to bounce back."
+                  },
+                  {
+                    "source_name": "MLB Gameday",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/gameday/nationals-vs-tigers/2026/09/21/824221/play/32",
+                    "published_at": "2026-09-21",
+                    "summary": "Final game record: Detroit defeated Washington 9-2; DJ Herz pitched four innings."
+                  },
+                  {
+                    "source_name": "The Washington Post / Associated Press",
+                    "source_type": "NATIONAL_WIRE",
+                    "url": "https://www.washingtonpost.com/sports/mlb/2026/09/21/nationals-tigers-score-ryan/7a46549a-b624-11f1-94cb-d3d8f22a8c8b_story.html",
+                    "published_at": "2026-09-21",
+                    "summary": "Game recap reported Herz's first MLB appearance in nearly two years and his four-inning outing. No attributable Nationals postgame declaration affecting the September 22 game was surfaced."
+                  },
+                  {
+                    "source_name": "MASN Sports search",
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.masnsports.com/",
+                    "published_at": null,
+                    "summary": "SOURCE_UNAVAILABLE: no accessible September 21 Nationals-Tigers postgame report or attributable club/manager declaration was surfaced in the available search results."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The official postgame video contains only a general manager comment about Herz using his return-to-MLB experience as he continues pitching. It does not establish a concrete availability, workload, roster, injury, or lineup implication for game 824222. A qualifying credentialed local/beat postgame source with a material carry-forward declaration was not available."
+              }
+            ]
+          },
+          "DET": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-22T00:00:00Z",
+            "previous_game_pk": 824221,
+            "previous_game_date": "2026-09-21",
+            "passes": [
+              {
+                "checked_at": "2026-09-22T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB_GAMEDAY",
+                    "source_name": "MLB Gameday",
+                    "url": "https://www.mlb.com/gameday/nationals-vs-tigers/2026/09/21/824221/live",
+                    "checked_for": "September 21 game usage, injuries, and postgame-relevant developments"
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Detroit Tigers / MLB.com",
+                    "url": "https://www.mlb.com/tigers",
+                    "checked_for": "Club-posted postgame coverage and manager availability"
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+                    "source_name": "Detroit Tigers Manager Postgame Videos",
+                    "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
+                    "checked_for": "A.J. Hinch postgame media for September 21"
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB_GAME_STORY",
+                    "source_name": "MLB Game Story",
+                    "url": "https://www.mlb.com/stories/game/824221?canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%2Fgame%2F824221",
+                    "checked_for": "Official postgame game-story context"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Official MLB sources confirm Detroit's September 21 game was completed, a 9-2 win over Washington. Detroit used Keider Montero, Drew Sommers, and Beau Brieske; River Ryan made his Tigers debut. No direct Detroit manager/coach postgame declaration carrying a plausible restriction, availability change, lineup decision, injury update, or other actionable condition into the September 22 game was located in the official sources reviewed. A qualifying credentialed Detroit beat/local postgame source could not be verified within the available research results; therefore the negative evidence contract for NO_MATERIAL_DECLARATION_FOUND is not satisfied."
+              }
+            ],
+            "comments": [
+              {
+                "evidence_label": "CONFIRMED",
+                "comment_type": "PREVIOUS_GAME_USAGE",
+                "text": "MLB Gameday lists Detroit pitchers Keider Montero, Drew Sommers, and Beau Brieske as appearing in the September 21 game; River Ryan started and made his Tigers debut. This is game-log context, not a club declaration of September 22 availability.",
+                "source_url": "https://www.mlb.com/gameday/nationals-vs-tigers/2026/09/21/824221/live"
+              }
+            ],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824709": {
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "CLE": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-22T00:00:00Z",
+            "previous_game_pk": 824381,
+            "previous_game_date": "2026-09-20",
+            "passes": [
+              {
+                "checked_at": "2026-09-22T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB_GAME_VIDEO",
+                    "source_name": "MLB.com Film Room",
+                    "url": "https://www.mlb.com/video/game/824381",
+                    "checked_at": "2026-09-22T00:00:00Z",
+                    "finding": "Official game page confirmed Cleveland's 1-0 win over the Athletics on September 20, 2026 and identified Gavin Williams as the featured starter."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MANAGER_POSTGAME_MEDIA",
+                    "source_name": "MLB.com",
+                    "url": "https://www.mlb.com/video/stephen-vogt-on-sweep-of-a-s-gavin-williams",
+                    "checked_at": "2026-09-22T00:00:00Z",
+                    "finding": "Official postgame manager-media video was located, but the searchable source extract supplied no attributable statement or actionable player-availability/usage detail."
+                  },
+                  {
+                    "source_type": "NATIONAL_WIRE",
+                    "source_name": "Field Level Media",
+                    "url": "https://fieldlevelmedia.com/mlb/gavin-williams-pitches-guardians-to-1-0-win-over-athletics/",
+                    "checked_at": "2026-09-22T00:00:00Z",
+                    "finding": "Game recap confirmed Williams threw seven shutout innings in Cleveland's September 20 win; no material carry-forward declaration was available in the supplied extract."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "cleveland.com search attempt",
+                    "url": "https://www.cleveland.com/guardians/",
+                    "checked_at": "2026-09-22T00:00:00Z",
+                    "finding": "Source unavailable to the research tool because of robots restrictions; no credentialed local postgame reporting could be reviewed."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "No attributable postgame declaration or comment with plausible relevance to Cleveland's next game was recoverable from the available official and reporting-source extracts. The official manager postgame video was located, but no statement could be verified from its available text; local credentialed-source review was unavailable."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
         "source": "manager_media_research.py external research results"
       }
     }

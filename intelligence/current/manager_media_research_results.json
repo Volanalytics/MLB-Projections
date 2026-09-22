@@ -3,6 +3,337 @@
   "generated_from_queue_at": "2026-09-22T14:35:03+00:00",
   "items": [
     {
+      "item_id": "postgame:823328:STL:823001",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-22T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com / St. Louis Cardinals",
+          "url": "https://www.mlb.com/cardinals/news/leo-bernal-hits-go-ahead-homer-as-cardinals-come-back-in-home-finale",
+          "publication_date": "2026-09-20",
+          "accessed_context": "Postgame recap and Oliver Marmol postgame comments following STL 5, WSH 3."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com / St. Louis Cardinals",
+          "url": "https://www.mlb.com/cardinals/news/game-notes",
+          "publication_date": "2026-09-22",
+          "accessed_context": "Official Cardinals game-notes index, including September 20 and September 22 materials."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB Gameday",
+          "url": "https://www.mlb.com/gameday/nationals-vs-cardinals/2026/09/20/823001/final/summary/all",
+          "publication_date": "2026-09-20",
+          "accessed_context": "Official final-game record for game 823001."
+        },
+        {
+          "source_type": "MANAGER_POSTGAME_MEDIA",
+          "source_name": "Oliver Marmol via MLB.com Cardinals postgame recap",
+          "url": "https://www.mlb.com/cardinals/news/leo-bernal-hits-go-ahead-homer-as-cardinals-come-back-in-home-finale",
+          "publication_date": "2026-09-20",
+          "accessed_context": "Available; Marmol's quoted comments addressed Iván Herrera's offensive ability, not a next-game availability, workload, lineup, or role decision."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Official postgame coverage confirms St. Louis won 5-3 on September 20. The available manager comment was evaluative praise of Iván Herrera and did not establish a carry-forward restriction, availability update, planned lineup usage, pitching role, or workload guidance for the next game. No material prior-game postgame declaration plausibly relevant to game 823328 was found. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823001,
+      "today_game_pk": 823328,
+      "team": "STL",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 823001,
+      "previous_game_date": "2026-09-20",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "ea2d4df84c7bf5167feaea072316c430caf69e5dc468b859f06842a58890d6df"
+    },
+    {
+      "item_id": "postgame:823412:MIL:824789",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-22T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com / Milwaukee Brewers",
+          "url": "https://www.mlb.com/brewers/news?msockid=0b2765ef192569d509f073a41854687a",
+          "published_date": "2026-09-20",
+          "accessed_context": "Club report on Milwaukee's September 20 game at Baltimore; says Jacob Misiorowski's exit after three innings was not injury-related and followed staff planning."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Game Story",
+          "url": "https://www.mlb.com/stories/game/824789?ap=1&canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%3Fs%3Dhttps%253A%252F%252Fwww.mlb.com%252Fstories%252Fgame%252F824789%253Fap%253D1%2526storylocal%253Darticle-embed&storylocal=article-embed",
+          "published_date": "2026-09-20",
+          "accessed_context": "Official game record for Brewers 3, Orioles 0."
+        },
+        {
+          "source_type": "NATIONAL_WIRE",
+          "source_name": "CBS Sports / AP game coverage",
+          "url": "https://www.cbssports.com/mlb/gametracker/boxscore/MLB_20260920_MIL%40BAL/",
+          "published_date": "2026-09-20",
+          "accessed_context": "Postgame coverage carrying Pat Murphy comments about the regular season and Baltimore."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Search review",
+          "url": "https://www.jsonline.com/",
+          "published_date": null,
+          "accessed_context": "Searched for Milwaukee beat/local postgame coverage; page access was unavailable to the research tool."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Milwaukee's only clearly forward-relevant postgame item was the club-confirmed explanation that Jacob Misiorowski's three-inning exit was not injury-related. The available official material attributes the usage to pregame staff planning; no numeric future pitch, inning, or batters-faced restriction was established. | VALIDATION: invalid result 'MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824789,
+      "today_game_pk": 823412,
+      "team": "MIL",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 824789,
+      "previous_game_date": "2026-09-20",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": "Jacob Misiorowski",
+          "speaker": "Milwaukee Brewers club report",
+          "speaker_role": "Official club reporting",
+          "statement": "There was nothing wrong with Misiorowski when he departed Sunday's start against Baltimore after three innings.",
+          "restriction_normalized": "No injury-related restriction declared; shortened outing was described as planned staff usage.",
+          "numeric_limit": null,
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/brewers/news?msockid=0b2765ef192569d509f073a41854687a",
+          "source_date": "2026-09-20"
+        }
+      ],
+      "comments": [
+        {
+          "speaker": "Pat Murphy",
+          "speaker_role": "Manager",
+          "comment": "Murphy said, \"I believe the regular season indicates the character of your team,\" and praised Baltimore's grit throughout the series and season.",
+          "relevance_to_next_game": "General team-character commentary only; not a lineup, pitching-availability, or workload declaration for the September 22 game.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.cbssports.com/mlb/gametracker/boxscore/MLB_20260920_MIL%40BAL/",
+          "source_date": "2026-09-20"
+        }
+      ],
+      "queue_fingerprint": "3c6ebbbdd1c551535ef4cbdedf1b378089230ab4b0c6aa1f6aced0d65eb25f12"
+    },
+    {
+      "item_id": "postgame:823412:PHI:823570",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-22T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Philadelphia Phillies / MLB.com",
+          "title": "Phillies 'letting it play out' regarding bullpen puzzle before playoffs",
+          "url": "https://www.mlb.com/video/game/823570",
+          "publication_date": "2026-09-20"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Philadelphia Phillies / MLB.com",
+          "title": "Don Mattingly talks Phillies' 7-2 win",
+          "url": "https://www.mlb.com/phillies/video/don-mattingly-talks-phillies-7-2-win",
+          "publication_date": "2026-09-20"
+        },
+        {
+          "source_type": "OFFICIAL_LEAGUE",
+          "source_name": "MLB.com",
+          "title": "Philadelphia Phillies at New York Mets Game Story, Scores/Highlights - 09/20/2026",
+          "url": "https://www.mlb.com/stories/game/823570",
+          "publication_date": "2026-09-20"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Official Phillies/MLB material confirms Philadelphia's 7-2 win over the Mets on September 20, 2026, and identifies an official postgame Don Mattingly availability. The accessible official metadata did not provide a verbatim or sufficiently specific manager declaration that could be carried forward to the September 22 game. No credentialed Phillies beat/local postgame report containing a material, attributable declaration was located in the available search results. | VALIDATION: invalid result None",
+      "game_pk": 823570,
+      "today_game_pk": 823412,
+      "team": "PHI",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 823570,
+      "previous_game_date": "2026-09-20",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "label": "UNRESOLVED",
+          "subject": "Philadelphia Phillies postgame carry-forward",
+          "comment": "The official postgame interview description says interim manager Don Mattingly discussed Cristopher Sánchez's start and Justin Crawford's hit, but no accessible transcript or precise club declaration established a next-game availability, usage restriction, lineup, roster, injury, or bullpen-role decision. MLB's official game page also framed the bullpen situation as a puzzle being allowed to play out, but the accessible content did not provide attributable wording detailed enough to normalize as a declaration."
+        },
+        {
+          "label": "SOURCE_UNAVAILABLE",
+          "subject": "Credentialed beat/local postgame coverage",
+          "comment": "No qualifying credentialed Phillies beat/local postgame report with a material attributable declaration was available in the returned search results; therefore the negative-evidence contract for a completed no-material-declaration result was not met."
+        }
+      ],
+      "queue_fingerprint": "12fc92429402fdb0deeca0df3c6835a7bd431e9a2b24a23564bbdbe7afd0d2aa"
+    },
+    {
+      "item_id": "postgame:824222:WSH:824221",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-22T23:36:38Z",
+      "sources_checked": [
+        {
+          "source_name": "Washington Nationals / MLB.com",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/nationals/video/blake-butera-on-the-nationals-9-2-loss-to-the-tigers",
+          "published_at": "2026-09-21",
+          "summary": "Official postgame manager video. Blake Butera discussed DJ Herz's return to the mound, how Herz can use the experience as he continues pitching in the league, and the club's ability to bounce back."
+        },
+        {
+          "source_name": "MLB Gameday",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/gameday/nationals-vs-tigers/2026/09/21/824221/play/32",
+          "published_at": "2026-09-21",
+          "summary": "Final game record: Detroit defeated Washington 9-2; DJ Herz pitched four innings."
+        },
+        {
+          "source_name": "The Washington Post / Associated Press",
+          "source_type": "NATIONAL_WIRE",
+          "url": "https://www.washingtonpost.com/sports/mlb/2026/09/21/nationals-tigers-score-ryan/7a46549a-b624-11f1-94cb-d3d8f22a8c8b_story.html",
+          "published_at": "2026-09-21",
+          "summary": "Game recap reported Herz's first MLB appearance in nearly two years and his four-inning outing. No attributable Nationals postgame declaration affecting the September 22 game was surfaced."
+        },
+        {
+          "source_name": "MASN Sports search",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.masnsports.com/",
+          "published_at": null,
+          "summary": "SOURCE_UNAVAILABLE: no accessible September 21 Nationals-Tigers postgame report or attributable club/manager declaration was surfaced in the available search results."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The official postgame video contains only a general manager comment about Herz using his return-to-MLB experience as he continues pitching. It does not establish a concrete availability, workload, roster, injury, or lineup implication for game 824222. A qualifying credentialed local/beat postgame source with a material carry-forward declaration was not available.",
+      "game_pk": 824221,
+      "today_game_pk": 824222,
+      "team": "WSH",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 824221,
+      "previous_game_date": "2026-09-21",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "speaker": "Blake Butera",
+          "speaker_role": "Nationals manager",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/nationals/video/blake-butera-on-the-nationals-9-2-loss-to-the-tigers",
+          "comment": "Butera discussed DJ Herz's return to the mound and how Herz can use that experience as he continues pitching in the league. The official source does not provide a specific next-game usage, health, or availability determination.",
+          "carry_forward_relevance": "UNRESOLVED"
+        }
+      ],
+      "queue_fingerprint": "8d7877329573d143c2b818694d6ae7a0890e2541d1dd88daabde1e0163f76649"
+    },
+    {
+      "item_id": "postgame:824222:DET:824221",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-22T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_GAMEDAY",
+          "source_name": "MLB Gameday",
+          "url": "https://www.mlb.com/gameday/nationals-vs-tigers/2026/09/21/824221/live",
+          "checked_for": "September 21 game usage, injuries, and postgame-relevant developments"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Detroit Tigers / MLB.com",
+          "url": "https://www.mlb.com/tigers",
+          "checked_for": "Club-posted postgame coverage and manager availability"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "source_name": "Detroit Tigers Manager Postgame Videos",
+          "url": "https://www.mlb.com/tigers/video/topic/tigers-manager-postgame",
+          "checked_for": "A.J. Hinch postgame media for September 21"
+        },
+        {
+          "source_type": "OFFICIAL_MLB_GAME_STORY",
+          "source_name": "MLB Game Story",
+          "url": "https://www.mlb.com/stories/game/824221?canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%2Fgame%2F824221",
+          "checked_for": "Official postgame game-story context"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "Official MLB sources confirm Detroit's September 21 game was completed, a 9-2 win over Washington. Detroit used Keider Montero, Drew Sommers, and Beau Brieske; River Ryan made his Tigers debut. No direct Detroit manager/coach postgame declaration carrying a plausible restriction, availability change, lineup decision, injury update, or other actionable condition into the September 22 game was located in the official sources reviewed. A qualifying credentialed Detroit beat/local postgame source could not be verified within the available research results; therefore the negative evidence contract for NO_MATERIAL_DECLARATION_FOUND is not satisfied.",
+      "game_pk": 824221,
+      "today_game_pk": 824222,
+      "team": "DET",
+      "pass_type": "POSTGAME_TO_NEXT_GAME",
+      "previous_game_pk": 824221,
+      "previous_game_date": "2026-09-21",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "evidence_label": "UNRESOLVED",
+          "speaker": null,
+          "declaration_type": "MANAGER_OR_COACH_POSTGAME_AVAILABILITY",
+          "player": null,
+          "normalized_restriction": null,
+          "quote": null,
+          "source_url": null,
+          "reason": "No verified Detroit manager/coach postgame media declaration for the September 21 game was located."
+        }
+      ],
+      "comments": [
+        {
+          "evidence_label": "CONFIRMED",
+          "comment_type": "PREVIOUS_GAME_USAGE",
+          "text": "MLB Gameday lists Detroit pitchers Keider Montero, Drew Sommers, and Beau Brieske as appearing in the September 21 game; River Ryan started and made his Tigers debut. This is game-log context, not a club declaration of September 22 availability.",
+          "source_url": "https://www.mlb.com/gameday/nationals-vs-tigers/2026/09/21/824221/live"
+        }
+      ],
+      "queue_fingerprint": "eb9288ae7d3db5c6a19853996f5a0335dc06a8a6e14d2c678533ee241e820f5a"
+    },
+    {
+      "item_id": "postgame:824709:CLE:824381",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-22T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_GAME_VIDEO",
+          "source_name": "MLB.com Film Room",
+          "url": "https://www.mlb.com/video/game/824381",
+          "checked_at": "2026-09-22T00:00:00Z",
+          "finding": "Official game page confirmed Cleveland's 1-0 win over the Athletics on September 20, 2026 and identified Gavin Williams as the featured starter."
+        },
+        {
+          "source_type": "OFFICIAL_MANAGER_POSTGAME_MEDIA",
+          "source_name": "MLB.com",
+          "url": "https://www.mlb.com/video/stephen-vogt-on-sweep-of-a-s-gavin-williams",
+          "checked_at": "2026-09-22T00:00:00Z",
+          "finding": "Official postgame manager-media video was located, but the searchable source extract supplied no attributable statement or actionable player-availability/usage detail."
+        },
+        {
+          "source_type": "NATIONAL_WIRE",
+          "source_name": "Field Level Media",
+          "url": "https://fieldlevelmedia.com/mlb/gavin-williams-pitches-guardians-to-1-0-win-over-athletics/",
+          "checked_at": "2026-09-22T00:00:00Z",
+          "finding": "Game recap confirmed Williams threw seven shutout innings in Cleveland's September 20 win; no material carry-forward declaration was available in the supplied extract."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "cleveland.com search attempt",
+          "url": "https://www.cleveland.com/guardians/",
+          "checked_at": "2026-09-22T00:00:00Z",
+          "finding": "Source unavailable to the research tool because of robots restrictions; no credentialed local postgame reporting could be reviewed."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "No attributable postgame declaration or comment with plausible relevance to Cleveland's next game was recoverable from the available official and reporting-source extracts. The official manager postgame video was located, but no statement could be verified from its available text; local credentialed-source review was unavailable.",
+      "game_pk": 824381,
+      "today_game_pk": 824709,
+      "team": "CLE",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 824381,
+      "previous_game_date": "2026-09-20",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "b993bc9b55086c545d707e0ec3147530f2642b2728afaebdaef181b55e0ee2fc"
+    },
+    {
       "item_id": "postgame:823543:TB:822922",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": "2026-09-22T00:00:00Z",
@@ -121,49 +452,6 @@
       "queue_fingerprint": "dd186af5bcb4a7fe937cdef2864191a6138df9b4bff5ffff218856f27dafea36"
     },
     {
-      "item_id": "postgame:823328:STL:823001",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-22T20:36:47+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Cardinals recap: Leo Bernal hits go-ahead homer as Cardinals come back in home finale",
-          "url": "https://www.mlb.com/cardinals/news/leo-bernal-hits-go-ahead-homer-as-cardinals-come-back-in-home-finale",
-          "status": "CHECKED"
-        },
-        {
-          "source_type": "OFFICIAL_MLB_MANAGER_MEDIA",
-          "source_name": "MLB.com Cardinals video index: Oliver Marmol on Herrera, Mathews, Walker and more, September 20, 2026",
-          "url": "https://www.mlb.com/cardinals/video/topic/t138-default-vtp",
-          "status": "CHECKED"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "STL Sports Page postgame audio: Marmol, Wetherholt, Mathews, Bernal, Herrera, September 20, 2026",
-          "url": "https://stlsportspage.com/2026/09/20/post-game-audio-marmol-wetherholt-mathews-bernal-herrera-9-20-26/",
-          "status": "CHECKED"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Reviewed official club/MLB postgame coverage, available Marmol postgame-media indexing, and local postgame audio coverage for the September 20 game against Washington. No manager/coach/club declaration plausibly carrying forward as a September 22 workload restriction, bullpen availability restriction, injury limitation, or planned role change was identified. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": null,
-      "today_game_pk": 823328,
-      "team": "STL",
-      "pass_type": null,
-      "previous_game_pk": 823001,
-      "previous_game_date": "2026-09-20",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "evidence_label": "CONFIRMED",
-          "topic": "Previous-game postgame carry-forward review",
-          "comment": "No material postgame declaration relevant to the September 22 game was found. The available postgame coverage centered on the Cardinals' comeback and individual game performance rather than a forward-looking restriction or availability plan."
-        }
-      ],
-      "queue_fingerprint": "ea2d4df84c7bf5167feaea072316c430caf69e5dc468b859f06842a58890d6df"
-    },
-    {
       "item_id": "pregame:823328:PIT:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-22T20:36:54Z",
@@ -257,43 +545,6 @@
       "queue_fingerprint": "9128cdbd4ff98a7ce65950a15d5c4f83cf2b3e3cf4a40e3052b28c6d677c8b55"
     },
     {
-      "item_id": "postgame:823412:MIL:824789",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-22T20:37:36+00:00",
-      "sources_checked": [
-        {
-          "source_name": "MLB.com Brewers at Orioles Game Story",
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/stories/game/824789/",
-          "finding": "Official game story documented Milwaukee's September 20, 2026 game at Baltimore and Chad Patrick's appearance."
-        },
-        {
-          "source_name": "MLB.com Chad Patrick highlight",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/brewers/video/chad-patrick-in-play-out-s-to-jeremiah-jackson",
-          "finding": "Official Brewers video documented Patrick inducing a groundout to escape a bases-loaded situation in the sixth inning on September 20, 2026."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "No manager/coach postgame declaration carrying a specific next-game restriction or availability designation for Dustin May or Chad Patrick was identified in the available official postgame material. The verified Patrick appearance is plausibly relevant to bullpen workload, but it does not itself establish an explicit club availability restriction for September 22. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": null,
-      "today_game_pk": 823412,
-      "team": "MIL",
-      "pass_type": null,
-      "previous_game_pk": 824789,
-      "previous_game_date": "2026-09-20",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "subject": "Chad Patrick",
-          "label": "CONFIRMED",
-          "comment": "Patrick appeared in Milwaukee's September 20 game at Baltimore and escaped a bases-loaded situation in the sixth inning, according to official MLB game material. No source reviewed attributed a specific September 22 availability restriction to the club or manager."
-        }
-      ],
-      "queue_fingerprint": "3c6ebbbdd1c551535ef4cbdedf1b378089230ab4b0c6aa1f6aced0d65eb25f12"
-    },
-    {
       "item_id": "pregame:823412:PHI:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-22T00:00:00Z",
@@ -339,75 +590,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "1568cbf157a46dffd490b409d688fb026586b3329632afdc4ffdad32721c64c6"
-    },
-    {
-      "item_id": "postgame:823412:PHI:823570",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-22T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Philadelphia Phillies manager postgame video index",
-          "url": "https://www.mlb.com/phillies/video/topic/phillies-manager-postgame",
-          "published_at": "2026-09-20",
-          "notes": "Official Phillies index lists Don Mattingly's September 20 postgame availability following Philadelphia's 7-2 win over the Mets."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Don Mattingly talks Phillies' 7-2 win",
-          "url": "https://www.mlb.com/phillies/video/don-mattingly-talks-phillies-7-2-win",
-          "published_at": "2026-09-20",
-          "notes": "Official manager postgame video for game 823570."
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "MLB Film Room, Phillies-Mets game 823570",
-          "url": "https://www.mlb.com/video/game/823570",
-          "published_at": "2026-09-20",
-          "notes": "Official MLB game-video index labels the relevant Phillies postgame item: 'Phillies letting it play out regarding bullpen puzzle before playoffs.'"
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Phillies at Mets Game Story",
-          "url": "https://www.mlb.com/stories/game/823570",
-          "published_at": "2026-09-20",
-          "notes": "Official game story confirms game 823570 and Philadelphia's 7-2 win; used only to establish the prior-game context, not as hindsight for the September 22 projection."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Carry-forward item: Mattingly indicated Philadelphia was still letting the bullpen situation play out before the postseason. This supports only that bullpen roles remained unresolved; it does not establish a specific role, availability ruling, or workload restriction for José Urquidy for September 22. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": 823570,
-      "today_game_pk": 823412,
-      "team": "PHI",
-      "pass_type": null,
-      "previous_game_pk": 823570,
-      "previous_game_date": "2026-09-20",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "subject": "Philadelphia bullpen",
-          "speaker": "Don Mattingly",
-          "speaker_role": "Phillies manager",
-          "label": "CONFIRMED",
-          "declaration_type": "BULLPEN_ROLE_STATUS",
-          "statement": "Philadelphia was 'letting it play out' regarding its bullpen puzzle before the playoffs.",
-          "restriction": null,
-          "numeric_limit": null,
-          "relevance_to_today": "Bullpen roles remained unresolved; no specific José Urquidy availability or usage restriction was declared.",
-          "source_url": "https://www.mlb.com/video/game/823570",
-          "source_date": "2026-09-20"
-        }
-      ],
-      "comments": [
-        {
-          "label": "CONFIRMED",
-          "speaker": "Don Mattingly",
-          "comment": "The postgame material characterized the club as still letting the bullpen situation play out before the postseason.",
-          "source_url": "https://www.mlb.com/video/game/823570",
-          "source_date": "2026-09-20"
-        }
-      ],
-      "queue_fingerprint": "12fc92429402fdb0deeca0df3c6835a7bd431e9a2b24a23564bbdbe7afd0d2aa"
     },
     {
       "item_id": "postgame:824785:TOR:824787",
@@ -658,7 +840,7 @@
       "queue_fingerprint": "9603b8e2454d3bfd3cbdc2ba48fd162ecee667d2bf993bd9669aa850efe3c420"
     }
   ],
-  "researched_at": "2026-09-22T20:38:08+00:00",
+  "researched_at": "2026-09-22T23:38:04+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -669,79 +851,32 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-22T20:38:08+00:00",
+    "last_run_at": "2026-09-22T23:38:04+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 129151,
+      "input_tokens": 136707,
       "cached_input_tokens": 24805,
-      "output_tokens": 8847,
-      "reasoning_tokens": 5023,
-      "total_tokens": 137998,
+      "output_tokens": 8001,
+      "reasoning_tokens": 4426,
+      "total_tokens": 144708,
       "estimated_cost_usd": 0.0
     },
     "audit": [
       {
-        "team": "TB",
-        "game_pk": 823543,
-        "items": [
-          "postgame:823543:TB:822922"
-        ],
-        "response_id": "resp_0dca0c2cc49001bc016ab2e683757087d29e3a542e448f034f",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 57,
-        "usage": {
-          "input_tokens": 22176,
-          "cached_input_tokens": 0,
-          "output_tokens": 1037,
-          "reasoning_tokens": 763,
-          "total_tokens": 23213,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 648,
-        "estimated_prompt_tokens": 162,
-        "research_mode": "POSTGAME"
-      },
-      {
-        "team": "NYY",
-        "game_pk": 823543,
-        "items": [
-          "postgame:823543:NYY:825028"
-        ],
-        "response_id": "resp_01b7949b91d1ca55016ab2e69c7e3487d2969c2d7c6d204cdf",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 65,
-        "usage": {
-          "input_tokens": 21654,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1259,
-          "reasoning_tokens": 746,
-          "total_tokens": 22913,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 646,
-        "estimated_prompt_tokens": 162,
-        "research_mode": "POSTGAME"
-      },
-      {
         "team": "STL",
         "game_pk": 823328,
         "items": [
-          "pregame:823328:STL:EARLY",
           "postgame:823328:STL:823001"
         ],
-        "response_id": "resp_0c0ad2c1c8b97e3c016ab2e6c0c1b087d2a00427b3bd95fa1d",
+        "response_id": "resp_01b36f654b0bc0e0016ab310b3d44c87d2b444359ed98f6b57",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 59,
+        "web_sources_seen": 40,
         "usage": {
-          "input_tokens": 21924,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1916,
-          "reasoning_tokens": 1071,
-          "total_tokens": 23840,
+          "input_tokens": 25138,
+          "cached_input_tokens": 0,
+          "output_tokens": 1312,
+          "reasoning_tokens": 807,
+          "total_tokens": 26450,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
@@ -750,92 +885,132 @@
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1283,
-        "estimated_prompt_tokens": 321,
-        "research_mode": "EARLY"
-      },
-      {
-        "team": "PIT",
-        "game_pk": 823328,
-        "items": [
-          "pregame:823328:PIT:EARLY"
-        ],
-        "response_id": "resp_0d63e6d0a5c43b86016ab2e6e0280887d28c12e6af9ef59cb7",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 38,
-        "usage": {
-          "input_tokens": 22053,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1193,
-          "reasoning_tokens": 558,
-          "total_tokens": 23246,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:823328:PIT:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ]
-        },
-        "tool_budget": 2,
-        "prompt_chars": 1122,
-        "estimated_prompt_tokens": 281,
-        "research_mode": "EARLY"
+        "prompt_chars": 650,
+        "estimated_prompt_tokens": 163,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "MIL",
         "game_pk": 823412,
         "items": [
-          "pregame:823412:MIL:EARLY",
           "postgame:823412:MIL:824789"
         ],
-        "response_id": "resp_09512de24b004b79016ab2e6f4107c87d2af77d8b7eca77b2c",
+        "response_id": "resp_03ec903a9cf1a161016ab310cc088887d2a13897afe1ba9787",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 51,
+        "web_sources_seen": 61,
         "usage": {
-          "input_tokens": 19982,
+          "input_tokens": 22247,
           "cached_input_tokens": 4961,
-          "output_tokens": 1420,
-          "reasoning_tokens": 1011,
-          "total_tokens": 21402,
+          "output_tokens": 1444,
+          "reasoning_tokens": 655,
+          "total_tokens": 23691,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
           "postgame:823412:MIL:824789": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
+            "invalid result 'MATERIAL_DECLARATION_FOUND'"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1296,
-        "estimated_prompt_tokens": 324,
-        "research_mode": "EARLY"
+        "prompt_chars": 665,
+        "estimated_prompt_tokens": 167,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "PHI",
         "game_pk": 823412,
         "items": [
-          "pregame:823412:PHI:EARLY",
           "postgame:823412:PHI:823570"
         ],
-        "response_id": "resp_052ab8fad69a48ac016ab2e7119a7487d2bac490446849dffd",
+        "response_id": "resp_0727cf65beb9aec2016ab310edd80c87d289d86a28626fb124",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 52,
+        "web_sources_seen": 41,
         "usage": {
-          "input_tokens": 21362,
+          "input_tokens": 25511,
           "cached_input_tokens": 4961,
-          "output_tokens": 2022,
-          "reasoning_tokens": 874,
-          "total_tokens": 23384,
+          "output_tokens": 1200,
+          "reasoning_tokens": 631,
+          "total_tokens": 26711,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
           "postgame:823412:PHI:823570": [
-            "invalid result 'COMPLETED'"
+            "invalid result None"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1277,
-        "estimated_prompt_tokens": 320,
-        "research_mode": "EARLY"
+        "prompt_chars": 647,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "WSH",
+        "game_pk": 824222,
+        "items": [
+          "postgame:824222:WSH:824221"
+        ],
+        "response_id": "resp_077120e23e2e4753016ab311033ea487d2a979319a0386a644",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 49,
+        "usage": {
+          "input_tokens": 22045,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1477,
+          "reasoning_tokens": 868,
+          "total_tokens": 23522,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 656,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "DET",
+        "game_pk": 824222,
+        "items": [
+          "postgame:824222:DET:824221"
+        ],
+        "response_id": "resp_0b4054da59a14b14016ab3111d993487d2a15a4a6b517805e1",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 58,
+        "usage": {
+          "input_tokens": 21985,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1320,
+          "reasoning_tokens": 693,
+          "total_tokens": 23305,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 656,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "CLE",
+        "game_pk": 824709,
+        "items": [
+          "postgame:824709:CLE:824381"
+        ],
+        "response_id": "resp_030e54d8909e180a016ab3113dc7c087d28b1887b88d37dd6c",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 58,
+        "usage": {
+          "input_tokens": 19781,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1248,
+          "reasoning_tokens": 772,
+          "total_tokens": 21029,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 654,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
       }
     ]
   }
