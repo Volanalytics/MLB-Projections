@@ -1,68 +1,153 @@
 {
-  "date": "2026-09-21",
-  "generated_at": "2026-09-21T23:37:49+00:00",
+  "date": "2026-09-22",
+  "generated_at": "2026-09-22T14:38:10+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
-    "824221": {
+    "823543": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-22T14:35:23Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-22T14:35:23Z",
+            "team": "TB",
+            "teams": [
+              "TB"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB Starting Lineups",
+                "url": "https://www.mlb.com/starting-lineups/2026-09-22",
+                "checked_for": "Confirmation of Rays-Yankees matchup and Nick Martinez as Tampa Bay's listed starter."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "MLB Probable Pitchers",
+                "url": "https://www.mlb.com/probable-pitchers/2026-09-22",
+                "checked_for": "Confirmation of Nick Martinez as Tampa Bay's probable starter."
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "Tampa Bay Rays News",
+                "url": "https://www.mlb.com/rays/news",
+                "checked_for": "Club-published pregame news or manager declaration relevant to Martinez's September 22 workload."
+              },
+              {
+                "source_type": "MANAGER_MEDIA",
+                "source_name": "MLB Rays Manager Postgame Videos",
+                "url": "https://www.mlb.com/video/topic/rays-manager-postgame",
+                "checked_for": "Available Kevin Cash media; no September 22 pregame availability located."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official MLB pages listed Nick Martinez as the Rays starter for the September 22, 2026 game at Yankee Stadium. No accessible Kevin Cash pregame media, official club pregame declaration, or credentialed Rays beat report was located that established a Martinez workload restriction, pitch/inning/batters-faced cap, opener/bulk role, or unusually short leash before first pitch. The required negative-pregame source coverage was incomplete because a credentialed beat/local pregame source was not located."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824785": {
       "previous_game_postgame": {
         "status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "teams": {
-          "DET": {
+          "BAL": {
             "research_status": "COMPLETED",
-            "last_checked_at": "2026-09-21T23:36:27Z",
-            "previous_game_pk": 824546,
-            "previous_game_date": "2026-09-20",
+            "last_checked_at": "2026-09-22T00:00:00Z",
+            "previous_game_pk": 824787,
+            "previous_game_date": "2026-09-21",
             "passes": [
               {
-                "checked_at": "2026-09-21T23:36:27Z",
+                "checked_at": "2026-09-22T00:00:00Z",
                 "sources_checked": [
                   {
+                    "source_name": "MLB.com / Baltimore Orioles",
                     "source_type": "OFFICIAL_TEAM",
-                    "source_name": "MLB.com / Detroit Tigers",
-                    "url": "https://www.mlb.com/news/tigers-eliminated-from-postseason-contention-with-loss-to-white-sox",
-                    "publication_date": "2026-09-20",
-                    "notes": "Official postgame report for Tigers at White Sox, game 824546."
+                    "url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball",
+                    "published_at": "2026-09-21",
+                    "summary": "Official postgame manager-video page states that Craig Albernaz discussed Pete Alonso, the comeback win, Samuel Basallo, and other subjects, but the available indexed material did not provide a verifiable transcript or forward-looking player-availability declaration."
                   },
                   {
-                    "source_type": "OFFICIAL_MLB",
-                    "source_name": "MLB Film Room",
-                    "url": "https://www.mlb.com/video/game/824546",
-                    "publication_date": "2026-09-20",
-                    "notes": "Official game page and final-game record."
-                  },
-                  {
+                    "source_name": "MLB.com / Baltimore Orioles",
                     "source_type": "OFFICIAL_TEAM",
-                    "source_name": "MLB.com / Detroit Tigers",
-                    "url": "https://www.mlb.com/tigers/news/river-ryan-set-to-make-tigers-debut-on-monday",
-                    "publication_date": "2026-09-20",
-                    "notes": "Official club report concerning Detroit's next-game starter."
+                    "url": "https://www.mlb.com/orioles/video/samuel-basallo-exits-game-after-foul-tip-hit",
+                    "published_at": "2026-09-21",
+                    "summary": "Official game video states Basallo exited in the sixth inning after foul tips to his face mask and forearm; no postgame prognosis or next-game availability statement was available in the indexed material."
                   },
                   {
-                    "source_type": "MANAGER_OR_COACH_POSTGAME_MEDIA",
-                    "source_name": "Source unavailable",
-                    "url": "https://www.mlb.com/news/tigers-eliminated-from-postseason-contention-with-loss-to-white-sox",
-                    "publication_date": "2026-09-20",
-                    "notes": "No directly accessible A.J. Hinch or Tigers-coach postgame media transcript/video yielding a carry-forward declaration was located in the available search results."
-                  },
-                  {
+                    "source_name": "MASN Sports / Roch Kubatko",
                     "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-                    "source_name": "Search coverage review",
-                    "url": "https://www.mlb.com/tigers/news",
-                    "publication_date": "2026-09-21",
-                    "notes": "Available returned coverage did not provide an independently accessible credentialed local/beat postgame report with a materially relevant club declaration."
+                    "url": "https://www.masnsports.com/blog/entry/alonso-homers-twice-to-reach-40-and-give-orioles-4-3-win-over-blue-jays/",
+                    "published_at": "2026-09-21",
+                    "summary": "Local Orioles postgame coverage of Baltimore's 4-3 win; indexed material did not provide a relevant, attributable Orioles postgame declaration affecting the September 22 game."
+                  },
+                  {
+                    "source_name": "MLB.com Game Story",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/stories/game/824787?ap=1&canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%3Fs%3Dhttps%253A%252F%252Fwww.mlb.com%252Fstories%252Fgame%252F824787%253Fap%253D1%2526storylocal%253Darticle-embed&storylocal=article-embed",
+                    "published_at": "2026-09-21",
+                    "summary": "Official game story confirms Baltimore's 4-3 win over Toronto."
                   }
                 ],
                 "result": "INCONCLUSIVE",
-                "note": "Official reporting confirms Detroit's September 20 loss at Chicago and that River Ryan was scheduled to debut September 21. However, the accessible evidence did not establish a postgame manager/coach or credentialed beat declaration from game 824546 that was materially relevant to Detroit's September 21 game. The required negative-result source coverage could not be completed with an accessible credentialed beat/local postgame source."
+                "note": "A material game event was identified: Samuel Basallo left in the sixth inning after foul tips to his face mask and forearm. However, no accessible, attributable postgame manager/club declaration established his diagnosis, restrictions, or availability for the September 22 game. The official manager postgame media item was located, but no verifiable transcript was available in the indexed source material; therefore no availability inference is carried forward."
               }
-            ],
-            "comments": [
+            ]
+          }
+        }
+      }
+    },
+    "823328": {
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "PIT": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-22T14:38:10+00:00",
+            "previous_game_pk": 823329,
+            "previous_game_date": "2026-09-20",
+            "passes": [
               {
-                "evidence_label": "UNRESOLVED",
-                "comment_type": "POSTGAME_CARRY_FORWARD",
-                "text": "No material, source-supported postgame Detroit declaration from game 824546 was verified for carry-forward use before the September 21 game."
+                "checked_at": "2026-09-22T14:38:10+00:00",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB_GAME_PAGE",
+                    "source_name": "MLB.com Film Room — Royals at Pirates, September 20, 2026",
+                    "url": "https://www.mlb.com/video/game/823329",
+                    "outcome": "Verified the prior game was final: Pirates 4, Royals 3. The available official game page did not provide a relevant postgame manager/coach declaration for the next game's projection."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Pittsburgh Pirates Game Notes index",
+                    "url": "https://www.mlb.com/pirates/news/game-notes",
+                    "outcome": "Located the official September 20, 2026 Pirates-Royals game-notes entry, but no accessible postgame declaration relevant to the following game was available in the retrieved material."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM_NEWS",
+                    "source_name": "Pittsburgh Pirates News",
+                    "url": "https://www.mlb.com/pirates/news",
+                    "outcome": "Reviewed the official club news index; no September 20 postgame report or carry-forward manager/coach declaration was accessible in the retrieved material."
+                  },
+                  {
+                    "source_type": "MANAGER_COACH_POSTGAME_MEDIA",
+                    "source_name": "Postgame manager/coach media availability",
+                    "url": "https://www.mlb.com/pirates/video/game/823329",
+                    "outcome": "SOURCE_UNAVAILABLE: no accessible manager/coach postgame availability or attributable transcript was found in the retrieved sources."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Credentialed Pittsburgh beat/local postgame coverage",
+                    "url": "https://www.mlb.com/pirates/news",
+                    "outcome": "SOURCE_UNAVAILABLE: no accessible credentialed beat/local postgame report containing a material carry-forward declaration was found in the retrieved search results."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "Official sources establish the September 20, 2026 result, but the required manager/coach postgame-media and credentialed beat/local evidence could not be obtained. Accordingly, no negative completed finding is asserted, and the prior game's outcome is not used as projection evidence."
               }
             ],
+            "comments": [],
             "current_assessment": {
               "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
               "count": 0,
@@ -70,52 +155,6 @@
             }
           }
         },
-        "source": "manager_media_research.py external research results"
-      }
-    },
-    "823169": {
-      "manager_media": {
-        "research_status": "COMPLETED",
-        "last_checked_at": "2026-09-21T00:00:00Z",
-        "passes": [
-          {
-            "checked_at": "2026-09-21T00:00:00Z",
-            "team": "MIN",
-            "teams": [
-              "MIN"
-            ],
-            "pass_type": "EARLY",
-            "sources_checked": [
-              {
-                "source_name": "MLB.com Starting Lineups",
-                "source_type": "OFFICIAL_MLB",
-                "url": "https://www.mlb.com/starting-lineups?msockid=24667b27920a6aa534246d6593376b65",
-                "published_at": "2026-09-21"
-              },
-              {
-                "source_name": "Minnesota Twins official site",
-                "source_type": "OFFICIAL_TEAM",
-                "url": "https://www.mlb.com/twins?c_id=min",
-                "published_at": "2026-09-21"
-              },
-              {
-                "source_name": "MLB.com Twins news",
-                "source_type": "OFFICIAL_TEAM",
-                "url": "https://www.mlb.com/twins/news?msockid=06d69d76b66f67ea37658bdcb7e76679",
-                "published_at": "2026-09-21"
-              },
-              {
-                "source_name": "CBS Sports/AP game preview",
-                "source_type": "NATIONAL_REPORTER",
-                "url": "https://apnews.news.racing.cbssports.com/mlb/gametracker/preview/MLB_20260921_MIN%40SF/",
-                "published_at": "2026-09-21"
-              }
-            ],
-            "result": "INCONCLUSIVE",
-            "note": "Official pregame sources confirmed Zebby Matthews as Minnesota's listed starter for the September 21 game at San Francisco, but no pregame manager/coach availability declaration was found concerning a Matthews workload restriction or the availability/usage restriction of Yoendrys Gómez, Jeff Hoffman, A.J. Minter, or Kody Funderburk. No credentialed Twins beat/local pregame report satisfying the evidence contract was located in the lightweight search window."
-          }
-        ],
-        "declarations": [],
         "source": "manager_media_research.py external research results"
       }
     }
