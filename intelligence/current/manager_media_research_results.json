@@ -3,6 +3,335 @@
   "generated_from_queue_at": "2026-09-23T14:35:04+00:00",
   "items": [
     {
+      "item_id": "postgame:824223:WSH:824222",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23T17:35:43+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Washington Nationals / MLB.com team page",
+          "url": "https://www.mlb.com/nationals",
+          "checked_for": "September 22, 2026 postgame coverage, manager video, and carry-forward roster/usage information",
+          "availability": "No September 22 postgame manager item was surfaced on the official team-page results at time checked."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB Scores",
+          "url": "https://www.mlb.com/scores/2026-09-22",
+          "checked_for": "Game status and official game context for WSH at DET, game_pk 824222",
+          "availability": "Available."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "Nationals manager postgame video index",
+          "url": "https://www.mlb.com/nationals/video/topic/nationals-manager-postgame",
+          "checked_for": "Blake Butera postgame media from September 22, 2026",
+          "availability": "SOURCE_UNAVAILABLE: the indexed official page surfaced September 21 and earlier manager postgame videos, but no September 22 item."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Detroit News / Detroit Free Press / MLive search attempt",
+          "url": "https://www.detroitnews.com/",
+          "checked_for": "Credentialed local postgame reporting or direct club/manager attribution from September 22, 2026",
+          "availability": "SOURCE_UNAVAILABLE: search access to these local outlets was blocked by robots restrictions."
+        },
+        {
+          "source_type": "LOCAL_COVERAGE_LEAD_ONLY",
+          "source_name": "Yahoo-hosted Federal Baseball game-thread item",
+          "url": "https://sports.yahoo.com/articles/washington-nationals-vs-detroit-tigers-221000259.html",
+          "checked_for": "Potential Nationals lineup or manager reporting",
+          "availability": "Available, but it was pregame and did not provide qualifying September 22 postgame manager/club declarations."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The prior game was completed before the September 23 game, but the required evidence coverage did not yield a qualifying official-club or direct manager/coach September 22 postgame declaration, and credentialed local/beat postgame sourcing was unavailable. No carry-forward declaration is reported.",
+      "game_pk": 824222,
+      "today_game_pk": 824223,
+      "team": "WSH",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 824222,
+      "previous_game_date": "2026-09-22",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "5b626297cd98921c2382866ef43d6beb5053ad5e3103b97e803af8baf5d6fc61"
+    },
+    {
+      "item_id": "postgame:824785:TOR:824787",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23T17:36:17+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Toronto Blue Jays / MLB.com",
+          "url": "https://www.mlb.com/bluejays/video/john-schneider-on-yesavage-rogers-and-more",
+          "published_at": "2026-09-21",
+          "access_result": "Manager postgame video available; the indexed description states John Schneider discussed Trey Yesavage's outing, Tyler Rogers' performance, and the loss, but no verbatim or materially actionable forward-looking declaration was available in the accessible text."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Game Story",
+          "url": "https://www.mlb.com/stories/game/824787",
+          "published_at": "2026-09-21",
+          "access_result": "Confirmed game context: Toronto lost 4-3; Tyler Rogers recorded one out and allowed the go-ahead home run in the eighth inning."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Film Room",
+          "url": "https://www.mlb.com/video/game/824787",
+          "published_at": "2026-09-21",
+          "access_result": "Confirmed official box-score context for the September 21 game."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Source unavailable",
+          "url": "https://www.mlb.com/bluejays/news",
+          "published_at": null,
+          "access_result": "No credentialed Blue Jays beat/local postgame report containing a carry-forward manager/club declaration was located within the available search results."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "An official John Schneider postgame availability was located, but the accessible material did not provide a verbatim or specific forward-looking declaration that could be reliably carried into the next game. The required credentialed beat/local corroboration search did not yield a usable postgame declaration.",
+      "game_pk": 824787,
+      "today_game_pk": 824785,
+      "team": "TOR",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 824787,
+      "previous_game_date": "2026-09-21",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "evidence_label": "UNRESOLVED",
+          "speaker": "John Schneider",
+          "topic": "Postgame availability",
+          "comment": "Official club video indicates Schneider addressed Trey Yesavage and Tyler Rogers after the September 21 loss, but the accessible indexed material did not supply language establishing a next-game availability restriction, role change, or other actionable carry-forward declaration."
+        },
+        {
+          "evidence_label": "UNRESOLVED",
+          "speaker": null,
+          "topic": "Bullpen availability",
+          "comment": "Rogers' September 21 appearance alone is not treated as a manager declaration or as evidence of a next-game restriction."
+        }
+      ],
+      "queue_fingerprint": "9cac9fcbbb03bc675ad6709f831ae15dbab6f0bdffa53726109fd132f5ebaaf7"
+    },
+    {
+      "item_id": "postgame:824785:BAL:824787",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Baltimore Orioles / MLB.com",
+          "url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball",
+          "published_at": "2026-09-21",
+          "accessed_context": "Orioles manager postgame video following TOR at BAL, Game PK 824787."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "MASN Sports — Roch Kubatko",
+          "url": "https://www.masnsports.com/blog/entry/updates-on-holliday-and-alexander-albernaz-on-mindset-with-six-games-left-and-keeping-standards-high/",
+          "published_at": "2026-09-21",
+          "accessed_context": "Orioles pregame clubhouse reporting on roster availability and manager comments."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Baltimore won the September 21 game, 4-3. The material carry-forward postgame item was manager Craig Albernaz's positive assessment of the club's current team play; no numeric workload, lineup, or pitcher-use restriction was stated in the official postgame source. | VALIDATION: invalid result 'Orioles 4, Blue Jays 3'",
+      "game_pk": 824787,
+      "today_game_pk": 824785,
+      "team": "BAL",
+      "pass_type": "POSTGAME_MANAGER_COMMENT",
+      "previous_game_pk": 824787,
+      "previous_game_date": "2026-09-21",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "subject": "Baltimore Orioles team performance/outlook",
+          "speaker": "Craig Albernaz",
+          "speaker_role": "Manager",
+          "statement": "We're playing good team baseball.",
+          "evidence_label": "CONFIRMED",
+          "restriction": null,
+          "numeric_limit": null,
+          "source_url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball",
+          "source_date": "2026-09-21"
+        }
+      ],
+      "comments": [
+        {
+          "subject": "Postgame focus",
+          "speaker": "Craig Albernaz",
+          "comment": "The official postgame availability was described as covering Pete Alonso's multihomer performance, Baltimore's comeback win, Samuel Basallo, and other topics. No directly sourced declaration established a next-game workload, lineup, or availability limitation.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball",
+          "source_date": "2026-09-21"
+        },
+        {
+          "subject": "Jackson Holliday availability",
+          "speaker": "Craig Albernaz",
+          "comment": "Before the September 21 game, Albernaz said Holliday was unlikely to play during the final weekend because left-wrist soreness had not resolved; this was not a postgame declaration from Game 824787.",
+          "evidence_label": "CONFIRMED",
+          "source_url": "https://www.masnsports.com/blog/entry/updates-on-holliday-and-alexander-albernaz-on-mindset-with-six-games-left-and-keeping-standards-high/",
+          "source_date": "2026-09-21"
+        }
+      ],
+      "queue_fingerprint": "eed205221da7a3076bb88a7ca6816cd985b77c1c7847a016cbbdd08526b24b1f"
+    },
+    {
+      "item_id": "pregame:823168:MIN:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-23T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_name": "Minnesota Twins official site / MLB.com",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/twins?msockid=26e1524163686a2c0ac244f662fa6b87",
+          "checked_for": "September 23, 2026 game listing and team-published pregame material."
+        },
+        {
+          "source_name": "MLB.com Twins",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/twins/news/twins-managing-rookie-connor-prielipp-s-workload",
+          "checked_for": "Previously reported club/manager workload-management context for Connor Prielipp; not treated as a current-game declaration."
+        },
+        {
+          "source_name": "Star Tribune search coverage",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.startribune.com/",
+          "checked_for": "Credentialed local coverage for September 23, 2026 pregame manager comments regarding Prielipp."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "No current September 23, 2026 pregame manager/coach declaration establishing a Prielipp workload restriction, pitch limit, innings limit, or short leash was located within the lightweight search budget. Official team material confirmed Prielipp as the scheduled starter, but no accessible current manager-media availability was located. No qualifying credentialed local report with a directly attributed current-game workload comment was located.",
+      "game_pk": 823168,
+      "today_game_pk": 823168,
+      "team": "MIN",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "evidence_label": "UNRESOLVED",
+          "comment_type": "SOURCE_UNAVAILABLE",
+          "subject": "Connor Prielipp pregame workload usage",
+          "comment": "A current-game manager or coach media availability containing an attributable workload-plan comment was not available in the sources located before first pitch. Earlier-season MLB.com reporting documented a general cautious approach to Prielipp's rookie workload, but it does not establish a September 23 restriction and was not carried forward as a declaration."
+        }
+      ],
+      "queue_fingerprint": "96577c4eed09f5fe9eed1398f3ebf5f1f14589d3d42225f019ee831dee6e9dcd"
+    },
+    {
+      "item_id": "pregame:823168:SF:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-23T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_name": "MLB.com / San Francisco Giants",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/giants/roster/probable-pitchers?msockid=10353eff71556242062a288e701263b3",
+          "checked_for": "Official confirmation of Cesar Perdomo as the scheduled Giants starter and any published workload or bullpen-availability declaration."
+        },
+        {
+          "source_name": "MLB.com Gameday",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.milb.com/gameday/twins-vs-giants/2026/09/23/823168/preview",
+          "checked_for": "Official game preview, listed probable pitchers, and pregame notes."
+        },
+        {
+          "source_name": "San Francisco Chronicle — Susan Slusser",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.sfchronicle.com/sports/giants/article/sf-giants-fall-twins-pitcher-anthony-molina-22443800.php",
+          "checked_for": "Clubhouse-access reporting following the September 22 game for forward-looking September 23 starter or bullpen usage comments."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Cesar Perdomo was officially listed as the Giants' probable starter against Minnesota. No pregame manager/coach media availability or attributable manager/coach declaration located before the scheduled first pitch established a pitch count, innings cap, batters-faced cap, short leash, altered role, or specific availability restriction for Perdomo, Duncan Davitt, or Carson Seymour. Manager/coach pregame media source was unavailable in the searched official and credentialed local coverage. | VALIDATION: manager/coach pregame media was neither checked nor explicitly unavailable",
+      "game_pk": 823168,
+      "today_game_pk": 823168,
+      "team": "SF",
+      "pass_type": "EARLY",
+      "previous_game_pk": null,
+      "previous_game_date": "2026-09-22",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "subject": "Cesar Perdomo",
+          "topic": "STARTER_STATUS",
+          "evidence_label": "CONFIRMED",
+          "source_name": "MLB.com Gameday",
+          "source_url": "https://www.milb.com/gameday/twins-vs-giants/2026/09/23/823168/preview",
+          "comment": "Official Gameday listed Perdomo as San Francisco's probable starter for the September 23 game against Minnesota. No workload restriction was stated."
+        },
+        {
+          "subject": "Pregame manager/coach media",
+          "topic": "SOURCE_UNAVAILABLE",
+          "evidence_label": "UNRESOLVED",
+          "source_name": "Official Giants/MLB and credentialed local coverage search",
+          "source_url": "https://www.mlb.com/giants/roster/probable-pitchers?msockid=10353eff71556242062a288e701263b3",
+          "comment": "No accessible pregame manager or coach media report containing a forward-looking workload or bullpen-availability declaration was located before first pitch."
+        },
+        {
+          "subject": "Duncan Davitt; Carson Seymour",
+          "topic": "BULLPEN_AVAILABILITY",
+          "evidence_label": "UNRESOLVED",
+          "source_name": "San Francisco Chronicle — Susan Slusser",
+          "source_url": "https://www.sfchronicle.com/sports/giants/article/sf-giants-fall-twins-pitcher-anthony-molina-22443800.php",
+          "comment": "No attributable club declaration located that changed either reliever's availability or usage restriction for September 23."
+        }
+      ],
+      "queue_fingerprint": "39e65b2dc9d7f571b7c01a463429791ffb02f6f82a939966e973423fedabe085"
+    },
+    {
+      "item_id": "postgame:824784:TOR:824787",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23T17:38:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Toronto Blue Jays / MLB.com news",
+          "url": "https://www.mlb.com/bluejays/news?msockid=3526e8b5e83267331ba0fe55e96a6683",
+          "published_at": "2026-09-21",
+          "notes": "Official-club MLB recap search result for TOR at BAL, game 824787; identifies the 4-3 Toronto loss."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Toronto Blue Jays / MLB.com starting lineups",
+          "url": "https://www.mlb.com/bluejays/roster/starting-lineups?msockid=1669f5c7751a6ce90818e34f74816d00",
+          "published_at": "2026-09-21",
+          "notes": "Official club game-page search result used to verify the September 21 TOR-BAL game context."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Keegan Matheson, MLB.com",
+          "url": "https://www.mlb.com/bluejays/news?msockid=3526e8b5e83267331ba0fe55e96a6683",
+          "published_at": "2026-09-21",
+          "notes": "Credentialed Blue Jays beat reporter's postgame recap was located through the official Blue Jays news index; available search extract did not preserve a directly attributable forward-looking manager/coach availability declaration."
+        },
+        {
+          "source_type": "MANAGER_COACH_POSTGAME_MEDIA",
+          "source_name": "SOURCE_UNAVAILABLE",
+          "url": "https://www.mlb.com/bluejays/news?msockid=3526e8b5e83267331ba0fe55e96a6683",
+          "published_at": null,
+          "notes": "No direct, citable September 21 John Schneider or Blue Jays coach postgame-media transcript/video containing a carry-forward declaration was located in the available pregame research window."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "The official recap and credentialed beat coverage were checked for postgame comments plausibly affecting Toronto's September 23 game. The available authoritative evidence confirmed the September 21 game result but did not establish a direct manager/coach declaration of a player restriction, bullpen unavailability, lineup plan, injury update, or other carry-forward operational change. Unsupported fan-post assertions were excluded. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824787,
+      "today_game_pk": 824784,
+      "team": "TOR",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 824787,
+      "previous_game_date": "2026-09-21",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "2bcfa072902c602940497de893152cd219194283ea8d554a3ec0426637e3cc54"
+    },
+    {
       "item_id": "pregame:824223:WSH:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-23T14:35:23Z",
@@ -48,53 +377,6 @@
         }
       ],
       "queue_fingerprint": "31ce34541734a116386c075a22e434e8880eae841772b19a5c828b96b1f85504"
-    },
-    {
-      "item_id": "postgame:824223:WSH:824222",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-23T14:35:23Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Baseball Savant / MLB Game Preview",
-          "url": "https://baseballsavant.mlb.com/preview?game_date=09/23/2026&game_pk=824223",
-          "checked_for": "Official MLB game context for the September 23 matchup; no accessible Nationals postgame manager quote for September 22 was presented."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Nats Chat — Mark Zuckerman and Al Galdi",
-          "url": "https://music.amazon.com/podcasts/bc1b87a2-e091-4e0a-99f9-b7b458547643/episodes/db8e7c31-8ac3-47a5-b9e1-5dc00a812902/nats-chat-abrams-goes-deep-twice-in-detroit-win",
-          "checked_for": "Postgame recap of the September 22 win and the outings by Kent, Sinclair, and Tolman; no directly quoted club availability restriction for the September 23 game was presented."
-        },
-        {
-          "source_type": "GAME_RECAP",
-          "source_name": "CBS Sports / AP game recap",
-          "url": "https://www.cbssports.com/mlb/gametracker/recap/MLB_20260922_WAS%40DET/",
-          "checked_for": "September 22 final and pitcher lines; no manager or coach workload declaration located."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "September 22 usage was reviewed only as potentially relevant context for September 23. No direct postgame club statement established that Tolman, Sinclair, or Kent would be unavailable or limited for the September 23 game. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824222,
-      "today_game_pk": 824223,
-      "team": "WSH",
-      "previous_game_pk": 824222,
-      "previous_game_date": "2026-09-22",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "label": "CONFIRMED",
-          "subject": "September 22 game usage",
-          "comment": "Jackson Kent threw 72 pitches over 4.0 innings; Jack Sinclair threw 14 pitches while recording four outs; Erik Tolman threw 22 pitches in a scoreless ninth for the save. These are prior-game facts, not declarations of September 23 availability or restrictions."
-        },
-        {
-          "label": "UNRESOLVED",
-          "subject": "September 23 bullpen availability",
-          "comment": "No direct manager, coach, or club statement was located declaring Tolman, Sinclair, or Kent unavailable, limited, or reserved for the September 23 game."
-        }
-      ],
-      "queue_fingerprint": "5b626297cd98921c2382866ef43d6beb5053ad5e3103b97e803af8baf5d6fc61"
     },
     {
       "item_id": "pregame:824223:DET:EARLY",
@@ -222,39 +504,6 @@
       "queue_fingerprint": "bb62709f50461959993268241af25adc01025ce0858d1aa267614441f34395fa"
     },
     {
-      "item_id": "postgame:824785:TOR:824787",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-23T00:00:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Toronto Blue Jays / MLB.com video: John Schneider on Yesavage, Rogers and more",
-          "url": "https://www.mlb.com/bluejays/video/john-schneider-on-yesavage-rogers-and-more",
-          "accessed_at": "2026-09-23T00:00:00Z",
-          "notes": "Official September 21 postgame video metadata identifies John Schneider discussing Trey Yesavage's outing, Tyler Rogers' performance, and the Blue Jays' loss. No usable transcript or direct quotation establishing a forward-looking restriction was available."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Toronto Blue Jays / MLB.com Starting Lineups",
-          "url": "https://www.mlb.com/bluejays/roster/starting-lineups?msockid=1669f5c7751a6ce90818e34f74816d00",
-          "accessed_at": "2026-09-23T00:00:00Z",
-          "notes": "Official game-context page identifies the September 21 Toronto-at-Baltimore game and Toronto's starter/lineup."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Official postgame coverage confirms Schneider addressed Tyler Rogers after the September 21 game, but the available official metadata contains no direct statement that plausibly carries forward as a September 23 workload, availability, or role restriction. No declaration is inferred from usage alone. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": null,
-      "today_game_pk": 824785,
-      "team": "TOR",
-      "pass_type": null,
-      "previous_game_pk": 824787,
-      "previous_game_date": "2026-09-21",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "9cac9fcbbb03bc675ad6709f831ae15dbab6f0bdffa53726109fd132f5ebaaf7"
-    },
-    {
       "item_id": "pregame:824785:BAL:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-23T14:37:37+00:00",
@@ -299,63 +548,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "04db1235a47cb8906daa06a0ea95fa8c51b94c5c9dd6768446d10af6fefddde9"
-    },
-    {
-      "item_id": "postgame:824785:BAL:824787",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-23T14:37:37+00:00",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB_GAME",
-          "source_name": "MLB.com Game Story",
-          "url": "https://www.mlb.com/stories/game/824787?ap=1&canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%3Fs%3Dhttps%253A%252F%252Fwww.mlb.com%252Fstories%252Fgame%252F824787%253Fap%253D1%2526storylocal%253Darticle-embed&storylocal=article-embed",
-          "accessed_date": "2026-09-23",
-          "finding": "Official game story identifies the September 21, 2026 game as Blue Jays at Orioles."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM_MANAGER_POSTGAME_MEDIA",
-          "source_name": "Baltimore Orioles / MLB.com",
-          "url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball",
-          "accessed_date": "2026-09-23",
-          "finding": "Official postgame video is titled with manager Craig Albernaz's assessment: “We're playing good team baseball.”"
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Baltimore Orioles / MLB.com",
-          "url": "https://www.mlb.com/orioles/news",
-          "accessed_date": "2026-09-23",
-          "finding": "Official Orioles coverage identifies the September 21 result as a 4-3 Orioles win over Toronto."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Only the manager's general postgame team-performance assessment was carried forward. No numeric or pitcher-specific workload restriction was inferred from the prior-game result. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": 824787,
-      "today_game_pk": 824785,
-      "team": "BAL",
-      "pass_type": null,
-      "previous_game_pk": 824787,
-      "previous_game_date": "2026-09-21",
-      "result": "INCONCLUSIVE",
-      "declarations": [
-        {
-          "evidence_label": "CONFIRMED",
-          "speaker": "Craig Albernaz",
-          "speaker_role": "Orioles manager",
-          "statement": "We're playing good team baseball.",
-          "scope": "General team-performance assessment following the September 21 game.",
-          "restriction_type": null,
-          "numeric_limit": null,
-          "source_url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball"
-        }
-      ],
-      "comments": [
-        {
-          "evidence_label": "CONFIRMED",
-          "comment": "Albernaz's statement is a general positive assessment of team play; it does not establish a starter workload plan, bullpen availability, lineup restriction, or injury clearance for the September 23 game.",
-          "source_url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball"
-        }
-      ],
-      "queue_fingerprint": "eed205221da7a3076bb88a7ca6816cd985b77c1c7847a016cbbdd08526b24b1f"
     },
     {
       "item_id": "postgame:823168:MIN:823166",
@@ -444,7 +636,7 @@
       "queue_fingerprint": "2beb5f9946da759d5a356173fe61a2225bfad37459f47f4c7d309403bc125ac4"
     }
   ],
-  "researched_at": "2026-09-23T14:38:52+00:00",
+  "researched_at": "2026-09-23T17:38:29+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -455,14 +647,14 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-23T14:38:52+00:00",
+    "last_run_at": "2026-09-23T17:38:29+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 130728,
+      "input_tokens": 130389,
       "cached_input_tokens": 24805,
-      "output_tokens": 10060,
-      "reasoning_tokens": 5319,
-      "total_tokens": 140788,
+      "output_tokens": 7462,
+      "reasoning_tokens": 4077,
+      "total_tokens": 137851,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -470,157 +662,150 @@
         "team": "WSH",
         "game_pk": 824223,
         "items": [
-          "pregame:824223:WSH:EARLY",
           "postgame:824223:WSH:824222"
         ],
-        "response_id": "resp_05d124138567a09e016ab3e3a61fa887d2b82a392a3b83d121",
+        "response_id": "resp_00ba0f79620f1505016ab40dd3976087d2b2b4a0a356bd616f",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 53,
+        "web_sources_seen": 49,
         "usage": {
-          "input_tokens": 22684,
+          "input_tokens": 22085,
           "cached_input_tokens": 0,
-          "output_tokens": 2182,
-          "reasoning_tokens": 1104,
-          "total_tokens": 24866,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:824223:WSH:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
-          "postgame:824223:WSH:824222": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
-          ]
-        },
-        "tool_budget": 2,
-        "prompt_chars": 1659,
-        "estimated_prompt_tokens": 415,
-        "research_mode": "EARLY"
-      },
-      {
-        "team": "DET",
-        "game_pk": 824223,
-        "items": [
-          "pregame:824223:DET:EARLY",
-          "postgame:824223:DET:824222"
-        ],
-        "response_id": "resp_0d5a5d5e68f744d4016ab3e3d1727487d28ce32c83d357bd86",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 45,
-        "usage": {
-          "input_tokens": 21783,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1651,
-          "reasoning_tokens": 818,
-          "total_tokens": 23434,
+          "output_tokens": 1166,
+          "reasoning_tokens": 643,
+          "total_tokens": 23251,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 1527,
-        "estimated_prompt_tokens": 382,
-        "research_mode": "EARLY"
+        "prompt_chars": 656,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "TOR",
         "game_pk": 824785,
         "items": [
-          "pregame:824785:TOR:EARLY",
           "postgame:824785:TOR:824787"
         ],
-        "response_id": "resp_082bc20324b65204016ab3e3f14a5087d298230ed40ad3469e",
+        "response_id": "resp_03f1ad2ec309909b016ab40df0a5fc87d2a24abe8fbd353ba9",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 30,
+        "web_sources_seen": 60,
         "usage": {
-          "input_tokens": 20992,
+          "input_tokens": 21685,
           "cached_input_tokens": 4961,
-          "output_tokens": 1611,
-          "reasoning_tokens": 646,
-          "total_tokens": 22603,
+          "output_tokens": 1189,
+          "reasoning_tokens": 690,
+          "total_tokens": 22874,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {
-          "postgame:824785:TOR:824787": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
-          ]
-        },
+        "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 1675,
-        "estimated_prompt_tokens": 419,
-        "research_mode": "EARLY"
+        "prompt_chars": 665,
+        "estimated_prompt_tokens": 167,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "BAL",
         "game_pk": 824785,
         "items": [
-          "pregame:824785:BAL:EARLY",
           "postgame:824785:BAL:824787"
         ],
-        "response_id": "resp_087e97bb96809994016ab3e40e75d887d2994a5c8c719a3356",
+        "response_id": "resp_00a71dddc014e87e016ab40e12784887d287c7916709d19f89",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 49,
+        "web_sources_seen": 65,
         "usage": {
-          "input_tokens": 21419,
+          "input_tokens": 22381,
           "cached_input_tokens": 4961,
-          "output_tokens": 1877,
-          "reasoning_tokens": 835,
-          "total_tokens": 23296,
+          "output_tokens": 1337,
+          "reasoning_tokens": 829,
+          "total_tokens": 23718,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
           "postgame:824785:BAL:824787": [
-            "invalid result 'COMPLETED'"
+            "invalid result 'Orioles 4, Blue Jays 3'"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1097,
-        "estimated_prompt_tokens": 275,
-        "research_mode": "EARLY"
+        "prompt_chars": 665,
+        "estimated_prompt_tokens": 167,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "MIN",
         "game_pk": 823168,
         "items": [
-          "postgame:823168:MIN:823166"
+          "pregame:823168:MIN:EARLY"
         ],
-        "response_id": "resp_0bc0706ac5e3a936016ab3e4329c7887d2b37b13d4ce9572ea",
+        "response_id": "resp_0d23693323fe1dee016ab40e3b2ff087d295567207ba4c8ada",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 51,
+        "web_sources_seen": 48,
         "usage": {
-          "input_tokens": 21762,
+          "input_tokens": 21726,
           "cached_input_tokens": 4961,
-          "output_tokens": 1393,
-          "reasoning_tokens": 1028,
-          "total_tokens": 23155,
+          "output_tokens": 972,
+          "reasoning_tokens": 482,
+          "total_tokens": 22698,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 649,
-        "estimated_prompt_tokens": 163,
-        "research_mode": "POSTGAME"
+        "prompt_chars": 708,
+        "estimated_prompt_tokens": 177,
+        "research_mode": "EARLY"
       },
       {
         "team": "SF",
         "game_pk": 823168,
         "items": [
-          "postgame:823168:SF:823166"
+          "pregame:823168:SF:EARLY"
         ],
-        "response_id": "resp_01b985aec4913974016ab3e45b1e1087d284da1413c6c4c0a3",
+        "response_id": "resp_04da958edab11c8d016ab40e53b98887d299ccc009d70002a4",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 63,
+        "web_sources_seen": 35,
         "usage": {
-          "input_tokens": 22088,
+          "input_tokens": 21759,
           "cached_input_tokens": 4961,
-          "output_tokens": 1346,
-          "reasoning_tokens": 888,
-          "total_tokens": 23434,
+          "output_tokens": 1526,
+          "reasoning_tokens": 758,
+          "total_tokens": 23285,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {},
+        "validation_errors": {
+          "pregame:823168:SF:EARLY": [
+            "manager/coach pregame media was neither checked nor explicitly unavailable"
+          ]
+        },
         "tool_budget": 2,
-        "prompt_chars": 647,
-        "estimated_prompt_tokens": 162,
+        "prompt_chars": 1093,
+        "estimated_prompt_tokens": 274,
+        "research_mode": "EARLY"
+      },
+      {
+        "team": "TOR",
+        "game_pk": 824784,
+        "items": [
+          "postgame:824784:TOR:824787"
+        ],
+        "response_id": "resp_01955373fa624281016ab40e737e4887d28cfee6c1bddbc10d",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 61,
+        "usage": {
+          "input_tokens": 20753,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1272,
+          "reasoning_tokens": 675,
+          "total_tokens": 22025,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:824784:TOR:824787": [
+            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
+          ]
+        },
+        "tool_budget": 2,
+        "prompt_chars": 665,
+        "estimated_prompt_tokens": 167,
         "research_mode": "POSTGAME"
       }
     ]

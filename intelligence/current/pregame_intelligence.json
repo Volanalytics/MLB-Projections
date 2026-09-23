@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "generated_at": "2026-09-23T14:38:52+00:00",
+  "generated_at": "2026-09-23T17:38:29+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "824223": {
@@ -46,7 +46,7 @@
         "source": "manager_media_research.py external research results"
       },
       "previous_game_postgame": {
-        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "status": "CONFIRMED",
         "teams": {
           "DET": {
             "research_status": "COMPLETED",
@@ -81,6 +81,62 @@
                 ],
                 "result": "INCONCLUSIVE",
                 "note": "The prior game was reviewed, but no qualifying Detroit manager/coach postgame declaration plausibly relevant to the September 23 game was located. No prior-game result is used as projection evidence."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "WSH": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-23T17:35:43+00:00",
+            "previous_game_pk": 824222,
+            "previous_game_date": "2026-09-22",
+            "passes": [
+              {
+                "checked_at": "2026-09-23T17:35:43+00:00",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Washington Nationals / MLB.com team page",
+                    "url": "https://www.mlb.com/nationals",
+                    "checked_for": "September 22, 2026 postgame coverage, manager video, and carry-forward roster/usage information",
+                    "availability": "No September 22 postgame manager item was surfaced on the official team-page results at time checked."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "MLB Scores",
+                    "url": "https://www.mlb.com/scores/2026-09-22",
+                    "checked_for": "Game status and official game context for WSH at DET, game_pk 824222",
+                    "availability": "Available."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "Nationals manager postgame video index",
+                    "url": "https://www.mlb.com/nationals/video/topic/nationals-manager-postgame",
+                    "checked_for": "Blake Butera postgame media from September 22, 2026",
+                    "availability": "SOURCE_UNAVAILABLE: the indexed official page surfaced September 21 and earlier manager postgame videos, but no September 22 item."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Detroit News / Detroit Free Press / MLive search attempt",
+                    "url": "https://www.detroitnews.com/",
+                    "checked_for": "Credentialed local postgame reporting or direct club/manager attribution from September 22, 2026",
+                    "availability": "SOURCE_UNAVAILABLE: search access to these local outlets was blocked by robots restrictions."
+                  },
+                  {
+                    "source_type": "LOCAL_COVERAGE_LEAD_ONLY",
+                    "source_name": "Yahoo-hosted Federal Baseball game-thread item",
+                    "url": "https://sports.yahoo.com/articles/washington-nationals-vs-detroit-tigers-221000259.html",
+                    "checked_for": "Potential Nationals lineup or manager reporting",
+                    "availability": "Available, but it was pregame and did not provide qualifying September 22 postgame manager/club declarations."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The prior game was completed before the September 23 game, but the required evidence coverage did not yield a qualifying official-club or direct manager/coach September 22 postgame declaration, and credentialed local/beat postgame sourcing was unavailable. No carry-forward declaration is reported."
               }
             ],
             "comments": [],
@@ -182,6 +238,54 @@
         ],
         "declarations": [],
         "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "TOR": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-23T17:36:17+00:00",
+            "previous_game_pk": 824787,
+            "previous_game_date": "2026-09-21",
+            "passes": [
+              {
+                "checked_at": "2026-09-23T17:36:17+00:00",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Toronto Blue Jays / MLB.com",
+                    "url": "https://www.mlb.com/bluejays/video/john-schneider-on-yesavage-rogers-and-more",
+                    "published_at": "2026-09-21",
+                    "access_result": "Manager postgame video available; the indexed description states John Schneider discussed Trey Yesavage's outing, Tyler Rogers' performance, and the loss, but no verbatim or materially actionable forward-looking declaration was available in the accessible text."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "MLB.com Game Story",
+                    "url": "https://www.mlb.com/stories/game/824787",
+                    "published_at": "2026-09-21",
+                    "access_result": "Confirmed game context: Toronto lost 4-3; Tyler Rogers recorded one out and allowed the go-ahead home run in the eighth inning."
+                  },
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "source_name": "MLB.com Film Room",
+                    "url": "https://www.mlb.com/video/game/824787",
+                    "published_at": "2026-09-21",
+                    "access_result": "Confirmed official box-score context for the September 21 game."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Source unavailable",
+                    "url": "https://www.mlb.com/bluejays/news",
+                    "published_at": null,
+                    "access_result": "No credentialed Blue Jays beat/local postgame report containing a carry-forward manager/club declaration was located within the available search results."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "An official John Schneider postgame availability was located, but the accessible material did not provide a verbatim or specific forward-looking declaration that could be reliably carried into the next game. The required credentialed beat/local corroboration search did not yield a usable postgame declaration."
+              }
+            ]
+          }
+        }
       }
     },
     "823168": {
@@ -279,6 +383,44 @@
             }
           }
         },
+        "source": "manager_media_research.py external research results"
+      },
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-23T00:00:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-23T00:00:00Z",
+            "team": "MIN",
+            "teams": [
+              "MIN"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "Minnesota Twins official site / MLB.com",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/twins?msockid=26e1524163686a2c0ac244f662fa6b87",
+                "checked_for": "September 23, 2026 game listing and team-published pregame material."
+              },
+              {
+                "source_name": "MLB.com Twins",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/twins/news/twins-managing-rookie-connor-prielipp-s-workload",
+                "checked_for": "Previously reported club/manager workload-management context for Connor Prielipp; not treated as a current-game declaration."
+              },
+              {
+                "source_name": "Star Tribune search coverage",
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.startribune.com/",
+                "checked_for": "Credentialed local coverage for September 23, 2026 pregame manager comments regarding Prielipp."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No current September 23, 2026 pregame manager/coach declaration establishing a Prielipp workload restriction, pitch limit, innings limit, or short leash was located within the lightweight search budget. Official team material confirmed Prielipp as the scheduled starter, but no accessible current manager-media availability was located. No qualifying credentialed local report with a directly attributed current-game workload comment was located."
+          }
+        ],
+        "declarations": [],
         "source": "manager_media_research.py external research results"
       }
     }
