@@ -1,6 +1,6 @@
 {
   "date": "2026-09-23",
-  "generated_at": "2026-09-23T17:38:29+00:00",
+  "generated_at": "2026-09-23T20:37:58+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "824223": {
@@ -421,6 +421,253 @@
           }
         ],
         "declarations": [],
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824784": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-23T20:35:46Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-23T20:35:46Z",
+            "team": "TOR",
+            "teams": [
+              "TOR"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_name": "MLB.com / Toronto Blue Jays",
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/bluejays/video/john-schneider-on-yesavage-rogers-and-more",
+                "published_at": "2026-09-21",
+                "access_status": "AVAILABLE_METADATA_ONLY",
+                "notes": "Official Blue Jays postgame manager-video page. Search metadata identifies John Schneider discussing Tyler Rogers, but no pregame September 23 workload declaration or transcript was available in the retrieved material."
+              },
+              {
+                "source_name": "Sportsnet",
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.sportsnet.ca/mlb/article/scherzer-to-face-bassitt-in-game-1-of-blue-jays-orioles-doubleheader/",
+                "published_at": "2026-09-23T09:43:00-07:00",
+                "access_status": "AVAILABLE",
+                "notes": "Reports Schneider announced Max Scherzer for Game 1 of the doubleheader and that the Game 2 plan was still to be determined at that time."
+              },
+              {
+                "source_name": "Sportsnet",
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.sportsnet.ca/mlb/article/bateman-guerrero-out-as-scherzer-set-to-start-game-1-against-orioles/",
+                "published_at": "2026-09-23T11:17:00-07:00",
+                "access_status": "AVAILABLE",
+                "notes": "Corroborates the morning Schneider announcement; contains no reported CJ Van Eyk pitch, inning, batter-faced, or workload restriction and no specific availability declaration for Rogers, Rodríguez, or Cellucci."
+              },
+              {
+                "source_name": "Sportsnet",
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.sportsnet.ca/mlb/article/blue-jays-vs-orioles-postponed-due-to-weather-to-play-doubleheader-wednesday/",
+                "published_at": "2026-09-22T13:59:00-07:00",
+                "access_status": "AVAILABLE",
+                "notes": "Reports the September 22 postponement and September 23 doubleheader schedule; no bullpen-use declaration."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Meaningful searches covered an official Blue Jays/MLB source and credentialed local reporting. Before the target Game 2 first pitch, retrieved manager media established only that the Game 2 pitching plan had not been announced in the cited morning report. No direct, attributable pregame declaration was found establishing a CJ Van Eyk workload restriction or a usage restriction/availability decision for Tyler Rogers, José Rodríguez, or Brendan Cellucci."
+          }
+        ]
+      },
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "TOR": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-23T20:35:46Z",
+            "previous_game_pk": 824787,
+            "previous_game_date": "2026-09-21",
+            "passes": [
+              {
+                "checked_at": "2026-09-23T20:35:46Z",
+                "sources_checked": [
+                  {
+                    "source_name": "MLB.com / Toronto Blue Jays",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/bluejays/video/john-schneider-on-yesavage-rogers-and-more",
+                    "published_at": "2026-09-21",
+                    "access_status": "AVAILABLE_METADATA_ONLY",
+                    "notes": "Official Blue Jays postgame manager-video page. Its metadata says Schneider discussed Trey Yesavage, Tyler Rogers, and the loss, but the retrieved material did not provide a transcript or an attributable statement defining next-game availability or a restriction."
+                  },
+                  {
+                    "source_name": "MLB.com",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/video/game/824787",
+                    "published_at": "2026-09-21",
+                    "access_status": "AVAILABLE_METADATA_ONLY",
+                    "notes": "Official game-video page identifies the September 21 game as Toronto 3, Baltimore 4. It contains no retrieved manager declaration carrying forward to September 23."
+                  },
+                  {
+                    "source_name": "Sportsnet",
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.sportsnet.ca/mlb/article/blue-jays-vs-orioles-postponed-due-to-weather-to-play-doubleheader-wednesday/",
+                    "published_at": "2026-09-22T13:59:00-07:00",
+                    "access_status": "AVAILABLE",
+                    "notes": "Credentialed local report confirms the September 22 game was postponed and rescheduled as part of a September 23 doubleheader. It provides no postgame Schneider declaration from September 21 setting a next-game workload or availability restriction."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The official September 21 Schneider postgame video was located, but retrieved official metadata did not expose the substance of his Tyler Rogers discussion. No direct, attributable postgame declaration was retrieved that plausibly carries forward as a September 23 starter-workload or bullpen-availability restriction."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "823327": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-23T00:00:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-23T00:00:00Z",
+            "team": "STL",
+            "teams": [
+              "STL"
+            ],
+            "pass_type": "EARLY",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "source_name": "St. Louis Cardinals / MLB",
+                "url": "https://www.mlb.com/cardinals/roster/probable-pitchers",
+                "access_status": "CHECKED",
+                "relevance": "Official probable-pitcher page lists Matthew Liberatore as the Cardinals' scheduled starter at Pittsburgh on September 23."
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "source_name": "Baseball Savant / MLB",
+                "url": "https://baseballsavant.mlb.com/preview?game_pk=823327",
+                "access_status": "CHECKED",
+                "relevance": "Official MLB game preview for game_pk 823327 was checked for game/starter context; it contains no manager workload declaration."
+              },
+              {
+                "source_type": "MANAGER_OR_COACH_PREGAME_MEDIA",
+                "source_name": "Cardinals manager/coach pregame availability",
+                "url": "https://www.mlb.com/cardinals",
+                "access_status": "SOURCE_UNAVAILABLE",
+                "relevance": "No accessible September 23 pregame manager or coach media item containing a Liberatore or Cooper Hjerpe workload/availability declaration was located within the lightweight search budget."
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "source_name": "St. Louis Post-Dispatch / STLtoday search scope",
+                "url": "https://www.stltoday.com/",
+                "access_status": "SOURCE_UNAVAILABLE",
+                "relevance": "Targeted local-beat search was attempted, but the domain was blocked to retrieval and no attributable September 23 pregame declaration was surfaced."
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "Official sources confirm Liberatore as the scheduled starter, but no direct Cardinals manager/coach pregame declaration was found establishing a workload restriction, planned shortened outing, or specific availability ruling for Liberatore or Cooper Hjerpe. Because manager media and accessible credentialed local reporting could not be substantively verified, the negative finding cannot be marked completed."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "CONFIRMED",
+        "teams": {
+          "STL": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-23T00:00:00Z",
+            "previous_game_pk": 823328,
+            "previous_game_date": "2026-09-22",
+            "passes": [
+              {
+                "checked_at": "2026-09-23T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "St. Louis Cardinals / MLB",
+                    "url": "https://www.mlb.com/cardinals/roster/probable-pitchers",
+                    "access_status": "CHECKED",
+                    "relevance": "Official Cardinals page was checked for the immediately preceding series/game context but did not provide a September 22 postgame manager availability declaration."
+                  },
+                  {
+                    "source_type": "NATIONAL_WIRE",
+                    "source_name": "CBS Sports / Associated Press game recap",
+                    "url": "https://www.games.cbssports.com/mlb/gametracker/boxscore/MLB_20260922_STL%40PIT/",
+                    "access_status": "CHECKED",
+                    "relevance": "Recap identifies the September 22 final as Pittsburgh 2, St. Louis 0, with Andre Pallante pitching six innings. It does not provide a Cardinals manager/coach declaration plausibly affecting September 23 pitcher availability."
+                  },
+                  {
+                    "source_type": "NATIONAL_GAME_RECAP",
+                    "source_name": "FOX Sports",
+                    "url": "https://www.foxsports.com/mlb/st-louis-cardinals-vs-pittsburgh-pirates-sep-22-2026-game-boxscore-96985",
+                    "access_status": "CHECKED",
+                    "relevance": "Game recap confirms the September 22 final and Pallante's six-inning start; no carry-forward Cardinals bullpen/workload declaration is reported."
+                  },
+                  {
+                    "source_type": "MANAGER_OR_COACH_POSTGAME_MEDIA",
+                    "source_name": "Cardinals manager/coach postgame availability",
+                    "url": "https://www.mlb.com/cardinals",
+                    "access_status": "SOURCE_UNAVAILABLE",
+                    "relevance": "No accessible September 22 Cardinals postgame manager/coach media item with a next-game-relevant availability declaration was located within the lightweight search budget."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "St. Louis Post-Dispatch / STLtoday search scope",
+                    "url": "https://www.stltoday.com/",
+                    "access_status": "SOURCE_UNAVAILABLE",
+                    "relevance": "Targeted local-beat search was attempted, but the domain was blocked to retrieval and no attributable September 22 postgame declaration was surfaced."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The prior game finished Pirates 2, Cardinals 0. The result itself is not carried forward as projection evidence. No verified postgame manager/coach or credentialed beat declaration was found that materially changes September 23 Cardinals pitcher or bullpen availability."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "PIT": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-23T00:00:00Z",
+            "previous_game_pk": 823328,
+            "previous_game_date": "2026-09-22",
+            "passes": [
+              {
+                "checked_at": "2026-09-23T00:00:00Z",
+                "sources_checked": [
+                  {
+                    "source_name": "Pittsburgh Pirates Game Notes",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/pirates/news/game-notes",
+                    "relevance": "Official club game-notes index was checked; no indexed September 22 postgame manager/coach availability declaration relevant to September 23 was located."
+                  },
+                  {
+                    "source_name": "DK Pittsburgh Sports",
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.dkpittsburghsports.com/team/pittsburgh-pirates/feed/topic/little-support-jared-jones-pirates-win-mlb-jmn",
+                    "relevance": "Credentialed local postgame coverage confirms Pittsburgh's September 22 win and Jared Jones' seven-inning outing, but the indexed report does not provide a relevant carry-forward declaration concerning Bachar or September 23 bullpen/workload availability."
+                  },
+                  {
+                    "source_name": "MLB Cardinals game video",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://www.mlb.com/cardinals/video/andre-pallante-against-the-pirates-x3747",
+                    "relevance": "Official MLB game-page material for the September 22 game was checked; no Pirates manager/coach postgame availability declaration was available in the indexed material."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "SOURCE_UNAVAILABLE: No direct Pirates manager or coach postgame media for September 22 was located in the available official or credentialed-local indexed sources. The prior-game result itself is not carried forward as projection evidence, and no sourced declaration established a September 23 workload restriction, availability change, or role change for Bachar."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
         "source": "manager_media_research.py external research results"
       }
     }
