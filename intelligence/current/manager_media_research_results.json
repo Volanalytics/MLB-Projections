@@ -8,43 +8,32 @@
       "checked_at": "2026-09-23T00:00:00Z",
       "sources_checked": [
         {
-          "source_name": "Baltimore Orioles / MLB.com",
           "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball",
-          "published_at": "2026-09-21",
-          "accessed_context": "Official Orioles manager-postgame video for BAL vs. TOR, game_pk 824787."
-        },
-        {
           "source_name": "Baltimore Orioles / MLB.com",
-          "source_type": "OFFICIAL_TEAM",
           "url": "https://www.mlb.com/orioles/video/topic/orioles-manager-postgame",
-          "published_at": "2026-09-21",
-          "accessed_context": "Official Orioles manager-postgame video index."
+          "checked_for": "Craig Albernaz postgame media from September 21, 2026; no accessible transcript or carry-forward availability declaration located."
         },
         {
-          "source_name": "MLB Film Room",
           "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/video/game/824787",
-          "published_at": "2026-09-21",
-          "accessed_context": "Official game page confirming Toronto 3, Baltimore 4."
+          "source_name": "MLB Game Story",
+          "url": "https://www.mlb.com/stories/game/824787?ap=1&canonical=http%3A%2F%2Fwww.mlb.com%2Fstories%3Fs%3Dhttps%253A%252F%252Fwww.mlb.com%252Fstories%252Fgame%252F824787%253Fap%253D1%2526storylocal%253Darticle-embed&storylocal=article-embed",
+          "checked_for": "September 21, 2026 game events and player usage."
         },
         {
-          "source_name": "The Baltimore Banner",
           "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.thebanner.com/sports/orioles-mlb/orioles-craig-albernaz-criticism-jeremiah-jackson-UVEFAY7AAVA4FD3NGXABIXKABM/",
-          "published_at": "2026-09-21",
-          "accessed_context": "Credentialed local coverage reviewed; published before the September 21 first pitch and therefore not used for a postgame carry-forward finding."
+          "source_name": "Baltimore Sun",
+          "url": "https://www.baltimoresun.com/",
+          "checked_for": "September 21 postgame coverage; source retrieval was unavailable due to robots restrictions."
         },
         {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
           "source_name": "MASN Sports",
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.masnsports.com/blog/entry/updates-on-holliday-and-alexander-albernaz-on-mindset-with-six-games-left-and-keeping-standards-high/",
-          "published_at": "2026-09-21",
-          "accessed_context": "Credentialed local pregame coverage reviewed; not used as postgame evidence."
+          "url": "https://www.masnsports.com/",
+          "checked_for": "September 21 postgame coverage; no retrievable relevant report located in available search results."
         }
       ],
-      "research_status": "FAILED",
-      "notes": "Baltimore won the prior game 4-3. The official manager-postgame item supplied a direct, general team-performance statement. No specific next-game starter restriction, bullpen-availability declaration, lineup commitment, injury update, or numeric usage limit was identified in the reviewed postgame evidence; no such restriction is inferred from the result. | VALIDATION: invalid result 'Baltimore Orioles 4, Toronto Blue Jays 3'",
+      "research_status": "COMPLETED",
+      "notes": "The official MLB game record confirms Baltimore's 4-3 win over Toronto on September 21, including Rico Garcia recording the save after Pete Alonso's two-homer game. However, the accessible official postgame material did not provide a transcript establishing a manager/coach declaration that plausibly carries forward to the next game, and no credentialed local postgame report was retrievable to complete the negative-evidence contract.",
       "game_pk": 824787,
       "today_game_pk": 824785,
       "team": "BAL",
@@ -52,26 +41,263 @@
       "previous_game_pk": 824787,
       "previous_game_date": "2026-09-21",
       "result": "INCONCLUSIVE",
-      "declarations": [
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "eed205221da7a3076bb88a7ca6816cd985b77c1c7847a016cbbdd08526b24b1f"
+    },
+    {
+      "item_id": "postgame:824784:BAL:824787",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23T23:35:50+00:00",
+      "sources_checked": [
         {
-          "speaker": "Craig Albernaz",
-          "speaker_role": "Orioles manager",
-          "timing": "postgame",
-          "label": "CONFIRMED",
-          "statement": "We're playing good team baseball.",
-          "normalized_effect": "General positive assessment of team play only; does not establish a specific next-game deployment, availability, or lineup plan.",
-          "source_url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball"
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "MLB.com Baltimore Orioles",
+          "url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball",
+          "published_at": "2026-09-21",
+          "accessed_context": "Official Orioles postgame manager availability; Albernaz discussed Alonso, the comeback, Basallo, and the club's team play."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com",
+          "url": "https://www.mlb.com/video/game/824787",
+          "published_at": "2026-09-21",
+          "accessed_context": "Official game page and final-game context for TOR at BAL, game_pk 824787."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "BaltimoreBaseball.com / Rich Dubroff",
+          "url": "https://www.baltimorebaseball.com/sports/orioles-mlb/2026/09/21/orioles-still-waiting-alexander-holliday-unlikely-return-2026-albernaz-wants-higher-standards-orioles-blue-jays-lineup-richdubroff/",
+          "published_at": "2026-09-21",
+          "accessed_context": "Credentialed local Orioles coverage reviewed for personnel-status context surrounding the game."
         }
       ],
+      "research_status": "FAILED",
+      "notes": "No material postgame declaration from the September 21 game was found that plausibly changes Baltimore's September 23 game projection. The official manager availability contained general postgame discussion rather than a stated lineup, injury, starter-usage, bullpen-availability, or workload restriction to carry forward. No numeric limits were inferred. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824787,
+      "today_game_pk": 824784,
+      "team": "BAL",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 824787,
+      "previous_game_date": "2026-09-21",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "aa84ada6a6318ba5df36e33db4a2f99b8b15bf5be2e55bb439c2c3cb187460da"
+    },
+    {
+      "item_id": "postgame:823410:MIL:823412",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Milwaukee Brewers Game Notes",
+          "url": "https://www.mlb.com/brewers/news/game-notes",
+          "checked_for": "Official club material and September 22 game context."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB Brewers Manager Postgame Videos",
+          "url": "https://www.mlb.com/video/topic/brewers-manager-postgame",
+          "checked_for": "Pat Murphy postgame availability or club-posted manager comments from September 22."
+        },
+        {
+          "source_type": "NATIONAL_WIRE",
+          "source_name": "Associated Press game report via 107.5 The Game",
+          "url": "https://www.1075thegame.com/2026/09/22/bryson-stotts-8th-inning-hit-lifts-phillies-past-brewers/",
+          "checked_for": "Postgame reporting and attributed Brewers comments."
+        },
+        {
+          "source_type": "LOCAL_CREDENTIALLED_LEAD",
+          "source_name": "Milwaukee Journal Sentinel story syndicated by AOL",
+          "url": "https://www.aol.ca/articles/brewers-vs-phillies-score-live-203040000.html",
+          "checked_for": "Potential Milwaukee beat reporting and attributed postgame comments."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Milwaukee lost 6-4 at Philadelphia on September 22, 2026. The material reviewed establishes the result and that Milwaukee used Dustin May for two innings, Kyle Harrison for one inning, and Colton Gordon for five innings, but it did not provide a direct, attributable Brewers manager/coach postgame declaration that plausibly carries forward to the September 23 game. Official club postgame manager media for September 22 was unavailable in the reviewed official video index, and no qualifying credentialed local/beat postgame declaration was located in the available search results. | VALIDATION: invalid result 'MIL lost 6-4 at PHI'",
+      "game_pk": 823412,
+      "today_game_pk": 823410,
+      "team": "MIL",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 823412,
+      "previous_game_date": "2026-09-22",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
       "comments": [
         {
-          "label": "CONFIRMED",
-          "topic": "Postgame scope",
-          "comment": "The official Orioles postgame video description states that Albernaz discussed Pete Alonso's multi-homer performance, Baltimore's comeback win, Samuel Basallo, and more. The available official evidence did not support carrying forward a more specific operational restriction or commitment to the next game.",
-          "source_url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball"
+          "evidence_label": "UNRESOLVED",
+          "topic": "September 23 carry-forward usage/role restriction",
+          "comment": "No direct manager, coach, or club declaration was located establishing a next-game limitation, availability restriction, lineup plan, pitching plan, or other material carry-forward item."
+        },
+        {
+          "evidence_label": "CONFIRMED",
+          "topic": "Previous-game pitcher usage",
+          "comment": "The available game record reports Dustin May as pitching two innings, Kyle Harrison one inning, and Colton Gordon five innings on September 22. This is recorded as prior-game usage only, not as an inferred September 23 availability declaration."
         }
       ],
-      "queue_fingerprint": "eed205221da7a3076bb88a7ca6816cd985b77c1c7847a016cbbdd08526b24b1f"
+      "queue_fingerprint": "67632b16b4739c03f36754fa0fe843c2522d675b261b6f4bca454e5dfc51143f"
+    },
+    {
+      "item_id": "postgame:823410:PHI:823412",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23T23:36:22Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_SCOREBOARD",
+          "source_name": "MLB.com Scores",
+          "url": "https://www.mlb.com/scores/2026-09-22",
+          "status": "CHECKED",
+          "notes": "Official scoreboard identified the September 22 Phillies-Brewers game."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Philadelphia Phillies / MLB.com",
+          "url": "https://www.mlb.com/phillies",
+          "status": "CHECKED",
+          "notes": "Official club page was checked for postgame coverage and team updates."
+        },
+        {
+          "source_type": "OFFICIAL_MANAGER_MEDIA",
+          "source_name": "Phillies Manager Postgame Videos / MLB.com",
+          "url": "https://www.mlb.com/phillies/video/topic/phillies-manager-postgame",
+          "status": "SOURCE_UNAVAILABLE",
+          "notes": "The indexed postgame-video page did not provide a September 22, 2026 Don Mattingly postgame item or usable transcript at check time."
+        },
+        {
+          "source_type": "NATIONAL_WIRE_RECAP",
+          "source_name": "107.5 The Game / Associated Press recap",
+          "url": "https://www.1075thegame.com/2026/09/22/bryson-stotts-8th-inning-hit-lifts-phillies-past-brewers/",
+          "status": "CHECKED",
+          "notes": "Recap confirmed Philadelphia's 6-4 win but did not yield a carry-forward manager/coach declaration in the available indexed material."
+        },
+        {
+          "source_type": "GAME_MEDIA_INDEX",
+          "source_name": "MLBDB game page",
+          "url": "https://www.mlbdb.com/score/philadelphia-phillies-vs-milwaukee-brewers-823412",
+          "status": "CHECKED",
+          "notes": "Indexed a Mattingly postgame media item title, but no attributable statement, transcript, or verifiable restriction was available in the retrieved material."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The prior game was completed as a 6-4 Phillies win, but the available official and attributable postgame material did not provide a verifiable Phillies declaration or comment plausibly relevant to the September 23 game. No numeric or qualitative usage restriction, injury update, availability ruling, lineup plan, or bullpen plan is carried forward.",
+      "game_pk": 823412,
+      "today_game_pk": 823410,
+      "team": "PHI",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 823412,
+      "previous_game_date": "2026-09-22",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "42e26c875f5c6f7d0514152cc2076d38ed294434afa3cb05cc772bf7c558f197"
+    },
+    {
+      "item_id": "postgame:823492:TB:823494",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_name": "MLB.com",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/rays/video/drew-rasmussen-against-the-yankees-x5343",
+          "checked_for": "Official Rays/MLB game coverage and postgame-forward availability or usage declarations.",
+          "published_at": "2026-09-22"
+        },
+        {
+          "source_name": "Tampa Bay Times — Marc Topkin",
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.tampabay.com/sports/rays/2026/09/22/rays-miss-out-1st-chance-clinch-al-east-drop-opener-yankees/",
+          "checked_for": "Rays postgame reporting, including club/manager statements plausibly affecting the September 23 game.",
+          "published_at": "2026-09-22"
+        },
+        {
+          "source_name": "Manager/coach postgame media",
+          "source_type": "SOURCE_UNAVAILABLE",
+          "url": "https://www.mlb.com/rays",
+          "checked_for": "Direct Kevin Cash or Rays coach postgame availability from the September 22 doubleheader; no accessible direct postgame media item located in the sources reviewed.",
+          "published_at": null
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Reviewed official MLB/Rays coverage and credentialed Rays beat reporting for carry-forward postgame information following the September 22, 2026 doubleheader at Yankee Stadium. No direct manager/coach/team declaration was located that established a September 23 lineup, rest, injury, bullpen-availability, or pitching-usage restriction. The prior game's result and routine game events were not treated as predictive evidence for the September 23 game. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823494,
+      "today_game_pk": 823492,
+      "team": "TB",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 823494,
+      "previous_game_date": "2026-09-22",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "fa36e7445b69a4cdb01f7feb6947598c1d6e92b288ecd9eb6773a1bffb612161"
+    },
+    {
+      "item_id": "postgame:823492:NYY:823494",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-23",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "New York Yankees / MLB.com",
+          "url": "https://www.mlb.com/yankees",
+          "checked_result": "Official club page reviewed; surfaced the September 22 Rays-Yankees coverage headline but no accessible full postgame text in the search result."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB.com Yankees Manager Postgame Videos",
+          "url": "https://www.mlb.com/video/topic/yankees-manager-postgame",
+          "checked_result": "Official MLB manager-postgame index reviewed; target September 22 postgame video was not available through the accessible index result."
+        },
+        {
+          "source_type": "MANAGER_POSTGAME_MEDIA",
+          "source_name": "SNY / Aaron Boone postgame press conference",
+          "url": "https://sports.yahoo.com/videos/aaron-boone-yankees-loss-rays-144200480.html",
+          "checked_result": "Direct transcript of Boone's September 22 postgame availability reviewed."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Search of credentialed Yankees beat/local coverage",
+          "url": "https://www.mlb.com/yankees",
+          "checked_result": "No accessible credentialed beat/local report containing a directly attributable postgame declaration relevant to the September 23 game was located before research cutoff; SOURCE_UNAVAILABLE."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "A direct Aaron Boone postgame declaration establishes that the Yankees intended to selectively rest players and manage pitcher workloads over the remaining regular-season games. However, the required corroborating credentialed beat/local postgame source was unavailable in the accessible research results, so the evidence contract for COMPLETED was not met.",
+      "game_pk": 823494,
+      "today_game_pk": 823492,
+      "team": "NYY",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
+      "previous_game_pk": 823494,
+      "previous_game_date": "2026-09-22",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "evidence_label": "CONFIRMED",
+          "speaker": "Aaron Boone",
+          "speaker_role": "Yankees manager",
+          "source_name": "SNY postgame press conference transcript",
+          "source_url": "https://sports.yahoo.com/videos/aaron-boone-yankees-loss-rays-144200480.html",
+          "context": "Postgame, September 22, 2026, after Yankees-Rays Game 2; discussing treatment of the final five regular-season games after the club had secured a postseason berth.",
+          "declaration_type": "LINEUP_AND_WORKLOAD_MANAGEMENT",
+          "statement": "Boone said the club would pick days for some players to be off, would be selective with leverage relievers' usage, and would discuss those decisions daily. He specifically said he wanted to give Cody Bellinger a day, Austin Wells another day or two, and Spencer Jones another day because of his heels.",
+          "carry_forward_relevance": "Potential lineup absences and selective bullpen usage for the September 23 game and remaining regular-season schedule."
+        },
+        {
+          "evidence_label": "CONFIRMED",
+          "speaker": "Aaron Boone",
+          "speaker_role": "Yankees manager",
+          "source_name": "SNY postgame press conference transcript",
+          "source_url": "https://sports.yahoo.com/videos/aaron-boone-yankees-loss-rays-144200480.html",
+          "context": "Same September 22, 2026 postgame availability; asked about the starting-pitching plan.",
+          "declaration_type": "STARTER_WORKLOAD_MANAGEMENT",
+          "statement": "Boone said Gerrit Cole and Cam Schlittler remained in the planned rotation but that the Yankees would be smart about how they handled them.",
+          "carry_forward_relevance": "Indicates workload caution, without a stated numerical pitch, innings, or batters-faced limit."
+        }
+      ],
+      "comments": [],
+      "queue_fingerprint": "85d2c67350e5eec39bc5501179f06427b3991baf5540efd91fe96000996e4f95"
     },
     {
       "item_id": "pregame:824784:TOR:EARLY",
@@ -249,55 +475,6 @@
         }
       ],
       "queue_fingerprint": "c5433303a52b4e955df3ca3fd028992b130eb6b6450f805b332d0509bf7ece0d"
-    },
-    {
-      "item_id": "postgame:824784:BAL:824787",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-23T20:36:22Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com Baltimore Orioles manager postgame video",
-          "url": "https://www.mlb.com/orioles/video/craig-albernaz-we-re-playing-good-team-baseball",
-          "publication_date": "2026-09-21T00:00:00Z",
-          "accessed_at": "2026-09-23T20:36:22Z",
-          "notes": "Official Orioles manager postgame video for game 824787. Available description identifies discussion of the comeback win, Pete Alonso, and Samuel Basallo; it does not establish a forward-looking declaration materially affecting Baltimore's September 23 pitching/workload projection."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "MLB.com game video hub for game 824787",
-          "url": "https://www.mlb.com/video/game/824787",
-          "publication_date": "2026-09-21T00:00:00Z",
-          "accessed_at": "2026-09-23T20:36:22Z",
-          "notes": "Official game hub confirmed the September 21 game context. The game result was not used as projection evidence for the September 23 game."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "MASN",
-          "url": "https://www.masnsports.com/blog/entry/updates-on-holliday-and-alexander-albernaz-on-mindset-with-six-games-left-and-keeping-standards-high/",
-          "publication_date": "2026-09-21T17:17:00Z",
-          "accessed_at": "2026-09-23T20:36:22Z",
-          "notes": "Credentialed local pregame coverage for September 21 was reviewed for relevant carry-forward club information. It contained injury and standards comments but no material declaration applicable to the September 23 Trey Gibson workload projection."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The September 21 postgame manager material did not produce a directly stated, plausibly carry-forward declaration affecting Baltimore's September 23 starter workload or role. The September 21 game result was not treated as hindsight evidence. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824787,
-      "today_game_pk": 824784,
-      "team": "BAL",
-      "pass_type": null,
-      "previous_game_pk": 824787,
-      "previous_game_date": "2026-09-21",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "evidence_label": "UNRESOLVED",
-          "topic": "Carry-forward postgame information",
-          "comment": "No material manager/club declaration from game 824787 was located that should alter the next-game projection for Baltimore or Trey Gibson. No inference was drawn from the prior game's result."
-        }
-      ],
-      "queue_fingerprint": "aa84ada6a6318ba5df36e33db4a2f99b8b15bf5be2e55bb439c2c3cb187460da"
     },
     {
       "item_id": "pregame:823327:STL:EARLY",
@@ -522,49 +699,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "d260be5496cc120d6a3c98d89ca9682149f4670df71164c9de7aa478d13cf8f2"
-    },
-    {
-      "item_id": "postgame:823410:MIL:823412",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-23T20:37:58+00:00",
-      "sources_checked": [
-        {
-          "source_name": "MLB.com / September 18, 2026 transactions",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/transactions/2026/09/18",
-          "checked_for": "Official roster context for Colton Gordon; records Milwaukee's recall of Gordon from Nashville."
-        },
-        {
-          "source_name": "Milwaukee Brewers clinch bye in loss to Phillies / WNCY Learfield report",
-          "source_type": "LOCAL_CREDENTIALLED",
-          "url": "https://wncy.com/2026/09/23/1136460/",
-          "checked_for": "September 22 game recap, Gordon's five-inning relief outing, and reported Pat Murphy postgame audio context."
-        },
-        {
-          "source_name": "MLB.com / Phillies probable pitchers",
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/phillies/roster/probable-pitchers?msockid=071515293917668b167803153893677a",
-          "checked_for": "September 23 game context following the September 22 game."
-        },
-        {
-          "source_name": "CBS Sports / Field Level Media game preview",
-          "source_type": "NATIONAL_WIRE",
-          "url": "https://cbssports.com.golfsplash.golf.cbssports.com/mlb/gametracker/preview/MLB_20260923_MIL%40PHI/",
-          "checked_for": "Any carry-forward Milwaukee manager declaration affecting September 23 availability."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The accessible local recap reports that Gordon pitched five relief innings in Milwaukee's September 22 loss. However, no accessible direct manager/coach postgame statement established a September 23 availability restriction, role change, or recovery plan for Gordon or any other Milwaukee arm. The prior-game usage itself is not converted into a manager declaration. | VALIDATION: invalid result None",
-      "game_pk": null,
-      "today_game_pk": 823410,
-      "team": "MIL",
-      "pass_type": null,
-      "previous_game_pk": 823412,
-      "previous_game_date": "2026-09-22",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "67632b16b4739c03f36754fa0fe843c2522d675b261b6f4bca454e5dfc51143f"
     },
     {
       "item_id": "postgame:824223:WSH:824222",
@@ -1091,7 +1225,7 @@
       "queue_fingerprint": "2beb5f9946da759d5a356173fe61a2225bfad37459f47f4c7d309403bc125ac4"
     }
   ],
-  "researched_at": "2026-09-23T20:37:58+00:00",
+  "researched_at": "2026-09-23T23:37:33+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -1102,14 +1236,14 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-23T20:37:58+00:00",
+    "last_run_at": "2026-09-23T23:37:33+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 131346,
+      "input_tokens": 135499,
       "cached_input_tokens": 24805,
-      "output_tokens": 11180,
-      "reasoning_tokens": 4932,
-      "total_tokens": 142526,
+      "output_tokens": 7210,
+      "reasoning_tokens": 4317,
+      "total_tokens": 142709,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -1119,20 +1253,43 @@
         "items": [
           "postgame:824785:BAL:824787"
         ],
-        "response_id": "resp_0dc696b0a78f09e0016ab43803cc5087d2a74cb4301cd5cb08",
+        "response_id": "resp_0b743e1dc170fbe9016ab46230346087d28488597e24efbf3e",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 54,
+        "web_sources_seen": 33,
         "usage": {
-          "input_tokens": 21969,
+          "input_tokens": 24576,
           "cached_input_tokens": 0,
-          "output_tokens": 1540,
-          "reasoning_tokens": 813,
-          "total_tokens": 23509,
+          "output_tokens": 1030,
+          "reasoning_tokens": 588,
+          "total_tokens": 25606,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 665,
+        "estimated_prompt_tokens": 167,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "BAL",
+        "game_pk": 824784,
+        "items": [
+          "postgame:824784:BAL:824787"
+        ],
+        "response_id": "resp_083497b3243c4865016ab46242c7d887d2adb66bfa7c2ae65c",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 55,
+        "usage": {
+          "input_tokens": 22223,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1015,
+          "reasoning_tokens": 688,
+          "total_tokens": 23238,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "postgame:824785:BAL:824787": [
-            "invalid result 'Baltimore Orioles 4, Toronto Blue Jays 3'"
+          "postgame:824784:BAL:824787": [
+            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
         "tool_budget": 2,
@@ -1141,142 +1298,104 @@
         "research_mode": "POSTGAME"
       },
       {
-        "team": "TOR",
-        "game_pk": 824784,
+        "team": "MIL",
+        "game_pk": 823410,
         "items": [
-          "pregame:824784:TOR:EARLY",
-          "postgame:824784:TOR:824787"
+          "postgame:823410:MIL:823412"
         ],
-        "response_id": "resp_0277d12dbbd94ae9016ab4381fa2d087d2b692ecc7ffc83beb",
+        "response_id": "resp_00be11b49ed53def016ab46257c49c87d2b6942b8b4c120b47",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 47,
+        "web_sources_seen": 53,
         "usage": {
-          "input_tokens": 22054,
+          "input_tokens": 22101,
           "cached_input_tokens": 4961,
-          "output_tokens": 2287,
-          "reasoning_tokens": 830,
-          "total_tokens": 24341,
+          "output_tokens": 1243,
+          "reasoning_tokens": 711,
+          "total_tokens": 23344,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:823410:MIL:823412": [
+            "invalid result 'MIL lost 6-4 at PHI'"
+          ]
+        },
+        "tool_budget": 2,
+        "prompt_chars": 661,
+        "estimated_prompt_tokens": 166,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "PHI",
+        "game_pk": 823410,
+        "items": [
+          "postgame:823410:PHI:823412"
+        ],
+        "response_id": "resp_0961e4da008dfe7f016ab46273015887d287f3a84612f31137",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 55,
+        "usage": {
+          "input_tokens": 22488,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1116,
+          "reasoning_tokens": 716,
+          "total_tokens": 23604,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 1673,
-        "estimated_prompt_tokens": 419,
-        "research_mode": "EARLY"
+        "prompt_chars": 661,
+        "estimated_prompt_tokens": 166,
+        "research_mode": "POSTGAME"
       },
       {
-        "team": "BAL",
-        "game_pk": 824784,
+        "team": "TB",
+        "game_pk": 823492,
         "items": [
-          "pregame:824784:BAL:EARLY",
-          "postgame:824784:BAL:824787"
+          "postgame:823492:TB:823494"
         ],
-        "response_id": "resp_0a586830d465175e016ab4383e16a487d2ad3ac10214e9350a",
+        "response_id": "resp_03582b5bf57e5b9f016ab4628d44f087d28f8539bad9f7120d",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 51,
+        "web_sources_seen": 57,
         "usage": {
-          "input_tokens": 21882,
+          "input_tokens": 21954,
           "cached_input_tokens": 4961,
-          "output_tokens": 2042,
-          "reasoning_tokens": 891,
-          "total_tokens": 23924,
+          "output_tokens": 1205,
+          "reasoning_tokens": 770,
+          "total_tokens": 23159,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:824784:BAL:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
-          "postgame:824784:BAL:824787": [
+          "postgame:823492:TB:823494": [
             "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1095,
-        "estimated_prompt_tokens": 274,
-        "research_mode": "EARLY"
+        "prompt_chars": 648,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
       },
       {
-        "team": "STL",
-        "game_pk": 823327,
+        "team": "NYY",
+        "game_pk": 823492,
         "items": [
-          "pregame:823327:STL:EARLY",
-          "postgame:823327:STL:823328"
+          "postgame:823492:NYY:823494"
         ],
-        "response_id": "resp_069897c183d5f4e0016ab4385912d087d280456f66a0df0789",
+        "response_id": "resp_0836278869eafe86016ab462a59bb087d2aa5e3bc7dc42813b",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 60,
+        "web_sources_seen": 53,
         "usage": {
-          "input_tokens": 22130,
+          "input_tokens": 22157,
           "cached_input_tokens": 4961,
-          "output_tokens": 2285,
-          "reasoning_tokens": 1209,
-          "total_tokens": 24415,
+          "output_tokens": 1601,
+          "reasoning_tokens": 844,
+          "total_tokens": 23758,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
         "tool_budget": 2,
-        "prompt_chars": 1285,
-        "estimated_prompt_tokens": 322,
-        "research_mode": "EARLY"
-      },
-      {
-        "team": "PIT",
-        "game_pk": 823327,
-        "items": [
-          "pregame:823327:PIT:EARLY",
-          "postgame:823327:PIT:823328"
-        ],
-        "response_id": "resp_032d890d96e81efc016ab4387b9c2487d2b4e14755667925bb",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 49,
-        "usage": {
-          "input_tokens": 21260,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1604,
-          "reasoning_tokens": 697,
-          "total_tokens": 22864,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:823327:PIT:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ]
-        },
-        "tool_budget": 2,
-        "prompt_chars": 1080,
-        "estimated_prompt_tokens": 270,
-        "research_mode": "EARLY"
-      },
-      {
-        "team": "MIL",
-        "game_pk": 823410,
-        "items": [
-          "pregame:823410:MIL:EARLY",
-          "postgame:823410:MIL:823412"
-        ],
-        "response_id": "resp_0299b8d80aefb268016ab43892c10487d2868473803e250af9",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 45,
-        "usage": {
-          "input_tokens": 22051,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1422,
-          "reasoning_tokens": 492,
-          "total_tokens": 23473,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:823410:MIL:EARLY": [
-            "invalid result None"
-          ],
-          "postgame:823410:MIL:823412": [
-            "invalid result None"
-          ]
-        },
-        "tool_budget": 2,
-        "prompt_chars": 1295,
-        "estimated_prompt_tokens": 324,
-        "research_mode": "EARLY"
+        "prompt_chars": 650,
+        "estimated_prompt_tokens": 163,
+        "research_mode": "POSTGAME"
       }
     ]
   }
