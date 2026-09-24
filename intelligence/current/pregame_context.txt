@@ -1,377 +1,82 @@
-MLB V2 PREGAME CONTEXT - 2026-09-23
-generated 2026-09-23T23:37:34+00:00
+MLB V2 PREGAME CONTEXT - 2026-09-24
+generated 2026-09-24T14:37:51+00:00
 ================================================================================================
-Pipeline complete: 10/16 games
-Intelligence readiness: EARLY=1, PARTIAL=5, DECISION_READY=0, FINAL=10
-Pipeline blockers: 25
-Mandatory Intelligence research tasks: 88
+Pipeline complete: 1/12 games
+Intelligence readiness: EARLY=0, PARTIAL=11, DECISION_READY=0, FINAL=1
+Pipeline blockers: 77
+Mandatory Intelligence research tasks: 71
 
-WSH @ DET  gamePk 824223  Comerica Park
+STL @ PIT  gamePk 823326  PNC Park
 ------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
-AWAY SP: PROVISIONAL - Richard Lovelady
-  WORKLOAD: model ~6 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: PROVISIONAL - Framber Valdez
-  WORKLOAD: model ~25 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: PROVISIONAL: 1.James Wood, 2.Dylan Crews, 3.Andres Chaparro, 4.CJ Abrams, 5.Brady House, 6.Daylen Lile, 7.Harry Ford, 8.Jacob Young, 9.Jorbit Vivas
-HOME LINEUP: PROVISIONAL: 1.Gleyber Torres, 2.Hao-Yu Lee, 3.Riley Greene, 4.Eduardo Valencia, 5.Ben Malgeri, 6.Dillon Dingler, 7.Spencer Torkelson, 8.Javier Baez, 9.John Peck
-HP UMPIRE: CONFIRMED - Mike Muchlinski
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 62F, 14 mph, In From LF, relative=in
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: FINAL | frozen=True | pregame runs=2
-MODEL TOTAL: 9.67
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=PRESERVED_PREGAME | quotes=1
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.17 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: COMPLETED | freshness=FROZEN_PREGAME | last checked=2026-09-23T12:00:00Z
-  ASSESSMENT: INCONCLUSIVE - Manager/coach media research completed, but source coverage was insufficient for a reliable negative finding.
-  HISTORY: 1 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: WSH CONFIRMED (0 compromised); DET CONFIRMED (0 compromised)
-RELIEVER DB: WSH CONFIRMED (3 taxed / 2 leverage-relevant); DET CONFIRMED (2 taxed / 0 leverage-relevant)
-  WSH: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  DET: COMPLETED | prev game=2026-09-22 pk=824222 | INCONCLUSIVE | comments=0
-PIPELINE BLOCKERS:
-  - away_lineup: PROVISIONAL
-  - home_lineup: PROVISIONAL
-  - away_starter: PROVISIONAL
-  - home_starter: PROVISIONAL
-INTELLIGENCE RESEARCH:
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-TOR @ BAL  gamePk 824785  Oriole Park at Camden Yards
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
-AWAY SP: PROVISIONAL - Max Scherzer
+INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
+AWAY SP: CONFIRMED - Kyle Leahy
+  WORKLOAD: model ~17 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: CONFIRMED - Paul Skenes
   WORKLOAD: model ~22 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: PROVISIONAL - Chris Bassitt
-  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: PROVISIONAL: 1.Brett Bateman, 2.George Springer, 3.Vladimir Guerrero, 4.Alejandro Kirk, 5.Nathan Lukes, 6.Kazuma Okamoto, 7.Josh Smith, 8.Andres Gimenez, 9.Ernie Clement
-HOME LINEUP: PROVISIONAL: 1.Dylan Beavers, 2.Peter Alonso, 3.Gunnar Henderson, 4.Coby Mayo, 5.Christian Encarnacion-Strand, 6.Samuel Basallo, 7.Jeremiah Jackson, 8.Rece Hinds, 9.Colton Cowser
-HP UMPIRE: MISSED_PREGAME_CAPTURE - TBD
-FULL CREW: None
-WEATHER: MISSED_PREGAME_CAPTURE - NoneF, wind TBD, relative=None
+AWAY LINEUP: CONFIRMED: 1.JJ Wetherholt, 2.Ivan Herrera, 3.Alec Burleson, 4.Jordan Walker, 5.Leonardo Bernal, 6.Bryan Torres, 7.Thomas Saggese, 8.Nathan Church, 9.Masyn Winn
+HOME LINEUP: CONFIRMED: 1.Oneil Cruz, 2.Konnor Griffin, 3.Brandon Lowe, 4.Ryan O'Hearn, 5.Nick Gonzales, 6.Ronny Simon, 7.Spencer Horwitz, 8.Jake Mangum, 9.Henry Davis
+HP UMPIRE: CONFIRMED - Scott Barry
+FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
+WEATHER: CONFIRMED - 61F, 11 mph, In From CF, relative=in
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: FINAL | frozen=True | pregame runs=2
-MODEL TOTAL: 9.23
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=PRESERVED_PREGAME | quotes=1
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 9.80
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=1
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.23 runs | current=n/a runs | retained=n/a
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.80 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.00 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: COMPLETED | freshness=FROZEN_PREGAME | last checked=2026-09-23T14:37:37+00:00
-  ASSESSMENT: INCONCLUSIVE - Manager/coach media research completed, but source coverage was insufficient for a reliable negative finding.
-  HISTORY: 2 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: TOR CONFIRMED (0 compromised); BAL CONFIRMED (0 compromised)
-RELIEVER DB: TOR CONFIRMED (3 taxed / 1 leverage-relevant); BAL CONFIRMED (0 taxed / 0 leverage-relevant)
-  TOR: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  BAL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS:
-  - away_lineup: PROVISIONAL
-  - home_lineup: PROVISIONAL
-  - away_starter: PROVISIONAL
-  - home_starter: PROVISIONAL
-  - home_plate_umpire: MISSED_PREGAME_CAPTURE
-  - weather: MISSED_PREGAME_CAPTURE
-  - stadium_relative_wind: NOT_YET_AVAILABLE
-INTELLIGENCE RESEARCH:
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-MIN @ SF  gamePk 823168  Oracle Park
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Connor Prielipp
-  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Cesar Perdomo
-  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Luke Keaschall, 2.Austin Martin, 3.Josh Bell, 4.Ryan Jeffers, 5.Brooks Lee, 6.Royce Lewis, 7.Emmanuel Rodriguez, 8.Aaron Sabato, 9.Ben Ross
-HOME LINEUP: CONFIRMED: 1.Jonah Cox, 2.Turner Hill, 3.Victor Bericoto, 4.Bo Davidson, 5.Andrew Knizner, 6.Brett Harris, 7.Marcelo Mayer, 8.Shay Whitcomb, 9.Christian Koss
-HP UMPIRE: CONFIRMED - Dillon Wilson
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 68F, 2 mph, Out To CF, relative=out
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: FINAL | frozen=True | pregame runs=4
-MODEL TOTAL: 7.97
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=PRESERVED_PREGAME | quotes=2
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=-0.03 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: COMPLETED | freshness=FROZEN_PREGAME | last checked=2026-09-23T00:00:00Z
-  ASSESSMENT: INCONCLUSIVE - Manager/coach media research completed, but source coverage was insufficient for a reliable negative finding.
-  HISTORY: 1 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: CONFIRMED
-BULLPEN COMPUTED: MIN CONFIRMED (0 compromised); SF CONFIRMED (0 compromised)
-RELIEVER DB: MIN CONFIRMED (0 taxed / 0 leverage-relevant); SF CONFIRMED (2 taxed / 0 leverage-relevant)
-  MIN: COMPLETED | prev game=2026-09-22 pk=823166 | INCONCLUSIVE | comments=0
-  SF: COMPLETED | prev game=2026-09-22 pk=823166 | INCONCLUSIVE | comments=0
-PIPELINE BLOCKERS: none
-INTELLIGENCE RESEARCH:
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-TOR @ BAL  gamePk 824784  Oriole Park at Camden Yards
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: EARLY - insufficient core pregame inputs for decision review
-AWAY SP: PROVISIONAL - CJ Van Eyk
-  WORKLOAD: model ~22 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: PROVISIONAL - Trey Gibson
-  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: PROVISIONAL: 1.Brett Bateman, 2.George Springer, 3.Vladimir Guerrero, 4.Alejandro Kirk, 5.Nathan Lukes, 6.Kazuma Okamoto, 7.Josh Smith, 8.Andres Gimenez, 9.Ernie Clement
-HOME LINEUP: PROVISIONAL: 1.Dylan Beavers, 2.Peter Alonso, 3.Gunnar Henderson, 4.Coby Mayo, 5.Christian Encarnacion-Strand, 6.Samuel Basallo, 7.Jeremiah Jackson, 8.Rece Hinds, 9.Colton Cowser
-HP UMPIRE: MISSED_PREGAME_CAPTURE - TBD
-FULL CREW: None
-WEATHER: MISSED_PREGAME_CAPTURE - NoneF, wind TBD, relative=None
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=6
-MODEL TOTAL: 9.75
-PIPELINE MARKET: MISSED_PREGAME_CAPTURE - n/a total None | preservation=current | quotes=0
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: None | original=n/a runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=n/a | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: COMPLETED | freshness=FROZEN_PREGAME | last checked=2026-09-23T20:35:46Z
+MANAGER/COACH MEDIA: COMPLETED | freshness=CURRENT | last checked=2026-09-24T14:35:54Z
   ASSESSMENT: INCONCLUSIVE - Manager/coach media research completed, but source coverage was insufficient for a reliable negative finding.
   HISTORY: 1 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: TOR CONFIRMED (0 compromised); BAL CONFIRMED (0 compromised)
-RELIEVER DB: TOR CONFIRMED (3 taxed / 1 leverage-relevant); BAL CONFIRMED (0 taxed / 0 leverage-relevant)
-  TOR: COMPLETED | prev game=2026-09-21 pk=824787 | INCONCLUSIVE | comments=0
-  BAL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS:
-  - away_lineup: PROVISIONAL
-  - home_lineup: PROVISIONAL
-  - away_starter: PROVISIONAL
-  - home_starter: PROVISIONAL
-  - home_plate_umpire: MISSED_PREGAME_CAPTURE
-  - weather: MISSED_PREGAME_CAPTURE
-  - market_total: MISSED_PREGAME_CAPTURE
-  - stadium_relative_wind: NOT_YET_AVAILABLE
-INTELLIGENCE RESEARCH:
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-STL @ PIT  gamePk 823327  PNC Park
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Matt Liberatore
-  WORKLOAD: model ~22 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Lake Bachar
-  WORKLOAD: model ~9 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.JJ Wetherholt, 2.Ivan Herrera, 3.Alec Burleson, 4.Jordan Walker, 5.Leonardo Bernal, 6.Nolan Gorman, 7.Jose Fermin, 8.Nathan Church, 9.Masyn Winn
-HOME LINEUP: CONFIRMED: 1.Konnor Griffin, 2.Rafael Flores, 3.Bryan Reynolds, 4.Brandon Lowe, 5.Nick Gonzales, 6.Ronny Simon, 7.Ryan O'Hearn, 8.Jared Triolo, 9.Jake Mangum
-HP UMPIRE: CONFIRMED - John Bacon
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 63F, 12 mph, In From CF, relative=in
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=6
-MODEL TOTAL: 9.97
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=PRESERVED_PREGAME | quotes=3
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.47 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: COMPLETED | freshness=FROZEN_PREGAME | last checked=2026-09-23T00:00:00Z
-  ASSESSMENT: INCONCLUSIVE - Manager/coach media research completed, but source coverage was insufficient for a reliable negative finding.
-  HISTORY: 1 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: CONFIRMED
 BULLPEN COMPUTED: STL CONFIRMED (0 compromised); PIT CONFIRMED (0 compromised)
-RELIEVER DB: STL CONFIRMED (1 taxed / 0 leverage-relevant); PIT CONFIRMED (0 taxed / 0 leverage-relevant)
-  STL: COMPLETED | prev game=2026-09-22 pk=823328 | INCONCLUSIVE | comments=0
-  PIT: COMPLETED | prev game=2026-09-22 pk=823328 | INCONCLUSIVE | comments=0
+RELIEVER DB: STL CONFIRMED (1 taxed / 0 leverage-relevant); PIT CONFIRMED (1 taxed / 0 leverage-relevant)
+  STL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+  PIT: COMPLETED | prev game=2026-09-23 pk=823327 | INCONCLUSIVE | comments=0
 PIPELINE BLOCKERS: none
 INTELLIGENCE RESEARCH:
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-MIL @ PHI  gamePk 823410  Citizens Bank Park
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
-AWAY SP: PROVISIONAL - Logan Henderson
-  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Aaron Nola
-  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: PROVISIONAL: 1.Brice Turang, 2.Jackson Chourio, 3.Jake Bauers, 4.William Contreras, 5.Garrett Mitchell, 6.Christian Yelich, 7.Luis Lara, 8.Joey Ortiz, 9.David Hamilton
-HOME LINEUP: CONFIRMED: 1.Kyle Schwarber, 2.Trea Turner, 3.Bryce Harper, 4.Luis Arraez, 5.Alec Bohm, 6.Bryson Stott, 7.Brandon Marsh, 8.JT Realmuto, 9.Justin Crawford
-HP UMPIRE: CONFIRMED - Dan Bellino
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 64F, 15 mph, In From CF, relative=in
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=6
-MODEL TOTAL: 9.28
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=PRESERVED_PREGAME | quotes=3
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.78 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.00 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: MIL CONFIRMED (0 compromised); PHI CONFIRMED (0 compromised)
-RELIEVER DB: MIL CONFIRMED (1 taxed / 0 leverage-relevant); PHI CONFIRMED (2 taxed / 1 leverage-relevant)
-  MIL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  PHI: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS:
-  - away_lineup: PROVISIONAL
-  - away_starter: PROVISIONAL
-INTELLIGENCE RESEARCH:
-  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
   - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
   - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
   - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
   - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
   - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
 
-TB @ NYY  gamePk 823492  Yankee Stadium
+CWS @ KC  gamePk 824059  Kauffman Stadium
 ------------------------------------------------------------------------------------------------
 INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
-AWAY SP: PROVISIONAL - Mason Englert
-  WORKLOAD: model ~22 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Gerrit Cole
-  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: PROVISIONAL: 1.Yandy Diaz, 2.Jonathan Aranda, 3.Junior Caminero, 4.Liam Hicks, 5.Chandler Simpson, 6.Jonny Deluca, 7.Victor Mesa Jr., 8.Richie Palacios, 9.Jorge Mateo
-HOME LINEUP: CONFIRMED: 1.Ben Rice, 2.George Lombard Jr., 3.Luis Garcia, 4.Heliot Ramos, 5.Spencer Jones, 6.Jazz Chisholm, 7.Jose Caballero, 8.Ryan McMahon, 9.Ali Sanchez
-HP UMPIRE: CONFIRMED - James Hoye
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 63F, 15 mph, In From LF, relative=in
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=6
-MODEL TOTAL: 8.96
-PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=PRESERVED_PREGAME | quotes=3
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.46 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: TB CONFIRMED (0 compromised); NYY CONFIRMED (0 compromised)
-RELIEVER DB: TB CONFIRMED (2 taxed / 0 leverage-relevant); NYY CONFIRMED (1 taxed / 1 leverage-relevant)
-  TB: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  NYY: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS:
-  - away_lineup: PROVISIONAL
-  - away_starter: PROVISIONAL
-INTELLIGENCE RESEARCH:
-  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-CLE @ BOS  gamePk 824710  Fenway Park
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Foster Griffin
+AWAY SP: PROVISIONAL - David Sandlin
   WORKLOAD: model ~21 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Sonny Gray
-  WORKLOAD: model ~25 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Steven Kwan, 2.Jose Ramirez, 3.Chase DeLauter, 4.Jo Adell, 5.Travis Bazzana, 6.Nathaniel Lowe, 7.Patrick Bailey, 8.Petey Halpin, 9.Brayan Rocchio
-HOME LINEUP: CONFIRMED: 1.Roman Anthony, 2.Nick Sogard, 3.Jahmai Jones, 4.Wilyer Abreu, 5.Adley Rutschman, 6.Ceddanne Rafaela, 7.Caleb Durbin, 8.Trevor Story, 9.Andruw Monasterio
-HP UMPIRE: CONFIRMED - Paul Clemons
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 56F, 13 mph, In From CF, relative=in
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=6
-MODEL TOTAL: 8.15
-PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=PRESERVED_PREGAME | quotes=3
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.65 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: CLE CONFIRMED (0 compromised); BOS CONFIRMED (0 compromised)
-RELIEVER DB: CLE CONFIRMED (3 taxed / 2 leverage-relevant); BOS CONFIRMED (0 taxed / 0 leverage-relevant)
-  CLE: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  BOS: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS: none
-INTELLIGENCE RESEARCH:
-  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-CIN @ ATL  gamePk 824868  Truist Park
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Andrew Abbott
-  WORKLOAD: model ~22 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Chris Sale
-  WORKLOAD: model ~25 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Juan Brito, 2.Elly De La Cruz, 3.Sal Stewart, 4.Dane Myers, 5.Eugenio Suarez, 6.Matt McLain, 7.Oswaldo Cabrera, 8.Will Banfield, 9.Ke'Bryan Hayes
-HOME LINEUP: CONFIRMED: 1.Drake Baldwin, 2.Mauricio Dubon, 3.Matt Olson, 4.Ozzie Albies, 5.Michael Harris, 6.Austin Riley, 7.Sean Murphy, 8.Brewer Hicklen, 9.Ha-seong Kim
-HP UMPIRE: CONFIRMED - Derek Thomas
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 74F, 12 mph, L To R, relative=cross
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: LIVE | frozen=True | pregame runs=6
-MODEL TOTAL: 8.52
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=PRESERVED_PREGAME | quotes=3
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.02 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: CIN CONFIRMED (0 compromised); ATL CONFIRMED (0 compromised)
-RELIEVER DB: CIN CONFIRMED (1 taxed / 0 leverage-relevant); ATL CONFIRMED (1 taxed / 1 leverage-relevant)
-  CIN: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  ATL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS: none
-INTELLIGENCE RESEARCH:
-  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-CWS @ KC  gamePk 824060  Kauffman Stadium
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Bryan Hudson
-  WORKLOAD: model ~4 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Seth Lugo
+HOME SP: PROVISIONAL - Randy Dobnak
   WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Sam Antonacci, 2.Kyle Teel, 3.Miguel Vargas, 4.Munetaka Murakami, 5.Andrew Benintendi, 6.Tristan Peters, 7.Chase Meidroth, 8.Colson Montgomery, 9.Braden Montgomery
-HOME LINEUP: CONFIRMED: 1.Carter Jensen, 2.Bobby Witt Jr., 3.Jac Caglianone, 4.Maikel Garcia, 5.Vinnie Pasquantino, 6.Salvador Perez, 7.Michael Massey, 8.John Rave, 9.Isaac Collins
-HP UMPIRE: CONFIRMED - Clint Vondrak
+AWAY LINEUP: PROVISIONAL: 1.Sam Antonacci, 2.Miguel Vargas, 3.Munetaka Murakami, 4.Andrew Benintendi, 5.Colson Montgomery, 6.Braden Montgomery, 7.Tristan Peters, 8.Chase Meidroth, 9.Kyle Teel
+HOME LINEUP: PROVISIONAL: 1.Carter Jensen, 2.Bobby Witt Jr., 3.Jac Caglianone, 4.Vinnie Pasquantino, 5.Salvador Perez, 6.Isaac Collins, 7.John Rave, 8.Josh Rojas, 9.Kyle Isbel
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 73F, 9 mph, In From RF, relative=in
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=8
-MODEL TOTAL: 10.11
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=current | quotes=4
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 10.12
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.5 | preservation=current | quotes=1
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.61 runs | current=n/a runs | retained=n/a
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.62 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.50 | consensus=n/a | difference=n/a runs
 MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
   ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
   HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
 BULLPEN COMPUTED: CWS CONFIRMED (0 compromised); KC CONFIRMED (0 compromised)
-RELIEVER DB: CWS CONFIRMED (1 taxed / 1 leverage-relevant); KC CONFIRMED (2 taxed / 0 leverage-relevant)
+RELIEVER DB: CWS CONFIRMED (1 taxed / 0 leverage-relevant); KC CONFIRMED (2 taxed / 0 leverage-relevant)
   CWS: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  KC: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS: none
+  KC: COMPLETED | prev game=2026-09-23 pk=824060 | INCONCLUSIVE | comments=1
+    POSTGAME COMMENT: UNRESOLVED - KC - OTHER - No material prior-game postgame declaration found that establishes a September 24 restriction, availability status, role change, or recovery concern. Do not infer availability from the prior game's result or pitching line.
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
 INTELLIGENCE RESEARCH:
   - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
   - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
@@ -380,180 +85,82 @@ INTELLIGENCE RESEARCH:
   - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
   - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
 
-MIA @ CHC  gamePk 824625  Wrigley Field
+MIA @ CHC  gamePk 824623  Wrigley Field
 ------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Ryan Gusto
-  WORKLOAD: model ~22 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Kevin Gausman
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Tyler Phillips
+  WORKLOAD: model ~19 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Matt Boyd
   WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Otto Lopez, 2.Kyle Stowers, 3.Heriberto Hernandez, 4.Griffin Conine, 5.Javier Sanoja, 6.Jakob Marsee, 7.Agustin Ramirez, 8.Graham Pauley, 9.Joe Mack
-HOME LINEUP: CONFIRMED: 1.Pete Crow-Armstrong, 2.Seiya Suzuki, 3.Michael Busch, 4.Michael Conforto, 5.Ian Happ, 6.Nico Hoerner, 7.Pedro Ramirez, 8.Dansby Swanson, 9.Miguel Amaya
-HP UMPIRE: CONFIRMED - Vic Carapazza
+AWAY LINEUP: PROVISIONAL: 1.Heriberto Hernandez, 2.Otto Lopez, 3.Kyle Stowers, 4.Agustin Ramirez, 5.Javier Sanoja, 6.Jakob Marsee, 7.Esteury Ruiz, 8.Jared Serna, 9.Joe Mack
+HOME LINEUP: PROVISIONAL: 1.Pete Crow-Armstrong, 2.Seiya Suzuki, 3.Michael Busch, 4.Ian Happ, 5.Nico Hoerner, 6.Michael Conforto, 7.Carson Kelly, 8.Pedro Ramirez, 9.Dansby Swanson
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 63F, 12 mph, In From CF, relative=in
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=8
-MODEL TOTAL: 9.86
-PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=current | quotes=4
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 9.62
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=1
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+3.36 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.62 runs | current=n/a runs | retained=n/a
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.00 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: COMPLETED | freshness=CURRENT | last checked=2026-09-24T18:20:00Z
+  ASSESSMENT: INCONCLUSIVE - Manager/coach media research completed, but source coverage was insufficient for a reliable negative finding.
+  HISTORY: 2 research pass(es), 0 declaration(s), 0 computed conflict(s)
+PREVIOUS-GAME POSTGAME: CONFIRMED
 BULLPEN COMPUTED: MIA CONFIRMED (0 compromised); CHC CONFIRMED (0 compromised)
-RELIEVER DB: MIA CONFIRMED (1 taxed / 1 leverage-relevant); CHC CONFIRMED (0 taxed / 0 leverage-relevant)
-  MIA: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  CHC: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS: none
+RELIEVER DB: MIA CONFIRMED (2 taxed / 0 leverage-relevant); CHC CONFIRMED (1 taxed / 1 leverage-relevant)
+  MIA: COMPLETED | prev game=2026-09-23 pk=824625 | INCONCLUSIVE | comments=0
+  CHC: COMPLETED | prev game=2026-09-23 pk=824625 | INCONCLUSIVE | comments=0
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
 INTELLIGENCE RESEARCH:
-  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
   - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
   - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
   - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
   - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
 
-NYM @ TEX  gamePk 822841  Globe Life Field
+NYM @ TEX  gamePk 822842  Globe Life Field
 ------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Nolan McLean
-  WORKLOAD: model ~25 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Cody Bradford
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Zach Thornton
+  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Kumar Rocker
   WORKLOAD: model ~21 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Francisco Lindor, 2.Juan Soto, 3.Bo Bichette, 4.Mark Vientos, 5.Carson Benge, 6.Marcus Semien, 7.Francisco Alvarez, 8.A.J. Ewing, 9.Nick Morabito
-HOME LINEUP: CONFIRMED: 1.Wyatt Langford, 2.Corey Seager, 3.Josh Jung, 4.Brandon Nimmo, 5.Ezequiel Duran, 6.Jake Burger, 7.Nicky Lopez, 8.Danny Jansen, 9.Evan Carter
-HP UMPIRE: CONFIRMED - Lance Barrett
+AWAY LINEUP: PROVISIONAL: 1.Francisco Lindor, 2.Juan Soto, 3.Bo Bichette, 4.Carson Benge, 5.Marcus Semien, 6.A.J. Ewing, 7.Francisco Alvarez, 8.Brett Baty, 9.Nick Morabito
+HOME LINEUP: PROVISIONAL: 1.Wyatt Langford, 2.Corey Seager, 3.Josh Jung, 4.Jake Burger, 5.Brandon Nimmo, 6.Ezequiel Duran, 7.Justin Foscue, 8.Elias Diaz, 9.Danny Jansen
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 74F, 0 mph, None, relative=calm
-ROOF: CONFIRMED - closed
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=8
-MODEL TOTAL: 8.78
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=4
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+ROOF: INTELLIGENCE_RESEARCH_REQUIRED - research required
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 9.31
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=1
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.28 runs | current=n/a runs | retained=n/a
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.31 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
 MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
   ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
   HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
 BULLPEN COMPUTED: NYM CONFIRMED (0 compromised); TEX CONFIRMED (0 compromised)
-RELIEVER DB: NYM CONFIRMED (1 taxed / 1 leverage-relevant); TEX CONFIRMED (1 taxed / 0 leverage-relevant)
+RELIEVER DB: NYM CONFIRMED (0 taxed / 0 leverage-relevant); TEX CONFIRMED (3 taxed / 1 leverage-relevant)
   NYM: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
   TEX: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS: none
-INTELLIGENCE RESEARCH:
-  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-AZ @ COL  gamePk 824301  Coors Field
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Merrill Kelly
-  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Mason Adams
-  WORKLOAD: model ~20 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Lars Nootbaar, 2.Ketel Marte, 3.Gabriel Moreno, 4.Geraldo Perdomo, 5.Pavin Smith, 6.Nolan Arenado, 7.Corbin Carroll, 8.Jesus Sanchez, 9.Tim Tawa
-HOME LINEUP: CONFIRMED: 1.Jake McCarthy, 2.Cole Carrigg, 3.Hunter Goodman, 4.T.J. Rumfield, 5.Kyle Karros, 6.Adael Amador, 7.Mickey Moniak, 8.Zac Veen, 9.Ezequiel Tovar
-HP UMPIRE: CONFIRMED - Nestor Ceja
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 69F, 7 mph, L To R, relative=cross
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=8
-MODEL TOTAL: 11.11
-PIPELINE MARKET: CONFIRMED - betonlineag total 11.0 | preservation=current | quotes=4
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.11 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=11.00 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: AZ CONFIRMED (0 compromised); COL CONFIRMED (0 compromised)
-RELIEVER DB: AZ CONFIRMED (1 taxed / 1 leverage-relevant); COL CONFIRMED (1 taxed / 0 leverage-relevant)
-  AZ: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  COL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS: none
-INTELLIGENCE RESEARCH:
-  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-LAA @ ATH  gamePk 824951  Sutter Health Park
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Walbert Urena
-  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Jeffrey Springs
-  WORKLOAD: model ~20 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Zach Neto, 2.Mike Trout, 3.Vaughn Grissom, 4.Denzer Guzman, 5.Wade Meckler, 6.Jose Siri, 7.Christian Moore, 8.Bryce Teodosio, 9.Tyler Heineman
-HOME LINEUP: CONFIRMED: 1.Henry Bolte, 2.Lawrence Butler, 3.Shea Langeliers, 4.Jeff McNeil, 5.Zack Gelof, 6.Donnie Walton, 7.Carlos Cortes, 8.Alika Williams, 9.Brian Serven
-HP UMPIRE: CONFIRMED - Felix Neon
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 89F, 2 mph, Out To RF, relative=out
-ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=8
-MODEL TOTAL: 9.99
-PIPELINE MARKET: CONFIRMED - betonlineag total 9.5 | preservation=current | quotes=4
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.49 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=9.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: LAA CONFIRMED (0 compromised); ATH CONFIRMED (0 compromised)
-RELIEVER DB: LAA CONFIRMED (0 taxed / 0 leverage-relevant); ATH CONFIRMED (2 taxed / 1 leverage-relevant)
-  LAA: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  ATH: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS: none
-INTELLIGENCE RESEARCH:
-  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
-  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
-  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
-  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
-
-HOU @ SEA  gamePk 823086  T-Mobile Park
-------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
-AWAY SP: PROVISIONAL - Ethan Pecko
-  WORKLOAD: model ~20 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - George Kirby
-  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: PROVISIONAL: 1.Jeremy Pena, 2.Yordan Alvarez, 3.Isaac Paredes, 4.Jose Altuve, 5.Yainer Diaz, 6.Daulton Varsho, 7.Christian Walker, 8.Cam Smith, 9.LaMonte Wade Jr
-HOME LINEUP: CONFIRMED: 1.J.P. Crawford, 2.Randy Arozarena, 3.Dominic Canzone, 4.Cal Raleigh, 5.Julio Rodriguez, 6.Josh Naylor, 7.Cole Young, 8.Lazaro Montes, 9.Weston Wilson
-HP UMPIRE: CONFIRMED - Marvin Hudson
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 59F, 8 mph, In From LF, relative=in
-ROOF: INTELLIGENCE_RESEARCH_REQUIRED - research required
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=8
-MODEL TOTAL: 9.34
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=current | quotes=4
-CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.84 runs | current=n/a runs | retained=n/a
-MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
-  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
-  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
-PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
-BULLPEN COMPUTED: HOU CONFIRMED (0 compromised); SEA CONFIRMED (0 compromised)
-RELIEVER DB: HOU CONFIRMED (2 taxed / 0 leverage-relevant); SEA CONFIRMED (2 taxed / 0 leverage-relevant)
-  HOU: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-  SEA: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
 PIPELINE BLOCKERS:
   - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
   - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
 INTELLIGENCE RESEARCH:
   - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
   - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
@@ -563,34 +170,343 @@ INTELLIGENCE RESEARCH:
   - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
   - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
 
-SD @ LAD  gamePk 823894  UNIQLO Field at Dodger Stadium
+AZ @ COL  gamePk 824298  Coors Field
 ------------------------------------------------------------------------------------------------
-INTELLIGENCE READINESS: FINAL - all strict pipeline must-haves confirmed
-AWAY SP: CONFIRMED - Robbie Ray
-  WORKLOAD: model ~22 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: CONFIRMED - Yoshinobu Yamamoto
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Eduardo Rodriguez
   WORKLOAD: model ~25 BF | external ~None BF | delta=None | UNRESOLVED
-AWAY LINEUP: CONFIRMED: 1.Fernando Tatis Jr, 2.Dustin Harris, 3.Manny Machado, 4.Ty France, 5.Jackson Merrill, 6.Xander Bogaerts, 7.Jake Cronenworth, 8.Samad Taylor, 9.Ethan Salas
-HOME LINEUP: CONFIRMED: 1.Mookie Betts, 2.Shohei (H) Ohtani, 3.Will Smith, 4.Freddie Freeman, 5.Teoscar Hernandez, 6.Kyle Tucker, 7.Andy Pages, 8.Max Muncy, 9.Tommy Edman
-HP UMPIRE: CONFIRMED - Ryan Additon
+HOME SP: PROVISIONAL - Tanner Gordon
+  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
+AWAY LINEUP: PROVISIONAL: 1.Lars Nootbaar, 2.Corbin Carroll, 3.Gabriel Moreno, 4.Geraldo Perdomo, 5.Nolan Arenado, 6.Tim Tawa, 7.James McCann, 8.Ildemaro Vargas, 9.Jordan Lawlar
+HOME LINEUP: PROVISIONAL: 1.Jake McCarthy, 2.Connor Norby, 3.Hunter Goodman, 4.T.J. Rumfield, 5.Cole Carrigg, 6.Jordan Beck, 7.Troy Johnston, 8.Adael Amador, 9.Ezequiel Tovar
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: CONFIRMED - 75F, 6 mph, Out To CF, relative=out
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=8
-MODEL TOTAL: 8.00
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=4
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 9.99
+PIPELINE MARKET: CONFIRMED - betonlineag total 10.0 | preservation=current | quotes=1
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
-EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=-0.00 runs | current=n/a runs | retained=n/a
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=-0.01 runs | current=n/a runs | retained=n/a
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=10.00 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
+  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
+PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
+BULLPEN COMPUTED: AZ CONFIRMED (0 compromised); COL CONFIRMED (0 compromised)
+RELIEVER DB: AZ CONFIRMED (3 taxed / 2 leverage-relevant); COL CONFIRMED (1 taxed / 0 leverage-relevant)
+  AZ: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+  COL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
+INTELLIGENCE RESEARCH:
+  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
+  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
+  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
+  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
+
+MIL @ PHI  gamePk 823411  Citizens Bank Park
+------------------------------------------------------------------------------------------------
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Bryse Wilson
+  WORKLOAD: model ~19 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Andrew Painter
+  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
+AWAY LINEUP: PROVISIONAL: 1.Brice Turang, 2.Jackson Chourio, 3.Jake Bauers, 4.William Contreras, 5.Garrett Mitchell, 6.Christian Yelich, 7.Luis Lara, 8.Joey Ortiz, 9.David Hamilton
+HOME LINEUP: PROVISIONAL: 1.Trea Turner, 2.Kyle Schwarber, 3.Bryce Harper, 4.Luis Arraez, 5.Brandon Marsh, 6.Alec Bohm, 7.Bryson Stott, 8.JT Realmuto, 9.Justin Crawford
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
+FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+ROOF: NOT_APPLICABLE - open_air
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 10.17
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=1
+CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.17 runs | current=n/a runs | retained=n/a
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
+  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
+PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
+BULLPEN COMPUTED: MIL CONFIRMED (0 compromised); PHI CONFIRMED (0 compromised)
+RELIEVER DB: MIL CONFIRMED (1 taxed / 0 leverage-relevant); PHI CONFIRMED (1 taxed / 1 leverage-relevant)
+  MIL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+  PHI: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
+INTELLIGENCE RESEARCH:
+  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
+  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
+  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
+  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
+
+CLE @ BOS  gamePk 824707  Fenway Park
+------------------------------------------------------------------------------------------------
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Daniel Espino
+  WORKLOAD: model ~7 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Ranger Suarez
+  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
+AWAY LINEUP: PROVISIONAL: 1.Steven Kwan, 2.Jose Ramirez, 3.Jo Adell, 4.Angel Martinez, 5.Angel Genao, 6.Travis Bazzana, 7.Petey Halpin, 8.Patrick Bailey, 9.Brayan Rocchio
+HOME LINEUP: PROVISIONAL: 1.Roman Anthony, 2.Mickey Gasper, 3.Adley Rutschman, 4.Wilyer Abreu, 5.Trevor Story, 6.Nick Sogard, 7.Caleb Durbin, 8.Jarren Duran, 9.Isiah Kiner-Falefa
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
+FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+ROOF: NOT_APPLICABLE - open_air
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 7.83
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=1
+CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.83 runs | current=n/a runs | retained=n/a
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.00 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
+  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
+PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
+BULLPEN COMPUTED: CLE CONFIRMED (0 compromised); BOS CONFIRMED (0 compromised)
+RELIEVER DB: CLE CONFIRMED (1 taxed / 0 leverage-relevant); BOS CONFIRMED (0 taxed / 0 leverage-relevant)
+  CLE: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+  BOS: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
+INTELLIGENCE RESEARCH:
+  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
+  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
+  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
+  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
+
+TB @ NYY  gamePk 823493  Yankee Stadium
+------------------------------------------------------------------------------------------------
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Ian Seymour
+  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Cam Schlittler
+  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
+AWAY LINEUP: PROVISIONAL: 1.Yandy Diaz, 2.Jonathan Aranda, 3.Junior Caminero, 4.Liam Hicks, 5.Chandler Simpson, 6.Jonny Deluca, 7.Victor Mesa Jr., 8.Richie Palacios, 9.Jorge Mateo
+HOME LINEUP: PROVISIONAL: 1.Paul Goldschmidt, 2.Cody Bellinger, 3.Heliot Ramos, 4.Ben Rice, 5.Amed Rosario, 6.Spencer Jones, 7.George Lombard Jr., 8.Austin Wells, 9.Anthony Volpe
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
+FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+ROOF: NOT_APPLICABLE - open_air
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 8.57
+PIPELINE MARKET: CONFIRMED - betonlineag total 6.0 | preservation=current | quotes=1
+CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.57 runs | current=n/a runs | retained=n/a
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.00 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
+  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
+PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
+BULLPEN COMPUTED: TB CONFIRMED (0 compromised); NYY CONFIRMED (0 compromised)
+RELIEVER DB: TB CONFIRMED (2 taxed / 0 leverage-relevant); NYY CONFIRMED (2 taxed / 1 leverage-relevant)
+  TB: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+  NYY: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
+INTELLIGENCE RESEARCH:
+  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
+  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
+  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
+  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
+
+CIN @ ATL  gamePk 824866  Truist Park
+------------------------------------------------------------------------------------------------
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Brady Singer
+  WORKLOAD: model ~26 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Tyler Mahle
+  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
+AWAY LINEUP: PROVISIONAL: 1.Hector Rodriguez, 2.Elly De La Cruz, 3.Sal Stewart, 4.JJ Bleday, 5.Eugenio Suarez, 6.Tyler Stephenson, 7.Dane Myers, 8.Matt McLain, 9.Jose Trevino
+HOME LINEUP: PROVISIONAL: 1.Drake Baldwin, 2.Ozzie Albies, 3.Matt Olson, 4.Michael Harris, 5.Mauricio Dubon, 6.Dominic Smith, 7.Austin Riley, 8.Mike Yastrzemski, 9.James Jarvis
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
+FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+ROOF: NOT_APPLICABLE - open_air
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 10.05
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=current | quotes=1
+CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.55 runs | current=n/a runs | retained=n/a
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.50 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
+  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
+PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
+BULLPEN COMPUTED: CIN CONFIRMED (0 compromised); ATL CONFIRMED (0 compromised)
+RELIEVER DB: CIN CONFIRMED (1 taxed / 0 leverage-relevant); ATL CONFIRMED (1 taxed / 0 leverage-relevant)
+  CIN: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+  ATL: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
+INTELLIGENCE RESEARCH:
+  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
+  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
+  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
+  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
+
+LAA @ SEA  gamePk 823087  T-Mobile Park
+------------------------------------------------------------------------------------------------
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Grayson Rodriguez
+  WORKLOAD: model ~23 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Bryan Woo
+  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
+AWAY LINEUP: PROVISIONAL: 1.Zach Neto, 2.Mike Trout, 3.Wade Meckler, 4.Vaughn Grissom, 5.Moises Ballesteros, 6.Christian Moore, 7.Josh Lowe, 8.Denzer Guzman, 9.Tyler Heineman
+HOME LINEUP: PROVISIONAL: 1.Randy Arozarena, 2.Dominic Canzone, 3.Julio Rodriguez, 4.Cal Raleigh, 5.Josh Naylor, 6.Cole Young, 7.Lazaro Montes, 8.J.P. Crawford, 9.Brock Rodden
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
+FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+ROOF: INTELLIGENCE_RESEARCH_REQUIRED - research required
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 8.87
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=1
+CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.87 runs | current=n/a runs | retained=n/a
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.00 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
+  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
+PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
+BULLPEN COMPUTED: LAA CONFIRMED (0 compromised); SEA CONFIRMED (0 compromised)
+RELIEVER DB: LAA CONFIRMED (3 taxed / 1 leverage-relevant); SEA CONFIRMED (2 taxed / 0 leverage-relevant)
+  LAA: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+  SEA: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
+INTELLIGENCE RESEARCH:
+  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
+  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
+  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - final_roof_decision: INTELLIGENCE_RESEARCH_REQUIRED
+  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
+  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
+
+HOU @ ATH  gamePk 824950  Sutter Health Park
+------------------------------------------------------------------------------------------------
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Peter Lambert
+  WORKLOAD: model ~24 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Mason Barnett
+  WORKLOAD: model ~20 BF | external ~None BF | delta=None | UNRESOLVED
+AWAY LINEUP: PROVISIONAL: 1.Jeremy Pena, 2.Yordan Alvarez, 3.Isaac Paredes, 4.Jose Altuve, 5.Yainer Diaz, 6.Daulton Varsho, 7.Christian Walker, 8.Cam Smith, 9.LaMonte Wade Jr
+HOME LINEUP: PROVISIONAL: 1.Henry Bolte, 2.Jeff McNeil, 3.Lawrence Butler, 4.Shea Langeliers, 5.Donnie Walton, 6.Zack Gelof, 7.Carlos Cortes, 8.Jonah Heim, 9.Alika Williams
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
+FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+ROOF: NOT_APPLICABLE - open_air
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 11.84
+PIPELINE MARKET: CONFIRMED - betonlineag total 10.5 | preservation=current | quotes=1
+CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.34 runs | current=n/a runs | retained=n/a
+MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=10.50 | consensus=n/a | difference=n/a runs
+MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+  ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
+  HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
+PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
+BULLPEN COMPUTED: HOU CONFIRMED (0 compromised); ATH CONFIRMED (0 compromised)
+RELIEVER DB: HOU CONFIRMED (2 taxed / 0 leverage-relevant); ATH CONFIRMED (1 taxed / 1 leverage-relevant)
+  HOU: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+  ATH: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
+INTELLIGENCE RESEARCH:
+  - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
+  - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
+  - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
+  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
+  - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
+
+SD @ LAD  gamePk 823895  UNIQLO Field at Dodger Stadium
+------------------------------------------------------------------------------------------------
+INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
+AWAY SP: PROVISIONAL - Nick Pivetta
+  WORKLOAD: model ~18 BF | external ~None BF | delta=None | UNRESOLVED
+HOME SP: PROVISIONAL - Tyler Glasnow
+  WORKLOAD: model ~21 BF | external ~None BF | delta=None | UNRESOLVED
+AWAY LINEUP: PROVISIONAL: 1.Fernando Tatis Jr, 2.Jake Cronenworth, 3.Manny Machado, 4.Luis Campusano, 5.Jackson Merrill, 6.Xander Bogaerts, 7.Samad Taylor, 8.Dustin Harris, 9.Freddy Fermin
+HOME LINEUP: PROVISIONAL: 1.Mookie Betts, 2.Shohei (H) Ohtani, 3.Freddie Freeman, 4.Will Smith, 5.Max Muncy, 6.Kyle Tucker, 7.Teoscar Hernandez, 8.Andy Pages, 9.Tommy Edman
+HP UMPIRE: NOT_YET_AVAILABLE - TBD
+FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
+WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+ROOF: NOT_APPLICABLE - open_air
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+MODEL TOTAL: 8.88
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=1
+CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
+EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.88 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
 MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
   ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
   HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
 BULLPEN COMPUTED: SD CONFIRMED (0 compromised); LAD CONFIRMED (0 compromised)
-RELIEVER DB: SD CONFIRMED (0 taxed / 0 leverage-relevant); LAD CONFIRMED (2 taxed / 0 leverage-relevant)
+RELIEVER DB: SD CONFIRMED (2 taxed / 1 leverage-relevant); LAD CONFIRMED (1 taxed / 0 leverage-relevant)
   SD: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
   LAD: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
-PIPELINE BLOCKERS: none
+PIPELINE BLOCKERS:
+  - away_lineup: PROVISIONAL
+  - home_lineup: PROVISIONAL
+  - away_starter: PROVISIONAL
+  - home_starter: PROVISIONAL
+  - home_plate_umpire: NOT_YET_AVAILABLE
+  - weather: NOT_YET_AVAILABLE
+  - stadium_relative_wind: NOT_YET_AVAILABLE
 INTELLIGENCE RESEARCH:
   - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
   - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
