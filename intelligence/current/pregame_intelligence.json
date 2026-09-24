@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "generated_at": "2026-09-24T14:37:50+00:00",
+  "generated_at": "2026-09-24T17:37:43+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823326": {
@@ -96,7 +96,7 @@
     },
     "824059": {
       "previous_game_postgame": {
-        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "status": "CONFIRMED",
         "teams": {
           "KC": {
             "research_status": "COMPLETED",
@@ -141,8 +141,89 @@
               "count": 0,
               "note": "No material carry-forward postgame comment found."
             }
+          },
+          "CWS": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-24T18:10:00Z",
+            "previous_game_pk": 824060,
+            "previous_game_date": "2026-09-23",
+            "passes": [
+              {
+                "checked_at": "2026-09-24T18:10:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://baseballsavant.mlb.com/preview?game_pk=824059",
+                    "published_at": "2026-09-24"
+                  },
+                  {
+                    "source_type": "MANAGER_COACH_MEDIA",
+                    "url": "https://www.google.com/search?q=Will+Venable+September+23+2026+Erick+Fedde+Royals+White+Sox+postgame",
+                    "published_at": null
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://soxmachine.com/2026/09/first-pitch-white-sox-at-royals-48",
+                    "published_at": "2026-09-23"
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://soxmachine.com/2026/09/sox-machine-live-white-sox-stumble-but-magic-number-is-1",
+                    "published_at": "2026-09-24"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The previous-game reporting established that Bryan Hudson opened and Erick Fedde was scheduled for bulk relief on September 23. No accessible postgame manager/coach declaration or credentialed direct attribution was found that carried forward a specific September 24 availability restriction or usage plan for Fedde. The reported 64-pitch outing alone is not treated as a manager declaration."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
           }
         },
+        "source": "manager_media_research.py external research results"
+      },
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-24T18:10:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-24T18:10:00Z",
+            "team": "CWS",
+            "teams": [
+              "CWS"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/whitesox",
+                "published_at": null
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://baseballsavant.mlb.com/preview?game_pk=824059",
+                "published_at": "2026-09-24"
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "url": "https://www.google.com/search?q=Will+Venable+September+24+2026+Kansas+City+White+Sox+David+Sandlin",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://soxmachine.com/2026/09/sox-machine-live-white-sox-stumble-but-magic-number-is-1",
+                "published_at": "2026-09-24"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL-delta search found confirmation that David Sandlin was the scheduled starter, but no new or superseding direct club, manager, coach, or credentialed-reporter declaration establishing a workload restriction, opener/bulk plan, or specific availability ruling for Sandlin or Erick Fedde before first pitch."
+          }
+        ],
+        "declarations": [],
         "source": "manager_media_research.py external research results"
       }
     },
@@ -201,6 +282,40 @@
             ],
             "result": "INCONCLUSIVE",
             "note": "Official Cubs/MLB surfaces and available game-preview reporting confirmed Matt Boyd as the scheduled Chicago starter, but did not produce a pregame Craig Counsell/coaching-staff declaration on Boyd's workload, pitch/inning/batters-faced limit, or a Ryan Rolison availability restriction. No accessible credentialed Cubs beat pregame report containing such a declaration was located within the lightweight search budget; manager/coach pregame media was SOURCE_UNAVAILABLE in the searched results."
+          },
+          {
+            "checked_at": "2026-09-24T17:37:17+00:00",
+            "team": "CHC",
+            "teams": [
+              "CHC"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/cubs",
+                "published_at": null
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://baseballsavant.mlb.com/preview?game_date=2026-09-24&game_pk=824623",
+                "published_at": null
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "url": "https://www.google.com/search?q=site%3Amlb.com%2Fcubs%2Fvideo+%22Craig+Counsell%22+%22September+24%2C+2026%22",
+                "published_at": null,
+                "status": "SOURCE_UNAVAILABLE"
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.google.com/search?q=site%3Achicagotribune.com+Cubs+September+24+2026+Boyd+Counsell+Marlins",
+                "published_at": null,
+                "status": "SOURCE_UNAVAILABLE"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL_DELTA search found confirmation that Matthew Boyd was the scheduled Cubs starter, but no new or superseding direct Craig Counsell/club declaration regarding Boyd workload or Ryan Rolison availability before the 18:20Z first pitch. Manager-media and credentialed-beat pregame sourcing could not be substantively accessed in the final-delta window."
           }
         ],
         "declarations": [],
@@ -272,6 +387,53 @@
             ]
           }
         }
+      }
+    },
+    "822842": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-24T18:35:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-24T18:35:00Z",
+            "team": "NYM",
+            "teams": [
+              "NYM"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/mets",
+                "published_at": null
+              },
+              {
+                "source_type": "OFFICIAL_MLB",
+                "url": "https://baseballsavant.mlb.com/gamefeed?gamePk=822842",
+                "published_at": null
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "url": "https://www.mlb.com/video/topic/mets-manager-postgame",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://sny.tv/articles/mets-rangers-watch-sny-9-24-2026",
+                "published_at": "2026-09-24T17:00:00Z"
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.amny.com/sports/brett-baty-hot-stretch-27-9-24-26/",
+                "published_at": "2026-09-24T00:00:00Z"
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "No new or superseding pregame manager/coach declaration was located establishing a workload restriction, pitch limit, innings limit, opener/bulk role, or altered availability for Zac Thornton before the scheduled first pitch. Official game materials and credentialed local coverage listed Thornton as the Mets' probable starter, but did not support a material restriction declaration. Manager pregame media specifically addressing Thornton's workload was unavailable in the searched sources."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
       }
     }
   }

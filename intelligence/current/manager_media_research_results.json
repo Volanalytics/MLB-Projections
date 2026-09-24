@@ -3,6 +3,385 @@
   "generated_from_queue_at": "2026-09-24T14:35:03+00:00",
   "items": [
     {
+      "item_id": "postgame:823326:STL:823327",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-24T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB_GAMEFEED",
+          "source_name": "MLB Statcast Gamefeed",
+          "url": "https://baseballsavant.mlb.com/gamefeed?date=2026-09-23&gamePk=823327&game_date=2026-09-23&sportId=1",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "source_name": "St. Louis Cardinals Manager Postgame Videos",
+          "url": "https://www.mlb.com/video/topic/cardinals-manager-postgame",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "STL Sports Page — Rob Rains, Wednesday's Game Report: Cardinals 5, Pirates 1",
+          "url": "https://stlsportspage.com/2026/09/23/wednesdays-game-report-cardinals-5-pirates-1/",
+          "accessed_date": "2026-09-24"
+        },
+        {
+          "source_type": "WIRE_SERVICE",
+          "source_name": "Associated Press via CBS Sports, Matthew Liberatore snaps drought as Cardinals top Pirates 5-1",
+          "url": "https://www.cbssports.com/mlb/news/matthew-liberatore-snaps-drought-as-cardinals-top-pirates-5-1/",
+          "accessed_date": "2026-09-24"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Reviewed the September 23, 2026 Cardinals-Pirates postgame record and available Cardinals manager-postgame coverage for forward-looking availability, workload, injury, lineup, or role declarations relevant to the September 24 game. No material carry-forward declaration was identified. The available manager remark concerning Matthew Liberatore's outing was retrospective and did not establish a next-game restriction, availability change, or usage plan. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 823327,
+      "today_game_pk": 823326,
+      "team": "STL",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 823327,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "f84114435bb2a35714264f5bddc223a128df024e5b236abd6e21602d9a339cee"
+    },
+    {
+      "item_id": "pregame:824059:CWS:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-24T18:10:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/whitesox",
+          "published_at": null
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://baseballsavant.mlb.com/preview?game_pk=824059",
+          "published_at": "2026-09-24"
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://www.google.com/search?q=Will+Venable+September+24+2026+Kansas+City+White+Sox+David+Sandlin",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://soxmachine.com/2026/09/sox-machine-live-white-sox-stumble-but-magic-number-is-1",
+          "published_at": "2026-09-24"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "FINAL-delta search found confirmation that David Sandlin was the scheduled starter, but no new or superseding direct club, manager, coach, or credentialed-reporter declaration establishing a workload restriction, opener/bulk plan, or specific availability ruling for Sandlin or Erick Fedde before first pitch.",
+      "game_pk": 824059,
+      "today_game_pk": 824059,
+      "team": "CWS",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "86c1af0115de31ec00a43da3f551c5b18b0ef64f9370e25f9bbca8e2b83d10a7"
+    },
+    {
+      "item_id": "postgame:824059:CWS:824060",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-24T18:10:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://baseballsavant.mlb.com/preview?game_pk=824059",
+          "published_at": "2026-09-24"
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://www.google.com/search?q=Will+Venable+September+23+2026+Erick+Fedde+Royals+White+Sox+postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://soxmachine.com/2026/09/first-pitch-white-sox-at-royals-48",
+          "published_at": "2026-09-23"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://soxmachine.com/2026/09/sox-machine-live-white-sox-stumble-but-magic-number-is-1",
+          "published_at": "2026-09-24"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The previous-game reporting established that Bryan Hudson opened and Erick Fedde was scheduled for bulk relief on September 23. No accessible postgame manager/coach declaration or credentialed direct attribution was found that carried forward a specific September 24 availability restriction or usage plan for Fedde. The reported 64-pitch outing alone is not treated as a manager declaration.",
+      "game_pk": 824060,
+      "today_game_pk": 824059,
+      "team": "CWS",
+      "pass_type": null,
+      "previous_game_pk": 824060,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "61e90fb8af14d88d91eb71d0f486ec2bb03c74d18b8de70d3485c3ec6651f277"
+    },
+    {
+      "item_id": "pregame:824059:KC:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-24T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/royals/roster/transactions",
+          "published_at": null
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/player/tony-gonsolin-664062",
+          "published_at": null
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://www.mlb.com/royals/news",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://sports.yahoo.com/articles/maikel-garcia-helps-royals-thwart-023307539.html",
+          "published_at": "2026-09-24T02:33:00Z"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "FINAL-delta search found no new or superseding pregame manager/coach declaration assigning a workload limit, short leash, unavailability, or planned usage for Randy Dobnak, Tony Gonsolin, or Nolan Hoffman. Manager/coach pregame media specifically addressing those pitchers was unavailable in reviewed official-team results. Official club transactions do confirm that Gonsolin was activated from the 15-day injured list on September 21; this confirms active-roster status only and does not establish availability or a usage limit for this game. | VALIDATION: invalid result 'COMPLETED'",
+      "game_pk": 824059,
+      "today_game_pk": 824059,
+      "team": "KC",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "player_id": 664062,
+          "player_name": "Tony Gonsolin",
+          "speaker": "Kansas City Royals",
+          "speaker_role": "Club transaction announcement",
+          "statement": "Kansas City Royals activated RHP Tony Gonsolin from the 15-day injured list.",
+          "declaration_type": "ROSTER_STATUS",
+          "evidence_label": "CONFIRMED",
+          "restriction_flag": false,
+          "restriction_details": null,
+          "source_url": "https://www.mlb.com/royals/roster/transactions",
+          "source_published_at": "2026-09-21"
+        }
+      ],
+      "comments": [],
+      "queue_fingerprint": "1174eb026efb712a4a0c87bc38d16fce4863d90ab9b29823bca01b8ff5302a4c"
+    },
+    {
+      "item_id": "pregame:824623:MIA:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-24T17:36:42Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/marlins?c_id=mia",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.miamiherald.com/sports/",
+          "published_at": "2026-09-24T11:25:00Z"
+        },
+        {
+          "source_type": "NATIONAL_REPORTER",
+          "url": "https://www.cbssports.com/mlb/gametracker/live/MLB_20260924_MIA%40CHC/",
+          "published_at": "2026-09-24T00:00:00Z"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "FINAL_DELTA: A new, materially relevant manager-attributed bullpen comment was located after the prior early check. No numeric workload limit or individual availability declaration for Tyler Phillips, Michael Petersen, or Calvin Faucher was located. | VALIDATION: invalid result 'COMPLETED'",
+      "game_pk": 824623,
+      "today_game_pk": 824623,
+      "team": "MIA",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [
+        {
+          "evidence_label": "CONFIRMED",
+          "speaker": "Clayton McCullough",
+          "speaker_role": "Marlins manager",
+          "subject": "Miami bullpen",
+          "statement": "McCullough said the bullpen was spent after eight relievers covered seven innings on Wednesday.",
+          "restriction_type": "BULLPEN_FATIGUE",
+          "numeric_limit": null,
+          "applies_to": [
+            "Marlins bullpen"
+          ],
+          "source_url": "https://www.cbssports.com/mlb/gametracker/live/MLB_20260924_MIA%40CHC/",
+          "source_attribution": "CBS Sports game tracker carrying Field Level Media reporting",
+          "published_at": "2026-09-24T00:00:00Z"
+        },
+        {
+          "evidence_label": "CONFIRMED",
+          "speaker": "Sandy Alcantara",
+          "speaker_role": "Marlins pitcher",
+          "subject": "Emergency relief availability",
+          "statement": "Alcantara told McCullough he would be willing to pitch if needed.",
+          "restriction_type": null,
+          "numeric_limit": null,
+          "applies_to": [
+            "Sandy Alcantara"
+          ],
+          "source_url": "https://www.cbssports.com/mlb/gametracker/live/MLB_20260924_MIA%40CHC/",
+          "source_attribution": "CBS Sports game tracker carrying Field Level Media reporting",
+          "published_at": "2026-09-24T00:00:00Z"
+        }
+      ],
+      "comments": [
+        {
+          "evidence_label": "INFERENCE",
+          "subject": "Michael Petersen and Calvin Faucher",
+          "comment": "McCullough's bullpen-wide fatigue comment is materially relevant to relief deployment, but it does not identify Petersen or Faucher individually and does not establish either pitcher as unavailable or restricted."
+        },
+        {
+          "evidence_label": "UNRESOLVED",
+          "subject": "Tyler Phillips",
+          "comment": "No new/superseding pregame manager or club declaration established a pitch, innings, batters-faced, or other workload restriction for Phillips."
+        }
+      ],
+      "queue_fingerprint": "4a066c4d7c56d4c186b422d67668b70c1af19f2ee835e82a60334190fbb40d19"
+    },
+    {
+      "item_id": "pregame:824623:CHC:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-24T17:37:17+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/cubs",
+          "published_at": null
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://baseballsavant.mlb.com/preview?game_date=2026-09-24&game_pk=824623",
+          "published_at": null
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://www.google.com/search?q=site%3Amlb.com%2Fcubs%2Fvideo+%22Craig+Counsell%22+%22September+24%2C+2026%22",
+          "published_at": null,
+          "status": "SOURCE_UNAVAILABLE"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.google.com/search?q=site%3Achicagotribune.com+Cubs+September+24+2026+Boyd+Counsell+Marlins",
+          "published_at": null,
+          "status": "SOURCE_UNAVAILABLE"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "FINAL_DELTA search found confirmation that Matthew Boyd was the scheduled Cubs starter, but no new or superseding direct Craig Counsell/club declaration regarding Boyd workload or Ryan Rolison availability before the 18:20Z first pitch. Manager-media and credentialed-beat pregame sourcing could not be substantively accessed in the final-delta window.",
+      "game_pk": 824623,
+      "today_game_pk": 824623,
+      "team": "CHC",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "4feb7d1a217fa18dc63082a8e593c5add3dfc373795c248f9159c0be8aba9ba9"
+    },
+    {
+      "item_id": "pregame:822842:NYM:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-24T18:35:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/mets",
+          "published_at": null
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://baseballsavant.mlb.com/gamefeed?gamePk=822842",
+          "published_at": null
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://www.mlb.com/video/topic/mets-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://sny.tv/articles/mets-rangers-watch-sny-9-24-2026",
+          "published_at": "2026-09-24T17:00:00Z"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.amny.com/sports/brett-baty-hot-stretch-27-9-24-26/",
+          "published_at": "2026-09-24T00:00:00Z"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "No new or superseding pregame manager/coach declaration was located establishing a workload restriction, pitch limit, innings limit, opener/bulk role, or altered availability for Zac Thornton before the scheduled first pitch. Official game materials and credentialed local coverage listed Thornton as the Mets' probable starter, but did not support a material restriction declaration. Manager pregame media specifically addressing Thornton's workload was unavailable in the searched sources.",
+      "game_pk": 822842,
+      "today_game_pk": 822842,
+      "team": "NYM",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "97970cd3e93aab0ffc1b4157bd2905fad39f96617d67f931b683130633403d1e"
+    },
+    {
+      "item_id": "postgame:822842:NYM:822841",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-24T18:35:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/mets",
+          "published_at": null
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://www.mlb.com/video/topic/mets-manager-postgame",
+          "published_at": null
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://sny.tv/video/andy-green-marcus-semien-and-brett-baty-on-mets-7-2-win-over-rangers",
+          "published_at": "2026-09-24T03:34:00Z"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://sny.tv/articles/mets-rangers-takeaways-9-23-26",
+          "published_at": "2026-09-24T00:00:00Z"
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.amny.com/sports/brett-baty-hot-stretch-27-9-24-26/",
+          "published_at": "2026-09-24T00:00:00Z"
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "Postgame manager coverage was reviewed for carry-forward information plausibly relevant to the September 24 game. The located manager comments concerned Marcus Semien and Brett Baty, not Zac Thornton's availability, workload, role, health, or a next-game operational plan. No material carry-forward declaration was found. | VALIDATION: invalid result 'COMPLETED'",
+      "game_pk": 822841,
+      "today_game_pk": 822842,
+      "team": "NYM",
+      "pass_type": null,
+      "previous_game_pk": 822841,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "8f7f7c5d413c8c0733952e17135191f5b2e403f8d64a7abec58d76ddefbb0eab"
+    },
+    {
       "item_id": "pregame:823326:STL:EARLY",
       "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": "2026-09-24T14:35:16Z",
@@ -55,52 +434,6 @@
         }
       ],
       "queue_fingerprint": "94a8f4fce7a18f8543d421d6bf822155853847f08638184cb4222ac4a0a29fb5"
-    },
-    {
-      "item_id": "postgame:823326:STL:823327",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-24T14:35:16Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Baseball Savant gamefeed, Cardinals at Pirates, September 23, 2026",
-          "url": "https://baseballsavant.mlb.com/gamefeed?date=2026-09-23&gamePk=823327&game_date=2026-09-23&sportId=1",
-          "checked_for": "Official game record and Cardinals pitching usage."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Rob Rains, STLSportsPage",
-          "url": "https://stlsportspage.com/2026/09/23/wednesdays-game-report-cardinals-5-pirates-1/amp/",
-          "checked_for": "Postgame reporting of Cardinals reliever usage potentially relevant to the September 24 game."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "St. Louis Cardinals probable pitchers",
-          "url": "https://www.mlb.com/cardinals/roster/probable-pitchers?gclsrc=aw.ds&mlbkw=ds-g-",
-          "checked_for": "Next-game starter context."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "The September 23 game was complete by the time of this review. No material manager/coach postgame bullpen-availability declaration was located. The carry-forward item is Gastelum's prior-game appearance only; no availability restriction is inferred from that appearance. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 823327,
-      "today_game_pk": 823326,
-      "team": "STL",
-      "pass_type": null,
-      "previous_game_pk": 823327,
-      "previous_game_date": "2026-09-23",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "subject": "Luis Gastelum",
-          "comment_type": "PREVIOUS_GAME_USAGE",
-          "statement": "Gastelum pitched 1 1/3 scoreless innings in the September 23 Cardinals win at Pittsburgh; this is relevant prior-game usage, but no source established a September 24 availability restriction.",
-          "evidence_label": "CONFIRMED",
-          "source_name": "Rob Rains, STLSportsPage",
-          "source_url": "https://stlsportspage.com/2026/09/23/wednesdays-game-report-cardinals-5-pirates-1/amp/"
-        }
-      ],
-      "queue_fingerprint": "f84114435bb2a35714264f5bddc223a128df024e5b236abd6e21602d9a339cee"
     },
     {
       "item_id": "pregame:823326:PIT:EARLY",
@@ -235,61 +568,6 @@
         }
       ],
       "queue_fingerprint": "cfd62c9ecf8cf14998dfa06184a46d46b6cd159ac1e82f2c1d38f61cfcc29073"
-    },
-    {
-      "item_id": "postgame:824059:CWS:824060",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-24T14:36:13Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_MLB",
-          "source_name": "Baseball Savant pitcher game visualization report",
-          "url": "https://baseballsavant.mlb.com/player-scroll/game?gamePk=824060&player_id=607200",
-          "checked_at": "2026-09-24T14:36:13Z",
-          "finding": "Official Statcast report for September 23 at Kansas City records Erick Fedde throwing 64 pitches."
-        },
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "source_name": "Kansas City Royals probable pitchers",
-          "url": "https://www.mlb.com/royals/roster/probable-pitchers/1000",
-          "checked_at": "2026-09-24T14:36:13Z",
-          "finding": "Official September 24 probable-pitchers page lists David Sandlin for Chicago and does not contain a White Sox manager declaration concerning Fedde's next-game availability."
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "Chicago Sun-Times",
-          "url": "https://chicago.suntimes.com/white-sox/2026/09/15/a-new-and-improved-david-sandlin-should-have-staying-power-in-white-sox-rotation-noah-schultz-colson-montgomery-will-venable-brian-bannister-jose-urquidy",
-          "checked_at": "2026-09-24T14:36:13Z",
-          "finding": "Reviewed local credentialed coverage did not provide a September 23 postgame manager declaration about Fedde that could be carried forward to September 24."
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Fedde's 64-pitch appearance on September 23 is confirmed by official Statcast. No direct postgame club or manager declaration establishing a September 24 role, restriction, or unavailability was located; no such condition is inferred. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
-      "game_pk": 824060,
-      "today_game_pk": 824059,
-      "team": "CWS",
-      "pass_type": null,
-      "previous_game_pk": 824060,
-      "previous_game_date": "2026-09-23",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [
-        {
-          "evidence_label": "CONFIRMED",
-          "subject": "Erick Fedde prior-game workload",
-          "speaker": "MLB Statcast",
-          "comment": "Fedde threw 64 pitches in game_pk 824060 on September 23, 2026.",
-          "restriction_flag": false
-        },
-        {
-          "evidence_label": "UNRESOLVED",
-          "subject": "Erick Fedde September 24 availability",
-          "speaker": null,
-          "comment": "SOURCE_UNAVAILABLE: No direct White Sox manager/coach or club postgame declaration was located that establishes Fedde's availability, role, or restriction for September 24. The 64-pitch workload is carried forward as factual context only, not as a projected restriction.",
-          "restriction_flag": false
-        }
-      ],
-      "queue_fingerprint": "61e90fb8af14d88d91eb71d0f486ec2bb03c74d18b8de70d3485c3ec6651f277"
     },
     {
       "item_id": "pregame:824059:KC:EARLY",
@@ -581,7 +859,7 @@
       "queue_fingerprint": "2676a73d079a843d4dc9508c093528571712cb1deedb654e0761f698a148e132"
     }
   ],
-  "researched_at": "2026-09-24T14:37:50+00:00",
+  "researched_at": "2026-09-24T17:37:42+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -592,14 +870,14 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-24T14:37:50+00:00",
+    "last_run_at": "2026-09-24T17:37:42+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 121572,
+      "input_tokens": 165062,
       "cached_input_tokens": 24805,
-      "output_tokens": 10414,
-      "reasoning_tokens": 4526,
-      "total_tokens": 131986,
+      "output_tokens": 9246,
+      "reasoning_tokens": 5951,
+      "total_tokens": 174308,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -607,163 +885,157 @@
         "team": "STL",
         "game_pk": 823326,
         "items": [
-          "pregame:823326:STL:EARLY",
           "postgame:823326:STL:823327"
         ],
-        "response_id": "resp_01b5ccda4ab5e8f3016ab53520a53087d28e4e8d115500011f",
+        "response_id": "resp_0db55e105d3302d2016ab55f546a1c87d2bc0c2b4ac898d299",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 41,
+        "web_sources_seen": 64,
         "usage": {
-          "input_tokens": 21881,
+          "input_tokens": 22207,
           "cached_input_tokens": 0,
-          "output_tokens": 1910,
-          "reasoning_tokens": 794,
-          "total_tokens": 23791,
+          "output_tokens": 1136,
+          "reasoning_tokens": 733,
+          "total_tokens": 23343,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:823326:STL:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
           "postgame:823326:STL:823327": [
             "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
         "tool_budget": 2,
-        "prompt_chars": 1283,
-        "estimated_prompt_tokens": 321,
-        "research_mode": "EARLY"
-      },
-      {
-        "team": "PIT",
-        "game_pk": 823326,
-        "items": [
-          "pregame:823326:PIT:EARLY",
-          "postgame:823326:PIT:823327"
-        ],
-        "response_id": "resp_0cce2eb405b9afbf016ab5353c7ef087d2b976fd6e42413fe1",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 30,
-        "usage": {
-          "input_tokens": 13938,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1400,
-          "reasoning_tokens": 500,
-          "total_tokens": 15338,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 1284,
-        "estimated_prompt_tokens": 321,
-        "research_mode": "EARLY"
+        "prompt_chars": 651,
+        "estimated_prompt_tokens": 163,
+        "research_mode": "POSTGAME"
       },
       {
         "team": "CWS",
         "game_pk": 824059,
         "items": [
-          "pregame:824059:CWS:EARLY",
+          "pregame:824059:CWS:FINAL",
           "postgame:824059:CWS:824060"
         ],
-        "response_id": "resp_08d48b7a4fd82d83016ab53556e19487d29619561ffe7e055e",
+        "response_id": "resp_0e6e0f41713be5d3016ab55f69884087d2a1ef10b444403ce5",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 43,
+        "web_sources_seen": 61,
         "usage": {
-          "input_tokens": 22143,
+          "input_tokens": 30371,
           "cached_input_tokens": 4961,
-          "output_tokens": 1951,
-          "reasoning_tokens": 705,
-          "total_tokens": 24094,
+          "output_tokens": 1539,
+          "reasoning_tokens": 946,
+          "total_tokens": 31910,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {
-          "pregame:824059:CWS:EARLY": [
-            "manager/coach pregame media was neither checked nor explicitly unavailable"
-          ],
-          "postgame:824059:CWS:824060": [
-            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
-          ]
-        },
-        "tool_budget": 2,
-        "prompt_chars": 1283,
-        "estimated_prompt_tokens": 321,
-        "research_mode": "EARLY"
+        "validation_errors": {},
+        "tool_budget": 3,
+        "prompt_chars": 3015,
+        "estimated_prompt_tokens": 754,
+        "research_mode": "FINAL_DELTA"
       },
       {
         "team": "KC",
         "game_pk": 824059,
         "items": [
-          "pregame:824059:KC:EARLY",
-          "postgame:824059:KC:824060"
+          "pregame:824059:KC:FINAL"
         ],
-        "response_id": "resp_0bb5c0fcd3fe4e5e016ab5356ec24487d2b57138694bdedbec",
+        "response_id": "resp_07c50deafb622e46016ab55f87fec487d2b487bf05216a9db4",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 49,
+        "web_sources_seen": 51,
         "usage": {
-          "input_tokens": 21151,
+          "input_tokens": 30844,
           "cached_input_tokens": 4961,
-          "output_tokens": 1874,
-          "reasoning_tokens": 845,
-          "total_tokens": 23025,
+          "output_tokens": 2179,
+          "reasoning_tokens": 1705,
+          "total_tokens": 33023,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "pregame:824059:KC:EARLY": [
-            "invalid result 'MATERIAL_DECLARATION_FOUND'"
+          "pregame:824059:KC:FINAL": [
+            "invalid result 'COMPLETED'"
           ]
         },
-        "tool_budget": 2,
-        "prompt_chars": 1468,
-        "estimated_prompt_tokens": 367,
-        "research_mode": "EARLY"
+        "tool_budget": 3,
+        "prompt_chars": 2823,
+        "estimated_prompt_tokens": 706,
+        "research_mode": "FINAL_DELTA"
       },
       {
         "team": "MIA",
         "game_pk": 824623,
         "items": [
-          "pregame:824623:MIA:EARLY",
-          "postgame:824623:MIA:824625"
+          "pregame:824623:MIA:FINAL"
         ],
-        "response_id": "resp_0bbc5795f581ef00016ab535898c3c87d2ba5f63c35f4a9c90",
+        "response_id": "resp_02dea8456da872f9016ab55fa7ba2087d2bbcdc4ef8af97db1",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 32,
+        "web_sources_seen": 42,
         "usage": {
-          "input_tokens": 22277,
+          "input_tokens": 22708,
           "cached_input_tokens": 4961,
-          "output_tokens": 1620,
-          "reasoning_tokens": 840,
-          "total_tokens": 23897,
+          "output_tokens": 1358,
+          "reasoning_tokens": 690,
+          "total_tokens": 24066,
           "estimated_cost_usd": 0.0
         },
-        "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 1505,
-        "estimated_prompt_tokens": 377,
-        "research_mode": "EARLY"
+        "validation_errors": {
+          "pregame:824623:MIA:FINAL": [
+            "invalid result 'COMPLETED'"
+          ]
+        },
+        "tool_budget": 3,
+        "prompt_chars": 2859,
+        "estimated_prompt_tokens": 715,
+        "research_mode": "FINAL_DELTA"
       },
       {
         "team": "CHC",
         "game_pk": 824623,
         "items": [
-          "pregame:824623:CHC:EARLY",
-          "postgame:824623:CHC:824625"
+          "pregame:824623:CHC:FINAL"
         ],
-        "response_id": "resp_0ffeceea1da44e18016ab535a7794087d295e79a15d2fce0ce",
+        "response_id": "resp_0154d0061d2929be016ab55fb9c9ec87d2ba974ca21c525db9",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 50,
+        "web_sources_seen": 58,
         "usage": {
-          "input_tokens": 20182,
+          "input_tokens": 30578,
           "cached_input_tokens": 4961,
-          "output_tokens": 1659,
-          "reasoning_tokens": 842,
-          "total_tokens": 21841,
+          "output_tokens": 1312,
+          "reasoning_tokens": 934,
+          "total_tokens": 31890,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {},
-        "tool_budget": 2,
-        "prompt_chars": 1282,
-        "estimated_prompt_tokens": 321,
-        "research_mode": "EARLY"
+        "tool_budget": 3,
+        "prompt_chars": 2636,
+        "estimated_prompt_tokens": 659,
+        "research_mode": "FINAL_DELTA"
+      },
+      {
+        "team": "NYM",
+        "game_pk": 822842,
+        "items": [
+          "pregame:822842:NYM:FINAL",
+          "postgame:822842:NYM:822841"
+        ],
+        "response_id": "resp_0c75b0953d2282d2016ab55fcfa33887d289d575ed6f251e1c",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 61,
+        "usage": {
+          "input_tokens": 28354,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1722,
+          "reasoning_tokens": 943,
+          "total_tokens": 30076,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {
+          "postgame:822842:NYM:822841": [
+            "invalid result 'COMPLETED'"
+          ]
+        },
+        "tool_budget": 3,
+        "prompt_chars": 2820,
+        "estimated_prompt_tokens": 705,
+        "research_mode": "FINAL_DELTA"
       }
     ]
   }
