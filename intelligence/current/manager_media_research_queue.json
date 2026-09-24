@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "generated_at": "2026-09-24T17:37:43+00:00",
+  "generated_at": "2026-09-24T20:38:35+00:00",
   "architecture": {
     "mode": "research_queue_only_no_web_scraping",
     "writes_projection_db": false,
@@ -18,9 +18,9 @@
     "postgame_queue_policy": "one task per team/previous-game until COMPLETED"
   },
   "summary": {
-    "items": 24,
-    "pregame_items": 5,
-    "postgame_items": 19
+    "items": 22,
+    "pregame_items": 7,
+    "postgame_items": 15
   },
   "items": [
     {
@@ -59,531 +59,6 @@
       "result_contract": {
         "focus": "carry-forward information relevant to today's game",
         "do_not_use_postgame_outcome_as_hindsight_model_input": true,
-        "evidence_labels": [
-          "CONFIRMED",
-          "PROVISIONAL",
-          "INFERENCE",
-          "UNRESOLVED"
-        ]
-      }
-    },
-    {
-      "item_id": "pregame:824059:KC:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "game_pk": 824059,
-      "game_datetime": "2026-09-24T18:10:00Z",
-      "team": "KC",
-      "opponent": "CWS",
-      "pass_type": "FINAL",
-      "due_reason": "32.3 minutes to first pitch",
-      "target_arms": [
-        {
-          "mlbam_id": 664062,
-          "name": "Gonsolin, Tony",
-          "apps": 1,
-          "total_pitches": 63,
-          "last_app": "2026-09-22",
-          "earliest_entry": 5,
-          "leverage_relevant": false,
-          "taxed_reasons": [
-            "63 pitches in lookback"
-          ]
-        },
-        {
-          "mlbam_id": 676510,
-          "name": "Hoffman, Nolan",
-          "apps": 3,
-          "total_pitches": 31,
-          "last_app": "2026-09-22",
-          "earliest_entry": 6,
-          "leverage_relevant": false,
-          "taxed_reasons": [
-            "3 appearances in lookback"
-          ]
-        }
-      ],
-      "starter": {
-        "name": "Randy Dobnak",
-        "mlbam_id": 677976,
-        "model_expected_bf": 23,
-        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
-        "workload_assessment": "UNRESOLVED",
-        "restriction_flag": false
-      },
-      "minimum_negative_result_coverage": [
-        {
-          "source_class": "OFFICIAL_TEAM",
-          "minimum": 1,
-          "examples": [
-            "official team game notes",
-            "team PR/communications",
-            "official MLB/team site"
-          ]
-        },
-        {
-          "source_class": "MANAGER_PREGAME_MEDIA",
-          "minimum": 1,
-          "when_available": true,
-          "examples": [
-            "manager pregame availability",
-            "pitching coach availability",
-            "official interview/transcript"
-          ]
-        },
-        {
-          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "minimum": 1,
-          "examples": [
-            "credentialed beat reporter",
-            "local newspaper/RSN reporter with clubhouse access"
-          ]
-        }
-      ],
-      "look_for": [
-        "explicit reliever availability/unavailability",
-        "closer/setup restrictions or emergency-only usage",
-        "starter pitch-count, innings, BF, or times-through-order limits",
-        "opener/bulk-pitcher plans",
-        "injury, soreness, illness, scratches, rest decisions",
-        "bullpen role changes",
-        "catcher/defensive changes affecting run environment",
-        "other tactical comments materially affecting this game"
-      ],
-      "query_templates": [
-        "KC manager pregame 2026-09-24 bullpen availability CWS Gonsolin, Tony, Hoffman, Nolan",
-        "KC game notes pregame media beat reporter 2026-09-24 scratches rest bullpen roles CWS",
-        "KC Randy Dobnak 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
-      ],
-      "research_budget": {
-        "max_tool_calls": 3,
-        "mode": "FINAL_DELTA"
-      },
-      "result_contract": {
-        "no_material_phrase": "No material pregame availability declaration found.",
-        "negative_result_requires_source_coverage": true,
-        "do_not_invent_numeric_limits": true,
-        "evidence_labels": [
-          "CONFIRMED",
-          "PROVISIONAL",
-          "INFERENCE",
-          "UNRESOLVED"
-        ]
-      }
-    },
-    {
-      "item_id": "pregame:824623:MIA:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "game_pk": 824623,
-      "game_datetime": "2026-09-24T18:20:00Z",
-      "team": "MIA",
-      "opponent": "CHC",
-      "pass_type": "FINAL",
-      "due_reason": "42.3 minutes to first pitch",
-      "target_arms": [
-        {
-          "mlbam_id": 656848,
-          "name": "Petersen, Michael",
-          "apps": 3,
-          "total_pitches": 60,
-          "last_app": "2026-09-23",
-          "earliest_entry": 5,
-          "leverage_relevant": false,
-          "taxed_reasons": [
-            "3 appearances in lookback",
-            "60 pitches in lookback"
-          ]
-        },
-        {
-          "mlbam_id": 676534,
-          "name": "Faucher, Calvin",
-          "apps": 3,
-          "total_pitches": 47,
-          "last_app": "2026-09-23",
-          "earliest_entry": 6,
-          "leverage_relevant": false,
-          "taxed_reasons": [
-            "3 appearances in lookback"
-          ]
-        }
-      ],
-      "starter": {
-        "name": "Tyler Phillips",
-        "mlbam_id": 663969,
-        "model_expected_bf": 19,
-        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
-        "workload_assessment": "UNRESOLVED",
-        "restriction_flag": false
-      },
-      "minimum_negative_result_coverage": [
-        {
-          "source_class": "OFFICIAL_TEAM",
-          "minimum": 1,
-          "examples": [
-            "official team game notes",
-            "team PR/communications",
-            "official MLB/team site"
-          ]
-        },
-        {
-          "source_class": "MANAGER_PREGAME_MEDIA",
-          "minimum": 1,
-          "when_available": true,
-          "examples": [
-            "manager pregame availability",
-            "pitching coach availability",
-            "official interview/transcript"
-          ]
-        },
-        {
-          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "minimum": 1,
-          "examples": [
-            "credentialed beat reporter",
-            "local newspaper/RSN reporter with clubhouse access"
-          ]
-        }
-      ],
-      "look_for": [
-        "explicit reliever availability/unavailability",
-        "closer/setup restrictions or emergency-only usage",
-        "starter pitch-count, innings, BF, or times-through-order limits",
-        "opener/bulk-pitcher plans",
-        "injury, soreness, illness, scratches, rest decisions",
-        "bullpen role changes",
-        "catcher/defensive changes affecting run environment",
-        "other tactical comments materially affecting this game"
-      ],
-      "query_templates": [
-        "MIA manager pregame 2026-09-24 bullpen availability CHC Petersen, Michael, Faucher, Calvin",
-        "MIA game notes pregame media beat reporter 2026-09-24 scratches rest bullpen roles CHC",
-        "MIA Tyler Phillips 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
-      ],
-      "research_budget": {
-        "max_tool_calls": 3,
-        "mode": "FINAL_DELTA"
-      },
-      "result_contract": {
-        "no_material_phrase": "No material pregame availability declaration found.",
-        "negative_result_requires_source_coverage": true,
-        "do_not_invent_numeric_limits": true,
-        "evidence_labels": [
-          "CONFIRMED",
-          "PROVISIONAL",
-          "INFERENCE",
-          "UNRESOLVED"
-        ]
-      }
-    },
-    {
-      "item_id": "postgame:822842:NYM:822841",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "today_game_pk": 822842,
-      "team": "NYM",
-      "previous_game": {
-        "game_pk": 822841,
-        "game_date": "2026-09-23",
-        "game_number": 1,
-        "home_team": "TEX",
-        "away_team": "NYM",
-        "game_type": "R",
-        "game_datetime": "2026-09-24T00:05:00Z",
-        "venue": "Globe Life Field",
-        "status": "Pre-Game",
-        "team": "NYM",
-        "opponent": "TEX",
-        "team_side": "away"
-      },
-      "look_for": [
-        "manager explanation of bullpen usage/non-usage",
-        "explicit next-game availability comments",
-        "injury, soreness, illness, treatment, or fatigue comments",
-        "starter exit reason and any carry-forward workload implication",
-        "closer/setup role changes",
-        "player/manager comments about rest or planned day off",
-        "travel/scheduling comments with plausible next-game relevance",
-        "tactical or personnel changes expected to carry into the next game"
-      ],
-      "query_templates": [
-        "NYM manager postgame 2026-09-23 TEX bullpen injury starter exit availability next game",
-        "NYM beat reporter postgame 2026-09-23 TEX bullpen workload injury availability"
-      ],
-      "result_contract": {
-        "focus": "carry-forward information relevant to today's game",
-        "do_not_use_postgame_outcome_as_hindsight_model_input": true,
-        "evidence_labels": [
-          "CONFIRMED",
-          "PROVISIONAL",
-          "INFERENCE",
-          "UNRESOLVED"
-        ]
-      }
-    },
-    {
-      "item_id": "pregame:822842:TEX:FINAL",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "game_pk": 822842,
-      "game_datetime": "2026-09-24T18:35:00Z",
-      "team": "TEX",
-      "opponent": "NYM",
-      "pass_type": "FINAL",
-      "due_reason": "57.3 minutes to first pitch",
-      "target_arms": [
-        {
-          "mlbam_id": 681217,
-          "name": "Silseth, Chase",
-          "apps": 3,
-          "total_pitches": 38,
-          "last_app": "2026-09-23",
-          "earliest_entry": 7,
-          "leverage_relevant": true,
-          "taxed_reasons": [
-            "3 appearances in lookback"
-          ]
-        },
-        {
-          "mlbam_id": 656756,
-          "name": "Montgomery, Jordan",
-          "apps": 2,
-          "total_pitches": 67,
-          "last_app": "2026-09-23",
-          "earliest_entry": 2,
-          "leverage_relevant": false,
-          "taxed_reasons": [
-            "67 pitches in lookback"
-          ]
-        },
-        {
-          "mlbam_id": 676395,
-          "name": "Garcia, Robert",
-          "apps": 3,
-          "total_pitches": 42,
-          "last_app": "2026-09-22",
-          "earliest_entry": 5,
-          "leverage_relevant": false,
-          "taxed_reasons": [
-            "3 appearances in lookback"
-          ]
-        }
-      ],
-      "starter": {
-        "name": "Kumar Rocker",
-        "mlbam_id": 677958,
-        "model_expected_bf": 21,
-        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
-        "workload_assessment": "UNRESOLVED",
-        "restriction_flag": false
-      },
-      "minimum_negative_result_coverage": [
-        {
-          "source_class": "OFFICIAL_TEAM",
-          "minimum": 1,
-          "examples": [
-            "official team game notes",
-            "team PR/communications",
-            "official MLB/team site"
-          ]
-        },
-        {
-          "source_class": "MANAGER_PREGAME_MEDIA",
-          "minimum": 1,
-          "when_available": true,
-          "examples": [
-            "manager pregame availability",
-            "pitching coach availability",
-            "official interview/transcript"
-          ]
-        },
-        {
-          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "minimum": 1,
-          "examples": [
-            "credentialed beat reporter",
-            "local newspaper/RSN reporter with clubhouse access"
-          ]
-        }
-      ],
-      "look_for": [
-        "explicit reliever availability/unavailability",
-        "closer/setup restrictions or emergency-only usage",
-        "starter pitch-count, innings, BF, or times-through-order limits",
-        "opener/bulk-pitcher plans",
-        "injury, soreness, illness, scratches, rest decisions",
-        "bullpen role changes",
-        "catcher/defensive changes affecting run environment",
-        "other tactical comments materially affecting this game"
-      ],
-      "query_templates": [
-        "TEX manager pregame 2026-09-24 bullpen availability NYM Silseth, Chase, Montgomery, Jordan, Garcia, Robert",
-        "TEX game notes pregame media beat reporter 2026-09-24 scratches rest bullpen roles NYM",
-        "TEX Kumar Rocker 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
-      ],
-      "research_budget": {
-        "max_tool_calls": 3,
-        "mode": "FINAL_DELTA"
-      },
-      "result_contract": {
-        "no_material_phrase": "No material pregame availability declaration found.",
-        "negative_result_requires_source_coverage": true,
-        "do_not_invent_numeric_limits": true,
-        "evidence_labels": [
-          "CONFIRMED",
-          "PROVISIONAL",
-          "INFERENCE",
-          "UNRESOLVED"
-        ]
-      }
-    },
-    {
-      "item_id": "postgame:822842:TEX:822841",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "today_game_pk": 822842,
-      "team": "TEX",
-      "previous_game": {
-        "game_pk": 822841,
-        "game_date": "2026-09-23",
-        "game_number": 1,
-        "home_team": "TEX",
-        "away_team": "NYM",
-        "game_type": "R",
-        "game_datetime": "2026-09-24T00:05:00Z",
-        "venue": "Globe Life Field",
-        "status": "Pre-Game",
-        "team": "TEX",
-        "opponent": "NYM",
-        "team_side": "home"
-      },
-      "look_for": [
-        "manager explanation of bullpen usage/non-usage",
-        "explicit next-game availability comments",
-        "injury, soreness, illness, treatment, or fatigue comments",
-        "starter exit reason and any carry-forward workload implication",
-        "closer/setup role changes",
-        "player/manager comments about rest or planned day off",
-        "travel/scheduling comments with plausible next-game relevance",
-        "tactical or personnel changes expected to carry into the next game"
-      ],
-      "query_templates": [
-        "TEX manager postgame 2026-09-23 NYM bullpen injury starter exit availability next game",
-        "TEX beat reporter postgame 2026-09-23 NYM bullpen workload injury availability"
-      ],
-      "result_contract": {
-        "focus": "carry-forward information relevant to today's game",
-        "do_not_use_postgame_outcome_as_hindsight_model_input": true,
-        "evidence_labels": [
-          "CONFIRMED",
-          "PROVISIONAL",
-          "INFERENCE",
-          "UNRESOLVED"
-        ]
-      }
-    },
-    {
-      "item_id": "pregame:824298:AZ:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "game_pk": 824298,
-      "game_datetime": "2026-09-24T19:10:00Z",
-      "team": "AZ",
-      "opponent": "COL",
-      "pass_type": "EARLY",
-      "due_reason": "92.3 minutes to first pitch",
-      "target_arms": [
-        {
-          "mlbam_id": 805299,
-          "name": "Garcia, Brandyn",
-          "apps": 3,
-          "total_pitches": 50,
-          "last_app": "2026-09-23",
-          "earliest_entry": 7,
-          "leverage_relevant": true,
-          "taxed_reasons": [
-            "3 appearances in lookback"
-          ]
-        },
-        {
-          "mlbam_id": 666661,
-          "name": "Morillo, Juan",
-          "apps": 3,
-          "total_pitches": 35,
-          "last_app": "2026-09-23",
-          "earliest_entry": 8,
-          "leverage_relevant": true,
-          "taxed_reasons": [
-            "3 appearances in lookback"
-          ]
-        },
-        {
-          "mlbam_id": 679885,
-          "name": "Martinez, Justin",
-          "apps": 3,
-          "total_pitches": 25,
-          "last_app": "2026-09-23",
-          "earliest_entry": 5,
-          "leverage_relevant": false,
-          "taxed_reasons": [
-            "3 appearances in lookback"
-          ]
-        }
-      ],
-      "starter": {
-        "name": "Eduardo Rodriguez",
-        "mlbam_id": 593958,
-        "model_expected_bf": 25,
-        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
-        "workload_assessment": "UNRESOLVED",
-        "restriction_flag": false
-      },
-      "minimum_negative_result_coverage": [
-        {
-          "source_class": "OFFICIAL_TEAM",
-          "minimum": 1,
-          "examples": [
-            "official team game notes",
-            "team PR/communications",
-            "official MLB/team site"
-          ]
-        },
-        {
-          "source_class": "MANAGER_PREGAME_MEDIA",
-          "minimum": 1,
-          "when_available": true,
-          "examples": [
-            "manager pregame availability",
-            "pitching coach availability",
-            "official interview/transcript"
-          ]
-        },
-        {
-          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "minimum": 1,
-          "examples": [
-            "credentialed beat reporter",
-            "local newspaper/RSN reporter with clubhouse access"
-          ]
-        }
-      ],
-      "look_for": [
-        "explicit reliever availability/unavailability",
-        "closer/setup restrictions or emergency-only usage",
-        "starter pitch-count, innings, BF, or times-through-order limits",
-        "opener/bulk-pitcher plans",
-        "injury, soreness, illness, scratches, rest decisions",
-        "bullpen role changes",
-        "catcher/defensive changes affecting run environment",
-        "other tactical comments materially affecting this game"
-      ],
-      "query_templates": [
-        "AZ 2026-09-24 game notes injury bullpen availability COL",
-        "AZ 2026-09-24 beat reporter known bullpen restrictions injuries rest plans Garcia, Brandyn, Morillo, Juan, Martinez, Justin",
-        "AZ Eduardo Rodriguez 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
-      ],
-      "research_budget": {
-        "max_tool_calls": 2,
-        "mode": "LIGHTWEIGHT"
-      },
-      "result_contract": {
-        "no_material_phrase": "No material pregame availability declaration found.",
-        "negative_result_requires_source_coverage": true,
-        "do_not_invent_numeric_limits": true,
         "evidence_labels": [
           "CONFIRMED",
           "PROVISIONAL",
@@ -637,32 +112,32 @@
       }
     },
     {
-      "item_id": "pregame:824298:COL:EARLY",
+      "item_id": "pregame:823411:PHI:FINAL",
       "research_type": "PREGAME_MANAGER_MEDIA",
-      "game_pk": 824298,
-      "game_datetime": "2026-09-24T19:10:00Z",
-      "team": "COL",
-      "opponent": "AZ",
-      "pass_type": "EARLY",
-      "due_reason": "92.3 minutes to first pitch",
+      "game_pk": 823411,
+      "game_datetime": "2026-09-24T22:05:00Z",
+      "team": "PHI",
+      "opponent": "MIL",
+      "pass_type": "FINAL",
+      "due_reason": "86.4 minutes to first pitch",
       "target_arms": [
         {
-          "mlbam_id": 663372,
-          "name": "Feltner, Ryan",
-          "apps": 1,
-          "total_pitches": 61,
-          "last_app": "2026-09-20",
-          "earliest_entry": 6,
-          "leverage_relevant": false,
+          "mlbam_id": 621237,
+          "name": "Alvarado, José",
+          "apps": 3,
+          "total_pitches": 34,
+          "last_app": "2026-09-22",
+          "earliest_entry": 7,
+          "leverage_relevant": true,
           "taxed_reasons": [
-            "61 pitches in lookback"
+            "3 appearances in lookback"
           ]
         }
       ],
       "starter": {
-        "name": "Tanner Gordon",
-        "mlbam_id": 685299,
-        "model_expected_bf": 23,
+        "name": "Andrew Painter",
+        "mlbam_id": 691725,
+        "model_expected_bf": 24,
         "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "workload_assessment": "UNRESOLVED",
         "restriction_flag": false
@@ -707,106 +182,18 @@
         "other tactical comments materially affecting this game"
       ],
       "query_templates": [
-        "COL 2026-09-24 game notes injury bullpen availability AZ",
-        "COL 2026-09-24 beat reporter known bullpen restrictions injuries rest plans Feltner, Ryan",
-        "COL Tanner Gordon 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
+        "PHI manager pregame 2026-09-24 bullpen availability MIL Alvarado, José",
+        "PHI game notes pregame media beat reporter 2026-09-24 scratches rest bullpen roles MIL",
+        "PHI Andrew Painter 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
       ],
       "research_budget": {
-        "max_tool_calls": 2,
-        "mode": "LIGHTWEIGHT"
+        "max_tool_calls": 3,
+        "mode": "FINAL_DELTA"
       },
       "result_contract": {
         "no_material_phrase": "No material pregame availability declaration found.",
         "negative_result_requires_source_coverage": true,
         "do_not_invent_numeric_limits": true,
-        "evidence_labels": [
-          "CONFIRMED",
-          "PROVISIONAL",
-          "INFERENCE",
-          "UNRESOLVED"
-        ]
-      }
-    },
-    {
-      "item_id": "postgame:824298:COL:824301",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "today_game_pk": 824298,
-      "team": "COL",
-      "previous_game": {
-        "game_pk": 824301,
-        "game_date": "2026-09-23",
-        "game_number": 1,
-        "home_team": "COL",
-        "away_team": "AZ",
-        "game_type": "R",
-        "game_datetime": "2026-09-24T00:40:00Z",
-        "venue": "Coors Field",
-        "status": "Pre-Game",
-        "team": "COL",
-        "opponent": "AZ",
-        "team_side": "home"
-      },
-      "look_for": [
-        "manager explanation of bullpen usage/non-usage",
-        "explicit next-game availability comments",
-        "injury, soreness, illness, treatment, or fatigue comments",
-        "starter exit reason and any carry-forward workload implication",
-        "closer/setup role changes",
-        "player/manager comments about rest or planned day off",
-        "travel/scheduling comments with plausible next-game relevance",
-        "tactical or personnel changes expected to carry into the next game"
-      ],
-      "query_templates": [
-        "COL manager postgame 2026-09-23 AZ bullpen injury starter exit availability next game",
-        "COL beat reporter postgame 2026-09-23 AZ bullpen workload injury availability"
-      ],
-      "result_contract": {
-        "focus": "carry-forward information relevant to today's game",
-        "do_not_use_postgame_outcome_as_hindsight_model_input": true,
-        "evidence_labels": [
-          "CONFIRMED",
-          "PROVISIONAL",
-          "INFERENCE",
-          "UNRESOLVED"
-        ]
-      }
-    },
-    {
-      "item_id": "postgame:823411:MIL:823410",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "today_game_pk": 823411,
-      "team": "MIL",
-      "previous_game": {
-        "game_pk": 823410,
-        "game_date": "2026-09-23",
-        "game_number": 1,
-        "home_team": "PHI",
-        "away_team": "MIL",
-        "game_type": "R",
-        "game_datetime": "2026-09-23T22:40:00Z",
-        "venue": "Citizens Bank Park",
-        "status": "In Progress",
-        "team": "MIL",
-        "opponent": "PHI",
-        "team_side": "away"
-      },
-      "look_for": [
-        "manager explanation of bullpen usage/non-usage",
-        "explicit next-game availability comments",
-        "injury, soreness, illness, treatment, or fatigue comments",
-        "starter exit reason and any carry-forward workload implication",
-        "closer/setup role changes",
-        "player/manager comments about rest or planned day off",
-        "travel/scheduling comments with plausible next-game relevance",
-        "tactical or personnel changes expected to carry into the next game"
-      ],
-      "query_templates": [
-        "MIL manager postgame 2026-09-23 PHI bullpen injury starter exit availability next game",
-        "MIL beat reporter postgame 2026-09-23 PHI bullpen workload injury availability"
-      ],
-      "result_contract": {
-        "focus": "carry-forward information relevant to today's game",
-        "do_not_use_postgame_outcome_as_hindsight_model_input": true,
         "evidence_labels": [
           "CONFIRMED",
           "PROVISIONAL",
@@ -860,6 +247,97 @@
       }
     },
     {
+      "item_id": "pregame:824707:CLE:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "game_pk": 824707,
+      "game_datetime": "2026-09-24T22:45:00Z",
+      "team": "CLE",
+      "opponent": "BOS",
+      "pass_type": "EARLY",
+      "due_reason": "126.4 minutes to first pitch",
+      "target_arms": [
+        {
+          "mlbam_id": 682120,
+          "name": "Herrin, Tim",
+          "apps": 3,
+          "total_pitches": 59,
+          "last_app": "2026-09-23",
+          "earliest_entry": 6,
+          "leverage_relevant": false,
+          "taxed_reasons": [
+            "3 appearances in lookback"
+          ]
+        }
+      ],
+      "starter": {
+        "name": "Daniel Espino",
+        "mlbam_id": 682982,
+        "model_expected_bf": 7,
+        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "workload_assessment": "UNRESOLVED",
+        "restriction_flag": false
+      },
+      "minimum_negative_result_coverage": [
+        {
+          "source_class": "OFFICIAL_TEAM",
+          "minimum": 1,
+          "examples": [
+            "official team game notes",
+            "team PR/communications",
+            "official MLB/team site"
+          ]
+        },
+        {
+          "source_class": "MANAGER_PREGAME_MEDIA",
+          "minimum": 1,
+          "when_available": true,
+          "examples": [
+            "manager pregame availability",
+            "pitching coach availability",
+            "official interview/transcript"
+          ]
+        },
+        {
+          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "minimum": 1,
+          "examples": [
+            "credentialed beat reporter",
+            "local newspaper/RSN reporter with clubhouse access"
+          ]
+        }
+      ],
+      "look_for": [
+        "explicit reliever availability/unavailability",
+        "closer/setup restrictions or emergency-only usage",
+        "starter pitch-count, innings, BF, or times-through-order limits",
+        "opener/bulk-pitcher plans",
+        "injury, soreness, illness, scratches, rest decisions",
+        "bullpen role changes",
+        "catcher/defensive changes affecting run environment",
+        "other tactical comments materially affecting this game"
+      ],
+      "query_templates": [
+        "CLE 2026-09-24 game notes injury bullpen availability BOS",
+        "CLE 2026-09-24 beat reporter known bullpen restrictions injuries rest plans Herrin, Tim",
+        "CLE Daniel Espino 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
+      ],
+      "research_budget": {
+        "max_tool_calls": 2,
+        "mode": "LIGHTWEIGHT"
+      },
+      "result_contract": {
+        "no_material_phrase": "No material pregame availability declaration found.",
+        "negative_result_requires_source_coverage": true,
+        "do_not_invent_numeric_limits": true,
+        "evidence_labels": [
+          "CONFIRMED",
+          "PROVISIONAL",
+          "INFERENCE",
+          "UNRESOLVED"
+        ]
+      }
+    },
+    {
       "item_id": "postgame:824707:CLE:824710",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "today_game_pk": 824707,
@@ -895,6 +373,84 @@
       "result_contract": {
         "focus": "carry-forward information relevant to today's game",
         "do_not_use_postgame_outcome_as_hindsight_model_input": true,
+        "evidence_labels": [
+          "CONFIRMED",
+          "PROVISIONAL",
+          "INFERENCE",
+          "UNRESOLVED"
+        ]
+      }
+    },
+    {
+      "item_id": "pregame:824707:BOS:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "game_pk": 824707,
+      "game_datetime": "2026-09-24T22:45:00Z",
+      "team": "BOS",
+      "opponent": "CLE",
+      "pass_type": "EARLY",
+      "due_reason": "126.4 minutes to first pitch",
+      "target_arms": [],
+      "starter": {
+        "name": "Ranger Suarez",
+        "mlbam_id": 624133,
+        "model_expected_bf": 23,
+        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "workload_assessment": "UNRESOLVED",
+        "restriction_flag": false
+      },
+      "minimum_negative_result_coverage": [
+        {
+          "source_class": "OFFICIAL_TEAM",
+          "minimum": 1,
+          "examples": [
+            "official team game notes",
+            "team PR/communications",
+            "official MLB/team site"
+          ]
+        },
+        {
+          "source_class": "MANAGER_PREGAME_MEDIA",
+          "minimum": 1,
+          "when_available": true,
+          "examples": [
+            "manager pregame availability",
+            "pitching coach availability",
+            "official interview/transcript"
+          ]
+        },
+        {
+          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "minimum": 1,
+          "examples": [
+            "credentialed beat reporter",
+            "local newspaper/RSN reporter with clubhouse access"
+          ]
+        }
+      ],
+      "look_for": [
+        "explicit reliever availability/unavailability",
+        "closer/setup restrictions or emergency-only usage",
+        "starter pitch-count, innings, BF, or times-through-order limits",
+        "opener/bulk-pitcher plans",
+        "injury, soreness, illness, scratches, rest decisions",
+        "bullpen role changes",
+        "catcher/defensive changes affecting run environment",
+        "other tactical comments materially affecting this game"
+      ],
+      "query_templates": [
+        "BOS 2026-09-24 game notes injury bullpen availability CLE",
+        "BOS 2026-09-24 beat reporter known bullpen restrictions injuries rest plans",
+        "BOS Ranger Suarez 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
+      ],
+      "research_budget": {
+        "max_tool_calls": 2,
+        "mode": "LIGHTWEIGHT"
+      },
+      "result_contract": {
+        "no_material_phrase": "No material pregame availability declaration found.",
+        "negative_result_requires_source_coverage": true,
+        "do_not_invent_numeric_limits": true,
         "evidence_labels": [
           "CONFIRMED",
           "PROVISIONAL",
@@ -948,6 +504,109 @@
       }
     },
     {
+      "item_id": "pregame:823493:TB:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "game_pk": 823493,
+      "game_datetime": "2026-09-24T23:05:00Z",
+      "team": "TB",
+      "opponent": "NYY",
+      "pass_type": "EARLY",
+      "due_reason": "146.4 minutes to first pitch",
+      "target_arms": [
+        {
+          "mlbam_id": 642121,
+          "name": "Sulser, Cole",
+          "apps": 3,
+          "total_pitches": 52,
+          "last_app": "2026-09-23",
+          "earliest_entry": 6,
+          "leverage_relevant": false,
+          "taxed_reasons": [
+            "3 appearances in lookback"
+          ]
+        },
+        {
+          "mlbam_id": 687330,
+          "name": "Kelly, Kevin",
+          "apps": 3,
+          "total_pitches": 22,
+          "last_app": "2026-09-22",
+          "earliest_entry": 6,
+          "leverage_relevant": false,
+          "taxed_reasons": [
+            "3 appearances in lookback"
+          ]
+        }
+      ],
+      "starter": {
+        "name": "Ian Seymour",
+        "mlbam_id": 693855,
+        "model_expected_bf": 23,
+        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "workload_assessment": "UNRESOLVED",
+        "restriction_flag": false
+      },
+      "minimum_negative_result_coverage": [
+        {
+          "source_class": "OFFICIAL_TEAM",
+          "minimum": 1,
+          "examples": [
+            "official team game notes",
+            "team PR/communications",
+            "official MLB/team site"
+          ]
+        },
+        {
+          "source_class": "MANAGER_PREGAME_MEDIA",
+          "minimum": 1,
+          "when_available": true,
+          "examples": [
+            "manager pregame availability",
+            "pitching coach availability",
+            "official interview/transcript"
+          ]
+        },
+        {
+          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "minimum": 1,
+          "examples": [
+            "credentialed beat reporter",
+            "local newspaper/RSN reporter with clubhouse access"
+          ]
+        }
+      ],
+      "look_for": [
+        "explicit reliever availability/unavailability",
+        "closer/setup restrictions or emergency-only usage",
+        "starter pitch-count, innings, BF, or times-through-order limits",
+        "opener/bulk-pitcher plans",
+        "injury, soreness, illness, scratches, rest decisions",
+        "bullpen role changes",
+        "catcher/defensive changes affecting run environment",
+        "other tactical comments materially affecting this game"
+      ],
+      "query_templates": [
+        "TB 2026-09-24 game notes injury bullpen availability NYY",
+        "TB 2026-09-24 beat reporter known bullpen restrictions injuries rest plans Sulser, Cole, Kelly, Kevin",
+        "TB Ian Seymour 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
+      ],
+      "research_budget": {
+        "max_tool_calls": 2,
+        "mode": "LIGHTWEIGHT"
+      },
+      "result_contract": {
+        "no_material_phrase": "No material pregame availability declaration found.",
+        "negative_result_requires_source_coverage": true,
+        "do_not_invent_numeric_limits": true,
+        "evidence_labels": [
+          "CONFIRMED",
+          "PROVISIONAL",
+          "INFERENCE",
+          "UNRESOLVED"
+        ]
+      }
+    },
+    {
       "item_id": "postgame:823493:TB:823492",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "today_game_pk": 823493,
@@ -983,6 +642,109 @@
       "result_contract": {
         "focus": "carry-forward information relevant to today's game",
         "do_not_use_postgame_outcome_as_hindsight_model_input": true,
+        "evidence_labels": [
+          "CONFIRMED",
+          "PROVISIONAL",
+          "INFERENCE",
+          "UNRESOLVED"
+        ]
+      }
+    },
+    {
+      "item_id": "pregame:823493:NYY:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "game_pk": 823493,
+      "game_datetime": "2026-09-24T23:05:00Z",
+      "team": "NYY",
+      "opponent": "TB",
+      "pass_type": "EARLY",
+      "due_reason": "146.4 minutes to first pitch",
+      "target_arms": [
+        {
+          "mlbam_id": 670167,
+          "name": "Schreiber, John",
+          "apps": 3,
+          "total_pitches": 40,
+          "last_app": "2026-09-23",
+          "earliest_entry": 7,
+          "leverage_relevant": true,
+          "taxed_reasons": [
+            "3 appearances in lookback"
+          ]
+        },
+        {
+          "mlbam_id": 687396,
+          "name": "Headrick, Brent",
+          "apps": 3,
+          "total_pitches": 25,
+          "last_app": "2026-09-23",
+          "earliest_entry": 5,
+          "leverage_relevant": false,
+          "taxed_reasons": [
+            "3 appearances in lookback"
+          ]
+        }
+      ],
+      "starter": {
+        "name": "Cam Schlittler",
+        "mlbam_id": 693645,
+        "model_expected_bf": 24,
+        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "workload_assessment": "UNRESOLVED",
+        "restriction_flag": false
+      },
+      "minimum_negative_result_coverage": [
+        {
+          "source_class": "OFFICIAL_TEAM",
+          "minimum": 1,
+          "examples": [
+            "official team game notes",
+            "team PR/communications",
+            "official MLB/team site"
+          ]
+        },
+        {
+          "source_class": "MANAGER_PREGAME_MEDIA",
+          "minimum": 1,
+          "when_available": true,
+          "examples": [
+            "manager pregame availability",
+            "pitching coach availability",
+            "official interview/transcript"
+          ]
+        },
+        {
+          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "minimum": 1,
+          "examples": [
+            "credentialed beat reporter",
+            "local newspaper/RSN reporter with clubhouse access"
+          ]
+        }
+      ],
+      "look_for": [
+        "explicit reliever availability/unavailability",
+        "closer/setup restrictions or emergency-only usage",
+        "starter pitch-count, innings, BF, or times-through-order limits",
+        "opener/bulk-pitcher plans",
+        "injury, soreness, illness, scratches, rest decisions",
+        "bullpen role changes",
+        "catcher/defensive changes affecting run environment",
+        "other tactical comments materially affecting this game"
+      ],
+      "query_templates": [
+        "NYY 2026-09-24 game notes injury bullpen availability TB",
+        "NYY 2026-09-24 beat reporter known bullpen restrictions injuries rest plans Schreiber, John, Headrick, Brent",
+        "NYY Cam Schlittler 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
+      ],
+      "research_budget": {
+        "max_tool_calls": 2,
+        "mode": "LIGHTWEIGHT"
+      },
+      "result_contract": {
+        "no_material_phrase": "No material pregame availability declaration found.",
+        "negative_result_requires_source_coverage": true,
+        "do_not_invent_numeric_limits": true,
         "evidence_labels": [
           "CONFIRMED",
           "PROVISIONAL",
@@ -1036,6 +798,97 @@
       }
     },
     {
+      "item_id": "pregame:824866:CIN:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "game_pk": 824866,
+      "game_datetime": "2026-09-24T23:15:00Z",
+      "team": "CIN",
+      "opponent": "ATL",
+      "pass_type": "EARLY",
+      "due_reason": "156.4 minutes to first pitch",
+      "target_arms": [
+        {
+          "mlbam_id": 686730,
+          "name": "Spiers, Carson",
+          "apps": 1,
+          "total_pitches": 62,
+          "last_app": "2026-09-20",
+          "earliest_entry": 5,
+          "leverage_relevant": false,
+          "taxed_reasons": [
+            "62 pitches in lookback"
+          ]
+        }
+      ],
+      "starter": {
+        "name": "Brady Singer",
+        "mlbam_id": 663903,
+        "model_expected_bf": 26,
+        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "workload_assessment": "UNRESOLVED",
+        "restriction_flag": false
+      },
+      "minimum_negative_result_coverage": [
+        {
+          "source_class": "OFFICIAL_TEAM",
+          "minimum": 1,
+          "examples": [
+            "official team game notes",
+            "team PR/communications",
+            "official MLB/team site"
+          ]
+        },
+        {
+          "source_class": "MANAGER_PREGAME_MEDIA",
+          "minimum": 1,
+          "when_available": true,
+          "examples": [
+            "manager pregame availability",
+            "pitching coach availability",
+            "official interview/transcript"
+          ]
+        },
+        {
+          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "minimum": 1,
+          "examples": [
+            "credentialed beat reporter",
+            "local newspaper/RSN reporter with clubhouse access"
+          ]
+        }
+      ],
+      "look_for": [
+        "explicit reliever availability/unavailability",
+        "closer/setup restrictions or emergency-only usage",
+        "starter pitch-count, innings, BF, or times-through-order limits",
+        "opener/bulk-pitcher plans",
+        "injury, soreness, illness, scratches, rest decisions",
+        "bullpen role changes",
+        "catcher/defensive changes affecting run environment",
+        "other tactical comments materially affecting this game"
+      ],
+      "query_templates": [
+        "CIN 2026-09-24 game notes injury bullpen availability ATL",
+        "CIN 2026-09-24 beat reporter known bullpen restrictions injuries rest plans Spiers, Carson",
+        "CIN Brady Singer 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
+      ],
+      "research_budget": {
+        "max_tool_calls": 2,
+        "mode": "LIGHTWEIGHT"
+      },
+      "result_contract": {
+        "no_material_phrase": "No material pregame availability declaration found.",
+        "negative_result_requires_source_coverage": true,
+        "do_not_invent_numeric_limits": true,
+        "evidence_labels": [
+          "CONFIRMED",
+          "PROVISIONAL",
+          "INFERENCE",
+          "UNRESOLVED"
+        ]
+      }
+    },
+    {
       "item_id": "postgame:824866:CIN:824868",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "today_game_pk": 824866,
@@ -1071,6 +924,97 @@
       "result_contract": {
         "focus": "carry-forward information relevant to today's game",
         "do_not_use_postgame_outcome_as_hindsight_model_input": true,
+        "evidence_labels": [
+          "CONFIRMED",
+          "PROVISIONAL",
+          "INFERENCE",
+          "UNRESOLVED"
+        ]
+      }
+    },
+    {
+      "item_id": "pregame:824866:ATL:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "game_pk": 824866,
+      "game_datetime": "2026-09-24T23:15:00Z",
+      "team": "ATL",
+      "opponent": "CIN",
+      "pass_type": "EARLY",
+      "due_reason": "156.4 minutes to first pitch",
+      "target_arms": [
+        {
+          "mlbam_id": 682989,
+          "name": "Mederos, Victor",
+          "apps": 3,
+          "total_pitches": 30,
+          "last_app": "2026-09-23",
+          "earliest_entry": 5,
+          "leverage_relevant": false,
+          "taxed_reasons": [
+            "3 appearances in lookback"
+          ]
+        }
+      ],
+      "starter": {
+        "name": "Tyler Mahle",
+        "mlbam_id": 641816,
+        "model_expected_bf": 24,
+        "workload_status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "workload_assessment": "UNRESOLVED",
+        "restriction_flag": false
+      },
+      "minimum_negative_result_coverage": [
+        {
+          "source_class": "OFFICIAL_TEAM",
+          "minimum": 1,
+          "examples": [
+            "official team game notes",
+            "team PR/communications",
+            "official MLB/team site"
+          ]
+        },
+        {
+          "source_class": "MANAGER_PREGAME_MEDIA",
+          "minimum": 1,
+          "when_available": true,
+          "examples": [
+            "manager pregame availability",
+            "pitching coach availability",
+            "official interview/transcript"
+          ]
+        },
+        {
+          "source_class": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "minimum": 1,
+          "examples": [
+            "credentialed beat reporter",
+            "local newspaper/RSN reporter with clubhouse access"
+          ]
+        }
+      ],
+      "look_for": [
+        "explicit reliever availability/unavailability",
+        "closer/setup restrictions or emergency-only usage",
+        "starter pitch-count, innings, BF, or times-through-order limits",
+        "opener/bulk-pitcher plans",
+        "injury, soreness, illness, scratches, rest decisions",
+        "bullpen role changes",
+        "catcher/defensive changes affecting run environment",
+        "other tactical comments materially affecting this game"
+      ],
+      "query_templates": [
+        "ATL 2026-09-24 game notes injury bullpen availability CIN",
+        "ATL 2026-09-24 beat reporter known bullpen restrictions injuries rest plans Mederos, Victor",
+        "ATL Tyler Mahle 2026-09-24 pitch count innings BF workload opener bulk restriction manager"
+      ],
+      "research_budget": {
+        "max_tool_calls": 2,
+        "mode": "LIGHTWEIGHT"
+      },
+      "result_contract": {
+        "no_material_phrase": "No material pregame availability declaration found.",
+        "negative_result_requires_source_coverage": true,
+        "do_not_invent_numeric_limits": true,
         "evidence_labels": [
           "CONFIRMED",
           "PROVISIONAL",

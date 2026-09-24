@@ -8,42 +8,310 @@
       "checked_at": "2026-09-24T00:00:00Z",
       "sources_checked": [
         {
-          "source_type": "OFFICIAL_MLB_GAMEFEED",
-          "source_name": "MLB Statcast Gamefeed",
-          "url": "https://baseballsavant.mlb.com/gamefeed?date=2026-09-23&gamePk=823327&game_date=2026-09-23&sportId=1",
-          "accessed_date": "2026-09-24"
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "St. Louis Cardinals probable pitchers",
+          "url": "https://www.mlb.com/cardinals/roster/probable-pitchers?gclsrc=aw.ds&mlbkw=ds-g-",
+          "checked_for": "September 24 Cardinals-Pirates starter context; Kyle Leahy was listed as St. Louis' probable starter."
         },
         {
-          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
-          "source_name": "St. Louis Cardinals Manager Postgame Videos",
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "Baseball Savant / MLB Gamefeed",
+          "url": "https://baseballsavant.mlb.com/gamefeed?date=2026-09-23&gamePk=823327&game_date=2026-09-23&sportId=1",
+          "checked_for": "Official prior-game record and usage context."
+        },
+        {
+          "source_type": "OFFICIAL_MLB_MANAGER_MEDIA",
+          "source_name": "Cardinals Manager Postgame Videos",
           "url": "https://www.mlb.com/video/topic/cardinals-manager-postgame",
-          "accessed_date": "2026-09-24"
+          "checked_for": "Oliver Marmol postgame availability for the September 23 game; no September 23 relevant manager-postgame item was available in the reviewed official listing.",
+          "availability": "SOURCE_UNAVAILABLE"
         },
         {
           "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "source_name": "STL Sports Page — Rob Rains, Wednesday's Game Report: Cardinals 5, Pirates 1",
+          "source_name": "Rob Rains, STLSportsPage",
           "url": "https://stlsportspage.com/2026/09/23/wednesdays-game-report-cardinals-5-pirates-1/",
-          "accessed_date": "2026-09-24"
-        },
-        {
-          "source_type": "WIRE_SERVICE",
-          "source_name": "Associated Press via CBS Sports, Matthew Liberatore snaps drought as Cardinals top Pirates 5-1",
-          "url": "https://www.cbssports.com/mlb/news/matthew-liberatore-snaps-drought-as-cardinals-top-pirates-5-1/",
-          "accessed_date": "2026-09-24"
+          "checked_for": "Postgame reporting and attributable club/player comments relevant to the September 24 game."
         }
       ],
       "research_status": "FAILED",
-      "notes": "Reviewed the September 23, 2026 Cardinals-Pirates postgame record and available Cardinals manager-postgame coverage for forward-looking availability, workload, injury, lineup, or role declarations relevant to the September 24 game. No material carry-forward declaration was identified. The available manager remark concerning Matthew Liberatore's outing was retrospective and did not establish a next-game restriction, availability change, or usage plan. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "notes": "Reviewed official club/MLB materials, the official manager-postgame listing, and credentialed local postgame coverage available before the September 24 first pitch. No directly attributable Cardinals manager, coach, or club declaration from the September 23 postgame established a material availability restriction, role change, injury update, or other forward-looking adjustment for September 24. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
       "game_pk": 823327,
       "today_game_pk": 823326,
       "team": "STL",
-      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "pass_type": "POSTGAME_CARRY_FORWARD",
       "previous_game_pk": 823327,
       "previous_game_date": "2026-09-23",
       "result": "INCONCLUSIVE",
       "declarations": [],
-      "comments": [],
+      "comments": [
+        {
+          "evidence_label": "CONFIRMED",
+          "source_name": "Baseball Savant / MLB Gamefeed",
+          "summary": "The September 23 game was completed, with St. Louis defeating Pittsburgh 5-1. This is game-result and usage context only, not a forward-looking club declaration."
+        },
+        {
+          "evidence_label": "CONFIRMED",
+          "source_name": "St. Louis Cardinals probable pitchers",
+          "summary": "St. Louis listed Kyle Leahy, rather than September 23 starter Matthew Liberatore, as its probable starter for the September 24 game."
+        },
+        {
+          "evidence_label": "UNRESOLVED",
+          "source_name": "Cardinals Manager Postgame Videos",
+          "summary": "No relevant September 23 Oliver Marmol postgame media item was available in the reviewed official manager-postgame listing; therefore no manager declaration is carried forward."
+        }
+      ],
       "queue_fingerprint": "f84114435bb2a35714264f5bddc223a128df024e5b236abd6e21602d9a339cee"
+    },
+    {
+      "item_id": "postgame:822842:NYM:822841",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-24T20:36:17+00:00",
+      "sources_checked": [
+        {
+          "source_name": "New York Mets official site",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/mets"
+        },
+        {
+          "source_name": "Mets Manager Postgame Videos",
+          "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+          "url": "https://www.mlb.com/video/topic/mets-manager-postgame"
+        },
+        {
+          "source_name": "MLB Statcast Game Preview: New York Mets at Texas Rangers — September 23, 2026",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://baseballsavant.mlb.com/preview?game_date=2026-09-23&game_pk=822841"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The official Mets and MLB game sources were checked. No September 23, 2026 Mets manager postgame availability or official club postgame item carrying forward a material, next-game-relevant declaration was available in the retrieved material. A credentialed beat/local postgame source could not be obtained before the research cutoff; therefore the negative-evidence contract for COMPLETED is not satisfied.",
+      "game_pk": 822841,
+      "today_game_pk": 822842,
+      "team": "NYM",
+      "pass_type": "POSTGAME_CARRYFORWARD",
+      "previous_game_pk": 822841,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "8f7f7c5d413c8c0733952e17135191f5b2e403f8d64a7abec58d76ddefbb0eab"
+    },
+    {
+      "item_id": "postgame:822842:TEX:822841",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-24T20:36:53+00:00",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Texas Rangers / MLB.com",
+          "url": "https://www.mlb.com/rangers/video/topic/rangers-manager-postgame",
+          "access_status": "CHECKED",
+          "finding": "Official Rangers manager-postgame video index was checked; no September 23, 2026 postgame availability/deployment declaration was retrievable in the indexed material."
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Texas Rangers / MLB.com",
+          "url": "https://www.mlb.com/press-release/press-release-texas-rangers-homestand-information-for-september-15-24-2026",
+          "access_status": "CHECKED",
+          "finding": "Official club homestand material confirmed the September 23 Mets-Rangers game context but contained no postgame personnel, pitching-plan, or availability declaration."
+        },
+        {
+          "source_type": "NATIONAL_OR_WIRE",
+          "source_name": "Yahoo Sports / Associated Press syndication",
+          "url": "https://staging-aws.sports.yahoo.com/articles/mets-play-spoiler-three-long-025656404.html",
+          "access_status": "CHECKED",
+          "finding": "Game report identified Jacob Latz as the Rangers reliever used in the late tied-game situation, but the indexed material did not provide a direct Rangers manager/coach declaration establishing a next-game restriction or availability decision."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Dallas Sports Journal",
+          "url": "https://dallassportsjournal.com/skip-schumaker-rangers-defense-misplays-mets-outlier/",
+          "access_status": "CHECKED",
+          "finding": "Local postgame-related reporting was located, but the available indexed material concerned the prior September 22 game rather than a September 23 postgame declaration that could be carried into the September 24 game."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "No material September 23 postgame declaration from a Rangers manager/coach or an adequately attributed credentialed clubhouse report was retrievable before the September 24 game. The official-manager-media and beat/local portions of the negative-evidence contract could not be fully satisfied; therefore no negative declaration result is asserted.",
+      "game_pk": 822841,
+      "today_game_pk": 822842,
+      "team": "TEX",
+      "pass_type": "PREVIOUS_GAME_POSTGAME",
+      "previous_game_pk": 822841,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "7c474c64e443b624fa19dadb8a09cc6a13dcbf0fcad084e0692652b22858784e"
+    },
+    {
+      "item_id": "postgame:824298:AZ:824301",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-24T00:00:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "source_name": "Arizona Diamondbacks — Game Notes",
+          "url": "https://www.mlb.com/dbacks/news/game-notes",
+          "availability": "No September 23 postgame notes or postgame manager material was available in the indexed official-team page at check time."
+        },
+        {
+          "source_type": "OFFICIAL_MLB",
+          "source_name": "MLB Gameday",
+          "url": "https://www.milb.com/gameday/d-backs-vs-rockies/2026/09/23/824301/final",
+          "availability": "Confirmed the September 23 Arizona-at-Colorado game record; no manager/coach postgame declaration was available from the indexed game page."
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "source_name": "Arizona Sports — Alex Weiner",
+          "url": "https://arizonasports.com/mlb/arizona-diamondbacks/diamondbacks-hold-on-to-beat-rockies-keep-elimination-number-at-2",
+          "availability": "Postgame recap checked. It reported Arizona's 5-3 win and Jonathan Loáisiga finishing the game, but contained no attributable manager/coach declaration establishing a next-game restriction, availability ruling, lineup plan, or pitching limit."
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "source_name": "Arizona Diamondbacks manager/coach postgame availability",
+          "url": "https://www.mlb.com/dbacks",
+          "availability": "SOURCE_UNAVAILABLE: no accessible, attributable September 23 postgame manager/coach media transcript or report was located in the checked official/local-source coverage."
+        }
+      ],
+      "research_status": "FAILED",
+      "notes": "No material September 23 postgame declaration was located that plausibly carries forward to Arizona's September 24 game. Prior-game reliever usage alone is not represented as a manager declaration or an availability restriction. | VALIDATION: invalid result 'NO_MATERIAL_DECLARATION_FOUND'",
+      "game_pk": 824301,
+      "today_game_pk": 824298,
+      "team": "AZ",
+      "pass_type": "POSTGAME_TO_NEXT_GAME",
+      "previous_game_pk": 824301,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [
+        {
+          "evidence_label": "UNRESOLVED",
+          "topic": "Next-game availability or restriction",
+          "comment": "No direct Arizona manager/coach or club statement was found declaring a September 24 restriction, rest requirement, pitching limit, lineup change, or injury-related availability status arising from the September 23 game."
+        }
+      ],
+      "queue_fingerprint": "18dd6b49e162daba842010a0957bd790bd36d9bc0cbe56d0086569b8326de85a"
+    },
+    {
+      "item_id": "postgame:824298:COL:824301",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-24T20:38:02+00:00",
+      "sources_checked": [
+        {
+          "source_name": "Colorado Rockies official site",
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/rockies",
+          "checked_for": "Club postgame coverage, transactions, and next-game-relevant availability information."
+        },
+        {
+          "source_name": "MLB Statcast game preview",
+          "source_type": "OFFICIAL_MLB",
+          "url": "https://baseballsavant.mlb.com/preview?game_pk=824301",
+          "checked_for": "Game identification and official MLB game context."
+        },
+        {
+          "source_name": "CBS Sports game recap",
+          "source_type": "NATIONAL_MEDIA",
+          "url": "https://www.cbssports.com/mlb/gametracker/recap/MLB_20260923_ARI%40COL/",
+          "checked_for": "Postgame result/context; no manager declaration located."
+        },
+        {
+          "source_name": "Roundtable Sports via Yahoo Sports",
+          "source_type": "LOCAL_MEDIA",
+          "url": "https://sports.yahoo.com/articles/rockies-five-more-games-pick-211900224.html",
+          "checked_for": "Local postgame coverage; no directly attributed manager/coach declaration relevant to the September 24 game located."
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "The September 23 game was completed before the September 24 target game, but the available official-club and postgame coverage reviewed did not yield a direct, next-game-relevant Colorado manager/coach or club declaration. Manager/coach postgame media was not available in the sources located, and a qualifying credentialed beat-report declaration could not be verified. Therefore the negative-evidence contract for NO_MATERIAL_DECLARATION_FOUND is not satisfied.",
+      "game_pk": 824301,
+      "today_game_pk": 824298,
+      "team": "COL",
+      "pass_type": "POSTGAME",
+      "previous_game_pk": 824301,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "0a2e24e62ff22871168b873226ebe46d42b0de1592256bf13af95d6269d17288"
+    },
+    {
+      "item_id": "pregame:823411:MIL:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-24T18:30:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://baseballsavant.mlb.com/preview?game_date=2026-09-24&game_pk=823411",
+          "published_at": null
+        },
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/brewers/video",
+          "published_at": null
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://www.mlb.com/brewers/video",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.jsonline.com/sports/brewers/",
+          "published_at": null
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "FINAL_DELTA search found no new or superseding direct Pat Murphy/coaching-staff declaration after the supplied early-state check concerning Shane Drohan's workload, restriction, or planned usage. Official preview material confirms Drohan as the scheduled Milwaukee starter, but does not state a usage limit. No qualifying credentialed beat report with an attributable manager/club declaration was located.",
+      "game_pk": 823411,
+      "today_game_pk": 823411,
+      "team": "MIL",
+      "pass_type": "FINAL",
+      "previous_game_pk": null,
+      "previous_game_date": null,
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "b7568c93470be14d5c52241abcba527b5f1b119bf3e243a0ad6a27b9ed552ea2"
+    },
+    {
+      "item_id": "postgame:823411:MIL:823410",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-24T18:30:00Z",
+      "sources_checked": [
+        {
+          "source_type": "OFFICIAL_TEAM",
+          "url": "https://www.mlb.com/brewers/video",
+          "published_at": null
+        },
+        {
+          "source_type": "MANAGER_COACH_MEDIA",
+          "url": "https://www.mlb.com/brewers/video",
+          "published_at": null
+        },
+        {
+          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+          "url": "https://www.jsonline.com/sports/brewers/",
+          "published_at": null
+        },
+        {
+          "source_type": "NATIONAL_REPORTER",
+          "url": "https://www.aol.com/articles/wednesdays-transactions-191229000.html",
+          "published_at": "2026-09-23T19:12:29Z"
+        }
+      ],
+      "research_status": "COMPLETED",
+      "notes": "No qualifying postgame manager/coach declaration from game 823410 was located that plausibly changes Milwaukee's next-game pitching projection. A reported September 23 transaction lists LHP Colton Gordon as optioned and RHP Lyon Richardson selected, but the available report did not provide a direct club or manager statement and therefore is not normalized as a confirmed declaration.",
+      "game_pk": 823410,
+      "today_game_pk": 823411,
+      "team": "MIL",
+      "pass_type": null,
+      "previous_game_pk": 823410,
+      "previous_game_date": "2026-09-23",
+      "result": "INCONCLUSIVE",
+      "declarations": [],
+      "comments": [],
+      "queue_fingerprint": "170fb4b4c52ceaeb534349e9f7d4bd810f9842f480908ed65e04d0c1f3e8c665"
     },
     {
       "item_id": "pregame:824059:CWS:FINAL",
@@ -336,50 +604,6 @@
       "declarations": [],
       "comments": [],
       "queue_fingerprint": "97970cd3e93aab0ffc1b4157bd2905fad39f96617d67f931b683130633403d1e"
-    },
-    {
-      "item_id": "postgame:822842:NYM:822841",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-24T18:35:00Z",
-      "sources_checked": [
-        {
-          "source_type": "OFFICIAL_TEAM",
-          "url": "https://www.mlb.com/mets",
-          "published_at": null
-        },
-        {
-          "source_type": "OFFICIAL_MLB",
-          "url": "https://www.mlb.com/video/topic/mets-manager-postgame",
-          "published_at": null
-        },
-        {
-          "source_type": "MANAGER_COACH_MEDIA",
-          "url": "https://sny.tv/video/andy-green-marcus-semien-and-brett-baty-on-mets-7-2-win-over-rangers",
-          "published_at": "2026-09-24T03:34:00Z"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://sny.tv/articles/mets-rangers-takeaways-9-23-26",
-          "published_at": "2026-09-24T00:00:00Z"
-        },
-        {
-          "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
-          "url": "https://www.amny.com/sports/brett-baty-hot-stretch-27-9-24-26/",
-          "published_at": "2026-09-24T00:00:00Z"
-        }
-      ],
-      "research_status": "FAILED",
-      "notes": "Postgame manager coverage was reviewed for carry-forward information plausibly relevant to the September 24 game. The located manager comments concerned Marcus Semien and Brett Baty, not Zac Thornton's availability, workload, role, health, or a next-game operational plan. No material carry-forward declaration was found. | VALIDATION: invalid result 'COMPLETED'",
-      "game_pk": 822841,
-      "today_game_pk": 822842,
-      "team": "NYM",
-      "pass_type": null,
-      "previous_game_pk": 822841,
-      "previous_game_date": "2026-09-23",
-      "result": "INCONCLUSIVE",
-      "declarations": [],
-      "comments": [],
-      "queue_fingerprint": "8f7f7c5d413c8c0733952e17135191f5b2e403f8d64a7abec58d76ddefbb0eab"
     },
     {
       "item_id": "pregame:823326:STL:EARLY",
@@ -859,7 +1083,7 @@
       "queue_fingerprint": "2676a73d079a843d4dc9508c093528571712cb1deedb654e0761f698a148e132"
     }
   ],
-  "researched_at": "2026-09-24T17:37:42+00:00",
+  "researched_at": "2026-09-24T20:38:35+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -870,14 +1094,14 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-24T17:37:42+00:00",
+    "last_run_at": "2026-09-24T20:38:35+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
-      "input_tokens": 165062,
+      "input_tokens": 135421,
       "cached_input_tokens": 24805,
-      "output_tokens": 9246,
-      "reasoning_tokens": 5951,
-      "total_tokens": 174308,
+      "output_tokens": 8059,
+      "reasoning_tokens": 5375,
+      "total_tokens": 143480,
       "estimated_cost_usd": 0.0
     },
     "audit": [
@@ -887,15 +1111,15 @@
         "items": [
           "postgame:823326:STL:823327"
         ],
-        "response_id": "resp_0db55e105d3302d2016ab55f546a1c87d2bc0c2b4ac898d299",
+        "response_id": "resp_0162d9659208bd9e016ab58986905887d290e8236b068eb503",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 64,
+        "web_sources_seen": 54,
         "usage": {
-          "input_tokens": 22207,
+          "input_tokens": 21839,
           "cached_input_tokens": 0,
-          "output_tokens": 1136,
-          "reasoning_tokens": 733,
-          "total_tokens": 23343,
+          "output_tokens": 1674,
+          "reasoning_tokens": 1054,
+          "total_tokens": 23513,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
@@ -909,132 +1133,123 @@
         "research_mode": "POSTGAME"
       },
       {
-        "team": "CWS",
-        "game_pk": 824059,
-        "items": [
-          "pregame:824059:CWS:FINAL",
-          "postgame:824059:CWS:824060"
-        ],
-        "response_id": "resp_0e6e0f41713be5d3016ab55f69884087d2a1ef10b444403ce5",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 61,
-        "usage": {
-          "input_tokens": 30371,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1539,
-          "reasoning_tokens": 946,
-          "total_tokens": 31910,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 3,
-        "prompt_chars": 3015,
-        "estimated_prompt_tokens": 754,
-        "research_mode": "FINAL_DELTA"
-      },
-      {
-        "team": "KC",
-        "game_pk": 824059,
-        "items": [
-          "pregame:824059:KC:FINAL"
-        ],
-        "response_id": "resp_07c50deafb622e46016ab55f87fec487d2b487bf05216a9db4",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 51,
-        "usage": {
-          "input_tokens": 30844,
-          "cached_input_tokens": 4961,
-          "output_tokens": 2179,
-          "reasoning_tokens": 1705,
-          "total_tokens": 33023,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:824059:KC:FINAL": [
-            "invalid result 'COMPLETED'"
-          ]
-        },
-        "tool_budget": 3,
-        "prompt_chars": 2823,
-        "estimated_prompt_tokens": 706,
-        "research_mode": "FINAL_DELTA"
-      },
-      {
-        "team": "MIA",
-        "game_pk": 824623,
-        "items": [
-          "pregame:824623:MIA:FINAL"
-        ],
-        "response_id": "resp_02dea8456da872f9016ab55fa7ba2087d2bbcdc4ef8af97db1",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 42,
-        "usage": {
-          "input_tokens": 22708,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1358,
-          "reasoning_tokens": 690,
-          "total_tokens": 24066,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {
-          "pregame:824623:MIA:FINAL": [
-            "invalid result 'COMPLETED'"
-          ]
-        },
-        "tool_budget": 3,
-        "prompt_chars": 2859,
-        "estimated_prompt_tokens": 715,
-        "research_mode": "FINAL_DELTA"
-      },
-      {
-        "team": "CHC",
-        "game_pk": 824623,
-        "items": [
-          "pregame:824623:CHC:FINAL"
-        ],
-        "response_id": "resp_0154d0061d2929be016ab55fb9c9ec87d2ba974ca21c525db9",
-        "model": "gpt-5.6-terra",
-        "web_sources_seen": 58,
-        "usage": {
-          "input_tokens": 30578,
-          "cached_input_tokens": 4961,
-          "output_tokens": 1312,
-          "reasoning_tokens": 934,
-          "total_tokens": 31890,
-          "estimated_cost_usd": 0.0
-        },
-        "validation_errors": {},
-        "tool_budget": 3,
-        "prompt_chars": 2636,
-        "estimated_prompt_tokens": 659,
-        "research_mode": "FINAL_DELTA"
-      },
-      {
         "team": "NYM",
         "game_pk": 822842,
         "items": [
-          "pregame:822842:NYM:FINAL",
           "postgame:822842:NYM:822841"
         ],
-        "response_id": "resp_0c75b0953d2282d2016ab55fcfa33887d289d575ed6f251e1c",
+        "response_id": "resp_08670c054861c335016ab589ad1c1487d2a779370992c59c7f",
         "model": "gpt-5.6-terra",
-        "web_sources_seen": 61,
+        "web_sources_seen": 34,
         "usage": {
-          "input_tokens": 28354,
+          "input_tokens": 21999,
           "cached_input_tokens": 4961,
-          "output_tokens": 1722,
-          "reasoning_tokens": 943,
-          "total_tokens": 30076,
+          "output_tokens": 890,
+          "reasoning_tokens": 641,
+          "total_tokens": 22889,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 656,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "TEX",
+        "game_pk": 822842,
+        "items": [
+          "postgame:822842:TEX:822841"
+        ],
+        "response_id": "resp_0a1483f5ac661e19016ab589c37ba487d2838deadef85d6875",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 47,
+        "usage": {
+          "input_tokens": 22032,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1427,
+          "reasoning_tokens": 956,
+          "total_tokens": 23459,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 656,
+        "estimated_prompt_tokens": 164,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "AZ",
+        "game_pk": 824298,
+        "items": [
+          "postgame:824298:AZ:824301"
+        ],
+        "response_id": "resp_00ec48566e880cd8016ab589e73d7487d28dbc798021f9d2fa",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 49,
+        "usage": {
+          "input_tokens": 22226,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1323,
+          "reasoning_tokens": 883,
+          "total_tokens": 23549,
           "estimated_cost_usd": 0.0
         },
         "validation_errors": {
-          "postgame:822842:NYM:822841": [
-            "invalid result 'COMPLETED'"
+          "postgame:824298:AZ:824301": [
+            "invalid result 'NO_MATERIAL_DECLARATION_FOUND'"
           ]
         },
+        "tool_budget": 2,
+        "prompt_chars": 647,
+        "estimated_prompt_tokens": 162,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "COL",
+        "game_pk": 824298,
+        "items": [
+          "postgame:824298:COL:824301"
+        ],
+        "response_id": "resp_05770fed83c863ad016ab58a114df887d2bf0dff86a289cb93",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 54,
+        "usage": {
+          "input_tokens": 20487,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1103,
+          "reasoning_tokens": 819,
+          "total_tokens": 21590,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
+        "tool_budget": 2,
+        "prompt_chars": 649,
+        "estimated_prompt_tokens": 163,
+        "research_mode": "POSTGAME"
+      },
+      {
+        "team": "MIL",
+        "game_pk": 823411,
+        "items": [
+          "pregame:823411:MIL:FINAL",
+          "postgame:823411:MIL:823410"
+        ],
+        "response_id": "resp_04befb5205087e6d016ab58a2bfd3087d2b25a95529f1a5936",
+        "model": "gpt-5.6-terra",
+        "web_sources_seen": 41,
+        "usage": {
+          "input_tokens": 26838,
+          "cached_input_tokens": 4961,
+          "output_tokens": 1642,
+          "reasoning_tokens": 1022,
+          "total_tokens": 28480,
+          "estimated_cost_usd": 0.0
+        },
+        "validation_errors": {},
         "tool_budget": 3,
-        "prompt_chars": 2820,
-        "estimated_prompt_tokens": 705,
+        "prompt_chars": 3024,
+        "estimated_prompt_tokens": 756,
         "research_mode": "FINAL_DELTA"
       }
     ]

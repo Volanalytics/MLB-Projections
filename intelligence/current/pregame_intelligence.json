@@ -1,6 +1,6 @@
 {
   "date": "2026-09-24",
-  "generated_at": "2026-09-24T17:37:43+00:00",
+  "generated_at": "2026-09-24T20:38:35+00:00",
   "note": "Report-layer external intelligence. Manager media and previous-game postgame comments are append-only research streams.",
   "games": {
     "823326": {
@@ -433,6 +433,239 @@
           }
         ],
         "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "CONFIRMED",
+        "teams": {
+          "NYM": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-24T20:36:17+00:00",
+            "previous_game_pk": 822841,
+            "previous_game_date": "2026-09-23",
+            "passes": [
+              {
+                "checked_at": "2026-09-24T20:36:17+00:00",
+                "sources_checked": [
+                  {
+                    "source_name": "New York Mets official site",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/mets"
+                  },
+                  {
+                    "source_name": "Mets Manager Postgame Videos",
+                    "source_type": "OFFICIAL_TEAM_MANAGER_MEDIA",
+                    "url": "https://www.mlb.com/video/topic/mets-manager-postgame"
+                  },
+                  {
+                    "source_name": "MLB Statcast Game Preview: New York Mets at Texas Rangers — September 23, 2026",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://baseballsavant.mlb.com/preview?game_date=2026-09-23&game_pk=822841"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The official Mets and MLB game sources were checked. No September 23, 2026 Mets manager postgame availability or official club postgame item carrying forward a material, next-game-relevant declaration was available in the retrieved material. A credentialed beat/local postgame source could not be obtained before the research cutoff; therefore the negative-evidence contract for COMPLETED is not satisfied."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          },
+          "TEX": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-24T20:36:53+00:00",
+            "previous_game_pk": 822841,
+            "previous_game_date": "2026-09-23",
+            "passes": [
+              {
+                "checked_at": "2026-09-24T20:36:53+00:00",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Texas Rangers / MLB.com",
+                    "url": "https://www.mlb.com/rangers/video/topic/rangers-manager-postgame",
+                    "access_status": "CHECKED",
+                    "finding": "Official Rangers manager-postgame video index was checked; no September 23, 2026 postgame availability/deployment declaration was retrievable in the indexed material."
+                  },
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "source_name": "Texas Rangers / MLB.com",
+                    "url": "https://www.mlb.com/press-release/press-release-texas-rangers-homestand-information-for-september-15-24-2026",
+                    "access_status": "CHECKED",
+                    "finding": "Official club homestand material confirmed the September 23 Mets-Rangers game context but contained no postgame personnel, pitching-plan, or availability declaration."
+                  },
+                  {
+                    "source_type": "NATIONAL_OR_WIRE",
+                    "source_name": "Yahoo Sports / Associated Press syndication",
+                    "url": "https://staging-aws.sports.yahoo.com/articles/mets-play-spoiler-three-long-025656404.html",
+                    "access_status": "CHECKED",
+                    "finding": "Game report identified Jacob Latz as the Rangers reliever used in the late tied-game situation, but the indexed material did not provide a direct Rangers manager/coach declaration establishing a next-game restriction or availability decision."
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "source_name": "Dallas Sports Journal",
+                    "url": "https://dallassportsjournal.com/skip-schumaker-rangers-defense-misplays-mets-outlier/",
+                    "access_status": "CHECKED",
+                    "finding": "Local postgame-related reporting was located, but the available indexed material concerned the prior September 22 game rather than a September 23 postgame declaration that could be carried into the September 24 game."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "No material September 23 postgame declaration from a Rangers manager/coach or an adequately attributed credentialed clubhouse report was retrievable before the September 24 game. The official-manager-media and beat/local portions of the negative-evidence contract could not be fully satisfied; therefore no negative declaration result is asserted."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "824298": {
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "COL": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-24T20:38:02+00:00",
+            "previous_game_pk": 824301,
+            "previous_game_date": "2026-09-23",
+            "passes": [
+              {
+                "checked_at": "2026-09-24T20:38:02+00:00",
+                "sources_checked": [
+                  {
+                    "source_name": "Colorado Rockies official site",
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/rockies",
+                    "checked_for": "Club postgame coverage, transactions, and next-game-relevant availability information."
+                  },
+                  {
+                    "source_name": "MLB Statcast game preview",
+                    "source_type": "OFFICIAL_MLB",
+                    "url": "https://baseballsavant.mlb.com/preview?game_pk=824301",
+                    "checked_for": "Game identification and official MLB game context."
+                  },
+                  {
+                    "source_name": "CBS Sports game recap",
+                    "source_type": "NATIONAL_MEDIA",
+                    "url": "https://www.cbssports.com/mlb/gametracker/recap/MLB_20260923_ARI%40COL/",
+                    "checked_for": "Postgame result/context; no manager declaration located."
+                  },
+                  {
+                    "source_name": "Roundtable Sports via Yahoo Sports",
+                    "source_type": "LOCAL_MEDIA",
+                    "url": "https://sports.yahoo.com/articles/rockies-five-more-games-pick-211900224.html",
+                    "checked_for": "Local postgame coverage; no directly attributed manager/coach declaration relevant to the September 24 game located."
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "The September 23 game was completed before the September 24 target game, but the available official-club and postgame coverage reviewed did not yield a direct, next-game-relevant Colorado manager/coach or club declaration. Manager/coach postgame media was not available in the sources located, and a qualifying credentialed beat-report declaration could not be verified. Therefore the negative-evidence contract for NO_MATERIAL_DECLARATION_FOUND is not satisfied."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
+        "source": "manager_media_research.py external research results"
+      }
+    },
+    "823411": {
+      "manager_media": {
+        "research_status": "COMPLETED",
+        "last_checked_at": "2026-09-24T18:30:00Z",
+        "passes": [
+          {
+            "checked_at": "2026-09-24T18:30:00Z",
+            "team": "MIL",
+            "teams": [
+              "MIL"
+            ],
+            "pass_type": "FINAL",
+            "sources_checked": [
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://baseballsavant.mlb.com/preview?game_date=2026-09-24&game_pk=823411",
+                "published_at": null
+              },
+              {
+                "source_type": "OFFICIAL_TEAM",
+                "url": "https://www.mlb.com/brewers/video",
+                "published_at": null
+              },
+              {
+                "source_type": "MANAGER_COACH_MEDIA",
+                "url": "https://www.mlb.com/brewers/video",
+                "published_at": null
+              },
+              {
+                "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                "url": "https://www.jsonline.com/sports/brewers/",
+                "published_at": null
+              }
+            ],
+            "result": "INCONCLUSIVE",
+            "note": "FINAL_DELTA search found no new or superseding direct Pat Murphy/coaching-staff declaration after the supplied early-state check concerning Shane Drohan's workload, restriction, or planned usage. Official preview material confirms Drohan as the scheduled Milwaukee starter, but does not state a usage limit. No qualifying credentialed beat report with an attributable manager/club declaration was located."
+          }
+        ],
+        "declarations": [],
+        "source": "manager_media_research.py external research results"
+      },
+      "previous_game_postgame": {
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "teams": {
+          "MIL": {
+            "research_status": "COMPLETED",
+            "last_checked_at": "2026-09-24T18:30:00Z",
+            "previous_game_pk": 823410,
+            "previous_game_date": "2026-09-23",
+            "passes": [
+              {
+                "checked_at": "2026-09-24T18:30:00Z",
+                "sources_checked": [
+                  {
+                    "source_type": "OFFICIAL_TEAM",
+                    "url": "https://www.mlb.com/brewers/video",
+                    "published_at": null
+                  },
+                  {
+                    "source_type": "MANAGER_COACH_MEDIA",
+                    "url": "https://www.mlb.com/brewers/video",
+                    "published_at": null
+                  },
+                  {
+                    "source_type": "BEAT_OR_LOCAL_CREDENTIALLED",
+                    "url": "https://www.jsonline.com/sports/brewers/",
+                    "published_at": null
+                  },
+                  {
+                    "source_type": "NATIONAL_REPORTER",
+                    "url": "https://www.aol.com/articles/wednesdays-transactions-191229000.html",
+                    "published_at": "2026-09-23T19:12:29Z"
+                  }
+                ],
+                "result": "INCONCLUSIVE",
+                "note": "No qualifying postgame manager/coach declaration from game 823410 was located that plausibly changes Milwaukee's next-game pitching projection. A reported September 23 transaction lists LHP Colton Gordon as optioned and RHP Lyon Richardson selected, but the available report did not provide a direct club or manager statement and therefore is not normalized as a confirmed declaration."
+              }
+            ],
+            "comments": [],
+            "current_assessment": {
+              "status": "NO_MATERIAL_CARRY_FORWARD_COMMENT_FOUND",
+              "count": 0,
+              "note": "No material carry-forward postgame comment found."
+            }
+          }
+        },
         "source": "manager_media_research.py external research results"
       }
     }
