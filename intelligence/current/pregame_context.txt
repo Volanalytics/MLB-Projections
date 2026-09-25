@@ -1,10 +1,10 @@
 MLB V2 PREGAME CONTEXT - 2026-09-25
-generated 2026-09-25T14:36:04+00:00
+generated 2026-09-25T17:36:06+00:00
 ================================================================================================
 Pipeline complete: 0/17 games
 Intelligence readiness: EARLY=4, PARTIAL=13, DECISION_READY=0, FINAL=0
-Pipeline blockers: 123
-Mandatory Intelligence research tasks: 106
+Pipeline blockers: 118
+Mandatory Intelligence research tasks: 105
 
 CHC @ BOS  gamePk 824703  Fenway Park
 ------------------------------------------------------------------------------------------------
@@ -15,17 +15,17 @@ HOME SP: PROVISIONAL - Alec Gamboa
   WORKLOAD: model ~4 BF | external ~None BF | delta=None | UNRESOLVED
 AWAY LINEUP: PROVISIONAL: 1.Pete Crow-Armstrong, 2.Seiya Suzuki, 3.Tyrone Taylor, 4.Nico Hoerner, 5.Ian Happ, 6.Michael Busch, 7.Carson Kelly, 8.Matt Shaw, 9.Dansby Swanson
 HOME LINEUP: PROVISIONAL: 1.Roman Anthony, 2.Mickey Gasper, 3.Adley Rutschman, 4.Wilyer Abreu, 5.Trevor Story, 6.Ceddanne Rafaela, 7.Nick Sogard, 8.Caleb Durbin, 9.Jarren Duran
-HP UMPIRE: NOT_YET_AVAILABLE - TBD
-FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+HP UMPIRE: MISSED_PREGAME_CAPTURE - TBD
+FULL CREW: None
+WEATHER: MISSED_PREGAME_CAPTURE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: LIVE | frozen=True | pregame runs=2
 MODEL TOTAL: 9.17
-PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=PRESERVED_PREGAME | quotes=1
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.67 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.50 | consensus=n/a | difference=n/a runs
-MANAGER/COACH MEDIA: NOT_STARTED | freshness=NOT_CHECKED | last checked=n/a
+MANAGER/COACH MEDIA: MISSED_PREGAME_CAPTURE | freshness=FROZEN_PREGAME | last checked=n/a
   ASSESSMENT: NOT_RESEARCHED - Manager/coach media research required.
   HISTORY: 0 research pass(es), 0 declaration(s), 0 computed conflict(s)
 PREVIOUS-GAME POSTGAME: INTELLIGENCE_RESEARCH_REQUIRED
@@ -38,15 +38,14 @@ PIPELINE BLOCKERS:
   - home_lineup: PROVISIONAL
   - away_starter: PROVISIONAL
   - home_starter: PROVISIONAL
-  - home_plate_umpire: NOT_YET_AVAILABLE
-  - weather: NOT_YET_AVAILABLE
+  - home_plate_umpire: MISSED_PREGAME_CAPTURE
+  - weather: MISSED_PREGAME_CAPTURE
   - stadium_relative_wind: NOT_YET_AVAILABLE
 INTELLIGENCE RESEARCH:
   - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
   - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
   - away_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
   - home_starter_workload_restriction: INTELLIGENCE_RESEARCH_REQUIRED
-  - full_umpire_crew: INTELLIGENCE_RESEARCH_REQUIRED
   - market_consensus_cross_check: INTELLIGENCE_RESEARCH_REQUIRED
 
 BAL @ NYY  gamePk 823491  Yankee Stadium
@@ -54,17 +53,17 @@ BAL @ NYY  gamePk 823491  Yankee Stadium
 INTELLIGENCE READINESS: PARTIAL - market/bullpens available but final lineup/starter/environment confirmation incomplete
 AWAY SP: PROVISIONAL - Trevor Rogers
   WORKLOAD: model ~25 BF | external ~None BF | delta=None | UNRESOLVED
-HOME SP: PROVISIONAL - Brendan Beck
+HOME SP: CONFIRMED - Brendan Beck
   WORKLOAD: model ~17 BF | external ~None BF | delta=None | UNRESOLVED
 AWAY LINEUP: PROVISIONAL: 1.Dylan Beavers, 2.Peter Alonso, 3.Gunnar Henderson, 4.Coby Mayo, 5.Christian Encarnacion-Strand, 6.Colton Cowser, 7.Jeremiah Jackson, 8.Leody Taveras, 9.Carlos Narvaez
-HOME LINEUP: PROVISIONAL: 1.Paul Goldschmidt, 2.Cody Bellinger, 3.Heliot Ramos, 4.Ben Rice, 5.Amed Rosario, 6.Spencer Jones, 7.George Lombard Jr., 8.Austin Wells, 9.Anthony Volpe
-HP UMPIRE: NOT_YET_AVAILABLE - TBD
+HOME LINEUP: CONFIRMED: 1.Paul Goldschmidt, 2.Ben Rice, 3.Heliot Ramos, 4.Amed Rosario, 5.George Lombard Jr., 6.Spencer Jones, 7.Anthony Volpe, 8.Ali Sanchez, 9.Jose Caballero
+HP UMPIRE: CONFIRMED - Edwin Moscoso
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
-WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
+WEATHER: CONFIRMED - 71F, 20 mph, L To R, relative=cross
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 8.93
-PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.43 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.50 | consensus=n/a | difference=n/a runs
@@ -78,12 +77,7 @@ RELIEVER DB: BAL CONFIRMED (0 taxed / 0 leverage-relevant); NYY CONFIRMED (2 tax
   NYY: NOT_STARTED | prev game=n/a pk=n/a | NOT_RESEARCHED | comments=0
 PIPELINE BLOCKERS:
   - away_lineup: PROVISIONAL
-  - home_lineup: PROVISIONAL
   - away_starter: PROVISIONAL
-  - home_starter: PROVISIONAL
-  - home_plate_umpire: NOT_YET_AVAILABLE
-  - weather: NOT_YET_AVAILABLE
-  - stadium_relative_wind: NOT_YET_AVAILABLE
 INTELLIGENCE RESEARCH:
   - manager_coach_pregame_media: INTELLIGENCE_RESEARCH_REQUIRED
   - previous_game_postgame_comments: INTELLIGENCE_RESEARCH_REQUIRED
@@ -105,7 +99,7 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 9.49
 PIPELINE MARKET: NOT_YET_AVAILABLE - n/a total None | preservation=current | quotes=0
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -149,9 +143,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 10.02
-PIPELINE MARKET: CONFIRMED - betonlineag total 6.0 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 6.0 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+4.02 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.00 | consensus=n/a | difference=n/a runs
@@ -192,9 +186,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 9.36
-PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.86 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.50 | consensus=n/a | difference=n/a runs
@@ -235,9 +229,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 9.13
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.13 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
@@ -278,7 +272,7 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 10.34
 PIPELINE MARKET: NOT_YET_AVAILABLE - n/a total None | preservation=current | quotes=0
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -322,7 +316,7 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: INTELLIGENCE_RESEARCH_REQUIRED - research required
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 9.34
 PIPELINE MARKET: NOT_YET_AVAILABLE - n/a total None | preservation=current | quotes=0
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -367,7 +361,7 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: INTELLIGENCE_RESEARCH_REQUIRED - research required
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 8.16
 PIPELINE MARKET: NOT_YET_AVAILABLE - n/a total None | preservation=current | quotes=0
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
@@ -412,9 +406,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: INTELLIGENCE_RESEARCH_REQUIRED - research required
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 9.21
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.21 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
@@ -456,9 +450,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 8.19
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.19 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.00 | consensus=n/a | difference=n/a runs
@@ -499,9 +493,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 9.53
-PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 8.0 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.53 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=8.00 | consensus=n/a | difference=n/a runs
@@ -542,9 +536,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 8.62
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.62 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.00 | consensus=n/a | difference=n/a runs
@@ -585,9 +579,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 8.15
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.5 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+0.65 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.50 | consensus=n/a | difference=n/a runs
@@ -628,9 +622,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 11.08
-PIPELINE MARKET: CONFIRMED - betonlineag total 9.0 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 9.0 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+2.08 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=9.00 | consensus=n/a | difference=n/a runs
@@ -671,9 +665,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: INTELLIGENCE_RESEARCH_REQUIRED - research required
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 7.84
-PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 6.5 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.34 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=6.50 | consensus=n/a | difference=n/a runs
@@ -715,9 +709,9 @@ HP UMPIRE: NOT_YET_AVAILABLE - TBD
 FULL CREW: INTELLIGENCE_RESEARCH_REQUIRED
 WEATHER: NOT_YET_AVAILABLE - NoneF, wind TBD, relative=None
 ROOF: NOT_APPLICABLE - open_air
-STATE PHASE: PRE_GAME | frozen=False | pregame runs=2
+STATE PHASE: PRE_GAME | frozen=False | pregame runs=4
 MODEL TOTAL: 8.36
-PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=1
+PIPELINE MARKET: CONFIRMED - betonlineag total 7.0 | preservation=current | quotes=2
 CONSENSUS MARKET: INTELLIGENCE_RESEARCH_REQUIRED - total None | source=external intelligence file
 EDGE DETERIORATION: CONSENSUS_RESEARCH_REQUIRED | original=+1.36 runs | current=n/a runs | retained=n/a
 MARKET DIVERGENCE: CONSENSUS_RESEARCH_REQUIRED | pipeline=7.00 | consensus=n/a | difference=n/a runs
