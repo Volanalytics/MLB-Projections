@@ -2,7 +2,7 @@
   "schema_version": 5,
   "date": "2026-09-26",
   "created_at": "2026-09-26T17:35:03+00:00",
-  "updated_at": "2026-09-26T17:35:53+00:00",
+  "updated_at": "2026-09-26T20:36:07+00:00",
   "runs": [
     {
       "run_at": "2026-09-26T17:35:03+00:00",
@@ -17,6 +17,20 @@
       "pre_game": 12,
       "live": 2,
       "final": 0
+    },
+    {
+      "run_at": "2026-09-26T20:35:03+00:00",
+      "games": 14,
+      "pre_game": 9,
+      "live": 4,
+      "final": 1
+    },
+    {
+      "run_at": "2026-09-26T20:36:07+00:00",
+      "games": 14,
+      "pre_game": 9,
+      "live": 4,
+      "final": 1
     }
   ],
   "games": {
@@ -25,159 +39,159 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T16:35:00Z",
-      "status": "In Progress",
+      "status": "Final",
       "venue": "Nationals Park",
       "away_team": "NYM",
       "home_team": "WSH",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
-        "current_phase": "LIVE",
-        "run_count": 2,
+        "last_run_at": "2026-09-26T20:36:07+00:00",
+        "current_phase": "FINAL",
+        "run_count": 4,
         "frozen_at": "2026-09-26T17:35:03+00:00",
         "frozen": true
       },
       "away_lineup": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "lineup_current",
-        "reason": "No eligible pregame away_lineup was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame away_lineup was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "home_lineup": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "lineup_current",
-        "reason": "No eligible pregame home_lineup was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame home_lineup was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "away_starter": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "lineup_current",
-        "reason": "No eligible pregame away_starter was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame away_starter was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "home_starter": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "lineup_current",
-        "reason": "No eligible pregame home_starter was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame home_starter was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "umpire": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "reason": "No eligible pregame umpire was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame umpire was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "weather": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "game_context",
-        "reason": "No eligible pregame weather was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame weather was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "roof": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "venue classification",
-        "reason": "No eligible pregame roof was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame roof was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "away_bullpen": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "workload.bullpen_availability",
-        "reason": "No eligible pregame away_bullpen was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame away_bullpen was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "home_bullpen": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "workload.bullpen_availability",
-        "reason": "No eligible pregame home_bullpen was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame home_bullpen was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "away_reliever_db": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "direct DB query matching bullpen.py raw pitch workload",
-        "reason": "No eligible pregame away_reliever_db was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame away_reliever_db was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "home_reliever_db": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "direct DB query matching bullpen.py raw pitch workload",
-        "reason": "No eligible pregame home_reliever_db was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame home_reliever_db was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "model_projection": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "projections",
-        "reason": "No eligible pregame model_projection was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame model_projection was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "market_consensus": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "external intelligence file",
-        "reason": "No eligible pregame market_consensus was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame market_consensus was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "away_starter_workload": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": null,
-        "reason": "No eligible pregame away_starter_workload was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame away_starter_workload was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "home_starter_workload": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": null,
-        "reason": "No eligible pregame home_starter_workload was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame home_starter_workload was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
       "previous_game_postgame": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "external intelligence file",
-        "reason": "No eligible pregame previous_game_postgame was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame previous_game_postgame was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
@@ -205,9 +219,9 @@
       "market": {
         "status": "MISSED_PREGAME_CAPTURE",
         "source": "market_current",
-        "reason": "No eligible pregame market_total was preserved before the game entered LIVE. Current/live information is intentionally not backfilled.",
+        "reason": "No eligible pregame market_total was preserved before the game entered FINAL. Current/live information is intentionally not backfilled.",
         "_capture": {
-          "capture_phase": "LIVE",
+          "capture_phase": "FINAL",
           "preserved": false
         }
       },
@@ -354,15 +368,15 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T17:10:00Z",
-      "status": "Warmup",
+      "status": "In Progress",
       "venue": "Comerica Park",
       "away_team": "PIT",
       "home_team": "DET",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "LIVE",
-        "run_count": 2,
+        "run_count": 4,
         "frozen_at": "2026-09-26T17:35:03+00:00",
         "frozen": true
       },
@@ -683,18 +697,19 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T19:07:00Z",
-      "status": "Pre-Game",
+      "status": "In Progress",
       "venue": "Rogers Centre",
       "away_team": "CIN",
       "home_team": "TOR",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
-        "current_phase": "PRE_GAME",
-        "run_count": 2,
+        "last_run_at": "2026-09-26T20:36:07+00:00",
+        "current_phase": "LIVE",
+        "run_count": 4,
         "pregame_run_count": 2,
         "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
-        "frozen": false
+        "frozen": true,
+        "frozen_at": "2026-09-26T20:35:03+00:00"
       },
       "away_lineup": {
         "status": "CONFIRMED",
@@ -760,7 +775,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_lineup": {
@@ -827,7 +847,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter": {
@@ -840,7 +865,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter": {
@@ -853,7 +883,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "umpire": {
@@ -867,7 +902,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "weather": {
@@ -885,7 +925,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "roof": {
@@ -896,7 +941,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_bullpen": {
@@ -1044,7 +1094,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_bullpen": {
@@ -1192,7 +1247,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_reliever_db": {
@@ -1322,7 +1382,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_reliever_db": {
@@ -1500,7 +1565,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "model_projection": {
@@ -1519,7 +1589,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "market_consensus": {
@@ -1530,7 +1605,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter_workload": {
@@ -1551,7 +1631,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter_workload": {
@@ -1572,7 +1657,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "previous_game_postgame": {
@@ -1604,14 +1694,20 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "manager_media": {
-        "research_status": "NOT_STARTED",
+        "research_status": "MISSED_PREGAME_CAPTURE",
         "last_checked_at": null,
         "passes": [],
         "declarations": [],
+        "preservation_status": "MISSED_PREGAME_CAPTURE",
         "current_assessment": {
           "status": "NOT_RESEARCHED",
           "latest_material_at": null,
@@ -1620,11 +1716,10 @@
         },
         "source": "external intelligence file",
         "freshness": {
-          "status": "NOT_CHECKED",
+          "status": "FROZEN_PREGAME",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 91.1,
-          "reason": "no completed research pass"
+          "minutes_to_first_pitch": null
         },
         "reconciliation": []
       },
@@ -1644,7 +1739,7 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
         },
         "history_count": 1,
         "first_pregame_quote": {
@@ -1666,7 +1761,13 @@
           "home_ml": -165,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
-        }
+        },
+        "_current_retrieval": {
+          "status": "NOT_YET_AVAILABLE",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
+        },
+        "preservation_status": "PRESERVED_PREGAME"
       },
       "market_history": [
         {
@@ -1793,18 +1894,19 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T20:05:00Z",
-      "status": "Pre-Game",
+      "status": "In Progress",
       "venue": "Oracle Park",
       "away_team": "LAD",
       "home_team": "SF",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
-        "current_phase": "PRE_GAME",
-        "run_count": 2,
+        "last_run_at": "2026-09-26T20:36:07+00:00",
+        "current_phase": "LIVE",
+        "run_count": 4,
         "pregame_run_count": 2,
         "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
-        "frozen": false
+        "frozen": true,
+        "frozen_at": "2026-09-26T20:35:03+00:00"
       },
       "away_lineup": {
         "status": "PROVISIONAL",
@@ -1870,7 +1972,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_lineup": {
@@ -1937,7 +2044,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter": {
@@ -1950,7 +2062,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter": {
@@ -1963,7 +2080,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "umpire": {
@@ -1977,7 +2099,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "weather": {
@@ -1995,7 +2122,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "roof": {
@@ -2006,7 +2138,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "NOT_APPLICABLE",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_bullpen": {
@@ -2164,7 +2301,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_bullpen": {
@@ -2292,7 +2434,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_reliever_db": {
@@ -2448,7 +2595,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_reliever_db": {
@@ -2609,7 +2761,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "model_projection": {
@@ -2628,7 +2785,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "market_consensus": {
@@ -2639,7 +2801,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter_workload": {
@@ -2660,7 +2827,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter_workload": {
@@ -2681,7 +2853,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "previous_game_postgame": {
@@ -2713,14 +2890,20 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "manager_media": {
-        "research_status": "NOT_STARTED",
+        "research_status": "MISSED_PREGAME_CAPTURE",
         "last_checked_at": null,
         "passes": [],
         "declarations": [],
+        "preservation_status": "MISSED_PREGAME_CAPTURE",
         "current_assessment": {
           "status": "NOT_RESEARCHED",
           "latest_material_at": null,
@@ -2729,11 +2912,10 @@
         },
         "source": "external intelligence file",
         "freshness": {
-          "status": "NOT_CHECKED",
+          "status": "FROZEN_PREGAME",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 149.1,
-          "reason": "no completed research pass"
+          "minutes_to_first_pitch": null
         },
         "reconciliation": []
       },
@@ -2753,7 +2935,7 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
         },
         "history_count": 1,
         "first_pregame_quote": {
@@ -2775,7 +2957,13 @@
           "home_ml": 240,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
-        }
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
+        },
+        "preservation_status": "PRESERVED_PREGAME"
       },
       "market_history": [
         {
@@ -2911,219 +3099,209 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T20:10:00Z",
-      "status": "Scheduled",
+      "status": "Delayed Start",
       "venue": "Target Field",
       "away_team": "TEX",
       "home_team": "MIN",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
-            "mlbam_id": 677649,
-            "name": "Ezequiel Duran",
-            "position": null
+            "mlbam_id": 607043,
+            "name": "Brandon Nimmo",
+            "position": "RF"
           },
           {
             "slot": 2,
-            "mlbam_id": 608369,
-            "name": "Corey Seager",
-            "position": null
+            "mlbam_id": 694671,
+            "name": "Wyatt Langford",
+            "position": "LF"
           },
           {
             "slot": 3,
-            "mlbam_id": 673962,
-            "name": "Josh Jung",
-            "position": null
+            "mlbam_id": 608369,
+            "name": "Corey Seager",
+            "position": "SS"
           },
           {
             "slot": 4,
-            "mlbam_id": 607043,
-            "name": "Brandon Nimmo",
-            "position": null
+            "mlbam_id": 669394,
+            "name": "Jake Burger",
+            "position": "1B"
           },
           {
             "slot": 5,
-            "mlbam_id": 694671,
-            "name": "Wyatt Langford",
-            "position": null
+            "mlbam_id": 677649,
+            "name": "Ezequiel Duran",
+            "position": "3B"
           },
           {
             "slot": 6,
-            "mlbam_id": 669394,
-            "name": "Jake Burger",
-            "position": null
+            "mlbam_id": 670032,
+            "name": "Nicky Lopez",
+            "position": "2B"
           },
           {
             "slot": 7,
-            "mlbam_id": 670032,
-            "name": "Nicky Lopez",
-            "position": null
+            "mlbam_id": 643376,
+            "name": "Danny Jansen",
+            "position": "C"
           },
           {
             "slot": 8,
-            "mlbam_id": 643376,
-            "name": "Danny Jansen",
-            "position": null
+            "mlbam_id": 694497,
+            "name": "Evan Carter",
+            "position": "CF"
           },
           {
             "slot": 9,
-            "mlbam_id": 694497,
-            "name": "Evan Carter",
-            "position": null
+            "mlbam_id": 696030,
+            "name": "Alejandro Osuna",
+            "position": "DH"
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "home_lineup": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
             "mlbam_id": 807712,
             "name": "Luke Keaschall",
-            "position": null
+            "position": "RF"
           },
           {
             "slot": 2,
             "mlbam_id": 686797,
             "name": "Brooks Lee",
-            "position": null
+            "position": "3B"
           },
           {
             "slot": 3,
             "mlbam_id": 665019,
             "name": "Kody Clemens",
-            "position": null
+            "position": "2B"
           },
           {
             "slot": 4,
-            "mlbam_id": 680777,
-            "name": "Ryan Jeffers",
-            "position": null
+            "mlbam_id": 605137,
+            "name": "Josh Bell",
+            "position": "DH"
           },
           {
             "slot": 5,
-            "mlbam_id": 605137,
-            "name": "Josh Bell",
-            "position": null
+            "mlbam_id": 805805,
+            "name": "Walker Jenkins",
+            "position": "CF"
           },
           {
             "slot": 6,
-            "mlbam_id": 691181,
-            "name": "Emmanuel Rodriguez",
-            "position": null
+            "mlbam_id": 702176,
+            "name": "Alan Roden",
+            "position": "LF"
           },
           {
             "slot": 7,
-            "mlbam_id": 605170,
-            "name": "Victor Caratini",
-            "position": null
+            "mlbam_id": 668904,
+            "name": "Royce Lewis",
+            "position": "1B"
           },
           {
             "slot": 8,
-            "mlbam_id": 668952,
-            "name": "Ryan Kreidler",
-            "position": null
+            "mlbam_id": 605170,
+            "name": "Victor Caratini",
+            "position": "C"
           },
           {
             "slot": 9,
-            "mlbam_id": 805805,
-            "name": "Walker Jenkins",
-            "position": null
+            "mlbam_id": 701785,
+            "name": "Kaelen Culpepper",
+            "position": "SS"
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "away_starter": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
         "name": "Nathan Eovaldi",
         "mlbam_id": 543135,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "home_starter": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
         "name": "Bailey Ober",
         "mlbam_id": 641927,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "umpire": {
-        "status": "NOT_YET_AVAILABLE",
-        "id": null,
-        "name": null,
+        "status": "CONFIRMED",
+        "id": 482663,
+        "name": "David Rackley",
         "source": "game_context",
         "crew": [],
         "crew_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:03+00:00",
-          "last_captured_at": "2026-09-26T17:35:03+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "weather": {
-        "status": "NOT_YET_AVAILABLE",
+        "status": "CONFIRMED",
         "source": "game_context",
-        "condition": null,
-        "temp_f": null,
-        "wind_raw": null,
-        "wind_mph": null,
-        "wind_relative": null,
-        "wind_status": "NOT_YET_AVAILABLE",
+        "condition": "Drizzle",
+        "temp_f": 60,
+        "wind_raw": "11 mph, In From RF",
+        "wind_mph": 11,
+        "wind_relative": "in",
+        "wind_status": "CONFIRMED",
         "is_forecast": true,
-        "fetched_at": "2026-09-26T12:01:27",
+        "fetched_at": "2026-09-26T15:05:43",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:03+00:00",
-          "last_captured_at": "2026-09-26T17:35:03+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "roof": {
@@ -3131,8 +3309,8 @@
         "decision": "open_air",
         "source": "venue classification",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3269,8 +3447,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3377,8 +3555,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3533,8 +3711,8 @@
         "taxed_leverage": [],
         "taxed": [],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3663,8 +3841,8 @@
         "taxed_leverage": [],
         "taxed": [],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3682,8 +3860,8 @@
         "logged_at": "2026-09-26T10:10:37",
         "confirmed": 0,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3693,8 +3871,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3714,8 +3892,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3735,8 +3913,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3767,8 +3945,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -3789,7 +3967,7 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 154.1,
+          "minutes_to_first_pitch": -26.1,
           "reason": "no completed research pass"
         },
         "reconciliation": []
@@ -3799,20 +3977,20 @@
         "source": "market_current",
         "book": "betonlineag",
         "total": 7.5,
-        "over_price": -125,
-        "under_price": 105,
+        "over_price": -115,
+        "under_price": -105,
         "away_ml": -118,
         "home_ml": 107,
-        "captured_at": "2026-09-26T17:13:11+00:00",
+        "captured_at": "2026-09-26T20:21:03+00:00",
         "consensus_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "consensus_note": "MLB V2 stores its coherent comparison book. The Intelligence report must independently verify broader market consensus when relevant.",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         },
-        "history_count": 1,
+        "history_count": 2,
         "first_pregame_quote": {
           "book": "betonlineag",
           "total": 7.5,
@@ -3826,12 +4004,12 @@
         "latest_pregame_quote": {
           "book": "betonlineag",
           "total": 7.5,
-          "over_price": -125,
-          "under_price": 105,
+          "over_price": -115,
+          "under_price": -105,
           "away_ml": -118,
           "home_ml": 107,
-          "captured_at": "2026-09-26T17:13:11+00:00",
-          "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       },
       "market_history": [
@@ -3844,44 +4022,25 @@
           "home_ml": 107,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+        },
+        {
+          "book": "betonlineag",
+          "total": 7.5,
+          "over_price": -115,
+          "under_price": -105,
+          "away_ml": -118,
+          "home_ml": 107,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       ],
       "pipeline_completeness": {
-        "complete": false,
-        "unresolved": [
-          {
-            "field": "away_lineup",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_lineup",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "away_starter",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_starter",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_plate_umpire",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "weather",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "stadium_relative_wind",
-            "status": "NOT_YET_AVAILABLE"
-          }
-        ]
+        "complete": true,
+        "unresolved": []
       },
       "intelligence_readiness": {
-        "level": "PARTIAL",
-        "reason": "market/bullpens available but final lineup/starter/environment confirmation incomplete"
+        "level": "FINAL",
+        "reason": "all strict pipeline must-haves confirmed"
       },
       "market_edge_deterioration": {
         "status": "INTELLIGENCE_RESEARCH_REQUIRED",
@@ -3988,18 +4147,19 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T20:10:00Z",
-      "status": "Pre-Game",
+      "status": "Warmup",
       "venue": "loanDepot park",
       "away_team": "ATL",
       "home_team": "MIA",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
-        "current_phase": "PRE_GAME",
-        "run_count": 2,
+        "last_run_at": "2026-09-26T20:36:07+00:00",
+        "current_phase": "LIVE",
+        "run_count": 4,
         "pregame_run_count": 2,
         "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
-        "frozen": false
+        "frozen": true,
+        "frozen_at": "2026-09-26T20:35:03+00:00"
       },
       "away_lineup": {
         "status": "PROVISIONAL",
@@ -4065,7 +4225,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_lineup": {
@@ -4132,7 +4297,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter": {
@@ -4145,7 +4315,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter": {
@@ -4158,7 +4333,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "umpire": {
@@ -4172,7 +4352,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "weather": {
@@ -4190,7 +4375,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "roof": {
@@ -4201,7 +4391,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_bullpen": {
@@ -4329,7 +4524,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_bullpen": {
@@ -4457,7 +4657,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_reliever_db": {
@@ -4613,7 +4818,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_reliever_db": {
@@ -4756,7 +4966,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "model_projection": {
@@ -4775,7 +4990,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "market_consensus": {
@@ -4786,7 +5006,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "away_starter_workload": {
@@ -4807,7 +5032,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "home_starter_workload": {
@@ -4828,7 +5058,12 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "previous_game_postgame": {
@@ -4860,14 +5095,20 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
+        },
+        "_current_retrieval": {
+          "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
         }
       },
       "manager_media": {
-        "research_status": "NOT_STARTED",
+        "research_status": "MISSED_PREGAME_CAPTURE",
         "last_checked_at": null,
         "passes": [],
         "declarations": [],
+        "preservation_status": "MISSED_PREGAME_CAPTURE",
         "current_assessment": {
           "status": "NOT_RESEARCHED",
           "latest_material_at": null,
@@ -4876,11 +5117,10 @@
         },
         "source": "external intelligence file",
         "freshness": {
-          "status": "NOT_CHECKED",
+          "status": "FROZEN_PREGAME",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 154.1,
-          "reason": "no completed research pass"
+          "minutes_to_first_pitch": null
         },
         "reconciliation": []
       },
@@ -4900,7 +5140,7 @@
           "first_captured_at": "2026-09-26T17:35:53+00:00",
           "last_captured_at": "2026-09-26T17:35:53+00:00",
           "capture_phase": "PRE_GAME",
-          "preserved": false
+          "preserved": true
         },
         "history_count": 1,
         "first_pregame_quote": {
@@ -4922,7 +5162,13 @@
           "home_ml": 100,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
-        }
+        },
+        "_current_retrieval": {
+          "status": "CONFIRMED",
+          "observed_at": "2026-09-26T20:36:07+00:00",
+          "ignored_because": "LIVE"
+        },
+        "preservation_status": "PRESERVED_PREGAME"
       },
       "market_history": [
         {
@@ -5064,17 +5310,17 @@
       "home_team": "MIL",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -5132,8 +5378,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5141,7 +5387,7 @@
       "home_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -5199,8 +5445,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5210,10 +5456,10 @@
         "source": "lineup_current",
         "name": "Quinn Mathews",
         "mlbam_id": 687273,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5223,10 +5469,10 @@
         "source": "lineup_current",
         "name": "Dustin May",
         "mlbam_id": 669160,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5246,7 +5492,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -5269,7 +5515,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -5279,8 +5525,8 @@
         "source": "venue classification",
         "reason": "retractable roof; pipeline has no explicit final decision",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5387,8 +5633,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5525,8 +5771,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5673,8 +5919,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5847,8 +6093,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5866,8 +6112,8 @@
         "logged_at": "2026-09-26T10:10:37",
         "confirmed": 0,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5877,8 +6123,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5898,8 +6144,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5919,8 +6165,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5951,8 +6197,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -5973,7 +6219,7 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 334.1,
+          "minutes_to_first_pitch": 153.9,
           "reason": "no completed research pass"
         },
         "reconciliation": []
@@ -5987,16 +6233,16 @@
         "under_price": -113,
         "away_ml": 140,
         "home_ml": -155,
-        "captured_at": "2026-09-26T17:13:11+00:00",
+        "captured_at": "2026-09-26T20:21:03+00:00",
         "consensus_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "consensus_note": "MLB V2 stores its coherent comparison book. The Intelligence report must independently verify broader market consensus when relevant.",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         },
-        "history_count": 1,
+        "history_count": 2,
         "first_pregame_quote": {
           "book": "betonlineag",
           "total": 7.5,
@@ -6014,8 +6260,8 @@
           "under_price": -113,
           "away_ml": 140,
           "home_ml": -155,
-          "captured_at": "2026-09-26T17:13:11+00:00",
-          "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       },
       "market_history": [
@@ -6028,6 +6274,16 @@
           "home_ml": -155,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+        },
+        {
+          "book": "betonlineag",
+          "total": 7.5,
+          "over_price": -107,
+          "under_price": -113,
+          "away_ml": 140,
+          "home_ml": -155,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       ],
       "pipeline_completeness": {
@@ -6178,219 +6434,209 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T23:10:00Z",
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "venue": "Kauffman Stadium",
       "away_team": "CLE",
       "home_team": "KC",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
             "mlbam_id": 680757,
             "name": "Steven Kwan",
-            "position": null
+            "position": "CF"
           },
           {
             "slot": 2,
-            "mlbam_id": 800050,
-            "name": "Chase DeLauter",
-            "position": null
+            "mlbam_id": 608070,
+            "name": "Jose Ramirez",
+            "position": "3B"
           },
           {
             "slot": 3,
-            "mlbam_id": 608070,
-            "name": "Jose Ramirez",
-            "position": null
+            "mlbam_id": 800050,
+            "name": "Chase DeLauter",
+            "position": "RF"
           },
           {
             "slot": 4,
-            "mlbam_id": 663993,
-            "name": "Nathaniel Lowe",
-            "position": null
+            "mlbam_id": 666176,
+            "name": "Jo Adell",
+            "position": "DH"
           },
           {
             "slot": 5,
-            "mlbam_id": 666176,
-            "name": "Jo Adell",
-            "position": null
+            "mlbam_id": 683953,
+            "name": "Travis Bazzana",
+            "position": "2B"
           },
           {
             "slot": 6,
-            "mlbam_id": 683953,
-            "name": "Travis Bazzana",
-            "position": null
+            "mlbam_id": 663993,
+            "name": "Nathaniel Lowe",
+            "position": "1B"
           },
           {
             "slot": 7,
-            "mlbam_id": 694197,
-            "name": "Angel Genao",
-            "position": null
+            "mlbam_id": 682657,
+            "name": "Angel Martinez",
+            "position": "LF"
           },
           {
             "slot": 8,
-            "mlbam_id": 595978,
-            "name": "Austin Hedges",
-            "position": null
+            "mlbam_id": 672275,
+            "name": "Patrick Bailey",
+            "position": "C"
           },
           {
             "slot": 9,
             "mlbam_id": 677587,
             "name": "Brayan Rocchio",
-            "position": null
+            "position": "SS"
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "home_lineup": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
             "mlbam_id": 695600,
             "name": "Carter Jensen",
-            "position": null
+            "position": "C"
           },
           {
             "slot": 2,
             "mlbam_id": 677951,
             "name": "Bobby Witt Jr.",
-            "position": null
+            "position": "SS"
           },
           {
             "slot": 3,
             "mlbam_id": 695506,
             "name": "Jac Caglianone",
-            "position": null
+            "position": "RF"
           },
           {
             "slot": 4,
-            "mlbam_id": 686469,
-            "name": "Vinnie Pasquantino",
-            "position": null
+            "mlbam_id": 521692,
+            "name": "Salvador Perez",
+            "position": "DH"
           },
           {
             "slot": 5,
-            "mlbam_id": 521692,
-            "name": "Salvador Perez",
-            "position": null
+            "mlbam_id": 686469,
+            "name": "Vinnie Pasquantino",
+            "position": "1B"
           },
           {
             "slot": 6,
-            "mlbam_id": 686555,
-            "name": "Isaac Collins",
-            "position": null
+            "mlbam_id": 686681,
+            "name": "Michael Massey",
+            "position": "2B"
           },
           {
             "slot": 7,
             "mlbam_id": 670231,
             "name": "John Rave",
-            "position": null
+            "position": "CF"
           },
           {
             "slot": 8,
             "mlbam_id": 668942,
             "name": "Josh Rojas",
-            "position": null
+            "position": "3B"
           },
           {
             "slot": 9,
-            "mlbam_id": 664728,
-            "name": "Kyle Isbel",
-            "position": null
+            "mlbam_id": 686555,
+            "name": "Isaac Collins",
+            "position": "LF"
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "away_starter": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
         "name": "Tanner Bibee",
         "mlbam_id": 676440,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "home_starter": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
         "name": "Michael Wacha",
         "mlbam_id": 608379,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "umpire": {
-        "status": "NOT_YET_AVAILABLE",
-        "id": null,
-        "name": null,
+        "status": "CONFIRMED",
+        "id": 596805,
+        "name": "John Libka",
         "source": "game_context",
         "crew": [],
         "crew_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:03+00:00",
-          "last_captured_at": "2026-09-26T17:35:03+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "weather": {
-        "status": "NOT_YET_AVAILABLE",
+        "status": "CONFIRMED",
         "source": "game_context",
-        "condition": null,
-        "temp_f": null,
-        "wind_raw": null,
-        "wind_mph": null,
-        "wind_relative": null,
-        "wind_status": "NOT_YET_AVAILABLE",
+        "condition": "Partly Cloudy",
+        "temp_f": 75,
+        "wind_raw": "8 mph, R To L",
+        "wind_mph": 8,
+        "wind_relative": "cross",
+        "wind_status": "CONFIRMED",
         "is_forecast": true,
-        "fetched_at": "2026-09-26T12:01:29",
+        "fetched_at": "2026-09-26T15:05:45",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:03+00:00",
-          "last_captured_at": "2026-09-26T17:35:03+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "roof": {
@@ -6398,8 +6644,8 @@
         "decision": "open_air",
         "source": "venue classification",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -6516,8 +6762,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -6644,8 +6890,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -6887,8 +7133,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7094,8 +7340,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7113,8 +7359,8 @@
         "logged_at": "2026-09-26T10:10:37",
         "confirmed": 0,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7124,8 +7370,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7145,8 +7391,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7166,8 +7412,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7198,8 +7444,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7220,7 +7466,7 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 334.1,
+          "minutes_to_first_pitch": 153.9,
           "reason": "no completed research pass"
         },
         "reconciliation": []
@@ -7234,16 +7480,16 @@
         "under_price": 102,
         "away_ml": -110,
         "home_ml": 100,
-        "captured_at": "2026-09-26T17:13:11+00:00",
+        "captured_at": "2026-09-26T20:21:03+00:00",
         "consensus_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "consensus_note": "MLB V2 stores its coherent comparison book. The Intelligence report must independently verify broader market consensus when relevant.",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         },
-        "history_count": 1,
+        "history_count": 2,
         "first_pregame_quote": {
           "book": "betonlineag",
           "total": 8.0,
@@ -7261,8 +7507,8 @@
           "under_price": 102,
           "away_ml": -110,
           "home_ml": 100,
-          "captured_at": "2026-09-26T17:13:11+00:00",
-          "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       },
       "market_history": [
@@ -7275,44 +7521,25 @@
           "home_ml": 100,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+        },
+        {
+          "book": "betonlineag",
+          "total": 8.0,
+          "over_price": -122,
+          "under_price": 102,
+          "away_ml": -110,
+          "home_ml": 100,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       ],
       "pipeline_completeness": {
-        "complete": false,
-        "unresolved": [
-          {
-            "field": "away_lineup",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_lineup",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "away_starter",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_starter",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_plate_umpire",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "weather",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "stadium_relative_wind",
-            "status": "NOT_YET_AVAILABLE"
-          }
-        ]
+        "complete": true,
+        "unresolved": []
       },
       "intelligence_readiness": {
-        "level": "PARTIAL",
-        "reason": "market/bullpens available but final lineup/starter/environment confirmation incomplete"
+        "level": "FINAL",
+        "reason": "all strict pipeline must-haves confirmed"
       },
       "market_edge_deterioration": {
         "status": "INTELLIGENCE_RESEARCH_REQUIRED",
@@ -7419,219 +7646,209 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T23:10:00Z",
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "venue": "Rate Field",
       "away_team": "COL",
       "home_team": "CWS",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
             "mlbam_id": 664983,
             "name": "Jake McCarthy",
-            "position": null
+            "position": "LF"
           },
           {
             "slot": 2,
-            "mlbam_id": 666160,
-            "name": "Mickey Moniak",
-            "position": null
+            "mlbam_id": 694249,
+            "name": "Cole Carrigg",
+            "position": "CF"
           },
           {
             "slot": 3,
             "mlbam_id": 696100,
             "name": "Hunter Goodman",
-            "position": null
+            "position": "DH"
           },
           {
             "slot": 4,
             "mlbam_id": 681198,
             "name": "T.J. Rumfield",
-            "position": null
+            "position": "1B"
           },
           {
             "slot": 5,
-            "mlbam_id": 694249,
-            "name": "Cole Carrigg",
-            "position": null
+            "mlbam_id": 681393,
+            "name": "Connor Norby",
+            "position": "3B"
           },
           {
             "slot": 6,
-            "mlbam_id": 681393,
-            "name": "Connor Norby",
-            "position": null
+            "mlbam_id": 691182,
+            "name": "Adael Amador",
+            "position": "2B"
           },
           {
             "slot": 7,
-            "mlbam_id": 687859,
-            "name": "Troy Johnston",
-            "position": null
+            "mlbam_id": 666160,
+            "name": "Mickey Moniak",
+            "position": "RF"
           },
           {
             "slot": 8,
-            "mlbam_id": 691182,
-            "name": "Adael Amador",
-            "position": null
+            "mlbam_id": 664954,
+            "name": "Brett Sullivan",
+            "position": "C"
           },
           {
             "slot": 9,
-            "mlbam_id": 691728,
-            "name": "Zac Veen",
-            "position": null
+            "mlbam_id": 678662,
+            "name": "Ezequiel Tovar",
+            "position": "SS"
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "home_lineup": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
-            "mlbam_id": 805367,
-            "name": "Chase Meidroth",
-            "position": null
+            "mlbam_id": 678246,
+            "name": "Miguel Vargas",
+            "position": "3B"
           },
           {
             "slot": 2,
-            "mlbam_id": 808959,
-            "name": "Munetaka Murakami",
-            "position": null
+            "mlbam_id": 502054,
+            "name": "Thomas Pham",
+            "position": "DH"
           },
           {
             "slot": 3,
-            "mlbam_id": 678246,
-            "name": "Miguel Vargas",
-            "position": null
+            "mlbam_id": 545341,
+            "name": "Randal Grichuk",
+            "position": "LF"
           },
           {
             "slot": 4,
-            "mlbam_id": 545341,
-            "name": "Randal Grichuk",
-            "position": null
+            "mlbam_id": 808959,
+            "name": "Munetaka Murakami",
+            "position": "1B"
           },
           {
             "slot": 5,
-            "mlbam_id": 695657,
-            "name": "Colson Montgomery",
-            "position": null
+            "mlbam_id": 686668,
+            "name": "Brenton Doyle",
+            "position": "CF"
           },
           {
             "slot": 6,
-            "mlbam_id": 686668,
-            "name": "Brenton Doyle",
-            "position": null
+            "mlbam_id": 691019,
+            "name": "Kyle Teel",
+            "position": "C"
           },
           {
             "slot": 7,
-            "mlbam_id": 682668,
-            "name": "Luisangel Acuna",
-            "position": null
+            "mlbam_id": 803011,
+            "name": "Sam Antonacci",
+            "position": "2B"
           },
           {
             "slot": 8,
-            "mlbam_id": 668670,
-            "name": "Jake Rogers",
-            "position": null
+            "mlbam_id": 682668,
+            "name": "Luisangel Acuna",
+            "position": "SS"
           },
           {
             "slot": 9,
             "mlbam_id": 671976,
             "name": "Tristan Peters",
-            "position": null
+            "position": "RF"
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "away_starter": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
         "name": "Jose Quintana",
         "mlbam_id": 500779,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "home_starter": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
         "name": "Davis Martin",
         "mlbam_id": 663436,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "umpire": {
-        "status": "NOT_YET_AVAILABLE",
-        "id": null,
-        "name": null,
+        "status": "CONFIRMED",
+        "id": 575629,
+        "name": "Shane Livensparger",
         "source": "game_context",
         "crew": [],
         "crew_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:03+00:00",
-          "last_captured_at": "2026-09-26T17:35:03+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "weather": {
-        "status": "NOT_YET_AVAILABLE",
+        "status": "CONFIRMED",
         "source": "game_context",
-        "condition": null,
-        "temp_f": null,
-        "wind_raw": null,
-        "wind_mph": null,
-        "wind_relative": null,
-        "wind_status": "NOT_YET_AVAILABLE",
+        "condition": "Partly Cloudy",
+        "temp_f": 62,
+        "wind_raw": "7 mph, L To R",
+        "wind_mph": 7,
+        "wind_relative": "cross",
+        "wind_status": "CONFIRMED",
         "is_forecast": true,
-        "fetched_at": "2026-09-26T12:01:30",
+        "fetched_at": "2026-09-26T15:05:46",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:03+00:00",
-          "last_captured_at": "2026-09-26T17:35:03+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "roof": {
@@ -7639,8 +7856,8 @@
         "decision": "open_air",
         "source": "venue classification",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7747,8 +7964,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -7885,8 +8102,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8049,8 +8266,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8236,8 +8453,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8255,8 +8472,8 @@
         "logged_at": "2026-09-26T10:10:37",
         "confirmed": 0,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8266,8 +8483,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8287,8 +8504,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8308,8 +8525,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8340,8 +8557,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8362,7 +8579,7 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 334.1,
+          "minutes_to_first_pitch": 153.9,
           "reason": "no completed research pass"
         },
         "reconciliation": []
@@ -8376,16 +8593,16 @@
         "under_price": -105,
         "away_ml": 210,
         "home_ml": -235,
-        "captured_at": "2026-09-26T17:13:11+00:00",
+        "captured_at": "2026-09-26T20:21:03+00:00",
         "consensus_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "consensus_note": "MLB V2 stores its coherent comparison book. The Intelligence report must independently verify broader market consensus when relevant.",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         },
-        "history_count": 1,
+        "history_count": 2,
         "first_pregame_quote": {
           "book": "betonlineag",
           "total": 8.0,
@@ -8403,8 +8620,8 @@
           "under_price": -105,
           "away_ml": 210,
           "home_ml": -235,
-          "captured_at": "2026-09-26T17:13:11+00:00",
-          "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       },
       "market_history": [
@@ -8417,44 +8634,25 @@
           "home_ml": -235,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+        },
+        {
+          "book": "betonlineag",
+          "total": 8.0,
+          "over_price": -115,
+          "under_price": -105,
+          "away_ml": 210,
+          "home_ml": -235,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       ],
       "pipeline_completeness": {
-        "complete": false,
-        "unresolved": [
-          {
-            "field": "away_lineup",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_lineup",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "away_starter",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_starter",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_plate_umpire",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "weather",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "stadium_relative_wind",
-            "status": "NOT_YET_AVAILABLE"
-          }
-        ]
+        "complete": true,
+        "unresolved": []
       },
       "intelligence_readiness": {
-        "level": "PARTIAL",
-        "reason": "market/bullpens available but final lineup/starter/environment confirmation incomplete"
+        "level": "FINAL",
+        "reason": "all strict pipeline must-haves confirmed"
       },
       "market_edge_deterioration": {
         "status": "INTELLIGENCE_RESEARCH_REQUIRED",
@@ -8561,23 +8759,23 @@
       "date": "2026-09-26",
       "game_number": 1,
       "game_datetime": "2026-09-26T23:15:00Z",
-      "status": "Scheduled",
+      "status": "Pre-Game",
       "venue": "Citizens Bank Park",
       "away_team": "TB",
       "home_team": "PHI",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -8635,75 +8833,75 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "home_lineup": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
-            "mlbam_id": 656941,
-            "name": "Kyle Schwarber",
-            "position": null
+            "mlbam_id": 607208,
+            "name": "Trea Turner",
+            "position": "SS"
           },
           {
             "slot": 2,
-            "mlbam_id": 607208,
-            "name": "Trea Turner",
-            "position": null
+            "mlbam_id": 656941,
+            "name": "Kyle Schwarber",
+            "position": "DH"
           },
           {
             "slot": 3,
             "mlbam_id": 547180,
             "name": "Bryce Harper",
-            "position": null
+            "position": "1B"
           },
           {
             "slot": 4,
             "mlbam_id": 664761,
             "name": "Alec Bohm",
-            "position": null
+            "position": "3B"
           },
           {
             "slot": 5,
             "mlbam_id": 681082,
             "name": "Bryson Stott",
-            "position": null
+            "position": "2B"
           },
           {
             "slot": 6,
-            "mlbam_id": 669016,
-            "name": "Brandon Marsh",
-            "position": null
+            "mlbam_id": 650559,
+            "name": "Bryan De La Cruz",
+            "position": "RF"
           },
           {
             "slot": 7,
-            "mlbam_id": 702222,
-            "name": "Justin Crawford",
-            "position": null
+            "mlbam_id": 669016,
+            "name": "Brandon Marsh",
+            "position": "LF"
           },
           {
             "slot": 8,
             "mlbam_id": 592663,
             "name": "JT Realmuto",
-            "position": null
+            "position": "C"
           },
           {
             "slot": 9,
-            "mlbam_id": 624641,
-            "name": "Edmundo Sosa",
-            "position": null
+            "mlbam_id": 702222,
+            "name": "Justin Crawford",
+            "position": "CF"
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8713,67 +8911,57 @@
         "source": "lineup_current",
         "name": "Griffin Jax",
         "mlbam_id": 643377,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "home_starter": {
-        "status": "PROVISIONAL",
+        "status": "CONFIRMED",
         "source": "lineup_current",
         "name": "Jose Urquidy",
         "mlbam_id": 664353,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
       },
       "umpire": {
-        "status": "NOT_YET_AVAILABLE",
-        "id": null,
-        "name": null,
+        "status": "CONFIRMED",
+        "id": 594151,
+        "name": "Ramon De Jesus",
         "source": "game_context",
         "crew": [],
         "crew_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:03+00:00",
-          "last_captured_at": "2026-09-26T17:35:03+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "weather": {
-        "status": "NOT_YET_AVAILABLE",
+        "status": "CONFIRMED",
         "source": "game_context",
-        "condition": null,
-        "temp_f": null,
-        "wind_raw": null,
-        "wind_mph": null,
-        "wind_relative": null,
-        "wind_status": "NOT_YET_AVAILABLE",
+        "condition": "Overcast",
+        "temp_f": 59,
+        "wind_raw": "16 mph, In From LF",
+        "wind_mph": 16,
+        "wind_relative": "in",
+        "wind_status": "CONFIRMED",
         "is_forecast": true,
-        "fetched_at": "2026-09-26T12:01:27",
+        "fetched_at": "2026-09-26T15:05:43",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:03+00:00",
-          "last_captured_at": "2026-09-26T17:35:03+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
-        },
-        "_current_retrieval": {
-          "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
-          "ignored_because": "never_downgrade"
         }
       },
       "roof": {
@@ -8781,8 +8969,8 @@
         "decision": "open_air",
         "source": "venue classification",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -8899,8 +9087,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9017,8 +9205,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9160,8 +9348,8 @@
         "taxed_leverage": [],
         "taxed": [],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9295,8 +9483,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9314,8 +9502,8 @@
         "logged_at": "2026-09-26T10:10:37",
         "confirmed": 0,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9325,8 +9513,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9346,8 +9534,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9367,8 +9555,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9399,8 +9587,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9421,23 +9609,63 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 339.1,
+          "minutes_to_first_pitch": 158.9,
           "reason": "no completed research pass"
         },
         "reconciliation": []
       },
       "market": {
-        "status": "NOT_YET_AVAILABLE",
+        "status": "CONFIRMED",
         "source": "market_current",
-        "reason": "no current total stored",
+        "book": "betonlineag",
+        "total": 7.0,
+        "over_price": 100,
+        "under_price": -120,
+        "away_ml": 112,
+        "home_ml": -123,
+        "captured_at": "2026-09-26T20:21:03+00:00",
+        "consensus_status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "consensus_note": "MLB V2 stores its coherent comparison book. The Intelligence report must independently verify broader market consensus when relevant.",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
+        },
+        "history_count": 1,
+        "first_pregame_quote": {
+          "book": "betonlineag",
+          "total": 7.0,
+          "over_price": 100,
+          "under_price": -120,
+          "away_ml": 112,
+          "home_ml": -123,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
+        },
+        "latest_pregame_quote": {
+          "book": "betonlineag",
+          "total": 7.0,
+          "over_price": 100,
+          "under_price": -120,
+          "away_ml": 112,
+          "home_ml": -123,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       },
-      "market_history": [],
+      "market_history": [
+        {
+          "book": "betonlineag",
+          "total": 7.0,
+          "over_price": 100,
+          "under_price": -120,
+          "away_ml": 112,
+          "home_ml": -123,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
+        }
+      ],
       "pipeline_completeness": {
         "complete": false,
         "unresolved": [
@@ -9446,46 +9674,29 @@
             "status": "PROVISIONAL"
           },
           {
-            "field": "home_lineup",
-            "status": "PROVISIONAL"
-          },
-          {
             "field": "away_starter",
             "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_starter",
-            "status": "PROVISIONAL"
-          },
-          {
-            "field": "home_plate_umpire",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "weather",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "market_total",
-            "status": "NOT_YET_AVAILABLE"
-          },
-          {
-            "field": "stadium_relative_wind",
-            "status": "NOT_YET_AVAILABLE"
           }
         ]
       },
       "intelligence_readiness": {
-        "level": "EARLY",
-        "reason": "insufficient core pregame inputs for decision review"
+        "level": "PARTIAL",
+        "reason": "market/bullpens available but final lineup/starter/environment confirmation incomplete"
       },
       "market_edge_deterioration": {
-        "status": "NOT_YET_AVAILABLE",
-        "reason": "model total or first pregame market quote unavailable"
+        "status": "INTELLIGENCE_RESEARCH_REQUIRED",
+        "model_total": 9.854519999999999,
+        "original_pipeline_total": 7.0,
+        "latest_pipeline_total": 7.0,
+        "current_consensus_total": null,
+        "original_edge_runs": 2.854519999999999,
+        "current_edge_runs": null,
+        "edge_retained_pct": null,
+        "flag": "CONSENSUS_RESEARCH_REQUIRED"
       },
       "market_divergence": {
         "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-        "latest_pipeline_total": null,
+        "latest_pipeline_total": 7.0,
         "current_consensus_total": null,
         "difference_runs": null,
         "absolute_difference_runs": null,
@@ -9567,8 +9778,8 @@
           "priority": "MANDATORY",
           "topic": "market_consensus_cross_check",
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-          "pipeline_book": null,
-          "pipeline_total": null
+          "pipeline_book": "betonlineag",
+          "pipeline_total": 7.0
         }
       ]
     },
@@ -9583,11 +9794,11 @@
       "home_team": "BOS",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
@@ -9603,7 +9814,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -9620,7 +9831,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -9637,7 +9848,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -9654,7 +9865,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -9669,7 +9880,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -9684,7 +9895,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -9692,8 +9903,8 @@
         "status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "decision": null,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9810,8 +10021,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -9948,8 +10159,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10155,8 +10366,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10392,8 +10603,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10409,7 +10620,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -10418,8 +10629,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10439,8 +10650,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10460,8 +10671,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10492,8 +10703,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10514,7 +10725,7 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 339.1,
+          "minutes_to_first_pitch": 158.9,
           "reason": "no completed research pass"
         },
         "reconciliation": []
@@ -10524,8 +10735,8 @@
         "source": "market_current",
         "reason": "no current total stored",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10682,17 +10893,17 @@
       "home_team": "SD",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -10750,8 +10961,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10759,7 +10970,7 @@
       "home_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -10817,8 +11028,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10828,10 +11039,10 @@
         "source": "lineup_current",
         "name": "Ryne Nelson",
         "mlbam_id": 669194,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10841,10 +11052,10 @@
         "source": "lineup_current",
         "name": "Walker Buehler",
         "mlbam_id": 621111,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -10864,7 +11075,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -10887,7 +11098,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -10896,8 +11107,8 @@
         "decision": "open_air",
         "source": "venue classification",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11004,8 +11215,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11122,8 +11333,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11265,8 +11476,8 @@
         "taxed_leverage": [],
         "taxed": [],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11408,8 +11619,8 @@
         "taxed_leverage": [],
         "taxed": [],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11427,8 +11638,8 @@
         "logged_at": "2026-09-26T10:10:37",
         "confirmed": 0,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11438,8 +11649,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11459,8 +11670,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11480,8 +11691,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11512,8 +11723,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11534,7 +11745,7 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 424.1,
+          "minutes_to_first_pitch": 243.9,
           "reason": "no completed research pass"
         },
         "reconciliation": []
@@ -11544,8 +11755,8 @@
         "source": "market_current",
         "reason": "no current total stored",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11696,17 +11907,17 @@
       "home_team": "SEA",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -11764,8 +11975,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11773,7 +11984,7 @@
       "home_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -11831,8 +12042,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11842,10 +12053,10 @@
         "source": "lineup_current",
         "name": "Ryan Johnson",
         "mlbam_id": 696270,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11855,10 +12066,10 @@
         "source": "lineup_current",
         "name": "Kade Anderson",
         "mlbam_id": 807739,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -11878,7 +12089,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -11901,7 +12112,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -11911,8 +12122,8 @@
         "source": "venue classification",
         "reason": "retractable roof; pipeline has no explicit final decision",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12019,8 +12230,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12137,8 +12348,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12319,8 +12530,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12462,8 +12673,8 @@
         "taxed_leverage": [],
         "taxed": [],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12481,8 +12692,8 @@
         "logged_at": "2026-09-26T10:10:37",
         "confirmed": 0,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12492,8 +12703,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12513,8 +12724,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12534,8 +12745,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12566,8 +12777,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12588,7 +12799,7 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 484.1,
+          "minutes_to_first_pitch": 303.9,
           "reason": "no completed research pass"
         },
         "reconciliation": []
@@ -12598,20 +12809,20 @@
         "source": "market_current",
         "book": "betonlineag",
         "total": 7.0,
-        "over_price": -115,
-        "under_price": -105,
-        "away_ml": 132,
-        "home_ml": -146,
-        "captured_at": "2026-09-26T17:13:11+00:00",
+        "over_price": -120,
+        "under_price": 100,
+        "away_ml": 135,
+        "home_ml": -149,
+        "captured_at": "2026-09-26T20:21:03+00:00",
         "consensus_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "consensus_note": "MLB V2 stores its coherent comparison book. The Intelligence report must independently verify broader market consensus when relevant.",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         },
-        "history_count": 1,
+        "history_count": 2,
         "first_pregame_quote": {
           "book": "betonlineag",
           "total": 7.0,
@@ -12625,12 +12836,12 @@
         "latest_pregame_quote": {
           "book": "betonlineag",
           "total": 7.0,
-          "over_price": -115,
-          "under_price": -105,
-          "away_ml": 132,
-          "home_ml": -146,
-          "captured_at": "2026-09-26T17:13:11+00:00",
-          "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+          "over_price": -120,
+          "under_price": 100,
+          "away_ml": 135,
+          "home_ml": -149,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       },
       "market_history": [
@@ -12643,6 +12854,16 @@
           "home_ml": -146,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+        },
+        {
+          "book": "betonlineag",
+          "total": 7.0,
+          "over_price": -120,
+          "under_price": 100,
+          "away_ml": 135,
+          "home_ml": -149,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       ],
       "pipeline_completeness": {
@@ -12799,17 +13020,17 @@
       "home_team": "ATH",
       "state_meta": {
         "first_seen_at": "2026-09-26T17:35:03+00:00",
-        "last_run_at": "2026-09-26T17:35:53+00:00",
+        "last_run_at": "2026-09-26T20:36:07+00:00",
         "current_phase": "PRE_GAME",
-        "run_count": 2,
-        "pregame_run_count": 2,
-        "last_pregame_run_at": "2026-09-26T17:35:53+00:00",
+        "run_count": 4,
+        "pregame_run_count": 4,
+        "last_pregame_run_at": "2026-09-26T20:36:07+00:00",
         "frozen": false
       },
       "away_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -12867,8 +13088,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12876,7 +13097,7 @@
       "home_lineup": {
         "status": "PROVISIONAL",
         "source": "lineup_current",
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "players": [
           {
             "slot": 1,
@@ -12934,8 +13155,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12945,10 +13166,10 @@
         "source": "lineup_current",
         "name": "Hayden Wesneski",
         "mlbam_id": 669713,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12958,10 +13179,10 @@
         "source": "lineup_current",
         "name": "Jack Perkins",
         "mlbam_id": 678022,
-        "snapshot_at": "2026-09-26T12:01:23",
+        "snapshot_at": "2026-09-26T15:05:40",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -12981,7 +13202,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -13004,7 +13225,7 @@
         },
         "_current_retrieval": {
           "status": "NOT_YET_AVAILABLE",
-          "observed_at": "2026-09-26T17:35:53+00:00",
+          "observed_at": "2026-09-26T20:36:07+00:00",
           "ignored_because": "never_downgrade"
         }
       },
@@ -13013,8 +13234,8 @@
         "decision": "open_air",
         "source": "venue classification",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13141,8 +13362,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13259,8 +13480,8 @@
           "note": "Research manager/coach pregame interviews, official team notes, and trusted beat reporting for explicit availability statements. Do not infer a declaration from workload."
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13460,8 +13681,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13656,8 +13877,8 @@
           }
         ],
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13675,8 +13896,8 @@
         "logged_at": "2026-09-26T10:10:37",
         "confirmed": 0,
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13686,8 +13907,8 @@
         "source": "external intelligence file",
         "reason": "current broader-market consensus not supplied",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13707,8 +13928,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13728,8 +13949,8 @@
         "external_captured_at": null,
         "assessment": "UNRESOLVED",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13760,8 +13981,8 @@
           }
         },
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         }
@@ -13782,7 +14003,7 @@
           "status": "NOT_CHECKED",
           "last_checked_at": null,
           "age_minutes": null,
-          "minutes_to_first_pitch": 484.1,
+          "minutes_to_first_pitch": 303.9,
           "reason": "no completed research pass"
         },
         "reconciliation": []
@@ -13791,21 +14012,21 @@
         "status": "CONFIRMED",
         "source": "market_current",
         "book": "betonlineag",
-        "total": 9.5,
-        "over_price": -125,
-        "under_price": 105,
+        "total": 10.0,
+        "over_price": -108,
+        "under_price": -112,
         "away_ml": -150,
         "home_ml": 136,
-        "captured_at": "2026-09-26T17:13:11+00:00",
+        "captured_at": "2026-09-26T20:21:03+00:00",
         "consensus_status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "consensus_note": "MLB V2 stores its coherent comparison book. The Intelligence report must independently verify broader market consensus when relevant.",
         "_capture": {
-          "first_captured_at": "2026-09-26T17:35:53+00:00",
-          "last_captured_at": "2026-09-26T17:35:53+00:00",
+          "first_captured_at": "2026-09-26T20:36:07+00:00",
+          "last_captured_at": "2026-09-26T20:36:07+00:00",
           "capture_phase": "PRE_GAME",
           "preserved": false
         },
-        "history_count": 1,
+        "history_count": 2,
         "first_pregame_quote": {
           "book": "betonlineag",
           "total": 9.5,
@@ -13818,13 +14039,13 @@
         },
         "latest_pregame_quote": {
           "book": "betonlineag",
-          "total": 9.5,
-          "over_price": -125,
-          "under_price": 105,
+          "total": 10.0,
+          "over_price": -108,
+          "under_price": -112,
           "away_ml": -150,
           "home_ml": 136,
-          "captured_at": "2026-09-26T17:13:11+00:00",
-          "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       },
       "market_history": [
@@ -13837,6 +14058,16 @@
           "home_ml": 136,
           "captured_at": "2026-09-26T17:13:11+00:00",
           "observed_by_pregame_context_at": "2026-09-26T17:35:03+00:00"
+        },
+        {
+          "book": "betonlineag",
+          "total": 10.0,
+          "over_price": -108,
+          "under_price": -112,
+          "away_ml": -150,
+          "home_ml": 136,
+          "captured_at": "2026-09-26T20:21:03+00:00",
+          "observed_by_pregame_context_at": "2026-09-26T20:35:03+00:00"
         }
       ],
       "pipeline_completeness": {
@@ -13880,7 +14111,7 @@
         "status": "INTELLIGENCE_RESEARCH_REQUIRED",
         "model_total": 11.172004500000003,
         "original_pipeline_total": 9.5,
-        "latest_pipeline_total": 9.5,
+        "latest_pipeline_total": 10.0,
         "current_consensus_total": null,
         "original_edge_runs": 1.6720045000000034,
         "current_edge_runs": null,
@@ -13889,7 +14120,7 @@
       },
       "market_divergence": {
         "status": "INTELLIGENCE_RESEARCH_REQUIRED",
-        "latest_pipeline_total": 9.5,
+        "latest_pipeline_total": 10.0,
         "current_consensus_total": null,
         "difference_runs": null,
         "absolute_difference_runs": null,
@@ -13972,7 +14203,7 @@
           "topic": "market_consensus_cross_check",
           "status": "INTELLIGENCE_RESEARCH_REQUIRED",
           "pipeline_book": "betonlineag",
-          "pipeline_total": 9.5
+          "pipeline_total": 10.0
         }
       ]
     }
