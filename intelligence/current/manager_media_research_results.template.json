@@ -1,6 +1,6 @@
 {
   "date": "2026-09-27",
-  "generated_from_queue_at": "2026-09-27T14:35:55+00:00",
+  "generated_from_queue_at": "2026-09-27T17:36:01+00:00",
   "instructions": {
     "sources_checked_fields": [
       "source_type",
@@ -52,19 +52,6 @@
   },
   "items": [
     {
-      "item_id": "pregame:822679:NYM:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": null,
-      "sources_checked": [],
-      "research_status": "NOT_STARTED",
-      "notes": null,
-      "game_pk": 822679,
-      "team": "NYM",
-      "pass_type": "EARLY",
-      "result": null,
-      "declarations": []
-    },
-    {
       "item_id": "postgame:822679:NYM:822678",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -77,19 +64,6 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
-    },
-    {
-      "item_id": "pregame:822679:WSH:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": null,
-      "sources_checked": [],
-      "research_status": "NOT_STARTED",
-      "notes": null,
-      "game_pk": 822679,
-      "team": "WSH",
-      "pass_type": "EARLY",
-      "result": null,
-      "declarations": []
     },
     {
       "item_id": "postgame:822679:WSH:822678",
@@ -106,19 +80,6 @@
       "comments": []
     },
     {
-      "item_id": "pregame:823490:BAL:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": null,
-      "sources_checked": [],
-      "research_status": "NOT_STARTED",
-      "notes": null,
-      "game_pk": 823490,
-      "team": "BAL",
-      "pass_type": "EARLY",
-      "result": null,
-      "declarations": []
-    },
-    {
       "item_id": "postgame:823490:BAL:823489",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -131,19 +92,6 @@
       "previous_game_date": "2026-09-25",
       "result": null,
       "comments": []
-    },
-    {
-      "item_id": "pregame:823490:NYY:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": null,
-      "sources_checked": [],
-      "research_status": "NOT_STARTED",
-      "notes": null,
-      "game_pk": 823490,
-      "team": "NYY",
-      "pass_type": "EARLY",
-      "result": null,
-      "declarations": []
     },
     {
       "item_id": "postgame:823490:NYY:823489",
@@ -160,32 +108,17 @@
       "comments": []
     },
     {
-      "item_id": "postgame:823164:LAD:823165",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "item_id": "pregame:823408:TB:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
       "checked_at": null,
       "sources_checked": [],
       "research_status": "NOT_STARTED",
       "notes": null,
-      "today_game_pk": 823164,
-      "team": "LAD",
-      "previous_game_pk": 823165,
-      "previous_game_date": "2026-09-26",
+      "game_pk": 823408,
+      "team": "TB",
+      "pass_type": "FINAL",
       "result": null,
-      "comments": []
-    },
-    {
-      "item_id": "postgame:823164:SF:823165",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": null,
-      "sources_checked": [],
-      "research_status": "NOT_STARTED",
-      "notes": null,
-      "today_game_pk": 823164,
-      "team": "SF",
-      "previous_game_pk": 823165,
-      "previous_game_date": "2026-09-26",
-      "result": null,
-      "comments": []
+      "declarations": []
     },
     {
       "item_id": "postgame:823408:TB:823407",
@@ -202,6 +135,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:823408:PHI:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823408,
+      "team": "PHI",
+      "pass_type": "FINAL",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:823408:PHI:823407",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -214,6 +160,73 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:823164:LAD:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823164,
+      "team": "LAD",
+      "pass_type": "FINAL",
+      "result": null,
+      "declarations": []
+    },
+    {
+      "item_id": "postgame:823164:LAD:823165",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "today_game_pk": 823164,
+      "team": "LAD",
+      "previous_game_pk": 823165,
+      "previous_game_date": "2026-09-26",
+      "result": null,
+      "comments": []
+    },
+    {
+      "item_id": "pregame:823164:SF:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823164,
+      "team": "SF",
+      "pass_type": "FINAL",
+      "result": null,
+      "declarations": []
+    },
+    {
+      "item_id": "postgame:823164:SF:823165",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "today_game_pk": 823164,
+      "team": "SF",
+      "previous_game_pk": 823165,
+      "previous_game_date": "2026-09-26",
+      "result": null,
+      "comments": []
+    },
+    {
+      "item_id": "pregame:824705:CHC:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824705,
+      "team": "CHC",
+      "pass_type": "FINAL",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:824705:CHC:824706",
@@ -230,6 +243,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:824705:BOS:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824705,
+      "team": "BOS",
+      "pass_type": "FINAL",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:824705:BOS:824706",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -244,6 +270,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:824948:HOU:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824948,
+      "team": "HOU",
+      "pass_type": "FINAL",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:824948:HOU:824949",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -256,6 +295,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:824948:ATH:FINAL",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824948,
+      "team": "ATH",
+      "pass_type": "FINAL",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:824948:ATH:824949",
@@ -300,6 +352,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:823084:LAA:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823084,
+      "team": "LAA",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:823084:LAA:823083",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -312,6 +377,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:823084:SEA:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823084,
+      "team": "SEA",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:823084:SEA:823083",
@@ -328,6 +406,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:823246:AZ:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823246,
+      "team": "AZ",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:823246:AZ:823245",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -340,6 +431,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:823246:SD:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823246,
+      "team": "SD",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:823246:SD:823245",
@@ -356,6 +460,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:823650:TEX:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823650,
+      "team": "TEX",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:823650:TEX:823653",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -368,6 +485,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:823650:MIN:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823650,
+      "team": "MIN",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:823650:MIN:823653",
@@ -384,6 +514,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:823731:STL:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823731,
+      "team": "STL",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:823731:STL:823733",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -396,6 +539,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:823731:MIL:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823731,
+      "team": "MIL",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:823731:MIL:823733",
@@ -412,6 +568,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:823814:ATL:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823814,
+      "team": "ATL",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:823814:ATL:823813",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -424,6 +593,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:823814:MIA:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 823814,
+      "team": "MIA",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:823814:MIA:823813",
@@ -440,6 +622,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:824055:CLE:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824055,
+      "team": "CLE",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:824055:CLE:824057",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -452,6 +647,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:824055:KC:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824055,
+      "team": "KC",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:824055:KC:824057",
@@ -468,6 +676,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:824217:PIT:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824217,
+      "team": "PIT",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:824217:PIT:824219",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -480,6 +701,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:824217:DET:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824217,
+      "team": "DET",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:824217:DET:824219",
@@ -496,6 +730,19 @@
       "comments": []
     },
     {
+      "item_id": "pregame:824542:COL:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824542,
+      "team": "COL",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
+    },
+    {
       "item_id": "postgame:824542:COL:824543",
       "research_type": "PREVIOUS_GAME_POSTGAME",
       "checked_at": null,
@@ -508,6 +755,19 @@
       "previous_game_date": "2026-09-26",
       "result": null,
       "comments": []
+    },
+    {
+      "item_id": "pregame:824542:CWS:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": null,
+      "sources_checked": [],
+      "research_status": "NOT_STARTED",
+      "notes": null,
+      "game_pk": 824542,
+      "team": "CWS",
+      "pass_type": "EARLY",
+      "result": null,
+      "declarations": []
     },
     {
       "item_id": "postgame:824542:CWS:824543",
