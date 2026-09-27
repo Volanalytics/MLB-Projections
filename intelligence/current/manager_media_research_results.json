@@ -1,145 +1,145 @@
 {
-  "date": "2026-09-26",
-  "generated_from_queue_at": "2026-09-26T14:35:05+00:00",
+  "date": "2026-09-27",
+  "generated_from_queue_at": "2026-09-27T14:35:04+00:00",
   "items": [
     {
-      "item_id": "postgame:822678:NYM:822681",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-26T23:35:25+00:00",
+      "item_id": "pregame:822679:NYM:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-27T14:35:20+00:00",
       "sources_checked": [],
       "research_status": "FAILED",
       "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
       "team": "NYM",
       "result": "INCONCLUSIVE",
-      "today_game_pk": 822678,
-      "previous_game_pk": 822681,
-      "previous_game_date": "2026-09-25",
+      "game_pk": 822679,
+      "pass_type": "EARLY",
+      "declarations": []
+    },
+    {
+      "item_id": "postgame:822679:NYM:822678",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-27T14:35:20+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "NYM",
+      "result": "INCONCLUSIVE",
+      "today_game_pk": 822679,
+      "previous_game_pk": 822678,
+      "previous_game_date": "2026-09-26",
       "comments": []
     },
     {
-      "item_id": "postgame:822678:WSH:822681",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-26T23:35:32+00:00",
+      "item_id": "pregame:822679:WSH:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-27T14:35:28+00:00",
       "sources_checked": [],
       "research_status": "FAILED",
       "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
       "team": "WSH",
       "result": "INCONCLUSIVE",
-      "today_game_pk": 822678,
-      "previous_game_pk": 822681,
-      "previous_game_date": "2026-09-25",
-      "comments": []
-    },
-    {
-      "item_id": "postgame:824219:PIT:824220",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-26T23:35:39+00:00",
-      "sources_checked": [],
-      "research_status": "FAILED",
-      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
-      "team": "PIT",
-      "result": "INCONCLUSIVE",
-      "today_game_pk": 824219,
-      "previous_game_pk": 824220,
-      "previous_game_date": "2026-09-25",
-      "comments": []
-    },
-    {
-      "item_id": "postgame:824219:DET:824220",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-26T23:35:45+00:00",
-      "sources_checked": [],
-      "research_status": "FAILED",
-      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
-      "team": "DET",
-      "result": "INCONCLUSIVE",
-      "today_game_pk": 824219,
-      "previous_game_pk": 824220,
-      "previous_game_date": "2026-09-25",
-      "comments": []
-    },
-    {
-      "item_id": "postgame:822759:CIN:822760",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-26T23:35:52+00:00",
-      "sources_checked": [],
-      "research_status": "FAILED",
-      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
-      "team": "CIN",
-      "result": "INCONCLUSIVE",
-      "today_game_pk": 822759,
-      "previous_game_pk": 822760,
-      "previous_game_date": "2026-09-25",
-      "comments": []
-    },
-    {
-      "item_id": "postgame:822759:TOR:822760",
-      "research_type": "PREVIOUS_GAME_POSTGAME",
-      "checked_at": "2026-09-26T23:35:59+00:00",
-      "sources_checked": [],
-      "research_status": "FAILED",
-      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
-      "team": "TOR",
-      "result": "INCONCLUSIVE",
-      "today_game_pk": 822759,
-      "previous_game_pk": 822760,
-      "previous_game_date": "2026-09-25",
-      "comments": []
-    },
-    {
-      "item_id": "pregame:822759:CIN:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-26T17:35:45+00:00",
-      "sources_checked": [],
-      "research_status": "FAILED",
-      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
-      "team": "CIN",
-      "result": "INCONCLUSIVE",
-      "game_pk": 822759,
+      "game_pk": 822679,
       "pass_type": "EARLY",
       "declarations": []
     },
     {
-      "item_id": "pregame:822759:TOR:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-26T17:35:52+00:00",
+      "item_id": "postgame:822679:WSH:822678",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-27T14:35:28+00:00",
       "sources_checked": [],
       "research_status": "FAILED",
       "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
-      "team": "TOR",
+      "team": "WSH",
       "result": "INCONCLUSIVE",
-      "game_pk": 822759,
+      "today_game_pk": 822679,
+      "previous_game_pk": 822678,
+      "previous_game_date": "2026-09-26",
+      "comments": []
+    },
+    {
+      "item_id": "pregame:823490:BAL:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-27T14:35:35+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "BAL",
+      "result": "INCONCLUSIVE",
+      "game_pk": 823490,
       "pass_type": "EARLY",
       "declarations": []
     },
     {
-      "item_id": "pregame:824219:PIT:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-26T14:35:25+00:00",
+      "item_id": "postgame:823490:BAL:823489",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-27T14:35:35+00:00",
       "sources_checked": [],
       "research_status": "FAILED",
       "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
-      "team": "PIT",
+      "team": "BAL",
       "result": "INCONCLUSIVE",
-      "game_pk": 824219,
+      "today_game_pk": 823490,
+      "previous_game_pk": 823489,
+      "previous_game_date": "2026-09-25",
+      "comments": []
+    },
+    {
+      "item_id": "pregame:823490:NYY:EARLY",
+      "research_type": "PREGAME_MANAGER_MEDIA",
+      "checked_at": "2026-09-27T14:35:42+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "NYY",
+      "result": "INCONCLUSIVE",
+      "game_pk": 823490,
       "pass_type": "EARLY",
       "declarations": []
     },
     {
-      "item_id": "pregame:824219:DET:EARLY",
-      "research_type": "PREGAME_MANAGER_MEDIA",
-      "checked_at": "2026-09-26T14:35:32+00:00",
+      "item_id": "postgame:823490:NYY:823489",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-27T14:35:42+00:00",
       "sources_checked": [],
       "research_status": "FAILED",
       "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
-      "team": "DET",
+      "team": "NYY",
       "result": "INCONCLUSIVE",
-      "game_pk": 824219,
-      "pass_type": "EARLY",
-      "declarations": []
+      "today_game_pk": 823490,
+      "previous_game_pk": 823489,
+      "previous_game_date": "2026-09-25",
+      "comments": []
+    },
+    {
+      "item_id": "postgame:823164:LAD:823165",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-27T14:35:48+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "LAD",
+      "result": "INCONCLUSIVE",
+      "today_game_pk": 823164,
+      "previous_game_pk": 823165,
+      "previous_game_date": "2026-09-26",
+      "comments": []
+    },
+    {
+      "item_id": "postgame:823164:SF:823165",
+      "research_type": "PREVIOUS_GAME_POSTGAME",
+      "checked_at": "2026-09-27T14:35:55+00:00",
+      "sources_checked": [],
+      "research_status": "FAILED",
+      "notes": "API/research failure: Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
+      "team": "SF",
+      "result": "INCONCLUSIVE",
+      "today_game_pk": 823164,
+      "previous_game_pk": 823165,
+      "previous_game_date": "2026-09-26",
+      "comments": []
     }
   ],
-  "researched_at": "2026-09-26T23:35:59+00:00",
+  "researched_at": "2026-09-27T14:35:55+00:00",
   "executor": {
     "model": "gpt-5.6-terra",
     "reasoning": "low",
@@ -150,7 +150,7 @@
     "postgame_max_tool_calls": 2,
     "max_prompt_chars": 18000,
     "prompt_cache_key": "mlb-v2-research-v3",
-    "last_run_at": "2026-09-26T23:35:59+00:00",
+    "last_run_at": "2026-09-27T14:35:55+00:00",
     "groups_processed_this_run": 6,
     "usage_this_run": {
       "input_tokens": 0,
@@ -163,54 +163,58 @@
     "audit": [
       {
         "team": "NYM",
-        "game_pk": 822678,
+        "game_pk": 822679,
         "items": [
-          "postgame:822678:NYM:822681"
+          "pregame:822679:NYM:EARLY",
+          "postgame:822679:NYM:822678"
         ],
         "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
         "validation_errors": {}
       },
       {
         "team": "WSH",
-        "game_pk": 822678,
+        "game_pk": 822679,
         "items": [
-          "postgame:822678:WSH:822681"
+          "pregame:822679:WSH:EARLY",
+          "postgame:822679:WSH:822678"
         ],
         "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
         "validation_errors": {}
       },
       {
-        "team": "PIT",
-        "game_pk": 824219,
+        "team": "BAL",
+        "game_pk": 823490,
         "items": [
-          "postgame:824219:PIT:824220"
+          "pregame:823490:BAL:EARLY",
+          "postgame:823490:BAL:823489"
         ],
         "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
         "validation_errors": {}
       },
       {
-        "team": "DET",
-        "game_pk": 824219,
+        "team": "NYY",
+        "game_pk": 823490,
         "items": [
-          "postgame:824219:DET:824220"
+          "pregame:823490:NYY:EARLY",
+          "postgame:823490:NYY:823489"
         ],
         "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
         "validation_errors": {}
       },
       {
-        "team": "CIN",
-        "game_pk": 822759,
+        "team": "LAD",
+        "game_pk": 823164,
         "items": [
-          "postgame:822759:CIN:822760"
+          "postgame:823164:LAD:823165"
         ],
         "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
         "validation_errors": {}
       },
       {
-        "team": "TOR",
-        "game_pk": 822759,
+        "team": "SF",
+        "game_pk": 823164,
         "items": [
-          "postgame:822759:TOR:822760"
+          "postgame:823164:SF:823165"
         ],
         "error": "Error code: 429 - {'error': {'message': 'You have no credits remaining. Add credits to continue using the API at https://platform.openai.com/settings/organization/billing/.', 'type': 'insufficient_quota', 'param': None, 'code': 'credit_balance_exhausted'}}",
         "validation_errors": {}
